@@ -9,7 +9,7 @@ gerais do pavimento (7,85 × 9,43 m).
 Todo o material fecha em **A3 deitado (420 × 297 mm)** e é exportado em **PDF
 vetorial**.
 
-## Caderno (REV. C)
+## Caderno (REV. D)
 
 | Prancha | Assunto | Arquivo |
 |---|---|---|
@@ -21,29 +21,41 @@ vetorial**.
 
 Versão web responsiva: `pranchas/caderno-mainfloor.html`.
 
+## Dois estados
+
+- **Estado existente** (Prancha 02): o fundo do box é um pano de vidro chão-teto,
+  ponta a ponta — o scan o leu como vão — e a drywall entre sala e quarto não tem
+  porta.
+- **Estado proposto** (Pranchas 03, 04 e 05): o pano de vidro sai e entra uma
+  parede fechando o box; a drywall é demolida e refeita no mesmo eixo, agora com
+  uma porta de 1,00 × 2,30 m; a porta do banheiro segue abrindo para o living,
+  mas girando na direção do quarto.
+
 ## Decisões embutidas na base
 
 - **Não há forro.** O teto do MainFloor é a laje de concreto aparente. Toda a
   iluminação é aplicada (trilhos eletrificados, spots de sobrepor, pendentes) e
   o ar-condicionado trabalha sem plenum, com evaporadoras e tubulação aparentes.
   Só o banheiro mantém forro.
-- **O fundo do box é um pano de vidro chão-teto, ponta a ponta.** O scan leu
-  esse pano como vão; a correção vale para todas as pranchas.
-- **A drywall entre sala e quarto será demolida** (desenhada em fantasma).
-- **Área de teto marcada pelo cliente:** 1,92 × 3,00 m (5,76 m²) sobre a sala,
-  encostada na fachada leste — condiciona luminárias, trilhos e evaporadoras.
-- **Três luminárias de destaque**, maiores que os spots: jantar, cama e office.
+- **Demolir e reconstruir são serviços separados.** Drywall e fundo do box caem
+  e voltam; parede do jantar e parede sob a escada recebem apenas retirada de
+  revestimento/espelho e preparo para pintura.
+- **A piscina do pavimento superior** fica sobre a sala: 1,92 × 3,00 m (5,76 m²)
+  centrados em 6,13 / 3,14 m do canto noroeste. Essa laje não recebe furação —
+  condiciona trilhos, luminárias e evaporadoras.
+- **Três luminárias de destaque**, maiores que os spots: jantar, cama e office;
+  no quarto as duas ficam alinhadas no mesmo eixo.
 
 ### Pisos (Prancha 03)
 
 | Opção | Cumaru | Monolítico | Sistema à parte |
 |---|---|---|---|
-| **A** | sala, jantar, quarto e hall — 44,24 m² (48,66 com reserva de 10%) | cozinha 6,96 + closet 5,30 — 12,26 m² | banheiro 3,80 m² |
+| **A** | sala, jantar, quarto e corredor — 44,86 m² (49,35 com reserva de 10%) | cozinha 6,34 + closet 5,30 — 11,64 m² | banheiro 3,80 m² |
 | **B** | — | sala, jantar, quarto, cozinha e closet — 56,50 m² | banheiro 3,80 m² |
 
-A cozinha vai até a quina da porta de entrada e a ponta do monolítico é
-resolvida em curva (arco de raio 1,49 m, tangente à parede da entrada e à parede
-do banheiro). Total do pavimento: 60,30 m².
+A ponta do monolítico nasce na quina do degrau da parede — logo abaixo da porta
+de entrada, onde fica a geladeira — e gira em curva (1,49 × 0,89 m) até a parede
+do banheiro. Total do pavimento: 60,30 m².
 
 ## Como regerar
 

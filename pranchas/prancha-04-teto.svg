@@ -3,9 +3,9 @@
 <text x="48.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#6b7480" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
 <text x="48.0" y="78.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="27.0" fill="#22303c" font-weight="bold" text-anchor="start">Teto: laje aparente, iluminação e ar-condicionado</text>
 <text x="48.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="start">Distribuição conceitual sobre a laje de concreto. Reservas de posição, não quantidade final de luminárias nem de equipamentos.</text>
-<text x="1352.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#b23a2f" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. C</text>
+<text x="1352.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#b23a2f" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. D</text>
 <text x="1352.0" y="78.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.5" fill="#22303c" font-weight="bold" text-anchor="end">sem forro — tudo aplicado na laje</text>
-<text x="1352.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="end">exceção: banheiro mantém forro</text>
+<text x="1352.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="end">piscina do pavimento superior sobre a sala</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cbc8c0" stroke-width="1.00"/>
 <path d="M380.75 159.56 L615.77 159.56 L615.77 289.10 L380.75 289.10 Z" fill="#edeae3" opacity="1.00"/>
 <path d="M223.31 289.10 L615.77 289.10 L615.77 628.06 L330.47 628.06 L330.47 468.01 L223.31 468.01 Z" fill="#edeae3" opacity="1.00"/>
@@ -21,6 +21,7 @@
 <rect x="223.26" y="809.09" width="396.08" height="6.99" fill="#5b6472"/>
 <rect x="219.77" y="628.12" width="7.01" height="35.11" fill="#5b6472"/>
 <rect x="219.77" y="464.56" width="7.01" height="163.56" fill="#5b6472"/>
+<rect x="330.48" y="624.63" width="285.35" height="7.01" fill="#5b6472"/>
 <rect x="326.99" y="464.56" width="7.01" height="163.56" fill="#5b6472"/>
 <rect x="612.34" y="628.12" width="7.01" height="187.95" fill="#5b6472"/>
 <rect x="121.60" y="624.63" width="6.99" height="177.68" fill="#5b6472"/>
@@ -31,7 +32,7 @@
 <rect x="612.34" y="156.00" width="7.01" height="472.12" fill="#5b6472"/>
 <rect x="70.00" y="398.47" width="6.99" height="417.61" fill="#5b6472"/>
 <rect x="219.77" y="464.56" width="114.23" height="7.01" fill="#5b6472"/>
-<rect x="330.48" y="624.63" width="285.35" height="7.01" fill="none" stroke="#9aa2ab" stroke-width="0.90" stroke-dasharray="4 3"/>
+<rect x="219.77" y="656.23" width="114.23" height="7.01" fill="#5b6472"/>
 <rect x="612.04" y="183.48" width="7.61" height="78.33" fill="#faf8f4"/>
 <rect x="612.34" y="183.78" width="7.01" height="77.73" fill="none" stroke="#5b6472" stroke-width="0.90"/>
 <line x1="615.84" y1="183.78" x2="615.84" y2="261.51" stroke="#5b6472" stroke-width="0.90"/>
@@ -50,18 +51,15 @@
 <rect x="235.73" y="808.79" width="83.54" height="7.59" fill="#faf8f4"/>
 <rect x="236.03" y="809.09" width="82.94" height="6.99" fill="none" stroke="#5b6472" stroke-width="0.90"/>
 <line x1="236.03" y1="812.58" x2="318.97" y2="812.58" stroke="#5b6472" stroke-width="0.90"/>
-<rect x="219.47" y="655.93" width="114.83" height="7.61" fill="#faf8f4"/>
-<rect x="219.77" y="656.23" width="114.23" height="7.01" fill="#e8f2f6" stroke="#7fb0c4" stroke-width="0.90"/>
-<line x1="219.77" y1="659.73" x2="333.99" y2="659.73" stroke="#7fb0c4" stroke-width="1.60"/>
-<line x1="240.33" y1="656.23" x2="240.33" y2="663.23" stroke="#7fb0c4" stroke-width="0.70"/>
-<line x1="276.88" y1="656.23" x2="276.88" y2="663.23" stroke="#7fb0c4" stroke-width="0.70"/>
-<line x1="313.43" y1="656.23" x2="313.43" y2="663.23" stroke="#7fb0c4" stroke-width="0.70"/>
 <rect x="115.42" y="302.45" width="7.61" height="60.54" fill="#faf8f4"/>
 <line x1="122.72" y1="302.75" x2="182.67" y2="302.75" stroke="#5b6472" stroke-width="1.40"/>
 <path d="M 182.67 302.75 A 59.94 59.94 0 0 1 122.72 362.69" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
 <rect x="326.69" y="503.12" width="7.61" height="56.25" fill="#faf8f4"/>
-<line x1="333.99" y1="503.42" x2="389.65" y2="503.42" stroke="#5b6472" stroke-width="1.40"/>
-<path d="M 389.65 503.42 A 55.65 55.65 0 0 1 333.99 559.07" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
+<line x1="333.99" y1="559.07" x2="389.65" y2="559.07" stroke="#5b6472" stroke-width="1.40"/>
+<path d="M 389.65 559.07 A 55.65 55.65 0 0 0 333.99 503.42" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
+<rect x="332.16" y="624.33" width="70.51" height="7.61" fill="#faf8f4"/>
+<line x1="332.46" y1="631.64" x2="332.46" y2="701.54" stroke="#5b6472" stroke-width="1.40"/>
+<path d="M 332.46 701.54 A 69.91 69.91 0 0 0 402.37 631.64" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
 <rect x="186.05" y="292.58" width="211.56" height="58.61" fill="none" stroke="#5b6472" stroke-width="0.90" opacity="0.85"/>
 <line x1="205.29" y1="292.58" x2="205.29" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
 <line x1="224.52" y1="292.58" x2="224.52" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
@@ -76,41 +74,46 @@
 <text x="291.8" y="324.9" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="6.6" fill="#6b7480" font-weight="bold" text-anchor="middle" letter-spacing="0.80">ESCADA</text>
 <path d="M223.31 468.01 L330.47 468.01 L330.47 659.80 L223.31 659.80 Z" fill="#d7e7ef" opacity="0.60"/>
 <path d="M223.31 468.01 L330.47 468.01 L330.47 659.80 L223.31 659.80 Z" fill="none" stroke="#6f9bb0" stroke-width="0.90" stroke-dasharray="3 2.5"/>
-<rect x="478.10" y="296.00" width="134.26" height="210.00" fill="#d9d2c4" opacity="0.55"/>
-<rect x="478.10" y="296.00" width="134.26" height="210.00" fill="none" stroke="#8a7f68" stroke-width="1.20" stroke-dasharray="6 4"/>
-<line x1="478.10" y1="309.00" x2="491.10" y2="296.00" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="322.00" x2="504.10" y2="296.00" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="335.00" x2="517.10" y2="296.00" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="348.00" x2="530.10" y2="296.00" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="361.00" x2="543.10" y2="296.00" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="374.00" x2="556.10" y2="296.00" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="387.00" x2="569.10" y2="296.00" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="400.00" x2="582.10" y2="296.00" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="413.00" x2="595.10" y2="296.00" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="426.00" x2="608.10" y2="296.00" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="439.00" x2="612.36" y2="304.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="452.00" x2="612.36" y2="317.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="465.00" x2="612.36" y2="330.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="478.00" x2="612.36" y2="343.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="491.00" x2="612.36" y2="356.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="478.10" y1="504.00" x2="612.36" y2="369.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="489.10" y1="506.00" x2="612.36" y2="382.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="502.10" y1="506.00" x2="612.36" y2="395.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="515.10" y1="506.00" x2="612.36" y2="408.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="528.10" y1="506.00" x2="612.36" y2="421.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="541.10" y1="506.00" x2="612.36" y2="434.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="554.10" y1="506.00" x2="612.36" y2="447.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="567.10" y1="506.00" x2="612.36" y2="460.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="580.10" y1="506.00" x2="612.36" y2="473.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="593.10" y1="506.00" x2="612.36" y2="486.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="606.10" y1="506.00" x2="612.36" y2="499.74" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<text x="545.2" y="397.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.4" fill="#6f6551" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ÁREA DE TETO MARCADA</text>
-<text x="545.2" y="409.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.4" fill="#6f6551" font-weight="normal" text-anchor="middle">1,92 × 3,00 m  ·  5,76 m²</text>
+<rect x="431.90" y="270.80" width="134.40" height="210.00" fill="#d9d2c4" opacity="0.55"/>
+<rect x="431.90" y="270.80" width="134.40" height="210.00" fill="none" stroke="#8a7f68" stroke-width="1.20" stroke-dasharray="6 4"/>
+<line x1="431.90" y1="283.80" x2="444.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="296.80" x2="457.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="309.80" x2="470.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="322.80" x2="483.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="335.80" x2="496.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="348.80" x2="509.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="361.80" x2="522.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="374.80" x2="535.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="387.80" x2="548.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="400.80" x2="561.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="413.80" x2="566.30" y2="279.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="426.80" x2="566.30" y2="292.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="439.80" x2="566.30" y2="305.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="452.80" x2="566.30" y2="318.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="465.80" x2="566.30" y2="331.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="431.90" y1="478.80" x2="566.30" y2="344.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="442.90" y1="480.80" x2="566.30" y2="357.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="455.90" y1="480.80" x2="566.30" y2="370.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="468.90" y1="480.80" x2="566.30" y2="383.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="481.90" y1="480.80" x2="566.30" y2="396.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="494.90" y1="480.80" x2="566.30" y2="409.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="507.90" y1="480.80" x2="566.30" y2="422.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="520.90" y1="480.80" x2="566.30" y2="435.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="533.90" y1="480.80" x2="566.30" y2="448.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="546.90" y1="480.80" x2="566.30" y2="461.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="559.90" y1="480.80" x2="566.30" y2="474.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
+<line x1="488.10" y1="375.80" x2="510.10" y2="375.80" stroke="#6f6551" stroke-width="1.00"/>
+<line x1="499.10" y1="364.80" x2="499.10" y2="386.80" stroke="#6f6551" stroke-width="1.00"/>
+<circle cx="499.10" cy="375.80" r="3.40" fill="none" stroke="#6f6551" stroke-width="1.00"/>
+<text x="499.1" y="335.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.6" fill="#6f6551" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ÁREA DA PISCINA</text>
+<text x="499.1" y="346.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#6f6551" font-weight="normal" text-anchor="middle">pavimento superior</text>
+<text x="499.1" y="409.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#6f6551" font-weight="normal" text-anchor="middle">1,92 × 3,00 m  ·  5,76 m²</text>
+<text x="499.1" y="420.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.0" fill="#6f6551" font-weight="normal" text-anchor="middle">centro em 6,13 / 3,14 m</text>
 <text x="490.5" y="183.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.90">JANTAR</text>
 <text x="413.9" y="425.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA</text>
 <text x="208.4" y="501.9" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.90">COZINHA</text>
 <text x="188.5" y="739.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.90">CLOSET</text>
-<text x="459.9" y="685.9" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.90">QUARTO</text>
+<text x="490.5" y="642.9" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.90">QUARTO</text>
 <text x="276.8" y="494.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.90">BANHEIRO</text>
 <line x1="402.50" y1="222.50" x2="595.00" y2="222.50" stroke="#faf8f4" stroke-width="5.00"/>
 <line x1="402.50" y1="222.50" x2="595.00" y2="222.50" stroke="#22303c" stroke-width="2.60" stroke-linecap="round"/>
@@ -156,17 +159,15 @@
 <circle cx="171.50" cy="582.12" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
 <circle cx="171.50" cy="582.12" r="1.50" fill="#22303c"/>
 <text x="180.5" y="423.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#22303c" font-weight="bold" text-anchor="start" letter-spacing="0.40">TR4</text>
-<line x1="364.00" y1="740.50" x2="595.00" y2="740.50" stroke="#faf8f4" stroke-width="5.00"/>
-<line x1="364.00" y1="740.50" x2="595.00" y2="740.50" stroke="#22303c" stroke-width="2.60" stroke-linecap="round"/>
-<circle cx="392.88" cy="740.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="392.88" cy="740.50" r="1.50" fill="#22303c"/>
-<circle cx="450.62" cy="740.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="450.62" cy="740.50" r="1.50" fill="#22303c"/>
-<circle cx="508.38" cy="740.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="508.38" cy="740.50" r="1.50" fill="#22303c"/>
-<circle cx="566.12" cy="740.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="566.12" cy="740.50" r="1.50" fill="#22303c"/>
-<text x="355.0" y="743.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#22303c" font-weight="bold" text-anchor="end" letter-spacing="0.40">TR5</text>
+<line x1="392.00" y1="677.50" x2="595.00" y2="677.50" stroke="#faf8f4" stroke-width="5.00"/>
+<line x1="392.00" y1="677.50" x2="595.00" y2="677.50" stroke="#22303c" stroke-width="2.60" stroke-linecap="round"/>
+<circle cx="425.83" cy="677.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
+<circle cx="425.83" cy="677.50" r="1.50" fill="#22303c"/>
+<circle cx="493.50" cy="677.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
+<circle cx="493.50" cy="677.50" r="1.50" fill="#22303c"/>
+<circle cx="561.17" cy="677.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
+<circle cx="561.17" cy="677.50" r="1.50" fill="#22303c"/>
+<text x="383.0" y="680.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#22303c" font-weight="bold" text-anchor="end" letter-spacing="0.40">TR5</text>
 <line x1="136.50" y1="663.50" x2="136.50" y2="789.50" stroke="#faf8f4" stroke-width="5.00"/>
 <line x1="136.50" y1="663.50" x2="136.50" y2="789.50" stroke="#22303c" stroke-width="2.60" stroke-linecap="round"/>
 <circle cx="136.50" cy="684.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
@@ -179,12 +180,12 @@
 <circle cx="498.40" cy="224.60" r="10.50" fill="#fdf3e2" stroke="#1f6f9c" stroke-width="1.80"/>
 <circle cx="498.40" cy="224.60" r="3.40" fill="#1f6f9c"/>
 <text x="498.4" y="246.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.4" fill="#1f6f9c" font-weight="bold" text-anchor="middle" letter-spacing="0.30">P01 · jantar</text>
-<circle cx="497.00" cy="754.50" r="10.50" fill="#fdf3e2" stroke="#1f6f9c" stroke-width="1.80"/>
-<circle cx="497.00" cy="754.50" r="3.40" fill="#1f6f9c"/>
-<text x="497.0" y="776.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.4" fill="#1f6f9c" font-weight="bold" text-anchor="middle" letter-spacing="0.30">P02 · cama</text>
-<circle cx="329.00" cy="737.00" r="10.50" fill="#fdf3e2" stroke="#1f6f9c" stroke-width="1.80"/>
-<circle cx="329.00" cy="737.00" r="3.40" fill="#1f6f9c"/>
-<text x="329.0" y="759.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.4" fill="#1f6f9c" font-weight="bold" text-anchor="middle" letter-spacing="0.30">P03 · office</text>
+<circle cx="497.00" cy="735.60" r="10.50" fill="#fdf3e2" stroke="#1f6f9c" stroke-width="1.80"/>
+<circle cx="497.00" cy="735.60" r="3.40" fill="#1f6f9c"/>
+<text x="497.0" y="757.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.4" fill="#1f6f9c" font-weight="bold" text-anchor="middle" letter-spacing="0.30">P02 · cama</text>
+<circle cx="343.00" cy="735.60" r="10.50" fill="#fdf3e2" stroke="#1f6f9c" stroke-width="1.80"/>
+<circle cx="343.00" cy="735.60" r="3.40" fill="#1f6f9c"/>
+<text x="343.0" y="757.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.4" fill="#1f6f9c" font-weight="bold" text-anchor="middle" letter-spacing="0.30">P03 · office</text>
 <circle cx="252.00" cy="495.50" r="4.00" fill="#faf8f4" stroke="#6f9bb0" stroke-width="1.30"/>
 <circle cx="301.00" cy="495.50" r="4.00" fill="#faf8f4" stroke="#6f9bb0" stroke-width="1.30"/>
 <circle cx="248.50" cy="516.50" r="4.60" fill="none" stroke="#8a8f96" stroke-width="1.30"/>
@@ -199,8 +200,8 @@
 <line x1="582.70" y1="800.30" x2="589.10" y2="806.70" stroke="#8a8f96" stroke-width="1.00"/>
 <circle cx="99.40" cy="527.00" r="4.60" fill="none" stroke="#8a8f96" stroke-width="1.30"/>
 <line x1="96.20" y1="523.80" x2="102.60" y2="530.20" stroke="#8a8f96" stroke-width="1.00"/>
-<rect x="426.50" y="291.40" width="36.00" height="12.00" fill="#e2eef2" stroke="#4c8fa8" stroke-width="1.40"/>
-<text x="444.5" y="300.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.0" fill="#4c8fa8" font-weight="bold" text-anchor="middle" letter-spacing="0.30">AC01</text>
+<rect x="381.00" y="307.50" width="36.00" height="12.00" fill="#e2eef2" stroke="#4c8fa8" stroke-width="1.40"/>
+<text x="399.0" y="316.9" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.0" fill="#4c8fa8" font-weight="bold" text-anchor="middle" letter-spacing="0.30">AC01</text>
 <rect x="452.40" y="790.50" width="36.00" height="12.00" fill="#e2eef2" stroke="#4c8fa8" stroke-width="1.40"/>
 <text x="470.4" y="799.9" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.0" fill="#4c8fa8" font-weight="bold" text-anchor="middle" letter-spacing="0.30">AC02</text>
 <circle cx="284.20" cy="580.20" r="6.00" fill="#e2eef2" stroke="#4c8fa8" stroke-width="1.40"/>
@@ -298,28 +299,30 @@
 <text x="722.0" y="554.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">O caminho da fiação vira projeto de desenho, não sobra de obra: definir antes de furar a laje.</text>
 <text x="722.0" y="574.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">P01, P02 e P03 são as três luminárias de destaque pedidas pelo cliente</text>
 <text x="722.0" y="587.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">— jantar, cama e office. Corpo e diâmetro maiores que os spots dos trilhos, em pendente</text>
-<text x="722.0" y="599.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">ou plafon de sobrepor. As demais posições são reserva de estudo, não quantidade final.</text>
-<text x="722.0" y="620.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Ar-condicionado sem forro: não há plenum para dutar.</text>
-<text x="722.0" y="632.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Trabalhar com evaporadoras hi-wall ou cassete aparente. Tubulação frigorígena, dreno e</text>
-<text x="722.0" y="644.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">interligação elétrica correm aparentes, em calha, com caimento contínuo do dreno.</text>
-<text x="722.0" y="657.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Somente Electrolux; marca igual não garante compatibilidade entre unidades.</text>
-<text x="722.0" y="677.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">A área de teto marcada (1,92 × 3,00 m = 5,76 m²) condiciona a modulação.</text>
-<text x="722.0" y="690.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Nem luminária, nem trilho, nem evaporadora ou tubulação podem invadi-la. Os trilhos foram</text>
-<text x="722.0" y="702.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">posicionados fora dela: TR1 ao norte, TR2 a oeste e TR3 ao sul.</text>
-<text x="722.0" y="722.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">A reserva AC01 do estudo anterior caía dentro da área marcada.</text>
-<text x="722.0" y="735.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Foi deslocada para oeste, mantendo a insuflação para sala e jantar. A posição definitiva</text>
-<text x="722.0" y="747.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">depende de confirmar apoio acima do limite sala/jantar e o modelo da condensadora existente:</text>
-<text x="722.0" y="760.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">não assumir que ela admite duas evaporadoras.</text>
-<text x="722.0" y="780.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Comandos: cenas geral / tarefa / noturna, com acionamento no acesso de cada ambiente.</text>
-<text x="722.0" y="792.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Trilho permite remanejar spots depois — o comando é que precisa estar certo desde já.</text>
-<text x="722.0" y="805.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Priorizar boa reprodução de cores no espelho e no closet.</text>
-<text x="722.0" y="825.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Vazões de referência, a validar com perda de carga do duto:</text>
-<text x="722.0" y="838.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">banheiro 3,8 × 2,62 × 10 = 99,56 m³/h; coifa 8,9 × 2,62 × 12 = 279,82 m³/h — este último</text>
-<text x="722.0" y="850.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">valeria só se a cozinha fosse isolada. Cozinha integrada exige seleção por captura no fogão.</text>
-<text x="722.0" y="862.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Coifa e exaustão do banheiro precisam de rotas e descargas próprias; não interligar.</text>
+<text x="722.0" y="599.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">ou plafon de sobrepor. No quarto, P02 e P03 estão alinhadas no mesmo eixo, a 8,28 m do</text>
+<text x="722.0" y="612.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">canto noroeste. As demais posições são reserva de estudo, não quantidade final.</text>
+<text x="722.0" y="632.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Ar-condicionado sem forro: não há plenum para dutar.</text>
+<text x="722.0" y="644.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Trabalhar com evaporadoras hi-wall ou cassete aparente. Tubulação frigorígena, dreno e</text>
+<text x="722.0" y="657.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">interligação elétrica correm aparentes, em calha, com caimento contínuo do dreno.</text>
+<text x="722.0" y="669.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Somente Electrolux; marca igual não garante compatibilidade entre unidades.</text>
+<text x="722.0" y="690.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">A piscina do pavimento superior fica sobre a sala — 1,92 × 3,00 m, centrada em</text>
+<text x="722.0" y="702.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">6,13 / 3,14 m do canto noroeste. Essa laje não recebe furação: nem luminária, nem trilho,</text>
+<text x="722.0" y="714.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">nem evaporadora ou tubulação podem invadi-la, e a região exige impermeabilização e</text>
+<text x="722.0" y="727.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">sobrecarga verificadas em estrutura. Os trilhos foram posicionados fora dela.</text>
+<text x="722.0" y="747.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">A reserva AC01 caía dentro da projeção da piscina.</text>
+<text x="722.0" y="760.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Foi deslocada para oeste, mantendo a insuflação para sala e jantar. A posição definitiva</text>
+<text x="722.0" y="772.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">depende de confirmar apoio acima do limite sala/jantar e o modelo da condensadora existente:</text>
+<text x="722.0" y="784.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">não assumir que ela admite duas evaporadoras.</text>
+<text x="722.0" y="805.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Comandos: cenas geral / tarefa / noturna, com acionamento no acesso de cada ambiente.</text>
+<text x="722.0" y="817.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Trilho permite remanejar spots depois — o comando é que precisa estar certo desde já.</text>
+<text x="722.0" y="830.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Priorizar boa reprodução de cores no espelho e no closet.</text>
+<text x="722.0" y="850.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Vazões de referência, a validar com perda de carga do duto:</text>
+<text x="722.0" y="862.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">banheiro 3,8 × 2,62 × 10 = 99,56 m³/h; coifa 8,9 × 2,62 × 12 = 279,82 m³/h — este último</text>
+<text x="722.0" y="875.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">valeria só se a cozinha fosse isolada. Cozinha integrada exige seleção por captura no fogão.</text>
+<text x="722.0" y="887.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Coifa e exaustão do banheiro precisam de rotas e descargas próprias; não interligar.</text>
 <line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cbc8c0" stroke-width="1.00"/>
 <text x="48.0" y="940.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">Fluxo = área × lux ÷ (0,60 × 0,80). Fatores de utilização e manutenção são hipóteses; a laje aparente escura reduz o fator de utilização e deve ser reavaliada.</text>
 <text x="48.0" y="953.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">Carga térmica não é carga final: claraboia, insolação, escada aberta e ocupação mudam o resultado. Estudar 2 ou 3 evaporadoras; não há número fechado de aparelhos.</text>
 <text x="48.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#b23a2f" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   11/09/2026</text>
-<text x="1352.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#6b7480" font-weight="normal" text-anchor="end">Prancha 04 / 08   ·   REV. C</text>
+<text x="1352.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#6b7480" font-weight="normal" text-anchor="end">Prancha 04 / 08   ·   REV. D</text>
 </svg>

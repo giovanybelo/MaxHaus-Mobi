@@ -8,7 +8,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. C'
+REV = 'REV. D'
 PRANCHA = 'Prancha 04 / 08'
 
 # --- trilhos eletrificados: (id, (x0,y0), (x1,y1), nº de spots) em metros ---
@@ -17,15 +17,15 @@ TRILHOS = [
     ('TR2', (4.55, 3.20), (4.55, 6.40), 4),   # sala, eixo norte-sul
     ('TR3', (4.20, 6.25), (7.50, 6.25), 4),   # sala, faixa sul
     ('TR4', (1.45, 3.90), (1.45, 6.40), 4),   # cozinha
-    ('TR5', (4.20, 8.35), (7.50, 8.35), 4),   # quarto
+    ('TR5', (4.60, 7.45), (7.50, 7.45), 3),   # quarto
     ('TR6', (0.95, 7.25), (0.95, 9.05), 3),   # closet
 ]
 
 # --- luminárias de destaque (corpo maior que os spots dos trilhos) ----------
 DESTAQUES = [
     ('P01', 6.12, 0.98, 'jantar'),
-    ('P02', 6.10, 8.55, 'cama'),
-    ('P03', 3.70, 8.30, 'office'),
+    ('P02', 6.10, 8.28, 'cama'),
+    ('P03', 3.90, 8.28, 'office'),
 ]
 
 # --- pontos existentes marcados pelo cliente (a confirmar em obra) ----------
@@ -43,7 +43,7 @@ EMBUTIDOS_WC = [(2.60, 4.85), (3.30, 4.85)]
 
 # --- ar-condicionado, coifa e exaustão --------------------------------------
 MAQUINAS = [
-    ('AC01', 5.35, 2.02, 'evaporadora — social + cozinha'),
+    ('AC01', 4.70, 2.25, 'evaporadora — social + cozinha'),
     ('AC02', 5.72, 9.15, 'evaporadora — quarto + closet'),
     ('EX01', 3.06, 6.06, 'exaustor do banheiro'),
     ('CF01', 0.60, 6.20, 'coifa da cozinha'),
@@ -73,15 +73,17 @@ NOTAS = [
      'O caminho da fiação vira projeto de desenho, não sobra de obra: definir antes de furar a laje.'],
     ['**P01, P02 e P03 são as três luminárias de destaque pedidas pelo cliente',
      '— jantar, cama e office. Corpo e diâmetro maiores que os spots dos trilhos, em pendente',
-     'ou plafon de sobrepor. As demais posições são reserva de estudo, não quantidade final.'],
+     'ou plafon de sobrepor. No quarto, P02 e P03 estão alinhadas no mesmo eixo, a 8,28 m do',
+     'canto noroeste. As demais posições são reserva de estudo, não quantidade final.'],
     ['**Ar-condicionado sem forro: não há plenum para dutar.',
      'Trabalhar com evaporadoras hi-wall ou cassete aparente. Tubulação frigorígena, dreno e',
      'interligação elétrica correm aparentes, em calha, com caimento contínuo do dreno.',
      'Somente Electrolux; marca igual não garante compatibilidade entre unidades.'],
-    ['**A área de teto marcada (1,92 × 3,00 m = 5,76 m²) condiciona a modulação.',
-     'Nem luminária, nem trilho, nem evaporadora ou tubulação podem invadi-la. Os trilhos foram',
-     'posicionados fora dela: TR1 ao norte, TR2 a oeste e TR3 ao sul.'],
-    ['**A reserva AC01 do estudo anterior caía dentro da área marcada.',
+    ['**A piscina do pavimento superior fica sobre a sala — 1,92 × 3,00 m, centrada em',
+     '6,13 / 3,14 m do canto noroeste. Essa laje não recebe furação: nem luminária, nem trilho,',
+     'nem evaporadora ou tubulação podem invadi-la, e a região exige impermeabilização e',
+     'sobrecarga verificadas em estrutura. Os trilhos foram posicionados fora dela.'],
+    ['**A reserva AC01 caía dentro da projeção da piscina.',
      'Foi deslocada para oeste, mantendo a insuflação para sala e jantar. A posição definitiva',
      'depende de confirmar apoio acima do limite sala/jantar e o modelo da condensadora existente:',
      'não assumir que ela admite duas evaporadoras.'],
@@ -100,16 +102,16 @@ def construir():
     cabecalho(d, 'Teto: laje aparente, iluminação e ar-condicionado',
               'Distribuição conceitual sobre a laje de concreto. Reservas de posição, não quantidade final de luminárias nem de equipamentos.',
               REV, 'sem forro — tudo aplicado na laje',
-              'exceção: banheiro mantém forro')
+              'piscina do pavimento superior sobre a sala')
 
     S = 70.0
     d.set_plan(70, 156, S)
     fundo_ambientes(d, '#edeae3')
-    paredes(d)
+    paredes(d, estado='novo')
     janelas(d)
-    vidro_box(d)
     porta(d, DOOR_ENTRADA)
     porta(d, DOOR_BANHO)
+    porta_horizontal(d, PORTA_NOVA, hinge='w', swing='s')
     escada(d)
 
     # banheiro: único ambiente com forro
@@ -117,8 +119,8 @@ def construir():
     d.path(path_d(pp), fill=WET, opacity=0.6)
     d.path(path_d(pp), fill='none', stroke=WET_LINE, sw=0.9, dash='3 2.5')
 
-    # área de teto marcada pelo cliente
-    x, y, w_, h_ = d.R(AREA_TETO)
+    # área da piscina do pavimento superior
+    x, y, w_, h_ = d.R(AREA_PISCINA)
     d.rect(x, y, w_, h_, fill='#d9d2c4', opacity=0.55)
     d.rect(x, y, w_, h_, fill='none', stroke='#8a7f68', sw=1.2, dash='6 4')
     t = -h_
@@ -129,12 +131,18 @@ def construir():
         if x1 > x0:
             d.line(x0, y0, x1, y1, '#8a7f68', 0.5, opacity=0.30)
         t += 13
-    d.txt(x + w_ / 2, y + h_ / 2 - 4, 'ÁREA DE TETO MARCADA', 7.4, '#6f6551', 'bold', 'middle', ls=0.5)
-    d.txt(x + w_ / 2, y + h_ / 2 + 8, '1,92 × 3,00 m  ·  5,76 m²', 7.4, '#6f6551', 'normal', 'middle')
+    cxp, cyp = d.PM(PISCINA_CX, PISCINA_CY)
+    d.line(cxp - 11, cyp, cxp + 11, cyp, '#6f6551', 1.0)
+    d.line(cxp, cyp - 11, cxp, cyp + 11, '#6f6551', 1.0)
+    d.circle(cxp, cyp, 3.4, fill='none', stroke='#6f6551', sw=1.0)
+    d.txt(x + w_ / 2, y + h_ / 2 - 40, 'ÁREA DA PISCINA', 7.6, '#6f6551', 'bold', 'middle', ls=0.5)
+    d.txt(x + w_ / 2, y + h_ / 2 - 29, 'pavimento superior', 7.2, '#6f6551', 'normal', 'middle')
+    d.txt(x + w_ / 2, y + h_ / 2 + 34, '1,92 × 3,00 m  ·  5,76 m²', 7.2, '#6f6551', 'normal', 'middle')
+    d.txt(x + w_ / 2, y + h_ / 2 + 45, 'centro em 6,13 / 3,14 m', 7.0, '#6f6551', 'normal', 'middle')
 
     for k, lx, ly in (('jantar', 520.0, 142.0), ('sala', 470.0, 300.0),
                       ('cozinha', 336.0, 350.0), ('closet', 323.0, 505.0),
-                      ('quarto', 500.0, 470.0), ('banheiro', 380.6, 345.0)):
+                      ('quarto', 520.0, 442.0), ('banheiro', 380.6, 345.0)):
         ROOMS[k]['lx'], ROOMS[k]['ly'] = lx, ly
     rotulos(d, areas=False, size=8.4)
 

@@ -63,8 +63,9 @@ ROOM_ORDER = ['jantar','sala','cozinha','closet','quarto','banheiro']
 # 325,65). Centro do arco em (277,8 / 325,65): rx = 67,9 pt e ry = 66,45 pt,
 # ou seja um raio de ~1,49 m, tangente horizontal na porta e vertical na parede.
 CURVA_CX, CURVA_CY = 277.8, 325.65
-CURVA_RX, CURVA_RY = 67.90, 66.45
-PORTA_QUINA = (277.8, 259.20)          # quina sul do vão da porta de entrada
+CURVA_RX, CURVA_RY = 67.90, 40.85
+QUINA_DEGRAU = (277.8, 284.80)         # quina do degrau da parede — onde fica a geladeira
+PORTA_QUINA = QUINA_DEGRAU             # compatibilidade
 CURVA_FIM   = (345.7, 325.65)          # cabeça da parede cozinha / banheiro
 
 def arco_pts(n=28, invertido=False):
@@ -76,14 +77,13 @@ def arco_pts(n=28, invertido=False):
                     CURVA_CY - CURVA_RY * math.sin(th)))
     return list(reversed(pts)) if invertido else pts
 
-COZ_MONO_POLY = ([(248.0,432.3),(248.0,284.8),(277.8,284.8),PORTA_QUINA]
-                 + arco_pts() + [(345.7,432.3)])
+COZ_MONO_POLY = ([(248.0,432.3),(248.0,284.8)] + arco_pts() + [(345.7,432.3)])
 COZ_HALL_POLY = ([(277.8,211.2),(345.7,211.2),(345.7,325.65)]
                  + arco_pts(invertido=True))
 
 # área do hall que sai do ambiente Cozinha e passa ao cumaru (m²)
 _A_COZ_PT = 67.9 * 73.6 + 97.7 * 147.5
-_A_HALL_PT = 67.9 * 48.0 + (67.9 * 66.45 - math.pi * CURVA_RX * CURVA_RY / 4.0)
+_A_HALL_PT = 67.9 * 73.6 + (67.9 * 40.85 - math.pi * CURVA_RX * CURVA_RY / 4.0)
 AREA_HALL = round(ROOMS['cozinha']['area'] * _A_HALL_PT / _A_COZ_PT, 2)   # 1,94
 AREA_COZ_MONO = round(ROOMS['cozinha']['area'] - AREA_HALL, 2)            # 6,96
 
@@ -92,7 +92,8 @@ WALLS = [
     (446.11,124.38,604.03,128.94), (275.52,208.91,450.68,213.47),
     (275.52,208.91,280.09,287.11), (245.70,282.54,280.09,287.11),
     (279.36,430.06,345.67,434.63),
-    (345.67,550.38,604.03,554.94),
+    (345.67,550.38,604.03,554.94), (343.39,450.67,417.90,455.24),
+    (415.61,430.06,601.74,434.63),
     (343.39,432.34,347.96,455.24), (343.39,325.65,347.96,432.34),
     (413.33,325.65,417.90,432.34), (599.46,432.34,604.03,554.94),
     (279.36,430.06,283.92,545.96), (245.70,550.38,345.67,554.94),
@@ -101,14 +102,12 @@ WALLS = [
     (245.70,282.54,250.26,554.94), (343.39,325.65,417.90,330.22),
 ]
 # REV. C — drywall entre sala e quarto: retirada, indicada em fantasma
-GHOST_WALLS = [(415.61,430.06,601.74,434.63)]
-# fundo do box: pano de vidro chão-teto, ponta a ponta (o scan leu como vão)
-VIDRO_BOX = (343.39, 450.67, 417.90, 455.24)
-GLASS = '#7fb0c4'
+GHOST_WALLS = []
+PORTA_NOVA = (416.90, 430.06, 462.50, 434.63)      # porta nova de 1,00 x 2,30 m
 AREA_DRYWALL = 0.40                     # faixa de piso liberada, ~0,10 x 4,08 m
 
 DOOR_ENTRADA = dict(rect=(275.52,220.10,280.09,259.20), hinge='n', leaf='e')
-DOOR_BANHO   = dict(rect=(413.33,351.00,417.90,387.30), hinge='n', leaf='e')
+DOOR_BANHO   = dict(rect=(413.33,351.00,417.90,387.30), hinge='s', leaf='e')
 JANELAS = [
     (599.46,142.50,604.03,193.20), (599.46,215.00,604.03,300.80),
     (599.46,348.00,604.03,394.40), (599.46,455.70,604.03,509.80),
@@ -321,14 +320,15 @@ def draw_door(d, panel, door):
           'stroke-width="0.8" opacity="0.5"/>'
           % (ex, hy, leaf, leaf, 1 if door['hinge'] == 'n' else 0, hx, ty, WALL))
 
-def draw_vidro_box(d, panel):
-    a = P(panel, VIDRO_BOX[0], VIDRO_BOX[1]); b = P(panel, VIDRO_BOX[2], VIDRO_BOX[3])
-    w_, h_ = b[0] - a[0], b[1] - a[1]
-    d.rect(a[0] - 0.3, a[1] - 0.3, w_ + 0.6, h_ + 0.6, fill=BG)
-    d.rect(a[0], a[1], w_, h_, fill='#e8f2f6', stroke=GLASS, sw=0.9)
-    d.line(a[0], a[1] + h_ / 2, a[0] + w_, a[1] + h_ / 2, GLASS, 1.6)
-    for t in (0.18, 0.5, 0.82):
-        d.line(a[0] + w_ * t, a[1], a[0] + w_ * t, a[1] + h_, GLASS, 0.7)
+def draw_porta_nova(d, panel):
+    """Porta nova de 1,00 x 2,30 m na drywall refeita, abrindo para o quarto."""
+    gap(d, panel, PORTA_NOVA)
+    a = P(panel, PORTA_NOVA[0], PORTA_NOVA[1]); b = P(panel, PORTA_NOVA[2], PORTA_NOVA[3])
+    leaf = b[0] - a[0]
+    hx, hy = a[0], b[1]
+    d.line(hx, hy, hx, hy + leaf, WALL, 1.4)
+    d.add('<path d="M %.2f %.2f A %.2f %.2f 0 0 0 %.2f %.2f" fill="none" stroke="%s" '
+          'stroke-width="0.8" opacity="0.5"/>' % (hx, hy + leaf, leaf, leaf, hx + leaf, hy, WALL))
 
 
 def draw_windows(d, panel):
@@ -403,7 +403,7 @@ def draw_scalebar(d, panel, y):
 # 6. ZONAS DE ACABAMENTO POR OPÇÃO
 # ---------------------------------------------------------------------------
 def smooth_mono_curva(panel):
-    p = to_px(panel, [(248.0,432.3),(248.0,284.8),(277.8,284.8),PORTA_QUINA])
+    p = to_px(panel, [(248.0,432.3),(248.0,284.8)])
     f = P(panel, *CURVA_FIM)
     g = P(panel, 345.7, 432.3)
     rx, ry = CURVA_RX / PT_PER_M * S, CURVA_RY / PT_PER_M * S
@@ -450,9 +450,9 @@ def draw_plan(d, panel, opcao, callout=False):
     draw_ghost_walls(d, panel)
     draw_walls(d, panel)
     draw_windows(d, panel)
-    draw_vidro_box(d, panel)
     draw_door(d, panel, DOOR_ENTRADA)
     draw_door(d, panel, DOOR_BANHO)
+    draw_porta_nova(d, panel)
     draw_soleira_entrada(d, panel)
     for seg in TRANSICOES_BANHO:
         dashed_polyline(d, panel, seg)
@@ -465,9 +465,9 @@ def draw_plan(d, panel, opcao, callout=False):
         d.line(tx + 4, ty + 22, tx + 4, dy, JOINT, 0.9)
         d.line(tx + 4, dy, dx - 1, dy, JOINT, 0.9)
         d.add('<circle cx="%.1f" cy="%.1f" r="2.8" fill="%s"/>' % (dx, dy, JOINT))
-        d.txt(tx, ty, 'QUINA DA PORTA DE ENTRADA', 7.8, JOINT, 'bold', ls=0.6)
-        d.txt(tx, ty + 9.5, 'a cozinha termina aqui; a ponta do', 7.6, INK_SOFT)
-        d.txt(tx, ty + 18, 'monolítico é resolvida em curva (r 1,49 m)', 7.6, INK_SOFT)
+        d.txt(tx, ty, 'QUINA DO DEGRAU DA PAREDE', 7.8, JOINT, 'bold', ls=0.6)
+        d.txt(tx, ty + 9.5, 'logo abaixo da porta, onde fica a geladeira:', 7.6, INK_SOFT)
+        d.txt(tx, ty + 18, 'a ponta do monolítico nasce aqui, em curva', 7.6, INK_SOFT)
 
 # ---------------------------------------------------------------------------
 # 7b. PLANTA ISOLADA (SVG por opção, para a versão HTML)
@@ -527,9 +527,9 @@ def build():
     d.txt(48, 78, 'Cumaru ou monolítico', 27, INK, 'bold')
     d.txt(48, 99, 'Comparação gráfica em planta. Cores ilustrativas; nenhum produto ou espessura está especificado.',
           9.6, INK_SOFT)
-    d.txt(W - 48, 42, 'REV. C   |   11.09.2026', 10.0, RED, 'bold', 'end', ls=0.8)
-    d.txt(W - 48, 78, 'ponta da cozinha em curva na quina da porta', 10.5, INK, 'bold', 'end')
-    d.txt(W - 48, 99, 'fundo do box em vidro chão-teto  ·  drywall sala/quarto retirada',
+    d.txt(W - 48, 42, 'REV. D   |   11.09.2026', 10.0, RED, 'bold', 'end', ls=0.8)
+    d.txt(W - 48, 78, 'ponta da cozinha em curva na quina do degrau', 10.5, INK, 'bold', 'end')
+    d.txt(W - 48, 99, 'fundo do box fechado em parede  ·  drywall refeita com porta',
           9.6, INK_SOFT, 'normal', 'end')
     d.line(48, 116, W - 48, 116, RULE, 1.0)
 
@@ -545,24 +545,21 @@ def build():
         d.line(cx + i * 9, ly - 3.5, cx + i * 9 + 6, ly - 3.5, JOINT, 1.7, cap='butt')
     d.txt(cx + 32, ly, 'Junta / soleira de transição', 9.2, INK)
     cx += 32 + len('Junta / soleira de transição') * 5.0 + 10
-    d.add('<rect x="%.1f" y="%.1f" width="20" height="7" fill="none" stroke="%s" '
-          'stroke-width="0.9" stroke-dasharray="4 3"/>' % (cx, ly - 7, GHOST))
-    d.txt(cx + 27, ly, 'Drywall retirada', 9.2, INK)
     d.line(48, 158, W - 48, 158, RULE, 1.0)
     d.line(PANEL_X['B'] - 22, 176, PANEL_X['B'] - 22, 908, RULE, 0.8, opacity=0.8)
 
     draw_panel(d, 'A', 'A / Cumaru nas áreas secas', 'cozinha e closet em monolítico',
                'A', callout=True)
     draw_table(d, 'A', 738, [
-        ('Cumaru',        'sala 23,00 + quarto 13,40 + jantar 5,90 + hall 1,94', '44,24', (WOOD, WOOD_LINE)),
-        ('+ reserva 10%', 'cortes, perdas e reposição futura',                   '48,66', (BG, WOOD_LINE)),
-        ('Monolítico',    'cozinha 6,96 (de 8,90) + closet 5,30',                '12,26', (MONO, MONO_LINE)),
+        ('Cumaru',        'sala 23,00 + quarto 13,40 + jantar 5,90 + hall 2,56', '44,86', (WOOD, WOOD_LINE)),
+        ('+ reserva 10%', 'cortes, perdas e reposição futura',                   '49,35', (BG, WOOD_LINE)),
+        ('Monolítico',    'cozinha 6,34 (de 8,90) + closet 5,30',                '11,64', (MONO, MONO_LINE)),
         ('Banheiro',      'sistema à parte (área molhada)',                      '3,80',  (WET, WET_LINE)),
     ], '60,30')
     draw_notes(d, 'A', 872, [
-        'A cozinha sobe pela extensão e para na quina da porta de entrada: a ponta do monolítico gira em curva (raio 1,49 m)',
-        'até a parede do banheiro. O hall da entrada e a escada — 1,94 m² que o scan conta como cozinha — ficam em cumaru,',
-        'por isso a cozinha entra no quadro com 6,96 m². Cumaru: 44,24 m² líquidos; 48,66 m² com reserva de 10%.',
+        'A ponta do monolítico nasce na quina do degrau da parede — logo abaixo da porta de entrada, onde fica a geladeira —',
+        'e gira em curva (1,49 × 0,89 m) até a parede do banheiro. O corredor da entrada e a escada, 2,56 m² que o scan conta',
+        'como cozinha, ficam em cumaru: por isso a cozinha entra no quadro com 6,34 m². Cumaru 44,86 m²; 49,35 m² com reserva.',
     ])
 
     draw_panel(d, 'B', 'B / Monolítico no MainFloor', 'banheiro em sistema à parte', 'B')
@@ -580,13 +577,13 @@ def build():
 
     d.line(48, 922, W - 48, 922, RULE, 1.0)
     d.txt(48, 940, 'Revestimento contínuo: toda a área de piso é revestida, inclusive sob móveis e equipamentos — nenhum recorte de mobiliário foi descontado. '
-                    'O fundo do box é um pano de vidro chão-teto, ponta a ponta.',
+                    'O fundo do box aparece já fechado em parede (ver Prancha 02).',
           8.3, INK_SOFT)
-    d.txt(48, 953, 'Drywall entre sala e quarto retirada (indicada em fantasma): some ~0,40 m² de piso na faixa da parede, a conferir em obra. '
+    d.txt(48, 953, 'A drywall entre sala e quarto é demolida e refeita no mesmo eixo, agora com uma porta de 1,00 × 2,30 m: as áreas de piso não mudam. '
                     'Áreas conforme o scan de 02.09.2026.',
           8.3, INK_SOFT)
     d.txt(48, 975, 'ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   11/09/2026', 9.0, RED, 'bold', ls=0.5)
-    d.txt(W - 48, 975, 'Prancha 03 / 08   ·   REV. C', 9.0, INK_SOFT, 'normal', 'end')
+    d.txt(W - 48, 975, 'Prancha 03 / 08   ·   REV. D', 9.0, INK_SOFT, 'normal', 'end')
 
     return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d" width="%d" height="%d">\n'
             % (W, H, W, H)) + '\n'.join(d.o) + '\n</svg>'

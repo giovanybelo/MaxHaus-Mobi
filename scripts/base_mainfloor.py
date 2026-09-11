@@ -7,12 +7,18 @@ pág. 2): paredes, aberturas e polígonos de ambiente foram lidos do vetor
 original em pontos PDF e convertidos para metros pela escala 45,66 pt/m,
 conferida contra as cotas gerais do pavimento (7,85 m x 9,43 m).
 
-Decisões do cliente já embutidas na base:
-  · o teto é laje de concreto aparente — não há forro em nenhum ambiente,
-    salvo o banheiro;
-  · a parede sul do banheiro (fundo do box) é um pano de vidro chão-teto,
-    ponta a ponta — o scan a leu como vão;
-  · a drywall entre sala e quarto será demolida (desenhada em fantasma).
+Dois estados convivem no caderno:
+  ESTADO EXISTENTE (Prancha 02) — o fundo do box é um pano de vidro chão-teto,
+  ponta a ponta (o scan o leu como vão) e a drywall entre sala e quarto não tem
+  porta.
+  ESTADO PROPOSTO (Pranchas 03, 04 e 05) — o pano de vidro sai e entra uma
+  parede fechando o box; a drywall é refeita com uma porta de 1,00 x 2,30 m;
+  a porta do banheiro passa a abrir para o lado do quarto.
+
+Demais decisões do cliente embutidas na base:
+  · o teto é laje de concreto aparente — não há forro, salvo no banheiro;
+  · a área da piscina do pavimento superior está centrada em (6,13 / 3,14) m,
+    medida do canto noroeste, e condiciona luz, ar e furação da laje.
 
 Todas as pranchas do caderno fecham em A3 deitado (420 x 297 mm).
 """
@@ -55,21 +61,27 @@ WALLS = [
     (275.52,208.91,280.09,287.11), (245.70,282.54,280.09,287.11),
     (279.36,430.06,345.67,434.63), (345.67,550.38,604.03,554.94),
     (343.39,432.34,347.96,455.24), (343.39,325.65,347.96,432.34),
+    (415.61,430.06,601.74,434.63),
     (413.33,325.65,417.90,432.34), (599.46,432.34,604.03,554.94),
     (279.36,430.06,283.92,545.96), (245.70,550.38,345.67,554.94),
     (343.39,513.42,347.96,552.66), (446.11,124.38,450.68,213.47),
     (413.33,432.34,417.90,455.24), (599.46,124.38,604.03,432.34),
     (245.70,282.54,250.26,554.94), (343.39,325.65,417.90,330.22),
 ]
-# fundo do box: pano de vidro chão-teto, ponta a ponta
+# fundo do box no estado existente: pano de vidro chão-teto, ponta a ponta.
+# Será derrubado e substituído por parede (PAREDE_FUNDO_BOX).
 VIDRO_BOX = (343.39, 450.67, 417.90, 455.24)
-# drywall sala/quarto — a demolir
+PAREDE_FUNDO_BOX = (343.39, 450.67, 417.90, 455.24)
+# drywall sala/quarto: demolida e refeita, agora com porta
 DRYWALL_SALA_QUARTO = (415.61, 430.06, 601.74, 434.63)
-# parede entre a escada e o jantar — a demolir
+PORTA_NOVA = (416.90, 430.06, 462.50, 434.63)      # 1,00 x 2,30 m
+PORTA_ENTRADA_H = 2.30                              # altura de referência
+# parede do jantar / sob a escada: revestimento retirado e preparo para pintura
 PAREDE_ESCADA_JANTAR = (446.11, 124.38, 450.68, 213.47)
+PAREDE_SOB_ESCADA = (321.40, 208.91, 459.40, 213.47)
 
 DOOR_ENTRADA = dict(rect=(275.52,220.10,280.09,259.20), hinge='n', leaf='e')
-DOOR_BANHO   = dict(rect=(413.33,351.00,417.90,387.30), hinge='n', leaf='e')
+DOOR_BANHO   = dict(rect=(413.33,351.00,417.90,387.30), hinge='s', leaf='e')
 JANELAS = [
     (599.46,142.50,604.03,193.20), (599.46,215.00,604.03,300.80),
     (599.46,348.00,604.03,394.40), (599.46,455.70,604.03,509.80),
@@ -97,10 +109,15 @@ def arco_pts(n=28, invertido=False):
                     CURVA_CY - CURVA_RY * math.sin(th)))
     return list(reversed(pts)) if invertido else pts
 
-# --- teto: área marcada pelo cliente (claraboia / vazio da laje) ------------
-# 1,92 x 3,00 m sobre a sala, encostada na fachada leste.
-AREA_TETO = (px_(5.83), py_(2.00), px_(7.748), py_(5.00))
-AREA_TETO_M2 = 1.92 * 3.00
+# --- área da piscina do pavimento superior ---------------------------------
+# 1,92 x 3,00 m, centrada no cruzamento marcado pelo cliente (6,13 / 3,14 m).
+PISCINA_CX, PISCINA_CY = 6.13, 3.14
+PISCINA_W, PISCINA_H = 1.92, 3.00
+AREA_PISCINA = (px_(PISCINA_CX - PISCINA_W / 2), py_(PISCINA_CY - PISCINA_H / 2),
+                px_(PISCINA_CX + PISCINA_W / 2), py_(PISCINA_CY + PISCINA_H / 2))
+AREA_PISCINA_M2 = PISCINA_W * PISCINA_H
+AREA_TETO = AREA_PISCINA          # compatibilidade
+AREA_TETO_M2 = AREA_PISCINA_M2
 
 # ---------------------------------------------------------------------------
 # 2. PALETA
@@ -222,13 +239,14 @@ def fundo_ambientes(d, cor=MONO, opacity=1.0):
     for k in ROOM_ORDER:
         d.path(path_d([d.P(x, y) for x, y in ROOMS[k]['poly']]), fill=cor, opacity=opacity)
 
-def paredes(d, ghost_drywall=True):
+def paredes(d, estado='novo'):
+    """estado='existente' mantém o fundo do box em vidro; 'novo' o fecha em parede."""
     for r in WALLS:
         x, y, w_, h_ = d.R(r)
         d.rect(x, y, w_, h_, fill=WALL)
-    if ghost_drywall:
-        x, y, w_, h_ = d.R(DRYWALL_SALA_QUARTO)
-        d.rect(x, y, w_, h_, fill='none', stroke=GHOST, sw=0.9, dash='4 3')
+    if estado == 'novo':
+        x, y, w_, h_ = d.R(PAREDE_FUNDO_BOX)
+        d.rect(x, y, w_, h_, fill=WALL)
 
 def vidro_box(d, rotulo=True):
     """Pano de vidro chão-teto no fundo do box, ponta a ponta."""
@@ -243,6 +261,21 @@ def vidro_box(d, rotulo=True):
 def vao(d, r):
     x, y, w_, h_ = d.R(r)
     d.rect(x - 0.3, y - 0.3, w_ + 0.6, h_ + 0.6, fill=BG)
+
+def porta_horizontal(d, rect, hinge='w', swing='s'):
+    """Porta em parede horizontal: dobradiça a oeste/leste, abrindo para norte/sul."""
+    vao(d, rect)
+    x, y, w_, h_ = d.R(rect)
+    leaf = w_
+    hx = x if hinge == 'w' else x + w_
+    hy = y + h_ if swing == 's' else y
+    ex = hx + (leaf if hinge == 'w' else -leaf)
+    ty = hy + (leaf if swing == 's' else -leaf)
+    d.line(hx, hy, hx, ty, WALL, 1.4)
+    flag = 1 if (hinge == 'w') == (swing == 'n') else 0
+    d.add('<path d="M %.2f %.2f A %.2f %.2f 0 0 %d %.2f %.2f" fill="none" stroke="%s" '
+          'stroke-width="0.8" opacity="0.5"/>' % (hx, ty, leaf, leaf, flag, ex, hy, WALL))
+
 
 def porta(d, door):
     vao(d, door['rect'])
@@ -316,14 +349,17 @@ def escala(d, y):
         d.txt(ox + i * S, y + 16, str(i), 7.2, INK_SOFT, 'normal', 'middle')
     d.txt(ox + 2 * S + 13, y + 16, 'm   (base do scan)', 7.2, INK_SOFT)
 
-def planta_base(d, fundo=True, com_rotulos=True, areas=True):
+def planta_base(d, estado='novo', fundo=True, com_rotulos=True, areas=True):
     if fundo:
         fundo_ambientes(d, MONO, 0.55)
-    paredes(d)
+    paredes(d, estado)
     janelas(d)
-    vidro_box(d)
+    if estado == 'existente':
+        vidro_box(d)
     porta(d, DOOR_ENTRADA)
     porta(d, DOOR_BANHO)
+    if estado == 'novo':
+        porta_horizontal(d, PORTA_NOVA, hinge='w', swing='s')
     escada(d)
     if com_rotulos:
         rotulos(d, areas=areas)

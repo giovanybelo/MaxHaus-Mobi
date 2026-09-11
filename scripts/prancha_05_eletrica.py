@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. C'
+REV = 'REV. D'
 PRANCHA = 'Prancha 05 / 08'
 
 # --- pontos existentes marcados pelo cliente (metros) -----------------------
@@ -27,7 +27,8 @@ TOMADAS_NOVAS = [
 # --- comandos ---------------------------------------------------------------
 COMANDOS = [
     ('S01', 0.90, 3.05), ('S02', 4.17, 2.30), ('S03', 2.35, 4.60),
-    ('S04', 3.95, 5.45), ('S05', 2.35, 7.05), ('S06', 4.05, 7.35),
+    ('S04', 3.92, 4.80), ('S05', 4.05, 7.35),
+    ('S06', 5.05, 9.05), ('S07', 6.95, 9.05),
 ]
 QUADRO = (1.35, 2.35)
 
@@ -36,7 +37,7 @@ LINHAS = [
      'tensão, fases, demanda, proteção e espaços'),
     ('Tomadas existentes', '9 posições levantadas pelo cliente', 'confirmar altura, caixa e circuito'),
     ('Tomadas novas', '8 reservas — T10 a T17', 'não é número normativo nem total final'),
-    ('Comandos', '6 posições de acesso — S01 a S06', 'lado da porta, marcenaria e cenas'),
+    ('Comandos', '7 posições — S01 a S07, duas na cabeceira', 'lado da porta, marcenaria e cenas'),
     ('Cozinha', 'geladeira, forno, lava-louças, coifa e bancada', 'pontos dedicados, circuito exclusivo'),
     ('Ar-condicionado', 'alimentação conforme manual da unidade', 'quem alimenta varia com o sistema'),
     ('Banheiro', 'ponto junto ao lavatório a validar', 'volumes de proteção, DR e cargas'),
@@ -56,6 +57,10 @@ NOTAS = [
     ['**Os pontos T01 a T09 são os existentes que você marcou em planta.',
      'Estão desenhados na posição aproximada do levantamento: servem para decidir o que se aproveita',
      'e o que se remaneja, não para medir. T10 a T17 são reservas novas do estudo.'],
+    ['**Comandos revisados nesta folha.',
+     'O comando que caía dentro do box saiu; o que ficava junto à porta do quarto passou a S05,',
+     'agora ao lado da porta nova da drywall. S06 e S07 são os dois novos comandos da cabeceira,',
+     'um de cada lado da cama, em paralelo com as luminárias P02 e P03 da Prancha 04.'],
     ['**Circuitos, seções, disjuntores, aterramento, DR, demanda e proteção contra surtos',
      'ficam a cargo do projeto elétrico após o levantamento. Não usar estas reservas como projeto',
      'para o eletricista executar.'],
@@ -72,11 +77,11 @@ def construir():
     S = 70.0
     d.set_plan(70, 156, S)
     fundo_ambientes(d, '#edeae3')
-    paredes(d)
+    paredes(d, estado='novo')
     janelas(d)
-    vidro_box(d)
     porta(d, DOOR_ENTRADA)
     porta(d, DOOR_BANHO)
+    porta_horizontal(d, PORTA_NOVA, hinge='w', swing='s')
     escada(d)
     for k, lx, ly in (('jantar', 520.0, 145.0), ('sala', 500.0, 300.0),
                       ('cozinha', 310.0, 350.0), ('closet', 300.0, 505.0),
