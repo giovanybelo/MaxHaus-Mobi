@@ -77,6 +77,7 @@ h1{
 .sw.joint{
   width:22px; height:0; border:0; border-top:2px dashed var(--joint); background:none;
 }
+.sw.ghost{background:none; border:1px dashed #9aa2ab;}
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .sw.joint{border-top-color:#cbd5dd} }
 :root[data-theme="dark"] .sw.joint{border-top-color:#cbd5dd}
 
@@ -171,9 +172,9 @@ def build():
     b = read('planta-opcao-b.svg')
 
     tabela_a = ('<table><caption>Quadro de áreas — opção A (m²)</caption><tbody>'
-        + linha(SW_WOOD, 'Cumaru', 'sala 23,00 + quarto 13,40 + jantar 5,90', '42,30')
-        + linha(SW_NONE, '+ reserva 10%', 'cortes, perdas e reposição futura', '46,53')
-        + linha(SW_MONO, 'Monolítico', 'cozinha 8,90 + closet 5,30', '14,20')
+        + linha(SW_WOOD, 'Cumaru', 'sala 23,00 + quarto 13,40 + jantar 5,90 + hall 1,94', '44,24')
+        + linha(SW_NONE, '+ reserva 10%', 'cortes, perdas e reposição futura', '48,66')
+        + linha(SW_MONO, 'Monolítico', 'cozinha 6,96 (de 8,90) + closet 5,30', '12,26')
         + linha(SW_WET,  'Banheiro', 'sistema à parte (área molhada)', '3,80')
         + '<tr class="total"><td class="key">Total do pavimento</td><td class="det"></td>'
           '<td class="n">60,30</td></tr></tbody></table>')
@@ -186,17 +187,20 @@ def build():
           '<td class="n">60,30</td></tr></tbody></table>')
 
     notas_a = ('<ul class="notes">'
-      '<li>Cumaru só nas áreas secas de convívio — <b>sala, jantar e quarto</b>, 42,30 m² líquidos.</li>'
-      '<li>Com <b>reserva de 10%</b> para cortes, perdas e reposição futura: 46,53 m² de material.</li>'
-      '<li><b>Cozinha e closet</b> recebem o mesmo monolítico da opção B — 14,20 m² contínuos.</li>'
-      '<li>A extensão da cozinha sobe pelo corredor e <b>termina na soleira da porta de entrada</b>; '
-      'do hall e da escada em diante, o piso é cumaru.</li>'
+      '<li>A cozinha sobe pela extensão e <b>para na quina da porta de entrada</b>: dali a ponta do '
+      'monolítico <b>gira em curva</b> — arco de raio 1,49 m, tangente à parede da entrada e à parede '
+      'do banheiro.</li>'
+      '<li>O <b>hall e a escada</b> ficam em cumaru. São 1,94 m² que o scan contabiliza dentro da '
+      'cozinha — por isso a cozinha entra no quadro com 6,96 m² e não com 8,90 m².</li>'
+      '<li>Cumaru nas áreas secas de convívio: <b>44,24 m² líquidos</b>; com reserva de 10% para '
+      'cortes e reposição, 48,66 m² de material.</li>'
+      '<li><b>Closet</b> inteiro em monolítico, com junta de transição no vão para o quarto.</li>'
       '<li>Banheiro fora dos dois sistemas: 3,80 m² em solução própria de área molhada.</li>'
       '</ul>')
 
     notas_b = ('<ul class="notes">'
       '<li>Monolítico contínuo em <b>56,50 m²</b> de base horizontal — 60,30 m² do pavimento '
-      'menos os 3,80 m² do banheiro.</li>'
+      'menos os 3,80 m² do banheiro — <b>sem junta de material</b> entre os ambientes secos.</li>'
       '<li><b>Sem reserva de material</b>: aplicação moldada in loco, sem perda de corte.</li>'
       '<li><b>Degraus excluídos</b>; o piso acessível sob a escada permanece.</li>'
       '<li>Juntas de dilatação e de transição a definir no projeto executivo.</li>'
@@ -208,10 +212,10 @@ def build():
         ('Obra', 'MaxHaus MainFloor — João Baldinato 109, 81I', ''),
         ('Assunto', 'Pisos: cumaru nas áreas secas × monolítico', ''),
         ('Prancha', '03 / 08', 'mono'),
-        ('Revisão', 'B — 11.09.2026', 'mono'),
+        ('Revisão', 'C — 11.09.2026', 'mono'),
+        ('Formato', 'A3 deitado — 420 × 297 mm', 'mono'),
         ('Escala', 'gráfica (barra de 2 m em cada planta)', ''),
         ('Base', 'scan MaxHaus MainFloor, 02.09.2026', ''),
-        ('Áreas', '60,30 m² no pavimento', 'mono'),
         ('Situação', 'Estudo preliminar — não liberado para execução', 'warn'),
     ]
     stamp_html = ''.join(
@@ -219,7 +223,7 @@ def build():
         for (k, v, c) in stamp)
 
     return """<title>Cumaru ou monolítico</title>
-<meta name="description" content="Prancha 03 REV. B — comparação de pisos do MainFloor MaxHaus.">
+<meta name="description" content="Prancha 03 REV. C — comparação de pisos do MainFloor MaxHaus.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -235,7 +239,7 @@ def build():
       levantamento do apartamento. Cores ilustrativas: nenhum produto, marca ou espessura está
       especificado nesta fase.</p>
     </div>
-    <p class="rev">REV. B · 11.09.2026</p>
+    <p class="rev">REV. C · 11.09.2026</p>
   </header>
 
   <div class="rule"></div>
@@ -245,6 +249,7 @@ def build():
     <span><i class="sw mono"></i>Piso monolítico</span>
     <span><i class="sw wet"></i>Banheiro — sistema à parte (área molhada)</span>
     <span><i class="sw joint"></i>Junta / soleira de transição entre acabamentos</span>
+    <span><i class="sw ghost"></i>Parede de drywall retirada</span>
   </div>
 
   <div class="rule"></div>
@@ -258,8 +263,8 @@ def build():
       </div>
       <figure>
         <div class="plate">""" + a + """</div>
-        <figcaption>Planta do MainFloor — cumaru na sala, no jantar e no quarto; monolítico na
-        cozinha, na extensão até a porta de entrada e no closet.</figcaption>
+        <figcaption>Planta do MainFloor — cumaru na sala, no jantar, no quarto e no hall da entrada;
+        monolítico na cozinha e no closet, com a ponta em curva na quina da porta.</figcaption>
       </figure>
       """ + tabela_a + notas_a + """
     </section>
@@ -284,15 +289,17 @@ def build():
   <section class="changes">
     <h2>O que muda nesta revisão</h2>
     <ol>
-      <li><b>Cozinha e closet saem do cumaru</b> e passam a monolítico dentro da opção A: o cumaru
-      cai de 47,60 m² para 42,30 m² líquidos e 14,20 m² migram para o monolítico.</li>
-      <li><b>A extensão da cozinha termina na soleira da porta de entrada.</b> O hall e a área da
-      escada ficam com o piso da área social — a junta está marcada em planta.</li>
-      <li><b>O banheiro sai do monolítico nas duas opções</b>: 3,80 m² passam a sistema próprio de
-      área molhada, a especificar.</li>
-      <li><b>O piso está desenhado contínuo.</b> Toda a área é revestida, inclusive sob móveis e
-      equipamentos; nenhum recorte de mobiliário foi descontado — por isso as plantas não têm mais
-      os vazios brancos da versão anterior.</li>
+      <li><b>A cozinha vai até a quina da porta de entrada e a ponta é em curva.</b> O arco tem raio
+      de 1,49 m e sai tangente à parede da entrada, fechando na parede do banheiro — como no croqui.
+      O hall e a escada (1,94 m²) passam para o cumaru: a cozinha entra com 6,96 m² e o cumaru sobe
+      para 44,24 m² líquidos.</li>
+      <li><b>A parede do box do banheiro está fechada.</b> A abertura que o scan mostrava na parede
+      sul era o vidro do box, não um vão — o banheiro agora tem só a porta.</li>
+      <li><b>A drywall entre sala e quarto foi retirada</b>, indicada em fantasma na planta. A sala e
+      o quarto viram um espaço contínuo; a faixa sob a parede acrescenta cerca de 0,40 m² de piso,
+      a conferir em obra.</li>
+      <li><b>O banheiro segue fora do monolítico nas duas opções</b> e o piso continua desenhado
+      contínuo, inclusive sob móveis e equipamentos.</li>
     </ol>
   </section>
 
@@ -302,9 +309,11 @@ def build():
 
   <p class="fine">Áreas conforme o levantamento MaxHaus MainFloor (captura de 02.09.2026):
   sala 23,00 · quarto 13,40 · cozinha 8,90 · jantar 5,90 · closet 5,30 · banheiro 3,80 m².
-  A escada é o único elemento deduzido da base horizontal, conforme nota da opção B.
-  Geometria de paredes, vãos e ambientes extraída do arquivo do scan; quantitativos para orçamento
-  devem ser conferidos em obra antes de qualquer compra.</p>
+  A escada é o único elemento deduzido da base horizontal, conforme nota da opção B; a faixa liberada
+  pela drywall retirada (~0,40 m²) não está somada a esses números. Geometria de paredes, vãos e
+  ambientes extraída do arquivo do scan. A prancha fechada em A3 (420 × 297 mm) está no arquivo
+  <code>prancha-03-cumaru-ou-monolitico-A3.pdf</code>; quantitativos para orçamento devem ser
+  conferidos em obra antes de qualquer compra.</p>
 
 </div>
 """
