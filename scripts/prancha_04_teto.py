@@ -1,0 +1,223 @@
+# -*- coding: utf-8 -*-
+"""Prancha 04 — Teto: laje aparente, iluminação e ar-condicionado (REV. C).
+
+Substitui as pranchas anteriores de iluminação e de ar-condicionado: sem forro,
+as duas disciplinas dividem a mesma laje e precisam ser resolvidas juntas.
+"""
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from base_mainfloor import *      # noqa
+
+REV = 'REV. C'
+PRANCHA = 'Prancha 04 / 08'
+
+# --- trilhos eletrificados: (id, (x0,y0), (x1,y1), nº de spots) em metros ---
+TRILHOS = [
+    ('TR1', (4.75, 0.95), (7.50, 0.95), 4),   # jantar
+    ('TR2', (4.55, 3.20), (4.55, 6.40), 4),   # sala, eixo norte-sul
+    ('TR3', (4.20, 6.25), (7.50, 6.25), 4),   # sala, faixa sul
+    ('TR4', (1.45, 3.90), (1.45, 6.40), 4),   # cozinha
+    ('TR5', (4.20, 8.35), (7.50, 8.35), 4),   # quarto
+    ('TR6', (0.95, 7.25), (0.95, 9.05), 3),   # closet
+]
+
+# --- luminárias de destaque (corpo maior que os spots dos trilhos) ----------
+DESTAQUES = [
+    ('P01', 6.12, 0.98, 'jantar'),
+    ('P02', 6.10, 8.55, 'cama'),
+    ('P03', 3.70, 8.30, 'office'),
+]
+
+# --- pontos existentes marcados pelo cliente (a confirmar em obra) ----------
+EXISTENTES = [
+    ('E1', 2.55, 5.15, 'arandela do espelho'),
+    ('E2', 3.05, 5.15, 'arandela do espelho'),
+    ('E3', 3.05, 5.70, 'luz do box'),
+    ('E4', 5.17, 9.25, 'arandela'),
+    ('E5', 7.37, 9.25, 'arandela'),
+    ('E6', 0.42, 5.30, 'luz da cozinha'),
+]
+
+# --- banheiro: único ambiente com forro --------------------------------------
+EMBUTIDOS_WC = [(2.60, 4.85), (3.30, 4.85)]
+
+# --- ar-condicionado, coifa e exaustão --------------------------------------
+MAQUINAS = [
+    ('AC01', 5.35, 2.02, 'evaporadora — social + cozinha'),
+    ('AC02', 5.72, 9.15, 'evaporadora — quarto + closet'),
+    ('EX01', 3.06, 6.06, 'exaustor do banheiro'),
+    ('CF01', 0.60, 6.20, 'coifa da cozinha'),
+]
+
+TAB_LUZ = [
+    ('Sala',     '150 lux', '7.188 lm', '2.700 K'),
+    ('Quarto',   '150 lux', '4.188 lm', '2.700 K'),
+    ('Cozinha',  '300 lux', '5.563 lm', '3.000 K'),
+    ('Jantar',   '150 lux', '1.844 lm', '2.700 K'),
+    ('Closet',   '200 lux', '2.208 lm', '3.000 K'),
+    ('Banheiro', '200 lux', '1.583 lm', '3.000 K'),
+]
+TAB_AR = [
+    ('Social + cozinha',   '37,80 m²', '22.680 BTU/h', '30.240 BTU/h'),
+    ('Quarto + closet',    '18,70 m²', '11.220 BTU/h', '14.960 BTU/h'),
+    ('Total sem banheiro', '56,50 m²', '33.900 BTU/h', '45.200 BTU/h'),
+]
+
+NOTAS = [
+    ['**Não há forro: a laje de concreto é o teto acabado.',
+     'Toda a iluminação passa a ser aplicada — trilhos eletrificados, spots de sobrepor e',
+     'pendentes. Nada de embutido fora do banheiro, único ambiente que mantém forro para',
+     'abrigar a exaustão e a luminária do box.'],
+    ['**Fiação e infraestrutura ficam à vista.',
+     'Prever perfilados, eletrocalhas ou canaletas pintadas, alinhados às vigas e aos trilhos.',
+     'O caminho da fiação vira projeto de desenho, não sobra de obra: definir antes de furar a laje.'],
+    ['**P01, P02 e P03 são as três luminárias de destaque pedidas pelo cliente',
+     '— jantar, cama e office. Corpo e diâmetro maiores que os spots dos trilhos, em pendente',
+     'ou plafon de sobrepor. As demais posições são reserva de estudo, não quantidade final.'],
+    ['**Ar-condicionado sem forro: não há plenum para dutar.',
+     'Trabalhar com evaporadoras hi-wall ou cassete aparente. Tubulação frigorígena, dreno e',
+     'interligação elétrica correm aparentes, em calha, com caimento contínuo do dreno.',
+     'Somente Electrolux; marca igual não garante compatibilidade entre unidades.'],
+    ['**A área de teto marcada (1,92 × 3,00 m = 5,76 m²) condiciona a modulação.',
+     'Nem luminária, nem trilho, nem evaporadora ou tubulação podem invadi-la. Os trilhos foram',
+     'posicionados fora dela: TR1 ao norte, TR2 a oeste e TR3 ao sul.'],
+    ['**A reserva AC01 do estudo anterior caía dentro da área marcada.',
+     'Foi deslocada para oeste, mantendo a insuflação para sala e jantar. A posição definitiva',
+     'depende de confirmar apoio acima do limite sala/jantar e o modelo da condensadora existente:',
+     'não assumir que ela admite duas evaporadoras.'],
+    ['**Comandos: cenas geral / tarefa / noturna, com acionamento no acesso de cada ambiente.',
+     'Trilho permite remanejar spots depois — o comando é que precisa estar certo desde já.',
+     'Priorizar boa reprodução de cores no espelho e no closet.'],
+    ['**Vazões de referência, a validar com perda de carga do duto:',
+     'banheiro 3,8 × 2,62 × 10 = 99,56 m³/h; coifa 8,9 × 2,62 × 12 = 279,82 m³/h — este último',
+     'valeria só se a cozinha fosse isolada. Cozinha integrada exige seleção por captura no fogão.',
+     'Coifa e exaustão do banheiro precisam de rotas e descargas próprias; não interligar.'],
+]
+
+
+def construir():
+    d = folha_nova()
+    cabecalho(d, 'Teto: laje aparente, iluminação e ar-condicionado',
+              'Distribuição conceitual sobre a laje de concreto. Reservas de posição, não quantidade final de luminárias nem de equipamentos.',
+              REV, 'sem forro — tudo aplicado na laje',
+              'exceção: banheiro mantém forro')
+
+    S = 70.0
+    d.set_plan(70, 156, S)
+    fundo_ambientes(d, '#edeae3')
+    paredes(d)
+    janelas(d)
+    vidro_box(d)
+    porta(d, DOOR_ENTRADA)
+    porta(d, DOOR_BANHO)
+    escada(d)
+
+    # banheiro: único ambiente com forro
+    pp = [d.P(px, py) for px, py in ROOMS['banheiro']['poly']]
+    d.path(path_d(pp), fill=WET, opacity=0.6)
+    d.path(path_d(pp), fill='none', stroke=WET_LINE, sw=0.9, dash='3 2.5')
+
+    # área de teto marcada pelo cliente
+    x, y, w_, h_ = d.R(AREA_TETO)
+    d.rect(x, y, w_, h_, fill='#d9d2c4', opacity=0.55)
+    d.rect(x, y, w_, h_, fill='none', stroke='#8a7f68', sw=1.2, dash='6 4')
+    t = -h_
+    while t <= w_:
+        ax, ay = x + max(0.0, t), y + h_ - max(0.0, -t) * 0 - (h_ - min(h_, h_)) 
+        x0 = x + max(0.0, t); y0 = y + h_ - (x0 - (x + t))
+        x1 = min(x + w_, x + t + h_); y1 = y + h_ - (x1 - (x + t))
+        if x1 > x0:
+            d.line(x0, y0, x1, y1, '#8a7f68', 0.5, opacity=0.30)
+        t += 13
+    d.txt(x + w_ / 2, y + h_ / 2 - 4, 'ÁREA DE TETO MARCADA', 7.4, '#6f6551', 'bold', 'middle', ls=0.5)
+    d.txt(x + w_ / 2, y + h_ / 2 + 8, '1,92 × 3,00 m  ·  5,76 m²', 7.4, '#6f6551', 'normal', 'middle')
+
+    for k, lx, ly in (('jantar', 520.0, 142.0), ('sala', 470.0, 300.0),
+                      ('cozinha', 336.0, 350.0), ('closet', 323.0, 505.0),
+                      ('quarto', 500.0, 470.0), ('banheiro', 380.6, 345.0)):
+        ROOMS[k]['lx'], ROOMS[k]['ly'] = lx, ly
+    rotulos(d, areas=False, size=8.4)
+
+    # trilhos + spots
+    for (ident, p0, p1, n) in TRILHOS:
+        a = d.PM(*p0); b = d.PM(*p1)
+        d.line(a[0], a[1], b[0], b[1], BG, 5.0)
+        d.line(a[0], a[1], b[0], b[1], INK, 2.6, cap='round')
+        for i in range(n):
+            t_ = (i + 0.5) / float(n)
+            cx = a[0] + (b[0] - a[0]) * t_
+            cy = a[1] + (b[1] - a[1]) * t_
+            d.circle(cx, cy, 4.0, fill=BG, stroke=INK, sw=1.2)
+            d.circle(cx, cy, 1.5, fill=INK)
+        vertical = abs(b[0] - a[0]) < 1
+        if vertical:
+            d.txt(a[0] + 9, a[1] - 6, ident, 7.2, INK, 'bold', 'start', ls=0.4)
+        else:
+            d.txt(a[0] - 9, a[1] + 3, ident, 7.2, INK, 'bold', 'end', ls=0.4)
+
+    # luminárias de destaque
+    for (ident, xm, ym, nome) in DESTAQUES:
+        cx, cy = d.PM(xm, ym)
+        d.circle(cx, cy, 10.5, fill='#fdf3e2', stroke=NEW, sw=1.8)
+        d.circle(cx, cy, 3.4, fill=NEW)
+        d.txt(cx, cy + 22, ident + ' · ' + nome, 7.4, NEW, 'bold', 'middle', ls=0.3)
+
+    # embutidos do banheiro
+    for (xm, ym) in EMBUTIDOS_WC:
+        cx, cy = d.PM(xm, ym)
+        d.circle(cx, cy, 4.0, fill=BG, stroke=WET_LINE, sw=1.3)
+
+    # pontos existentes
+    for (ident, xm, ym, nome) in EXISTENTES:
+        cx, cy = d.PM(xm, ym)
+        d.circle(cx, cy, 4.6, fill='none', stroke=EXIST, sw=1.3)
+        d.line(cx - 3.2, cy - 3.2, cx + 3.2, cy + 3.2, EXIST, 1.0)
+
+    # máquinas
+    for (ident, xm, ym, nome) in MAQUINAS:
+        cx, cy = d.PM(xm, ym)
+        if ident.startswith('AC'):
+            d.rect(cx - 18, cy - 6, 36, 12, fill='#e2eef2', stroke=AIR, sw=1.4)
+            d.txt(cx, cy + 3.4, ident, 7.0, AIR, 'bold', 'middle', ls=0.3)
+        else:
+            d.circle(cx, cy, 6.0, fill='#e2eef2', stroke=AIR, sw=1.4)
+            d.line(cx - 3, cy, cx + 3, cy, AIR, 1.0)
+            d.line(cx, cy - 3, cx, cy + 3, AIR, 1.0)
+            d.txt(cx + 10, cy + 3, ident, 7.0, AIR, 'bold', 'start', ls=0.3)
+
+    escala(d, 156 + BUILDING_H * S + 26)
+    legenda(d, [('line', INK, 'Trilho eletrificado + spots de sobrepor'),
+                ('dotf', NEW, 'Luminária de destaque (corpo maior)'),
+                ('dot', EXIST, 'Ponto existente — confirmar'),
+                ('dot', WET_LINE, 'Embutido no forro do banheiro'),
+                ('fill', '#e2eef2', 'Ar-condicionado / exaustão')],
+            70, 156 + BUILDING_H * S + 64)
+
+    d.line(690, 140, 690, 900, RULE, 0.8, opacity=0.8)
+
+    cx, cw = 722, W - MARGIN - 722
+    fim = tabela(d, cx, 160, cw,
+                 [('Ambiente', 0.34, 'start'), ('Alvo geral', 0.22, 'end'),
+                  ('Fluxo inicial', 0.22, 'end'), ('Temperatura de cor', 0.22, 'end')],
+                 TAB_LUZ, titulo='ILUMINAÇÃO POR AMBIENTE')
+    fim = tabela(d, cx, fim + 44, cw,
+                 [('Zona', 0.34, 'start'), ('Área', 0.22, 'end'),
+                  ('Base sombra', 0.22, 'end'), ('Base sol', 0.22, 'end')],
+                 TAB_AR, titulo='AR-CONDICIONADO — REGRA SIMPLIFICADA 600/800 BTU/h POR m²')
+    paragrafos(d, cx, fim + 30, cw, NOTAS, size=8.4, lh=12.4, gap=8.0)
+
+    rodape(d,
+           'Fluxo = área × lux ÷ (0,60 × 0,80). Fatores de utilização e manutenção são hipóteses; a laje aparente escura reduz o fator de utilização e deve ser reavaliada.',
+           'Carga térmica não é carga final: claraboia, insolação, escada aberta e ocupação mudam o resultado. Estudar 2 ou 3 evaporadoras; não há número fechado de aparelhos.',
+           PRANCHA, REV)
+    return d
+
+
+if __name__ == '__main__':
+    raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    pasta = os.path.join(raiz, 'pranchas')
+    caminho = salvar(construir(), pasta, 'prancha-04-teto')
+    exportar_pdf_a3([caminho], os.path.join(pasta, 'prancha-04-teto-A3.pdf'),
+                    'MaxHaus MainFloor — Prancha 04: teto, iluminação e ar-condicionado')
+    exportar_png(caminho, os.path.join(pasta, 'prancha-04-teto.png'))
+    print('ok prancha 04')

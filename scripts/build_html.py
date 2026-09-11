@@ -156,74 +156,104 @@ ul.notes li b{color:var(--ink); font-weight:600;}
 .stamp .v.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums;}
 .stamp .v.warn{color:var(--stamp); font-weight:600;}
 .fine{font-size:12px; color:var(--muted); margin-top:16px; max-width:95ch;}
+
+.sheet-frame{
+  border:1px solid var(--line); background:#faf8f4; box-shadow:var(--shadow);
+  overflow-x:auto; border-radius:2px; padding:0;
+}
+.sheet-frame > div{min-width:940px;}
+.sheet-frame svg{display:block; width:100%; height:auto;}
+.board{margin-top:8px;}
+.board + .board{margin-top:44px;}
+.board-head{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; margin-bottom:12px;}
+.hint{font-size:11.5px; color:var(--muted); margin:8px 0 0;}
+.keyrow{display:flex; flex-wrap:wrap; gap:8px 10px; margin:14px 0 0;}
+.chip{
+  font-size:12px; border:1px solid var(--line); border-radius:2px; padding:5px 9px;
+  background:var(--card); color:var(--ink-2);
+}
+.chip b{color:var(--ink); font-weight:600;}
+.chip.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums;}
 """
 
-def linha(cor, nome, det, val):
-    return ('<tr><td class="key"><span class="dot" style="%s"></span>%s</td>'
-            '<td class="det">%s</td><td class="n">%s</td></tr>' % (cor, nome, det, val))
+BOARDS = [
+    ('02', 'Demolição e desmontagem', 'prancha-02-demolicao.svg',
+     'Escopo sobre o modelo do scan: o que sai, o que se desmonta para remontar e o que fica.',
+     ['<b>13</b> alvos catalogados', '<b>Forro:</b> retirada total',
+      '<b>Vidro do box:</b> mantido', '<b>Drywall sala/quarto:</b> 4,08 m']),
+    ('03', 'Pisos: cumaru ou monolítico', 'prancha-03-cumaru-ou-monolitico.svg',
+     'Duas opções na mesma planta e na mesma escala, com a ponta da cozinha em curva na quina da porta.',
+     ['<b>A · cumaru</b> 44,24 m² (48,66 com reserva)', '<b>A · monolítico</b> 12,26 m²',
+      '<b>B · monolítico</b> 56,50 m²', '<b>Banheiro</b> 3,80 m² à parte']),
+    ('04', 'Teto, iluminação e ar-condicionado', 'prancha-04-teto.svg',
+     'Sem forro, luz e ar dividem a mesma laje: trilhos aplicados, três luminárias de destaque e evaporadoras aparentes.',
+     ['<b>6</b> trilhos eletrificados', '<b>P01–P03</b> destaques: jantar, cama, office',
+      '<b>Área marcada</b> 1,92 × 3,00 m', '<b>33.900–45.200</b> BTU/h']),
+    ('05', 'Tomadas, comandos e quadro', 'prancha-05-eletrica.svg',
+     'Reservas de localização com os pontos existentes que você marcou e o quadro junto à porta de entrada.',
+     ['<b>9</b> tomadas existentes', '<b>8</b> reservas novas',
+      '<b>6</b> comandos', '<b>Quadro</b> na entrada']),
+]
 
-SW_WOOD = 'background:#c2813f;border-color:#9c6530'
-SW_MONO = 'background:#d8d4cc'
-SW_WET  = 'background:#cfe1ea;border-color:#5e8ca3'
-SW_NONE = 'background:transparent;border-style:dashed'
+DECISOES = [
+    ('Sem forro em todo o MainFloor',
+     'O teto é a laje de concreto aparente. A iluminação passa a ser aplicada — trilhos '
+     'eletrificados, spots de sobrepor e pendentes — e o ar-condicionado trabalha sem plenum, '
+     'com evaporadoras e tubulação aparentes. Só o banheiro mantém forro, para abrigar a '
+     'exaustão e a luminária do box.'),
+    ('O fundo do box é um pano de vidro chão-teto, ponta a ponta',
+     'O scan tinha lido esse pano como vão e a revisão anterior o tinha fechado como parede. '
+     'Corrigido em todas as pranchas: o vidro fica, o que sai é o fechamento do box, o '
+     'revestimento e o piso.'),
+    ('Três luminárias maiores que as demais',
+     'Jantar, cama e office ganham corpo e diâmetro maiores que os spots dos trilhos — são os '
+     'pontos de destaque do projeto, marcados como P01, P02 e P03.'),
+    ('A área de teto marcada condiciona luz e ar',
+     '1,92 × 3,00 m sobre a sala, encostada na fachada leste. Nem trilho, nem luminária, nem '
+     'evaporadora ou tubulação podem invadi-la — a reserva AC01 do estudo anterior caía dentro '
+     'dela e foi deslocada.'),
+    ('Drywall entre sala e quarto retirada',
+     'Sala e quarto viram um espaço contínuo. A faixa sob a parede acrescenta cerca de 0,40 m² '
+     'de piso, a conferir em obra.'),
+]
+
 
 def build():
-    a = read('planta-opcao-a.svg')
-    b = read('planta-opcao-b.svg')
+    boards_html = []
+    for (cod, titulo, arquivo, desc, chips) in BOARDS:
+        svg = read(arquivo)
+        chips_html = ''.join('<span class="chip">%s</span>' % c for c in chips)
+        boards_html.append(
+            '<section class="board" id="p%s">'
+            '<div class="board-head"><span class="opt-code">%s</span>'
+            '<h2 class="opt-title">%s</h2></div>'
+            '<p class="lede" style="margin:0 0 14px">%s</p>'
+            '<div class="sheet-frame"><div>%s</div></div>'
+            '<p class="hint">Folha A3 deitada (420 × 297 mm). Role na horizontal para ler a prancha inteira; '
+            'o PDF vetorial está no arquivo <code>%s</code>.</p>'
+            '<div class="keyrow">%s</div>'
+            '</section>' % (cod, cod, titulo, desc, svg,
+                            arquivo.replace('.svg', '-A3.pdf'), chips_html))
 
-    tabela_a = ('<table><caption>Quadro de áreas — opção A (m²)</caption><tbody>'
-        + linha(SW_WOOD, 'Cumaru', 'sala 23,00 + quarto 13,40 + jantar 5,90 + hall 1,94', '44,24')
-        + linha(SW_NONE, '+ reserva 10%', 'cortes, perdas e reposição futura', '48,66')
-        + linha(SW_MONO, 'Monolítico', 'cozinha 6,96 (de 8,90) + closet 5,30', '12,26')
-        + linha(SW_WET,  'Banheiro', 'sistema à parte (área molhada)', '3,80')
-        + '<tr class="total"><td class="key">Total do pavimento</td><td class="det"></td>'
-          '<td class="n">60,30</td></tr></tbody></table>')
-
-    tabela_b = ('<table><caption>Quadro de áreas — opção B (m²)</caption><tbody>'
-        + linha(SW_MONO, 'Monolítico', 'sala, jantar, quarto, cozinha e closet', '56,50')
-        + linha(SW_WET,  'Banheiro', 'sistema à parte (área molhada)', '3,80')
-        + linha(SW_NONE, 'Sem reserva', 'aplicação moldada in loco, sem perda de corte', '—')
-        + '<tr class="total"><td class="key">Total do pavimento</td><td class="det"></td>'
-          '<td class="n">60,30</td></tr></tbody></table>')
-
-    notas_a = ('<ul class="notes">'
-      '<li>A cozinha sobe pela extensão e <b>para na quina da porta de entrada</b>: dali a ponta do '
-      'monolítico <b>gira em curva</b> — arco de raio 1,49 m, tangente à parede da entrada e à parede '
-      'do banheiro.</li>'
-      '<li>O <b>hall e a escada</b> ficam em cumaru. São 1,94 m² que o scan contabiliza dentro da '
-      'cozinha — por isso a cozinha entra no quadro com 6,96 m² e não com 8,90 m².</li>'
-      '<li>Cumaru nas áreas secas de convívio: <b>44,24 m² líquidos</b>; com reserva de 10% para '
-      'cortes e reposição, 48,66 m² de material.</li>'
-      '<li><b>Closet</b> inteiro em monolítico, com junta de transição no vão para o quarto.</li>'
-      '<li>Banheiro fora dos dois sistemas: 3,80 m² em solução própria de área molhada.</li>'
-      '</ul>')
-
-    notas_b = ('<ul class="notes">'
-      '<li>Monolítico contínuo em <b>56,50 m²</b> de base horizontal — 60,30 m² do pavimento '
-      'menos os 3,80 m² do banheiro — <b>sem junta de material</b> entre os ambientes secos.</li>'
-      '<li><b>Sem reserva de material</b>: aplicação moldada in loco, sem perda de corte.</li>'
-      '<li><b>Degraus excluídos</b>; o piso acessível sob a escada permanece.</li>'
-      '<li>Juntas de dilatação e de transição a definir no projeto executivo.</li>'
-      '<li>No banheiro, especificar sistema compatível com água, impermeabilização e '
-      'acabamento antiderrapante.</li>'
-      '</ul>')
+    decisoes_html = ''.join(
+        '<li><b>%s.</b> %s</li>' % (t, c) for (t, c) in DECISOES)
 
     stamp = [
         ('Obra', 'MaxHaus MainFloor — João Baldinato 109, 81I', ''),
-        ('Assunto', 'Pisos: cumaru nas áreas secas × monolítico', ''),
-        ('Prancha', '03 / 08', 'mono'),
-        ('Revisão', 'C — 11.09.2026', 'mono'),
+        ('Caderno', '4 pranchas — 02, 03, 04 e 05', ''),
         ('Formato', 'A3 deitado — 420 × 297 mm', 'mono'),
+        ('Revisão', 'C — 11.09.2026', 'mono'),
         ('Escala', 'gráfica (barra de 2 m em cada planta)', ''),
         ('Base', 'scan MaxHaus MainFloor, 02.09.2026', ''),
+        ('Área do pavimento', '60,30 m²', 'mono'),
         ('Situação', 'Estudo preliminar — não liberado para execução', 'warn'),
     ]
     stamp_html = ''.join(
         '<div><span class="k">%s</span><span class="v %s">%s</span></div>' % (k, c, v)
         for (k, v, c) in stamp)
 
-    return """<title>Cumaru ou monolítico</title>
-<meta name="description" content="Prancha 03 REV. C — comparação de pisos do MainFloor MaxHaus.">
+    return """<title>Caderno MainFloor</title>
+<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. C.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -234,92 +264,43 @@ def build():
   <header class="head">
     <div>
       <p class="eyebrow">MaxHaus · MainFloor · João Baldinato 109 — 81I</p>
-      <h1>Cumaru ou monolítico</h1>
-      <p class="lede">Duas opções de piso desenhadas na mesma planta e na mesma escala, sobre o
-      levantamento do apartamento. Cores ilustrativas: nenhum produto, marca ou espessura está
-      especificado nesta fase.</p>
+      <h1>Caderno MainFloor</h1>
+      <p class="lede">Quatro pranchas sobre o mesmo levantamento: o que se demole, que piso entra,
+      como fica o teto agora que não há forro e onde ficam os pontos elétricos. Estudo preliminar —
+      cores ilustrativas, nenhum produto ou espessura especificado.</p>
     </div>
     <p class="rev">REV. C · 11.09.2026</p>
   </header>
 
   <div class="rule"></div>
 
-  <div class="legend">
-    <span><i class="sw wood"></i>Cumaru em réguas</span>
-    <span><i class="sw mono"></i>Piso monolítico</span>
-    <span><i class="sw wet"></i>Banheiro — sistema à parte (área molhada)</span>
-    <span><i class="sw joint"></i>Junta / soleira de transição entre acabamentos</span>
-    <span><i class="sw ghost"></i>Parede de drywall retirada</span>
-  </div>
-
-  <div class="rule"></div>
-
-  <main class="options">
-    <section class="option">
-      <div class="opt-head">
-        <span class="opt-code">A</span>
-        <h2 class="opt-title">Cumaru nas áreas secas</h2>
-        <span class="opt-tag">cozinha e closet em monolítico</span>
-      </div>
-      <figure>
-        <div class="plate">""" + a + """</div>
-        <figcaption>Planta do MainFloor — cumaru na sala, no jantar, no quarto e no hall da entrada;
-        monolítico na cozinha e no closet, com a ponta em curva na quina da porta.</figcaption>
-      </figure>
-      """ + tabela_a + notas_a + """
-    </section>
-
-    <section class="option">
-      <div class="opt-head">
-        <span class="opt-code">B</span>
-        <h2 class="opt-title">Monolítico no MainFloor</h2>
-        <span class="opt-tag">banheiro em sistema à parte</span>
-      </div>
-      <figure>
-        <div class="plate">""" + b + """</div>
-        <figcaption>Planta do MainFloor — um único piso monolítico do jantar ao quarto, sem
-        transição de material entre os ambientes secos.</figcaption>
-      </figure>
-      """ + tabela_b + notas_b + """
-    </section>
-  </main>
-
-  <div class="rule"></div>
-
   <section class="changes">
-    <h2>O que muda nesta revisão</h2>
-    <ol>
-      <li><b>A cozinha vai até a quina da porta de entrada e a ponta é em curva.</b> O arco tem raio
-      de 1,49 m e sai tangente à parede da entrada, fechando na parede do banheiro — como no croqui.
-      O hall e a escada (1,94 m²) passam para o cumaru: a cozinha entra com 6,96 m² e o cumaru sobe
-      para 44,24 m² líquidos.</li>
-      <li><b>A parede do box do banheiro está fechada.</b> A abertura que o scan mostrava na parede
-      sul era o vidro do box, não um vão — o banheiro agora tem só a porta.</li>
-      <li><b>A drywall entre sala e quarto foi retirada</b>, indicada em fantasma na planta. A sala e
-      o quarto viram um espaço contínuo; a faixa sob a parede acrescenta cerca de 0,40 m² de piso,
-      a conferir em obra.</li>
-      <li><b>O banheiro segue fora do monolítico nas duas opções</b> e o piso continua desenhado
-      contínuo, inclusive sob móveis e equipamentos.</li>
-    </ol>
+    <h2>Decisões que reorganizaram o caderno</h2>
+    <ol>""" + decisoes_html + """</ol>
   </section>
 
-  <div class="rule thin"></div>
+  <div class="rule"></div>
+
+  """ + ''.join(boards_html) + """
+
+  <div class="rule"></div>
 
   <div class="stamp">""" + stamp_html + """</div>
 
   <p class="fine">Áreas conforme o levantamento MaxHaus MainFloor (captura de 02.09.2026):
   sala 23,00 · quarto 13,40 · cozinha 8,90 · jantar 5,90 · closet 5,30 · banheiro 3,80 m².
-  A escada é o único elemento deduzido da base horizontal, conforme nota da opção B; a faixa liberada
-  pela drywall retirada (~0,40 m²) não está somada a esses números. Geometria de paredes, vãos e
-  ambientes extraída do arquivo do scan. A prancha fechada em A3 (420 × 297 mm) está no arquivo
-  <code>prancha-03-cumaru-ou-monolitico-A3.pdf</code>; quantitativos para orçamento devem ser
-  conferidos em obra antes de qualquer compra.</p>
+  Geometria de paredes, vãos e ambientes extraída do arquivo do scan e convertida pela escala
+  45,66 pt/m, conferida contra as cotas gerais do pavimento (7,85 × 9,43 m). Quantidades e posições
+  são preliminares: servem para orientar visita, proposta e projetos complementares, não para fechar
+  medição nem para executar. O caderno completo em PDF está em
+  <code>caderno-mainfloor-A3.pdf</code>.</p>
 
 </div>
 """
 
+
 if __name__ == '__main__':
-    out = os.path.join(PRANCHAS, 'prancha-03-cumaru-ou-monolitico.html')
+    out = os.path.join(PRANCHAS, 'caderno-mainfloor.html')
     with open(out, 'w') as f:
         f.write(build())
     print('ok', out)

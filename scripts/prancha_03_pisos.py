@@ -92,7 +92,7 @@ WALLS = [
     (446.11,124.38,604.03,128.94), (275.52,208.91,450.68,213.47),
     (275.52,208.91,280.09,287.11), (245.70,282.54,280.09,287.11),
     (279.36,430.06,345.67,434.63),
-    (343.39,450.67,417.90,455.24), (345.67,550.38,604.03,554.94),
+    (345.67,550.38,604.03,554.94),
     (343.39,432.34,347.96,455.24), (343.39,325.65,347.96,432.34),
     (413.33,325.65,417.90,432.34), (599.46,432.34,604.03,554.94),
     (279.36,430.06,283.92,545.96), (245.70,550.38,345.67,554.94),
@@ -102,6 +102,9 @@ WALLS = [
 ]
 # REV. C — drywall entre sala e quarto: retirada, indicada em fantasma
 GHOST_WALLS = [(415.61,430.06,601.74,434.63)]
+# fundo do box: pano de vidro chão-teto, ponta a ponta (o scan leu como vão)
+VIDRO_BOX = (343.39, 450.67, 417.90, 455.24)
+GLASS = '#7fb0c4'
 AREA_DRYWALL = 0.40                     # faixa de piso liberada, ~0,10 x 4,08 m
 
 DOOR_ENTRADA = dict(rect=(275.52,220.10,280.09,259.20), hinge='n', leaf='e')
@@ -318,6 +321,16 @@ def draw_door(d, panel, door):
           'stroke-width="0.8" opacity="0.5"/>'
           % (ex, hy, leaf, leaf, 1 if door['hinge'] == 'n' else 0, hx, ty, WALL))
 
+def draw_vidro_box(d, panel):
+    a = P(panel, VIDRO_BOX[0], VIDRO_BOX[1]); b = P(panel, VIDRO_BOX[2], VIDRO_BOX[3])
+    w_, h_ = b[0] - a[0], b[1] - a[1]
+    d.rect(a[0] - 0.3, a[1] - 0.3, w_ + 0.6, h_ + 0.6, fill=BG)
+    d.rect(a[0], a[1], w_, h_, fill='#e8f2f6', stroke=GLASS, sw=0.9)
+    d.line(a[0], a[1] + h_ / 2, a[0] + w_, a[1] + h_ / 2, GLASS, 1.6)
+    for t in (0.18, 0.5, 0.82):
+        d.line(a[0] + w_ * t, a[1], a[0] + w_ * t, a[1] + h_, GLASS, 0.7)
+
+
 def draw_windows(d, panel):
     for r in JANELAS:
         gap(d, panel, r)
@@ -437,6 +450,7 @@ def draw_plan(d, panel, opcao, callout=False):
     draw_ghost_walls(d, panel)
     draw_walls(d, panel)
     draw_windows(d, panel)
+    draw_vidro_box(d, panel)
     draw_door(d, panel, DOOR_ENTRADA)
     draw_door(d, panel, DOOR_BANHO)
     draw_soleira_entrada(d, panel)
@@ -515,7 +529,7 @@ def build():
           9.6, INK_SOFT)
     d.txt(W - 48, 42, 'REV. C   |   11.09.2026', 10.0, RED, 'bold', 'end', ls=0.8)
     d.txt(W - 48, 78, 'ponta da cozinha em curva na quina da porta', 10.5, INK, 'bold', 'end')
-    d.txt(W - 48, 99, 'box do banheiro fechado  ·  drywall sala/quarto retirada',
+    d.txt(W - 48, 99, 'fundo do box em vidro chão-teto  ·  drywall sala/quarto retirada',
           9.6, INK_SOFT, 'normal', 'end')
     d.line(48, 116, W - 48, 116, RULE, 1.0)
 
@@ -566,7 +580,7 @@ def build():
 
     d.line(48, 922, W - 48, 922, RULE, 1.0)
     d.txt(48, 940, 'Revestimento contínuo: toda a área de piso é revestida, inclusive sob móveis e equipamentos — nenhum recorte de mobiliário foi descontado. '
-                    'Parede do box do banheiro fechada.',
+                    'O fundo do box é um pano de vidro chão-teto, ponta a ponta.',
           8.3, INK_SOFT)
     d.txt(48, 953, 'Drywall entre sala e quarto retirada (indicada em fantasma): some ~0,40 m² de piso na faixa da parede, a conferir em obra. '
                     'Áreas conforme o scan de 02.09.2026.',

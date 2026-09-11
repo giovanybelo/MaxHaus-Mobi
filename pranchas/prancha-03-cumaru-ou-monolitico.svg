@@ -5,7 +5,7 @@
 <text x="48.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="start">Comparação gráfica em planta. Cores ilustrativas; nenhum produto ou espessura está especificado.</text>
 <text x="1352.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#b23a2f" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. C   |   11.09.2026</text>
 <text x="1352.0" y="78.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.5" fill="#22303c" font-weight="bold" text-anchor="end">ponta da cozinha em curva na quina da porta</text>
-<text x="1352.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="end">box do banheiro fechado  ·  drywall sala/quarto retirada</text>
+<text x="1352.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="end">fundo do box em vidro chão-teto  ·  drywall sala/quarto retirada</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cbc8c0" stroke-width="1.00"/>
 <rect x="48.00" y="131.00" width="16.00" height="11.00" fill="#c98a4b" stroke="#9c6530" stroke-width="0.80"/>
 <text x="71.0" y="140.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.2" fill="#22303c" font-weight="normal" text-anchor="start">Cumaru em réguas</text>
@@ -233,7 +233,6 @@
 <rect x="205.95" y="300.86" width="4.80" height="82.21" fill="#5b6472"/>
 <rect x="174.60" y="378.27" width="36.15" height="4.80" fill="#5b6472"/>
 <rect x="209.99" y="533.35" width="69.71" height="4.80" fill="#5b6472"/>
-<rect x="277.30" y="555.01" width="78.33" height="4.80" fill="#5b6472"/>
 <rect x="279.69" y="659.83" width="271.60" height="4.79" fill="#5b6472"/>
 <rect x="277.30" y="535.74" width="4.80" height="24.07" fill="#5b6472"/>
 <rect x="277.30" y="423.58" width="4.80" height="112.16" fill="#5b6472"/>
@@ -265,6 +264,12 @@
 <rect x="288.15" y="659.53" width="57.47" height="5.39" fill="#faf8f4"/>
 <rect x="288.45" y="659.83" width="56.87" height="4.79" fill="none" stroke="#5b6472" stroke-width="0.90"/>
 <line x1="288.45" y1="662.23" x2="345.32" y2="662.23" stroke="#5b6472" stroke-width="0.90"/>
+<rect x="277.00" y="554.71" width="78.93" height="5.40" fill="#faf8f4"/>
+<rect x="277.30" y="555.01" width="78.33" height="4.80" fill="#e8f2f6" stroke="#7fb0c4" stroke-width="0.90"/>
+<line x1="277.30" y1="557.41" x2="355.62" y2="557.41" stroke="#7fb0c4" stroke-width="1.60"/>
+<line x1="291.40" y1="555.01" x2="291.40" y2="559.82" stroke="#7fb0c4" stroke-width="0.70"/>
+<line x1="316.46" y1="555.01" x2="316.46" y2="559.82" stroke="#7fb0c4" stroke-width="0.70"/>
+<line x1="341.53" y1="555.01" x2="341.53" y2="559.82" stroke="#7fb0c4" stroke-width="0.70"/>
 <rect x="205.65" y="312.33" width="5.40" height="41.70" fill="#faf8f4"/>
 <line x1="210.75" y1="312.63" x2="251.86" y2="312.63" stroke="#5b6472" stroke-width="1.40"/>
 <path d="M 251.86 312.63 A 41.10 41.10 0 0 1 210.75 353.73" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
@@ -393,7 +398,6 @@
 <rect x="879.95" y="300.86" width="4.80" height="82.21" fill="#5b6472"/>
 <rect x="848.60" y="378.27" width="36.15" height="4.80" fill="#5b6472"/>
 <rect x="883.99" y="533.35" width="69.71" height="4.80" fill="#5b6472"/>
-<rect x="951.30" y="555.01" width="78.33" height="4.80" fill="#5b6472"/>
 <rect x="953.69" y="659.83" width="271.60" height="4.79" fill="#5b6472"/>
 <rect x="951.30" y="535.74" width="4.80" height="24.07" fill="#5b6472"/>
 <rect x="951.30" y="423.58" width="4.80" height="112.16" fill="#5b6472"/>
@@ -425,6 +429,12 @@
 <rect x="962.15" y="659.53" width="57.47" height="5.39" fill="#faf8f4"/>
 <rect x="962.45" y="659.83" width="56.87" height="4.79" fill="none" stroke="#5b6472" stroke-width="0.90"/>
 <line x1="962.45" y1="662.23" x2="1019.32" y2="662.23" stroke="#5b6472" stroke-width="0.90"/>
+<rect x="951.00" y="554.71" width="78.93" height="5.40" fill="#faf8f4"/>
+<rect x="951.30" y="555.01" width="78.33" height="4.80" fill="#e8f2f6" stroke="#7fb0c4" stroke-width="0.90"/>
+<line x1="951.30" y1="557.41" x2="1029.62" y2="557.41" stroke="#7fb0c4" stroke-width="1.60"/>
+<line x1="965.40" y1="555.01" x2="965.40" y2="559.82" stroke="#7fb0c4" stroke-width="0.70"/>
+<line x1="990.46" y1="555.01" x2="990.46" y2="559.82" stroke="#7fb0c4" stroke-width="0.70"/>
+<line x1="1015.53" y1="555.01" x2="1015.53" y2="559.82" stroke="#7fb0c4" stroke-width="0.70"/>
 <rect x="879.65" y="312.33" width="5.40" height="41.70" fill="#faf8f4"/>
 <line x1="884.75" y1="312.63" x2="925.86" y2="312.63" stroke="#5b6472" stroke-width="1.40"/>
 <path d="M 925.86 312.63 A 41.10 41.10 0 0 1 884.75 353.73" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
@@ -490,7 +500,7 @@
 <text x="722.0" y="885.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">junta de material entre os ambientes secos. Degraus excluídos; o piso acessível sob a escada permanece. Juntas de</text>
 <text x="722.0" y="898.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">dilatação a definir no executivo. No banheiro, especificar sistema com impermeabilização e acabamento antiderrapante.</text>
 <line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cbc8c0" stroke-width="1.00"/>
-<text x="48.0" y="940.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">Revestimento contínuo: toda a área de piso é revestida, inclusive sob móveis e equipamentos — nenhum recorte de mobiliário foi descontado. Parede do box do banheiro fechada.</text>
+<text x="48.0" y="940.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">Revestimento contínuo: toda a área de piso é revestida, inclusive sob móveis e equipamentos — nenhum recorte de mobiliário foi descontado. O fundo do box é um pano de vidro chão-teto, ponta a ponta.</text>
 <text x="48.0" y="953.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">Drywall entre sala e quarto retirada (indicada em fantasma): some ~0,40 m² de piso na faixa da parede, a conferir em obra. Áreas conforme o scan de 02.09.2026.</text>
 <text x="48.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#b23a2f" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   11/09/2026</text>
 <text x="1352.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#6b7480" font-weight="normal" text-anchor="end">Prancha 03 / 08   ·   REV. C</text>
