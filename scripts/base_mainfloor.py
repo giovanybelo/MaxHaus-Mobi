@@ -388,6 +388,9 @@ def legenda(d, itens, x, y, largura=None, col=1):
     """itens: (tipo, cor, texto). tipo: 'fill' | 'line' | 'dash' | 'dot' | 'ghost'."""
     cx, cy = x, y
     for (tipo, cor, texto) in itens:
+        passo = 30 + len(texto) * 4.9
+        if col == 1 and largura and cx > x and (cx + passo - 30) > (x + largura):
+            cx, cy = x, cy + 17      # quebra de linha da legenda
         if tipo == 'fill':
             d.rect(cx, cy - 8, 15, 10, fill=cor, stroke=MONO_LINE, sw=0.7)
         elif tipo == 'ghost':
@@ -403,7 +406,7 @@ def legenda(d, itens, x, y, largura=None, col=1):
             d.circle(cx + 7, cy - 3, 4.2, fill=cor, stroke=cor, sw=1.0)
         d.txt(cx + 22, cy, texto, 8.8, INK)
         if col == 1:
-            cx += 30 + len(texto) * 4.9
+            cx += passo
         else:
             cy += 16
     return (cx, cy)

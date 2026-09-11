@@ -187,12 +187,12 @@ BOARDS = [
       '<b>B · monolítico</b> 56,50 m²', '<b>Banheiro</b> 3,80 m² à parte']),
     ('04', 'Teto, iluminação e ar-condicionado', 'prancha-04-teto.svg',
      'Sem forro, luz e ar dividem a mesma laje: trilhos aplicados, três luminárias de destaque e evaporadoras aparentes.',
-     ['<b>6</b> trilhos eletrificados', '<b>P01–P03</b> destaques: jantar, cama, office',
+     ['<b>6</b> trilhos, traçado revisado', '<b>P01–P03</b> destaques: jantar, cama, office',
       '<b>Piscina acima</b> 1,92 × 3,00 m', '<b>33.900–45.200</b> BTU/h']),
     ('05', 'Tomadas, comandos e quadro', 'prancha-05-eletrica.svg',
      'Reservas de localização com os pontos existentes que você marcou e o quadro junto à porta de entrada.',
      ['<b>9</b> tomadas existentes', '<b>8</b> reservas novas',
-      '<b>7</b> comandos, dois na cabeceira', '<b>Quadro</b> na entrada']),
+      '<b>8</b> comandos, dois na cabeceira', '<b>Quadro</b> na entrada']),
 ]
 
 DECISOES = [
@@ -218,7 +218,15 @@ DECISOES = [
      'O corredor da entrada e a escada ficam em cumaru.'),
     ('Três luminárias maiores que as demais',
      'Jantar, cama e office ganham corpo e diâmetro maiores que os spots dos trilhos — P01, P02 '
-     'e P03. No quarto, as duas estão alinhadas no mesmo eixo.'),
+     'e P03. No quarto, o TR5 corre no eixo das duas: podem pendurar do próprio trilho.'),
+    ('Traçado dos trilhos revisado',
+     'TR3 desceu para 5,60 m e ganhou recuo da drywall; TR5 desceu para 8,28 m, no eixo de P02 e '
+     'P03; TR6 saiu de junto da parede oeste e foi para 1,45 m, no mesmo eixo do TR4 da cozinha. '
+     'O TR2 foi encurtado: no traçado anterior ele cruzava o TR3 no meio da sala, e dois trilhos '
+     'não se cruzam.'),
+    ('S08: a luz da sala ganhou comando próprio',
+     'Na quina do box voltada para a escada, encostado no S04 do banheiro — o primeiro anteparo '
+     'de quem chega à sala vindo da escada ou da cozinha.'),
     ('A porta do banheiro troca de lado',
      'Continua abrindo para o living, mas agora girando na direção do quarto, e não mais da '
      'escada. Na elétrica, o comando que caía dentro do box saiu e entraram dois novos na '
@@ -261,7 +269,7 @@ def build():
         for (k, v, c) in stamp)
 
     return """<title>Caderno MainFloor</title>
-<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. D.">
+<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. E.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -277,7 +285,7 @@ def build():
       como fica o teto agora que não há forro e onde ficam os pontos elétricos. Estudo preliminar —
       cores ilustrativas, nenhum produto ou espessura especificado.</p>
     </div>
-    <p class="rev">REV. D · 11.09.2026</p>
+    <p class="rev">REV. E · 11.09.2026</p>
   </header>
 
   <div class="rule"></div>

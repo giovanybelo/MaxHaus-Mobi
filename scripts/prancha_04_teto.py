@@ -8,18 +8,21 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. D'
+REV = 'REV. E'
 PRANCHA = 'Prancha 04 / 08'
 
 # --- trilhos eletrificados: (id, (x0,y0), (x1,y1), nº de spots) em metros ---
 TRILHOS = [
     ('TR1', (4.75, 0.95), (7.50, 0.95), 4),   # jantar
-    ('TR2', (4.55, 3.20), (4.55, 6.40), 4),   # sala, eixo norte-sul
-    ('TR3', (4.20, 6.25), (7.50, 6.25), 4),   # sala, faixa sul
+    ('TR2', (4.55, 3.20), (4.55, 5.30), 3),   # sala, eixo norte-sul (encurtado: não cruza o TR3)
+    ('TR3', (4.20, 5.60), (7.50, 5.60), 4),   # sala, faixa sul — recuado da drywall
     ('TR4', (1.45, 3.90), (1.45, 6.40), 4),   # cozinha
-    ('TR5', (4.60, 7.45), (7.50, 7.45), 3),   # quarto
-    ('TR6', (0.95, 7.25), (0.95, 9.05), 3),   # closet
+    ('TR5', (3.85, 8.28), (7.50, 8.28), 3),   # quarto, no eixo de P02 e P03
+    ('TR6', (1.45, 7.50), (1.45, 9.00), 3),   # closet, alinhado ao TR4
 ]
+
+# id do trilho deslocado para cima do início, onde o rótulo padrão colidiria
+ROTULO_ACIMA = {'TR5'}
 
 # --- luminárias de destaque (corpo maior que os spots dos trilhos) ----------
 DESTAQUES = [
@@ -69,31 +72,34 @@ NOTAS = [
      'pendentes. Nada de embutido fora do banheiro, único ambiente que mantém forro para',
      'abrigar a exaustão e a luminária do box.'],
     ['**Fiação e infraestrutura ficam à vista.',
-     'Prever perfilados, eletrocalhas ou canaletas pintadas, alinhados às vigas e aos trilhos.',
-     'O caminho da fiação vira projeto de desenho, não sobra de obra: definir antes de furar a laje.'],
+     'Perfilados ou eletrocalhas pintadas, alinhados às vigas e aos trilhos: o caminho da fiação',
+     'vira desenho, não sobra de obra.'],
     ['**P01, P02 e P03 são as três luminárias de destaque pedidas pelo cliente',
      '— jantar, cama e office. Corpo e diâmetro maiores que os spots dos trilhos, em pendente',
-     'ou plafon de sobrepor. No quarto, P02 e P03 estão alinhadas no mesmo eixo, a 8,28 m do',
-     'canto noroeste. As demais posições são reserva de estudo, não quantidade final.'],
+     'ou plafon de sobrepor. No quarto o TR5 passa a correr no eixo de P02 e P03, a 8,28 m: as duas',
+     'podem ser alimentadas pelo próprio trilho, com adaptador, dispensando saídas novas na laje.'],
+    ['**Traçado dos trilhos revisado conforme a sua marcação:',
+     'TR3 desceu para 5,60 m, ganhando recuo da drywall; TR5 desceu para 8,28 m, no eixo das duas',
+     'luminárias do quarto; TR6 saiu de junto da parede oeste e foi para 1,45 m, no mesmo eixo do',
+     'TR4 — os dois lêem como uma linha só. O TR2 foi encurtado para 5,30 m: no traçado anterior',
+     'ele cruzava o TR3 no meio da sala, e dois trilhos não se cruzam — se tiverem de se encontrar,',
+     'é com conector T.'],
     ['**Ar-condicionado sem forro: não há plenum para dutar.',
-     'Trabalhar com evaporadoras hi-wall ou cassete aparente. Tubulação frigorígena, dreno e',
-     'interligação elétrica correm aparentes, em calha, com caimento contínuo do dreno.',
-     'Somente Electrolux; marca igual não garante compatibilidade entre unidades.'],
+     'Evaporadoras hi-wall ou cassete aparente; frigorígena, dreno e interligação elétrica correm',
+     'aparentes, em calha, com caimento contínuo. Somente Electrolux — marca igual não garante',
+     'compatibilidade entre unidades.'],
     ['**A piscina do pavimento superior fica sobre a sala — 1,92 × 3,00 m, centrada em',
      '6,13 / 3,14 m do canto noroeste. Essa laje não recebe furação: nem luminária, nem trilho,',
      'nem evaporadora ou tubulação podem invadi-la, e a região exige impermeabilização e',
-     'sobrecarga verificadas em estrutura. Os trilhos foram posicionados fora dela.'],
+     'sobrecarga verificadas em estrutura. Nenhum trilho a invade: TR2 corre a oeste e TR3 passa',
+     '0,96 m ao sul.'],
     ['**A reserva AC01 caía dentro da projeção da piscina.',
      'Foi deslocada para oeste, mantendo a insuflação para sala e jantar. A posição definitiva',
      'depende de confirmar apoio acima do limite sala/jantar e o modelo da condensadora existente:',
      'não assumir que ela admite duas evaporadoras.'],
-    ['**Comandos: cenas geral / tarefa / noturna, com acionamento no acesso de cada ambiente.',
-     'Trilho permite remanejar spots depois — o comando é que precisa estar certo desde já.',
-     'Priorizar boa reprodução de cores no espelho e no closet.'],
     ['**Vazões de referência, a validar com perda de carga do duto:',
-     'banheiro 3,8 × 2,62 × 10 = 99,56 m³/h; coifa 8,9 × 2,62 × 12 = 279,82 m³/h — este último',
-     'valeria só se a cozinha fosse isolada. Cozinha integrada exige seleção por captura no fogão.',
-     'Coifa e exaustão do banheiro precisam de rotas e descargas próprias; não interligar.'],
+     'banheiro 99,56 m³/h; coifa 279,82 m³/h — este só valeria com cozinha isolada; integrada,',
+     'seleciona-se por captura no fogão. Coifa e exaustão pedem rotas próprias: não interligar.'],
 ]
 
 
@@ -141,7 +147,7 @@ def construir():
     d.txt(x + w_ / 2, y + h_ / 2 + 45, 'centro em 6,13 / 3,14 m', 7.0, '#6f6551', 'normal', 'middle')
 
     for k, lx, ly in (('jantar', 520.0, 142.0), ('sala', 470.0, 300.0),
-                      ('cozinha', 336.0, 350.0), ('closet', 323.0, 505.0),
+                      ('cozinha', 336.0, 350.0), ('closet', 277.6, 505.0),
                       ('quarto', 520.0, 442.0), ('banheiro', 380.6, 345.0)):
         ROOMS[k]['lx'], ROOMS[k]['ly'] = lx, ly
     rotulos(d, areas=False, size=8.4)
@@ -158,7 +164,9 @@ def construir():
             d.circle(cx, cy, 4.0, fill=BG, stroke=INK, sw=1.2)
             d.circle(cx, cy, 1.5, fill=INK)
         vertical = abs(b[0] - a[0]) < 1
-        if vertical:
+        if ident in ROTULO_ACIMA:
+            d.txt(a[0], a[1] - 12, ident, 7.2, INK, 'bold', 'start', ls=0.4)
+        elif vertical:
             d.txt(a[0] + 9, a[1] - 6, ident, 7.2, INK, 'bold', 'start', ls=0.4)
         else:
             d.txt(a[0] - 9, a[1] + 3, ident, 7.2, INK, 'bold', 'end', ls=0.4)
@@ -199,7 +207,7 @@ def construir():
                 ('dot', EXIST, 'Ponto existente — confirmar'),
                 ('dot', WET_LINE, 'Embutido no forro do banheiro'),
                 ('fill', '#e2eef2', 'Ar-condicionado / exaustão')],
-            70, 156 + BUILDING_H * S + 64)
+            70, 156 + BUILDING_H * S + 64, largura=600)
 
     d.line(690, 140, 690, 900, RULE, 0.8, opacity=0.8)
 
@@ -208,11 +216,11 @@ def construir():
                  [('Ambiente', 0.34, 'start'), ('Alvo geral', 0.22, 'end'),
                   ('Fluxo inicial', 0.22, 'end'), ('Temperatura de cor', 0.22, 'end')],
                  TAB_LUZ, titulo='ILUMINAÇÃO POR AMBIENTE')
-    fim = tabela(d, cx, fim + 44, cw,
+    fim = tabela(d, cx, fim + 34, cw,
                  [('Zona', 0.34, 'start'), ('Área', 0.22, 'end'),
                   ('Base sombra', 0.22, 'end'), ('Base sol', 0.22, 'end')],
                  TAB_AR, titulo='AR-CONDICIONADO — REGRA SIMPLIFICADA 600/800 BTU/h POR m²')
-    paragrafos(d, cx, fim + 30, cw, NOTAS, size=8.4, lh=12.4, gap=8.0)
+    paragrafos(d, cx, fim + 24, cw, NOTAS, size=8.4, lh=12.4, gap=6.0)
 
     rodape(d,
            'Fluxo = área × lux ÷ (0,60 × 0,80). Fatores de utilização e manutenção são hipóteses; a laje aparente escura reduz o fator de utilização e deve ser reavaliada.',

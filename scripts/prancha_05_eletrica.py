@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. D'
+REV = 'REV. E'
 PRANCHA = 'Prancha 05 / 08'
 
 # --- pontos existentes marcados pelo cliente (metros) -----------------------
@@ -27,9 +27,13 @@ TOMADAS_NOVAS = [
 # --- comandos ---------------------------------------------------------------
 COMANDOS = [
     ('S01', 0.90, 3.05), ('S02', 4.17, 2.30), ('S03', 2.35, 4.60),
-    ('S04', 3.92, 4.80), ('S05', 4.05, 7.35),
+    ('S04', 3.92, 4.88), ('S05', 4.05, 7.35),
     ('S06', 5.05, 9.05), ('S07', 6.95, 9.05),
+    ('S08', 3.92, 4.62),      # luz da sala, na quina do box voltada para a escada
 ]
+# comandos com o id ao lado, para não empilhar rótulo sobre símbolo
+ROTULO_LESTE = {'S04', 'S08'}
+
 QUADRO = (1.35, 2.35)
 
 LINHAS = [
@@ -37,7 +41,7 @@ LINHAS = [
      'tensão, fases, demanda, proteção e espaços'),
     ('Tomadas existentes', '9 posições levantadas pelo cliente', 'confirmar altura, caixa e circuito'),
     ('Tomadas novas', '8 reservas — T10 a T17', 'não é número normativo nem total final'),
-    ('Comandos', '7 posições — S01 a S07, duas na cabeceira', 'lado da porta, marcenaria e cenas'),
+    ('Comandos', '8 posições — S01 a S08, duas na cabeceira', 'lado da porta, marcenaria e cenas'),
     ('Cozinha', 'geladeira, forno, lava-louças, coifa e bancada', 'pontos dedicados, circuito exclusivo'),
     ('Ar-condicionado', 'alimentação conforme manual da unidade', 'quem alimenta varia com o sistema'),
     ('Banheiro', 'ponto junto ao lavatório a validar', 'volumes de proteção, DR e cargas'),
@@ -61,6 +65,16 @@ NOTAS = [
      'O comando que caía dentro do box saiu; o que ficava junto à porta do quarto passou a S05,',
      'agora ao lado da porta nova da drywall. S06 e S07 são os dois novos comandos da cabeceira,',
      'um de cada lado da cama, em paralelo com as luminárias P02 e P03 da Prancha 04.'],
+    ['**O que cada comando aciona — leitura de folha, não diagrama de circuito:',
+     'S01 entrada e cozinha (TR4 e coifa, junto ao quadro) · S02 jantar (TR1 e P01) · S03 arandelas',
+     'do espelho, junto à bancada · S04 banheiro, na quina do box · S05 quarto, ao lado da porta',
+     'nova (TR5, P02 e P03) · S06 e S07 cabeceira, em paralelo com o S05 · S08 sala (TR2 e TR3).'],
+    ['**S08 é o novo comando da luz da sala.',
+     'Fica na quina do box voltada para a escada, encostado no S04 do banheiro: é o primeiro',
+     'anteparo de quem entra na sala vindo da escada ou da cozinha. Os dois ocupam a faixa de',
+     'parede de 0,45 m entre a quina e o batente — cabe, mas é a folga exata de duas placas 4×2:',
+     'confirmar em obra antes de fechar a caixa. Se a sala for acender também pelo outro extremo,',
+     'S08 precisa de paralelo junto à porta nova da drywall, em conjunto com o S05.'],
     ['**Circuitos, seções, disjuntores, aterramento, DR, demanda e proteção contra surtos',
      'ficam a cargo do projeto elétrico após o levantamento. Não usar estas reservas como projeto',
      'para o eletricista executar.'],
@@ -108,7 +122,10 @@ def construir():
         cx, cy = d.PM(xm, ym)
         d.rect(cx - 5.2, cy - 5.2, 10.4, 10.4, fill=BG, stroke=INK, sw=1.3)
         d.line(cx - 2.4, cy + 2.4, cx + 2.4, cy - 2.4, INK, 1.2)
-        d.txt(cx, cy - 9, ident, 6.6, INK, 'bold', 'middle', ls=0.3)
+        if ident in ROTULO_LESTE:
+            d.txt(cx + 8.5, cy + 2.4, ident, 6.6, INK, 'bold', 'start', ls=0.3)
+        else:
+            d.txt(cx, cy - 9, ident, 6.6, INK, 'bold', 'middle', ls=0.3)
 
     # quadro de energia
     cx, cy = d.PM(*QUADRO)
@@ -123,7 +140,7 @@ def construir():
                 ('dotf', NEW, 'Tomada nova (reserva)'),
                 ('fill', '#f0eee8', 'Comando / interruptor'),
                 ('fill', '#fdeceb', 'Quadro de energia')],
-            70, 156 + BUILDING_H * S + 64)
+            70, 156 + BUILDING_H * S + 64, largura=600)
 
     d.line(690, 140, 690, 900, RULE, 0.8, opacity=0.8)
 

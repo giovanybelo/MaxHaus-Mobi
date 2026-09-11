@@ -527,7 +527,7 @@ def build():
     d.txt(48, 78, 'Cumaru ou monolítico', 27, INK, 'bold')
     d.txt(48, 99, 'Comparação gráfica em planta. Cores ilustrativas; nenhum produto ou espessura está especificado.',
           9.6, INK_SOFT)
-    d.txt(W - 48, 42, 'REV. D   |   11.09.2026', 10.0, RED, 'bold', 'end', ls=0.8)
+    d.txt(W - 48, 42, 'REV. E   |   11.09.2026', 10.0, RED, 'bold', 'end', ls=0.8)
     d.txt(W - 48, 78, 'ponta da cozinha em curva na quina do degrau', 10.5, INK, 'bold', 'end')
     d.txt(W - 48, 99, 'fundo do box fechado em parede  ·  drywall refeita com porta',
           9.6, INK_SOFT, 'normal', 'end')
@@ -583,7 +583,7 @@ def build():
                     'Áreas conforme o scan de 02.09.2026.',
           8.3, INK_SOFT)
     d.txt(48, 975, 'ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   11/09/2026', 9.0, RED, 'bold', ls=0.5)
-    d.txt(W - 48, 975, 'Prancha 03 / 08   ·   REV. D', 9.0, INK_SOFT, 'normal', 'end')
+    d.txt(W - 48, 975, 'Prancha 03 / 08   ·   REV. E', 9.0, INK_SOFT, 'normal', 'end')
 
     return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d" width="%d" height="%d">\n'
             % (W, H, W, H)) + '\n'.join(d.o) + '\n</svg>'

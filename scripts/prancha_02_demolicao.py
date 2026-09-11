@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. D'
+REV = 'REV. E'
 PRANCHA = 'Prancha 02 / 08'
 
 # --- alvos: (id, x_pt, y_pt, tipo, dx_rotulo, dy_rotulo) --------------------
@@ -125,7 +125,7 @@ def construir():
                 ('dot', KEEP, 'Reconstruir / manter'),
                 ('dot', NEW, 'Desmontar e remontar'),
                 ('line', GLASS, 'Pano de vidro existente')],
-            70, 156 + BUILDING_H * S + 64)
+            70, 156 + BUILDING_H * S + 64, largura=600)
 
     d.line(690, 140, 690, 900, RULE, 0.8, opacity=0.8)
 

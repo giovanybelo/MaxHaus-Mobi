@@ -3,7 +3,7 @@
 <text x="48.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#6b7480" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
 <text x="48.0" y="78.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="27.0" fill="#22303c" font-weight="bold" text-anchor="start">Demolição e desmontagem</text>
 <text x="48.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="start">Diagrama de escopo sobre o modelo de trabalho. Conferir os alvos presencialmente antes de mobilizar a demolidora.</text>
-<text x="1352.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#b23a2f" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. D</text>
+<text x="1352.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#b23a2f" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. E</text>
 <text x="1352.0" y="78.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.5" fill="#22303c" font-weight="bold" text-anchor="end">estado existente: o que sai, o que se prepara</text>
 <text x="1352.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="end">demolir e reconstruir são serviços separados</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cbc8c0" stroke-width="1.00"/>
@@ -350,8 +350,8 @@
 <text x="450.9" y="880.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.8" fill="#22303c" font-weight="normal" text-anchor="start">Reconstruir / manter</text>
 <circle cx="563.90" cy="877.10" r="4.20" fill="none" stroke="#1f6f9c" stroke-width="1.40"/>
 <text x="578.9" y="880.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.8" fill="#22303c" font-weight="normal" text-anchor="start">Desmontar e remontar</text>
-<line x1="684.90" y1="877.10" x2="699.90" y2="877.10" stroke="#7fb0c4" stroke-width="2.20"/>
-<text x="706.9" y="880.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.8" fill="#22303c" font-weight="normal" text-anchor="start">Pano de vidro existente</text>
+<line x1="70.00" y1="894.10" x2="85.00" y2="894.10" stroke="#7fb0c4" stroke-width="2.20"/>
+<text x="92.0" y="897.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.8" fill="#22303c" font-weight="normal" text-anchor="start">Pano de vidro existente</text>
 <line x1="690.00" y1="140.00" x2="690.00" y2="900.00" stroke="#cbc8c0" stroke-width="0.80" opacity="0.80"/>
 <text x="722.0" y="151.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.0" fill="#6b7480" font-weight="bold" text-anchor="start" letter-spacing="1.20">ESCOPO DE DEMOLIÇÃO E DESMONTAGEM</text>
 <rect x="722.00" y="160.00" width="630.00" height="20.00" fill="#eceae4"/>
@@ -445,5 +445,5 @@
 <text x="48.0" y="940.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">Quantidades preliminares sobre o modelo do scan (02.09.2026): servem para orientar visita e proposta, não para fechar medição.</text>
 <text x="48.0" y="953.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">Nenhum alvo foi verificado em campo. Instalações embutidas, estrutura e vedações devem ser identificadas antes do início dos serviços.</text>
 <text x="48.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#b23a2f" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   11/09/2026</text>
-<text x="1352.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#6b7480" font-weight="normal" text-anchor="end">Prancha 02 / 08   ·   REV. D</text>
+<text x="1352.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#6b7480" font-weight="normal" text-anchor="end">Prancha 02 / 08   ·   REV. E</text>
 </svg>

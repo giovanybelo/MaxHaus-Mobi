@@ -9,7 +9,7 @@ gerais do pavimento (7,85 × 9,43 m).
 Todo o material fecha em **A3 deitado (420 × 297 mm)** e é exportado em **PDF
 vetorial**.
 
-## Caderno (REV. D)
+## Caderno (REV. E)
 
 | Prancha | Assunto | Arquivo |
 |---|---|---|
@@ -44,7 +44,13 @@ Versão web responsiva: `pranchas/caderno-mainfloor.html`.
   centrados em 6,13 / 3,14 m do canto noroeste. Essa laje não recebe furação —
   condiciona trilhos, luminárias e evaporadoras.
 - **Três luminárias de destaque**, maiores que os spots: jantar, cama e office;
-  no quarto as duas ficam alinhadas no mesmo eixo.
+  no quarto o TR5 corre no eixo de P02 e P03 e pode alimentá-las por adaptador.
+- **Traçado dos trilhos (REV. E).** TR3 desceu para 5,60 m, ganhando recuo da
+  drywall; TR5 desceu para 8,28 m; TR6 saiu da parede oeste e foi para 1,45 m, no
+  eixo do TR4. O TR2 foi encurtado para 5,30 m — no traçado anterior cruzava o
+  TR3 no meio da sala, e dois trilhos não se cruzam.
+- **S08**, novo comando da luz da sala, na quina do box voltada para a escada,
+  encostado no S04 do banheiro.
 
 ### Pisos (Prancha 03)
 
