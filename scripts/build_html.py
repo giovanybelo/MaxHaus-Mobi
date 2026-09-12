@@ -186,11 +186,11 @@ BOARDS = [
     ('02', 'Demolição e desmontagem', 'prancha-02-demolicao.svg',
      'Escopo sobre o modelo do scan: o que sai, o que se desmonta para remontar e o que fica.',
      ['<b>14</b> itens catalogados', '<b>Demolir e reconstruir</b> como serviços separados',
-      '<b>Jantar e escada:</b> preparo para pintura', '<b>Porta de correr</b> 1,00 × 2,30 m']),
-    ('03', 'Opção A — cumaru-ferro + cozinha em monolítico', 'prancha-03-piso-cumaru.svg',
-     'Piso pronto em réguas nas áreas de estar e dormir, monolítico na cozinha de trabalho, com a ponta em curva resolvendo o encontro.',
-     ['<b>Cumaru</b> 50,16 m² (55,18 com reserva)', '<b>Monolítico</b> 6,34 m² na cozinha',
-      '<b>Banheiro</b> 3,80 m² à parte', '<b>Curva</b> na quina do degrau']),
+      '<b>Jantar e escada:</b> preparo para pintura', '<b>Porta de correr</b> 1,00 × 2,29 m']),
+    ('03', 'Opção A — cumaru-ferro, cozinha e closet em monolítico', 'prancha-03-piso-cumaru.svg',
+     'Piso pronto em réguas nas áreas de estar e dormir; cozinha e closet numa zona monolítica contínua, de canto reto com a ponta arredondada.',
+     ['<b>Cumaru</b> 44,69 m² (49,16 com reserva)', '<b>Monolítico</b> 11,81 m²',
+      '<b>Banheiro</b> 3,80 m² à parte', '<b>Filete</b> de 0,70 m na ponta']),
     ('04', 'Opção B — monolítico em todo o MainFloor', 'prancha-04-piso-monolitico.svg',
      'Sistema único nos cinco ambientes secos: piso contínuo, sem junta de material e sem curva.',
      ['<b>Monolítico</b> 56,50 m²', '<b>Banheiro</b> 3,80 m² à parte',
@@ -234,7 +234,7 @@ DECISOES = [
      'Ciano e amarelo puros não têm contraste para texto, então entram como área, nunca como letra.'),
     ('Demolir e reconstruir são serviços separados',
      'A drywall entre sala e quarto cai e é refeita no mesmo eixo, agora com uma porta de '
-     '1,00 × 2,30 m — a mesma altura da porta de entrada. O pano de vidro do fundo do box cai e '
+     '1,00 × 2,29 m — a mesma altura da porta de entrada. O pano de vidro do fundo do box cai e '
      'vira parede. A Prancha 02 mostra o estado existente; as 03 a 06 já mostram o proposto.'),
     ('Jantar e sob a escada: preparo, não demolição',
      'Nessas duas paredes saem o espelho e os revestimentos e a superfície é preparada para '
@@ -249,10 +249,15 @@ DECISOES = [
      'com evaporadoras e tubulação aparentes. Só o banheiro mantém forro, para abrigar a '
      'exaustão e a luminária do box.'),
     ('As duas propostas de piso voltaram, uma folha para cada',
-     'Opção A: cumaru-ferro, piso pronto em réguas, com a cozinha de trabalho em monolítico e a '
-     'ponta em curva nascendo na quina do degrau. Opção B: monolítico nos cinco ambientes secos, '
-     'sem junta de material e sem curva. Mesma escala e mesmo quadro de áreas nas duas, para '
-     'comparar sem trocar de desenho.'),
+     'Opção A: cumaru-ferro, piso pronto em réguas, com cozinha e closet formando uma zona '
+     'monolítica contínua — canto reto, com filete de 0,70 m de raio só na ponta que aparece no '
+     'corredor. Opção B: monolítico nos cinco ambientes secos, sem junta de material. Mesma escala '
+     'e mesmo quadro de áreas nas duas, para comparar sem trocar de desenho.'),
+    ('Dois ensaios entraram no escopo de demolição',
+     'E01, estanqueidade por pressão na hidráulica, e E02, resistência de isolamento com megômetro '
+     'na elétrica. Custam pouco e dizem a condição real da instalação, em vez da idade — com 17 '
+     'anos de imóvel e a obra abrindo piso, forro e paredes, é a janela. Orientação de escopo, não '
+     'laudo: a decisão final pede um engenheiro na inspeção.'),
     ('A janela do closet vai do piso ao teto',
      'J06 mede 2,00 × 2,17 m: a altura livre de 2,42 m menos 0,15 m de apoio no topo e 0,10 m de '
      'peitoril. É o único peitoril medido até agora, e sobe a área de esquadria para 14,77 m².'),
@@ -276,7 +281,7 @@ DECISOES = [
     ('A porta do banheiro abre para fora, no sentido da escada',
      'Continua abrindo para o living; o giro é o do lado da escada.'),
     ('A porta do quarto é de correr',
-     'A folha de 1,00 × 2,30 m estaciona sobre o 1,00 m de drywall a leste do vão, pela face da '
+     'A folha de 1,00 × 2,29 m estaciona sobre o 1,00 m de drywall a leste do vão, pela face da '
      'sala — trecho reservado: nada de tomada, quadro ou marcenaria ali. Falta decidir se o trilho '
      'é aparente, mantendo a drywall de 10 cm, ou embutido em cassete, que exige engrossar a '
      'parede. O comando do quarto (S05) foi para a face do quarto, fora do caminho da folha.'),
@@ -307,7 +312,7 @@ def build():
         ('Obra', 'MaxHaus MainFloor — João Baldinato 109, 81I', ''),
         ('Caderno', '7 pranchas — 01 a 07', ''),
         ('Formato', 'A3 deitado — 420 × 297 mm', 'mono'),
-        ('Revisão', 'K — 12.09.2026', 'mono'),
+        ('Revisão', 'L — 12.09.2026', 'mono'),
         ('Escala', 'gráfica (barra de 2 m em cada planta)', ''),
         ('Base', 'scan MaxHaus MainFloor, 02.09.2026', ''),
         ('Área do pavimento', '60,30 m²', 'mono'),
@@ -318,7 +323,7 @@ def build():
         for (k, v, c) in stamp)
 
     return """<title>Caderno MainFloor</title>
-<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. K.">
+<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. L.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
@@ -334,7 +339,7 @@ def build():
       como fica o teto agora que não há forro e onde ficam os pontos elétricos. Estudo preliminar —
       cores ilustrativas, nenhum produto ou espessura especificado.</p>
     </div>
-    <p class="rev">REV. K · 12.09.2026</p>
+    <p class="rev">REV. L · 12.09.2026</p>
   </header>
 
   <div class="rule"></div>

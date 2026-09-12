@@ -11,10 +11,10 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. K'
+REV = 'REV. L'
 
-AREA_CUMARU = 50.16          # sala + quarto + jantar + closet + corredor
-AREA_CUMARU_RESERVA = 55.18  # + 10% de corte e reposição
+AREA_CUMARU = 44.69          # sala + quarto + jantar + corredor
+AREA_CUMARU_RESERVA = 49.16  # + 10% de corte e reposição
 AREA_MONO_B = 56.50
 AREA_WC = 3.80
 
@@ -25,11 +25,11 @@ CONTORNO_SECO = [(448.4,126.7),(601.7,126.7),(601.7,552.7),(248.0,552.7),
                  (248.0,284.8),(277.8,284.8),(277.8,211.2),(448.4,211.2)]
 
 TAB_A = [
-    ('Cumaru-ferro',      'sala 23,00 + quarto 13,40 + jantar 5,90 + closet 5,30 + corredor 2,56', '50,16 m²'),
-    ('+ reserva de 10%',  'cortes, perdas e reposição futura',                                     '55,18 m²'),
-    ('Monolítico',        'cozinha — 6,34 dos 8,90 m² do ambiente',                                 '6,34 m²'),
-    ('Banheiro',          'sistema à parte, área molhada, na mesma cota',                            '3,80 m²'),
-    ('MainFloor',         'total do pavimento',                                                     '60,30 m²'),
+    ('Cumaru-ferro',      'sala 23,00 + quarto 13,40 + jantar 5,90 + corredor 2,39', '44,69 m²'),
+    ('+ reserva de 10%',  'cortes, perdas e reposição futura',                       '49,16 m²'),
+    ('Monolítico',        'cozinha 6,51 (de 8,90) + closet 5,30 — zona contínua',    '11,81 m²'),
+    ('Banheiro',          'sistema à parte, área molhada, na mesma cota',             '3,80 m²'),
+    ('MainFloor',         'total do pavimento',                                      '60,30 m²'),
 ]
 
 TAB_B = [
@@ -40,14 +40,20 @@ TAB_B = [
 ]
 
 NOTAS_A = [
-    ['**Dois materiais, e é a curva que resolve o encontro.',
-     'A ponta do monolítico nasce na quina do degrau da parede — logo abaixo da porta de entrada,',
-     'onde fica a geladeira — e gira em arco de 1,49 × 0,89 m até a parede do banheiro. O corredor',
-     'da entrada e a escada ficam em cumaru; a cozinha de trabalho fica em monolítico.'],
-    ['**A junta curva é o detalhe mais caro desta opção.',
-     'Perfil de transição curvo, sob medida, com junta de movimentação. E as duas espessuras têm de',
-     'ser niveladas no contrapiso para se encontrarem rentes: régua pronta com manta e monolítico',
-     'somam alturas diferentes, e é no contrapiso que se acerta a diferença, não na soleira.'],
+    ['**Cozinha e closet formam uma zona monolítica só.',
+     'A zona é um retângulo contínuo, da parede oeste até a linha da sala e do degrau até a fachada',
+     'sul, passando pela abertura entre cozinha e closet. O corredor da entrada e a escada ficam em',
+     'cumaru; o monolítico cobre a cozinha de trabalho e o closet.'],
+    ['**A ponta é canto reto com filete de 0,70 m de raio.',
+     'Não é mais um arco achatado atravessando a cozinha: o limite corre reto pela linha do degrau,',
+     'vira reto na linha da sala, e só a quina que aparece no corredor é arredondada. Um quarto de',
+     'círculo tangente aos dois lados — geometria que o marceneiro e o aplicador sabem replicar com',
+     'um compasso, e que o perfil de transição consegue acompanhar.'],
+    ['**A junta é o detalhe mais caro desta opção.',
+     'Perfil de transição com junta de movimentação, reto nos trechos retos e curvo só no filete.',
+     'E as duas espessuras têm de ser niveladas no contrapiso para se encontrarem rentes: régua',
+     'pronta com manta e monolítico somam alturas diferentes, e é no contrapiso que se acerta a',
+     'diferença, não na soleira.'],
     ['**Cumaru-ferro é madeira densa — o que é virtude e é risco.',
      'Dureza e resistência altas, e por isso mesmo muito sensível a umidade e a base torta. Exige',
      'contrapiso seco, plano e nivelado (P06), aclimatação das réguas no ambiente antes de assentar',
@@ -57,10 +63,6 @@ NOTAS_A = [
      'Réguas de 0,22 m correndo norte-sul, paralelas ao lado maior do pavimento, com topos a cada',
      '3,00 m defasados de um terço. Largura, comprimento e sentido de assentamento são decisão de',
      'projeto: o sentido muda a leitura do espaço e a percepção do desnível do contrapiso.'],
-    ['**O closet entrou em cumaru nesta opção.',
-     'Na proposta anterior ele ia em monolítico junto com a cozinha; como o pedido fala só da',
-     'cozinha, o closet voltou para a madeira. Se preferir mantê-lo monolítico, o quadro muda para',
-     'cumaru 44,86 m² e monolítico 11,64 m² — é uma linha de ajuste.'],
     ['**O banheiro fica fora dos dois sistemas, mas na mesma cota.',
      'Sistema próprio, com impermeabilização, caimento e acabamento antiderrapante, nivelado com o',
      'piso seco (P05): a soleira é junta de material, não degrau. Sem degrau, ralo linear e fecho de',
@@ -123,10 +125,10 @@ def construir(opcao='A'):
     A = (opcao == 'A')
     d = folha_nova()
     if A:
-        cabecalho(d, 'Opção A — cumaru-ferro com a cozinha em monolítico',
-                  'Piso pronto em réguas nas áreas de estar e dormir; monolítico na cozinha de trabalho. Cores e desenho de régua ilustrativos.',
+        cabecalho(d, 'Opção A — cumaru-ferro, cozinha e closet em monolítico',
+                  'Piso pronto em réguas nas áreas de estar e dormir; cozinha e closet numa zona monolítica contínua. Cores e desenho de régua ilustrativos.',
                   REV, 'norte 126°  ·  Prancha 03 de 07',
-                  'a ponta do monolítico nasce na quina do degrau, em curva')
+                  'ponta arredondada: canto reto com filete de 0,70 m')
     else:
         cabecalho(d, 'Opção B — monolítico em todo o MainFloor',
                   'Sistema único nos cinco ambientes secos, com o banheiro à parte. Cores ilustrativas; nenhum produto, espessura ou acabamento especificado.',
@@ -137,10 +139,10 @@ def construir(opcao='A'):
     d.set_plan(70, 156, S)
 
     if A:
-        for k in ('sala', 'quarto', 'jantar', 'closet'):
+        for k in ('sala', 'quarto', 'jantar'):
             piso_reguas(d, ROOMS[k]['poly'])
-        piso_reguas(d, COZ_HALL_POLY)
-        pm = [d.P(a, b) for a, b in COZ_MONO_POLY]
+        piso_reguas(d, HALL_A_POLY)
+        pm = [d.P(a, b) for a, b in MONO_A_POLY]
         d.path(path_d(pm), fill=MONO)
         d.path(path_d(pm), fill='none', stroke=K, sw=0.9)
     else:
@@ -162,13 +164,16 @@ def construir(opcao='A'):
     soleira(d, SOLEIRA_WC)
     soleira(d, SOLEIRA_ENTRADA)
     if A:
-        tracejado(d, [(a, b) for a, b in arco_pts()])
-        qx, qy = d.P(*QUINA_DEGRAU)
+        # junta só onde os dois pisos realmente se encontram — não sobre parede
+        tracejado(d, [(280.09, 284.8), (313.74, 284.8)] + filete_pts()
+                     + [(345.7, 325.65)])
+        tracejado(d, [(345.7, 453.0), (345.7, 513.42)])
+        qx, qy = d.P(*PONTA_MONO)
         d.circle(qx, qy, 3.0, fill=K)
-        d.line(qx, qy, qx + 50, qy - 34, K, 0.8)
-        d.txt(qx + 54, qy - 38, 'QUINA DO DEGRAU', 7.4, K, 'bold', 'start', ls=0.4)
-        d.txt(qx + 54, qy - 29, 'onde fica a geladeira:', 7.0, INK_SOFT, 'normal', 'start')
-        d.txt(qx + 54, qy - 20, 'a curva nasce aqui', 7.0, INK_SOFT, 'normal', 'start')
+        d.line(qx, qy, qx + 46, qy - 36, K, 0.8)
+        d.txt(qx + 50, qy - 40, 'PONTA ARREDONDADA', 7.4, K, 'bold', 'start', ls=0.4)
+        d.txt(qx + 50, qy - 31, 'canto reto com filete de', 7.0, INK_SOFT, 'normal', 'start')
+        d.txt(qx + 50, qy - 22, '0,70 m de raio', 7.0, INK_SOFT, 'normal', 'start')
 
     for k, lx, ly in (('jantar', 520.0, 152.0), ('sala', 500.0, 300.0),
                       ('cozinha', 300.0, 380.0), ('closet', 300.0, 500.0),
@@ -181,7 +186,7 @@ def construir(opcao='A'):
     escala(d, 156 + BUILDING_H * S + 26)
     if A:
         itens = [('line', K, 'Cumaru-ferro — piso pronto em réguas'),
-                 ('fill', MONO, 'Piso monolítico — cozinha'),
+                 ('fill', MONO, 'Piso monolítico — cozinha e closet'),
                  ('fill', WET, 'Banheiro — sistema à parte'),
                  ('dash', JOINT, 'Junta / soleira de transição')]
     else:

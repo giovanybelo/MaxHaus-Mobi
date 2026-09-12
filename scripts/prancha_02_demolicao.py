@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. K'
+REV = 'REV. L'
 PRANCHA = 'Prancha 02 / 07'
 
 # --- alvos: (id, x_pt, y_pt, tipo, dx_rotulo, dy_rotulo) --------------------
@@ -26,11 +26,14 @@ ALVOS = [
     ('R02', 353.0, 453.0, 'novo', -10, 11),
     ('M01', 300.0, 520.0, 'desm',  10,  3),
     ('K01', 380.6, 409.0, 'keep',  10, -5),
+    ('E01', 500.0, 330.0, 'ensaio', 10,  3),
+    ('E02', 500.0, 372.0, 'ensaio', 10,  3),
 ]
 # traço e miolo de cada marcador: a tipografia e o contorno são sempre pretos,
 # a tinta entra no miolo — ciano e amarelo puros não têm contraste para texto.
-COR_TRACO = {'demo': DEMO, 'desm': K, 'keep': K, 'prep': K, 'novo': K}
-COR_MIOLO = {'demo': DEMO, 'desm': CIANO, 'keep': K, 'prep': AMARELO, 'novo': BRANCO}
+COR_TRACO = {'demo': DEMO, 'desm': K, 'keep': K, 'prep': K, 'novo': K, 'ensaio': K}
+COR_MIOLO = {'demo': DEMO, 'desm': CIANO, 'keep': K, 'prep': AMARELO, 'novo': BRANCO,
+             'ensaio': BRANCO}
 
 LINHAS = [
     ('D01', 'Drywall entre sala e quarto', '1 trecho — 4,08 m'),
@@ -47,10 +50,12 @@ LINHAS = [
     ('P04', 'Demais paredes com revestimento retirado', 'preparo p/ pintura — mapear em obra'),
     ('P05', 'Nivelar o banheiro com o piso da casa', 'cota única — soleira sem degrau'),
     ('P06', 'Regularizar e lixar todo o contrapiso', '60,30 m² — plano e nivelado'),
-    ('R01', 'Nova drywall sala/quarto, com porta de correr 1,00 × 2,30 m', '4,08 m + 1 porta'),
+    ('R01', 'Nova drywall sala/quarto, com porta de correr 1,00 × 2,29 m', '4,08 m + 1 porta'),
     ('R02', 'Nova parede de fechamento do box', '1,63 m, no lugar do vidro'),
     ('M01', 'Desmontar e remontar closet', '1 conjunto — inventário por módulo'),
     ('K01', 'Vidro do box — MANTER', '1 peça'),
+    ('E01', 'Ensaio de estanqueidade (pressão) na hidráulica', 'antes de decidir a troca'),
+    ('E02', 'Medição de resistência de isolamento na elétrica', 'megômetro — antes de decidir'),
 ]
 
 NOTAS = [
@@ -58,9 +63,8 @@ NOTAS = [
      'Box com o pano de vidro de hoje (D06) e drywall ainda sem porta. O proposto — box fechado, porta',
      'de correr e porta do banheiro girando para a escada — está nas Pranchas 03 a 06.'],
     ['**Demolir para refazer, não só demolir.',
-     'A drywall entre sala e quarto cai e volta (R01), agora com porta de correr de 1,00 × 2,29 m.',
-     'A folha estaciona no 1,00 m de parede a leste do vão: nada de tomada, quadro ou marcenaria ali.',
-     'O vidro do fundo do box cai e vira parede (R02): orçar demolição e obra nova à parte.'],
+     'A drywall entre sala e quarto cai e volta (R01), com porta de correr de 1,00 × 2,29 m; a folha',
+     'estaciona no 1,00 m a leste do vão. O vidro do fundo do box cai e vira parede (R02).'],
     ['**Banheiro: reforma integral, e agora no nível da casa.',
      'Saem piso, revestimentos, box e a parede atrás do espelho. A base desce até a laje (D03) para o',
      'banheiro nascer na cota do piso seco (P05) — soleira sem degrau, o que joga a contenção de água',
@@ -69,13 +73,16 @@ NOTAS = [
      'Depois de tirar os pisos (D08), a base inteira precisa ficar reta: é condição do monolítico,',
      'que copia o que está embaixo. Uma cota única de piso acabado nos 60,30 m², amarrada ao hall.'],
     ['**Regra de escopo: toda parede que perder revestimento é preparada para pintura.',
-     'Mapeado hoje em P01 e P02; P04 cobre o que aparecer em obra. Definir o nível de acabamento',
-     'antes de orçar — massa e lixa não são a mesma linha que regularizar parede castigada.'],
+     'Mapeado em P01 e P02; P04 cobre o que aparecer em obra. Definir o nível de acabamento antes de orçar.'],
     ['**A laje inteira é serviço, não sobra da demolição (P03).',
-     'Com o forro fora, a laje aparece como está: fixação, marca de fôrma, desnível, fissura. Prever',
-     'restauro, descascamento e limpeza dos 60,30 m², com o acabamento definido com a empreiteira.'],
+     'Restauro, descascamento e limpeza dos 60,30 m², com o acabamento definido com a empreiteira.'],
     ['**Closet: etiquetar módulos e ferragens, fotografar, acondicionar e proteger.',
      'A área de 5,30 m² é do ambiente, não é área de marcenaria.'],
+    ['**Dois ensaios antes de decidir a troca de hidráulica e elétrica (E01 e E02).',
+     'Estanqueidade por pressão na hidráulica e resistência de isolamento com megômetro na elétrica:',
+     'custam pouco e dizem a condição real da instalação, em vez da idade. Com 17 anos de imóvel e a',
+     'obra abrindo piso, forro e paredes, é a janela. Orientação de escopo, não laudo — a decisão',
+     'final pede um engenheiro na inspeção.'],
 ]
 
 
@@ -126,8 +133,13 @@ def construir():
     for (ident, xp, yp, tipo, dx, dy) in ALVOS:
         cx, cy = d.P(xp, yp)
         cor, miolo = COR_TRACO[tipo], COR_MIOLO[tipo]
-        d.circle(cx, cy, 6.4, fill=BG, stroke=cor, sw=1.5)
-        d.circle(cx, cy, 3.0, fill=miolo, stroke=cor, sw=0.7)
+        if tipo == 'ensaio':          # ensaio de verificação: marcador quadrado
+            d.rect(cx - 5.6, cy - 5.6, 11.2, 11.2, fill=BG, stroke=cor, sw=1.5)
+            d.line(cx - 2.6, cy, cx + 2.6, cy, cor, 1.1)
+            d.line(cx, cy - 2.6, cx, cy + 2.6, cor, 1.1)
+        else:
+            d.circle(cx, cy, 6.4, fill=BG, stroke=cor, sw=1.5)
+            d.circle(cx, cy, 3.0, fill=miolo, stroke=cor, sw=0.7)
         anchor = 'start' if dx > 0 else 'end'
         d.txt(cx + dx, cy + dy, ident, 8.0, cor, 'bold', anchor, ls=0.4)
 
@@ -136,7 +148,8 @@ def construir():
                 ('fill', AMARELO, 'Preparo de superfície — pronto para pintura'),
                 ('dot', K, 'Reconstruir / manter'),
                 ('fill', CIANO, 'Desmontar e remontar'),
-                ('line', GLASS, 'Pano de vidro existente')],
+                ('line', GLASS, 'Pano de vidro existente'),
+                ('fill', BRANCO, 'Ensaio de verificação — antes de decidir')],
             70, 156 + BUILDING_H * S + 64, largura=600)
 
     d.line(690, 140, 690, 900, RULE, 0.8, opacity=0.8)
@@ -146,8 +159,8 @@ def construir():
     fim = tabela(d, cx, 160, cw,
                  [('ID', 0.11, 'start'), ('Serviço', 0.56, 'start'),
                   ('Quantidade preliminar', 0.33, 'end')],
-                 LINHAS, titulo='ESCOPO DE DEMOLIÇÃO E DESMONTAGEM')
-    paragrafos(d, cx, fim + 20, cw, NOTAS, size=8.4, lh=12.0, gap=6.0)
+                 LINHAS, titulo='ESCOPO DE DEMOLIÇÃO, PREPARO E VERIFICAÇÃO', alt=19)
+    paragrafos(d, cx, fim + 20, cw, NOTAS, size=8.4, lh=11.8, gap=5.5)
 
     rodape(d,
            'Quantidades preliminares sobre o modelo do scan (02.09.2026): servem para orientar visita e proposta, não para fechar medição.',

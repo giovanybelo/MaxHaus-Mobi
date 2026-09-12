@@ -9,13 +9,13 @@ gerais do pavimento (7,85 × 9,43 m).
 Todo o material fecha em **A3 deitado (420 × 297 mm)** e é exportado em **PDF
 vetorial**.
 
-## Caderno (REV. K)
+## Caderno (REV. L)
 
 | Prancha | Assunto | Arquivo |
 |---|---|---|
 | 01 | Planta baixa cotada, com norte | `pranchas/prancha-01-planta-cotada-A3.pdf` |
 | 02 | Demolição e desmontagem | `pranchas/prancha-02-demolicao-A3.pdf` |
-| 03 | Piso — opção A: cumaru-ferro + cozinha em monolítico | `pranchas/prancha-03-piso-cumaru-A3.pdf` |
+| 03 | Piso — opção A: cumaru-ferro, cozinha e closet em monolítico | `pranchas/prancha-03-piso-cumaru-A3.pdf` |
 | 04 | Piso — opção B: monolítico integral | `pranchas/prancha-04-piso-monolitico-A3.pdf` |
 | 05 | Teto: laje aparente, iluminação e ar-condicionado | `pranchas/prancha-05-teto-A3.pdf` |
 | 06 | Tomadas, comandos e quadro | `pranchas/prancha-06-eletrica-A3.pdf` |
@@ -124,21 +124,19 @@ Coordenadas do levantamento: 23°36'46,8"S 46°44'15,8"O, altitude 822 m.
 
 ### Piso — duas opções, uma folha para cada
 
-**Opção A (Prancha 03) — cumaru-ferro, piso pronto em réguas, com a cozinha em
-monolítico.** A ponta do monolítico nasce na quina do degrau da parede — logo
-abaixo da porta de entrada, onde fica a geladeira — e gira em arco de
-1,49 × 0,89 m até a parede do banheiro.
+**Opção A (Prancha 03) — cumaru-ferro, piso pronto em réguas, com cozinha e
+closet numa zona monolítica contínua.** A zona é um retângulo (da parede oeste
+à linha da sala, do degrau à fachada sul, passando pela abertura entre cozinha
+e closet) com **canto reto e a ponta arredondada**: um filete de 0,70 m de raio,
+tangente aos dois lados, só na quina que aparece no corredor da entrada.
 
 | Sistema | Onde | Área |
 |---|---|---|
-| Cumaru-ferro | sala 23,00 + quarto 13,40 + jantar 5,90 + closet 5,30 + corredor 2,56 | 50,16 m² |
-| + reserva de 10% | cortes, perdas e reposição | 55,18 m² |
-| Monolítico | cozinha — 6,34 dos 8,90 m² | 6,34 m² |
+| Cumaru-ferro | sala 23,00 + quarto 13,40 + jantar 5,90 + corredor 2,39 | 44,69 m² |
+| + reserva de 10% | cortes, perdas e reposição | 49,16 m² |
+| Monolítico | cozinha 6,51 (de 8,90) + closet 5,30 | 11,81 m² |
 | Banheiro | sistema à parte | 3,80 m² |
 | | **total** | **60,30 m²** |
-
-O closet entrou em cumaru: o pedido fala só da cozinha em monolítico. Se ele
-voltar para o monolítico, o quadro passa a cumaru 44,86 e monolítico 11,64 m².
 
 **Opção B (Prancha 04) — monolítico integral**, sistema único nos cinco
 ambientes secos (56,50 m²), com o banheiro à parte (3,80 m²). Sem junta de
@@ -156,9 +154,13 @@ o forro sai, o banheiro desce até a laje e as paredes perdem revestimento.
 Trocar agora custa material e mão de obra; trocar depois custa refazer piso e
 acabamento.
 
-Antes de decidir, dois ensaios baratos: **teste de estanqueidade** na hidráulica
-e **medição de resistência de isolamento** (megômetro) na elétrica. Prumadas e
-colunas são do condomínio — confirmar o que é privativo.
+Antes de decidir, dois ensaios baratos, que entraram no escopo de demolição
+como **E01** (estanqueidade por pressão na hidráulica) e **E02** (resistência de
+isolamento com megômetro na elétrica): custam pouco e dizem a condição real da
+instalação, em vez da idade. Prumadas e colunas são do condomínio — confirmar o
+que é privativo.
+
+Orientação de escopo, não laudo: a decisão final pede um engenheiro na inspeção.
 
 ## Identidade
 

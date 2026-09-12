@@ -95,33 +95,38 @@ BOX_WC       = (347.96, 408.20, 413.33, 450.67)   # box do banheiro
 VIDRO_BOX_INT= (347.96, 408.20, 413.33, 411.00)   # vidro interno do box (manter)
 CANTO_ALEMAO = (450.68, 128.94, 599.46, 145.00)   # banco de canto do jantar
 
-# --- ponta em curva da cozinha (opção A de piso) ---------------------------
-# A curva nasce na quina do degrau da parede — logo abaixo da porta de entrada,
-# onde fica a geladeira — e morre na parede do banheiro. Só faz sentido quando
-# há dois materiais no piso: é ela que resolve o encontro cumaru × monolítico.
-CURVA_CX, CURVA_CY = 277.8, 325.65
-CURVA_RX, CURVA_RY = 67.90, 40.85
-QUINA_DEGRAU = (277.8, 284.80)
-CURVA_FIM    = (345.7, 325.65)
+# --- zona monolítica da opção A: cozinha + closet ---------------------------
+# A zona é o retângulo cozinha + closet (x 248 → 345,7 · y 284,8 → 552,7 pt),
+# com a ponta nordeste arredondada: canto reto, filete de raio 0,70 m tangente
+# aos dois lados. A ponta é o que aparece no corredor da entrada, logo abaixo
+# da porta, onde fica a geladeira.
+RAIO_PONTA_M = 0.70
+_R = RAIO_PONTA_M * PT_PER_M
+PONTA_MONO = (345.7, 284.8)          # quina reta antes do arredondamento
+QUINA_DEGRAU = (277.8, 284.8)        # degrau da parede, onde fica a geladeira
 
-# zonas da opção A, em pt do scan
-COZ_MONO_POLY = None       # preenchido abaixo, depois de arco_pts
-COZ_HALL_POLY = None
 
-def arco_pts(n=28, invertido=False):
+def filete_pts(n=20, invertido=False):
+    """Quarto de círculo no canto nordeste da zona monolítica."""
+    cx, cy = PONTA_MONO[0] - _R, PONTA_MONO[1] + _R
     pts = []
     for i in range(n + 1):
-        th = math.radians(90.0 * (1.0 - i / float(n)))
-        pts.append((CURVA_CX + CURVA_RX * math.cos(th),
-                    CURVA_CY - CURVA_RY * math.sin(th)))
+        th = math.radians(90.0 * (i / float(n)))       # 0° = norte, 90° = leste
+        pts.append((cx + _R * math.sin(th), cy - _R * math.cos(th)))
     return list(reversed(pts)) if invertido else pts
 
 
-COZ_MONO_POLY = ([(248.0, 432.3), (248.0, 284.8)] + arco_pts() + [(345.7, 432.3)])
-COZ_HALL_POLY = ([(277.8, 211.2), (345.7, 211.2), (345.7, 325.65)]
-                 + arco_pts(invertido=True))
-AREA_COZ_MONO = 6.34       # m², parte monolítica da cozinha (de 8,90)
-AREA_HALL = 2.56           # m², corredor da entrada que fica em cumaru
+# zona monolítica (cozinha + closet), sentido horário
+MONO_A_POLY = ([(248.0, 284.8)] + filete_pts()
+               + [(345.7, 552.7), (248.0, 552.7)])
+# corredor da entrada, que fica em cumaru
+HALL_A_POLY = ([(277.8, 211.2), (345.7, 211.2)] + filete_pts(invertido=True)
+               + [(277.8, 284.8)])
+
+AREA_HALL = 2.39           # m², corredor da entrada, em cumaru
+AREA_COZ_MONO = 6.51       # m², parte monolítica da cozinha (de 8,90)
+AREA_MONO_A = 11.81        # m², cozinha 6,51 + closet 5,30
+AREA_CUMARU_A = 44.69      # m², sala + quarto + jantar + corredor
 
 # --- área da piscina do pavimento superior ---------------------------------
 # 1,92 x 3,00 m, centrada no cruzamento marcado pelo cliente (6,13 / 3,14 m).
@@ -680,7 +685,7 @@ def legenda(d, itens, x, y, largura=None, col=1):
             cy += 16
     return (cx, cy)
 
-def tabela(d, x, y, largura, colunas, linhas, titulo=None, zebra=True):
+def tabela(d, x, y, largura, colunas, linhas, titulo=None, zebra=True, alt=22):
     """colunas: [(rotulo, largura_relativa, alinhamento)]"""
     if titulo:
         d.txt(x, y - 9, titulo, 8.0, INK_SOFT, 'bold', ls=1.2)
@@ -696,17 +701,16 @@ def tabela(d, x, y, largura, colunas, linhas, titulo=None, zebra=True):
         d.txt(tx, y + 13.5, rot, 8.2, INK_SOFT, 'bold', al, ls=0.6)
     ry = y + 20
     for n, linha in enumerate(linhas):
-        alt = 22 if not isinstance(linha, tuple) or len(linha) < 4 else linha[3]
         if zebra and n % 2 == 1:
-            d.rect(x, ry, largura, 22, fill=K04)
+            d.rect(x, ry, largura, alt, fill=K04)
         for i, (rot, lw, al) in enumerate(colunas):
             val = linha[i] if i < len(linha) else ''
             tx = xs[i] + 8 if al == 'start' else (xs[i] + (xs[i + 1] - xs[i] if i + 1 < len(xs) else largura - (xs[i] - x)) - 8)
             peso = 'bold' if i == 0 else 'normal'
             cor = INK if i == 0 else INK_SOFT
-            d.txt(tx, ry + 14.5, val, 8.6, cor, peso, al)
-        d.line(x, ry + 22, x + largura, ry + 22, RULE, 0.6, opacity=0.8)
-        ry += 22
+            d.txt(tx, ry + alt * 0.66, val, 8.6, cor, peso, al)
+        d.line(x, ry + alt, x + largura, ry + alt, RULE, 0.6, opacity=0.8)
+        ry += alt
     return ry
 
 def paragrafos(d, x, y, largura, blocos, size=8.6, lh=13.0, gap=9.0):
