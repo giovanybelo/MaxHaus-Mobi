@@ -182,7 +182,7 @@ BOARDS = [
     ('01', 'Planta baixa cotada', 'prancha-01-planta-cotada.svg',
      'Folha de referência dimensional do pavimento, no estado proposto: cotas gerais, cadeias, cotas internas, nível e norte.',
      ['<b>7,85 × 9,43 m</b> externos', '<b>60,30 m²</b> úteis',
-      '<b>Pé-direito</b> 2,40 m com forro', '<b>Norte</b> provisório']),
+      '<b>Pé-direito</b> 2,40 m com forro', '<b>Norte</b> 126° medido']),
     ('02', 'Demolição e desmontagem', 'prancha-02-demolicao.svg',
      'Escopo sobre o modelo do scan: o que sai, o que se desmonta para remontar e o que fica.',
      ['<b>14</b> itens catalogados', '<b>Demolir e reconstruir</b> como serviços separados',
@@ -206,10 +206,14 @@ BOARDS = [
 ]
 
 DECISOES = [
-    ('Planta baixa cotada, com norte',
+    ('Planta baixa cotada, com norte medido',
      'O caderno ganhou a folha que faltava: cotas gerais, cadeias de cota nas quatro faces, '
-     'posição dos vãos na fachada leste, cotas internas, nível ±0,00 e símbolo de norte. '
-     'O norte é provisório — o levantamento por scan não registra orientação.'),
+     'posição dos vãos na fachada leste, cotas internas, nível ±0,00 e norte. O norte veio da rosa '
+     'dos ventos do scan do pavimento superior: 126° do topo da folha.'),
+    ('As fachadas envidraçadas dão para noroeste e nordeste',
+     'Noroeste — jantar, sala e uma janela do quarto — é a face que toma o sol da tarde, o mais '
+     'quente; nordeste, sol de manhã. As outras duas faces são divisa. Isso muda o '
+     'dimensionamento do ar: sala e jantar vão pela coluna base sol.'),
     ('Pé-direito é 2,40 m, e medido com o forro',
      'O relatório dá 2,40 m nos seis ambientes e 144,51 m³ de volume. Como o forro sai inteiro, '
      'a altura livre final é a face da laje, que o scan não mede: levantar o plenum na demolição. '
@@ -289,7 +293,7 @@ def build():
         ('Obra', 'MaxHaus MainFloor — João Baldinato 109, 81I', ''),
         ('Caderno', '6 pranchas — 01 a 06', ''),
         ('Formato', 'A3 deitado — 420 × 297 mm', 'mono'),
-        ('Revisão', 'H — 12.09.2026', 'mono'),
+        ('Revisão', 'I — 12.09.2026', 'mono'),
         ('Escala', 'gráfica (barra de 2 m em cada planta)', ''),
         ('Base', 'scan MaxHaus MainFloor, 02.09.2026', ''),
         ('Área do pavimento', '60,30 m²', 'mono'),
@@ -300,7 +304,7 @@ def build():
         for (k, v, c) in stamp)
 
     return """<title>Caderno MainFloor</title>
-<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. H.">
+<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. I.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
@@ -316,7 +320,7 @@ def build():
       como fica o teto agora que não há forro e onde ficam os pontos elétricos. Estudo preliminar —
       cores ilustrativas, nenhum produto ou espessura especificado.</p>
     </div>
-    <p class="rev">REV. H · 12.09.2026</p>
+    <p class="rev">REV. I · 12.09.2026</p>
   </header>
 
   <div class="rule"></div>

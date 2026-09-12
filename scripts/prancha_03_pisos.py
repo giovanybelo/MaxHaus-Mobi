@@ -10,7 +10,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. H'
+REV = 'REV. I'
 PRANCHA = 'Prancha 03 / 06'
 
 # contorno único do piso seco (faces internas, pt) — o monolítico é uma peça só,

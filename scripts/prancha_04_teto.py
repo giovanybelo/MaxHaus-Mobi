@@ -8,7 +8,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. H'
+REV = 'REV. I'
 PRANCHA = 'Prancha 04 / 06'
 
 # --- trilhos eletrificados: (id, (x0,y0), (x1,y1), nº de spots) em metros ---
@@ -84,10 +84,10 @@ NOTAS = [
      'TR4 — os dois lêem como uma linha só. O TR2 foi encurtado para 5,30 m: no traçado anterior',
      'ele cruzava o TR3 no meio da sala, e dois trilhos não se cruzam — se tiverem de se encontrar,',
      'é com conector T.'],
-    ['**Ar-condicionado sem forro: não há plenum para dutar.',
-     'Evaporadoras hi-wall ou cassete aparente; frigorígena, dreno e interligação elétrica correm',
-     'aparentes, em calha, com caimento contínuo. Somente Electrolux — marca igual não garante',
-     'compatibilidade entre unidades.'],
+    ['**Sem forro para dutar, e fachada envidraçada a noroeste.',
+     'Evaporadoras hi-wall ou cassete aparente, com frigorígena, dreno e interligação elétrica',
+     'aparentes, em calha e com caimento contínuo. Sala e jantar tomam o sol da tarde: dimensionar',
+     'pela coluna base sol, não pela sombra. Somente Electrolux — marca igual não garante compatibilidade.'],
     ['**A piscina do pavimento superior fica sobre a sala — 1,92 × 3,00 m, centrada em',
      '6,13 / 3,14 m do canto noroeste. Essa laje não recebe furação: nem luminária, nem trilho,',
      'nem evaporadora ou tubulação podem invadi-la, e a região exige impermeabilização e',
@@ -225,7 +225,7 @@ def construir():
 
     rodape(d,
            'Fluxo = área × lux ÷ (0,60 × 0,80). Fatores de utilização e manutenção são hipóteses; a laje aparente escura reduz o fator de utilização e deve ser reavaliada.',
-           'Carga térmica não é carga final: claraboia, insolação, escada aberta e ocupação mudam o resultado. Estudar 2 ou 3 evaporadoras; não há número fechado de aparelhos.',
+           'Carga térmica não é carga final: a fachada envidraçada a noroeste, a piscina sobre a sala, a escada aberta e a ocupação mudam o resultado. Estudar 2 ou 3 evaporadoras; não há número fechado.',
            PRANCHA, REV)
     return d
 

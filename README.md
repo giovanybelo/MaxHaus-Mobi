@@ -9,7 +9,7 @@ gerais do pavimento (7,85 × 9,43 m).
 Todo o material fecha em **A3 deitado (420 × 297 mm)** e é exportado em **PDF
 vetorial**.
 
-## Caderno (REV. H)
+## Caderno (REV. I)
 
 | Prancha | Assunto | Arquivo |
 |---|---|---|
@@ -48,10 +48,23 @@ O pé-direito de 2,40 m é anterior à demolição: com a retirada total do forr
 Levantar o plenum na demolição — é o que decide a folga da porta de correr de
 2,30 m e a altura de trilhos e evaporadoras.
 
-**Norte:** o levantamento por scan não registra orientação. O símbolo está
-desenhado com o norte no topo da folha, por convenção, e marcado como
-provisório em todas as pranchas. Basta alterar `NORTE_DEG` em
-`scripts/base_mainfloor.py` para orientar o caderno inteiro.
+**Norte: 126°** do topo da folha, sentido horário — medido, não arbitrado.
+
+O relatório do MainFloor não traz orientação, mas o do **pavimento superior**
+(`MaxHaus_Upfloor.pdf`, mesma captura de 02.09.2026) traz rosa dos ventos e GPS.
+A pétala rotulada N daquela folha aponta a **−53,97°**, e as duas plantas estão
+desenhadas com **180° de diferença** — confirmado por dois elementos que os
+pavimentos compartilham: a caixa da escada e a área da piscina, que só cai no
+terraço do Upfloor com essa rotação. Logo, −53,97 + 180 = **126°**.
+
+| Face da folha | Esquadrias | Rumo | Sol |
+|---|---|---|---|
+| Leste | J01, J02, J03, J04 | 324° — **noroeste** | tarde, o mais quente |
+| Sul | J05, J06 | 54° — **nordeste** | manhã |
+| Oeste | parede cega | 144° — sudeste | divisa |
+| Norte | parede cega | 234° — sudoeste | divisa |
+
+Coordenadas do levantamento: 23°36'46,8"S 46°44'15,8"O, altitude 822 m.
 
 ## Dois estados
 

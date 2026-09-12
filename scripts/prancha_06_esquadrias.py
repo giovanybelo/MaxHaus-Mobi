@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. H'
+REV = 'REV. I'
 PRANCHA = 'Prancha 06 / 06'
 
 ESC = 55.0          # px por metro no desenho das esquadrias
@@ -18,6 +18,8 @@ TAB_DADOS = [
     ('Perímetro somado dos ambientes', '78,10 m',  'não é perímetro do pavimento'),
     ('Pé-direito',                      '2,40 m',  'medido COM forro — vai subir'),
     ('Captura / exportação',   '02.09 / 07.09.2026', 'scan 3D Polycam'),
+    ('Coordenadas',   '23°36\'46,8"S  46°44\'15,8"O', 'altitude 822 m — do scan superior'),
+    ('Norte',                            '126°', 'do topo da folha, sentido horário'),
 ]
 
 TAB_INV = [

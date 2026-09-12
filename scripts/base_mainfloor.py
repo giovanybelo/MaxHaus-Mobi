@@ -153,10 +153,24 @@ AMBIENTES_SCAN = [
 
 # --- norte -----------------------------------------------------------------
 # 0° = norte para o topo da folha; o ângulo cresce no sentido horário.
-# PROVISÓRIO: o levantamento por scan não registra orientação. Trocar este
-# número é a única alteração necessária para orientar todo o caderno.
-NORTE_DEG = 0.0
-NORTE_CONFIRMADO = False
+#
+# Medido, não arbitrado: o relatório do Upfloor (mesma captura, 02.09.2026) traz
+# rosa dos ventos e GPS — o do MainFloor não traz nenhum dos dois. A pétala
+# rotulada N do Upfloor aponta a −53,97° do topo daquela folha, e as duas plantas
+# estão desenhadas com 180° de diferença (confirmado por dois elementos que os
+# pavimentos compartilham: a caixa da escada e a área da piscina, que só cai no
+# terraço do Upfloor com essa rotação). Logo, no MainFloor: −53,97 + 180 = 126°.
+NORTE_DEG = 126.0
+NORTE_CONFIRMADO = True
+GPS_LAT, GPS_LON, GPS_ALT = -23.612988, -46.737727, 822
+
+# rumo das fachadas, deduzido do norte acima
+FACHADAS = [
+    ('Leste da folha', 'J01, J02, J03, J04', '324° — noroeste', 'sol de tarde, o mais quente'),
+    ('Sul da folha',   'J05, J06',           '54° — nordeste',  'sol de manhã'),
+    ('Oeste da folha', 'parede cega',        '144° — sudeste',  'divisa'),
+    ('Norte da folha', 'parede cega',        '234° — sudoeste', 'divisa'),
+]
 
 # ---------------------------------------------------------------------------
 # 2. PALETA
@@ -492,22 +506,25 @@ def norte(d, cx, cy, r=17.0, graus=None, nota='duas'):
     g = NORTE_DEG if graus is None else graus
     a = math.radians(g - 90.0)
     ca, sa = math.cos(a), math.sin(a)
-    nx, ny = cx + r * ca, cy + r * sa
-    bx, by = cx - r * 0.62 * ca, cy - r * 0.62 * sa
-    px, py = -sa, ca
-    w = r * 0.32
+    nx, ny = cx + r * ca, cy + r * sa          # ponta norte
+    sx, sy = cx - r * ca, cy - r * sa          # ponta sul
+    px, py = -sa, ca                            # perpendicular
+    w = r * 0.26
+    b1 = (cx + px * w, cy + py * w)
+    b2 = (cx - px * w, cy - py * w)
     d.circle(cx, cy, r, fill='none', stroke=INK_SOFT, sw=0.9, opacity=0.75)
     d.add('<path d="M %.2f %.2f L %.2f %.2f L %.2f %.2f Z" fill="%s"/>'
-          % (nx, ny, bx + px * w, by + py * w, bx - px * w, by - py * w, INK))
-    d.add('<path d="M %.2f %.2f L %.2f %.2f L %.2f %.2f Z" fill="none" stroke="%s" stroke-width="0.9"/>'
-          % (cx - r * 1.0 * ca, cy - r * 1.0 * sa, bx + px * w, by + py * w,
-             bx - px * w, by - py * w, INK_SOFT))
+          % (nx, ny, b1[0], b1[1], b2[0], b2[1], INK))
+    d.add('<path d="M %.2f %.2f L %.2f %.2f L %.2f %.2f Z" fill="%s" stroke="%s" stroke-width="0.9"/>'
+          % (sx, sy, b1[0], b1[1], b2[0], b2[1], BRANCO, INK))
     d.txt(cx + (r + 12) * ca, cy + (r + 12) * sa + 3.4, 'N', 10.0, INK, 'bold', 'middle', ls=0.6)
-    if nota and not NORTE_CONFIRMADO:
-        d.txt(cx, cy + r + 23, 'ORIENTAÇÃO PROVISÓRIA', 6.6, RED, 'bold', 'middle', ls=0.3)
+    if nota and NORTE_CONFIRMADO:
+        d.txt(cx, cy + r + 23, 'NORTE 126°', 7.0, INK, 'bold', 'middle', ls=0.4)
         if nota == 'duas':
-            d.txt(cx, cy + r + 33, 'o scan não registra o norte', 6.8, INK_SOFT, 'normal', 'middle')
-            d.txt(cx, cy + r + 43, 'confirmar em campo', 6.8, INK_SOFT, 'normal', 'middle')
+            d.txt(cx, cy + r + 33, 'rosa dos ventos do scan', 6.8, INK_SOFT, 'normal', 'middle')
+            d.txt(cx, cy + r + 43, 'do pavimento superior', 6.8, INK_SOFT, 'normal', 'middle')
+    elif nota:
+        d.txt(cx, cy + r + 23, 'ORIENTAÇÃO PROVISÓRIA', 6.6, RED, 'bold', 'middle', ls=0.3)
 
 
 def escala(d, y):

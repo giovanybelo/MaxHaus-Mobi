@@ -3,7 +3,7 @@
 <text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
 <text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Demolição e desmontagem</text>
 <text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Diagrama de escopo sobre o modelo de trabalho. Conferir os alvos presencialmente antes de mobilizar a demolidora.</text>
-<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. H</text>
+<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. I</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">estado existente: o que sai, o que se prepara</text>
 <text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">demolir e reconstruir são serviços separados</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
@@ -75,10 +75,10 @@
 <line x1="378.38" y1="292.58" x2="378.38" y2="351.19" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
 <text x="291.8" y="324.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#4d4d4d" font-weight="bold" text-anchor="middle" letter-spacing="0.80">ESCADA</text>
 <circle cx="140.00" cy="212.00" r="15.00" fill="none" stroke="#4d4d4d" stroke-width="0.90" opacity="0.75"/>
-<path d="M 140.00 197.00 L 144.80 221.30 L 135.20 221.30 Z" fill="#000000"/>
-<path d="M 140.00 227.00 L 144.80 221.30 L 135.20 221.30 Z" fill="none" stroke="#4d4d4d" stroke-width="0.9"/>
-<text x="140.0" y="188.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">N</text>
-<text x="140.0" y="250.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#ff00ff" font-weight="bold" text-anchor="middle" letter-spacing="0.30">ORIENTAÇÃO PROVISÓRIA</text>
+<path d="M 152.14 220.82 L 137.71 215.16 L 142.29 208.84 Z" fill="#000000"/>
+<path d="M 127.86 203.18 L 137.71 215.16 L 142.29 208.84 Z" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<text x="161.8" y="231.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">N</text>
+<text x="140.0" y="250.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.40">NORTE 126°</text>
 <rect x="330.48" y="624.63" width="285.35" height="7.01" fill="#ff00ff" opacity="0.22"/>
 <rect x="330.48" y="624.63" width="285.35" height="7.01" fill="none" stroke="#ff00ff" stroke-width="1.10" stroke-dasharray="5 3"/>
 <rect x="226.77" y="591.12" width="100.22" height="65.11" fill="#ff00ff" opacity="0.22"/>
@@ -467,5 +467,5 @@
 <text x="48.0" y="940.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Quantidades preliminares sobre o modelo do scan (02.09.2026): servem para orientar visita e proposta, não para fechar medição.</text>
 <text x="48.0" y="953.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Nenhum alvo foi verificado em campo. Instalações embutidas, estrutura e vedações devem ser identificadas antes do início dos serviços.</text>
 <text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   12/09/2026</text>
-<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 02 / 06   ·   REV. H</text>
+<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 02 / 06   ·   REV. I</text>
 </svg>

@@ -9,7 +9,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. H'
+REV = 'REV. I'
 PRANCHA = 'Prancha 01 / 06'
 
 TAB_AMB = [(n, '%s m²' % br(a), '%s m' % br(per, 1), bb, ins)
@@ -39,11 +39,16 @@ NOTAS = [
      'As dimensões do relatório vêm em duas leituras: o menor retângulo que contém o ambiente (B) e o',
      'maior retângulo inscrito (I). Em planta irregular — sala e cozinha — as duas divergem bastante:',
      'usar a inscrita para conferir mobiliário e a cotada em planta para obra.'],
-    ['**O norte é provisório.',
-     'O levantamento por scan não registra orientação. O símbolo está com o norte no topo da folha,',
-     'por convenção, e vale como referência de leitura, não como orientação real. Confirmar em campo:',
-     'muda a leitura de insolação, a carga térmica (base sol × base sombra da Prancha 04) e o',
-     'ofuscamento no office. É a única informação deste caderno que depende de uma visita.'],
+    ['**O norte foi medido, não arbitrado: 126° do topo da folha.',
+     'O relatório do pavimento superior — mesma captura — traz rosa dos ventos e GPS; o do MainFloor',
+     'não traz nenhum dos dois. As duas plantas estão desenhadas com 180° de diferença, confirmado por',
+     'dois elementos que os pavimentos compartilham: a caixa da escada e a área da piscina, que só cai',
+     'no terraço de cima com essa rotação. A pétala N do Upfloor marca −53,97°; somados 180°, dá 126°.'],
+    ['**As duas fachadas envidraçadas dão para NOROESTE e NORDESTE.',
+     'Noroeste: jantar (J01), sala (J02 e J03) e uma janela do quarto (J04) — é a face que toma o sol',
+     'de tarde, o mais quente. Nordeste: a outra janela do quarto (J05) e o closet (J06), sol de manhã.',
+     'As outras duas faces são divisa, a sudeste e a sudoeste. Coordenadas do levantamento:',
+     '23°36\'46,8"S  46°44\'15,8"O, altitude 822 m.'],
 ]
 
 
@@ -51,7 +56,7 @@ def construir():
     d = folha_nova()
     cabecalho(d, 'Planta baixa cotada — estado proposto',
               'Folha de referência dimensional. Cotas em metros, sobre o levantamento por scan de 02.09.2026; conferir em campo antes de qualquer medição.',
-              REV, 'pé-direito 2,40 m com forro — laje a levantar',
+              REV, 'norte 126° — medido pela rosa do pavimento superior',
               'paredes 0,10 m  ·  nível ±0,00 = piso acabado atual')
 
     S = 64.0
@@ -93,7 +98,7 @@ def construir():
     cota_v(d, 213.47, 430.06, 275.52, 16, size=6.6, ext=False)
 
     # ---------------- norte + nível ----------------
-    norte(d, 214, 244, 19)
+    norte(d, 214, 218, 19)
     nx, ny = d.P(470.0, 372.0)
     d.add('<path d="M %.1f %.1f L %.1f %.1f L %.1f %.1f Z" fill="none" stroke="%s" stroke-width="1.1"/>'
           % (nx, ny, nx - 5, ny - 8, nx + 5, ny - 8, INK))
