@@ -20,7 +20,8 @@ vetorial**.
 | 05 | Teto: laje aparente, iluminação e ar-condicionado | `pranchas/prancha-05-teto-A3.pdf` |
 | 06 | Tomadas, comandos e quadro | `pranchas/prancha-06-eletrica-A3.pdf` |
 | 07 | Esquadrias e dados do levantamento | `pranchas/prancha-07-esquadrias-A3.pdf` |
-| — | Caderno completo, 7 folhas | `pranchas/caderno-mainfloor-A3.pdf` |
+| 08 | Banheiro: planta detalhada | `pranchas/prancha-08-banheiro-A3.pdf` |
+| — | Caderno completo, 8 folhas | `pranchas/caderno-mainfloor-A3.pdf` |
 
 Versão web responsiva: `pranchas/caderno-mainfloor.html`.
 
@@ -161,6 +162,34 @@ instalação, em vez da idade. Prumadas e colunas são do condomínio — confir
 que é privativo.
 
 Orientação de escopo, não laudo: a decisão final pede um engenheiro na inspeção.
+## Banheiro (Prancha 08)
+
+O banheiro é o trecho mais denso do pavimento e ganhou folha própria, em
+escala grande. Geometria interna lida do scan nas faces de revestimento
+retirado: **1,432 × 2,638 m, 3,78 m²** (3,80 m² nas tabelas).
+
+A folha traz quatro desenhos:
+
+- **Planta cotada** em faces internas, com o vão da porta (0,80 m), a bancada
+  (0,61 m), o vidro do box que fica (K01), o ralo linear e o giro invertido da
+  porta, que agora abre para a escada.
+- **Teto refletido**, o único do caderno: é o único ambiente que mantém forro,
+  com 2,42 m livres, dois embutidos e o exaustor.
+- **Corte esquemático de nível**, que é o problema central da folha: o piso, a
+  base e o rebaixo saem até a laje (D03) e o banheiro tem de voltar na **cota
+  única** da casa (P05). Impermeabilização, regularização com caimento e piso
+  acabado têm de caber entre a laje e essa cota — medir o desnível real depois
+  da demolição. A soleira passa a ser junta de material, não degrau.
+- **Altura livre**, comparando os 2,42 m do banheiro com os 2,62 m do resto do
+  pavimento, onde a retirada do forro (D07) devolve os 0,20 m de plenum.
+
+Sem degrau na soleira, a contenção de água passa a ser o caimento e o ralo
+linear no fundo do box. O caimento é executado na regularização, sobre a
+impermeabilização, nunca no piso acabado.
+
+Louças e metais não estão levantados: o scan reconheceu bancada e box, e é isso
+que a planta desenha.
+
 ## Pacote para fornecedores (EMISSÃO 01)
 
 Material paralelo ao caderno, derivado dele mas com outra função: cotação e

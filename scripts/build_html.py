@@ -207,6 +207,10 @@ BOARDS = [
      'Seis janelas e três portas na mesma escala, com os números que o relatório do scan entrega e o inventário do que ele reconheceu.',
      ['<b>6</b> janelas · <b>14,77 m²</b>', '<b>3</b> portas',
       '<b>P03</b> a única nova', '<b>144,51 m³</b> de volume']),
+    ('08', 'Banheiro: planta detalhada', 'prancha-08-banheiro.svg',
+     'O trecho mais denso do pavimento em escala grande: desce até a laje, mantém forro e volta na cota única da casa.',
+     ['<b>1,43 × 2,64 m</b> · 3,80 m²', '<b>2,42 m</b> livres — único com forro',
+      '<b>Cota única</b> com a casa, sem degrau', '<b>K01</b> vidro do box que fica']),
 ]
 
 DECISOES = [

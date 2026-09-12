@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
 REV = 'REV. L'
-PRANCHA = 'Prancha 02 / 07'
+PRANCHA = 'Prancha 02 / 08'
 
 # --- alvos: (id, x_pt, y_pt, tipo, dx_rotulo, dy_rotulo) --------------------
 ALVOS = [

@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
 REV = 'REV. L'
-PRANCHA = 'Prancha 05 / 07'
+PRANCHA = 'Prancha 05 / 08'
 
 # --- trilhos eletrificados: (id, (x0,y0), (x1,y1), nº de spots) em metros ---
 TRILHOS = [

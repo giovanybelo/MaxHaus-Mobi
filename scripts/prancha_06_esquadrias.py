@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
 REV = 'REV. L'
-PRANCHA = 'Prancha 07 / 07'
+PRANCHA = 'Prancha 07 / 08'
 
 ESC = 55.0          # px por metro no desenho das esquadrias
 
