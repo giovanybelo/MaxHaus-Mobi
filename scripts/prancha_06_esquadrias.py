@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. I'
+REV = 'REV. J'
 PRANCHA = 'Prancha 06 / 06'
 
 ESC = 55.0          # px por metro no desenho das esquadrias
@@ -13,10 +13,11 @@ TAB_DADOS = [
     ('Área útil (soma dos ambientes)', '60,30 m²', 'relatório arredonda para 60,20'),
     ('Área externa do pavimento',      '64,70 m²', 'inclui espessura de paredes'),
     ('Área de parede',                '130,40 m²', 'sem vãos'),
-    ('Área de esquadria',              '12,70 m²', 'seis janelas'),
-    ('Volume',                        '144,51 m³', 'com forro, pé-direito 2,40 m'),
+    ('Área de esquadria',              '13,44 m²', 'seis janelas, vão — scan dava 12,70'),
+    ('Volume',                        '144,51 m³', 'com forro; ~158 m³ na laje aparente'),
     ('Perímetro somado dos ambientes', '78,10 m',  'não é perímetro do pavimento'),
-    ('Pé-direito',                      '2,40 m',  'medido COM forro — vai subir'),
+    ('Pé-direito — laje',               '2,62 m',  'depois de retirar o forro (D07)'),
+    ('Pé-direito — forro atual',        '2,42 m',  'plenum de 0,20 m'),
     ('Captura / exportação',   '02.09 / 07.09.2026', 'scan 3D Polycam'),
     ('Coordenadas',   '23°36\'46,8"S  46°44\'15,8"O', 'altitude 822 m — do scan superior'),
     ('Norte',                            '126°', 'do topo da folha, sentido horário'),
@@ -32,17 +33,17 @@ TAB_INV = [
 ]
 
 NOTAS = [
-    ['**As esquadrias estão desenhadas na mesma escala, pelas medidas do relatório.',
-     'Largura × altura de vão, não de marco. O scan não mede peitoril, sentido de abertura nem',
-     'material: essas três informações faltam e precisam de visita. Nenhuma esquadria deste caderno',
-     'está liberada para fabricação.'],
-    ['**As duas janelas do quarto têm larguras iguais e alturas diferentes',
-     '— 1,20 × 1,60 e 1,20 × 1,50. O relatório não diz qual é a da fachada leste e qual é a do sul.',
-     'Conferir em campo antes de qualquer persiana, cortina ou película.'],
+    ['**Todas na mesma escala. Largura × altura de vão livre, não de marco.',
+     'Peitoril, sentido de abertura e material não estão medidos: as três informações precisam de',
+     'visita. Nenhuma esquadria deste caderno está liberada para fabricação.'],
+    ['**As alturas das janelas vieram do cliente, não do scan: 1,63 m em cinco das seis.',
+     'O relatório dava 1,50 e 1,60 m; a medida em campo é 1,63 m, e só a janela do closet (J06)',
+     'mantém 1,50 m. Com isso as duas do quarto ficam idênticas — 1,20 × 1,63 — e cai a dúvida de',
+     'qual era a da fachada noroeste e qual a da nordeste. A área de esquadria sobe para 13,44 m².'],
     ['**P03 é a única esquadria nova.',
-     'Porta de correr de 1,00 × 2,30 m na drywall reconstruída, com a folha estacionando no 1,00 m',
+     'Porta de correr de 1,00 × 2,29 m na drywall reconstruída, com a folha estacionando no 1,00 m',
      'de parede a leste do vão, pela face da sala. P02 mantém a folha existente de 0,80 × 2,00 m e',
-     'só inverte o giro. P01, a porta de entrada, não é alterada.'],
+     'só inverte o giro. P01, a porta de entrada, mede 1,00 × 2,29 m e não é alterada.'],
     ['**O inventário do scan serve para escopo, não para especificação.',
      'É o que o algoritmo reconheceu no dia da captura. Há erro evidente — uma "mesa lateral" de',
      '6,60 × 2,00 m que é a projeção da escada — e há ausência: o closet inteiro não foi',
@@ -84,7 +85,7 @@ def desenha_esquadria(d, x, ybase, item):
 def construir():
     d = folha_nova()
     cabecalho(d, 'Quadro de esquadrias e dados do levantamento',
-              'Todas as esquadrias na mesma escala, pelas medidas do relatório do scan. Vão livre, não marco: conferir em campo antes de fabricar.',
+              'Todas as esquadrias na mesma escala. Alturas conforme medição do cliente; larguras do scan. Vão livre, não marco: conferir antes de fabricar.',
               REV, 'seis janelas · três portas',
               'peitoril, sentido de abertura e material a levantar')
 
@@ -116,7 +117,7 @@ def construir():
     paragrafos(d, cx, fim + 28, cw, NOTAS, size=8.4, lh=12.4, gap=6.5)
 
     rodape(d,
-           'Medidas do relatório do scan (captura 02.09.2026), arredondadas ao decímetro pelo próprio relatório. Vão livre; marco, contramarco e acabamento não estão medidos.',
+           'Larguras do relatório do scan (captura 02.09.2026); alturas de janela e porta conforme medição do cliente em 12.09.2026. Vão livre; marco, contramarco e acabamento não estão medidos.',
            'Quadro de referência de estudo preliminar — não é lista de compra nem pedido de fabricação.',
            PRANCHA, REV)
     return d

@@ -13,7 +13,7 @@ Dois estados convivem no caderno:
   porta.
   ESTADO PROPOSTO (Pranchas 03, 04 e 05) — o pano de vidro sai e entra uma
   parede fechando o box; a drywall é refeita com uma porta de correr de
-  1,00 x 2,30 m; a porta do banheiro abre para fora, no sentido da escada.
+  1,00 x 2,29 m; a porta do banheiro abre para fora, no sentido da escada.
 
 Demais decisões do cliente embutidas na base:
   · o teto é laje de concreto aparente — não há forro, salvo no banheiro;
@@ -74,13 +74,13 @@ VIDRO_BOX = (343.39, 450.67, 417.90, 455.24)
 PAREDE_FUNDO_BOX = (343.39, 450.67, 417.90, 455.24)
 # drywall sala/quarto: demolida e refeita, agora com porta
 DRYWALL_SALA_QUARTO = (415.61, 430.06, 601.74, 434.63)
-PORTA_NOVA = (416.90, 430.06, 462.50, 434.63)      # 1,00 x 2,30 m
-PORTA_ENTRADA_H = 2.30                              # altura de referência
+PORTA_NOVA = (416.90, 430.06, 462.50, 434.63)      # 1,00 x 2,29 m, de correr
+PORTA_ENTRADA_H = 2.29                              # altura de referência
 # parede do jantar / sob a escada: revestimento retirado e preparo para pintura
 PAREDE_ESCADA_JANTAR = (446.11, 124.38, 450.68, 213.47)
 PAREDE_SOB_ESCADA = (321.40, 208.91, 459.40, 213.47)
 
-DOOR_ENTRADA = dict(rect=(275.52,220.10,280.09,259.20), hinge='n', leaf='e')
+DOOR_ENTRADA = dict(rect=(275.52,220.10,280.09,265.76), hinge='n', leaf='e')  # 1,00 m
 DOOR_BANHO   = dict(rect=(413.33,351.00,417.90,387.30), hinge='n', leaf='e')
 JANELAS = [
     (599.46,142.50,604.03,193.20), (599.46,215.00,604.03,300.80),
@@ -120,25 +120,30 @@ AREA_TETO = AREA_PISCINA          # compatibilidade
 AREA_TETO_M2 = AREA_PISCINA_M2
 
 # --- dados do levantamento (relatório Polycam, captura 02.09.2026) ----------
-PE_DIREITO = 2.40          # m, medido COM forro — some com a retirada (D07)
+# Alturas informadas pelo cliente (12.09.2026). O relatório do scan mede 2,40 m
+# com o forro, o que confere com os 2,42 m abaixo; o plenum de 0,20 m é o que
+# se ganha ao retirar o forro (D07).
+PE_DIREITO = 2.62          # m, piso ao fundo da laje — depois da demolição
+PE_DIREITO_FORRO = 2.42    # m, altura livre com o forro atual
+PLENUM_FORRO = 0.20        # m, o que o forro consome
 AREA_LIVABLE = 60.2        # m² (soma dos ambientes: 60,30)
 AREA_EXTERIOR = 64.7       # m²
 AREA_PAREDES = 130.4       # m²
-AREA_JANELAS = 12.7        # m²
-VOLUME_TOTAL = 144.51      # m³
+AREA_JANELAS = 13.43       # m² — vão, com as alturas do cliente (o scan dava 12,70)
+VOLUME_TOTAL = 144.51      # m³ com forro; 158,0 m³ com a laje aparente
 PERIMETRO_AMBIENTES = 78.1 # m
 
 # esquadrias: (id, tipo, ambiente, larg, alt, área, situação)
 ESQUADRIAS = [
-    ('J01', 'Janela', 'Jantar',   1.10, 1.50, 1.72, 'manter'),
-    ('J02', 'Janela', 'Sala',     1.90, 1.50, 2.78, 'manter'),
-    ('J03', 'Janela', 'Sala',     1.00, 1.50, 1.51, 'manter'),
-    ('J04', 'Janela', 'Quarto',   1.20, 1.60, 1.89, 'manter'),
-    ('J05', 'Janela', 'Quarto',   1.20, 1.50, 1.76, 'manter'),
-    ('J06', 'Janela', 'Closet',   2.00, 1.50, 3.04, 'manter'),
-    ('P01', 'Porta',  'Entrada',  0.90, 2.30, 2.04, 'manter'),
+    ('J01', 'Janela', 'Jantar',   1.10, 1.63, 1.79, 'manter'),
+    ('J02', 'Janela', 'Sala',     1.90, 1.63, 3.10, 'manter'),
+    ('J03', 'Janela', 'Sala',     1.00, 1.63, 1.63, 'manter'),
+    ('J04', 'Janela', 'Quarto',   1.20, 1.63, 1.96, 'manter'),
+    ('J05', 'Janela', 'Quarto',   1.20, 1.63, 1.96, 'manter'),
+    ('J06', 'Janela', 'Closet',   2.00, 1.50, 3.00, 'manter — única com 1,50'),
+    ('P01', 'Porta',  'Entrada',  1.00, 2.29, 2.29, 'manter'),
     ('P02', 'Porta',  'Banheiro', 0.80, 2.00, 1.64, 'giro invertido — abre p/ escada'),
-    ('P03', 'Porta de correr', 'Quarto', 1.00, 2.30, 2.30, 'nova, na drywall R01'),
+    ('P03', 'Porta de correr', 'Quarto', 1.00, 2.29, 2.29, 'nova, na drywall R01'),
 ]
 
 # ambientes: (nome, área, perímetro, bounding box, inscrita, parede s/ vãos)

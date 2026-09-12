@@ -3,7 +3,7 @@
 <text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
 <text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Teto: laje aparente, iluminação e ar-condicionado</text>
 <text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Distribuição conceitual sobre a laje de concreto. Reservas de posição, não quantidade final de luminárias nem de equipamentos.</text>
-<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. I</text>
+<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. J</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">sem forro — tudo aplicado na laje</text>
 <text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">piscina do pavimento superior sobre a sala</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
@@ -51,9 +51,9 @@
 <rect x="235.73" y="808.79" width="83.54" height="7.59" fill="#ffffff"/>
 <rect x="236.03" y="809.09" width="82.94" height="6.99" fill="none" stroke="#000000" stroke-width="0.90"/>
 <line x1="236.03" y1="812.58" x2="318.97" y2="812.58" stroke="#000000" stroke-width="0.90"/>
-<rect x="115.42" y="302.45" width="7.61" height="60.54" fill="#ffffff"/>
-<line x1="122.72" y1="302.75" x2="182.67" y2="302.75" stroke="#000000" stroke-width="1.40"/>
-<path d="M 182.67 302.75 A 59.94 59.94 0 0 1 122.72 362.69" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
+<rect x="115.42" y="302.45" width="7.61" height="70.60" fill="#ffffff"/>
+<line x1="122.72" y1="302.75" x2="192.72" y2="302.75" stroke="#000000" stroke-width="1.40"/>
+<path d="M 192.72 302.75 A 70.00 70.00 0 0 1 122.72 372.75" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
 <rect x="326.69" y="503.12" width="7.61" height="56.25" fill="#ffffff"/>
 <line x1="333.99" y1="503.42" x2="389.65" y2="503.42" stroke="#000000" stroke-width="1.40"/>
 <path d="M 389.65 503.42 A 55.65 55.65 0 0 1 333.99 559.07" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
@@ -314,10 +314,10 @@
 <text x="1205.4" y="424.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">33.900 BTU/h</text>
 <text x="1344.0" y="424.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">45.200 BTU/h</text>
 <line x1="722.00" y1="432.00" x2="1352.00" y2="432.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
-<text x="722.0" y="456.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Não há forro: a laje de concreto é o teto acabado.</text>
-<text x="722.0" y="468.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">O scan mede 2,40 m de pé-direito com o forro; a altura livre final é a face da laje e só se</text>
-<text x="722.0" y="480.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">conhece depois da demolição — levantar o plenum antes de comprar trilho ou evaporadora.</text>
-<text x="722.0" y="493.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Fora do banheiro, único ambiente que mantém forro, nada de embutido.</text>
+<text x="722.0" y="456.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Não há forro: a laje de concreto é o teto acabado, a 2,62 m do piso.</text>
+<text x="722.0" y="468.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Com o forro atual são 2,42 m; a retirada (D07) devolve os 0,20 m de plenum. É nessa faixa que</text>
+<text x="722.0" y="480.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">entram trilho, perfilado e evaporadora — e é ela que dá os 0,33 m acima da porta de correr de</text>
+<text x="722.0" y="493.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">2,29 m. Fora do banheiro, único ambiente que mantém forro, nada de embutido.</text>
 <text x="722.0" y="511.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Fiação e infraestrutura ficam à vista.</text>
 <text x="722.0" y="524.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Perfilados ou eletrocalhas pintadas, alinhados às vigas e aos trilhos: o caminho da fiação</text>
 <text x="722.0" y="536.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">vira desenho, não sobra de obra.</text>
@@ -345,11 +345,11 @@
 <text x="722.0" y="839.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">depende de confirmar apoio acima do limite sala/jantar e o modelo da condensadora existente:</text>
 <text x="722.0" y="851.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">não assumir que ela admite duas evaporadoras.</text>
 <text x="722.0" y="870.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Vazões de referência, a validar com perda de carga do duto:</text>
-<text x="722.0" y="882.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">banheiro 3,8 × 2,40 × 10 = 91,2 m³/h; coifa 8,9 × 2,40 × 12 = 256,3 m³/h — o segundo só</text>
-<text x="722.0" y="894.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">valeria com cozinha isolada; integrada, seleciona-se por captura no fogão. Rotas próprias.</text>
+<text x="722.0" y="882.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">banheiro 3,8 × 2,42 × 10 = 92,0 m³/h (mantém forro); coifa 8,9 × 2,62 × 12 = 279,8 m³/h — o</text>
+<text x="722.0" y="894.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">segundo só valeria com cozinha isolada; integrada, seleciona-se por captura. Rotas próprias.</text>
 <line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="48.0" y="940.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Fluxo = área × lux ÷ (0,60 × 0,80). Fatores de utilização e manutenção são hipóteses; a laje aparente escura reduz o fator de utilização e deve ser reavaliada.</text>
 <text x="48.0" y="953.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Carga térmica não é carga final: a fachada envidraçada a noroeste, a piscina sobre a sala, a escada aberta e a ocupação mudam o resultado. Estudar 2 ou 3 evaporadoras; não há número fechado.</text>
 <text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   12/09/2026</text>
-<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 04 / 06   ·   REV. I</text>
+<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 04 / 06   ·   REV. J</text>
 </svg>

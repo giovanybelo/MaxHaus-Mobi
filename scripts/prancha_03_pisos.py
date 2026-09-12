@@ -10,7 +10,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. I'
+REV = 'REV. J'
 PRANCHA = 'Prancha 03 / 06'
 
 # contorno único do piso seco (faces internas, pt) — o monolítico é uma peça só,
@@ -41,19 +41,20 @@ NOTAS = [
     ['**Um sistema só, sem junta de material entre os ambientes secos.',
      'Com o cumaru fora, a ponta em curva da cozinha perde a função: ela existia apenas para',
      'resolver o encontro entre a madeira e o monolítico. O piso corre contínuo da entrada ao',
-     'quarto, e as únicas transições que sobram são a soleira do banheiro e a da porta de entrada.'],
+     'quarto; as únicas transições são a soleira do banheiro — agora sem degrau — e a da entrada.'],
     ['**Juntas de movimentação são projeto, não improviso de obra.',
      'Monolítico contínuo em 56,50 m² trabalha: prever juntas conforme o sistema escolhido,',
      'nos vãos de porta e nos encontros com a estrutura. Posição e desenho entram no executivo,',
      'junto com o fornecedor — uma trinca num piso sem junta não tem remendo invisível.'],
-    ['**A base manda no resultado.',
-     'Depois de retirar os pisos existentes (D08), conferir nível, aderência, umidade e fissuras',
-     'do contrapiso em toda a extensão. Espessura, sistema e acabamento ainda não estão',
-     'especificados: cor e textura do desenho são ilustrativas.'],
-    ['**O banheiro fica fora do monolítico.',
-     'Sistema próprio, com impermeabilização, caimento para o ralo e acabamento antiderrapante.',
-     'Com o piso demolido, conferir o rebaixo da laje; a impermeabilização precisa subir também',
-     'na parede nova do fundo do box (R02).'],
+    ['**A base manda no resultado — o monolítico copia o que está embaixo.',
+     'Depois de retirar os pisos (D08), todo o contrapiso é lixado, regularizado e nivelado (P06),',
+     'com conferência de aderência, umidade e fissuras. Espessura, sistema e acabamento ainda não',
+     'estão especificados: cor e textura do desenho são ilustrativas.'],
+    ['**O banheiro fica fora do monolítico, mas na mesma cota.',
+     'Sistema próprio, com impermeabilização, caimento e acabamento antiderrapante — só que nivelado',
+     'com o piso seco (P05): a soleira passa a ser junta de material, não degrau. Sem degrau, a',
+     'contenção de água é resolvida dentro do box, com ralo linear e fecho de vidro. A',
+     'impermeabilização sobe também na parede nova do fundo do box (R02).'],
     ['**Encontro com a parede.',
      'Rodapé embutido, negativo ou pintura direta mudam o preparo das paredes e o corte do',
      'piso: definir antes de a empreiteira fechar o preparo para pintura.'],

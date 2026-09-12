@@ -182,7 +182,7 @@ BOARDS = [
     ('01', 'Planta baixa cotada', 'prancha-01-planta-cotada.svg',
      'Folha de referência dimensional do pavimento, no estado proposto: cotas gerais, cadeias, cotas internas, nível e norte.',
      ['<b>7,85 × 9,43 m</b> externos', '<b>60,30 m²</b> úteis',
-      '<b>Pé-direito</b> 2,40 m com forro', '<b>Norte</b> 126° medido']),
+      '<b>Pé-direito</b> 2,62 m na laje', '<b>Norte</b> 126° medido']),
     ('02', 'Demolição e desmontagem', 'prancha-02-demolicao.svg',
      'Escopo sobre o modelo do scan: o que sai, o que se desmonta para remontar e o que fica.',
      ['<b>14</b> itens catalogados', '<b>Demolir e reconstruir</b> como serviços separados',
@@ -201,7 +201,7 @@ BOARDS = [
       '<b>8</b> comandos, dois na cabeceira', '<b>Quadro</b> na entrada']),
     ('06', 'Esquadrias e dados do levantamento', 'prancha-06-esquadrias.svg',
      'Seis janelas e três portas na mesma escala, com os números que o relatório do scan entrega e o inventário do que ele reconheceu.',
-     ['<b>6</b> janelas · <b>12,70 m²</b>', '<b>3</b> portas',
+     ['<b>6</b> janelas · <b>13,44 m²</b>', '<b>3</b> portas',
       '<b>P03</b> a única nova', '<b>144,51 m³</b> de volume']),
 ]
 
@@ -214,10 +214,16 @@ DECISOES = [
      'Noroeste — jantar, sala e uma janela do quarto — é a face que toma o sol da tarde, o mais '
      'quente; nordeste, sol de manhã. As outras duas faces são divisa. Isso muda o '
      'dimensionamento do ar: sala e jantar vão pela coluna base sol.'),
-    ('Pé-direito é 2,40 m, e medido com o forro',
-     'O relatório dá 2,40 m nos seis ambientes e 144,51 m³ de volume. Como o forro sai inteiro, '
-     'a altura livre final é a face da laje, que o scan não mede: levantar o plenum na demolição. '
-     'As vazões da Prancha 04 foram refeitas com 2,40 m.'),
+    ('Medidas de campo entraram no lugar das do scan',
+     'Pé-direito: 2,42 m com o forro atual e 2,62 m na laje — 0,20 m de plenum, que é o que sobra '
+     'acima da porta de correr. Portas de entrada e do quarto: 1,00 × 2,29 m. Janelas: 1,63 m de '
+     'altura em cinco das seis, só o closet mantém 1,50 m, o que sobe a área de esquadria para '
+     '13,44 m² e torna as duas do quarto idênticas.'),
+    ('O banheiro nasce na cota do piso da casa',
+     'A base do banheiro desce até a laje e o ambiente volta no mesmo nível do piso seco: a soleira '
+     'passa a ser junta de material, não degrau. Sem degrau, ralo linear, caimento e fecho de vidro '
+     'assumem a contenção de água. E todo o contrapiso vai lixado, regularizado e nivelado — '
+     'condição do monolítico, que copia o que está embaixo.'),
     ('Identidade aplicada ao caderno',
      'Tipografia serifada em todas as folhas e quatro tintas puras: magenta é o que sai, ciano é '
      'água, ar e obra nova, amarelo é preparo e atenção, preto é o que fica — e toda a tipografia. '
@@ -293,7 +299,7 @@ def build():
         ('Obra', 'MaxHaus MainFloor — João Baldinato 109, 81I', ''),
         ('Caderno', '6 pranchas — 01 a 06', ''),
         ('Formato', 'A3 deitado — 420 × 297 mm', 'mono'),
-        ('Revisão', 'I — 12.09.2026', 'mono'),
+        ('Revisão', 'J — 12.09.2026', 'mono'),
         ('Escala', 'gráfica (barra de 2 m em cada planta)', ''),
         ('Base', 'scan MaxHaus MainFloor, 02.09.2026', ''),
         ('Área do pavimento', '60,30 m²', 'mono'),
@@ -304,7 +310,7 @@ def build():
         for (k, v, c) in stamp)
 
     return """<title>Caderno MainFloor</title>
-<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. I.">
+<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. J.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
@@ -320,7 +326,7 @@ def build():
       como fica o teto agora que não há forro e onde ficam os pontos elétricos. Estudo preliminar —
       cores ilustrativas, nenhum produto ou espessura especificado.</p>
     </div>
-    <p class="rev">REV. I · 12.09.2026</p>
+    <p class="rev">REV. J · 12.09.2026</p>
   </header>
 
   <div class="rule"></div>

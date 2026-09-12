@@ -9,7 +9,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. I'
+REV = 'REV. J'
 PRANCHA = 'Prancha 01 / 06'
 
 TAB_AMB = [(n, '%s m²' % br(a), '%s m' % br(per, 1), bb, ins)
@@ -22,15 +22,16 @@ NOTAS = [
      'polígonos de ambiente foram lidos do vetor do arquivo em pontos PDF e convertidos pela escala',
      '45,66 pt/m, conferida duas vezes contra as cotas gerais: 358,33 pt / 7,85 m e 430,56 pt / 9,43 m.',
      'O próprio relatório avisa que são estimativas — nenhuma cota aqui substitui medição em campo.'],
-    ['**Pé-direito 2,40 m, medido com o forro — e o forro vai sair.',
-     'Os seis ambientes dão 2,40 m e o volume fecha em 144,51 m³. Com a retirada total do forro (D07),',
-     'a altura livre passa a ser a face inferior da laje, que o scan não mede: levantar o plenum logo',
-     'na demolição. Isso decide a folga da porta de correr de 2,30 m e a altura de trilhos e',
-     'evaporadoras. A porta de entrada existente já tem 2,30 m — o vão de 2,30 cabe.'],
-    ['**Espessuras e níveis.',
+    ['**Pé-direito: 2,42 m com o forro atual, 2,62 m na laje.',
+     'Alturas informadas pelo cliente; o relatório do scan mede 2,40 m com forro, o que confere. Com',
+     'a retirada total do forro (D07) ganham-se os 0,20 m de plenum. É essa folga que acomoda a porta',
+     'de correr de 2,29 m: sob o forro de hoje sobrariam 0,13 m, e sobre a laje sobram 0,33 m — espaço',
+     'para o trilho aparente. Volume passa de 144,51 m³ para cerca de 158 m³ com a laje aparente.'],
+    ['**Espessuras e níveis: uma cota única para o pavimento.',
      'Todas as paredes lidas no scan têm 0,10 m. A nova drywall (R01) repete a espessura, salvo se o',
-     'trilho da porta de correr for embutido em cassete — aí a parede engrossa. Cota de nível ±0,00 =',
-     'piso acabado atual; com a troca de piso o nível final muda e precisa ser amarrado ao hall.'],
+     'trilho da porta de correr for embutido em cassete — aí a parede engrossa. O banheiro passa a',
+     'nascer na mesma cota do piso seco (P05), sem degrau de soleira, e todo o contrapiso é lixado e',
+     'nivelado (P06): ±0,00 é o piso acabado atual, e o nível final precisa ser amarrado ao hall.'],
     ['**Diferença entre as áreas do relatório.',
      'Área externa 64,70 m² (inclui paredes), área útil 60,20 m² pelo relatório e 60,30 m² pela soma',
      'dos seis ambientes — a diferença é arredondamento. O caderno usa 60,30 m². Área de parede',
@@ -57,7 +58,7 @@ def construir():
     cabecalho(d, 'Planta baixa cotada — estado proposto',
               'Folha de referência dimensional. Cotas em metros, sobre o levantamento por scan de 02.09.2026; conferir em campo antes de qualquer medição.',
               REV, 'norte 126° — medido pela rosa do pavimento superior',
-              'paredes 0,10 m  ·  nível ±0,00 = piso acabado atual')
+              'pé-direito 2,62 m na laje · 2,42 m com o forro atual')
 
     S = 64.0
     d.set_plan(132, 182, S)

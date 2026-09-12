@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. I'
+REV = 'REV. J'
 PRANCHA = 'Prancha 05 / 06'
 
 # --- pontos existentes marcados pelo cliente (metros) -----------------------
@@ -26,7 +26,7 @@ TOMADAS_NOVAS = [
 ]
 # --- comandos ---------------------------------------------------------------
 COMANDOS = [
-    ('S01', 0.90, 3.05), ('S02', 4.17, 2.30), ('S03', 2.35, 4.60),
+    ('S01', 0.90, 3.25), ('S02', 4.17, 2.30), ('S03', 2.35, 4.60),
     ('S04', 3.92, 4.88), ('S05', 4.90, 6.98),
     ('S06', 5.05, 9.05), ('S07', 6.95, 9.05),
     ('S08', 3.92, 4.62),      # luz da sala, na quina do box voltada para a escada
@@ -49,8 +49,9 @@ LINHAS = [
 
 NOTAS = [
     ['**O quadro de energia foi localizado pelo cliente: fica junto à porta de entrada,',
-     'no início da extensão da cozinha. Confirmar espaço livre, altura e a circulação da porta',
-     'antes de fixar. Todo o resto do traçado sai dele.'],
+     'no início da extensão da cozinha. Com a porta de entrada medindo 1,00 m de vão, a folha tem',
+     '1,00 m de raio e passa sobre o quadro: ou ele desloca, ou a porta perde abertura. O S01 já saiu',
+     'do vão e foi para 3,25 m. Confirmar espaço livre e altura antes de fixar — todo o traçado sai dali.'],
     ['**Sem forro, os trajetos ficam aparentes.',
      'A distribuição no teto passa a ser perfilado ou eletrocalha pintada, acompanhando os trilhos',
      'de luz da Prancha 04; as descidas para tomadas e comandos correm embutidas na parede.',

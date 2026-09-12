@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. I'
+REV = 'REV. J'
 PRANCHA = 'Prancha 02 / 06'
 
 # --- alvos: (id, x_pt, y_pt, tipo, dx_rotulo, dy_rotulo) --------------------
@@ -20,6 +20,8 @@ ALVOS = [
     ('P01', 448.4, 170.0, 'prep', -10,  3),
     ('P02', 380.0, 211.2, 'prep',   0, -8),
     ('P03', 500.0, 250.0, 'prep',  10,  3),
+    ('P05', 425.0, 369.0, 'prep',  10,  3),
+    ('P06', 290.0, 300.0, 'prep',  10,  3),
     ('R01', 555.0, 432.3, 'novo',  10, -6),
     ('R02', 353.0, 453.0, 'novo', -10, 11),
     ('M01', 300.0, 520.0, 'desm',  10,  3),
@@ -33,7 +35,7 @@ COR_MIOLO = {'demo': DEMO, 'desm': CIANO, 'keep': K, 'prep': AMARELO, 'novo': BR
 LINHAS = [
     ('D01', 'Drywall entre sala e quarto', '1 trecho — 4,08 m'),
     ('D02', 'Box do banheiro: fechamento e base', '1 conjunto'),
-    ('D03', 'Piso do banheiro', '3,80 m²'),
+    ('D03', 'Piso do banheiro: revestimento, base e rebaixo', '3,80 m² — descer até a laje'),
     ('D04', 'Parede atrás do espelho e da bancada', '1 trecho — 2,64 m a conferir'),
     ('D05', 'Canto alemão do jantar', '1 conjunto — inventário por módulo'),
     ('D06', 'Pano de vidro chão-teto do fundo do box', '1,63 m, ponta a ponta'),
@@ -43,6 +45,8 @@ LINHAS = [
     ('P02', 'Parede sob a escada: retirar revestimento', 'trecho a confirmar — preparo p/ pintura'),
     ('P03', 'Laje: restaurar, descascar, limpar e preparar', '60,30 m² — acabamento a definir'),
     ('P04', 'Demais paredes com revestimento retirado', 'preparo p/ pintura — mapear em obra'),
+    ('P05', 'Nivelar o banheiro com o piso da casa', 'cota única — soleira sem degrau'),
+    ('P06', 'Regularizar e lixar todo o contrapiso', '60,30 m² — plano e nivelado'),
     ('R01', 'Nova drywall sala/quarto, com porta de correr 1,00 × 2,30 m', '4,08 m + 1 porta'),
     ('R02', 'Nova parede de fechamento do box', '1,63 m, no lugar do vidro'),
     ('M01', 'Desmontar e remontar closet', '1 conjunto — inventário por módulo'),
@@ -51,28 +55,25 @@ LINHAS = [
 
 NOTAS = [
     ['**Esta planta mostra o estado existente.',
-     'O fundo do box aparece como o pano de vidro chão-teto que existe hoje (D06) e a drywall ainda',
-     'sem porta. O estado proposto — box fechado em parede, drywall nova com porta de correr e a',
-     'porta do banheiro abrindo para fora, no sentido da escada — está nas Pranchas 03, 04 e 05.'],
+     'Box com o pano de vidro de hoje (D06) e drywall ainda sem porta. O proposto — box fechado, porta',
+     'de correr e porta do banheiro girando para a escada — está nas Pranchas 03, 04 e 05.'],
     ['**Demolir para refazer, não só demolir.',
-     'A drywall entre sala e quarto cai e é reconstruída (R01), agora com uma porta de correr de',
-     '1,00 × 2,30 m. A folha estaciona sobre a parede: o trecho de 1,00 m a leste do vão fica',
-     'reservado — nada de tomada, quadro ou marcenaria ali. Definir se o trilho é aparente, mantendo',
-     'a drywall de 10 cm, ou embutido em cassete, que exige engrossar a parede. O pano de vidro do',
-     'fundo do box cai e vira parede (R02): orçar demolição e obra nova como serviços separados.'],
-    ['**Banheiro: reforma integral.',
-     'Saem piso, revestimentos, fechamento do box e a parede atrás do espelho e da bancada.',
-     'O vidro do box (K01) segue marcado para manter — confirmar se a reforma o preserva.'],
+     'A drywall entre sala e quarto cai e volta (R01), agora com porta de correr de 1,00 × 2,29 m.',
+     'A folha estaciona no 1,00 m de parede a leste do vão: nada de tomada, quadro ou marcenaria ali.',
+     'O vidro do fundo do box cai e vira parede (R02): orçar demolição e obra nova à parte.'],
+    ['**Banheiro: reforma integral, e agora no nível da casa.',
+     'Saem piso, revestimentos, box e a parede atrás do espelho. A base desce até a laje (D03) para o',
+     'banheiro nascer na cota do piso seco (P05) — soleira sem degrau, o que joga a contenção de água',
+     'para dentro do box: ralo linear, caimento e fecho de vidro fazem o serviço que o degrau fazia.'],
+    ['**Todo o contrapiso lixado, plano e nivelado (P06).',
+     'Depois de tirar os pisos (D08), a base inteira precisa ficar reta: é condição do monolítico,',
+     'que copia o que está embaixo. Uma cota única de piso acabado nos 60,30 m², amarrada ao hall.'],
     ['**Regra de escopo: toda parede que perder revestimento é preparada para pintura.',
-     'Hoje isso está mapeado no jantar (P01) e sob a escada (P02) — as duas paredes ficam, só',
-     'perdem espelho e revestimento. P04 cobre o que aparecer depois: não tem alvo fixo em planta,',
-     'mas entra no mesmo serviço. Definir o nível de acabamento antes de orçar: massa, lixa e',
-     'demão de fundo não são a mesma linha que regularização de parede castigada.'],
+     'Mapeado hoje em P01 e P02; P04 cobre o que aparecer em obra. Definir o nível de acabamento',
+     'antes de orçar — massa e lixa não são a mesma linha que regularizar parede castigada.'],
     ['**A laje inteira é serviço, não sobra da demolição (P03).',
-     'Com o forro fora (D07), a laje aparece como está: restos de fixação, marca de fôrma, desnível,',
-     'fissura, eventual ferro exposto. Prever restauro, descascamento, limpeza e preparo dos',
-     '60,30 m², e definir com a empreiteira o acabamento — concreto nu, selador, verniz ou pintura.',
-     'É esse plano que recebe trilho, evaporadora e calha: quanto mais torto, mais aparece.'],
+     'Com o forro fora, a laje aparece como está: fixação, marca de fôrma, desnível, fissura. Prever',
+     'restauro, descascamento e limpeza dos 60,30 m², com o acabamento definido com a empreiteira.'],
     ['**Closet: etiquetar módulos e ferragens, fotografar, acondicionar e proteger.',
      'A área de 5,30 m² é do ambiente, não é área de marcenaria.'],
 ]
@@ -146,7 +147,7 @@ def construir():
                  [('ID', 0.11, 'start'), ('Serviço', 0.56, 'start'),
                   ('Quantidade preliminar', 0.33, 'end')],
                  LINHAS, titulo='ESCOPO DE DEMOLIÇÃO E DESMONTAGEM')
-    paragrafos(d, cx, fim + 24, cw, NOTAS, size=8.4, lh=12.4, gap=7.0)
+    paragrafos(d, cx, fim + 20, cw, NOTAS, size=8.4, lh=12.0, gap=6.0)
 
     rodape(d,
            'Quantidades preliminares sobre o modelo do scan (02.09.2026): servem para orientar visita e proposta, não para fechar medição.',

@@ -9,7 +9,7 @@ gerais do pavimento (7,85 × 9,43 m).
 Todo o material fecha em **A3 deitado (420 × 297 mm)** e é exportado em **PDF
 vetorial**.
 
-## Caderno (REV. I)
+## Caderno (REV. J)
 
 | Prancha | Assunto | Arquivo |
 |---|---|---|
@@ -38,15 +38,33 @@ Versão web responsiva: `pranchas/caderno-mainfloor.html`.
 |---|---|
 | Área útil (soma dos ambientes) | 60,30 m² (relatório: 60,20) |
 | Área externa do pavimento | 64,70 m² |
-| Área de parede / de esquadria | 130,40 m² / 12,70 m² |
-| Volume | 144,51 m³ |
+| Área de parede | 130,40 m² |
+| Área de esquadria (vão) | 13,44 m² — com as alturas de campo; o scan dava 12,70 |
+| Volume | 144,51 m³ com forro · ~158 m³ com a laje aparente |
 | Perímetro somado dos ambientes | 78,10 m |
-| **Pé-direito** | **2,40 m — medido COM forro** |
+| **Pé-direito — laje** | **2,62 m** (depois de retirar o forro) |
+| **Pé-direito — forro atual** | **2,42 m** (plenum de 0,20 m) |
 
-O pé-direito de 2,40 m é anterior à demolição: com a retirada total do forro
-(D07) a altura livre passa a ser a face inferior da laje, que o scan não mede.
-Levantar o plenum na demolição — é o que decide a folga da porta de correr de
-2,30 m e a altura de trilhos e evaporadoras.
+As alturas vieram de medição em campo (12.09.2026); o relatório do scan mede
+2,40 m com o forro, o que confere com os 2,42 m. Retirar o forro (D07) devolve
+0,20 m de plenum: é essa folga que acomoda a porta de correr de 2,29 m — 0,13 m
+sob o forro de hoje, 0,33 m sobre a laje.
+
+### Esquadrias
+
+Vão livre, medição de campo em 12.09.2026 (larguras do scan):
+
+| ID | Ambiente | Vão |
+|---|---|---|
+| J01 | Jantar | 1,10 × 1,63 |
+| J02 | Sala | 1,90 × 1,63 |
+| J03 | Sala | 1,00 × 1,63 |
+| J04 | Quarto | 1,20 × 1,63 |
+| J05 | Quarto | 1,20 × 1,63 |
+| J06 | Closet | 2,00 × 1,50 — única que mantém 1,50 |
+| P01 | Entrada | 1,00 × 2,29 |
+| P02 | Banheiro | 0,80 × 2,00 — giro invertido |
+| P03 | Quarto | 1,00 × 2,29 — de correr, nova |
 
 **Norte: 126°** do topo da folha, sentido horário — medido, não arbitrado.
 
