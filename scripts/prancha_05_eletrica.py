@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. F'
+REV = 'REV. G'
 PRANCHA = 'Prancha 05 / 08'
 
 # --- pontos existentes marcados pelo cliente (metros) -----------------------
@@ -27,12 +27,12 @@ TOMADAS_NOVAS = [
 # --- comandos ---------------------------------------------------------------
 COMANDOS = [
     ('S01', 0.90, 3.05), ('S02', 4.17, 2.30), ('S03', 2.35, 4.60),
-    ('S04', 3.92, 4.88), ('S05', 4.05, 7.35),
+    ('S04', 3.92, 4.88), ('S05', 4.90, 6.98),
     ('S06', 5.05, 9.05), ('S07', 6.95, 9.05),
     ('S08', 3.92, 4.62),      # luz da sala, na quina do box voltada para a escada
 ]
 # comandos com o id ao lado, para não empilhar rótulo sobre símbolo
-ROTULO_LESTE = {'S04', 'S08'}
+ROTULO_LESTE = {'S04', 'S05', 'S08'}
 
 QUADRO = (1.35, 2.35)
 
@@ -61,14 +61,15 @@ NOTAS = [
     ['**Os pontos T01 a T09 são os existentes que você marcou em planta.',
      'Estão desenhados na posição aproximada do levantamento: servem para decidir o que se aproveita',
      'e o que se remaneja, não para medir. T10 a T17 são reservas novas do estudo.'],
-    ['**Comandos revisados nesta folha.',
-     'O comando que caía dentro do box saiu; o que ficava junto à porta do quarto passou a S05,',
-     'agora ao lado da porta nova da drywall. S06 e S07 são os dois novos comandos da cabeceira,',
-     'um de cada lado da cama, em paralelo com as luminárias P02 e P03 da Prancha 04.'],
+    ['**A porta de correr reserva um trecho de parede — e isso é questão elétrica.',
+     'A folha estaciona no 1,00 m de drywall a leste do vão, pela face da sala: nesse trecho não',
+     'cabe tomada, interruptor nem quadro. Por isso o S05 foi para a face do quarto, encostado no',
+     'batente leste, fora do caminho da folha. S06 e S07 seguem na cabeceira, um de cada lado da',
+     'cama, em paralelo com as luminárias P02 e P03 da Prancha 04.'],
     ['**O que cada comando aciona — leitura de folha, não diagrama de circuito:',
      'S01 entrada e cozinha (TR4 e coifa, junto ao quadro) · S02 jantar (TR1 e P01) · S03 arandelas',
      'do espelho, junto à bancada · S04 banheiro, na quina do box · S05 quarto, ao lado da porta',
-     'nova (TR5, P02 e P03) · S06 e S07 cabeceira, em paralelo com o S05 · S08 sala (TR2 e TR3).'],
+     'de correr (TR5, P02 e P03) · S06 e S07 cabeceira, em paralelo com o S05 · S08 sala (TR2 e TR3).'],
     ['**S08 é o novo comando da luz da sala.',
      'Fica na quina do box voltada para a escada, encostado no S04 do banheiro: é o primeiro',
      'anteparo de quem entra na sala vindo da escada ou da cozinha. Os dois ocupam a faixa de',
@@ -95,7 +96,7 @@ def construir():
     janelas(d)
     porta(d, DOOR_ENTRADA)
     porta(d, DOOR_BANHO)
-    porta_horizontal(d, PORTA_NOVA, hinge='w', swing='s')
+    porta_correr_horizontal(d, PORTA_NOVA, lado='n', sentido='e')
     escada(d)
     for k, lx, ly in (('jantar', 520.0, 145.0), ('sala', 500.0, 300.0),
                       ('cozinha', 310.0, 350.0), ('closet', 300.0, 505.0),

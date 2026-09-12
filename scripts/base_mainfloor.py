@@ -12,8 +12,8 @@ Dois estados convivem no caderno:
   ponta a ponta (o scan o leu como vão) e a drywall entre sala e quarto não tem
   porta.
   ESTADO PROPOSTO (Pranchas 03, 04 e 05) — o pano de vidro sai e entra uma
-  parede fechando o box; a drywall é refeita com uma porta de 1,00 x 2,30 m;
-  a porta do banheiro passa a abrir para o lado do quarto.
+  parede fechando o box; a drywall é refeita com uma porta de correr de
+  1,00 x 2,30 m; a porta do banheiro abre para fora, no sentido da escada.
 
 Demais decisões do cliente embutidas na base:
   · o teto é laje de concreto aparente — não há forro, salvo no banheiro;
@@ -81,7 +81,7 @@ PAREDE_ESCADA_JANTAR = (446.11, 124.38, 450.68, 213.47)
 PAREDE_SOB_ESCADA = (321.40, 208.91, 459.40, 213.47)
 
 DOOR_ENTRADA = dict(rect=(275.52,220.10,280.09,259.20), hinge='n', leaf='e')
-DOOR_BANHO   = dict(rect=(413.33,351.00,417.90,387.30), hinge='s', leaf='e')
+DOOR_BANHO   = dict(rect=(413.33,351.00,417.90,387.30), hinge='n', leaf='e')
 JANELAS = [
     (599.46,142.50,604.03,193.20), (599.46,215.00,604.03,300.80),
     (599.46,348.00,604.03,394.40), (599.46,455.70,604.03,509.80),
@@ -275,6 +275,40 @@ def porta_horizontal(d, rect, hinge='w', swing='s'):
     flag = 1 if (hinge == 'w') == (swing == 'n') else 0
     d.add('<path d="M %.2f %.2f A %.2f %.2f 0 0 %d %.2f %.2f" fill="none" stroke="%s" '
           'stroke-width="0.8" opacity="0.5"/>' % (hx, ty, leaf, leaf, flag, ex, hy, WALL))
+
+
+def porta_correr_horizontal(d, rect, lado='n', sentido='e'):
+    """Porta de correr em parede horizontal.
+
+    A folha é desenhada fechada, encostada numa das faces da parede (`lado`),
+    e a seta mostra para onde ela corre; o tracejado marca o trecho de parede
+    que precisa ficar livre para a folha estacionar.
+    """
+    vao(d, rect)
+    x, y, w_, h_ = d.R(rect)
+    esp = 4.4                                     # espessura da folha em planta
+    ty = (y - 4.6) if lado == 'n' else (y + h_ + 4.6)
+    dx = w_ if sentido == 'e' else -w_
+    # trecho de parede que precisa ficar livre para a folha estacionar:
+    # tracejado explícito, porque o renderizador SVG ignora stroke-dasharray
+    px0 = min(x + dx, x + 2 * dx)
+    for by in (ty - esp / 2, ty + esp / 2):
+        t = px0
+        while t < px0 + w_:
+            d.line(t, by, min(t + 4.5, px0 + w_), by, WALL, 0.8, opacity=0.5)
+            t += 8.0
+    for bx in (px0, px0 + w_):
+        d.line(bx, ty - esp / 2, bx, ty + esp / 2, WALL, 0.8, opacity=0.5)
+    # folha fechada
+    d.rect(x, ty - esp / 2, w_, esp, fill=BG, stroke=INK, sw=1.5)
+    # seta do sentido de abertura
+    ay = ty + (-9.5 if lado == 'n' else 9.5)
+    a0 = x + w_ * (0.40 if sentido == 'e' else 0.60)
+    a1 = x + w_ * (1.25 if sentido == 'e' else -0.25)
+    d.line(a0, ay, a1, ay, WALL, 0.9, opacity=0.75)
+    p = 1 if sentido == 'e' else -1
+    d.add('<path d="M %.2f %.2f L %.2f %.2f L %.2f %.2f Z" fill="%s" opacity="0.75"/>'
+          % (a1, ay, a1 - 4.6 * p, ay - 2.4, a1 - 4.6 * p, ay + 2.4, WALL))
 
 
 def porta(d, door):

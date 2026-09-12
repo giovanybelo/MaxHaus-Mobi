@@ -3,7 +3,7 @@
 <text x="48.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#6b7480" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
 <text x="48.0" y="78.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="27.0" fill="#22303c" font-weight="bold" text-anchor="start">Demolição e desmontagem</text>
 <text x="48.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="start">Diagrama de escopo sobre o modelo de trabalho. Conferir os alvos presencialmente antes de mobilizar a demolidora.</text>
-<text x="1352.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#b23a2f" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. F</text>
+<text x="1352.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#b23a2f" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. G</text>
 <text x="1352.0" y="78.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.5" fill="#22303c" font-weight="bold" text-anchor="end">estado existente: o que sai, o que se prepara</text>
 <text x="1352.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="end">demolir e reconstruir são serviços separados</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cbc8c0" stroke-width="1.00"/>
@@ -60,8 +60,8 @@
 <line x1="122.72" y1="302.75" x2="182.67" y2="302.75" stroke="#5b6472" stroke-width="1.40"/>
 <path d="M 182.67 302.75 A 59.94 59.94 0 0 1 122.72 362.69" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
 <rect x="326.69" y="503.12" width="7.61" height="56.25" fill="#faf8f4"/>
-<line x1="333.99" y1="559.07" x2="389.65" y2="559.07" stroke="#5b6472" stroke-width="1.40"/>
-<path d="M 389.65 559.07 A 55.65 55.65 0 0 0 333.99 503.42" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
+<line x1="333.99" y1="503.42" x2="389.65" y2="503.42" stroke="#5b6472" stroke-width="1.40"/>
+<path d="M 389.65 503.42 A 55.65 55.65 0 0 1 333.99 559.07" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
 <rect x="186.05" y="292.58" width="211.56" height="58.61" fill="none" stroke="#5b6472" stroke-width="0.90" opacity="0.85"/>
 <line x1="205.29" y1="292.58" x2="205.29" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
 <line x1="224.52" y1="292.58" x2="224.52" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
@@ -416,7 +416,7 @@
 <text x="1344.0" y="436.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">preparo p/ pintura — mapear em obra</text>
 <line x1="722.00" y1="444.00" x2="1352.00" y2="444.00" stroke="#cbc8c0" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="458.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#22303c" font-weight="bold" text-anchor="start">R01</text>
-<text x="799.3" y="458.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="start">Nova drywall sala/quarto, com porta 1,00 × 2,30 m</text>
+<text x="799.3" y="458.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="start">Nova drywall sala/quarto, com porta de correr 1,00 × 2,30 m</text>
 <text x="1344.0" y="458.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">4,08 m + 1 porta</text>
 <line x1="722.00" y1="466.00" x2="1352.00" y2="466.00" stroke="#cbc8c0" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="466.00" width="630.00" height="22.00" fill="#f2f0ea"/>
@@ -434,31 +434,33 @@
 <text x="1344.0" y="524.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">1 peça</text>
 <line x1="722.00" y1="532.00" x2="1352.00" y2="532.00" stroke="#cbc8c0" stroke-width="0.60" opacity="0.80"/>
 <text x="722.0" y="556.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Esta planta mostra o estado existente.</text>
-<text x="722.0" y="568.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">O fundo do box aparece como o pano de vidro chão-teto que existe hoje (D06) e a drywall</text>
-<text x="722.0" y="580.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">ainda sem porta. O estado proposto — parede fechando o box e drywall nova com porta —</text>
-<text x="722.0" y="593.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">está desenhado nas Pranchas 03, 04 e 05.</text>
+<text x="722.0" y="568.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">O fundo do box aparece como o pano de vidro chão-teto que existe hoje (D06) e a drywall ainda</text>
+<text x="722.0" y="580.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">sem porta. O estado proposto — box fechado em parede, drywall nova com porta de correr e a</text>
+<text x="722.0" y="593.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">porta do banheiro abrindo para fora, no sentido da escada — está nas Pranchas 03, 04 e 05.</text>
 <text x="722.0" y="612.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Demolir para refazer, não só demolir.</text>
-<text x="722.0" y="625.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">A drywall entre sala e quarto cai e é reconstruída (R01), agora com uma porta de</text>
-<text x="722.0" y="637.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">1,00 × 2,30 m, na mesma altura da porta de entrada. O pano de vidro do fundo do box cai</text>
-<text x="722.0" y="649.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">e vira parede (R02). Orçar demolição e reconstrução como serviços separados.</text>
-<text x="722.0" y="669.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Banheiro: reforma integral.</text>
-<text x="722.0" y="681.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Saem piso, revestimentos, fechamento do box e a parede atrás do espelho e da bancada.</text>
-<text x="722.0" y="694.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">O vidro do box (K01) segue marcado para manter — confirmar se a reforma o preserva.</text>
-<text x="722.0" y="713.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Regra de escopo: toda parede que perder revestimento é preparada para pintura.</text>
-<text x="722.0" y="725.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Hoje isso está mapeado no jantar (P01) e sob a escada (P02) — as duas paredes ficam, só</text>
-<text x="722.0" y="738.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">perdem espelho e revestimento. P04 cobre o que aparecer depois: não tem alvo fixo em planta,</text>
-<text x="722.0" y="750.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">mas entra no mesmo serviço. Definir o nível de acabamento antes de orçar: massa, lixa e</text>
-<text x="722.0" y="763.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">demão de fundo não são a mesma linha que regularização de parede castigada.</text>
-<text x="722.0" y="782.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">A laje inteira é serviço, não sobra da demolição (P03).</text>
-<text x="722.0" y="794.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Com o forro fora (D07), a laje aparece como está: restos de fixação, marca de fôrma, desnível,</text>
-<text x="722.0" y="807.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">fissura, eventual ferro exposto. Prever restauro, descascamento, limpeza e preparo dos</text>
-<text x="722.0" y="819.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">60,30 m², e definir com a empreiteira o acabamento — concreto nu, selador, verniz ou pintura.</text>
-<text x="722.0" y="832.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">É esse plano que recebe trilho, evaporadora e calha: quanto mais torto, mais aparece.</text>
-<text x="722.0" y="851.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Closet: etiquetar módulos e ferragens, fotografar, acondicionar e proteger.</text>
-<text x="722.0" y="863.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">A área de 5,30 m² é do ambiente, não é área de marcenaria.</text>
+<text x="722.0" y="625.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">A drywall entre sala e quarto cai e é reconstruída (R01), agora com uma porta de correr de</text>
+<text x="722.0" y="637.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">1,00 × 2,30 m. A folha estaciona sobre a parede: o trecho de 1,00 m a leste do vão fica</text>
+<text x="722.0" y="649.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">reservado — nada de tomada, quadro ou marcenaria ali. Definir se o trilho é aparente, mantendo</text>
+<text x="722.0" y="662.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">a drywall de 10 cm, ou embutido em cassete, que exige engrossar a parede. O pano de vidro do</text>
+<text x="722.0" y="674.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">fundo do box cai e vira parede (R02): orçar demolição e obra nova como serviços separados.</text>
+<text x="722.0" y="694.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Banheiro: reforma integral.</text>
+<text x="722.0" y="706.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Saem piso, revestimentos, fechamento do box e a parede atrás do espelho e da bancada.</text>
+<text x="722.0" y="718.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">O vidro do box (K01) segue marcado para manter — confirmar se a reforma o preserva.</text>
+<text x="722.0" y="738.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Regra de escopo: toda parede que perder revestimento é preparada para pintura.</text>
+<text x="722.0" y="750.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Hoje isso está mapeado no jantar (P01) e sob a escada (P02) — as duas paredes ficam, só</text>
+<text x="722.0" y="763.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">perdem espelho e revestimento. P04 cobre o que aparecer depois: não tem alvo fixo em planta,</text>
+<text x="722.0" y="775.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">mas entra no mesmo serviço. Definir o nível de acabamento antes de orçar: massa, lixa e</text>
+<text x="722.0" y="787.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">demão de fundo não são a mesma linha que regularização de parede castigada.</text>
+<text x="722.0" y="807.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">A laje inteira é serviço, não sobra da demolição (P03).</text>
+<text x="722.0" y="819.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Com o forro fora (D07), a laje aparece como está: restos de fixação, marca de fôrma, desnível,</text>
+<text x="722.0" y="832.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">fissura, eventual ferro exposto. Prever restauro, descascamento, limpeza e preparo dos</text>
+<text x="722.0" y="844.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">60,30 m², e definir com a empreiteira o acabamento — concreto nu, selador, verniz ou pintura.</text>
+<text x="722.0" y="856.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">É esse plano que recebe trilho, evaporadora e calha: quanto mais torto, mais aparece.</text>
+<text x="722.0" y="876.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Closet: etiquetar módulos e ferragens, fotografar, acondicionar e proteger.</text>
+<text x="722.0" y="888.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">A área de 5,30 m² é do ambiente, não é área de marcenaria.</text>
 <line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cbc8c0" stroke-width="1.00"/>
 <text x="48.0" y="940.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">Quantidades preliminares sobre o modelo do scan (02.09.2026): servem para orientar visita e proposta, não para fechar medição.</text>
 <text x="48.0" y="953.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">Nenhum alvo foi verificado em campo. Instalações embutidas, estrutura e vedações devem ser identificadas antes do início dos serviços.</text>
 <text x="48.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#b23a2f" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   12/09/2026</text>
-<text x="1352.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#6b7480" font-weight="normal" text-anchor="end">Prancha 02 / 08   ·   REV. F</text>
+<text x="1352.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#6b7480" font-weight="normal" text-anchor="end">Prancha 02 / 08   ·   REV. G</text>
 </svg>

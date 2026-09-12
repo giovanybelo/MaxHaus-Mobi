@@ -180,7 +180,7 @@ BOARDS = [
     ('02', 'Demolição e desmontagem', 'prancha-02-demolicao.svg',
      'Escopo sobre o modelo do scan: o que sai, o que se desmonta para remontar e o que fica.',
      ['<b>14</b> itens catalogados', '<b>Demolir e reconstruir</b> como serviços separados',
-      '<b>Jantar e escada:</b> preparo para pintura', '<b>Porta nova</b> 1,00 × 2,30 m']),
+      '<b>Jantar e escada:</b> preparo para pintura', '<b>Porta de correr</b> 1,00 × 2,30 m']),
     ('03', 'Piso monolítico', 'prancha-03-piso-monolitico.svg',
      'Sistema único em todo o MainFloor, com o banheiro à parte: piso contínuo, sem junta de material entre os ambientes secos.',
      ['<b>Monolítico</b> 56,50 m²', '<b>Banheiro</b> 3,80 m² à parte',
@@ -233,10 +233,13 @@ DECISOES = [
     ('S08: a luz da sala ganhou comando próprio',
      'Na quina do box voltada para a escada, encostado no S04 do banheiro — o primeiro anteparo '
      'de quem chega à sala vindo da escada ou da cozinha.'),
-    ('A porta do banheiro troca de lado',
-     'Continua abrindo para o living, mas agora girando na direção do quarto, e não mais da '
-     'escada. Na elétrica, o comando que caía dentro do box saiu e entraram dois novos na '
-     'cabeceira da cama.'),
+    ('A porta do banheiro abre para fora, no sentido da escada',
+     'Continua abrindo para o living; o giro é o do lado da escada.'),
+    ('A porta do quarto é de correr',
+     'A folha de 1,00 × 2,30 m estaciona sobre o 1,00 m de drywall a leste do vão, pela face da '
+     'sala — trecho reservado: nada de tomada, quadro ou marcenaria ali. Falta decidir se o trilho '
+     'é aparente, mantendo a drywall de 10 cm, ou embutido em cassete, que exige engrossar a '
+     'parede. O comando do quarto (S05) foi para a face do quarto, fora do caminho da folha.'),
 ]
 
 
@@ -264,7 +267,7 @@ def build():
         ('Obra', 'MaxHaus MainFloor — João Baldinato 109, 81I', ''),
         ('Caderno', '4 pranchas — 02, 03, 04 e 05', ''),
         ('Formato', 'A3 deitado — 420 × 297 mm', 'mono'),
-        ('Revisão', 'F — 12.09.2026', 'mono'),
+        ('Revisão', 'G — 12.09.2026', 'mono'),
         ('Escala', 'gráfica (barra de 2 m em cada planta)', ''),
         ('Base', 'scan MaxHaus MainFloor, 02.09.2026', ''),
         ('Área do pavimento', '60,30 m²', 'mono'),
@@ -275,7 +278,7 @@ def build():
         for (k, v, c) in stamp)
 
     return """<title>Caderno MainFloor</title>
-<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. F.">
+<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. G.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -291,7 +294,7 @@ def build():
       como fica o teto agora que não há forro e onde ficam os pontos elétricos. Estudo preliminar —
       cores ilustrativas, nenhum produto ou espessura especificado.</p>
     </div>
-    <p class="rev">REV. F · 12.09.2026</p>
+    <p class="rev">REV. G · 12.09.2026</p>
   </header>
 
   <div class="rule"></div>

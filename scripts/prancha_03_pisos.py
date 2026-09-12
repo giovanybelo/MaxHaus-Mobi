@@ -10,7 +10,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. F'
+REV = 'REV. G'
 PRANCHA = 'Prancha 03 / 08'
 
 # contorno único do piso seco (faces internas, pt) — o monolítico é uma peça só,
@@ -115,7 +115,7 @@ def construir():
     janelas(d)
     porta(d, DOOR_ENTRADA)
     porta(d, DOOR_BANHO)
-    porta_horizontal(d, PORTA_NOVA, hinge='w', swing='s')
+    porta_correr_horizontal(d, PORTA_NOVA, lado='n', sentido='e')
     escada(d)
 
     soleira(d, SOLEIRA_WC)

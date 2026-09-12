@@ -3,7 +3,7 @@
 <text x="48.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#6b7480" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
 <text x="48.0" y="78.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="27.0" fill="#22303c" font-weight="bold" text-anchor="start">Tomadas, comandos e quadro</text>
 <text x="48.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="start">Reservas de localização, sem circuitos executivos. Posições existentes conforme marcação do cliente sobre o estudo anterior.</text>
-<text x="1352.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#b23a2f" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. F</text>
+<text x="1352.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#b23a2f" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. G</text>
 <text x="1352.0" y="78.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.5" fill="#22303c" font-weight="bold" text-anchor="end">quadro junto à porta de entrada</text>
 <text x="1352.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="end">trajetos aparentes: não há forro</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cbc8c0" stroke-width="1.00"/>
@@ -55,11 +55,32 @@
 <line x1="122.72" y1="302.75" x2="182.67" y2="302.75" stroke="#5b6472" stroke-width="1.40"/>
 <path d="M 182.67 302.75 A 59.94 59.94 0 0 1 122.72 362.69" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
 <rect x="326.69" y="503.12" width="7.61" height="56.25" fill="#faf8f4"/>
-<line x1="333.99" y1="559.07" x2="389.65" y2="559.07" stroke="#5b6472" stroke-width="1.40"/>
-<path d="M 389.65 559.07 A 55.65 55.65 0 0 0 333.99 503.42" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
+<line x1="333.99" y1="503.42" x2="389.65" y2="503.42" stroke="#5b6472" stroke-width="1.40"/>
+<path d="M 389.65 503.42 A 55.65 55.65 0 0 1 333.99 559.07" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
 <rect x="332.16" y="624.33" width="70.51" height="7.61" fill="#faf8f4"/>
-<line x1="332.46" y1="631.64" x2="332.46" y2="701.54" stroke="#5b6472" stroke-width="1.40"/>
-<path d="M 332.46 701.54 A 69.91 69.91 0 0 0 402.37 631.64" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
+<line x1="402.37" y1="617.83" x2="406.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="410.37" y1="617.83" x2="414.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="418.37" y1="617.83" x2="422.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="426.37" y1="617.83" x2="430.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="434.37" y1="617.83" x2="438.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="442.37" y1="617.83" x2="446.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="450.37" y1="617.83" x2="454.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="458.37" y1="617.83" x2="462.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="466.37" y1="617.83" x2="470.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="402.37" y1="622.23" x2="406.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="410.37" y1="622.23" x2="414.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="418.37" y1="622.23" x2="422.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="426.37" y1="622.23" x2="430.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="434.37" y1="622.23" x2="438.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="442.37" y1="622.23" x2="446.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="450.37" y1="622.23" x2="454.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="458.37" y1="622.23" x2="462.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="466.37" y1="622.23" x2="470.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="402.37" y1="617.83" x2="402.37" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<line x1="472.28" y1="617.83" x2="472.28" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
+<rect x="332.46" y="617.83" width="69.91" height="4.40" fill="#faf8f4" stroke="#22303c" stroke-width="1.50"/>
+<line x1="360.42" y1="610.53" x2="419.85" y2="610.53" stroke="#5b6472" stroke-width="0.90" opacity="0.75"/>
+<path d="M 419.85 610.53 L 415.25 608.13 L 415.25 612.93 Z" fill="#5b6472" opacity="0.75"/>
 <rect x="186.05" y="292.58" width="211.56" height="58.61" fill="none" stroke="#5b6472" stroke-width="0.90" opacity="0.85"/>
 <line x1="205.29" y1="292.58" x2="205.29" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
 <line x1="224.52" y1="292.58" x2="224.52" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
@@ -141,9 +162,9 @@
 <rect x="339.20" y="492.40" width="10.40" height="10.40" fill="#faf8f4" stroke="#22303c" stroke-width="1.30"/>
 <line x1="342.00" y1="500.00" x2="346.80" y2="495.20" stroke="#22303c" stroke-width="1.20"/>
 <text x="352.9" y="500.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="6.6" fill="#22303c" font-weight="bold" text-anchor="start" letter-spacing="0.30">S04</text>
-<rect x="348.30" y="665.30" width="10.40" height="10.40" fill="#faf8f4" stroke="#22303c" stroke-width="1.30"/>
-<line x1="351.10" y1="672.90" x2="355.90" y2="668.10" stroke="#22303c" stroke-width="1.20"/>
-<text x="353.5" y="661.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="6.6" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.30">S05</text>
+<rect x="407.80" y="639.40" width="10.40" height="10.40" fill="#faf8f4" stroke="#22303c" stroke-width="1.30"/>
+<line x1="410.60" y1="647.00" x2="415.40" y2="642.20" stroke="#22303c" stroke-width="1.20"/>
+<text x="421.5" y="647.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="6.6" fill="#22303c" font-weight="bold" text-anchor="start" letter-spacing="0.30">S05</text>
 <rect x="418.30" y="784.30" width="10.40" height="10.40" fill="#faf8f4" stroke="#22303c" stroke-width="1.30"/>
 <line x1="421.10" y1="791.90" x2="425.90" y2="787.10" stroke="#22303c" stroke-width="1.20"/>
 <text x="423.5" y="780.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="6.6" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.30">S06</text>
@@ -223,26 +244,27 @@
 <text x="722.0" y="513.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Os pontos T01 a T09 são os existentes que você marcou em planta.</text>
 <text x="722.0" y="525.9" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Estão desenhados na posição aproximada do levantamento: servem para decidir o que se aproveita</text>
 <text x="722.0" y="538.3" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">e o que se remaneja, não para medir. T10 a T17 são reservas novas do estudo.</text>
-<text x="722.0" y="559.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Comandos revisados nesta folha.</text>
-<text x="722.0" y="571.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">O comando que caía dentro do box saiu; o que ficava junto à porta do quarto passou a S05,</text>
-<text x="722.0" y="584.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">agora ao lado da porta nova da drywall. S06 e S07 são os dois novos comandos da cabeceira,</text>
-<text x="722.0" y="596.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">um de cada lado da cama, em paralelo com as luminárias P02 e P03 da Prancha 04.</text>
-<text x="722.0" y="617.3" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">O que cada comando aciona — leitura de folha, não diagrama de circuito:</text>
-<text x="722.0" y="629.7" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">S01 entrada e cozinha (TR4 e coifa, junto ao quadro) · S02 jantar (TR1 e P01) · S03 arandelas</text>
-<text x="722.0" y="642.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">do espelho, junto à bancada · S04 banheiro, na quina do box · S05 quarto, ao lado da porta</text>
-<text x="722.0" y="654.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">nova (TR5, P02 e P03) · S06 e S07 cabeceira, em paralelo com o S05 · S08 sala (TR2 e TR3).</text>
-<text x="722.0" y="675.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">S08 é o novo comando da luz da sala.</text>
-<text x="722.0" y="687.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Fica na quina do box voltada para a escada, encostado no S04 do banheiro: é o primeiro</text>
-<text x="722.0" y="700.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">anteparo de quem entra na sala vindo da escada ou da cozinha. Os dois ocupam a faixa de</text>
-<text x="722.0" y="712.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">parede de 0,45 m entre a quina e o batente — cabe, mas é a folga exata de duas placas 4×2:</text>
-<text x="722.0" y="725.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">confirmar em obra antes de fechar a caixa. Se a sala for acender também pelo outro extremo,</text>
-<text x="722.0" y="737.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">S08 precisa de paralelo junto à porta nova da drywall, em conjunto com o S05.</text>
-<text x="722.0" y="758.3" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Circuitos, seções, disjuntores, aterramento, DR, demanda e proteção contra surtos</text>
-<text x="722.0" y="770.7" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">ficam a cargo do projeto elétrico após o levantamento. Não usar estas reservas como projeto</text>
-<text x="722.0" y="783.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">para o eletricista executar.</text>
+<text x="722.0" y="559.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">A porta de correr reserva um trecho de parede — e isso é questão elétrica.</text>
+<text x="722.0" y="571.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">A folha estaciona no 1,00 m de drywall a leste do vão, pela face da sala: nesse trecho não</text>
+<text x="722.0" y="584.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">cabe tomada, interruptor nem quadro. Por isso o S05 foi para a face do quarto, encostado no</text>
+<text x="722.0" y="596.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">batente leste, fora do caminho da folha. S06 e S07 seguem na cabeceira, um de cada lado da</text>
+<text x="722.0" y="608.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">cama, em paralelo com as luminárias P02 e P03 da Prancha 04.</text>
+<text x="722.0" y="629.7" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">O que cada comando aciona — leitura de folha, não diagrama de circuito:</text>
+<text x="722.0" y="642.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">S01 entrada e cozinha (TR4 e coifa, junto ao quadro) · S02 jantar (TR1 e P01) · S03 arandelas</text>
+<text x="722.0" y="654.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">do espelho, junto à bancada · S04 banheiro, na quina do box · S05 quarto, ao lado da porta</text>
+<text x="722.0" y="666.9" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">de correr (TR5, P02 e P03) · S06 e S07 cabeceira, em paralelo com o S05 · S08 sala (TR2 e TR3).</text>
+<text x="722.0" y="687.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">S08 é o novo comando da luz da sala.</text>
+<text x="722.0" y="700.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Fica na quina do box voltada para a escada, encostado no S04 do banheiro: é o primeiro</text>
+<text x="722.0" y="712.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">anteparo de quem entra na sala vindo da escada ou da cozinha. Os dois ocupam a faixa de</text>
+<text x="722.0" y="725.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">parede de 0,45 m entre a quina e o batente — cabe, mas é a folga exata de duas placas 4×2:</text>
+<text x="722.0" y="737.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">confirmar em obra antes de fechar a caixa. Se a sala for acender também pelo outro extremo,</text>
+<text x="722.0" y="749.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">S08 precisa de paralelo junto à porta nova da drywall, em conjunto com o S05.</text>
+<text x="722.0" y="770.7" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Circuitos, seções, disjuntores, aterramento, DR, demanda e proteção contra surtos</text>
+<text x="722.0" y="783.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">ficam a cargo do projeto elétrico após o levantamento. Não usar estas reservas como projeto</text>
+<text x="722.0" y="795.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">para o eletricista executar.</text>
 <line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cbc8c0" stroke-width="1.00"/>
 <text x="48.0" y="940.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">Posições aproximadas sobre o modelo do scan. Quadro e trajetos existentes não estão identificados no levantamento: confirmar em campo antes de qualquer medição.</text>
 <text x="48.0" y="953.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">Este desenho é reserva de localização — não substitui projeto elétrico com memorial, diagrama unifilar e dimensionamento.</text>
 <text x="48.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#b23a2f" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   12/09/2026</text>
-<text x="1352.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#6b7480" font-weight="normal" text-anchor="end">Prancha 05 / 08   ·   REV. F</text>
+<text x="1352.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#6b7480" font-weight="normal" text-anchor="end">Prancha 05 / 08   ·   REV. G</text>
 </svg>

@@ -8,7 +8,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. F'
+REV = 'REV. G'
 PRANCHA = 'Prancha 04 / 08'
 
 # --- trilhos eletrificados: (id, (x0,y0), (x1,y1), nº de spots) em metros ---
@@ -117,7 +117,7 @@ def construir():
     janelas(d)
     porta(d, DOOR_ENTRADA)
     porta(d, DOOR_BANHO)
-    porta_horizontal(d, PORTA_NOVA, hinge='w', swing='s')
+    porta_correr_horizontal(d, PORTA_NOVA, lado='n', sentido='e')
     escada(d)
 
     # banheiro: único ambiente com forro

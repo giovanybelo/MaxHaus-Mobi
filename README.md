@@ -9,7 +9,7 @@ gerais do pavimento (7,85 × 9,43 m).
 Todo o material fecha em **A3 deitado (420 × 297 mm)** e é exportado em **PDF
 vetorial**.
 
-## Caderno (REV. F)
+## Caderno (REV. G)
 
 | Prancha | Assunto | Arquivo |
 |---|---|---|
@@ -28,8 +28,9 @@ Versão web responsiva: `pranchas/caderno-mainfloor.html`.
   porta.
 - **Estado proposto** (Pranchas 03, 04 e 05): o pano de vidro sai e entra uma
   parede fechando o box; a drywall é demolida e refeita no mesmo eixo, agora com
-  uma porta de 1,00 × 2,30 m; a porta do banheiro segue abrindo para o living,
-  mas girando na direção do quarto.
+  uma **porta de correr** de 1,00 × 2,30 m, cuja folha estaciona no 1,00 m de
+  parede a leste do vão, pela face da sala; a porta do banheiro abre para fora,
+  no sentido da escada.
 
 ## Decisões embutidas na base
 

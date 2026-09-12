@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. F'
+REV = 'REV. G'
 PRANCHA = 'Prancha 02 / 08'
 
 # --- alvos: (id, x_pt, y_pt, tipo, dx_rotulo, dy_rotulo) --------------------
@@ -41,7 +41,7 @@ LINHAS = [
     ('P02', 'Parede sob a escada: retirar revestimento', 'trecho a confirmar — preparo p/ pintura'),
     ('P03', 'Laje: restaurar, descascar, limpar e preparar', '60,30 m² — acabamento a definir'),
     ('P04', 'Demais paredes com revestimento retirado', 'preparo p/ pintura — mapear em obra'),
-    ('R01', 'Nova drywall sala/quarto, com porta 1,00 × 2,30 m', '4,08 m + 1 porta'),
+    ('R01', 'Nova drywall sala/quarto, com porta de correr 1,00 × 2,30 m', '4,08 m + 1 porta'),
     ('R02', 'Nova parede de fechamento do box', '1,63 m, no lugar do vidro'),
     ('M01', 'Desmontar e remontar closet', '1 conjunto — inventário por módulo'),
     ('K01', 'Vidro do box — MANTER', '1 peça'),
@@ -49,13 +49,15 @@ LINHAS = [
 
 NOTAS = [
     ['**Esta planta mostra o estado existente.',
-     'O fundo do box aparece como o pano de vidro chão-teto que existe hoje (D06) e a drywall',
-     'ainda sem porta. O estado proposto — parede fechando o box e drywall nova com porta —',
-     'está desenhado nas Pranchas 03, 04 e 05.'],
+     'O fundo do box aparece como o pano de vidro chão-teto que existe hoje (D06) e a drywall ainda',
+     'sem porta. O estado proposto — box fechado em parede, drywall nova com porta de correr e a',
+     'porta do banheiro abrindo para fora, no sentido da escada — está nas Pranchas 03, 04 e 05.'],
     ['**Demolir para refazer, não só demolir.',
-     'A drywall entre sala e quarto cai e é reconstruída (R01), agora com uma porta de',
-     '1,00 × 2,30 m, na mesma altura da porta de entrada. O pano de vidro do fundo do box cai',
-     'e vira parede (R02). Orçar demolição e reconstrução como serviços separados.'],
+     'A drywall entre sala e quarto cai e é reconstruída (R01), agora com uma porta de correr de',
+     '1,00 × 2,30 m. A folha estaciona sobre a parede: o trecho de 1,00 m a leste do vão fica',
+     'reservado — nada de tomada, quadro ou marcenaria ali. Definir se o trilho é aparente, mantendo',
+     'a drywall de 10 cm, ou embutido em cassete, que exige engrossar a parede. O pano de vidro do',
+     'fundo do box cai e vira parede (R02): orçar demolição e obra nova como serviços separados.'],
     ['**Banheiro: reforma integral.',
      'Saem piso, revestimentos, fechamento do box e a parede atrás do espelho e da bancada.',
      'O vidro do box (K01) segue marcado para manter — confirmar se a reforma o preserva.'],
