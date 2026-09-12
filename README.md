@@ -243,6 +243,17 @@ Ou uma folha por vez: `scripts/prancha_02_demolicao.py`,
 `scripts/base_mainfloor.py` concentra a geometria, a paleta, as primitivas de
 desenho da planta e a exportação em A3 — é a referência canônica do caderno.
 
+`scripts/enxugar_pdf.py` é utilitário, fora do build: o subset de fonte que o
+MuPDF grava é nominal — embute os 654 glifos da NimbusRoman quando uma prancha
+usa pouco mais de oitenta. O script esvazia os glifos não usados e embute as
+sub-rotinas, mantendo os GIDs no lugar (nada no resto do PDF muda). Rende só
+uns 6% porque o peso está nos nomes de glifo e no índice, não nos contornos —
+fica registrado para quem precisar de PDF menor.
+
+```bash
+python3 scripts/enxugar_pdf.py pranchas/prancha-08-banheiro-A3.pdf
+```
+
 > Estudo preliminar — não liberado para execução. Quantidades e posições são
 > preliminares: orientam visita, proposta e projetos complementares; não fecham
 > medição nem substituem projeto executivo.
