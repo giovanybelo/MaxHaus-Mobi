@@ -8,8 +8,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. G'
-PRANCHA = 'Prancha 04 / 08'
+REV = 'REV. H'
+PRANCHA = 'Prancha 04 / 06'
 
 # --- trilhos eletrificados: (id, (x0,y0), (x1,y1), nº de spots) em metros ---
 TRILHOS = [
@@ -22,7 +22,7 @@ TRILHOS = [
 ]
 
 # id do trilho deslocado para cima do início, onde o rótulo padrão colidiria
-ROTULO_ACIMA = {'TR5'}
+ROTULO_ACIMA = {'TR1', 'TR5'}
 
 # --- luminárias de destaque (corpo maior que os spots dos trilhos) ----------
 DESTAQUES = [
@@ -68,9 +68,9 @@ TAB_AR = [
 
 NOTAS = [
     ['**Não há forro: a laje de concreto é o teto acabado.',
-     'Toda a iluminação passa a ser aplicada — trilhos eletrificados, spots de sobrepor e',
-     'pendentes. Nada de embutido fora do banheiro, único ambiente que mantém forro para',
-     'abrigar a exaustão e a luminária do box.'],
+     'O scan mede 2,40 m de pé-direito com o forro; a altura livre final é a face da laje e só se',
+     'conhece depois da demolição — levantar o plenum antes de comprar trilho ou evaporadora.',
+     'Fora do banheiro, único ambiente que mantém forro, nada de embutido.'],
     ['**Fiação e infraestrutura ficam à vista.',
      'Perfilados ou eletrocalhas pintadas, alinhados às vigas e aos trilhos: o caminho da fiação',
      'vira desenho, não sobra de obra.'],
@@ -98,8 +98,8 @@ NOTAS = [
      'depende de confirmar apoio acima do limite sala/jantar e o modelo da condensadora existente:',
      'não assumir que ela admite duas evaporadoras.'],
     ['**Vazões de referência, a validar com perda de carga do duto:',
-     'banheiro 99,56 m³/h; coifa 279,82 m³/h — este só valeria com cozinha isolada; integrada,',
-     'seleciona-se por captura no fogão. Coifa e exaustão pedem rotas próprias: não interligar.'],
+     'banheiro 3,8 × 2,40 × 10 = 91,2 m³/h; coifa 8,9 × 2,40 × 12 = 256,3 m³/h — o segundo só',
+     'valeria com cozinha isolada; integrada, seleciona-se por captura no fogão. Rotas próprias.'],
 ]
 
 
@@ -112,13 +112,14 @@ def construir():
 
     S = 70.0
     d.set_plan(70, 156, S)
-    fundo_ambientes(d, '#edeae3')
+    fundo_ambientes(d, K07)
     paredes(d, estado='novo')
     janelas(d)
     porta(d, DOOR_ENTRADA)
     porta(d, DOOR_BANHO)
     porta_correr_horizontal(d, PORTA_NOVA, lado='n', sentido='e')
     escada(d)
+    norte(d, 140, 212, 15, nota='uma')
 
     # banheiro: único ambiente com forro
     pp = [d.P(px, py) for px, py in ROOMS['banheiro']['poly']]
@@ -127,28 +128,28 @@ def construir():
 
     # área da piscina do pavimento superior
     x, y, w_, h_ = d.R(AREA_PISCINA)
-    d.rect(x, y, w_, h_, fill='#d9d2c4', opacity=0.55)
-    d.rect(x, y, w_, h_, fill='none', stroke='#8a7f68', sw=1.2, dash='6 4')
+    d.rect(x, y, w_, h_, fill=AMARELO, opacity=0.30)
+    d.rect(x, y, w_, h_, fill='none', stroke=K, sw=1.2, dash='6 4')
     t = -h_
     while t <= w_:
         ax, ay = x + max(0.0, t), y + h_ - max(0.0, -t) * 0 - (h_ - min(h_, h_)) 
         x0 = x + max(0.0, t); y0 = y + h_ - (x0 - (x + t))
         x1 = min(x + w_, x + t + h_); y1 = y + h_ - (x1 - (x + t))
         if x1 > x0:
-            d.line(x0, y0, x1, y1, '#8a7f68', 0.5, opacity=0.30)
+            d.line(x0, y0, x1, y1, K, 0.5, opacity=0.22)
         t += 13
     cxp, cyp = d.PM(PISCINA_CX, PISCINA_CY)
-    d.line(cxp - 11, cyp, cxp + 11, cyp, '#6f6551', 1.0)
-    d.line(cxp, cyp - 11, cxp, cyp + 11, '#6f6551', 1.0)
-    d.circle(cxp, cyp, 3.4, fill='none', stroke='#6f6551', sw=1.0)
-    d.txt(x + w_ / 2, y + h_ / 2 - 40, 'ÁREA DA PISCINA', 7.6, '#6f6551', 'bold', 'middle', ls=0.5)
-    d.txt(x + w_ / 2, y + h_ / 2 - 29, 'pavimento superior', 7.2, '#6f6551', 'normal', 'middle')
-    d.txt(x + w_ / 2, y + h_ / 2 + 34, '1,92 × 3,00 m  ·  5,76 m²', 7.2, '#6f6551', 'normal', 'middle')
-    d.txt(x + w_ / 2, y + h_ / 2 + 45, 'centro em 6,13 / 3,14 m', 7.0, '#6f6551', 'normal', 'middle')
+    d.line(cxp - 11, cyp, cxp + 11, cyp, K, 1.0)
+    d.line(cxp, cyp - 11, cxp, cyp + 11, K, 1.0)
+    d.circle(cxp, cyp, 3.4, fill='none', stroke=K, sw=1.0)
+    d.txt(x + w_ / 2, y + h_ / 2 - 40, 'ÁREA DA PISCINA', 7.6, K, 'bold', 'middle', ls=0.5)
+    d.txt(x + w_ / 2, y + h_ / 2 - 29, 'pavimento superior', 7.2, K70, 'normal', 'middle')
+    d.txt(x + w_ / 2, y + h_ / 2 + 34, '1,92 × 3,00 m  ·  5,76 m²', 7.2, K70, 'normal', 'middle')
+    d.txt(x + w_ / 2, y + h_ / 2 + 45, 'centro em 6,13 / 3,14 m', 7.0, K70, 'normal', 'middle')
 
     for k, lx, ly in (('jantar', 520.0, 142.0), ('sala', 470.0, 300.0),
-                      ('cozinha', 336.0, 350.0), ('closet', 277.6, 505.0),
-                      ('quarto', 520.0, 442.0), ('banheiro', 380.6, 345.0)):
+                      ('cozinha', 300.0, 352.0), ('closet', 277.6, 505.0),
+                      ('quarto', 520.0, 442.0), ('banheiro', 380.6, 430.0)):
         ROOMS[k]['lx'], ROOMS[k]['ly'] = lx, ly
     rotulos(d, areas=False, size=8.4)
 
@@ -174,7 +175,7 @@ def construir():
     # luminárias de destaque
     for (ident, xm, ym, nome) in DESTAQUES:
         cx, cy = d.PM(xm, ym)
-        d.circle(cx, cy, 10.5, fill='#fdf3e2', stroke=NEW, sw=1.8)
+        d.circle(cx, cy, 10.5, fill=AMARELO, stroke=K, sw=1.8)
         d.circle(cx, cy, 3.4, fill=NEW)
         d.txt(cx, cy + 22, ident + ' · ' + nome, 7.4, NEW, 'bold', 'middle', ls=0.3)
 
@@ -193,20 +194,20 @@ def construir():
     for (ident, xm, ym, nome) in MAQUINAS:
         cx, cy = d.PM(xm, ym)
         if ident.startswith('AC'):
-            d.rect(cx - 18, cy - 6, 36, 12, fill='#e2eef2', stroke=AIR, sw=1.4)
-            d.txt(cx, cy + 3.4, ident, 7.0, AIR, 'bold', 'middle', ls=0.3)
+            d.rect(cx - 18, cy - 6, 36, 12, fill=CIANO35, stroke=K, sw=1.2)
+            d.txt(cx, cy + 3.4, ident, 7.0, K, 'bold', 'middle', ls=0.3)
         else:
-            d.circle(cx, cy, 6.0, fill='#e2eef2', stroke=AIR, sw=1.4)
-            d.line(cx - 3, cy, cx + 3, cy, AIR, 1.0)
-            d.line(cx, cy - 3, cx, cy + 3, AIR, 1.0)
-            d.txt(cx + 10, cy + 3, ident, 7.0, AIR, 'bold', 'start', ls=0.3)
+            d.circle(cx, cy, 6.0, fill=CIANO35, stroke=K, sw=1.2)
+            d.line(cx - 3, cy, cx + 3, cy, K, 1.0)
+            d.line(cx, cy - 3, cx, cy + 3, K, 1.0)
+            d.txt(cx + 10, cy + 3, ident, 7.0, K, 'bold', 'start', ls=0.3)
 
     escala(d, 156 + BUILDING_H * S + 26)
     legenda(d, [('line', INK, 'Trilho eletrificado + spots de sobrepor'),
-                ('dotf', NEW, 'Luminária de destaque (corpo maior)'),
+                ('fill', AMARELO, 'Luminária de destaque (corpo maior)'),
                 ('dot', EXIST, 'Ponto existente — confirmar'),
                 ('dot', WET_LINE, 'Embutido no forro do banheiro'),
-                ('fill', '#e2eef2', 'Ar-condicionado / exaustão')],
+                ('fill', CIANO35, 'Ar-condicionado / exaustão')],
             70, 156 + BUILDING_H * S + 64, largura=600)
 
     d.line(690, 140, 690, 900, RULE, 0.8, opacity=0.8)

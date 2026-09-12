@@ -1,350 +1,355 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 990" width="1400" height="990">
-<rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#faf8f4"/>
-<text x="48.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#6b7480" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
-<text x="48.0" y="78.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="27.0" fill="#22303c" font-weight="bold" text-anchor="start">Teto: laje aparente, iluminação e ar-condicionado</text>
-<text x="48.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="start">Distribuição conceitual sobre a laje de concreto. Reservas de posição, não quantidade final de luminárias nem de equipamentos.</text>
-<text x="1352.0" y="42.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.0" fill="#b23a2f" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. G</text>
-<text x="1352.0" y="78.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="10.5" fill="#22303c" font-weight="bold" text-anchor="end">sem forro — tudo aplicado na laje</text>
-<text x="1352.0" y="99.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.6" fill="#6b7480" font-weight="normal" text-anchor="end">piscina do pavimento superior sobre a sala</text>
-<line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cbc8c0" stroke-width="1.00"/>
-<path d="M380.75 159.56 L615.77 159.56 L615.77 289.10 L380.75 289.10 Z" fill="#edeae3" opacity="1.00"/>
-<path d="M223.31 289.10 L615.77 289.10 L615.77 628.06 L330.47 628.06 L330.47 468.01 L223.31 468.01 Z" fill="#edeae3" opacity="1.00"/>
-<path d="M119.21 289.10 L223.31 289.10 L223.31 628.06 L73.53 628.06 L73.53 401.94 L119.21 401.94 Z" fill="#edeae3" opacity="1.00"/>
-<path d="M73.53 628.06 L223.31 628.06 L223.31 812.64 L73.53 812.64 Z" fill="#edeae3" opacity="1.00"/>
-<path d="M330.47 628.06 L615.77 628.06 L615.77 812.64 L223.31 812.64 L223.31 659.80 L330.47 659.80 Z" fill="#edeae3" opacity="1.00"/>
-<path d="M223.31 468.01 L330.47 468.01 L330.47 659.80 L223.31 659.80 Z" fill="#edeae3" opacity="1.00"/>
-<rect x="377.24" y="156.00" width="242.10" height="6.99" fill="#5b6472"/>
-<rect x="115.72" y="285.59" width="268.53" height="6.99" fill="#5b6472"/>
-<rect x="115.72" y="285.59" width="7.01" height="119.89" fill="#5b6472"/>
-<rect x="70.00" y="398.47" width="52.72" height="7.01" fill="#5b6472"/>
-<rect x="121.60" y="624.63" width="101.66" height="7.01" fill="#5b6472"/>
-<rect x="223.26" y="809.09" width="396.08" height="6.99" fill="#5b6472"/>
-<rect x="219.77" y="628.12" width="7.01" height="35.11" fill="#5b6472"/>
-<rect x="219.77" y="464.56" width="7.01" height="163.56" fill="#5b6472"/>
-<rect x="330.48" y="624.63" width="285.35" height="7.01" fill="#5b6472"/>
-<rect x="326.99" y="464.56" width="7.01" height="163.56" fill="#5b6472"/>
-<rect x="612.34" y="628.12" width="7.01" height="187.95" fill="#5b6472"/>
-<rect x="121.60" y="624.63" width="6.99" height="177.68" fill="#5b6472"/>
-<rect x="70.00" y="809.09" width="153.26" height="6.99" fill="#5b6472"/>
-<rect x="219.77" y="752.43" width="7.01" height="60.16" fill="#5b6472"/>
-<rect x="377.24" y="156.00" width="7.01" height="136.58" fill="#5b6472"/>
-<rect x="326.99" y="628.12" width="7.01" height="35.11" fill="#5b6472"/>
-<rect x="612.34" y="156.00" width="7.01" height="472.12" fill="#5b6472"/>
-<rect x="70.00" y="398.47" width="6.99" height="417.61" fill="#5b6472"/>
-<rect x="219.77" y="464.56" width="114.23" height="7.01" fill="#5b6472"/>
-<rect x="219.77" y="656.23" width="114.23" height="7.01" fill="#5b6472"/>
-<rect x="612.04" y="183.48" width="7.61" height="78.33" fill="#faf8f4"/>
-<rect x="612.34" y="183.78" width="7.01" height="77.73" fill="none" stroke="#5b6472" stroke-width="0.90"/>
-<line x1="615.84" y1="183.78" x2="615.84" y2="261.51" stroke="#5b6472" stroke-width="0.90"/>
-<rect x="612.04" y="294.63" width="7.61" height="132.14" fill="#faf8f4"/>
-<rect x="612.34" y="294.93" width="7.01" height="131.54" fill="none" stroke="#5b6472" stroke-width="0.90"/>
-<line x1="615.84" y1="294.93" x2="615.84" y2="426.46" stroke="#5b6472" stroke-width="0.90"/>
-<rect x="612.04" y="498.53" width="7.61" height="71.73" fill="#faf8f4"/>
-<rect x="612.34" y="498.83" width="7.01" height="71.13" fill="none" stroke="#5b6472" stroke-width="0.90"/>
-<line x1="615.84" y1="498.83" x2="615.84" y2="569.96" stroke="#5b6472" stroke-width="0.90"/>
-<rect x="612.04" y="663.64" width="7.61" height="83.54" fill="#faf8f4"/>
-<rect x="612.34" y="663.94" width="7.01" height="82.94" fill="none" stroke="#5b6472" stroke-width="0.90"/>
-<line x1="615.84" y1="663.94" x2="615.84" y2="746.88" stroke="#5b6472" stroke-width="0.90"/>
-<rect x="78.44" y="808.79" width="139.50" height="7.59" fill="#faf8f4"/>
-<rect x="78.74" y="809.09" width="138.90" height="6.99" fill="none" stroke="#5b6472" stroke-width="0.90"/>
-<line x1="78.74" y1="812.58" x2="217.63" y2="812.58" stroke="#5b6472" stroke-width="0.90"/>
-<rect x="235.73" y="808.79" width="83.54" height="7.59" fill="#faf8f4"/>
-<rect x="236.03" y="809.09" width="82.94" height="6.99" fill="none" stroke="#5b6472" stroke-width="0.90"/>
-<line x1="236.03" y1="812.58" x2="318.97" y2="812.58" stroke="#5b6472" stroke-width="0.90"/>
-<rect x="115.42" y="302.45" width="7.61" height="60.54" fill="#faf8f4"/>
-<line x1="122.72" y1="302.75" x2="182.67" y2="302.75" stroke="#5b6472" stroke-width="1.40"/>
-<path d="M 182.67 302.75 A 59.94 59.94 0 0 1 122.72 362.69" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
-<rect x="326.69" y="503.12" width="7.61" height="56.25" fill="#faf8f4"/>
-<line x1="333.99" y1="503.42" x2="389.65" y2="503.42" stroke="#5b6472" stroke-width="1.40"/>
-<path d="M 389.65 503.42 A 55.65 55.65 0 0 1 333.99 559.07" fill="none" stroke="#5b6472" stroke-width="0.8" opacity="0.5"/>
-<rect x="332.16" y="624.33" width="70.51" height="7.61" fill="#faf8f4"/>
-<line x1="402.37" y1="617.83" x2="406.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="410.37" y1="617.83" x2="414.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="418.37" y1="617.83" x2="422.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="426.37" y1="617.83" x2="430.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="434.37" y1="617.83" x2="438.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="442.37" y1="617.83" x2="446.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="450.37" y1="617.83" x2="454.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="458.37" y1="617.83" x2="462.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="466.37" y1="617.83" x2="470.87" y2="617.83" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="402.37" y1="622.23" x2="406.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="410.37" y1="622.23" x2="414.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="418.37" y1="622.23" x2="422.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="426.37" y1="622.23" x2="430.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="434.37" y1="622.23" x2="438.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="442.37" y1="622.23" x2="446.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="450.37" y1="622.23" x2="454.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="458.37" y1="622.23" x2="462.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="466.37" y1="622.23" x2="470.87" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="402.37" y1="617.83" x2="402.37" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<line x1="472.28" y1="617.83" x2="472.28" y2="622.23" stroke="#5b6472" stroke-width="0.80" opacity="0.50"/>
-<rect x="332.46" y="617.83" width="69.91" height="4.40" fill="#faf8f4" stroke="#22303c" stroke-width="1.50"/>
-<line x1="360.42" y1="610.53" x2="419.85" y2="610.53" stroke="#5b6472" stroke-width="0.90" opacity="0.75"/>
-<path d="M 419.85 610.53 L 415.25 608.13 L 415.25 612.93 Z" fill="#5b6472" opacity="0.75"/>
-<rect x="186.05" y="292.58" width="211.56" height="58.61" fill="none" stroke="#5b6472" stroke-width="0.90" opacity="0.85"/>
-<line x1="205.29" y1="292.58" x2="205.29" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
-<line x1="224.52" y1="292.58" x2="224.52" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
-<line x1="243.75" y1="292.58" x2="243.75" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
-<line x1="262.99" y1="292.58" x2="262.99" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
-<line x1="282.22" y1="292.58" x2="282.22" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
-<line x1="301.45" y1="292.58" x2="301.45" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
-<line x1="320.68" y1="292.58" x2="320.68" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
-<line x1="339.92" y1="292.58" x2="339.92" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
-<line x1="359.15" y1="292.58" x2="359.15" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
-<line x1="378.38" y1="292.58" x2="378.38" y2="351.19" stroke="#5b6472" stroke-width="0.70" opacity="0.60"/>
-<text x="291.8" y="324.9" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="6.6" fill="#6b7480" font-weight="bold" text-anchor="middle" letter-spacing="0.80">ESCADA</text>
-<path d="M223.31 468.01 L330.47 468.01 L330.47 659.80 L223.31 659.80 Z" fill="#d7e7ef" opacity="0.60"/>
-<path d="M223.31 468.01 L330.47 468.01 L330.47 659.80 L223.31 659.80 Z" fill="none" stroke="#6f9bb0" stroke-width="0.90" stroke-dasharray="3 2.5"/>
-<rect x="431.90" y="270.80" width="134.40" height="210.00" fill="#d9d2c4" opacity="0.55"/>
-<rect x="431.90" y="270.80" width="134.40" height="210.00" fill="none" stroke="#8a7f68" stroke-width="1.20" stroke-dasharray="6 4"/>
-<line x1="431.90" y1="283.80" x2="444.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="296.80" x2="457.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="309.80" x2="470.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="322.80" x2="483.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="335.80" x2="496.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="348.80" x2="509.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="361.80" x2="522.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="374.80" x2="535.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="387.80" x2="548.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="400.80" x2="561.90" y2="270.80" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="413.80" x2="566.30" y2="279.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="426.80" x2="566.30" y2="292.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="439.80" x2="566.30" y2="305.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="452.80" x2="566.30" y2="318.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="465.80" x2="566.30" y2="331.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="431.90" y1="478.80" x2="566.30" y2="344.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="442.90" y1="480.80" x2="566.30" y2="357.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="455.90" y1="480.80" x2="566.30" y2="370.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="468.90" y1="480.80" x2="566.30" y2="383.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="481.90" y1="480.80" x2="566.30" y2="396.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="494.90" y1="480.80" x2="566.30" y2="409.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="507.90" y1="480.80" x2="566.30" y2="422.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="520.90" y1="480.80" x2="566.30" y2="435.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="533.90" y1="480.80" x2="566.30" y2="448.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="546.90" y1="480.80" x2="566.30" y2="461.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="559.90" y1="480.80" x2="566.30" y2="474.40" stroke="#8a7f68" stroke-width="0.50" opacity="0.30"/>
-<line x1="488.10" y1="375.80" x2="510.10" y2="375.80" stroke="#6f6551" stroke-width="1.00"/>
-<line x1="499.10" y1="364.80" x2="499.10" y2="386.80" stroke="#6f6551" stroke-width="1.00"/>
-<circle cx="499.10" cy="375.80" r="3.40" fill="none" stroke="#6f6551" stroke-width="1.00"/>
-<text x="499.1" y="335.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.6" fill="#6f6551" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ÁREA DA PISCINA</text>
-<text x="499.1" y="346.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#6f6551" font-weight="normal" text-anchor="middle">pavimento superior</text>
-<text x="499.1" y="409.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#6f6551" font-weight="normal" text-anchor="middle">1,92 × 3,00 m  ·  5,76 m²</text>
-<text x="499.1" y="420.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.0" fill="#6f6551" font-weight="normal" text-anchor="middle">centro em 6,13 / 3,14 m</text>
-<text x="490.5" y="183.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.90">JANTAR</text>
-<text x="413.9" y="425.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA</text>
-<text x="208.4" y="501.9" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.90">COZINHA</text>
-<text x="118.9" y="739.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.90">CLOSET</text>
-<text x="490.5" y="642.9" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.90">QUARTO</text>
-<text x="276.8" y="494.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="middle" letter-spacing="0.90">BANHEIRO</text>
-<line x1="402.50" y1="222.50" x2="595.00" y2="222.50" stroke="#faf8f4" stroke-width="5.00"/>
-<line x1="402.50" y1="222.50" x2="595.00" y2="222.50" stroke="#22303c" stroke-width="2.60" stroke-linecap="round"/>
-<circle cx="426.56" cy="222.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="426.56" cy="222.50" r="1.50" fill="#22303c"/>
-<circle cx="474.69" cy="222.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="474.69" cy="222.50" r="1.50" fill="#22303c"/>
-<circle cx="522.81" cy="222.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="522.81" cy="222.50" r="1.50" fill="#22303c"/>
-<circle cx="570.94" cy="222.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="570.94" cy="222.50" r="1.50" fill="#22303c"/>
-<text x="393.5" y="225.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#22303c" font-weight="bold" text-anchor="end" letter-spacing="0.40">TR1</text>
-<line x1="388.50" y1="380.00" x2="388.50" y2="527.00" stroke="#faf8f4" stroke-width="5.00"/>
-<line x1="388.50" y1="380.00" x2="388.50" y2="527.00" stroke="#22303c" stroke-width="2.60" stroke-linecap="round"/>
-<circle cx="388.50" cy="404.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="388.50" cy="404.50" r="1.50" fill="#22303c"/>
-<circle cx="388.50" cy="453.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="388.50" cy="453.50" r="1.50" fill="#22303c"/>
-<circle cx="388.50" cy="502.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="388.50" cy="502.50" r="1.50" fill="#22303c"/>
-<text x="397.5" y="374.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#22303c" font-weight="bold" text-anchor="start" letter-spacing="0.40">TR2</text>
-<line x1="364.00" y1="548.00" x2="595.00" y2="548.00" stroke="#faf8f4" stroke-width="5.00"/>
-<line x1="364.00" y1="548.00" x2="595.00" y2="548.00" stroke="#22303c" stroke-width="2.60" stroke-linecap="round"/>
-<circle cx="392.88" cy="548.00" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="392.88" cy="548.00" r="1.50" fill="#22303c"/>
-<circle cx="450.62" cy="548.00" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="450.62" cy="548.00" r="1.50" fill="#22303c"/>
-<circle cx="508.38" cy="548.00" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="508.38" cy="548.00" r="1.50" fill="#22303c"/>
-<circle cx="566.12" cy="548.00" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="566.12" cy="548.00" r="1.50" fill="#22303c"/>
-<text x="355.0" y="551.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#22303c" font-weight="bold" text-anchor="end" letter-spacing="0.40">TR3</text>
-<line x1="171.50" y1="429.00" x2="171.50" y2="604.00" stroke="#faf8f4" stroke-width="5.00"/>
-<line x1="171.50" y1="429.00" x2="171.50" y2="604.00" stroke="#22303c" stroke-width="2.60" stroke-linecap="round"/>
-<circle cx="171.50" cy="450.88" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="171.50" cy="450.88" r="1.50" fill="#22303c"/>
-<circle cx="171.50" cy="494.62" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="171.50" cy="494.62" r="1.50" fill="#22303c"/>
-<circle cx="171.50" cy="538.38" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="171.50" cy="538.38" r="1.50" fill="#22303c"/>
-<circle cx="171.50" cy="582.12" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="171.50" cy="582.12" r="1.50" fill="#22303c"/>
-<text x="180.5" y="423.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#22303c" font-weight="bold" text-anchor="start" letter-spacing="0.40">TR4</text>
-<line x1="339.50" y1="735.60" x2="595.00" y2="735.60" stroke="#faf8f4" stroke-width="5.00"/>
-<line x1="339.50" y1="735.60" x2="595.00" y2="735.60" stroke="#22303c" stroke-width="2.60" stroke-linecap="round"/>
-<circle cx="382.08" cy="735.60" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="382.08" cy="735.60" r="1.50" fill="#22303c"/>
-<circle cx="467.25" cy="735.60" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="467.25" cy="735.60" r="1.50" fill="#22303c"/>
-<circle cx="552.42" cy="735.60" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="552.42" cy="735.60" r="1.50" fill="#22303c"/>
-<text x="339.5" y="723.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#22303c" font-weight="bold" text-anchor="start" letter-spacing="0.40">TR5</text>
-<line x1="171.50" y1="681.00" x2="171.50" y2="786.00" stroke="#faf8f4" stroke-width="5.00"/>
-<line x1="171.50" y1="681.00" x2="171.50" y2="786.00" stroke="#22303c" stroke-width="2.60" stroke-linecap="round"/>
-<circle cx="171.50" cy="698.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="171.50" cy="698.50" r="1.50" fill="#22303c"/>
-<circle cx="171.50" cy="733.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="171.50" cy="733.50" r="1.50" fill="#22303c"/>
-<circle cx="171.50" cy="768.50" r="4.00" fill="#faf8f4" stroke="#22303c" stroke-width="1.20"/>
-<circle cx="171.50" cy="768.50" r="1.50" fill="#22303c"/>
-<text x="180.5" y="675.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#22303c" font-weight="bold" text-anchor="start" letter-spacing="0.40">TR6</text>
-<circle cx="498.40" cy="224.60" r="10.50" fill="#fdf3e2" stroke="#1f6f9c" stroke-width="1.80"/>
-<circle cx="498.40" cy="224.60" r="3.40" fill="#1f6f9c"/>
-<text x="498.4" y="246.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.4" fill="#1f6f9c" font-weight="bold" text-anchor="middle" letter-spacing="0.30">P01 · jantar</text>
-<circle cx="497.00" cy="735.60" r="10.50" fill="#fdf3e2" stroke="#1f6f9c" stroke-width="1.80"/>
-<circle cx="497.00" cy="735.60" r="3.40" fill="#1f6f9c"/>
-<text x="497.0" y="757.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.4" fill="#1f6f9c" font-weight="bold" text-anchor="middle" letter-spacing="0.30">P02 · cama</text>
-<circle cx="343.00" cy="735.60" r="10.50" fill="#fdf3e2" stroke="#1f6f9c" stroke-width="1.80"/>
-<circle cx="343.00" cy="735.60" r="3.40" fill="#1f6f9c"/>
-<text x="343.0" y="757.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.4" fill="#1f6f9c" font-weight="bold" text-anchor="middle" letter-spacing="0.30">P03 · office</text>
-<circle cx="252.00" cy="495.50" r="4.00" fill="#faf8f4" stroke="#6f9bb0" stroke-width="1.30"/>
-<circle cx="301.00" cy="495.50" r="4.00" fill="#faf8f4" stroke="#6f9bb0" stroke-width="1.30"/>
-<circle cx="248.50" cy="516.50" r="4.60" fill="none" stroke="#8a8f96" stroke-width="1.30"/>
-<line x1="245.30" y1="513.30" x2="251.70" y2="519.70" stroke="#8a8f96" stroke-width="1.00"/>
-<circle cx="283.50" cy="516.50" r="4.60" fill="none" stroke="#8a8f96" stroke-width="1.30"/>
-<line x1="280.30" y1="513.30" x2="286.70" y2="519.70" stroke="#8a8f96" stroke-width="1.00"/>
-<circle cx="283.50" cy="555.00" r="4.60" fill="none" stroke="#8a8f96" stroke-width="1.30"/>
-<line x1="280.30" y1="551.80" x2="286.70" y2="558.20" stroke="#8a8f96" stroke-width="1.00"/>
-<circle cx="431.90" cy="803.50" r="4.60" fill="none" stroke="#8a8f96" stroke-width="1.30"/>
-<line x1="428.70" y1="800.30" x2="435.10" y2="806.70" stroke="#8a8f96" stroke-width="1.00"/>
-<circle cx="585.90" cy="803.50" r="4.60" fill="none" stroke="#8a8f96" stroke-width="1.30"/>
-<line x1="582.70" y1="800.30" x2="589.10" y2="806.70" stroke="#8a8f96" stroke-width="1.00"/>
-<circle cx="99.40" cy="527.00" r="4.60" fill="none" stroke="#8a8f96" stroke-width="1.30"/>
-<line x1="96.20" y1="523.80" x2="102.60" y2="530.20" stroke="#8a8f96" stroke-width="1.00"/>
-<rect x="381.00" y="307.50" width="36.00" height="12.00" fill="#e2eef2" stroke="#4c8fa8" stroke-width="1.40"/>
-<text x="399.0" y="316.9" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.0" fill="#4c8fa8" font-weight="bold" text-anchor="middle" letter-spacing="0.30">AC01</text>
-<rect x="452.40" y="790.50" width="36.00" height="12.00" fill="#e2eef2" stroke="#4c8fa8" stroke-width="1.40"/>
-<text x="470.4" y="799.9" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.0" fill="#4c8fa8" font-weight="bold" text-anchor="middle" letter-spacing="0.30">AC02</text>
-<circle cx="284.20" cy="580.20" r="6.00" fill="#e2eef2" stroke="#4c8fa8" stroke-width="1.40"/>
-<line x1="281.20" y1="580.20" x2="287.20" y2="580.20" stroke="#4c8fa8" stroke-width="1.00"/>
-<line x1="284.20" y1="577.20" x2="284.20" y2="583.20" stroke="#4c8fa8" stroke-width="1.00"/>
-<text x="294.2" y="583.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.0" fill="#4c8fa8" font-weight="bold" text-anchor="start" letter-spacing="0.30">EX01</text>
-<circle cx="112.00" cy="590.00" r="6.00" fill="#e2eef2" stroke="#4c8fa8" stroke-width="1.40"/>
-<line x1="109.00" y1="590.00" x2="115.00" y2="590.00" stroke="#4c8fa8" stroke-width="1.00"/>
-<line x1="112.00" y1="587.00" x2="112.00" y2="593.00" stroke="#4c8fa8" stroke-width="1.00"/>
-<text x="122.0" y="593.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.0" fill="#4c8fa8" font-weight="bold" text-anchor="start" letter-spacing="0.30">CF01</text>
-<rect x="70.00" y="842.10" width="70.00" height="5.00" fill="#22303c" stroke="#22303c" stroke-width="0.80"/>
-<rect x="140.00" y="842.10" width="70.00" height="5.00" fill="#faf8f4" stroke="#22303c" stroke-width="0.80"/>
-<text x="70.0" y="858.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#6b7480" font-weight="normal" text-anchor="middle">0</text>
-<text x="140.0" y="858.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#6b7480" font-weight="normal" text-anchor="middle">1</text>
-<text x="210.0" y="858.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#6b7480" font-weight="normal" text-anchor="middle">2</text>
-<text x="223.0" y="858.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="7.2" fill="#6b7480" font-weight="normal" text-anchor="start">m   (base do scan)</text>
-<line x1="70.00" y1="877.10" x2="85.00" y2="877.10" stroke="#22303c" stroke-width="2.20"/>
-<text x="92.0" y="880.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.8" fill="#22303c" font-weight="normal" text-anchor="start">Trilho eletrificado + spots de sobrepor</text>
-<circle cx="298.10" cy="877.10" r="4.20" fill="#1f6f9c" stroke="#1f6f9c" stroke-width="1.00"/>
-<text x="313.1" y="880.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.8" fill="#22303c" font-weight="normal" text-anchor="start">Luminária de destaque (corpo maior)</text>
-<circle cx="499.60" cy="877.10" r="4.20" fill="none" stroke="#8a8f96" stroke-width="1.40"/>
-<text x="514.6" y="880.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.8" fill="#22303c" font-weight="normal" text-anchor="start">Ponto existente — confirmar</text>
-<circle cx="77.00" cy="894.10" r="4.20" fill="none" stroke="#6f9bb0" stroke-width="1.40"/>
-<text x="92.0" y="897.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.8" fill="#22303c" font-weight="normal" text-anchor="start">Embutido no forro do banheiro</text>
-<rect x="242.10" y="889.10" width="15.00" height="10.00" fill="#e2eef2" stroke="#b9b5ab" stroke-width="0.70"/>
-<text x="264.1" y="897.1" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.8" fill="#22303c" font-weight="normal" text-anchor="start">Ar-condicionado / exaustão</text>
-<line x1="690.00" y1="140.00" x2="690.00" y2="900.00" stroke="#cbc8c0" stroke-width="0.80" opacity="0.80"/>
-<text x="722.0" y="151.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.0" fill="#6b7480" font-weight="bold" text-anchor="start" letter-spacing="1.20">ILUMINAÇÃO POR AMBIENTE</text>
-<rect x="722.00" y="160.00" width="630.00" height="20.00" fill="#eceae4"/>
-<text x="730.0" y="173.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.2" fill="#6b7480" font-weight="bold" text-anchor="start" letter-spacing="0.60">Ambiente</text>
-<text x="1066.8" y="173.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.2" fill="#6b7480" font-weight="bold" text-anchor="end" letter-spacing="0.60">Alvo geral</text>
-<text x="1205.4" y="173.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.2" fill="#6b7480" font-weight="bold" text-anchor="end" letter-spacing="0.60">Fluxo inicial</text>
-<text x="1344.0" y="173.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.2" fill="#6b7480" font-weight="bold" text-anchor="end" letter-spacing="0.60">Temperatura de cor</text>
-<text x="730.0" y="194.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#22303c" font-weight="bold" text-anchor="start">Sala</text>
-<text x="1066.8" y="194.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">150 lux</text>
-<text x="1205.4" y="194.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">7.188 lm</text>
-<text x="1344.0" y="194.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">2.700 K</text>
-<line x1="722.00" y1="202.00" x2="1352.00" y2="202.00" stroke="#cbc8c0" stroke-width="0.60" opacity="0.80"/>
-<rect x="722.00" y="202.00" width="630.00" height="22.00" fill="#f2f0ea"/>
-<text x="730.0" y="216.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#22303c" font-weight="bold" text-anchor="start">Quarto</text>
-<text x="1066.8" y="216.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">150 lux</text>
-<text x="1205.4" y="216.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">4.188 lm</text>
-<text x="1344.0" y="216.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">2.700 K</text>
-<line x1="722.00" y1="224.00" x2="1352.00" y2="224.00" stroke="#cbc8c0" stroke-width="0.60" opacity="0.80"/>
-<text x="730.0" y="238.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#22303c" font-weight="bold" text-anchor="start">Cozinha</text>
-<text x="1066.8" y="238.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">300 lux</text>
-<text x="1205.4" y="238.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">5.563 lm</text>
-<text x="1344.0" y="238.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">3.000 K</text>
-<line x1="722.00" y1="246.00" x2="1352.00" y2="246.00" stroke="#cbc8c0" stroke-width="0.60" opacity="0.80"/>
-<rect x="722.00" y="246.00" width="630.00" height="22.00" fill="#f2f0ea"/>
-<text x="730.0" y="260.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#22303c" font-weight="bold" text-anchor="start">Jantar</text>
-<text x="1066.8" y="260.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">150 lux</text>
-<text x="1205.4" y="260.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">1.844 lm</text>
-<text x="1344.0" y="260.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">2.700 K</text>
-<line x1="722.00" y1="268.00" x2="1352.00" y2="268.00" stroke="#cbc8c0" stroke-width="0.60" opacity="0.80"/>
-<text x="730.0" y="282.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#22303c" font-weight="bold" text-anchor="start">Closet</text>
-<text x="1066.8" y="282.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">200 lux</text>
-<text x="1205.4" y="282.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">2.208 lm</text>
-<text x="1344.0" y="282.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">3.000 K</text>
-<line x1="722.00" y1="290.00" x2="1352.00" y2="290.00" stroke="#cbc8c0" stroke-width="0.60" opacity="0.80"/>
-<rect x="722.00" y="290.00" width="630.00" height="22.00" fill="#f2f0ea"/>
-<text x="730.0" y="304.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#22303c" font-weight="bold" text-anchor="start">Banheiro</text>
-<text x="1066.8" y="304.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">200 lux</text>
-<text x="1205.4" y="304.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">1.583 lm</text>
-<text x="1344.0" y="304.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">3.000 K</text>
-<line x1="722.00" y1="312.00" x2="1352.00" y2="312.00" stroke="#cbc8c0" stroke-width="0.60" opacity="0.80"/>
-<text x="722.0" y="337.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.0" fill="#6b7480" font-weight="bold" text-anchor="start" letter-spacing="1.20">AR-CONDICIONADO — REGRA SIMPLIFICADA 600/800 BTU/h POR m²</text>
-<rect x="722.00" y="346.00" width="630.00" height="20.00" fill="#eceae4"/>
-<text x="730.0" y="359.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.2" fill="#6b7480" font-weight="bold" text-anchor="start" letter-spacing="0.60">Zona</text>
-<text x="1066.8" y="359.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.2" fill="#6b7480" font-weight="bold" text-anchor="end" letter-spacing="0.60">Área</text>
-<text x="1205.4" y="359.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.2" fill="#6b7480" font-weight="bold" text-anchor="end" letter-spacing="0.60">Base sombra</text>
-<text x="1344.0" y="359.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.2" fill="#6b7480" font-weight="bold" text-anchor="end" letter-spacing="0.60">Base sol</text>
-<text x="730.0" y="380.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#22303c" font-weight="bold" text-anchor="start">Social + cozinha</text>
-<text x="1066.8" y="380.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">37,80 m²</text>
-<text x="1205.4" y="380.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">22.680 BTU/h</text>
-<text x="1344.0" y="380.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">30.240 BTU/h</text>
-<line x1="722.00" y1="388.00" x2="1352.00" y2="388.00" stroke="#cbc8c0" stroke-width="0.60" opacity="0.80"/>
-<rect x="722.00" y="388.00" width="630.00" height="22.00" fill="#f2f0ea"/>
-<text x="730.0" y="402.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#22303c" font-weight="bold" text-anchor="start">Quarto + closet</text>
-<text x="1066.8" y="402.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">18,70 m²</text>
-<text x="1205.4" y="402.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">11.220 BTU/h</text>
-<text x="1344.0" y="402.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">14.960 BTU/h</text>
-<line x1="722.00" y1="410.00" x2="1352.00" y2="410.00" stroke="#cbc8c0" stroke-width="0.60" opacity="0.80"/>
-<text x="730.0" y="424.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#22303c" font-weight="bold" text-anchor="start">Total sem banheiro</text>
-<text x="1066.8" y="424.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">56,50 m²</text>
-<text x="1205.4" y="424.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">33.900 BTU/h</text>
-<text x="1344.0" y="424.5" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.6" fill="#6b7480" font-weight="normal" text-anchor="end">45.200 BTU/h</text>
-<line x1="722.00" y1="432.00" x2="1352.00" y2="432.00" stroke="#cbc8c0" stroke-width="0.60" opacity="0.80"/>
-<text x="722.0" y="456.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Não há forro: a laje de concreto é o teto acabado.</text>
-<text x="722.0" y="468.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Toda a iluminação passa a ser aplicada — trilhos eletrificados, spots de sobrepor e</text>
-<text x="722.0" y="480.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">pendentes. Nada de embutido fora do banheiro, único ambiente que mantém forro para</text>
-<text x="722.0" y="493.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">abrigar a exaustão e a luminária do box.</text>
-<text x="722.0" y="511.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Fiação e infraestrutura ficam à vista.</text>
-<text x="722.0" y="524.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Perfilados ou eletrocalhas pintadas, alinhados às vigas e aos trilhos: o caminho da fiação</text>
-<text x="722.0" y="536.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">vira desenho, não sobra de obra.</text>
-<text x="722.0" y="554.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">P01, P02 e P03 são as três luminárias de destaque pedidas pelo cliente</text>
-<text x="722.0" y="567.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">— jantar, cama e office. Corpo e diâmetro maiores que os spots dos trilhos, em pendente</text>
-<text x="722.0" y="579.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">ou plafon de sobrepor. No quarto o TR5 passa a correr no eixo de P02 e P03, a 8,28 m: as duas</text>
-<text x="722.0" y="592.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">podem ser alimentadas pelo próprio trilho, com adaptador, dispensando saídas novas na laje.</text>
-<text x="722.0" y="610.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Traçado dos trilhos revisado conforme a sua marcação:</text>
-<text x="722.0" y="622.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">TR3 desceu para 5,60 m, ganhando recuo da drywall; TR5 desceu para 8,28 m, no eixo das duas</text>
-<text x="722.0" y="635.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">luminárias do quarto; TR6 saiu de junto da parede oeste e foi para 1,45 m, no mesmo eixo do</text>
-<text x="722.0" y="647.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">TR4 — os dois lêem como uma linha só. O TR2 foi encurtado para 5,30 m: no traçado anterior</text>
-<text x="722.0" y="660.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">ele cruzava o TR3 no meio da sala, e dois trilhos não se cruzam — se tiverem de se encontrar,</text>
-<text x="722.0" y="672.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">é com conector T.</text>
-<text x="722.0" y="690.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Ar-condicionado sem forro: não há plenum para dutar.</text>
-<text x="722.0" y="703.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Evaporadoras hi-wall ou cassete aparente; frigorígena, dreno e interligação elétrica correm</text>
-<text x="722.0" y="715.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">aparentes, em calha, com caimento contínuo. Somente Electrolux — marca igual não garante</text>
-<text x="722.0" y="728.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">compatibilidade entre unidades.</text>
-<text x="722.0" y="746.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">A piscina do pavimento superior fica sobre a sala — 1,92 × 3,00 m, centrada em</text>
-<text x="722.0" y="758.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">6,13 / 3,14 m do canto noroeste. Essa laje não recebe furação: nem luminária, nem trilho,</text>
-<text x="722.0" y="771.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">nem evaporadora ou tubulação podem invadi-la, e a região exige impermeabilização e</text>
-<text x="722.0" y="783.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">sobrecarga verificadas em estrutura. Nenhum trilho a invade: TR2 corre a oeste e TR3 passa</text>
-<text x="722.0" y="796.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">0,96 m ao sul.</text>
-<text x="722.0" y="814.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">A reserva AC01 caía dentro da projeção da piscina.</text>
-<text x="722.0" y="826.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">Foi deslocada para oeste, mantendo a insuflação para sala e jantar. A posição definitiva</text>
-<text x="722.0" y="839.2" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">depende de confirmar apoio acima do limite sala/jantar e o modelo da condensadora existente:</text>
-<text x="722.0" y="851.6" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">não assumir que ela admite duas evaporadoras.</text>
-<text x="722.0" y="870.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#22303c" font-weight="bold" text-anchor="start">Vazões de referência, a validar com perda de carga do duto:</text>
-<text x="722.0" y="882.4" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">banheiro 99,56 m³/h; coifa 279,82 m³/h — este só valeria com cozinha isolada; integrada,</text>
-<text x="722.0" y="894.8" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.4" fill="#6b7480" font-weight="normal" text-anchor="start">seleciona-se por captura no fogão. Coifa e exaustão pedem rotas próprias: não interligar.</text>
-<line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cbc8c0" stroke-width="1.00"/>
-<text x="48.0" y="940.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">Fluxo = área × lux ÷ (0,60 × 0,80). Fatores de utilização e manutenção são hipóteses; a laje aparente escura reduz o fator de utilização e deve ser reavaliada.</text>
-<text x="48.0" y="953.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="8.3" fill="#6b7480" font-weight="normal" text-anchor="start">Carga térmica não é carga final: claraboia, insolação, escada aberta e ocupação mudam o resultado. Estudar 2 ou 3 evaporadoras; não há número fechado de aparelhos.</text>
-<text x="48.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#b23a2f" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   12/09/2026</text>
-<text x="1352.0" y="975.0" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="9.0" fill="#6b7480" font-weight="normal" text-anchor="end">Prancha 04 / 08   ·   REV. G</text>
+<rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
+<text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
+<text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Teto: laje aparente, iluminação e ar-condicionado</text>
+<text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Distribuição conceitual sobre a laje de concreto. Reservas de posição, não quantidade final de luminárias nem de equipamentos.</text>
+<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. H</text>
+<text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">sem forro — tudo aplicado na laje</text>
+<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">piscina do pavimento superior sobre a sala</text>
+<line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
+<path d="M380.75 159.56 L615.77 159.56 L615.77 289.10 L380.75 289.10 Z" fill="#ededed" opacity="1.00"/>
+<path d="M223.31 289.10 L615.77 289.10 L615.77 628.06 L330.47 628.06 L330.47 468.01 L223.31 468.01 Z" fill="#ededed" opacity="1.00"/>
+<path d="M119.21 289.10 L223.31 289.10 L223.31 628.06 L73.53 628.06 L73.53 401.94 L119.21 401.94 Z" fill="#ededed" opacity="1.00"/>
+<path d="M73.53 628.06 L223.31 628.06 L223.31 812.64 L73.53 812.64 Z" fill="#ededed" opacity="1.00"/>
+<path d="M330.47 628.06 L615.77 628.06 L615.77 812.64 L223.31 812.64 L223.31 659.80 L330.47 659.80 Z" fill="#ededed" opacity="1.00"/>
+<path d="M223.31 468.01 L330.47 468.01 L330.47 659.80 L223.31 659.80 Z" fill="#ededed" opacity="1.00"/>
+<rect x="377.24" y="156.00" width="242.10" height="6.99" fill="#000000"/>
+<rect x="115.72" y="285.59" width="268.53" height="6.99" fill="#000000"/>
+<rect x="115.72" y="285.59" width="7.01" height="119.89" fill="#000000"/>
+<rect x="70.00" y="398.47" width="52.72" height="7.01" fill="#000000"/>
+<rect x="121.60" y="624.63" width="101.66" height="7.01" fill="#000000"/>
+<rect x="223.26" y="809.09" width="396.08" height="6.99" fill="#000000"/>
+<rect x="219.77" y="628.12" width="7.01" height="35.11" fill="#000000"/>
+<rect x="219.77" y="464.56" width="7.01" height="163.56" fill="#000000"/>
+<rect x="330.48" y="624.63" width="285.35" height="7.01" fill="#000000"/>
+<rect x="326.99" y="464.56" width="7.01" height="163.56" fill="#000000"/>
+<rect x="612.34" y="628.12" width="7.01" height="187.95" fill="#000000"/>
+<rect x="121.60" y="624.63" width="6.99" height="177.68" fill="#000000"/>
+<rect x="70.00" y="809.09" width="153.26" height="6.99" fill="#000000"/>
+<rect x="219.77" y="752.43" width="7.01" height="60.16" fill="#000000"/>
+<rect x="377.24" y="156.00" width="7.01" height="136.58" fill="#000000"/>
+<rect x="326.99" y="628.12" width="7.01" height="35.11" fill="#000000"/>
+<rect x="612.34" y="156.00" width="7.01" height="472.12" fill="#000000"/>
+<rect x="70.00" y="398.47" width="6.99" height="417.61" fill="#000000"/>
+<rect x="219.77" y="464.56" width="114.23" height="7.01" fill="#000000"/>
+<rect x="219.77" y="656.23" width="114.23" height="7.01" fill="#000000"/>
+<rect x="612.04" y="183.48" width="7.61" height="78.33" fill="#ffffff"/>
+<rect x="612.34" y="183.78" width="7.01" height="77.73" fill="none" stroke="#000000" stroke-width="0.90"/>
+<line x1="615.84" y1="183.78" x2="615.84" y2="261.51" stroke="#000000" stroke-width="0.90"/>
+<rect x="612.04" y="294.63" width="7.61" height="132.14" fill="#ffffff"/>
+<rect x="612.34" y="294.93" width="7.01" height="131.54" fill="none" stroke="#000000" stroke-width="0.90"/>
+<line x1="615.84" y1="294.93" x2="615.84" y2="426.46" stroke="#000000" stroke-width="0.90"/>
+<rect x="612.04" y="498.53" width="7.61" height="71.73" fill="#ffffff"/>
+<rect x="612.34" y="498.83" width="7.01" height="71.13" fill="none" stroke="#000000" stroke-width="0.90"/>
+<line x1="615.84" y1="498.83" x2="615.84" y2="569.96" stroke="#000000" stroke-width="0.90"/>
+<rect x="612.04" y="663.64" width="7.61" height="83.54" fill="#ffffff"/>
+<rect x="612.34" y="663.94" width="7.01" height="82.94" fill="none" stroke="#000000" stroke-width="0.90"/>
+<line x1="615.84" y1="663.94" x2="615.84" y2="746.88" stroke="#000000" stroke-width="0.90"/>
+<rect x="78.44" y="808.79" width="139.50" height="7.59" fill="#ffffff"/>
+<rect x="78.74" y="809.09" width="138.90" height="6.99" fill="none" stroke="#000000" stroke-width="0.90"/>
+<line x1="78.74" y1="812.58" x2="217.63" y2="812.58" stroke="#000000" stroke-width="0.90"/>
+<rect x="235.73" y="808.79" width="83.54" height="7.59" fill="#ffffff"/>
+<rect x="236.03" y="809.09" width="82.94" height="6.99" fill="none" stroke="#000000" stroke-width="0.90"/>
+<line x1="236.03" y1="812.58" x2="318.97" y2="812.58" stroke="#000000" stroke-width="0.90"/>
+<rect x="115.42" y="302.45" width="7.61" height="60.54" fill="#ffffff"/>
+<line x1="122.72" y1="302.75" x2="182.67" y2="302.75" stroke="#000000" stroke-width="1.40"/>
+<path d="M 182.67 302.75 A 59.94 59.94 0 0 1 122.72 362.69" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
+<rect x="326.69" y="503.12" width="7.61" height="56.25" fill="#ffffff"/>
+<line x1="333.99" y1="503.42" x2="389.65" y2="503.42" stroke="#000000" stroke-width="1.40"/>
+<path d="M 389.65 503.42 A 55.65 55.65 0 0 1 333.99 559.07" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
+<rect x="332.16" y="624.33" width="70.51" height="7.61" fill="#ffffff"/>
+<line x1="402.37" y1="617.83" x2="406.87" y2="617.83" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="410.37" y1="617.83" x2="414.87" y2="617.83" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="418.37" y1="617.83" x2="422.87" y2="617.83" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="426.37" y1="617.83" x2="430.87" y2="617.83" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="434.37" y1="617.83" x2="438.87" y2="617.83" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="442.37" y1="617.83" x2="446.87" y2="617.83" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="450.37" y1="617.83" x2="454.87" y2="617.83" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="458.37" y1="617.83" x2="462.87" y2="617.83" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="466.37" y1="617.83" x2="470.87" y2="617.83" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="402.37" y1="622.23" x2="406.87" y2="622.23" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="410.37" y1="622.23" x2="414.87" y2="622.23" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="418.37" y1="622.23" x2="422.87" y2="622.23" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="426.37" y1="622.23" x2="430.87" y2="622.23" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="434.37" y1="622.23" x2="438.87" y2="622.23" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="442.37" y1="622.23" x2="446.87" y2="622.23" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="450.37" y1="622.23" x2="454.87" y2="622.23" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="458.37" y1="622.23" x2="462.87" y2="622.23" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="466.37" y1="622.23" x2="470.87" y2="622.23" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="402.37" y1="617.83" x2="402.37" y2="622.23" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="472.28" y1="617.83" x2="472.28" y2="622.23" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<rect x="332.46" y="617.83" width="69.91" height="4.40" fill="#ffffff" stroke="#000000" stroke-width="1.50"/>
+<line x1="360.42" y1="610.53" x2="419.85" y2="610.53" stroke="#000000" stroke-width="0.90" opacity="0.75"/>
+<path d="M 419.85 610.53 L 415.25 608.13 L 415.25 612.93 Z" fill="#000000" opacity="0.75"/>
+<rect x="186.05" y="292.58" width="211.56" height="58.61" fill="none" stroke="#000000" stroke-width="0.90" opacity="0.85"/>
+<line x1="205.29" y1="292.58" x2="205.29" y2="351.19" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
+<line x1="224.52" y1="292.58" x2="224.52" y2="351.19" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
+<line x1="243.75" y1="292.58" x2="243.75" y2="351.19" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
+<line x1="262.99" y1="292.58" x2="262.99" y2="351.19" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
+<line x1="282.22" y1="292.58" x2="282.22" y2="351.19" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
+<line x1="301.45" y1="292.58" x2="301.45" y2="351.19" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
+<line x1="320.68" y1="292.58" x2="320.68" y2="351.19" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
+<line x1="339.92" y1="292.58" x2="339.92" y2="351.19" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
+<line x1="359.15" y1="292.58" x2="359.15" y2="351.19" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
+<line x1="378.38" y1="292.58" x2="378.38" y2="351.19" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
+<text x="291.8" y="324.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#4d4d4d" font-weight="bold" text-anchor="middle" letter-spacing="0.80">ESCADA</text>
+<circle cx="140.00" cy="212.00" r="15.00" fill="none" stroke="#4d4d4d" stroke-width="0.90" opacity="0.75"/>
+<path d="M 140.00 197.00 L 144.80 221.30 L 135.20 221.30 Z" fill="#000000"/>
+<path d="M 140.00 227.00 L 144.80 221.30 L 135.20 221.30 Z" fill="none" stroke="#4d4d4d" stroke-width="0.9"/>
+<text x="140.0" y="188.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">N</text>
+<text x="140.0" y="250.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#ff00ff" font-weight="bold" text-anchor="middle" letter-spacing="0.30">ORIENTAÇÃO PROVISÓRIA</text>
+<path d="M223.31 468.01 L330.47 468.01 L330.47 659.80 L223.31 659.80 Z" fill="#d6ffff" opacity="0.60"/>
+<path d="M223.31 468.01 L330.47 468.01 L330.47 659.80 L223.31 659.80 Z" fill="none" stroke="#00ffff" stroke-width="0.90" stroke-dasharray="3 2.5"/>
+<rect x="431.90" y="270.80" width="134.40" height="210.00" fill="#ffff00" opacity="0.30"/>
+<rect x="431.90" y="270.80" width="134.40" height="210.00" fill="none" stroke="#000000" stroke-width="1.20" stroke-dasharray="6 4"/>
+<line x1="431.90" y1="283.80" x2="444.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="296.80" x2="457.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="309.80" x2="470.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="322.80" x2="483.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="335.80" x2="496.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="348.80" x2="509.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="361.80" x2="522.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="374.80" x2="535.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="387.80" x2="548.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="400.80" x2="561.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="413.80" x2="566.30" y2="279.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="426.80" x2="566.30" y2="292.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="439.80" x2="566.30" y2="305.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="452.80" x2="566.30" y2="318.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="465.80" x2="566.30" y2="331.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="431.90" y1="478.80" x2="566.30" y2="344.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="442.90" y1="480.80" x2="566.30" y2="357.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="455.90" y1="480.80" x2="566.30" y2="370.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="468.90" y1="480.80" x2="566.30" y2="383.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="481.90" y1="480.80" x2="566.30" y2="396.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="494.90" y1="480.80" x2="566.30" y2="409.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="507.90" y1="480.80" x2="566.30" y2="422.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="520.90" y1="480.80" x2="566.30" y2="435.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="533.90" y1="480.80" x2="566.30" y2="448.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="546.90" y1="480.80" x2="566.30" y2="461.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="559.90" y1="480.80" x2="566.30" y2="474.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
+<line x1="488.10" y1="375.80" x2="510.10" y2="375.80" stroke="#000000" stroke-width="1.00"/>
+<line x1="499.10" y1="364.80" x2="499.10" y2="386.80" stroke="#000000" stroke-width="1.00"/>
+<circle cx="499.10" cy="375.80" r="3.40" fill="none" stroke="#000000" stroke-width="1.00"/>
+<text x="499.1" y="335.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ÁREA DA PISCINA</text>
+<text x="499.1" y="346.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">pavimento superior</text>
+<text x="499.1" y="409.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1,92 × 3,00 m  ·  5,76 m²</text>
+<text x="499.1" y="420.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="middle">centro em 6,13 / 3,14 m</text>
+<text x="490.5" y="183.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">JANTAR</text>
+<text x="413.9" y="425.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA</text>
+<text x="153.2" y="505.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">COZINHA</text>
+<text x="118.9" y="739.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">CLOSET</text>
+<text x="490.5" y="642.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">QUARTO</text>
+<text x="276.8" y="624.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">BANHEIRO</text>
+<line x1="402.50" y1="222.50" x2="595.00" y2="222.50" stroke="#ffffff" stroke-width="5.00"/>
+<line x1="402.50" y1="222.50" x2="595.00" y2="222.50" stroke="#000000" stroke-width="2.60" stroke-linecap="round"/>
+<circle cx="426.56" cy="222.50" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="426.56" cy="222.50" r="1.50" fill="#000000"/>
+<circle cx="474.69" cy="222.50" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="474.69" cy="222.50" r="1.50" fill="#000000"/>
+<circle cx="522.81" cy="222.50" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="522.81" cy="222.50" r="1.50" fill="#000000"/>
+<circle cx="570.94" cy="222.50" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="570.94" cy="222.50" r="1.50" fill="#000000"/>
+<text x="402.5" y="210.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.40">TR1</text>
+<line x1="388.50" y1="380.00" x2="388.50" y2="527.00" stroke="#ffffff" stroke-width="5.00"/>
+<line x1="388.50" y1="380.00" x2="388.50" y2="527.00" stroke="#000000" stroke-width="2.60" stroke-linecap="round"/>
+<circle cx="388.50" cy="404.50" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="388.50" cy="404.50" r="1.50" fill="#000000"/>
+<circle cx="388.50" cy="453.50" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="388.50" cy="453.50" r="1.50" fill="#000000"/>
+<circle cx="388.50" cy="502.50" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="388.50" cy="502.50" r="1.50" fill="#000000"/>
+<text x="397.5" y="374.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.40">TR2</text>
+<line x1="364.00" y1="548.00" x2="595.00" y2="548.00" stroke="#ffffff" stroke-width="5.00"/>
+<line x1="364.00" y1="548.00" x2="595.00" y2="548.00" stroke="#000000" stroke-width="2.60" stroke-linecap="round"/>
+<circle cx="392.88" cy="548.00" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="392.88" cy="548.00" r="1.50" fill="#000000"/>
+<circle cx="450.62" cy="548.00" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="450.62" cy="548.00" r="1.50" fill="#000000"/>
+<circle cx="508.38" cy="548.00" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="508.38" cy="548.00" r="1.50" fill="#000000"/>
+<circle cx="566.12" cy="548.00" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="566.12" cy="548.00" r="1.50" fill="#000000"/>
+<text x="355.0" y="551.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="end" letter-spacing="0.40">TR3</text>
+<line x1="171.50" y1="429.00" x2="171.50" y2="604.00" stroke="#ffffff" stroke-width="5.00"/>
+<line x1="171.50" y1="429.00" x2="171.50" y2="604.00" stroke="#000000" stroke-width="2.60" stroke-linecap="round"/>
+<circle cx="171.50" cy="450.88" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="171.50" cy="450.88" r="1.50" fill="#000000"/>
+<circle cx="171.50" cy="494.62" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="171.50" cy="494.62" r="1.50" fill="#000000"/>
+<circle cx="171.50" cy="538.38" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="171.50" cy="538.38" r="1.50" fill="#000000"/>
+<circle cx="171.50" cy="582.12" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="171.50" cy="582.12" r="1.50" fill="#000000"/>
+<text x="180.5" y="423.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.40">TR4</text>
+<line x1="339.50" y1="735.60" x2="595.00" y2="735.60" stroke="#ffffff" stroke-width="5.00"/>
+<line x1="339.50" y1="735.60" x2="595.00" y2="735.60" stroke="#000000" stroke-width="2.60" stroke-linecap="round"/>
+<circle cx="382.08" cy="735.60" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="382.08" cy="735.60" r="1.50" fill="#000000"/>
+<circle cx="467.25" cy="735.60" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="467.25" cy="735.60" r="1.50" fill="#000000"/>
+<circle cx="552.42" cy="735.60" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="552.42" cy="735.60" r="1.50" fill="#000000"/>
+<text x="339.5" y="723.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.40">TR5</text>
+<line x1="171.50" y1="681.00" x2="171.50" y2="786.00" stroke="#ffffff" stroke-width="5.00"/>
+<line x1="171.50" y1="681.00" x2="171.50" y2="786.00" stroke="#000000" stroke-width="2.60" stroke-linecap="round"/>
+<circle cx="171.50" cy="698.50" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="171.50" cy="698.50" r="1.50" fill="#000000"/>
+<circle cx="171.50" cy="733.50" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="171.50" cy="733.50" r="1.50" fill="#000000"/>
+<circle cx="171.50" cy="768.50" r="4.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="171.50" cy="768.50" r="1.50" fill="#000000"/>
+<text x="180.5" y="675.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.40">TR6</text>
+<circle cx="498.40" cy="224.60" r="10.50" fill="#ffff00" stroke="#000000" stroke-width="1.80"/>
+<circle cx="498.40" cy="224.60" r="3.40" fill="#000000"/>
+<text x="498.4" y="246.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.30">P01 · jantar</text>
+<circle cx="497.00" cy="735.60" r="10.50" fill="#ffff00" stroke="#000000" stroke-width="1.80"/>
+<circle cx="497.00" cy="735.60" r="3.40" fill="#000000"/>
+<text x="497.0" y="757.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.30">P02 · cama</text>
+<circle cx="343.00" cy="735.60" r="10.50" fill="#ffff00" stroke="#000000" stroke-width="1.80"/>
+<circle cx="343.00" cy="735.60" r="3.40" fill="#000000"/>
+<text x="343.0" y="757.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.30">P03 · office</text>
+<circle cx="252.00" cy="495.50" r="4.00" fill="#ffffff" stroke="#00ffff" stroke-width="1.30"/>
+<circle cx="301.00" cy="495.50" r="4.00" fill="#ffffff" stroke="#00ffff" stroke-width="1.30"/>
+<circle cx="248.50" cy="516.50" r="4.60" fill="none" stroke="#8c8c8c" stroke-width="1.30"/>
+<line x1="245.30" y1="513.30" x2="251.70" y2="519.70" stroke="#8c8c8c" stroke-width="1.00"/>
+<circle cx="283.50" cy="516.50" r="4.60" fill="none" stroke="#8c8c8c" stroke-width="1.30"/>
+<line x1="280.30" y1="513.30" x2="286.70" y2="519.70" stroke="#8c8c8c" stroke-width="1.00"/>
+<circle cx="283.50" cy="555.00" r="4.60" fill="none" stroke="#8c8c8c" stroke-width="1.30"/>
+<line x1="280.30" y1="551.80" x2="286.70" y2="558.20" stroke="#8c8c8c" stroke-width="1.00"/>
+<circle cx="431.90" cy="803.50" r="4.60" fill="none" stroke="#8c8c8c" stroke-width="1.30"/>
+<line x1="428.70" y1="800.30" x2="435.10" y2="806.70" stroke="#8c8c8c" stroke-width="1.00"/>
+<circle cx="585.90" cy="803.50" r="4.60" fill="none" stroke="#8c8c8c" stroke-width="1.30"/>
+<line x1="582.70" y1="800.30" x2="589.10" y2="806.70" stroke="#8c8c8c" stroke-width="1.00"/>
+<circle cx="99.40" cy="527.00" r="4.60" fill="none" stroke="#8c8c8c" stroke-width="1.30"/>
+<line x1="96.20" y1="523.80" x2="102.60" y2="530.20" stroke="#8c8c8c" stroke-width="1.00"/>
+<rect x="381.00" y="307.50" width="36.00" height="12.00" fill="#a6ffff" stroke="#000000" stroke-width="1.20"/>
+<text x="399.0" y="316.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.30">AC01</text>
+<rect x="452.40" y="790.50" width="36.00" height="12.00" fill="#a6ffff" stroke="#000000" stroke-width="1.20"/>
+<text x="470.4" y="799.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.30">AC02</text>
+<circle cx="284.20" cy="580.20" r="6.00" fill="#a6ffff" stroke="#000000" stroke-width="1.20"/>
+<line x1="281.20" y1="580.20" x2="287.20" y2="580.20" stroke="#000000" stroke-width="1.00"/>
+<line x1="284.20" y1="577.20" x2="284.20" y2="583.20" stroke="#000000" stroke-width="1.00"/>
+<text x="294.2" y="583.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.30">EX01</text>
+<circle cx="112.00" cy="590.00" r="6.00" fill="#a6ffff" stroke="#000000" stroke-width="1.20"/>
+<line x1="109.00" y1="590.00" x2="115.00" y2="590.00" stroke="#000000" stroke-width="1.00"/>
+<line x1="112.00" y1="587.00" x2="112.00" y2="593.00" stroke="#000000" stroke-width="1.00"/>
+<text x="122.0" y="593.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.30">CF01</text>
+<rect x="70.00" y="842.10" width="70.00" height="5.00" fill="#000000" stroke="#000000" stroke-width="0.80"/>
+<rect x="140.00" y="842.10" width="70.00" height="5.00" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="70.0" y="858.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">0</text>
+<text x="140.0" y="858.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1</text>
+<text x="210.0" y="858.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">2</text>
+<text x="223.0" y="858.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">m   (base do scan)</text>
+<line x1="70.00" y1="877.10" x2="85.00" y2="877.10" stroke="#000000" stroke-width="2.20"/>
+<text x="92.0" y="880.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Trilho eletrificado + spots de sobrepor</text>
+<rect x="291.10" y="872.10" width="15.00" height="10.00" fill="#ffff00" stroke="#8c8c8c" stroke-width="0.70"/>
+<text x="313.1" y="880.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Luminária de destaque (corpo maior)</text>
+<circle cx="499.60" cy="877.10" r="4.20" fill="none" stroke="#8c8c8c" stroke-width="1.40"/>
+<text x="514.6" y="880.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Ponto existente — confirmar</text>
+<circle cx="77.00" cy="894.10" r="4.20" fill="none" stroke="#00ffff" stroke-width="1.40"/>
+<text x="92.0" y="897.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Embutido no forro do banheiro</text>
+<rect x="242.10" y="889.10" width="15.00" height="10.00" fill="#a6ffff" stroke="#8c8c8c" stroke-width="0.70"/>
+<text x="264.1" y="897.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Ar-condicionado / exaustão</text>
+<line x1="690.00" y1="140.00" x2="690.00" y2="900.00" stroke="#cccccc" stroke-width="0.80" opacity="0.80"/>
+<text x="722.0" y="151.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">ILUMINAÇÃO POR AMBIENTE</text>
+<rect x="722.00" y="160.00" width="630.00" height="20.00" fill="#e0e0e0"/>
+<text x="730.0" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Ambiente</text>
+<text x="1066.8" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Alvo geral</text>
+<text x="1205.4" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Fluxo inicial</text>
+<text x="1344.0" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Temperatura de cor</text>
+<text x="730.0" y="194.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Sala</text>
+<text x="1066.8" y="194.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">150 lux</text>
+<text x="1205.4" y="194.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">7.188 lm</text>
+<text x="1344.0" y="194.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">2.700 K</text>
+<line x1="722.00" y1="202.00" x2="1352.00" y2="202.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="722.00" y="202.00" width="630.00" height="22.00" fill="#f5f5f5"/>
+<text x="730.0" y="216.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Quarto</text>
+<text x="1066.8" y="216.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">150 lux</text>
+<text x="1205.4" y="216.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">4.188 lm</text>
+<text x="1344.0" y="216.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">2.700 K</text>
+<line x1="722.00" y1="224.00" x2="1352.00" y2="224.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="730.0" y="238.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Cozinha</text>
+<text x="1066.8" y="238.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">300 lux</text>
+<text x="1205.4" y="238.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">5.563 lm</text>
+<text x="1344.0" y="238.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">3.000 K</text>
+<line x1="722.00" y1="246.00" x2="1352.00" y2="246.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="722.00" y="246.00" width="630.00" height="22.00" fill="#f5f5f5"/>
+<text x="730.0" y="260.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Jantar</text>
+<text x="1066.8" y="260.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">150 lux</text>
+<text x="1205.4" y="260.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1.844 lm</text>
+<text x="1344.0" y="260.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">2.700 K</text>
+<line x1="722.00" y1="268.00" x2="1352.00" y2="268.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="730.0" y="282.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Closet</text>
+<text x="1066.8" y="282.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">200 lux</text>
+<text x="1205.4" y="282.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">2.208 lm</text>
+<text x="1344.0" y="282.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">3.000 K</text>
+<line x1="722.00" y1="290.00" x2="1352.00" y2="290.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="722.00" y="290.00" width="630.00" height="22.00" fill="#f5f5f5"/>
+<text x="730.0" y="304.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Banheiro</text>
+<text x="1066.8" y="304.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">200 lux</text>
+<text x="1205.4" y="304.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1.583 lm</text>
+<text x="1344.0" y="304.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">3.000 K</text>
+<line x1="722.00" y1="312.00" x2="1352.00" y2="312.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="722.0" y="337.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">AR-CONDICIONADO — REGRA SIMPLIFICADA 600/800 BTU/h POR m²</text>
+<rect x="722.00" y="346.00" width="630.00" height="20.00" fill="#e0e0e0"/>
+<text x="730.0" y="359.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Zona</text>
+<text x="1066.8" y="359.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Área</text>
+<text x="1205.4" y="359.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Base sombra</text>
+<text x="1344.0" y="359.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Base sol</text>
+<text x="730.0" y="380.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Social + cozinha</text>
+<text x="1066.8" y="380.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">37,80 m²</text>
+<text x="1205.4" y="380.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">22.680 BTU/h</text>
+<text x="1344.0" y="380.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">30.240 BTU/h</text>
+<line x1="722.00" y1="388.00" x2="1352.00" y2="388.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="722.00" y="388.00" width="630.00" height="22.00" fill="#f5f5f5"/>
+<text x="730.0" y="402.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Quarto + closet</text>
+<text x="1066.8" y="402.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">18,70 m²</text>
+<text x="1205.4" y="402.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">11.220 BTU/h</text>
+<text x="1344.0" y="402.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">14.960 BTU/h</text>
+<line x1="722.00" y1="410.00" x2="1352.00" y2="410.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="730.0" y="424.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Total sem banheiro</text>
+<text x="1066.8" y="424.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">56,50 m²</text>
+<text x="1205.4" y="424.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">33.900 BTU/h</text>
+<text x="1344.0" y="424.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">45.200 BTU/h</text>
+<line x1="722.00" y1="432.00" x2="1352.00" y2="432.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="722.0" y="456.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Não há forro: a laje de concreto é o teto acabado.</text>
+<text x="722.0" y="468.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">O scan mede 2,40 m de pé-direito com o forro; a altura livre final é a face da laje e só se</text>
+<text x="722.0" y="480.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">conhece depois da demolição — levantar o plenum antes de comprar trilho ou evaporadora.</text>
+<text x="722.0" y="493.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Fora do banheiro, único ambiente que mantém forro, nada de embutido.</text>
+<text x="722.0" y="511.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Fiação e infraestrutura ficam à vista.</text>
+<text x="722.0" y="524.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Perfilados ou eletrocalhas pintadas, alinhados às vigas e aos trilhos: o caminho da fiação</text>
+<text x="722.0" y="536.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">vira desenho, não sobra de obra.</text>
+<text x="722.0" y="554.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">P01, P02 e P03 são as três luminárias de destaque pedidas pelo cliente</text>
+<text x="722.0" y="567.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">— jantar, cama e office. Corpo e diâmetro maiores que os spots dos trilhos, em pendente</text>
+<text x="722.0" y="579.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">ou plafon de sobrepor. No quarto o TR5 passa a correr no eixo de P02 e P03, a 8,28 m: as duas</text>
+<text x="722.0" y="592.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">podem ser alimentadas pelo próprio trilho, com adaptador, dispensando saídas novas na laje.</text>
+<text x="722.0" y="610.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Traçado dos trilhos revisado conforme a sua marcação:</text>
+<text x="722.0" y="622.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">TR3 desceu para 5,60 m, ganhando recuo da drywall; TR5 desceu para 8,28 m, no eixo das duas</text>
+<text x="722.0" y="635.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">luminárias do quarto; TR6 saiu de junto da parede oeste e foi para 1,45 m, no mesmo eixo do</text>
+<text x="722.0" y="647.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">TR4 — os dois lêem como uma linha só. O TR2 foi encurtado para 5,30 m: no traçado anterior</text>
+<text x="722.0" y="660.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">ele cruzava o TR3 no meio da sala, e dois trilhos não se cruzam — se tiverem de se encontrar,</text>
+<text x="722.0" y="672.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">é com conector T.</text>
+<text x="722.0" y="690.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Ar-condicionado sem forro: não há plenum para dutar.</text>
+<text x="722.0" y="703.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Evaporadoras hi-wall ou cassete aparente; frigorígena, dreno e interligação elétrica correm</text>
+<text x="722.0" y="715.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">aparentes, em calha, com caimento contínuo. Somente Electrolux — marca igual não garante</text>
+<text x="722.0" y="728.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">compatibilidade entre unidades.</text>
+<text x="722.0" y="746.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">A piscina do pavimento superior fica sobre a sala — 1,92 × 3,00 m, centrada em</text>
+<text x="722.0" y="758.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">6,13 / 3,14 m do canto noroeste. Essa laje não recebe furação: nem luminária, nem trilho,</text>
+<text x="722.0" y="771.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">nem evaporadora ou tubulação podem invadi-la, e a região exige impermeabilização e</text>
+<text x="722.0" y="783.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">sobrecarga verificadas em estrutura. Nenhum trilho a invade: TR2 corre a oeste e TR3 passa</text>
+<text x="722.0" y="796.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">0,96 m ao sul.</text>
+<text x="722.0" y="814.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">A reserva AC01 caía dentro da projeção da piscina.</text>
+<text x="722.0" y="826.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Foi deslocada para oeste, mantendo a insuflação para sala e jantar. A posição definitiva</text>
+<text x="722.0" y="839.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">depende de confirmar apoio acima do limite sala/jantar e o modelo da condensadora existente:</text>
+<text x="722.0" y="851.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">não assumir que ela admite duas evaporadoras.</text>
+<text x="722.0" y="870.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Vazões de referência, a validar com perda de carga do duto:</text>
+<text x="722.0" y="882.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">banheiro 3,8 × 2,40 × 10 = 91,2 m³/h; coifa 8,9 × 2,40 × 12 = 256,3 m³/h — o segundo só</text>
+<text x="722.0" y="894.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">valeria com cozinha isolada; integrada, seleciona-se por captura no fogão. Rotas próprias.</text>
+<line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="940.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Fluxo = área × lux ÷ (0,60 × 0,80). Fatores de utilização e manutenção são hipóteses; a laje aparente escura reduz o fator de utilização e deve ser reavaliada.</text>
+<text x="48.0" y="953.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Carga térmica não é carga final: claraboia, insolação, escada aberta e ocupação mudam o resultado. Estudar 2 ou 3 evaporadoras; não há número fechado de aparelhos.</text>
+<text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   12/09/2026</text>
+<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 04 / 06   ·   REV. H</text>
 </svg>

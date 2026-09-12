@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 990" width="1400" height="990">
+<rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
+<text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
+<text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Quadro de esquadrias e dados do levantamento</text>
+<text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Todas as esquadrias na mesma escala, pelas medidas do relatório do scan. Vão livre, não marco: conferir em campo antes de fabricar.</text>
+<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. H</text>
+<text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">seis janelas · três portas</text>
+<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">peitoril, sentido de abertura e material a levantar</text>
+<line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
+<rect x="161.75" y="239.50" width="60.50" height="82.50" fill="#d6ffff" stroke="#000000" stroke-width="1.40"/>
+<line x1="161.75" y1="280.75" x2="222.25" y2="280.75" stroke="#000000" stroke-width="0.80" opacity="0.55"/>
+<line x1="153.75" y1="322.00" x2="230.25" y2="322.00" stroke="#000000" stroke-width="1.10"/>
+<text x="192.0" y="229.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">J01</text>
+<text x="192.0" y="336.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="middle">1,10 × 1,50 m</text>
+<text x="192.0" y="347.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">Janela · Jantar</text>
+<text x="192.0" y="357.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">manter</text>
+<rect x="329.75" y="239.50" width="104.50" height="82.50" fill="#d6ffff" stroke="#000000" stroke-width="1.40"/>
+<line x1="329.75" y1="280.75" x2="434.25" y2="280.75" stroke="#000000" stroke-width="0.80" opacity="0.55"/>
+<line x1="321.75" y1="322.00" x2="442.25" y2="322.00" stroke="#000000" stroke-width="1.10"/>
+<text x="382.0" y="229.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">J02</text>
+<text x="382.0" y="336.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="middle">1,90 × 1,50 m</text>
+<text x="382.0" y="347.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">Janela · Sala</text>
+<text x="382.0" y="357.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">manter</text>
+<rect x="544.50" y="239.50" width="55.00" height="82.50" fill="#d6ffff" stroke="#000000" stroke-width="1.40"/>
+<line x1="544.50" y1="280.75" x2="599.50" y2="280.75" stroke="#000000" stroke-width="0.80" opacity="0.55"/>
+<line x1="536.50" y1="322.00" x2="607.50" y2="322.00" stroke="#000000" stroke-width="1.10"/>
+<text x="572.0" y="229.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">J03</text>
+<text x="572.0" y="336.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="middle">1,00 × 1,50 m</text>
+<text x="572.0" y="347.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">Janela · Sala</text>
+<text x="572.0" y="357.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">manter</text>
+<rect x="159.00" y="434.00" width="66.00" height="88.00" fill="#d6ffff" stroke="#000000" stroke-width="1.40"/>
+<line x1="159.00" y1="478.00" x2="225.00" y2="478.00" stroke="#000000" stroke-width="0.80" opacity="0.55"/>
+<line x1="151.00" y1="522.00" x2="233.00" y2="522.00" stroke="#000000" stroke-width="1.10"/>
+<text x="192.0" y="424.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">J04</text>
+<text x="192.0" y="536.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="middle">1,20 × 1,60 m</text>
+<text x="192.0" y="547.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">Janela · Quarto</text>
+<text x="192.0" y="557.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">manter</text>
+<rect x="349.00" y="439.50" width="66.00" height="82.50" fill="#d6ffff" stroke="#000000" stroke-width="1.40"/>
+<line x1="349.00" y1="480.75" x2="415.00" y2="480.75" stroke="#000000" stroke-width="0.80" opacity="0.55"/>
+<line x1="341.00" y1="522.00" x2="423.00" y2="522.00" stroke="#000000" stroke-width="1.10"/>
+<text x="382.0" y="429.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">J05</text>
+<text x="382.0" y="536.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="middle">1,20 × 1,50 m</text>
+<text x="382.0" y="547.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">Janela · Quarto</text>
+<text x="382.0" y="557.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">manter</text>
+<rect x="517.00" y="439.50" width="110.00" height="82.50" fill="#d6ffff" stroke="#000000" stroke-width="1.40"/>
+<line x1="517.00" y1="480.75" x2="627.00" y2="480.75" stroke="#000000" stroke-width="0.80" opacity="0.55"/>
+<line x1="509.00" y1="522.00" x2="635.00" y2="522.00" stroke="#000000" stroke-width="1.10"/>
+<text x="572.0" y="429.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">J06</text>
+<text x="572.0" y="536.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="middle">2,00 × 1,50 m</text>
+<text x="572.0" y="547.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">Janela · Closet</text>
+<text x="572.0" y="557.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">manter</text>
+<rect x="167.25" y="595.50" width="49.50" height="126.50" fill="#ffffff" stroke="#000000" stroke-width="1.40"/>
+<line x1="207.84" y1="665.08" x2="207.84" y2="665.08" stroke="#000000" stroke-width="1.00"/>
+<circle cx="208.83" cy="665.08" r="2.00" fill="#000000"/>
+<line x1="159.25" y1="722.00" x2="224.75" y2="722.00" stroke="#000000" stroke-width="1.10"/>
+<text x="192.0" y="585.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">P01</text>
+<text x="192.0" y="736.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="middle">0,90 × 2,30 m</text>
+<text x="192.0" y="747.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">Porta · Entrada</text>
+<text x="192.0" y="757.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">manter</text>
+<rect x="360.00" y="612.00" width="44.00" height="110.00" fill="#ffffff" stroke="#000000" stroke-width="1.40"/>
+<line x1="396.08" y1="672.50" x2="396.08" y2="672.50" stroke="#000000" stroke-width="1.00"/>
+<circle cx="396.96" cy="672.50" r="2.00" fill="#000000"/>
+<line x1="352.00" y1="722.00" x2="412.00" y2="722.00" stroke="#000000" stroke-width="1.10"/>
+<text x="382.0" y="602.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">P02</text>
+<text x="382.0" y="736.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="middle">0,80 × 2,00 m</text>
+<text x="382.0" y="747.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">Porta · Banheiro</text>
+<text x="382.0" y="757.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#ff00ff" font-weight="bold" text-anchor="middle">giro invertido — abre p/ escada</text>
+<rect x="544.50" y="595.50" width="55.00" height="126.50" fill="#ffffff" stroke="#000000" stroke-width="1.40"/>
+<line x1="572.00" y1="599.50" x2="572.00" y2="718.00" stroke="#000000" stroke-width="0.80" opacity="0.60"/>
+<line x1="550.50" y1="658.75" x2="593.50" y2="658.75" stroke="#000000" stroke-width="1.00"/>
+<path d="M 593.5 658.8 L 588.5 656.1 L 588.5 661.4 Z" fill="#000000"/>
+<line x1="536.50" y1="722.00" x2="607.50" y2="722.00" stroke="#000000" stroke-width="1.10"/>
+<text x="572.0" y="585.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">P03</text>
+<text x="572.0" y="736.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="middle">1,00 × 2,30 m</text>
+<text x="572.0" y="747.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">Porta de correr · Quarto</text>
+<text x="572.0" y="757.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#ff00ff" font-weight="bold" text-anchor="middle">nova, na drywall R01</text>
+<rect x="70.00" y="778.00" width="55.00" height="5.00" fill="#000000" stroke="#000000" stroke-width="0.80"/>
+<rect x="125.00" y="778.00" width="55.00" height="5.00" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="70.0" y="796.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">0</text>
+<text x="125.0" y="796.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1</text>
+<text x="180.0" y="796.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">2</text>
+<text x="193.0" y="796.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">m   (elevação das esquadrias)</text>
+<rect x="70.00" y="820.00" width="15.00" height="10.00" fill="#d6ffff" stroke="#8c8c8c" stroke-width="0.70"/>
+<text x="92.0" y="828.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Janela</text>
+<rect x="129.40" y="820.00" width="15.00" height="10.00" fill="#ffffff" stroke="#8c8c8c" stroke-width="0.70"/>
+<text x="151.4" y="828.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Porta</text>
+<line x1="183.90" y1="825.00" x2="198.90" y2="825.00" stroke="#000000" stroke-width="2.20"/>
+<text x="205.9" y="828.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Nível do piso acabado</text>
+<line x1="690.00" y1="140.00" x2="690.00" y2="900.00" stroke="#cccccc" stroke-width="0.80" opacity="0.80"/>
+<text x="722.0" y="151.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">DADOS DO LEVANTAMENTO</text>
+<rect x="722.00" y="160.00" width="630.00" height="20.00" fill="#e0e0e0"/>
+<text x="730.0" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Dado</text>
+<text x="1117.2" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Valor</text>
+<text x="1344.0" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Observação</text>
+<text x="730.0" y="194.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Área útil (soma dos ambientes)</text>
+<text x="1117.2" y="194.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,30 m²</text>
+<text x="1344.0" y="194.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">relatório arredonda para 60,20</text>
+<line x1="722.00" y1="202.00" x2="1352.00" y2="202.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="722.00" y="202.00" width="630.00" height="22.00" fill="#f5f5f5"/>
+<text x="730.0" y="216.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Área externa do pavimento</text>
+<text x="1117.2" y="216.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">64,70 m²</text>
+<text x="1344.0" y="216.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">inclui espessura de paredes</text>
+<line x1="722.00" y1="224.00" x2="1352.00" y2="224.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="730.0" y="238.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Área de parede</text>
+<text x="1117.2" y="238.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">130,40 m²</text>
+<text x="1344.0" y="238.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">sem vãos</text>
+<line x1="722.00" y1="246.00" x2="1352.00" y2="246.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="722.00" y="246.00" width="630.00" height="22.00" fill="#f5f5f5"/>
+<text x="730.0" y="260.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Área de esquadria</text>
+<text x="1117.2" y="260.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">12,70 m²</text>
+<text x="1344.0" y="260.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">seis janelas</text>
+<line x1="722.00" y1="268.00" x2="1352.00" y2="268.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="730.0" y="282.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Volume</text>
+<text x="1117.2" y="282.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">144,51 m³</text>
+<text x="1344.0" y="282.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">com forro, pé-direito 2,40 m</text>
+<line x1="722.00" y1="290.00" x2="1352.00" y2="290.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="722.00" y="290.00" width="630.00" height="22.00" fill="#f5f5f5"/>
+<text x="730.0" y="304.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Perímetro somado dos ambientes</text>
+<text x="1117.2" y="304.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">78,10 m</text>
+<text x="1344.0" y="304.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">não é perímetro do pavimento</text>
+<line x1="722.00" y1="312.00" x2="1352.00" y2="312.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="730.0" y="326.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Pé-direito</text>
+<text x="1117.2" y="326.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">2,40 m</text>
+<text x="1344.0" y="326.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">medido COM forro — vai subir</text>
+<line x1="722.00" y1="334.00" x2="1352.00" y2="334.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="722.00" y="334.00" width="630.00" height="22.00" fill="#f5f5f5"/>
+<text x="730.0" y="348.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Captura / exportação</text>
+<text x="1117.2" y="348.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">02.09 / 07.09.2026</text>
+<text x="1344.0" y="348.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">scan 3D Polycam</text>
+<line x1="722.00" y1="356.00" x2="1352.00" y2="356.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="722.0" y="383.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">INVENTÁRIO DO SCAN — NÃO É ESPECIFICAÇÃO</text>
+<rect x="722.00" y="392.00" width="630.00" height="20.00" fill="#e0e0e0"/>
+<text x="730.0" y="405.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Ambiente</text>
+<text x="830.8" y="405.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Itens reconhecidos pelo scan (m)</text>
+<text x="730.0" y="426.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Sala</text>
+<text x="830.8" y="426.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">sofá 2,60 × 1,60 · mesa de centro 1,60 × 1,00 · 3 cadeiras · armário 2,50 × 0,40 · escada 0,80 × 3,00</text>
+<line x1="722.00" y1="434.00" x2="1352.00" y2="434.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="722.00" y="434.00" width="630.00" height="22.00" fill="#f5f5f5"/>
+<text x="730.0" y="448.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Quarto</text>
+<text x="830.8" y="448.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">cama 1,50 × 2,00 · bancada 3,00 × 0,50 · mesa 0,50 × 0,50 · cadeira</text>
+<line x1="722.00" y1="456.00" x2="1352.00" y2="456.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="730.0" y="470.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Cozinha</text>
+<text x="830.8" y="470.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">armário 1,60 × 0,60 · cuba 0,70 × 0,60 · geladeira 0,90 × 0,80 (h 1,80) · forno · cooktop · lava-louças</text>
+<line x1="722.00" y1="478.00" x2="1352.00" y2="478.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="722.00" y="478.00" width="630.00" height="22.00" fill="#f5f5f5"/>
+<text x="730.0" y="492.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Jantar</text>
+<text x="830.8" y="492.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">armário de canto 2,50 × 0,40 — o canto alemão, item D05 da demolição</text>
+<line x1="722.00" y1="500.00" x2="1352.00" y2="500.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="730.0" y="514.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Closet</text>
+<text x="830.8" y="514.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">marcenaria não discriminada pelo scan — inventariar módulo a módulo antes de desmontar (M01)</text>
+<line x1="722.00" y1="522.00" x2="1352.00" y2="522.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="722.00" y="522.00" width="630.00" height="22.00" fill="#f5f5f5"/>
+<text x="730.0" y="536.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Banheiro</text>
+<text x="830.8" y="536.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">bancada 1,70 × 0,40 · box 0,90 × 1,40 (h 2,10) · cuba 0,60 × 0,50 · bacia 0,40 × 0,70</text>
+<line x1="722.00" y1="544.00" x2="1352.00" y2="544.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="722.0" y="572.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">As esquadrias estão desenhadas na mesma escala, pelas medidas do relatório.</text>
+<text x="722.0" y="584.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Largura × altura de vão, não de marco. O scan não mede peitoril, sentido de abertura nem</text>
+<text x="722.0" y="596.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">material: essas três informações faltam e precisam de visita. Nenhuma esquadria deste caderno</text>
+<text x="722.0" y="609.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">está liberada para fabricação.</text>
+<text x="722.0" y="628.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">As duas janelas do quarto têm larguras iguais e alturas diferentes</text>
+<text x="722.0" y="640.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">— 1,20 × 1,60 e 1,20 × 1,50. O relatório não diz qual é a da fachada leste e qual é a do sul.</text>
+<text x="722.0" y="652.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Conferir em campo antes de qualquer persiana, cortina ou película.</text>
+<text x="722.0" y="671.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">P03 é a única esquadria nova.</text>
+<text x="722.0" y="684.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Porta de correr de 1,00 × 2,30 m na drywall reconstruída, com a folha estacionando no 1,00 m</text>
+<text x="722.0" y="696.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">de parede a leste do vão, pela face da sala. P02 mantém a folha existente de 0,80 × 2,00 m e</text>
+<text x="722.0" y="709.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">só inverte o giro. P01, a porta de entrada, não é alterada.</text>
+<text x="722.0" y="727.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">O inventário do scan serve para escopo, não para especificação.</text>
+<text x="722.0" y="740.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">É o que o algoritmo reconheceu no dia da captura. Há erro evidente — uma "mesa lateral" de</text>
+<text x="722.0" y="752.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">6,60 × 2,00 m que é a projeção da escada — e há ausência: o closet inteiro não foi</text>
+<text x="722.0" y="765.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">discriminado. Use a lista para conferir o que sai, o que se desmonta e o que volta.</text>
+<text x="722.0" y="784.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">O que este caderno ainda não tem, e que um executivo exige:</text>
+<text x="722.0" y="796.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">projeto estrutural para a furação da laje e a área da piscina; hidráulica e esgoto do banheiro</text>
+<text x="722.0" y="808.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">e da cozinha; elétrico executivo com diagrama unifilar e cálculo de demanda; projeto de</text>
+<text x="722.0" y="821.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">juntas do piso monolítico; detalhamento de marcenaria; e aprovação do condomínio.</text>
+<line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="940.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Medidas do relatório do scan (captura 02.09.2026), arredondadas ao decímetro pelo próprio relatório. Vão livre; marco, contramarco e acabamento não estão medidos.</text>
+<text x="48.0" y="953.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Quadro de referência de estudo preliminar — não é lista de compra nem pedido de fabricação.</text>
+<text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   12/09/2026</text>
+<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 06 / 06   ·   REV. H</text>
+</svg>

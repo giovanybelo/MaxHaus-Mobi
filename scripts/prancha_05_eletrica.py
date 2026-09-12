@@ -4,8 +4,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. G'
-PRANCHA = 'Prancha 05 / 08'
+REV = 'REV. H'
+PRANCHA = 'Prancha 05 / 06'
 
 # --- pontos existentes marcados pelo cliente (metros) -----------------------
 TOMADAS_EXIST = [
@@ -91,13 +91,14 @@ def construir():
 
     S = 70.0
     d.set_plan(70, 156, S)
-    fundo_ambientes(d, '#edeae3')
+    fundo_ambientes(d, K07)
     paredes(d, estado='novo')
     janelas(d)
     porta(d, DOOR_ENTRADA)
     porta(d, DOOR_BANHO)
     porta_correr_horizontal(d, PORTA_NOVA, lado='n', sentido='e')
     escada(d)
+    norte(d, 140, 212, 15, nota='uma')
     for k, lx, ly in (('jantar', 520.0, 145.0), ('sala', 500.0, 300.0),
                       ('cozinha', 310.0, 350.0), ('closet', 300.0, 505.0),
                       ('quarto', 500.0, 480.0), ('banheiro', 380.6, 428.0)):
@@ -114,9 +115,9 @@ def construir():
     # tomadas novas
     for (ident, xm, ym, uso) in TOMADAS_NOVAS:
         cx, cy = d.PM(xm, ym)
-        d.circle(cx, cy, 5.6, fill='#e6f0f6', stroke=NEW, sw=1.5)
+        d.circle(cx, cy, 5.6, fill=CIANO, stroke=K, sw=1.3)
         d.circle(cx, cy, 1.8, fill=NEW)
-        d.txt(cx, cy - 9, ident, 6.6, NEW, 'bold', 'middle', ls=0.3)
+        d.txt(cx, cy - 9, ident, 6.6, K, 'bold', 'middle', ls=0.3)
 
     # comandos
     for (ident, xm, ym) in COMANDOS:
@@ -130,7 +131,7 @@ def construir():
 
     # quadro de energia
     cx, cy = d.PM(*QUADRO)
-    d.rect(cx - 10, cy - 7, 20, 14, fill='#fdeceb', stroke=DEMO, sw=1.8)
+    d.rect(cx - 10, cy - 7, 20, 14, fill=MAGENTA18, stroke=DEMO, sw=1.8)
     for i in range(3):
         d.line(cx - 6 + i * 6, cy - 4, cx - 6 + i * 6, cy + 4, DEMO, 1.1)
     d.txt(cx, cy + 20, 'QUADRO DE ENERGIA', 7.6, DEMO, 'bold', 'middle', ls=0.4)
@@ -138,9 +139,9 @@ def construir():
 
     escala(d, 156 + BUILDING_H * S + 26)
     legenda(d, [('dotf', EXIST, 'Tomada existente'),
-                ('dotf', NEW, 'Tomada nova (reserva)'),
-                ('fill', '#f0eee8', 'Comando / interruptor'),
-                ('fill', '#fdeceb', 'Quadro de energia')],
+                ('fill', CIANO, 'Tomada nova (reserva)'),
+                ('fill', BRANCO, 'Comando / interruptor'),
+                ('fill', MAGENTA18, 'Quadro de energia')],
             70, 156 + BUILDING_H * S + 64, largura=600)
 
     d.line(690, 140, 690, 900, RULE, 0.8, opacity=0.8)

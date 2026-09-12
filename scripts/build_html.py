@@ -6,8 +6,9 @@ scripts/prancha_03_pisos.py.
 Plano de projeto gráfico
   Cor    papel #f7f4ee · tinta #1b2730 · apoio #6d7681 · cumaru #c2813f ·
          monolítico #d8d4cc · área molhada #cfe1ea/#5e8ca3 · carimbo #a8372c
-  Tipos  Archivo (títulos e etiquetas) + IBM Plex Sans (texto) +
-         IBM Plex Mono (códigos e números do quadro de áreas)
+  Tipos  serifada em todo o documento (Tiempos Text, com Source Serif 4 e
+         Georgia como alternativas), acompanhando a identidade
+  Cores  quatro tintas puras — preto, ciano, magenta e amarelo — mais branco
   Layout folha técnica: faixa de legenda, duas colunas de opção lado a lado
          (empilham no celular) e carimbo no rodapé, como numa prancha impressa.
 """
@@ -22,45 +23,46 @@ def read(n):
 
 CSS = """
 :root{
-  --paper:#f7f4ee; --card:#fffdf8; --ink:#1b2730; --ink-2:#3c4a55; --muted:#6d7681;
-  --line:#d8d3c8; --line-soft:#e7e2d8; --wood:#c2813f; --mono:#d8d4cc; --mono-line:#b3aea3;
-  --wet:#cfe1ea; --wet-line:#5e8ca3; --stamp:#a8372c; --joint:#1f2c38;
-  --shadow:0 1px 2px rgba(27,39,48,.06), 0 8px 24px rgba(27,39,48,.05);
+  --paper:#ffffff; --card:#ffffff; --ink:#000000; --ink-2:#2b2b2b; --muted:#5c5c5c;
+  --line:#cccccc; --line-soft:#e6e6e6; --wood:#ffff00; --mono:#ededed; --mono-line:#8c8c8c;
+  --wet:#d6ffff; --wet-line:#00ffff; --stamp:#ff00ff; --joint:#000000;
+  --shadow:0 1px 2px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.06);
+  --serif:"Tiempos Text","Source Serif 4",Georgia,"Times New Roman",Times,serif;
 }
 :root:not([data-theme="light"]){ }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --paper:#15181b; --card:#1c2023; --ink:#ece7dd; --ink-2:#cbc5ba; --muted:#97a0a8;
-    --line:#343a3f; --line-soft:#282d31; --mono-line:#7d786f; --stamp:#e2705f;
-    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.35);
+    --paper:#0a0a0a; --card:#141414; --ink:#ffffff; --ink-2:#e0e0e0; --muted:#a6a6a6;
+    --line:#333333; --line-soft:#1f1f1f; --mono-line:#8c8c8c; --stamp:#ff66ff;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 10px 28px rgba(0,0,0,.45);
   }
 }
 :root[data-theme="dark"]{
-  --paper:#15181b; --card:#1c2023; --ink:#ece7dd; --ink-2:#cbc5ba; --muted:#97a0a8;
-  --line:#343a3f; --line-soft:#282d31; --mono-line:#7d786f; --stamp:#e2705f;
-  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.35);
+  --paper:#0a0a0a; --card:#141414; --ink:#ffffff; --ink-2:#e0e0e0; --muted:#a6a6a6;
+  --line:#333333; --line-soft:#1f1f1f; --mono-line:#8c8c8c; --stamp:#ff66ff;
+  --shadow:0 1px 2px rgba(0,0,0,.5), 0 10px 28px rgba(0,0,0,.45);
 }
 
 *{box-sizing:border-box}
 body{
   margin:0; background:var(--paper); color:var(--ink);
-  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-family:var(--serif);
   font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased;
 }
 .sheet{max-width:1180px; margin:0 auto; padding:16px; padding-block:28px 40px;}
 
 .eyebrow{
-  font-family:"Archivo",Helvetica,Arial,sans-serif; font-weight:600; font-size:11px;
+  font-family:var(--serif); font-weight:600; font-size:11px;
   letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin:0 0 10px;
 }
 h1{
-  font-family:"Archivo",Helvetica,Arial,sans-serif; font-weight:700; font-size:clamp(30px,5.2vw,46px);
+  font-family:var(--serif); font-weight:700; font-size:clamp(30px,5.2vw,46px);
   line-height:1.04; letter-spacing:-.015em; margin:0; text-wrap:balance;
 }
 .lede{max-width:62ch; color:var(--ink-2); margin:12px 0 0;}
 .head{display:flex; flex-wrap:wrap; gap:20px 32px; align-items:flex-end; justify-content:space-between;}
 .rev{
-  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:12px; letter-spacing:.06em;
+  font-family:var(--serif); font-variant-numeric:tabular-nums; font-size:12px; letter-spacing:.06em;
   color:var(--stamp); border:1px solid currentColor; border-radius:2px; padding:5px 10px;
   white-space:nowrap; align-self:flex-start;
 }
@@ -86,15 +88,15 @@ h1{
 
 .opt-head{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; margin-bottom:14px;}
 .opt-code{
-  font-family:"Archivo",Helvetica,Arial,sans-serif; font-weight:700; font-size:13px;
+  font-family:var(--serif); font-weight:700; font-size:13px;
   letter-spacing:.1em; color:var(--paper); background:var(--ink); padding:3px 9px; border-radius:2px;
 }
-.opt-title{font-family:"Archivo",Helvetica,Arial,sans-serif; font-weight:600; font-size:20px; margin:0;}
+.opt-title{font-family:var(--serif); font-weight:600; font-size:20px; margin:0;}
 .opt-tag{font-size:12.5px; color:var(--muted);}
 
 figure{margin:0;}
 .plate{
-  background:#faf8f4; border:1px solid var(--line); box-shadow:var(--shadow);
+  background:#ffffff; border:1px solid var(--line); box-shadow:var(--shadow);
   padding:10px 6px 2px; border-radius:2px;
 }
 .plate svg{display:block; width:100%; height:auto; max-width:100%;}
@@ -102,13 +104,13 @@ figcaption{font-size:11.5px; color:var(--muted); margin-top:9px;}
 
 table{width:100%; border-collapse:collapse; margin-top:22px; font-size:13.5px;}
 caption{
-  font-family:"Archivo",Helvetica,Arial,sans-serif; font-weight:600; font-size:10.5px;
+  font-family:var(--serif); font-weight:600; font-size:10.5px;
   letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
   text-align:left; padding-bottom:7px; border-bottom:1px solid var(--line);
 }
 th,td{text-align:left; padding:8px 0; border-bottom:1px solid var(--line-soft); vertical-align:baseline;}
 td.n,th.n{
-  text-align:right; font-family:"IBM Plex Mono",ui-monospace,monospace;
+  text-align:right; font-family:var(--serif); font-variant-numeric:tabular-nums;
   font-variant-numeric:tabular-nums; white-space:nowrap; font-size:13px;
 }
 td.key{font-weight:600; white-space:nowrap; padding-right:12px;}
@@ -130,7 +132,7 @@ ul.notes li b{color:var(--ink); font-weight:600;}
   border-left:3px solid var(--stamp); padding:2px 0 2px 18px;
 }
 .changes h2{
-  font-family:"Archivo",Helvetica,Arial,sans-serif; font-size:12px; font-weight:700;
+  font-family:var(--serif); font-size:12px; font-weight:700;
   letter-spacing:.14em; text-transform:uppercase; color:var(--stamp); margin:0 0 12px;
 }
 .changes ol{margin:0; padding-left:20px; max-width:80ch;}
@@ -149,16 +151,16 @@ ul.notes li b{color:var(--ink); font-weight:600;}
   .stamp div:nth-child(2n){border-right:0;}
 }
 .stamp dt, .stamp .k{
-  font-family:"Archivo",Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:600;
+  font-family:var(--serif); font-size:9.5px; font-weight:600;
   letter-spacing:.14em; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:3px;
 }
 .stamp .v{font-size:13px; color:var(--ink);}
-.stamp .v.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums;}
+.stamp .v.mono{font-family:var(--serif); font-variant-numeric:tabular-nums; font-variant-numeric:tabular-nums;}
 .stamp .v.warn{color:var(--stamp); font-weight:600;}
 .fine{font-size:12px; color:var(--muted); margin-top:16px; max-width:95ch;}
 
 .sheet-frame{
-  border:1px solid var(--line); background:#faf8f4; box-shadow:var(--shadow);
+  border:1px solid var(--line); background:#ffffff; box-shadow:var(--shadow);
   overflow-x:auto; border-radius:2px; padding:0;
 }
 .sheet-frame > div{min-width:940px;}
@@ -173,10 +175,14 @@ ul.notes li b{color:var(--ink); font-weight:600;}
   background:var(--card); color:var(--ink-2);
 }
 .chip b{color:var(--ink); font-weight:600;}
-.chip.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums;}
+.chip.mono{font-family:var(--serif); font-variant-numeric:tabular-nums; font-variant-numeric:tabular-nums;}
 """
 
 BOARDS = [
+    ('01', 'Planta baixa cotada', 'prancha-01-planta-cotada.svg',
+     'Folha de referência dimensional do pavimento, no estado proposto: cotas gerais, cadeias, cotas internas, nível e norte.',
+     ['<b>7,85 × 9,43 m</b> externos', '<b>60,30 m²</b> úteis',
+      '<b>Pé-direito</b> 2,40 m com forro', '<b>Norte</b> provisório']),
     ('02', 'Demolição e desmontagem', 'prancha-02-demolicao.svg',
      'Escopo sobre o modelo do scan: o que sai, o que se desmonta para remontar e o que fica.',
      ['<b>14</b> itens catalogados', '<b>Demolir e reconstruir</b> como serviços separados',
@@ -193,9 +199,25 @@ BOARDS = [
      'Reservas de localização com os pontos existentes que você marcou e o quadro junto à porta de entrada.',
      ['<b>9</b> tomadas existentes', '<b>8</b> reservas novas',
       '<b>8</b> comandos, dois na cabeceira', '<b>Quadro</b> na entrada']),
+    ('06', 'Esquadrias e dados do levantamento', 'prancha-06-esquadrias.svg',
+     'Seis janelas e três portas na mesma escala, com os números que o relatório do scan entrega e o inventário do que ele reconheceu.',
+     ['<b>6</b> janelas · <b>12,70 m²</b>', '<b>3</b> portas',
+      '<b>P03</b> a única nova', '<b>144,51 m³</b> de volume']),
 ]
 
 DECISOES = [
+    ('Planta baixa cotada, com norte',
+     'O caderno ganhou a folha que faltava: cotas gerais, cadeias de cota nas quatro faces, '
+     'posição dos vãos na fachada leste, cotas internas, nível ±0,00 e símbolo de norte. '
+     'O norte é provisório — o levantamento por scan não registra orientação.'),
+    ('Pé-direito é 2,40 m, e medido com o forro',
+     'O relatório dá 2,40 m nos seis ambientes e 144,51 m³ de volume. Como o forro sai inteiro, '
+     'a altura livre final é a face da laje, que o scan não mede: levantar o plenum na demolição. '
+     'As vazões da Prancha 04 foram refeitas com 2,40 m.'),
+    ('Identidade aplicada ao caderno',
+     'Tipografia serifada em todas as folhas e quatro tintas puras: magenta é o que sai, ciano é '
+     'água, ar e obra nova, amarelo é preparo e atenção, preto é o que fica — e toda a tipografia. '
+     'Ciano e amarelo puros não têm contraste para texto, então entram como área, nunca como letra.'),
     ('Demolir e reconstruir são serviços separados',
      'A drywall entre sala e quarto cai e é refeita no mesmo eixo, agora com uma porta de '
      '1,00 × 2,30 m — a mesma altura da porta de entrada. O pano de vidro do fundo do box cai e '
@@ -265,9 +287,9 @@ def build():
 
     stamp = [
         ('Obra', 'MaxHaus MainFloor — João Baldinato 109, 81I', ''),
-        ('Caderno', '4 pranchas — 02, 03, 04 e 05', ''),
+        ('Caderno', '6 pranchas — 01 a 06', ''),
         ('Formato', 'A3 deitado — 420 × 297 mm', 'mono'),
-        ('Revisão', 'G — 12.09.2026', 'mono'),
+        ('Revisão', 'H — 12.09.2026', 'mono'),
         ('Escala', 'gráfica (barra de 2 m em cada planta)', ''),
         ('Base', 'scan MaxHaus MainFloor, 02.09.2026', ''),
         ('Área do pavimento', '60,30 m²', 'mono'),
@@ -278,10 +300,10 @@ def build():
         for (k, v, c) in stamp)
 
     return """<title>Caderno MainFloor</title>
-<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. G.">
+<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. H.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
 <style>""" + CSS + """</style>
 
 <div class="sheet">
@@ -290,11 +312,11 @@ def build():
     <div>
       <p class="eyebrow">MaxHaus · MainFloor · João Baldinato 109 — 81I</p>
       <h1>Caderno MainFloor</h1>
-      <p class="lede">Quatro pranchas sobre o mesmo levantamento: o que se demole, que piso entra,
+      <p class="lede">Seis pranchas sobre o mesmo levantamento: o que se demole, que piso entra,
       como fica o teto agora que não há forro e onde ficam os pontos elétricos. Estudo preliminar —
       cores ilustrativas, nenhum produto ou espessura especificado.</p>
     </div>
-    <p class="rev">REV. G · 12.09.2026</p>
+    <p class="rev">REV. H · 12.09.2026</p>
   </header>
 
   <div class="rule"></div>

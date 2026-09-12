@@ -9,17 +9,49 @@ gerais do pavimento (7,85 × 9,43 m).
 Todo o material fecha em **A3 deitado (420 × 297 mm)** e é exportado em **PDF
 vetorial**.
 
-## Caderno (REV. G)
+## Caderno (REV. H)
 
 | Prancha | Assunto | Arquivo |
 |---|---|---|
+| 01 | Planta baixa cotada, com norte | `pranchas/prancha-01-planta-cotada-A3.pdf` |
 | 02 | Demolição e desmontagem | `pranchas/prancha-02-demolicao-A3.pdf` |
 | 03 | Piso monolítico | `pranchas/prancha-03-piso-monolitico-A3.pdf` |
 | 04 | Teto: laje aparente, iluminação e ar-condicionado | `pranchas/prancha-04-teto-A3.pdf` |
 | 05 | Tomadas, comandos e quadro | `pranchas/prancha-05-eletrica-A3.pdf` |
-| — | Caderno completo, 4 folhas | `pranchas/caderno-mainfloor-A3.pdf` |
+| 06 | Esquadrias e dados do levantamento | `pranchas/prancha-06-esquadrias-A3.pdf` |
+| — | Caderno completo, 6 folhas | `pranchas/caderno-mainfloor-A3.pdf` |
 
 Versão web responsiva: `pranchas/caderno-mainfloor.html`.
+
+## Identidade
+
+- **Tipografia serifada** em todo o caderno (Tiempos Text, com Source Serif 4 e
+  Georgia como alternativas).
+- **Quatro tintas puras + branco**: magenta é o que sai, ciano é água, ar e obra
+  nova, amarelo é preparo e atenção, preto é o que fica — e toda a tipografia.
+  Tudo o que parece cinza é porcentagem de preto. Ciano e amarelo puros não têm
+  contraste para texto, então entram como área, nunca como letra.
+
+## Dados do levantamento (scan Polycam, captura 02.09.2026)
+
+| Dado | Valor |
+|---|---|
+| Área útil (soma dos ambientes) | 60,30 m² (relatório: 60,20) |
+| Área externa do pavimento | 64,70 m² |
+| Área de parede / de esquadria | 130,40 m² / 12,70 m² |
+| Volume | 144,51 m³ |
+| Perímetro somado dos ambientes | 78,10 m |
+| **Pé-direito** | **2,40 m — medido COM forro** |
+
+O pé-direito de 2,40 m é anterior à demolição: com a retirada total do forro
+(D07) a altura livre passa a ser a face inferior da laje, que o scan não mede.
+Levantar o plenum na demolição — é o que decide a folga da porta de correr de
+2,30 m e a altura de trilhos e evaporadoras.
+
+**Norte:** o levantamento por scan não registra orientação. O símbolo está
+desenhado com o norte no topo da folha, por convenção, e marcado como
+provisório em todas as pranchas. Basta alterar `NORTE_DEG` em
+`scripts/base_mainfloor.py` para orientar o caderno inteiro.
 
 ## Dois estados
 

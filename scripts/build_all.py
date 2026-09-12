@@ -9,10 +9,12 @@ sys.path.insert(0, SCRIPTS)
 
 # ordem do caderno
 FOLHAS = [
+    ('prancha_01_planta.py',     'prancha-01-planta-cotada.svg'),
     ('prancha_02_demolicao.py',  'prancha-02-demolicao.svg'),
     ('prancha_03_pisos.py',      'prancha-03-piso-monolitico.svg'),
     ('prancha_04_teto.py',       'prancha-04-teto.svg'),
     ('prancha_05_eletrica.py',   'prancha-05-eletrica.svg'),
+    ('prancha_06_esquadrias.py', 'prancha-06-esquadrias.svg'),
 ]
 
 def main():

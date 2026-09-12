@@ -10,8 +10,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. G'
-PRANCHA = 'Prancha 03 / 08'
+REV = 'REV. H'
+PRANCHA = 'Prancha 03 / 06'
 
 # contorno único do piso seco (faces internas, pt) — o monolítico é uma peça só,
 # então o desenho não pode mostrar a costura entre os polígonos de ambiente
@@ -109,7 +109,7 @@ def construir():
     pp = [d.P(px, py) for px, py in ROOMS['banheiro']['poly']]
     d.path(path_d(pp), fill=WET)
     hachura_wc(d, (345.7, 327.9, 415.6, 453.0))
-    d.path(path_d(pp), fill='none', stroke=WET_LINE, sw=1.0)
+    d.path(path_d(pp), fill='none', stroke=K, sw=1.0)
 
     paredes(d, estado='novo')
     janelas(d)
@@ -117,6 +117,7 @@ def construir():
     porta(d, DOOR_BANHO)
     porta_correr_horizontal(d, PORTA_NOVA, lado='n', sentido='e')
     escada(d)
+    norte(d, 140, 212, 15, nota='uma')
 
     soleira(d, SOLEIRA_WC)
     soleira(d, SOLEIRA_ENTRADA)

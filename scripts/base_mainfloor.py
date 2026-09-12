@@ -119,35 +119,101 @@ AREA_PISCINA_M2 = PISCINA_W * PISCINA_H
 AREA_TETO = AREA_PISCINA          # compatibilidade
 AREA_TETO_M2 = AREA_PISCINA_M2
 
+# --- dados do levantamento (relatório Polycam, captura 02.09.2026) ----------
+PE_DIREITO = 2.40          # m, medido COM forro — some com a retirada (D07)
+AREA_LIVABLE = 60.2        # m² (soma dos ambientes: 60,30)
+AREA_EXTERIOR = 64.7       # m²
+AREA_PAREDES = 130.4       # m²
+AREA_JANELAS = 12.7        # m²
+VOLUME_TOTAL = 144.51      # m³
+PERIMETRO_AMBIENTES = 78.1 # m
+
+# esquadrias: (id, tipo, ambiente, larg, alt, área, situação)
+ESQUADRIAS = [
+    ('J01', 'Janela', 'Jantar',   1.10, 1.50, 1.72, 'manter'),
+    ('J02', 'Janela', 'Sala',     1.90, 1.50, 2.78, 'manter'),
+    ('J03', 'Janela', 'Sala',     1.00, 1.50, 1.51, 'manter'),
+    ('J04', 'Janela', 'Quarto',   1.20, 1.60, 1.89, 'manter'),
+    ('J05', 'Janela', 'Quarto',   1.20, 1.50, 1.76, 'manter'),
+    ('J06', 'Janela', 'Closet',   2.00, 1.50, 3.04, 'manter'),
+    ('P01', 'Porta',  'Entrada',  0.90, 2.30, 2.04, 'manter'),
+    ('P02', 'Porta',  'Banheiro', 0.80, 2.00, 1.64, 'giro invertido — abre p/ escada'),
+    ('P03', 'Porta de correr', 'Quarto', 1.00, 2.30, 2.30, 'nova, na drywall R01'),
+]
+
+# ambientes: (nome, área, perímetro, bounding box, inscrita, parede s/ vãos)
+AMBIENTES_SCAN = [
+    ('Sala',     23.0, 20.7, '5,6 × 4,8', '4,8 × 4,0', 29.8),
+    ('Quarto',   13.4, 16.2, '5,6 × 2,5', '5,6 × 2,1', 30.3),
+    ('Cozinha',   8.9, 13.7, '4,7 × 2,1', '4,7 × 1,4', 23.3),
+    ('Jantar',    5.9, 10.1, '3,3 × 1,8', '—',         15.2),
+    ('Closet',    5.3,  9.3, '2,5 × 2,1', '—',         14.9),
+    ('Banheiro',  3.8,  8.1, '2,6 × 1,4', '—',         16.7),
+]
+
+# --- norte -----------------------------------------------------------------
+# 0° = norte para o topo da folha; o ângulo cresce no sentido horário.
+# PROVISÓRIO: o levantamento por scan não registra orientação. Trocar este
+# número é a única alteração necessária para orientar todo o caderno.
+NORTE_DEG = 0.0
+NORTE_CONFIRMADO = False
+
 # ---------------------------------------------------------------------------
 # 2. PALETA
 # ---------------------------------------------------------------------------
-BG        = '#faf8f4'
-INK       = '#22303c'
-INK_SOFT  = '#6b7480'
-RULE      = '#cbc8c0'
-WALL      = '#5b6472'
-GHOST     = '#9aa2ab'
-GLASS     = '#7fb0c4'
-WOOD      = '#c98a4b'
-WOOD_LINE = '#9c6530'
-MONO      = '#dcd9d2'
-MONO_LINE = '#b9b5ab'
-WET       = '#d7e7ef'
-WET_LINE  = '#6f9bb0'
-JOINT     = '#1f2c38'
-RED       = '#b23a2f'
-DEMO      = '#c2443a'
-KEEP      = '#2e7d6b'
-NEW       = '#1f6f9c'
-EXIST     = '#8a8f96'
-AIR       = '#4c8fa8'
+# Identidade visual: quatro tintas puras — preto, ciano, magenta e amarelo —
+# mais o branco do papel. Tudo o que parece cinza ou pastel aqui é porcentagem
+# de uma dessas tintas, do jeito que uma gráfica trabalha.
+K         = '#000000'
+K70       = '#4d4d4d'
+K45       = '#8c8c8c'
+K20       = '#cccccc'
+K12       = '#e0e0e0'
+K07       = '#ededed'
+K04       = '#f5f5f5'
+CIANO     = '#00ffff'
+CIANO35   = '#a6ffff'
+CIANO18   = '#d6ffff'
+MAGENTA   = '#ff00ff'
+MAGENTA18 = '#ffd6ff'
+AMARELO   = '#ffff00'
+AMARELO40 = '#ffff99'
+BRANCO    = '#ffffff'
+
+# papel e traço
+BG        = BRANCO
+INK       = K
+INK_SOFT  = K70
+RULE      = K20
+WALL      = K
+GHOST     = K45
+JOINT     = K
+DIM       = K45
+DIM_TXT   = K70
+
+# códigos de cor do caderno
+#   magenta = o que sai        ciano = água, ar e obra nova
+#   amarelo = preparo/atenção  preto = o que fica, e toda a tipografia
+DEMO      = MAGENTA        # demolir / retirar
+PREP      = AMARELO        # preparo de superfície
+KEEP      = K              # manter / reconstruir
+NEW       = K              # ponto novo
+EXIST     = K45            # ponto existente
+AIR       = CIANO          # ar-condicionado e exaustão
+GLASS     = CIANO
+WET       = CIANO18        # área molhada
+WET_LINE  = CIANO
+MONO      = K07            # piso monolítico
+MONO_LINE = K45
+WOOD      = AMARELO        # sem uso desde a REV. F
+WOOD_LINE = K
+RED       = MAGENTA        # carimbo de advertência
 
 # ---------------------------------------------------------------------------
 # 3. FOLHA A3 E PRIMITIVAS
 # ---------------------------------------------------------------------------
 W, H = 1400, 990                      # proporção A3 deitado
-FONT = "'IBM Plex Sans', Helvetica, Arial, sans-serif"
+FONT = "'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif"
 MARGIN = 48
 
 def esc(t):
@@ -163,10 +229,11 @@ class Draw(object):
         self.S = 55.0
     # --- primitivas ---------------------------------------------------------
     def add(self, s): self.o.append(s)
-    def txt(self, x, y, t, size=10, fill=INK, weight='normal', anchor='start', ls=None):
+    def txt(self, x, y, t, size=10, fill=INK, weight='normal', anchor='start', ls=None, rot=None):
         a = ('<text x="%.1f" y="%.1f" font-family="%s" font-size="%.1f" fill="%s" '
              'font-weight="%s" text-anchor="%s"' % (x, y, FONT, size, fill, weight, anchor))
         if ls: a += ' letter-spacing="%.2f"' % ls
+        if rot: a += ' transform="rotate(%.1f %.1f %.1f)"' % (rot, x, y)
         self.add(a + '>' + esc(t) + '</text>')
     def line(self, x1, y1, x2, y2, stroke, w=1.0, opacity=None, cap=None):
         a = ('<line x1="%.2f" y1="%.2f" x2="%.2f" y2="%.2f" stroke="%s" stroke-width="%.2f"'
@@ -252,7 +319,7 @@ def vidro_box(d, rotulo=True):
     """Pano de vidro chão-teto no fundo do box, ponta a ponta."""
     x, y, w_, h_ = d.R(VIDRO_BOX)
     d.rect(x - 0.3, y - 0.3, w_ + 0.6, h_ + 0.6, fill=BG)
-    d.rect(x, y, w_, h_, fill='#e8f2f6', stroke=GLASS, sw=0.9)
+    d.rect(x, y, w_, h_, fill=CIANO18, stroke=K, sw=0.9)
     ym = y + h_ / 2.0
     d.line(x, ym, x + w_, ym, GLASS, 1.6)
     for t in (0.18, 0.5, 0.82):
@@ -374,6 +441,75 @@ def tracejado(d, pts_pt, stroke=JOINT, w=1.7, dash=6.0, gap=4.2, halo=True):
                 resto += t2 - t
             t = t2
 
+def _tick(d, x, y, vertical=False):
+    if vertical:
+        d.line(x - 3.0, y + 3.0, x + 3.0, y - 3.0, DIM, 1.1)
+    else:
+        d.line(x - 3.0, y + 3.0, x + 3.0, y - 3.0, DIM, 1.1)
+
+
+def cota_h(d, x0_pt, x1_pt, y_pt, off, texto=None, size=7.2, ext=True):
+    """Cota horizontal: x0..x1 em pt do scan, linha deslocada `off` px de y_pt."""
+    a = d.P(x0_pt, y_pt); b = d.P(x1_pt, y_pt)
+    yy = a[1] + off
+    if ext:
+        for xx in (a[0], b[0]):
+            d.line(xx, a[1] + (3.0 if off > 0 else -3.0), xx, yy + (3.0 if off > 0 else -3.0),
+                   DIM, 0.5, opacity=0.75)
+    d.line(a[0], yy, b[0], yy, DIM, 0.7)
+    _tick(d, a[0], yy); _tick(d, b[0], yy)
+    t = texto if texto is not None else br(abs(x1_pt - x0_pt) / PT_PER_M)
+    d.txt((a[0] + b[0]) / 2.0, yy - 4.0, t, size, DIM_TXT, 'normal', 'middle')
+
+
+def cota_v(d, y0_pt, y1_pt, x_pt, off, texto=None, size=7.2, ext=True):
+    """Cota vertical: y0..y1 em pt do scan, linha deslocada `off` px de x_pt."""
+    a = d.P(x_pt, y0_pt); b = d.P(x_pt, y1_pt)
+    xx = a[0] + off
+    if ext:
+        for yy in (a[1], b[1]):
+            d.line(a[0] + (3.0 if off > 0 else -3.0), yy, xx + (3.0 if off > 0 else -3.0), yy,
+                   DIM, 0.5, opacity=0.75)
+    d.line(xx, a[1], xx, b[1], DIM, 0.7)
+    _tick(d, xx, a[1], True); _tick(d, xx, b[1], True)
+    t = texto if texto is not None else br(abs(y1_pt - y0_pt) / PT_PER_M)
+    d.txt(xx - 4.0, (a[1] + b[1]) / 2.0, t, size, DIM_TXT, 'normal', 'middle',
+          rot=-90.0)
+
+
+def cadeia_h(d, cortes_pt, y_pt, off, size=7.0):
+    for i in range(len(cortes_pt) - 1):
+        cota_h(d, cortes_pt[i], cortes_pt[i + 1], y_pt, off, size=size, ext=(i == 0))
+
+
+def cadeia_v(d, cortes_pt, x_pt, off, size=7.0):
+    for i in range(len(cortes_pt) - 1):
+        cota_v(d, cortes_pt[i], cortes_pt[i + 1], x_pt, off, size=size, ext=(i == 0))
+
+
+def norte(d, cx, cy, r=17.0, graus=None, nota='duas'):
+    """Símbolo de norte. `graus`: 0 = norte para o topo da folha, horário."""
+    g = NORTE_DEG if graus is None else graus
+    a = math.radians(g - 90.0)
+    ca, sa = math.cos(a), math.sin(a)
+    nx, ny = cx + r * ca, cy + r * sa
+    bx, by = cx - r * 0.62 * ca, cy - r * 0.62 * sa
+    px, py = -sa, ca
+    w = r * 0.32
+    d.circle(cx, cy, r, fill='none', stroke=INK_SOFT, sw=0.9, opacity=0.75)
+    d.add('<path d="M %.2f %.2f L %.2f %.2f L %.2f %.2f Z" fill="%s"/>'
+          % (nx, ny, bx + px * w, by + py * w, bx - px * w, by - py * w, INK))
+    d.add('<path d="M %.2f %.2f L %.2f %.2f L %.2f %.2f Z" fill="none" stroke="%s" stroke-width="0.9"/>'
+          % (cx - r * 1.0 * ca, cy - r * 1.0 * sa, bx + px * w, by + py * w,
+             bx - px * w, by - py * w, INK_SOFT))
+    d.txt(cx + (r + 12) * ca, cy + (r + 12) * sa + 3.4, 'N', 10.0, INK, 'bold', 'middle', ls=0.6)
+    if nota and not NORTE_CONFIRMADO:
+        d.txt(cx, cy + r + 23, 'ORIENTAÇÃO PROVISÓRIA', 6.6, RED, 'bold', 'middle', ls=0.3)
+        if nota == 'duas':
+            d.txt(cx, cy + r + 33, 'o scan não registra o norte', 6.8, INK_SOFT, 'normal', 'middle')
+            d.txt(cx, cy + r + 43, 'confirmar em campo', 6.8, INK_SOFT, 'normal', 'middle')
+
+
 def escala(d, y):
     ox = d.org[0]
     S = d.S
@@ -455,7 +591,7 @@ def tabela(d, x, y, largura, colunas, linhas, titulo=None, zebra=True):
     for lw in larguras:
         xs.append(x + acc / total * largura)
         acc += lw
-    d.rect(x, y, largura, 20, fill='#eceae4')
+    d.rect(x, y, largura, 20, fill=K12)
     for i, (rot, lw, al) in enumerate(colunas):
         tx = xs[i] + 8 if al == 'start' else (xs[i] + (xs[i + 1] - xs[i] if i + 1 < len(xs) else largura - (xs[i] - x)) - 8)
         d.txt(tx, y + 13.5, rot, 8.2, INK_SOFT, 'bold', al, ls=0.6)
@@ -463,7 +599,7 @@ def tabela(d, x, y, largura, colunas, linhas, titulo=None, zebra=True):
     for n, linha in enumerate(linhas):
         alt = 22 if not isinstance(linha, tuple) or len(linha) < 4 else linha[3]
         if zebra and n % 2 == 1:
-            d.rect(x, ry, largura, 22, fill='#f2f0ea')
+            d.rect(x, ry, largura, 22, fill=K04)
         for i, (rot, lw, al) in enumerate(colunas):
             val = linha[i] if i < len(linha) else ''
             tx = xs[i] + 8 if al == 'start' else (xs[i] + (xs[i + 1] - xs[i] if i + 1 < len(xs) else largura - (xs[i] - x)) - 8)

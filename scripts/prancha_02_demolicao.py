@@ -4,8 +4,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. G'
-PRANCHA = 'Prancha 02 / 08'
+REV = 'REV. H'
+PRANCHA = 'Prancha 02 / 06'
 
 # --- alvos: (id, x_pt, y_pt, tipo, dx_rotulo, dy_rotulo) --------------------
 ALVOS = [
@@ -25,8 +25,10 @@ ALVOS = [
     ('M01', 300.0, 520.0, 'desm',  10,  3),
     ('K01', 380.6, 409.0, 'keep',  10, -5),
 ]
-PREP = '#9a6b1f'
-COR = {'demo': DEMO, 'desm': NEW, 'keep': KEEP, 'prep': PREP, 'novo': KEEP}
+# traço e miolo de cada marcador: a tipografia e o contorno são sempre pretos,
+# a tinta entra no miolo — ciano e amarelo puros não têm contraste para texto.
+COR_TRACO = {'demo': DEMO, 'desm': K, 'keep': K, 'prep': K, 'novo': K}
+COR_MIOLO = {'demo': DEMO, 'desm': CIANO, 'keep': K, 'prep': AMARELO, 'novo': BRANCO}
 
 LINHAS = [
     ('D01', 'Drywall entre sala e quarto', '1 trecho — 4,08 m'),
@@ -86,13 +88,14 @@ def construir():
     # ---------------- planta ----------------
     S = 70.0
     d.set_plan(70, 156, S)
-    fundo_ambientes(d, '#eeebe4')
+    fundo_ambientes(d, K07)
     paredes(d, estado='existente')
     janelas(d)
     vidro_box(d)
     porta(d, DOOR_ENTRADA)
     porta(d, DOOR_BANHO)
     escada(d)
+    norte(d, 140, 212, 15, nota='uma')
 
     # elementos a demolir, realçados
     for r in (DRYWALL_SALA_QUARTO, BOX_WC, BANCADA_WC, CANTO_ALEMAO, VIDRO_BOX):
@@ -102,8 +105,8 @@ def construir():
     # paredes de preparo para pintura
     for r in (PAREDE_ESCADA_JANTAR, PAREDE_SOB_ESCADA):
         x, y, w_, h_ = d.R(r)
-        d.rect(x, y, w_, h_, fill=PREP, opacity=0.28)
-        d.rect(x, y, w_, h_, fill='none', stroke=PREP, sw=1.1, dash='4 3')
+        d.rect(x, y, w_, h_, fill=PREP, opacity=0.55)
+        d.rect(x, y, w_, h_, fill='none', stroke=K, sw=1.0, dash='4 3')
     # porta nova na drywall reconstruída
     x, y, w_, h_ = d.R(PORTA_NOVA)
     d.rect(x, y - 1.5, w_, h_ + 3, fill='none', stroke=KEEP, sw=1.4, dash='4 3')
@@ -114,24 +117,24 @@ def construir():
         yy = y0
         while yy <= y1:
             for (a, b) in spans_at_y(pp, yy):
-                d.line(a, yy, b, yy, DEMO, 0.45, opacity=0.16)
+                d.line(a, yy, b, yy, DEMO, 0.45, opacity=0.10)
             yy += 7.0
     rotulos(d, areas=False, size=8.4)
 
     # marcadores
     for (ident, xp, yp, tipo, dx, dy) in ALVOS:
         cx, cy = d.P(xp, yp)
-        cor = COR[tipo]
+        cor, miolo = COR_TRACO[tipo], COR_MIOLO[tipo]
         d.circle(cx, cy, 6.4, fill=BG, stroke=cor, sw=1.5)
-        d.circle(cx, cy, 2.0, fill=cor)
+        d.circle(cx, cy, 3.0, fill=miolo, stroke=cor, sw=0.7)
         anchor = 'start' if dx > 0 else 'end'
         d.txt(cx + dx, cy + dy, ident, 8.0, cor, 'bold', anchor, ls=0.4)
 
     escala(d, 156 + BUILDING_H * S + 26)
     legenda(d, [('dot', DEMO, 'Demolir / retirar'),
-                ('dot', PREP, 'Preparo de superfície — sem revestimento, pronto para pintura'),
-                ('dot', KEEP, 'Reconstruir / manter'),
-                ('dot', NEW, 'Desmontar e remontar'),
+                ('fill', AMARELO, 'Preparo de superfície — pronto para pintura'),
+                ('dot', K, 'Reconstruir / manter'),
+                ('fill', CIANO, 'Desmontar e remontar'),
                 ('line', GLASS, 'Pano de vidro existente')],
             70, 156 + BUILDING_H * S + 64, largura=600)
 
