@@ -759,7 +759,11 @@ def exportar_pdf_a3(svgs, pdf_path, titulo):
     saida.set_metadata({'title': titulo,
                         'subject': 'Estudo preliminar — A3, 420 x 297 mm',
                         'keywords': 'MaxHaus, MainFloor, estudo preliminar'})
-    saida.save(pdf_path)
+    try:
+        saida.subset_fonts()
+    except Exception:
+        pass
+    saida.save(pdf_path, garbage=4, deflate=True, deflate_fonts=True, clean=True)
     return pdf_path
 
 def exportar_png(svg_path, png_path, dpi=170):
