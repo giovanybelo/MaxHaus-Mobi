@@ -95,11 +95,18 @@ BOX_WC       = (347.96, 408.20, 413.33, 450.67)   # box do banheiro
 VIDRO_BOX_INT= (347.96, 408.20, 413.33, 411.00)   # vidro interno do box (manter)
 CANTO_ALEMAO = (450.68, 128.94, 599.46, 145.00)   # banco de canto do jantar
 
-# --- ponta em curva da cozinha (prancha de pisos) ---------------------------
+# --- ponta em curva da cozinha (opção A de piso) ---------------------------
+# A curva nasce na quina do degrau da parede — logo abaixo da porta de entrada,
+# onde fica a geladeira — e morre na parede do banheiro. Só faz sentido quando
+# há dois materiais no piso: é ela que resolve o encontro cumaru × monolítico.
 CURVA_CX, CURVA_CY = 277.8, 325.65
-CURVA_RX, CURVA_RY = 67.90, 66.45
-PORTA_QUINA = (277.8, 259.20)
-CURVA_FIM   = (345.7, 325.65)
+CURVA_RX, CURVA_RY = 67.90, 40.85
+QUINA_DEGRAU = (277.8, 284.80)
+CURVA_FIM    = (345.7, 325.65)
+
+# zonas da opção A, em pt do scan
+COZ_MONO_POLY = None       # preenchido abaixo, depois de arco_pts
+COZ_HALL_POLY = None
 
 def arco_pts(n=28, invertido=False):
     pts = []
@@ -108,6 +115,13 @@ def arco_pts(n=28, invertido=False):
         pts.append((CURVA_CX + CURVA_RX * math.cos(th),
                     CURVA_CY - CURVA_RY * math.sin(th)))
     return list(reversed(pts)) if invertido else pts
+
+
+COZ_MONO_POLY = ([(248.0, 432.3), (248.0, 284.8)] + arco_pts() + [(345.7, 432.3)])
+COZ_HALL_POLY = ([(277.8, 211.2), (345.7, 211.2), (345.7, 325.65)]
+                 + arco_pts(invertido=True))
+AREA_COZ_MONO = 6.34       # m², parte monolítica da cozinha (de 8,90)
+AREA_HALL = 2.56           # m², corredor da entrada que fica em cumaru
 
 # --- área da piscina do pavimento superior ---------------------------------
 # 1,92 x 3,00 m, centrada no cruzamento marcado pelo cliente (6,13 / 3,14 m).
@@ -129,10 +143,12 @@ PLENUM_FORRO = 0.20        # m, o que o forro consome
 AREA_LIVABLE = 60.2        # m² (soma dos ambientes: 60,30)
 AREA_EXTERIOR = 64.7       # m²
 AREA_PAREDES = 130.4       # m²
-AREA_JANELAS = 13.43       # m² — vão, com as alturas do cliente (o scan dava 12,70)
+AREA_JANELAS = 14.77       # m² — vão, com as alturas do cliente (o scan dava 12,70)
 VOLUME_TOTAL = 144.51      # m³ com forro; 158,0 m³ com a laje aparente
 PERIMETRO_AMBIENTES = 78.1 # m
 
+# J06 é do piso ao teto: 2,42 m de altura livre menos 0,15 m de apoio no topo
+# e 0,10 m de peitoril — os únicos 0,10 m de peitoril medidos até agora.
 # esquadrias: (id, tipo, ambiente, larg, alt, área, situação)
 ESQUADRIAS = [
     ('J01', 'Janela', 'Jantar',   1.10, 1.63, 1.79, 'manter'),
@@ -140,7 +156,7 @@ ESQUADRIAS = [
     ('J03', 'Janela', 'Sala',     1.00, 1.63, 1.63, 'manter'),
     ('J04', 'Janela', 'Quarto',   1.20, 1.63, 1.96, 'manter'),
     ('J05', 'Janela', 'Quarto',   1.20, 1.63, 1.96, 'manter'),
-    ('J06', 'Janela', 'Closet',   2.00, 1.50, 3.00, 'manter — única com 1,50'),
+    ('J06', 'Janela', 'Closet',   2.00, 2.17, 4.34, 'manter — do piso ao teto'),
     ('P01', 'Porta',  'Entrada',  1.00, 2.29, 2.29, 'manter'),
     ('P02', 'Porta',  'Banheiro', 0.80, 2.00, 1.64, 'giro invertido — abre p/ escada'),
     ('P03', 'Porta de correr', 'Quarto', 1.00, 2.29, 2.29, 'nova, na drywall R01'),
@@ -530,6 +546,67 @@ def norte(d, cx, cy, r=17.0, graus=None, nota='duas'):
             d.txt(cx, cy + r + 43, 'do pavimento superior', 6.8, INK_SOFT, 'normal', 'middle')
     elif nota:
         d.txt(cx, cy + r + 23, 'ORIENTAÇÃO PROVISÓRIA', 6.6, RED, 'bold', 'middle', ls=0.3)
+
+
+def piso_reguas(d, poly_pt, larg=0.22, junta=3.00, sentido='ns',
+                cor=K, op=0.32, sw=0.5):
+    """Piso pronto em réguas, clipado no polígono e ancorado na origem do plano.
+
+    As réguas correm norte-sul por padrão, paralelas ao lado maior (9,43 m).
+    Os topos são defasados de 1/3 de junta a cada régua.
+    """
+    pp = [d.P(a, b) for a, b in poly_pt]
+    d.path(path_d(pp), fill=BRANCO)
+    ox, oy = d.org
+    S = d.S
+    x0, y0, x1, y1 = bbox(pp)
+    if sentido == 'ns':
+        i = 0
+        while True:
+            xa = ox + i * larg * S
+            xb = xa + larg * S
+            if xa > x1 + 1:
+                break
+            if xb >= x0 - 1:
+                for (a, b) in spans_at_x(pp, xb):
+                    d.line(xb, a, xb, b, cor, sw, opacity=op)
+                desloc = (i % 3) / 3.0 * junta
+                j = 0
+                while True:
+                    yy = oy + (desloc + j * junta) * S
+                    if yy > y1 + 1:
+                        break
+                    if yy >= y0 - 1:
+                        for (s0, s1) in spans_at_y(pp, yy):
+                            aa, bb = max(s0, xa, x0), min(s1, xb, x1)
+                            if bb > aa:
+                                d.line(aa, yy, bb, yy, cor, sw, opacity=op)
+                    j += 1
+            i += 1
+    else:
+        i = 0
+        while True:
+            ya = oy + i * larg * S
+            yb = ya + larg * S
+            if ya > y1 + 1:
+                break
+            if yb >= y0 - 1:
+                for (a, b) in spans_at_y(pp, yb):
+                    d.line(a, yb, b, yb, cor, sw, opacity=op)
+                desloc = (i % 3) / 3.0 * junta
+                j = 0
+                while True:
+                    xx = ox + (desloc + j * junta) * S
+                    if xx > x1 + 1:
+                        break
+                    if xx >= x0 - 1:
+                        for (s0, s1) in spans_at_x(pp, xx):
+                            aa, bb = max(s0, ya, y0), min(s1, yb, y1)
+                            if bb > aa:
+                                d.line(xx, aa, xx, bb, cor, sw, opacity=op)
+                    j += 1
+            i += 1
+    d.path(path_d(pp), fill='none', stroke=K, sw=0.9)
 
 
 def escala(d, y):

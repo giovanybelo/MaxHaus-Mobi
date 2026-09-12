@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Prancha 05 — Tomadas, comandos e quadro (REV. C)."""
+"""Prancha 06 — Tomadas, comandos e quadro (REV. K)."""
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. J'
-PRANCHA = 'Prancha 05 / 06'
+REV = 'REV. K'
+PRANCHA = 'Prancha 06 / 07'
 
 # --- pontos existentes marcados pelo cliente (metros) -----------------------
 TOMADAS_EXIST = [
@@ -54,7 +54,7 @@ NOTAS = [
      'do vão e foi para 3,25 m. Confirmar espaço livre e altura antes de fixar — todo o traçado sai dali.'],
     ['**Sem forro, os trajetos ficam aparentes.',
      'A distribuição no teto passa a ser perfilado ou eletrocalha pintada, acompanhando os trilhos',
-     'de luz da Prancha 04; as descidas para tomadas e comandos correm embutidas na parede.',
+     'de luz da Prancha 05; as descidas para tomadas e comandos correm embutidas na parede.',
      'Isso vira desenho: definir caminhos e separações antes de medir eletrodutos e cabos.'],
     ['**Alturas de intenção, sempre conferidas com mobiliário e acabamento:',
      'tomadas gerais 0,30 m; comandos 1,10 m; pontos de bancada em torno de 1,15 m.',
@@ -66,7 +66,7 @@ NOTAS = [
      'A folha estaciona no 1,00 m de drywall a leste do vão, pela face da sala: nesse trecho não',
      'cabe tomada, interruptor nem quadro. Por isso o S05 foi para a face do quarto, encostado no',
      'batente leste, fora do caminho da folha. S06 e S07 seguem na cabeceira, um de cada lado da',
-     'cama, em paralelo com as luminárias P02 e P03 da Prancha 04.'],
+     'cama, em paralelo com as luminárias P02 e P03 da Prancha 05.'],
     ['**O que cada comando aciona — leitura de folha, não diagrama de circuito:',
      'S01 entrada e cozinha (TR4 e coifa, junto ao quadro) · S02 jantar (TR1 e P01) · S03 arandelas',
      'do espelho, junto à bancada · S04 banheiro, na quina do box · S05 quarto, ao lado da porta',
@@ -77,6 +77,12 @@ NOTAS = [
      'parede de 0,45 m entre a quina e o batente — cabe, mas é a folga exata de duas placas 4×2:',
      'confirmar em obra antes de fechar a caixa. Se a sala for acender também pelo outro extremo,',
      'S08 precisa de paralelo junto à porta nova da drywall, em conjunto com o S05.'],
+    ['**Imóvel de 17 anos: a hora de trocar fiação e ramais é agora, e não por causa da idade.',
+     'A NBR 15575 dá 20 anos de vida útil de projeto para instalação elétrica e hidráulica embutida,',
+     'então 17 anos já está no fim da faixa — mas quem decide é o acesso: nesta obra o piso sai, o',
+     'forro sai, o banheiro desce até a laje e as paredes perdem revestimento. Trocar agora é material',
+     'e mão de obra; depois é refazer piso e acabamento. Antes, dois ensaios baratos: estanqueidade na',
+     'hidráulica e medição de isolamento na elétrica. Prumadas e colunas são do condomínio.'],
     ['**Circuitos, seções, disjuntores, aterramento, DR, demanda e proteção contra surtos',
      'ficam a cargo do projeto elétrico após o levantamento. Não usar estas reservas como projeto',
      'para o eletricista executar.'],
@@ -152,7 +158,7 @@ def construir():
                  [('Grupo', 0.24, 'start'), ('Reservas', 0.40, 'start'),
                   ('Revisão necessária', 0.36, 'end')],
                  LINHAS, titulo='RESERVAS DE INFRAESTRUTURA ELÉTRICA')
-    paragrafos(d, cx2, fim + 30, cw, NOTAS, size=8.4, lh=12.4, gap=8.5)
+    paragrafos(d, cx2, fim + 26, cw, NOTAS, size=8.4, lh=12.0, gap=6.5)
 
     rodape(d,
            'Posições aproximadas sobre o modelo do scan. Quadro e trajetos existentes não estão identificados no levantamento: confirmar em campo antes de qualquer medição.',
@@ -164,8 +170,8 @@ def construir():
 if __name__ == '__main__':
     raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     pasta = os.path.join(raiz, 'pranchas')
-    caminho = salvar(construir(), pasta, 'prancha-05-eletrica')
-    exportar_pdf_a3([caminho], os.path.join(pasta, 'prancha-05-eletrica-A3.pdf'),
-                    'MaxHaus MainFloor — Prancha 05: tomadas, comandos e quadro')
-    exportar_png(caminho, os.path.join(pasta, 'prancha-05-eletrica.png'))
+    caminho = salvar(construir(), pasta, 'prancha-06-eletrica')
+    exportar_pdf_a3([caminho], os.path.join(pasta, 'prancha-06-eletrica-A3.pdf'),
+                    'MaxHaus MainFloor — Prancha 06: tomadas, comandos e quadro')
+    exportar_png(caminho, os.path.join(pasta, 'prancha-06-eletrica.png'))
     print('ok prancha 05')

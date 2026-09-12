@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Prancha 01 — Planta baixa cotada (REV. H).
+"""Prancha 01 — Planta baixa cotada (REV. K).
 
 Cruza o levantamento por scan (Polycam, captura 02.09.2026) com as decisões já
 fechadas no caderno: é a folha de referência dimensional do MainFloor, no estado
@@ -9,8 +9,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. J'
-PRANCHA = 'Prancha 01 / 06'
+REV = 'REV. K'
+PRANCHA = 'Prancha 01 / 07'
 
 TAB_AMB = [(n, '%s m²' % br(a), '%s m' % br(per, 1), bb, ins)
            for (n, a, per, bb, ins, _w) in AMBIENTES_SCAN] + \
@@ -110,7 +110,7 @@ def construir():
     escala(d, 182 + BUILDING_H * S + 74)
     legenda(d, [('fill', K07, 'Área útil — 60,30 m²'),
                 ('line', DIM, 'Linha de cota (m)'),
-                ('ghost', WALL, 'Vão de esquadria — ver Prancha 06')],
+                ('ghost', WALL, 'Vão de esquadria — ver Prancha 07')],
             70, 182 + BUILDING_H * S + 108, largura=600)
 
     d.line(690, 140, 690, 900, RULE, 0.8, opacity=0.8)

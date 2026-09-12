@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Prancha 06 — Quadro de esquadrias e dados do levantamento (REV. H)."""
+"""Prancha 07 — Quadro de esquadrias e dados do levantamento (REV. K)."""
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. J'
-PRANCHA = 'Prancha 06 / 06'
+REV = 'REV. K'
+PRANCHA = 'Prancha 07 / 07'
 
 ESC = 55.0          # px por metro no desenho das esquadrias
 
@@ -13,7 +13,7 @@ TAB_DADOS = [
     ('Área útil (soma dos ambientes)', '60,30 m²', 'relatório arredonda para 60,20'),
     ('Área externa do pavimento',      '64,70 m²', 'inclui espessura de paredes'),
     ('Área de parede',                '130,40 m²', 'sem vãos'),
-    ('Área de esquadria',              '13,44 m²', 'seis janelas, vão — scan dava 12,70'),
+    ('Área de esquadria',              '14,77 m²', 'seis janelas, vão — scan dava 12,70'),
     ('Volume',                        '144,51 m³', 'com forro; ~158 m³ na laje aparente'),
     ('Perímetro somado dos ambientes', '78,10 m',  'não é perímetro do pavimento'),
     ('Pé-direito — laje',               '2,62 m',  'depois de retirar o forro (D07)'),
@@ -36,10 +36,10 @@ NOTAS = [
     ['**Todas na mesma escala. Largura × altura de vão livre, não de marco.',
      'Peitoril, sentido de abertura e material não estão medidos: as três informações precisam de',
      'visita. Nenhuma esquadria deste caderno está liberada para fabricação.'],
-    ['**As alturas das janelas vieram do cliente, não do scan: 1,63 m em cinco das seis.',
-     'O relatório dava 1,50 e 1,60 m; a medida em campo é 1,63 m, e só a janela do closet (J06)',
-     'mantém 1,50 m. Com isso as duas do quarto ficam idênticas — 1,20 × 1,63 — e cai a dúvida de',
-     'qual era a da fachada noroeste e qual a da nordeste. A área de esquadria sobe para 13,44 m².'],
+    ['**As alturas das janelas vieram do cliente, não do scan.',
+     'Cinco têm 1,63 m. A do closet (J06) vai do piso ao teto: 2,42 m de altura livre menos 0,15 m de',
+     'apoio no topo e 0,10 m de peitoril, dando 2,00 × 2,17 m — e é o único peitoril medido até agora.',
+     'As duas do quarto ficam idênticas, e a área de esquadria sobe de 12,70 para 14,77 m².'],
     ['**P03 é a única esquadria nova.',
      'Porta de correr de 1,00 × 2,29 m na drywall reconstruída, com a folha estacionando no 1,00 m',
      'de parede a leste do vão, pela face da sala. P02 mantém a folha existente de 0,80 × 2,00 m e',
@@ -126,8 +126,8 @@ def construir():
 if __name__ == '__main__':
     raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     pasta = os.path.join(raiz, 'pranchas')
-    caminho = salvar(construir(), pasta, 'prancha-06-esquadrias')
-    exportar_pdf_a3([caminho], os.path.join(pasta, 'prancha-06-esquadrias-A3.pdf'),
-                    'MaxHaus MainFloor — Prancha 06: esquadrias e levantamento')
-    exportar_png(caminho, os.path.join(pasta, 'prancha-06-esquadrias.png'))
+    caminho = salvar(construir(), pasta, 'prancha-07-esquadrias')
+    exportar_pdf_a3([caminho], os.path.join(pasta, 'prancha-07-esquadrias-A3.pdf'),
+                    'MaxHaus MainFloor — Prancha 07: esquadrias e levantamento')
+    exportar_png(caminho, os.path.join(pasta, 'prancha-07-esquadrias.png'))
     print('ok prancha 06')

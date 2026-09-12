@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Prancha 02 — Demolição e desmontagem (REV. C)."""
+"""Prancha 02 — Demolição e desmontagem (REV. K)."""
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. J'
-PRANCHA = 'Prancha 02 / 06'
+REV = 'REV. K'
+PRANCHA = 'Prancha 02 / 07'
 
 # --- alvos: (id, x_pt, y_pt, tipo, dx_rotulo, dy_rotulo) --------------------
 ALVOS = [
@@ -56,7 +56,7 @@ LINHAS = [
 NOTAS = [
     ['**Esta planta mostra o estado existente.',
      'Box com o pano de vidro de hoje (D06) e drywall ainda sem porta. O proposto — box fechado, porta',
-     'de correr e porta do banheiro girando para a escada — está nas Pranchas 03, 04 e 05.'],
+     'de correr e porta do banheiro girando para a escada — está nas Pranchas 03 a 06.'],
     ['**Demolir para refazer, não só demolir.',
      'A drywall entre sala e quarto cai e volta (R01), agora com porta de correr de 1,00 × 2,29 m.',
      'A folha estaciona no 1,00 m de parede a leste do vão: nada de tomada, quadro ou marcenaria ali.',

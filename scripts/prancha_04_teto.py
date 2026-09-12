@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Prancha 04 — Teto: laje aparente, iluminação e ar-condicionado (REV. C).
+"""Prancha 05 — Teto: laje aparente, iluminação e ar-condicionado (REV. K).
 
 Substitui as pranchas anteriores de iluminação e de ar-condicionado: sem forro,
 as duas disciplinas dividem a mesma laje e precisam ser resolvidas juntas.
@@ -8,8 +8,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. J'
-PRANCHA = 'Prancha 04 / 06'
+REV = 'REV. K'
+PRANCHA = 'Prancha 05 / 07'
 
 # --- trilhos eletrificados: (id, (x0,y0), (x1,y1), nº de spots) em metros ---
 TRILHOS = [
@@ -233,8 +233,8 @@ def construir():
 if __name__ == '__main__':
     raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     pasta = os.path.join(raiz, 'pranchas')
-    caminho = salvar(construir(), pasta, 'prancha-04-teto')
-    exportar_pdf_a3([caminho], os.path.join(pasta, 'prancha-04-teto-A3.pdf'),
-                    'MaxHaus MainFloor — Prancha 04: teto, iluminação e ar-condicionado')
-    exportar_png(caminho, os.path.join(pasta, 'prancha-04-teto.png'))
+    caminho = salvar(construir(), pasta, 'prancha-05-teto')
+    exportar_pdf_a3([caminho], os.path.join(pasta, 'prancha-05-teto-A3.pdf'),
+                    'MaxHaus MainFloor — Prancha 05: teto, iluminação e ar-condicionado')
+    exportar_png(caminho, os.path.join(pasta, 'prancha-05-teto.png'))
     print('ok prancha 04')

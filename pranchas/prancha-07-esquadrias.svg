@@ -3,7 +3,7 @@
 <text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
 <text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Quadro de esquadrias e dados do levantamento</text>
 <text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Todas as esquadrias na mesma escala. Alturas conforme medição do cliente; larguras do scan. Vão livre, não marco: conferir antes de fabricar.</text>
-<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. J</text>
+<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. K</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">seis janelas · três portas</text>
 <text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">peitoril, sentido de abertura e material a levantar</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
@@ -42,13 +42,13 @@
 <text x="382.0" y="536.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="middle">1,20 × 1,63 m</text>
 <text x="382.0" y="547.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">Janela · Quarto</text>
 <text x="382.0" y="557.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">manter</text>
-<rect x="517.00" y="439.50" width="110.00" height="82.50" fill="#d6ffff" stroke="#000000" stroke-width="1.40"/>
-<line x1="517.00" y1="480.75" x2="627.00" y2="480.75" stroke="#000000" stroke-width="0.80" opacity="0.55"/>
+<rect x="517.00" y="402.65" width="110.00" height="119.35" fill="#d6ffff" stroke="#000000" stroke-width="1.40"/>
+<line x1="517.00" y1="462.32" x2="627.00" y2="462.32" stroke="#000000" stroke-width="0.80" opacity="0.55"/>
 <line x1="509.00" y1="522.00" x2="635.00" y2="522.00" stroke="#000000" stroke-width="1.10"/>
-<text x="572.0" y="429.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">J06</text>
-<text x="572.0" y="536.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="middle">2,00 × 1,50 m</text>
+<text x="572.0" y="392.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">J06</text>
+<text x="572.0" y="536.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="middle">2,00 × 2,17 m</text>
 <text x="572.0" y="547.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">Janela · Closet</text>
-<text x="572.0" y="557.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#ff00ff" font-weight="bold" text-anchor="middle">manter — única com 1,50</text>
+<text x="572.0" y="557.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#ff00ff" font-weight="bold" text-anchor="middle">manter — do piso ao teto</text>
 <rect x="164.50" y="596.05" width="55.00" height="125.95" fill="#ffffff" stroke="#000000" stroke-width="1.40"/>
 <line x1="209.60" y1="665.32" x2="209.60" y2="665.32" stroke="#000000" stroke-width="1.00"/>
 <circle cx="210.70" cy="665.32" r="2.00" fill="#000000"/>
@@ -107,7 +107,7 @@
 <line x1="722.00" y1="246.00" x2="1352.00" y2="246.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="246.00" width="630.00" height="22.00" fill="#f5f5f5"/>
 <text x="730.0" y="260.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Área de esquadria</text>
-<text x="1117.2" y="260.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">13,44 m²</text>
+<text x="1117.2" y="260.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">14,77 m²</text>
 <text x="1344.0" y="260.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">seis janelas, vão — scan dava 12,70</text>
 <line x1="722.00" y1="268.00" x2="1352.00" y2="268.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="282.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Volume</text>
@@ -169,10 +169,10 @@
 <text x="722.0" y="638.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Todas na mesma escala. Largura × altura de vão livre, não de marco.</text>
 <text x="722.0" y="650.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Peitoril, sentido de abertura e material não estão medidos: as três informações precisam de</text>
 <text x="722.0" y="662.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">visita. Nenhuma esquadria deste caderno está liberada para fabricação.</text>
-<text x="722.0" y="681.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">As alturas das janelas vieram do cliente, não do scan: 1,63 m em cinco das seis.</text>
-<text x="722.0" y="694.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">O relatório dava 1,50 e 1,60 m; a medida em campo é 1,63 m, e só a janela do closet (J06)</text>
-<text x="722.0" y="706.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">mantém 1,50 m. Com isso as duas do quarto ficam idênticas — 1,20 × 1,63 — e cai a dúvida de</text>
-<text x="722.0" y="718.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">qual era a da fachada noroeste e qual a da nordeste. A área de esquadria sobe para 13,44 m².</text>
+<text x="722.0" y="681.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">As alturas das janelas vieram do cliente, não do scan.</text>
+<text x="722.0" y="694.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cinco têm 1,63 m. A do closet (J06) vai do piso ao teto: 2,42 m de altura livre menos 0,15 m de</text>
+<text x="722.0" y="706.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">apoio no topo e 0,10 m de peitoril, dando 2,00 × 2,17 m — e é o único peitoril medido até agora.</text>
+<text x="722.0" y="718.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">As duas do quarto ficam idênticas, e a área de esquadria sobe de 12,70 para 14,77 m².</text>
 <text x="722.0" y="737.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">P03 é a única esquadria nova.</text>
 <text x="722.0" y="750.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Porta de correr de 1,00 × 2,29 m na drywall reconstruída, com a folha estacionando no 1,00 m</text>
 <text x="722.0" y="762.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">de parede a leste do vão, pela face da sala. P02 mantém a folha existente de 0,80 × 2,00 m e</text>
@@ -189,5 +189,5 @@
 <text x="48.0" y="940.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Larguras do relatório do scan (captura 02.09.2026); alturas de janela e porta conforme medição do cliente em 12.09.2026. Vão livre; marco, contramarco e acabamento não estão medidos.</text>
 <text x="48.0" y="953.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Quadro de referência de estudo preliminar — não é lista de compra nem pedido de fabricação.</text>
 <text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   12/09/2026</text>
-<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 06 / 06   ·   REV. J</text>
+<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 07 / 07   ·   REV. K</text>
 </svg>

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Monta a versão web (HTML) da Prancha 03 a partir das plantas geradas por
+Monta a versão web (HTML) do caderno a partir das pranchas geradas por
 scripts/prancha_03_pisos.py.
 
 Plano de projeto gráfico
@@ -187,21 +187,25 @@ BOARDS = [
      'Escopo sobre o modelo do scan: o que sai, o que se desmonta para remontar e o que fica.',
      ['<b>14</b> itens catalogados', '<b>Demolir e reconstruir</b> como serviços separados',
       '<b>Jantar e escada:</b> preparo para pintura', '<b>Porta de correr</b> 1,00 × 2,30 m']),
-    ('03', 'Piso monolítico', 'prancha-03-piso-monolitico.svg',
-     'Sistema único em todo o MainFloor, com o banheiro à parte: piso contínuo, sem junta de material entre os ambientes secos.',
+    ('03', 'Opção A — cumaru-ferro + cozinha em monolítico', 'prancha-03-piso-cumaru.svg',
+     'Piso pronto em réguas nas áreas de estar e dormir, monolítico na cozinha de trabalho, com a ponta em curva resolvendo o encontro.',
+     ['<b>Cumaru</b> 50,16 m² (55,18 com reserva)', '<b>Monolítico</b> 6,34 m² na cozinha',
+      '<b>Banheiro</b> 3,80 m² à parte', '<b>Curva</b> na quina do degrau']),
+    ('04', 'Opção B — monolítico em todo o MainFloor', 'prancha-04-piso-monolitico.svg',
+     'Sistema único nos cinco ambientes secos: piso contínuo, sem junta de material e sem curva.',
      ['<b>Monolítico</b> 56,50 m²', '<b>Banheiro</b> 3,80 m² à parte',
       '<b>Total</b> 60,30 m²', '<b>Sem</b> junta de material']),
-    ('04', 'Teto, iluminação e ar-condicionado', 'prancha-04-teto.svg',
+    ('05', 'Teto, iluminação e ar-condicionado', 'prancha-05-teto.svg',
      'Sem forro, luz e ar dividem a mesma laje: trilhos aplicados, três luminárias de destaque e evaporadoras aparentes.',
      ['<b>6</b> trilhos, traçado revisado', '<b>P01–P03</b> destaques: jantar, cama, office',
       '<b>Piscina acima</b> 1,92 × 3,00 m', '<b>33.900–45.200</b> BTU/h']),
-    ('05', 'Tomadas, comandos e quadro', 'prancha-05-eletrica.svg',
+    ('06', 'Tomadas, comandos e quadro', 'prancha-06-eletrica.svg',
      'Reservas de localização com os pontos existentes que você marcou e o quadro junto à porta de entrada.',
      ['<b>9</b> tomadas existentes', '<b>8</b> reservas novas',
       '<b>8</b> comandos, dois na cabeceira', '<b>Quadro</b> na entrada']),
-    ('06', 'Esquadrias e dados do levantamento', 'prancha-06-esquadrias.svg',
+    ('07', 'Esquadrias e dados do levantamento', 'prancha-07-esquadrias.svg',
      'Seis janelas e três portas na mesma escala, com os números que o relatório do scan entrega e o inventário do que ele reconheceu.',
-     ['<b>6</b> janelas · <b>13,44 m²</b>', '<b>3</b> portas',
+     ['<b>6</b> janelas · <b>14,77 m²</b>', '<b>3</b> portas',
       '<b>P03</b> a única nova', '<b>144,51 m³</b> de volume']),
 ]
 
@@ -231,7 +235,7 @@ DECISOES = [
     ('Demolir e reconstruir são serviços separados',
      'A drywall entre sala e quarto cai e é refeita no mesmo eixo, agora com uma porta de '
      '1,00 × 2,30 m — a mesma altura da porta de entrada. O pano de vidro do fundo do box cai e '
-     'vira parede. A Prancha 02 mostra o estado existente; as 03, 04 e 05 já mostram o proposto.'),
+     'vira parede. A Prancha 02 mostra o estado existente; as 03 a 06 já mostram o proposto.'),
     ('Jantar e sob a escada: preparo, não demolição',
      'Nessas duas paredes saem o espelho e os revestimentos e a superfície é preparada para '
      'pintura. A parede fica.'),
@@ -244,10 +248,14 @@ DECISOES = [
      'eletrificados, spots de sobrepor e pendentes — e o ar-condicionado trabalha sem plenum, '
      'com evaporadoras e tubulação aparentes. Só o banheiro mantém forro, para abrigar a '
      'exaustão e a luminária do box.'),
-    ('O piso é monolítico, e só',
-     'A proposta de cumaru foi encerrada. Com um sistema único nos cinco ambientes secos, não há '
-     'junta de material no meio da planta — e a ponta em curva da cozinha, que existia só para '
-     'resolver o encontro entre madeira e monolítico, deixa de fazer sentido e saiu do desenho.'),
+    ('As duas propostas de piso voltaram, uma folha para cada',
+     'Opção A: cumaru-ferro, piso pronto em réguas, com a cozinha de trabalho em monolítico e a '
+     'ponta em curva nascendo na quina do degrau. Opção B: monolítico nos cinco ambientes secos, '
+     'sem junta de material e sem curva. Mesma escala e mesmo quadro de áreas nas duas, para '
+     'comparar sem trocar de desenho.'),
+    ('A janela do closet vai do piso ao teto',
+     'J06 mede 2,00 × 2,17 m: a altura livre de 2,42 m menos 0,15 m de apoio no topo e 0,10 m de '
+     'peitoril. É o único peitoril medido até agora, e sobe a área de esquadria para 14,77 m².'),
     ('A laje inteira entra como serviço',
      'Com o forro fora, a laje aparece como está. Restauro, descascamento, limpeza e preparo dos '
      '60,30 m² viram o item P03, com o acabamento a definir junto com a empreiteira.'),
@@ -297,9 +305,9 @@ def build():
 
     stamp = [
         ('Obra', 'MaxHaus MainFloor — João Baldinato 109, 81I', ''),
-        ('Caderno', '6 pranchas — 01 a 06', ''),
+        ('Caderno', '7 pranchas — 01 a 07', ''),
         ('Formato', 'A3 deitado — 420 × 297 mm', 'mono'),
-        ('Revisão', 'J — 12.09.2026', 'mono'),
+        ('Revisão', 'K — 12.09.2026', 'mono'),
         ('Escala', 'gráfica (barra de 2 m em cada planta)', ''),
         ('Base', 'scan MaxHaus MainFloor, 02.09.2026', ''),
         ('Área do pavimento', '60,30 m²', 'mono'),
@@ -310,7 +318,7 @@ def build():
         for (k, v, c) in stamp)
 
     return """<title>Caderno MainFloor</title>
-<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. J.">
+<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. K.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
@@ -322,11 +330,11 @@ def build():
     <div>
       <p class="eyebrow">MaxHaus · MainFloor · João Baldinato 109 — 81I</p>
       <h1>Caderno MainFloor</h1>
-      <p class="lede">Seis pranchas sobre o mesmo levantamento: o que se demole, que piso entra,
+      <p class="lede">Sete pranchas sobre o mesmo levantamento: o que se demole, que piso entra,
       como fica o teto agora que não há forro e onde ficam os pontos elétricos. Estudo preliminar —
       cores ilustrativas, nenhum produto ou espessura especificado.</p>
     </div>
-    <p class="rev">REV. J · 12.09.2026</p>
+    <p class="rev">REV. K · 12.09.2026</p>
   </header>
 
   <div class="rule"></div>
