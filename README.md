@@ -9,12 +9,12 @@ gerais do pavimento (7,85 × 9,43 m).
 Todo o material fecha em **A3 deitado (420 × 297 mm)** e é exportado em **PDF
 vetorial**.
 
-## Caderno (REV. E)
+## Caderno (REV. F)
 
 | Prancha | Assunto | Arquivo |
 |---|---|---|
 | 02 | Demolição e desmontagem | `pranchas/prancha-02-demolicao-A3.pdf` |
-| 03 | Pisos: cumaru ou monolítico | `pranchas/prancha-03-cumaru-ou-monolitico-A3.pdf` |
+| 03 | Piso monolítico | `pranchas/prancha-03-piso-monolitico-A3.pdf` |
 | 04 | Teto: laje aparente, iluminação e ar-condicionado | `pranchas/prancha-04-teto-A3.pdf` |
 | 05 | Tomadas, comandos e quadro | `pranchas/prancha-05-eletrica-A3.pdf` |
 | — | Caderno completo, 4 folhas | `pranchas/caderno-mainfloor-A3.pdf` |
@@ -51,17 +51,27 @@ Versão web responsiva: `pranchas/caderno-mainfloor.html`.
   TR3 no meio da sala, e dois trilhos não se cruzam.
 - **S08**, novo comando da luz da sala, na quina do box voltada para a escada,
   encostado no S04 do banheiro.
+- **A laje inteira é serviço (P03).** Com o forro fora, prever restauro,
+  descascamento, limpeza e preparo dos 60,30 m², com o acabamento definido junto
+  com a empreiteira.
+- **Toda parede que perder revestimento é preparada para pintura** — regra de
+  escopo, mapeada hoje em P01 e P02 e coberta por P04 para o que aparecer em obra.
 
-### Pisos (Prancha 03)
+### Piso (Prancha 03)
 
-| Opção | Cumaru | Monolítico | Sistema à parte |
-|---|---|---|---|
-| **A** | sala, jantar, quarto e corredor — 44,86 m² (49,35 com reserva de 10%) | cozinha 6,34 + closet 5,30 — 11,64 m² | banheiro 3,80 m² |
-| **B** | — | sala, jantar, quarto, cozinha e closet — 56,50 m² | banheiro 3,80 m² |
+A comparação cumaru × monolítico foi encerrada: o piso é **monolítico**, sistema
+único nos cinco ambientes secos, com o banheiro à parte.
 
-A ponta do monolítico nasce na quina do degrau da parede — logo abaixo da porta
-de entrada, onde fica a geladeira — e gira em curva (1,49 × 0,89 m) até a parede
-do banheiro. Total do pavimento: 60,30 m².
+| Sistema | Ambientes | Área |
+|---|---|---|
+| Monolítico contínuo | sala, quarto, cozinha, jantar e closet | 56,50 m² |
+| Sistema à parte (área molhada) | banheiro | 3,80 m² |
+| | **total do pavimento** | **60,30 m²** |
+
+Sem junta de material entre os ambientes secos — por isso a ponta em curva da
+cozinha saiu do desenho: ela existia apenas para resolver o encontro entre a
+madeira e o monolítico. As únicas transições que restam são a soleira do banheiro
+e a da porta de entrada. Juntas de movimentação entram no executivo.
 
 ## Como regerar
 

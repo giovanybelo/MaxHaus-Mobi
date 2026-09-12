@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. E'
+REV = 'REV. F'
 PRANCHA = 'Prancha 02 / 08'
 
 # --- alvos: (id, x_pt, y_pt, tipo, dx_rotulo, dy_rotulo) --------------------
@@ -19,6 +19,7 @@ ALVOS = [
     ('D08', 520.0, 520.0, 'demo',  10,  3),
     ('P01', 448.4, 170.0, 'prep', -10,  3),
     ('P02', 380.0, 211.2, 'prep',   0, -8),
+    ('P03', 500.0, 250.0, 'prep',  10,  3),
     ('R01', 555.0, 432.3, 'novo',  10, -6),
     ('R02', 353.0, 453.0, 'novo', -10, 11),
     ('M01', 300.0, 520.0, 'desm',  10,  3),
@@ -38,6 +39,8 @@ LINHAS = [
     ('D08', 'Retirar pisos do MainFloor', '60,30 m² úteis, sem dupla contagem'),
     ('P01', 'Parede do jantar: retirar espelho e revestimento', '1 trecho — 1,95 m, preparo p/ pintura'),
     ('P02', 'Parede sob a escada: retirar revestimento', 'trecho a confirmar — preparo p/ pintura'),
+    ('P03', 'Laje: restaurar, descascar, limpar e preparar', '60,30 m² — acabamento a definir'),
+    ('P04', 'Demais paredes com revestimento retirado', 'preparo p/ pintura — mapear em obra'),
     ('R01', 'Nova drywall sala/quarto, com porta 1,00 × 2,30 m', '4,08 m + 1 porta'),
     ('R02', 'Nova parede de fechamento do box', '1,63 m, no lugar do vidro'),
     ('M01', 'Desmontar e remontar closet', '1 conjunto — inventário por módulo'),
@@ -55,14 +58,17 @@ NOTAS = [
      'e vira parede (R02). Orçar demolição e reconstrução como serviços separados.'],
     ['**Banheiro: reforma integral.',
      'Saem piso, revestimentos, fechamento do box e a parede atrás do espelho e da bancada.',
-     'O vidro do box (K01) segue marcado para manter conforme definição anterior — confirmar',
-     'se a reforma integral o preserva.'],
-    ['**Jantar e sob a escada: preparo, não demolição.',
-     'Nessas duas paredes saem o espelho e os revestimentos e a superfície é preparada para',
-     'pintura. A parede fica. O trecho sob a escada precisa ser apontado presencialmente.'],
-    ['**Sem forro: a retirada é total, não parcial.',
-     'O teto do MainFloor passa a ser a laje de concreto aparente. Só o banheiro admite forro,',
-     'para abrigar a exaustão e a luminária. Ver Prancha 04.'],
+     'O vidro do box (K01) segue marcado para manter — confirmar se a reforma o preserva.'],
+    ['**Regra de escopo: toda parede que perder revestimento é preparada para pintura.',
+     'Hoje isso está mapeado no jantar (P01) e sob a escada (P02) — as duas paredes ficam, só',
+     'perdem espelho e revestimento. P04 cobre o que aparecer depois: não tem alvo fixo em planta,',
+     'mas entra no mesmo serviço. Definir o nível de acabamento antes de orçar: massa, lixa e',
+     'demão de fundo não são a mesma linha que regularização de parede castigada.'],
+    ['**A laje inteira é serviço, não sobra da demolição (P03).',
+     'Com o forro fora (D07), a laje aparece como está: restos de fixação, marca de fôrma, desnível,',
+     'fissura, eventual ferro exposto. Prever restauro, descascamento, limpeza e preparo dos',
+     '60,30 m², e definir com a empreiteira o acabamento — concreto nu, selador, verniz ou pintura.',
+     'É esse plano que recebe trilho, evaporadora e calha: quanto mais torto, mais aparece.'],
     ['**Closet: etiquetar módulos e ferragens, fotografar, acondicionar e proteger.',
      'A área de 5,30 m² é do ambiente, não é área de marcenaria.'],
 ]
@@ -121,7 +127,7 @@ def construir():
 
     escala(d, 156 + BUILDING_H * S + 26)
     legenda(d, [('dot', DEMO, 'Demolir / retirar'),
-                ('dot', PREP, 'Retirar revestimento e preparar para pintura'),
+                ('dot', PREP, 'Preparo de superfície — sem revestimento, pronto para pintura'),
                 ('dot', KEEP, 'Reconstruir / manter'),
                 ('dot', NEW, 'Desmontar e remontar'),
                 ('line', GLASS, 'Pano de vidro existente')],
@@ -135,7 +141,7 @@ def construir():
                  [('ID', 0.11, 'start'), ('Serviço', 0.56, 'start'),
                   ('Quantidade preliminar', 0.33, 'end')],
                  LINHAS, titulo='ESCOPO DE DEMOLIÇÃO E DESMONTAGEM')
-    paragrafos(d, cx, fim + 30, cw, NOTAS)
+    paragrafos(d, cx, fim + 24, cw, NOTAS, size=8.4, lh=12.4, gap=7.0)
 
     rodape(d,
            'Quantidades preliminares sobre o modelo do scan (02.09.2026): servem para orientar visita e proposta, não para fechar medição.',

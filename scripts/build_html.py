@@ -181,10 +181,10 @@ BOARDS = [
      'Escopo sobre o modelo do scan: o que sai, o que se desmonta para remontar e o que fica.',
      ['<b>14</b> itens catalogados', '<b>Demolir e reconstruir</b> como serviços separados',
       '<b>Jantar e escada:</b> preparo para pintura', '<b>Porta nova</b> 1,00 × 2,30 m']),
-    ('03', 'Pisos: cumaru ou monolítico', 'prancha-03-cumaru-ou-monolitico.svg',
-     'Duas opções na mesma planta e na mesma escala, com a ponta da cozinha em curva na quina do degrau.',
-     ['<b>A · cumaru</b> 44,86 m² (49,35 com reserva)', '<b>A · monolítico</b> 11,64 m²',
-      '<b>B · monolítico</b> 56,50 m²', '<b>Banheiro</b> 3,80 m² à parte']),
+    ('03', 'Piso monolítico', 'prancha-03-piso-monolitico.svg',
+     'Sistema único em todo o MainFloor, com o banheiro à parte: piso contínuo, sem junta de material entre os ambientes secos.',
+     ['<b>Monolítico</b> 56,50 m²', '<b>Banheiro</b> 3,80 m² à parte',
+      '<b>Total</b> 60,30 m²', '<b>Sem</b> junta de material']),
     ('04', 'Teto, iluminação e ar-condicionado', 'prancha-04-teto.svg',
      'Sem forro, luz e ar dividem a mesma laje: trilhos aplicados, três luminárias de destaque e evaporadoras aparentes.',
      ['<b>6</b> trilhos, traçado revisado', '<b>P01–P03</b> destaques: jantar, cama, office',
@@ -212,10 +212,16 @@ DECISOES = [
      'eletrificados, spots de sobrepor e pendentes — e o ar-condicionado trabalha sem plenum, '
      'com evaporadoras e tubulação aparentes. Só o banheiro mantém forro, para abrigar a '
      'exaustão e a luminária do box.'),
-    ('A ponta do monolítico nasce na quina do degrau',
-     'Logo abaixo da porta de entrada, onde fica a geladeira, a parede faz um degrau: é ali que '
-     'a ponta do monolítico começa e gira em curva (1,49 × 0,89 m) até a parede do banheiro. '
-     'O corredor da entrada e a escada ficam em cumaru.'),
+    ('O piso é monolítico, e só',
+     'A proposta de cumaru foi encerrada. Com um sistema único nos cinco ambientes secos, não há '
+     'junta de material no meio da planta — e a ponta em curva da cozinha, que existia só para '
+     'resolver o encontro entre madeira e monolítico, deixa de fazer sentido e saiu do desenho.'),
+    ('A laje inteira entra como serviço',
+     'Com o forro fora, a laje aparece como está. Restauro, descascamento, limpeza e preparo dos '
+     '60,30 m² viram o item P03, com o acabamento a definir junto com a empreiteira.'),
+    ('Toda parede sem revestimento vai preparada para pintura',
+     'Vale como regra de escopo, não só para o jantar e a parede sob a escada: o que aparecer '
+     'na obra entra no mesmo serviço (P04).'),
     ('Três luminárias maiores que as demais',
      'Jantar, cama e office ganham corpo e diâmetro maiores que os spots dos trilhos — P01, P02 '
      'e P03. No quarto, o TR5 corre no eixo das duas: podem pendurar do próprio trilho.'),
@@ -258,7 +264,7 @@ def build():
         ('Obra', 'MaxHaus MainFloor — João Baldinato 109, 81I', ''),
         ('Caderno', '4 pranchas — 02, 03, 04 e 05', ''),
         ('Formato', 'A3 deitado — 420 × 297 mm', 'mono'),
-        ('Revisão', 'D — 11.09.2026', 'mono'),
+        ('Revisão', 'F — 12.09.2026', 'mono'),
         ('Escala', 'gráfica (barra de 2 m em cada planta)', ''),
         ('Base', 'scan MaxHaus MainFloor, 02.09.2026', ''),
         ('Área do pavimento', '60,30 m²', 'mono'),
@@ -269,7 +275,7 @@ def build():
         for (k, v, c) in stamp)
 
     return """<title>Caderno MainFloor</title>
-<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. E.">
+<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. F.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -285,7 +291,7 @@ def build():
       como fica o teto agora que não há forro e onde ficam os pontos elétricos. Estudo preliminar —
       cores ilustrativas, nenhum produto ou espessura especificado.</p>
     </div>
-    <p class="rev">REV. E · 11.09.2026</p>
+    <p class="rev">REV. F · 12.09.2026</p>
   </header>
 
   <div class="rule"></div>
