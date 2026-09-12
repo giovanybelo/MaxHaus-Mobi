@@ -202,8 +202,8 @@ def folha_demolicao():
                  [('ID', 0.07, 'start'), ('Tarefa', 0.71, 'start'),
                   ('Quantidade', 0.22, 'end')],
                  TAB_DEMO, titulo='ESCOPO — TAREFA E QUANTIDADE', alt=19)
-    sequencia(d, cx, fim + 34, cw, 'ORDEM DE EXECUÇÃO', SEQ_DEMO)
-    rodape_fo(d, 'FOLHA FO1 / 3', 'Demolição')
+    sequencia(d, cx, fim + 30, cw, 'ORDEM DE EXECUÇÃO', SEQ_DEMO, size=8.4, lh=12.1)
+    rodape_fo(d, 'FOLHA FO1 / 5', 'Demolição')
     return d
 
 
@@ -317,29 +317,91 @@ def folha_piso():
                   [('ID', 0.07, 'start'), ('Tarefa', 0.71, 'start'), ('Quantidade', 0.22, 'end')],
                   TAB_PISO_C, titulo='NAS DUAS OPÇÕES — BANHEIRO E SOLEIRAS', alt=18)
     regua_fases(d, cx, fim2 + 58, cw, (6,))
-    rodape_fo(d, 'FOLHA FO2 / 3', 'Piso')
+    rodape_fo(d, 'FOLHA FO2 / 5', 'Piso')
     return d
 
 
 # ---------------------------------------------------------------------------
-# FO3 — ELÉTRICA
+# BASE COMUM DAS FOLHAS DE INSTALAÇÃO (FO3, FO4 e FO5)
 # ---------------------------------------------------------------------------
-from prancha_05_eletrica import TOMADAS_EXIST, TOMADAS_NOVAS, COMANDOS, QUADRO
+from prancha_05_eletrica import (TOMADAS_EXIST, TOMADAS_NOVAS, COMANDOS, QUADRO,
+                                 ROTULO_LESTE)
 from prancha_04_teto import TRILHOS, DESTAQUES, EMBUTIDOS_WC, MAQUINAS
 
+S_INST = 63.0
+
+
+def planta_inst(d, rotulos_extra=(), escala_folha=None):
+    """Casca da planta usada pelas três folhas de instalação."""
+    d.set_plan(70, 156, escala_folha or S_INST)
+    fundo_ambientes(d, K07)
+    paredes(d, estado='novo')
+    janelas(d)
+    porta(d, DOOR_ENTRADA)
+    porta(d, DOOR_BANHO)
+    porta_correr_horizontal(d, PORTA_NOVA, lado='n', sentido='e')
+    escada(d)
+    norte(d, 140, 206, 15, nota=None)
+    for k, lx, ly in (('jantar', 520.0, 152.0), ('sala', 470.0, 300.0),
+                      ('cozinha', 280.0, 352.0), ('quarto', 520.0, 470.0),
+                      ('banheiro', 380.6, 430.0)):
+        ROOMS[k]['lx'], ROOMS[k]['ly'] = lx, ly
+    for k in ROOM_ORDER:
+        if k == 'closet':
+            continue
+        r = ROOMS[k]
+        lx, ly = d.P(r['lx'], r['ly'])
+        d.txt(lx, ly, r['label'], 8.2, INK, 'bold', 'middle', ls=0.9)
+    lx, ly = d.P(329.0, 498.0)
+    d.txt(lx, ly, 'CLOSET', 6.8, INK, 'bold', 'middle', ls=0.6)
+    for (txt, xm, ym, size) in rotulos_extra:
+        cx, cy = d.PM(xm, ym)
+        d.txt(cx, cy, txt, size, INK_SOFT, 'normal', 'middle')
+
+
+def ponto_alim(d, xm, ym, ident, lado='n'):
+    """Caixa de alimentação que a elétrica entrega para outra disciplina."""
+    cx, cy = d.PM(xm, ym)
+    d.rect(cx - 4.6, cy - 4.6, 9.2, 9.2, fill=AMARELO, stroke=K, sw=1.2)
+    if lado == 'n':
+        d.txt(cx, cy - 8.5, ident, 6.2, K, 'bold', 'middle', ls=0.3)
+    elif lado == 'e':
+        d.txt(cx + 7.5, cy + 2.2, ident, 6.2, K, 'bold', 'start', ls=0.3)
+    elif lado == 'o':
+        d.txt(cx - 7.5, cy + 2.2, ident, 6.2, K, 'bold', 'end', ls=0.3)
+    else:
+        d.txt(cx, cy + 13, ident, 6.2, K, 'bold', 'middle', ls=0.3)
+
+
+def zona_piscina(d, rotulo=True):
+    """Projeção da piscina do pavimento superior: laje sem furação."""
+    x0, y0 = d.P(AREA_PISCINA[0], AREA_PISCINA[1])
+    x1, y1 = d.P(AREA_PISCINA[2], AREA_PISCINA[3])
+    d.rect(x0, y0, x1 - x0, y1 - y0, fill=AMARELO40, stroke=DEMO, sw=1.4,
+           dash='5 3')
+    if rotulo:
+        d.txt((x0 + x1) / 2.0, (y0 + y1) / 2.0 - 4, 'PISCINA ACIMA', 6.8, DEMO,
+              'bold', 'middle', ls=0.5)
+        d.txt((x0 + x1) / 2.0, (y0 + y1) / 2.0 + 7, 'não furar a laje', 6.4,
+              DEMO, 'normal', 'middle')
+
+
+# ---------------------------------------------------------------------------
+# FO3 — ELÉTRICA (força, comando e quadro)
+# ---------------------------------------------------------------------------
 TAB_ELE = [
     ('QD',  'Quadro de distribuição: avaliar, dimensionar e substituir',       '1 conjunto'),
     ('T01–T09', 'Tomadas existentes: conferir caixa, altura e circuito',       '9 pontos'),
     ('T10–T17', 'Tomadas novas',                                               '8 pontos'),
     ('S01–S08', 'Comandos / interruptores, com paralelos na cabeceira',        '8 pontos'),
-    ('TR1–TR6', 'Pontos de alimentação de trilho eletrificado no teto',        '6 pontos'),
-    ('P01–P03', 'Pontos de luminária de destaque — jantar, cama e office',     '3 pontos'),
-    ('EM',  'Embutidos no forro do banheiro',                                  '2 pontos'),
-    ('AC',  'Alimentação de evaporadoras AC01 e AC02',                         '2 pontos'),
-    ('EX',  'Alimentação de exaustor do banheiro e coifa da cozinha',          '2 pontos'),
     ('IN1', 'Infraestrutura embutida em parede — antes de fechar a drywall R01', '4,08 m'),
     ('IN2', 'Infraestrutura aparente no teto: perfilado ou eletrocalha pintada', 'a medir'),
     ('IN3', 'Circuitos dedicados: geladeira, forno, cooktop, lava-louças, coifa', '5 circuitos'),
+    ('AL1', 'Alimentação de trilho no teto — entregar caixa (ver FO4)',        '6 pontos'),
+    ('AL2', 'Alimentação de destaque — P02 e P03 no eixo do TR5 (ver FO4)',    '3 pontos'),
+    ('AL3', 'Alimentação de embutido no forro do banheiro (ver FO4)',          '2 pontos'),
+    ('AL4', 'Alimentação de evaporadora — entregar caixa (ver FO5)',           '2 pontos'),
+    ('AL5', 'Alimentação de exaustor e de coifa (ver FO5)',                    '2 pontos'),
     ('PR',  'Proteção: disjuntores, DR e DPS conforme projeto elétrico',       '1 conjunto'),
     ('AT',  'Aterramento e equipotencialização',                               '1 conjunto'),
     ('EN',  'Ensaios: continuidade, isolamento, DR e aterramento',             '1 conjunto'),
@@ -357,56 +419,40 @@ SEQ_ELE = [
     ('4', ['Infraestrutura embutida — IN1.',
            'Concluir antes de fechar a drywall R01.'], True),
     ('5', ['Infraestrutura aparente no teto — IN2.',
-           'Somente após o preparo da laje (P03), alinhada aos trilhos e vigas.'], False),
+           'Somente após o preparo da laje (P03), alinhada aos trilhos da FO4.'], False),
     ('6', ['Descidas, caixas e passagem de cabos.',
            'Concluir antes do piso.'], True),
-    ('7', ['Quadro, proteção e aterramento — QD, PR e AT.'], False),
-    ('8', ['Ensaios — EN.',
+    ('7', ['Entrega das alimentações — AL1 a AL5.',
+           'Caixa no ponto, cabo passado e circuito identificado, para a iluminação',
+           '(FO4) e o ar-condicionado (FO5) instalarem sem abrir parede ou laje.'], True),
+    ('8', ['Quadro, proteção e aterramento — QD, PR e AT.'], False),
+    ('9', ['Ensaios — EN.',
            'Continuidade, isolamento, DR e aterramento, com laudo por escrito.'], False),
-    ('9', ['Luminárias, trilhos e acabamentos.',
-           'Somente após a pintura concluída.'], False),
+    ('10', ['Ligação final e acabamento de placas.',
+            'Somente após a pintura concluída.'], False),
 ]
 
 
 def folha_eletrica():
     d = folha_nova()
     cabeca_fo(d, 'Elétrica', 'FO3 — ELÉTRICA',
-              'Pontos de força, comando e teto num único mapa. Posições de referência: conferir em obra antes de abrir caixa.')
+              'Força, comando e quadro. Iluminação na FO4 e ar-condicionado na FO5: aqui entram só as caixas de alimentação.')
 
-    S = 63.0
-    d.set_plan(70, 156, S)
-    fundo_ambientes(d, K07)
-    paredes(d, estado='novo')
-    janelas(d)
-    porta(d, DOOR_ENTRADA)
-    porta(d, DOOR_BANHO)
-    porta_correr_horizontal(d, PORTA_NOVA, lado='n', sentido='e')
-    escada(d)
-    norte(d, 140, 206, 15, nota=None)
+    planta_inst(d)
 
-    # trilhos: linha + ponto de alimentação
+    # alimentações a entregar para as outras disciplinas
     for (ident, p0, p1, n) in TRILHOS:
-        a = d.PM(*p0); b = d.PM(*p1)
-        d.line(a[0], a[1], b[0], b[1], BG, 5.0)
-        d.line(a[0], a[1], b[0], b[1], K, 2.0, cap='round')
-        d.circle(a[0], a[1], 5.0, fill=AMARELO, stroke=K, sw=1.2)
-        vertical = abs(b[0] - a[0]) < 1
-        if vertical:
-            d.txt(a[0] + 9, a[1] - 7, ident, 7.0, K, 'bold', 'start', ls=0.3)
-        else:
-            d.txt(a[0], a[1] - 11, ident, 7.0, K, 'bold', 'start', ls=0.3)
+        ponto_alim(d, p0[0], p0[1], ident, 'e' if abs(p1[0] - p0[0]) < 1 else 'n')
     for (ident, xm, ym, nome) in DESTAQUES:
+        ponto_alim(d, xm, ym, ident, 's')
         cx, cy = d.PM(xm, ym)
-        d.circle(cx, cy, 8.5, fill=AMARELO, stroke=K, sw=1.5)
-        d.circle(cx, cy, 2.6, fill=K)
-        d.txt(cx, cy + 19, ident, 7.2, K, 'bold', 'middle', ls=0.3)
+        d.circle(cx, cy, 2.0, fill=K)
     for (xm, ym) in EMBUTIDOS_WC:
         cx, cy = d.PM(xm, ym)
-        d.circle(cx, cy, 4.0, fill=BG, stroke=K, sw=1.1)
+        d.rect(cx - 3.4, cy - 3.4, 6.8, 6.8, fill=AMARELO, stroke=K, sw=1.0)
     for (ident, xm, ym, nome) in MAQUINAS:
-        cx, cy = d.PM(xm, ym)
-        d.rect(cx - 16, cy - 6, 32, 12, fill=CIANO35, stroke=K, sw=1.1)
-        d.txt(cx, cy + 3.4, ident, 6.8, K, 'bold', 'middle', ls=0.3)
+        ponto_alim(d, xm, ym, ident, 'e')
+
     for (ident, xm, ym) in TOMADAS_EXIST:
         cx, cy = d.PM(xm, ym)
         d.circle(cx, cy, 5.4, fill=BG, stroke=K45, sw=1.5)
@@ -417,13 +463,12 @@ def folha_eletrica():
         d.circle(cx, cy, 5.4, fill=CIANO, stroke=K, sw=1.3)
         d.circle(cx, cy, 1.8, fill=K)
         d.txt(cx, cy - 9, ident, 6.4, K, 'bold', 'middle', ls=0.3)
-    from prancha_05_eletrica import ROTULO_LESTE
     for (ident, xm, ym) in COMANDOS:
         cx, cy = d.PM(xm, ym)
         d.rect(cx - 5.2, cy - 5.2, 10.4, 10.4, fill=BG, stroke=K, sw=1.3)
         d.line(cx - 2.4, cy + 2.4, cx + 2.4, cy - 2.4, K, 1.2)
         if ident == 'S03':
-            d.txt(cx - 8.5, cy + 2.4, ident, 6.4, K, 'bold', 'end', ls=0.3)
+            d.txt(cx + 8.0, cy + 2.2, ident, 6.4, K, 'bold', 'start', ls=0.3)
         elif ident in ROTULO_LESTE:
             d.txt(cx + 8.5, cy + 2.4, ident, 6.4, K, 'bold', 'start', ls=0.3)
         else:
@@ -434,34 +479,236 @@ def folha_eletrica():
         d.line(cx - 6 + i * 6, cy - 4, cx - 6 + i * 6, cy + 4, DEMO, 1.1)
     d.txt(cx, cy + 19, 'QD', 7.6, DEMO, 'bold', 'middle', ls=0.4)
 
-    for k, lx, ly in (('jantar', 520.0, 152.0), ('sala', 470.0, 300.0),
-                      ('cozinha', 280.0, 352.0), ('quarto', 520.0, 470.0),
-                      ('banheiro', 380.6, 430.0)):
-        ROOMS[k]['lx'], ROOMS[k]['ly'] = lx, ly
-    for k in ROOM_ORDER:
-        if k == 'closet':
-            continue
-        r = ROOMS[k]
-        lx, ly = d.P(r['lx'], r['ly'])
-        d.txt(lx, ly, r['label'], 8.2, INK, 'bold', 'middle', ls=0.9)
-    lx, ly = d.P(329.0, 498.0)
-    d.txt(lx, ly, 'CLOSET', 6.8, INK, 'bold', 'middle', ls=0.6)
-
-    escala(d, 156 + BUILDING_H * S + 26)
+    escala(d, 156 + BUILDING_H * S_INST + 26)
     legenda(d, [('dotf', K45, 'Tomada existente'), ('fill', CIANO, 'Tomada nova'),
-                ('fill', BRANCO, 'Comando'), ('line', K, 'Trilho'),
-                ('fill', AMARELO, 'Alimentação de teto'), ('fill', CIANO35, 'AC / exaustão'),
+                ('fill', BRANCO, 'Comando'), ('fill', AMARELO, 'Caixa de alimentação a entregar'),
                 ('fill', MAGENTA18, 'Quadro')],
-            70, 156 + BUILDING_H * S + 62, largura=600)
-    regua_fases(d, 70, 862, 600, (4, 8))
+            70, 156 + BUILDING_H * S_INST + 62, largura=600)
+    regua_fases(d, 70, 862, 600, (1, 4))
 
     d.line(690, 140, 690, 916, RULE, 0.8, opacity=0.8)
     cx2, cw = 722, W - MARGIN - 722
     fim = tabela(d, cx2, 160, cw,
                  [('ID', 0.16, 'start'), ('Tarefa', 0.62, 'start'), ('Quantidade', 0.22, 'end')],
                  TAB_ELE, titulo='ESCOPO — TAREFA E QUANTIDADE', alt=19)
-    sequencia(d, cx2, fim + 34, cw, 'ORDEM DE EXECUÇÃO', SEQ_ELE)
-    rodape_fo(d, 'FOLHA FO3 / 3', 'Elétrica')
+    sequencia(d, cx2, fim + 32, cw, 'ORDEM DE EXECUÇÃO', SEQ_ELE, size=8.4, lh=12.2)
+    rodape_fo(d, 'FOLHA FO3 / 5', 'Elétrica')
+    return d
+
+
+# ---------------------------------------------------------------------------
+# FO4 — ILUMINAÇÃO
+# ---------------------------------------------------------------------------
+TAB_LUZ_FO = [
+    ('TR1', 'Trilho eletrificado — jantar, 4,75 a 7,50 m', '2,75 m  ·  4 spots'),
+    ('TR2', 'Trilho eletrificado — sala, eixo 4,55 m', '2,10 m  ·  3 spots'),
+    ('TR3', 'Trilho eletrificado — sala, 4,20 a 7,50 m', '3,30 m  ·  4 spots'),
+    ('TR4', 'Trilho eletrificado — cozinha, eixo 1,45 m', '2,50 m  ·  4 spots'),
+    ('TR5', 'Trilho eletrificado — quarto, eixo 8,28 m', '3,65 m  ·  3 spots'),
+    ('TR6', 'Trilho eletrificado — closet, eixo 1,45 m', '1,50 m  ·  3 spots'),
+    ('—',   'Total de trilho e de spots nos seis trechos', '15,80 m  ·  21 spots'),
+    ('P01', 'Luminária de destaque — jantar, pendente ou plafon', '1 peça'),
+    ('P02', 'Luminária de destaque — cama, no eixo do TR5', '1 peça'),
+    ('P03', 'Luminária de destaque — office, no eixo do TR5', '1 peça'),
+    ('EM',  'Embutido no forro do banheiro — único ambiente com forro', '2 peças'),
+    ('CT',  'Conector, emenda e terminação de trilho', 'a definir'),
+    ('FX',  'Fixação direta na laje de concreto aparente — bucha e parafuso', 'a medir'),
+]
+
+TAB_LUX = [
+    ('Sala',     '150 lux', '7.188 lm', '2.700 K'),
+    ('Quarto',   '150 lux', '4.188 lm', '2.700 K'),
+    ('Cozinha',  '300 lux', '5.563 lm', '3.000 K'),
+    ('Jantar',   '150 lux', '1.844 lm', '2.700 K'),
+    ('Closet',   '200 lux', '2.208 lm', '3.000 K'),
+    ('Banheiro', '200 lux', '1.583 lm', '3.000 K'),
+]
+
+SEQ_LUZ = [
+    ('1', ['Recebimento das alimentações da elétrica — AL1, AL2 e AL3.',
+           'Caixa no ponto, cabo passado e circuito identificado (FO3, passo 7).',
+           'Conferir posição de cada uma antes de comprar trilho.'], True),
+    ('2', ['Conferência da laje preparada — P03.',
+           'A laje é o teto acabado, a 2,62 m do piso: tudo é fixado nela, à vista.',
+           'Sem forro fora do banheiro, portanto nada de embutido.'], True),
+    ('3', ['Marcação dos eixos no teto.',
+           'Alinhar cada trecho às vigas e ao perfilado da elétrica. Trilho não cruza',
+           'trilho: se dois trechos tiverem de se encontrar, é com conector T.'], True),
+    ('4', ['Zona sem furação — piscina do pavimento superior.',
+           'Retângulo de 1,92 × 3,00 m sobre a sala, centrado em 6,13 / 3,14 m do canto',
+           'noroeste. Nenhuma fixação, furo ou passagem dentro dele.'], True),
+    ('5', ['Pintura concluída antes de instalar.',
+           'Trilho, spot e luminária entram depois da pintura da laje e das paredes.'], False),
+    ('6', ['Montagem de trilho e spots — TR1 a TR6.'], False),
+    ('7', ['Luminárias de destaque — P01, P02 e P03.',
+           'P02 e P03 correm no eixo do TR5 e podem sair do próprio trilho, com',
+           'adaptador, dispensando saída nova na laje.'], False),
+    ('8', ['Embutidos do banheiro — EM.'], False),
+    ('9', ['Ajuste de foco e entrega.',
+           'Apontar spot por spot com o mobiliário no lugar; conferir cena por comando.'], False),
+]
+
+
+def folha_iluminacao():
+    d = folha_nova()
+    cabeca_fo(d, 'Iluminação', 'FO4 — ILUMINAÇÃO',
+              'Trilho eletrificado e luminárias sobre a laje aparente. A alimentação é entregue pela elétrica (FO3): aqui é montagem, não fiação.')
+
+    S = 54.0
+    planta_inst(d, escala_folha=S)
+    zona_piscina(d)
+
+    for (ident, p0, p1, n) in TRILHOS:
+        a = d.PM(*p0); b = d.PM(*p1)
+        d.line(a[0], a[1], b[0], b[1], BG, 5.0)
+        d.line(a[0], a[1], b[0], b[1], K, 2.0, cap='round')
+        vertical = abs(b[0] - a[0]) < 1
+        for i in range(n):
+            t = (i + 0.5) / float(n)
+            sx = a[0] + (b[0] - a[0]) * t
+            sy = a[1] + (b[1] - a[1]) * t
+            d.circle(sx, sy, 3.2, fill=BRANCO, stroke=K, sw=1.0)
+        d.circle(a[0], a[1], 4.8, fill=AMARELO, stroke=K, sw=1.2)
+        if vertical:
+            d.txt(a[0] + 8.5, a[1] - 6.5, ident, 6.8, K, 'bold', 'start', ls=0.3)
+        else:
+            d.txt(a[0], a[1] - 10.5, ident, 6.8, K, 'bold', 'start', ls=0.3)
+    for (ident, xm, ym, nome) in DESTAQUES:
+        cx, cy = d.PM(xm, ym)
+        d.circle(cx, cy, 8.0, fill=AMARELO, stroke=K, sw=1.5)
+        d.circle(cx, cy, 2.4, fill=K)
+        d.txt(cx, cy + 18, ident, 7.0, K, 'bold', 'middle', ls=0.3)
+    for (xm, ym) in EMBUTIDOS_WC:
+        cx, cy = d.PM(xm, ym)
+        d.circle(cx, cy, 3.8, fill=BG, stroke=K, sw=1.1)
+    cx, cy = d.PM(2.95, 4.85)
+    d.txt(cx, cy - 10, 'EM', 6.2, K, 'bold', 'middle', ls=0.3)
+    for (ident, xm, ym) in COMANDOS:
+        cx, cy = d.PM(xm, ym)
+        d.rect(cx - 4.0, cy - 4.0, 8.0, 8.0, fill=BG, stroke=K45, sw=1.0)
+        d.line(cx - 1.8, cy + 1.8, cx + 1.8, cy - 1.8, K45, 1.0)
+
+    base = 156 + BUILDING_H * S
+    escala(d, base + 26)
+    legenda(d, [('line', K, 'Trilho eletrificado'), ('dot', K, 'Spot no trilho'),
+                ('fill', AMARELO, 'Alimentação entregue pela elétrica'),
+                ('ghost', DEMO, 'Laje sem furação — piscina acima'),
+                ('ghost', K45, 'Comando (referência, escopo da FO3)')],
+            70, base + 62, largura=600)
+    tabela(d, 70, base + 120, 600,
+           [('Ambiente', 0.34, 'start'), ('Nível', 0.22, 'end'),
+            ('Fluxo alvo', 0.22, 'end'), ('Temperatura', 0.22, 'end')],
+           TAB_LUX, titulo='ALVO POR AMBIENTE — PARA SELEÇÃO DE SPOT', alt=18)
+
+    d.line(690, 140, 690, 916, RULE, 0.8, opacity=0.8)
+    cx2, cw = 722, W - MARGIN - 722
+    fim = tabela(d, cx2, 160, cw,
+                 [('ID', 0.11, 'start'), ('Tarefa', 0.63, 'start'), ('Quantidade', 0.26, 'end')],
+                 TAB_LUZ_FO, titulo='ESCOPO — TAREFA E QUANTIDADE', alt=19)
+    fim = sequencia(d, cx2, fim + 32, cw, 'ORDEM DE EXECUÇÃO', SEQ_LUZ, size=8.4, lh=12.0)
+    regua_fases(d, cx2, fim + 40, cw, (8,))
+    rodape_fo(d, 'FOLHA FO4 / 5', 'Iluminação')
+    return d
+
+
+# ---------------------------------------------------------------------------
+# FO5 — AR-CONDICIONADO, EXAUSTÃO E COIFA
+# ---------------------------------------------------------------------------
+TAB_AR_FO = [
+    ('AC01', 'Evaporadora — social + cozinha (37,80 m²)', '1 unidade'),
+    ('AC02', 'Evaporadora — quarto + closet (18,70 m²)', '1 unidade'),
+    ('CD',   'Condensadora: conferir modelo existente e capacidade real', '1 unidade'),
+    ('FG',   'Linha frigorígena aparente, em calha, isolada', 'a medir'),
+    ('DR',   'Dreno aparente, com caimento contínuo até ponto de descarte', 'a medir'),
+    ('IE',   'Interligação elétrica entre condensadora e evaporadoras', '2 linhas'),
+    ('SU',   'Suporte de evaporadora fixado na laje ou na parede', '2 conjuntos'),
+    ('EX01', 'Exaustor do banheiro — único ambiente com forro', '1 unidade'),
+    ('DU1',  'Duto e rota de descarte do exaustor do banheiro', 'a definir'),
+    ('CF01', 'Coifa da cozinha — alimentação e fixação', '1 unidade'),
+    ('DU2',  'Duto e rota de descarte da coifa, independente do banheiro', 'a definir'),
+    ('VF',   'Vedação e acabamento das passagens de parede e de laje', 'a medir'),
+    ('CG',   'Carga de gás, vácuo e teste de estanqueidade da linha', '1 conjunto'),
+]
+
+TAB_BTU = [
+    ('Social + cozinha',   '37,80 m²', '22.680 BTU/h', '30.240 BTU/h'),
+    ('Quarto + closet',    '18,70 m²', '11.220 BTU/h', '14.960 BTU/h'),
+    ('Total sem banheiro', '56,50 m²', '33.900 BTU/h', '45.200 BTU/h'),
+]
+
+TAB_VAZAO = [
+    ('EX01', 'Banheiro — 3,80 m² × 2,42 m × 10 trocas/h', '92,0 m³/h'),
+    ('CF01', 'Cozinha — 8,90 m² × 2,62 m × 12 trocas/h', '279,8 m³/h'),
+]
+
+SEQ_AR = [
+    ('1', ['Conferência da condensadora existente.',
+           'Modelo, capacidade e número de evaporadoras que admite. Não assumir que',
+           'a atual aceita duas: se não aceitar, entra no orçamento.'], True),
+    ('2', ['Seleção pela coluna base sol — 30.240 e 14.960 BTU/h, somente Electrolux.',
+           'A fachada envidraçada é noroeste e pega o sol da tarde. Marca igual não',
+           'garante compatibilidade: conferir o par no catálogo antes de comprar.'], True),
+    ('3', ['Não há forro para dutar, fora do banheiro.',
+           'Evaporadora hi-wall ou cassete aparente; frigorígena, dreno e interligação',
+           'aparentes, em calha, alinhados às vigas e ao perfilado da elétrica.'], False),
+    ('4', ['Zona sem furação — piscina do pavimento superior.',
+           'Retângulo de 1,92 × 3,00 m sobre a sala. Nem equipamento, nem suporte,',
+           'nem tubulação dentro dele.'], True),
+    ('5', ['Posição definitiva do AC01 em obra.',
+           'A posição em planta é reserva: confirmar apoio acima do limite sala/jantar',
+           'e altura livre na faixa de 2,62 m antes de fixar.'], True),
+    ('6', ['Infraestrutura: passagens, calha, frigorígena e dreno — FG, DR, IE.',
+           'Executar após o preparo da laje (P03) e antes da pintura.'], False),
+    ('7', ['Exaustão — EX01 e CF01, com rotas próprias.',
+           'Uma rota não serve às duas. Validar vazão com a perda de carga do duto e',
+           'a rota de descarte com o condomínio antes de furar fachada.'], True),
+    ('8', ['Recebimento da alimentação elétrica — AL4 e AL5.',
+           'Caixa no ponto e circuito identificado, entregues pela FO3, passo 7.'], False),
+    ('9', ['Montagem, vácuo, carga e teste — CG.',
+           'Equipamento entra após a pintura. Entregar com teste de estanqueidade,',
+           'medição de temperatura e nota de garantia por escrito.'], False),
+]
+
+
+def folha_ar():
+    d = folha_nova()
+    cabeca_fo(d, 'Ar-condicionado e exaustão', 'FO5 — AR',
+              'Evaporadoras, exaustor e coifa sobre laje aparente, sem forro para dutar. Somente Electrolux. A alimentação é entregue pela elétrica (FO3).')
+
+    S = 49.0
+    planta_inst(d, escala_folha=S)
+    zona_piscina(d)
+
+    for (ident, xm, ym, nome) in MAQUINAS:
+        cx, cy = d.PM(xm, ym)
+        d.rect(cx - 19, cy - 8, 38, 16, fill=CIANO35, stroke=K, sw=1.4)
+        d.txt(cx + 3, cy + 3.6, ident, 7.4, K, 'bold', 'middle', ls=0.4)
+        d.rect(cx - 18, cy - 4.2, 8.4, 8.4, fill=AMARELO, stroke=K, sw=1.0)
+
+    base = 156 + BUILDING_H * S
+    escala(d, base + 26)
+    legenda(d, [('fill', CIANO35, 'Evaporadora, exaustor e coifa'),
+                ('fill', AMARELO, 'Alimentação entregue pela elétrica'),
+                ('ghost', DEMO, 'Laje sem furação — piscina acima')],
+            70, base + 62, largura=600)
+    fim = tabela(d, 70, base + 120, 600,
+                 [('Zona', 0.34, 'start'), ('Área', 0.20, 'end'),
+                  ('Base sombra', 0.23, 'end'), ('Base sol', 0.23, 'end')],
+                 TAB_BTU, titulo='CARGA TÉRMICA — 600 / 800 BTU/h POR m², SELECIONAR PELA BASE SOL',
+                 alt=18)
+    tabela(d, 70, fim + 42, 600,
+           [('ID', 0.11, 'start'), ('Cálculo de referência', 0.67, 'start'),
+            ('Vazão', 0.22, 'end')],
+           TAB_VAZAO, titulo='EXAUSTÃO — VAZÃO A VALIDAR COM PERDA DE CARGA DO DUTO', alt=18)
+
+    d.line(690, 140, 690, 916, RULE, 0.8, opacity=0.8)
+    cx2, cw = 722, W - MARGIN - 722
+    fim = tabela(d, cx2, 160, cw,
+                 [('ID', 0.11, 'start'), ('Tarefa', 0.67, 'start'), ('Quantidade', 0.22, 'end')],
+                 TAB_AR_FO, titulo='ESCOPO — TAREFA E QUANTIDADE', alt=19)
+    fim = sequencia(d, cx2, fim + 32, cw, 'ORDEM DE EXECUÇÃO', SEQ_AR, size=8.4, lh=12.0)
+    regua_fases(d, cx2, fim + 40, cw, (4, 8))
+    rodape_fo(d, 'FOLHA FO5 / 5', 'Ar-condicionado')
     return d
 
 
@@ -469,9 +716,11 @@ if __name__ == '__main__':
     raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     pasta = os.path.join(raiz, 'pranchas')
     saidas = []
-    for fn, nome, titulo in ((folha_demolicao, 'fornecedor-01-demolicao', 'FO1: demolição e preparo'),
-                             (folha_piso,      'fornecedor-02-piso',      'FO2: piso'),
-                             (folha_eletrica,  'fornecedor-03-eletrica',  'FO3: elétrica')):
+    for fn, nome, titulo in ((folha_demolicao,  'fornecedor-01-demolicao',  'FO1: demolição e preparo'),
+                             (folha_piso,       'fornecedor-02-piso',       'FO2: piso'),
+                             (folha_eletrica,   'fornecedor-03-eletrica',   'FO3: elétrica'),
+                             (folha_iluminacao, 'fornecedor-04-iluminacao', 'FO4: iluminação'),
+                             (folha_ar,         'fornecedor-05-ar',         'FO5: ar-condicionado e exaustão')):
         caminho = salvar(fn(), pasta, nome)
         exportar_pdf_a3([caminho], os.path.join(pasta, nome + '-A3.pdf'),
                         'MaxHaus 81I — fornecedores — ' + titulo)
@@ -479,4 +728,4 @@ if __name__ == '__main__':
         saidas.append(caminho)
     exportar_pdf_a3(saidas, os.path.join(pasta, 'caderno-fornecedores-A3.pdf'),
                     'MaxHaus 81I — pacote para fornecedores (A3)')
-    print('ok fornecedores: 3 folhas + pacote')
+    print('ok fornecedores: 5 folhas + pacote')

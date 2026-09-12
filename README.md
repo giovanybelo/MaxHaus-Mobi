@@ -164,35 +164,47 @@ Orientação de escopo, não laudo: a decisão final pede um engenheiro na inspe
 ## Pacote para fornecedores (EMISSÃO 01)
 
 Material paralelo ao caderno, derivado dele mas com outra função: cotação e
-execução. Sai **um mapa por disciplina**, cada um autossuficiente em A3 deitado.
-Não leva justificativa de projeto, comparação de materiais nem observação
-dirigida ao cliente — apenas tarefa, quantidade e ordem.
+execução. Sai **um mapa por disciplina**, cada um autossuficiente em A3 deitado,
+para ir a um fornecedor diferente. Não leva justificativa de projeto, comparação
+de materiais nem observação dirigida ao cliente — apenas tarefa, quantidade e
+ordem.
 
 | Folha | Disciplina | Conteúdo |
 | --- | --- | --- |
 | FO1 | Demolição e preparo | planta do estado existente, 20 tarefas (E01→K01), ordem em 10 passos |
 | FO2 | Piso | as duas opções lado a lado na mesma escala, quantidades por sistema, ordem em 7 passos |
-| FO3 | Elétrica | força, comando e teto num único mapa, 15 linhas de escopo, ordem em 9 passos |
+| FO3 | Elétrica | força, comando e quadro, 15 linhas de escopo, ordem em 10 passos |
+| FO4 | Iluminação | trilho e luminárias sobre a laje, alvo de lux por ambiente, ordem em 9 passos |
+| FO5 | Ar-condicionado e exaustão | evaporadoras, exaustor e coifa, carga térmica e vazão, ordem em 9 passos |
+
+Elétrica, iluminação e ar são **três fornecedores diferentes**, então são três
+folhas. A costura entre elas é explícita e está na FO3: as linhas **AL1 a AL5**
+são as caixas de alimentação que o eletricista entrega — trilho, destaque,
+embutido do banheiro, evaporadora, exaustor e coifa — com cabo passado e
+circuito identificado. É o passo 7 da FO3 e o passo 1 da FO4; na FO5 é o passo 8.
+Quem monta luminária ou evaporadora não abre parede nem laje.
 
 Em todas as folhas:
 
 - **ORDEM DE EXECUÇÃO** numerada; os passos em amarelo são **pontos de parada** —
   não seguem sem aceite por escrito (ensaios, recebimento do contrapiso,
-  fechamento da drywall R01, cura do piso).
+  fechamento da drywall R01, cura do piso, conferência da condensadora).
 - **SEQUÊNCIA GERAL DA OBRA** em oito fases, com as fases da folha destacadas,
   para o fornecedor ver onde entra no conjunto.
+- **Zona sem furação** marcada na FO4 e na FO5: a projeção da piscina do
+  pavimento superior, 1,92 × 3,00 m sobre a sala.
 - **Durações e prazos ficam em branco**, para a contratada preencher no
   cronograma. Alterações de escopo somente por escrito.
 
-Arquivos: `pranchas/fornecedor-01-demolicao-A3.pdf`,
-`fornecedor-02-piso-A3.pdf`, `fornecedor-03-eletrica-A3.pdf` e o pacote reunido
-`caderno-fornecedores-A3.pdf`.
+Arquivos: `pranchas/fornecedor-01-demolicao-A3.pdf`, `fornecedor-02-piso-A3.pdf`,
+`fornecedor-03-eletrica-A3.pdf`, `fornecedor-04-iluminacao-A3.pdf`,
+`fornecedor-05-ar-A3.pdf` e o pacote reunido `caderno-fornecedores-A3.pdf`.
 
 ## Como regerar
 
 ```bash
 python3 scripts/build_all.py     # o caderno: 7 pranchas, os PDFs A3 e a versão web
-python3 scripts/fornecedores.py  # o pacote para fornecedores: FO1, FO2 e FO3
+python3 scripts/fornecedores.py  # o pacote para fornecedores: FO1 a FO5
 ```
 
 Ou uma folha por vez: `scripts/prancha_02_demolicao.py`,

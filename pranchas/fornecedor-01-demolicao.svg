@@ -476,50 +476,50 @@
 <text x="774.1" y="553.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Vidro do box — MANTER e proteger</text>
 <text x="1344.0" y="553.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1 peça</text>
 <line x1="722.00" y1="560.00" x2="1352.00" y2="560.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
-<text x="722.0" y="594.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">ORDEM DE EXECUÇÃO</text>
-<circle cx="729.00" cy="609.00" r="7.50" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
-<text x="729.0" y="612.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">1</text>
-<text x="744.0" y="612.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="bold" text-anchor="start">Ensaios antes de qualquer demolição — E01 e E02.</text>
-<text x="744.0" y="624.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Resultado por escrito antes de abrir parede ou piso.</text>
-<circle cx="729.00" cy="640.20" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
-<text x="729.0" y="643.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">2</text>
-<text x="744.0" y="643.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="normal" text-anchor="start">Proteção e canteiro.</text>
-<text x="744.0" y="655.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Proteger K01, esquadrias, prumadas e caixilhos. Isolar acessos e prever</text>
-<text x="744.0" y="668.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">remoção de entulho e horário de condomínio.</text>
-<circle cx="729.00" cy="684.00" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
-<text x="729.0" y="687.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">3</text>
-<text x="744.0" y="687.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="normal" text-anchor="start">Desmontagem — M01 e D05.</text>
-<text x="744.0" y="699.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Closet etiquetado e acondicionado; canto alemão do jantar.</text>
-<circle cx="729.00" cy="715.20" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
-<text x="729.0" y="718.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">4</text>
-<text x="744.0" y="718.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="normal" text-anchor="start">Forro — D07, 100%.</text>
-<text x="744.0" y="730.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Libera a laje e revela a altura livre real.</text>
-<circle cx="729.00" cy="746.40" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
-<text x="729.0" y="749.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">5</text>
-<text x="744.0" y="749.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="normal" text-anchor="start">Vedações — D01, D02, D06 e D04.</text>
-<circle cx="729.00" cy="765.00" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
-<text x="729.0" y="768.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">6</text>
-<text x="744.0" y="768.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="normal" text-anchor="start">Pisos e base — D08 e D03.</text>
-<text x="744.0" y="780.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Banheiro desce até a laje.</text>
-<circle cx="729.00" cy="796.20" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
-<text x="729.0" y="799.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">7</text>
-<text x="744.0" y="799.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="normal" text-anchor="start">Revestimentos de parede — P01, P02 e P04.</text>
-<circle cx="729.00" cy="814.80" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
-<text x="729.0" y="817.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">8</text>
-<text x="744.0" y="817.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="normal" text-anchor="start">Laje — P03.</text>
-<text x="744.0" y="830.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Restauro, descascamento e limpeza.</text>
-<circle cx="729.00" cy="846.00" r="7.50" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
-<text x="729.0" y="849.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">9</text>
-<text x="744.0" y="849.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="bold" text-anchor="start">Reconstruções — R01 e R02.</text>
-<text x="744.0" y="861.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">R01 fecha somente após a infraestrutura elétrica embutida.</text>
-<circle cx="729.00" cy="877.20" r="7.50" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
-<text x="729.0" y="880.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">10</text>
-<text x="744.0" y="880.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="bold" text-anchor="start">Contrapiso e nível — P06 e P05.</text>
-<text x="744.0" y="892.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Última etapa desta disciplina. Entregar plano, nivelado, seco e limpo,</text>
-<text x="744.0" y="905.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">em cota única, para liberar o piso.</text>
+<text x="722.0" y="590.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">ORDEM DE EXECUÇÃO</text>
+<circle cx="729.00" cy="605.00" r="7.50" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
+<text x="729.0" y="608.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">1</text>
+<text x="744.0" y="608.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Ensaios antes de qualquer demolição — E01 e E02.</text>
+<text x="744.0" y="620.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Resultado por escrito antes de abrir parede ou piso.</text>
+<circle cx="729.00" cy="635.20" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="729.0" y="638.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">2</text>
+<text x="744.0" y="638.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Proteção e canteiro.</text>
+<text x="744.0" y="650.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Proteger K01, esquadrias, prumadas e caixilhos. Isolar acessos e prever</text>
+<text x="744.0" y="662.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">remoção de entulho e horário de condomínio.</text>
+<circle cx="729.00" cy="677.50" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="729.0" y="680.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">3</text>
+<text x="744.0" y="680.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Desmontagem — M01 e D05.</text>
+<text x="744.0" y="692.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Closet etiquetado e acondicionado; canto alemão do jantar.</text>
+<circle cx="729.00" cy="707.70" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="729.0" y="710.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">4</text>
+<text x="744.0" y="710.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Forro — D07, 100%.</text>
+<text x="744.0" y="722.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Libera a laje e revela a altura livre real.</text>
+<circle cx="729.00" cy="737.90" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="729.0" y="740.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">5</text>
+<text x="744.0" y="740.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Vedações — D01, D02, D06 e D04.</text>
+<circle cx="729.00" cy="756.00" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="729.0" y="759.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">6</text>
+<text x="744.0" y="759.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Pisos e base — D08 e D03.</text>
+<text x="744.0" y="771.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Banheiro desce até a laje.</text>
+<circle cx="729.00" cy="786.20" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="729.0" y="789.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">7</text>
+<text x="744.0" y="789.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Revestimentos de parede — P01, P02 e P04.</text>
+<circle cx="729.00" cy="804.30" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="729.0" y="807.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">8</text>
+<text x="744.0" y="807.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Laje — P03.</text>
+<text x="744.0" y="819.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Restauro, descascamento e limpeza.</text>
+<circle cx="729.00" cy="834.50" r="7.50" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
+<text x="729.0" y="837.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">9</text>
+<text x="744.0" y="837.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Reconstruções — R01 e R02.</text>
+<text x="744.0" y="849.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">R01 fecha somente após a infraestrutura elétrica embutida.</text>
+<circle cx="729.00" cy="864.70" r="7.50" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
+<text x="729.0" y="867.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">10</text>
+<text x="744.0" y="867.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Contrapiso e nível — P06 e P05.</text>
+<text x="744.0" y="879.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Última etapa desta disciplina. Entregar plano, nivelado, seco e limpo,</text>
+<text x="744.0" y="891.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">em cota única, para liberar o piso.</text>
 <line x1="48.00" y1="930.00" x2="1352.00" y2="930.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="48.0" y="948.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Quantidades preliminares sobre levantamento por scan de 02.09.2026. Conferir medidas e alvos em campo antes de mobilizar equipe, cortar material ou fechar medição.</text>
 <text x="48.0" y="961.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Durações e prazos não estão definidos: preencher no cronograma da contratada. Alterações de escopo somente por escrito.</text>
 <text x="48.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81I  ·  JOÃO BALDINATO 109  ·  DEMOLIÇÃO  ·  12.09.2026</text>
-<text x="1352.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">FOLHA FO1 / 3   ·   EMISSÃO 01</text>
+<text x="1352.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">FOLHA FO1 / 5   ·   EMISSÃO 01</text>
 </svg>
