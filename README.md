@@ -53,7 +53,7 @@ Versão web responsiva: `pranchas/caderno-mainfloor.html`.
 
 As alturas vieram de medição em campo (12.09.2026); o relatório do scan mede
 2,40 m com o forro, o que confere com os 2,42 m. Retirar o forro (D07) devolve
-0,20 m de plenum: é essa folga que acomoda a porta de correr de 2,29 m — 0,13 m
+0,22 m de plenum: é essa folga que acomoda a porta de correr de 2,29 m — 0,13 m
 sob o forro de hoje, 0,33 m sobre a laje.
 
 ### Esquadrias
@@ -174,14 +174,18 @@ conjunto. Quatro folhas novas: 09 a 12.
 
 **A correção que muda compra.** As planilhas recebidas revestiam o banheiro até
 **2,62 m** e calculavam a exaustão com o mesmo valor. O banheiro é o único
-ambiente que **mantém forro**: a altura livre lá dentro é **2,42 m**. Revestir
-até 2,62 m mede parede acima do forro, que não existe.
+ambiente que **mantém forro**: a altura livre lá dentro é **2,40 m**, confirmada
+pelo cliente em 21.09. Revestir até 2,62 m mede parede acima do forro, que não
+existe.
 
 | Grandeza | Folha de 11.09 | REV. M | Diferença |
 | --- | --- | --- | --- |
-| Revestimento líquido | 23,38 m² | 21,90 m² | −1,48 m² |
-| Revestimento com 10% | 25,72 m² | 24,09 m² | −1,63 m² |
-| Exaustão do banheiro | 99,6 m³/h | 92,0 m³/h | −7,6 m³/h |
+| Revestimento líquido | 23,38 m² | 21,73 m² | −1,65 m² |
+| Revestimento com 10% | 25,72 m² | 23,90 m² | −1,82 m² |
+| Exaustão do banheiro | 99,6 m³/h | 91,2 m³/h | −8,4 m³/h |
+
+A altura também fechou em definitivo: **2,40 m com o forro atual, 2,62 m sem
+ele** — plenum de **0,22 m**, e J06 passa a 2,00 × 2,15 m.
 
 Outras reconciliações: o box passa a usar o medido (**1,43 × 0,93 m**, contra
 1,40 × 0,90 arredondados no CSV); o vão da porta fica em **0,80 × 2,00 m** com
@@ -213,7 +217,7 @@ A folha traz quatro desenhos:
   acabado têm de caber entre a laje e essa cota — medir o desnível real depois
   da demolição. A soleira passa a ser junta de material, não degrau.
 - **Altura livre**, comparando os 2,42 m do banheiro com os 2,62 m do resto do
-  pavimento, onde a retirada do forro (D07) devolve os 0,20 m de plenum.
+  pavimento, onde a retirada do forro (D07) devolve os 0,22 m de plenum.
 
 Sem degrau na soleira, a contenção de água passa a ser o caimento e o ralo
 linear no fundo do box. O caimento é executado na regularização, sobre a

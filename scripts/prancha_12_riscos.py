@@ -12,10 +12,10 @@ from base_mainfloor import *      # noqa
 REV = 'REV. M'
 PRANCHA = 'Prancha 12 / 12'
 
-# grau: 'impasse' | 'alto' | 'medio'
+# grau: 'impasse' | 'curso' | 'alto' | 'medio' | 'ok'
 RISCOS = [
     ('E1', 'Estrutura', 'Piscina de 5,76 m² sobre a sala, em laje que a D07 vai expor',
-     'impasse'),
+     'curso'),
     ('E2', 'Estrutura', 'Condição real da laje só aparece depois do forro sair — P03 é escopo aberto',
      'alto'),
     ('E3', 'Estrutura', 'Toda fixação de trilho, perfilado e evaporadora fura estrutura',
@@ -28,32 +28,33 @@ RISCOS = [
      'alto'),
     ('H4', 'Hidráulica', 'Pressão e água quente não levantadas; o chuveiro depende delas',
      'medio'),
-    ('L1', 'Elétrica', 'Folha da porta de entrada varre o quadro de distribuição',
-     'impasse'),
+    ('L1', 'Elétrica', 'Quadro atrás da folha aberta — acesso confirmado pelo cliente em 21.09',
+     'ok'),
     ('L2', 'Elétrica', 'Condensadora existente: modelo e nº de evaporadoras desconhecidos',
      'alto'),
     ('L3', 'Elétrica', 'Demanda nova sobre instalação de 17 anos — quadro e ramal a dimensionar',
      'alto'),
     ('L4', 'Elétrica', 'Faixa de 1,00 m a leste do vão da porta de correr é reservada',
      'medio'),
-    ('A1', 'Acabamento', 'Monolítico de 56,50 m² não existe sem junta de movimentação',
+    ('A1', 'Acabamento', 'Monolítico cimentício de 56,50 m² pede juntas — quantas depende do sistema',
      'alto'),
     ('A2', 'Acabamento', 'Cumaru sobre contrapiso de 17 anos: umidade e folga de movimentação',
      'medio'),
     ('A3', 'Acabamento', 'P06 pode não bastar: contrapiso trincado pede autonivelante',
      'medio'),
     ('C1', 'Condomínio', 'Rota de descarte da coifa pode não existir',
-     'impasse'),
+     'curso'),
     ('C2', 'Condomínio', 'Exaustor do banheiro: mesma pergunta de rota e fachada',
      'alto'),
-    ('D1', 'Documento', 'Duas séries numeradas / 08 circulando — resolvido nesta emissão',
-     'medio'),
-    ('D2', 'Documento', 'Altura de parede informada como 1,62 / 1,42 é impossível com janela de 1,63',
-     'alto'),
+    ('D1', 'Documento', 'Duas séries numeradas / 08 circulando — resolvido na REV. M',
+     'ok'),
+    ('D2', 'Documento', 'Altura de parede: erro de digitação confirmado — 2,40 com forro, 2,62 sem',
+     'ok'),
 ]
 
 IMPASSES = [
-    ('H1', 'O rebaixo do banheiro contra a cota única',
+    ('H1', 'IMPASSE', 'O rebaixo do banheiro contra a cota única',
+     'em análise com a empreiteira',
      ['A D03 retira piso, base e rebaixo até a laje, e a P05 manda o banheiro voltar na cota da',
       'casa. O esgoto mora nesse rebaixo. Ao subir o piso, impermeabilização, regularização com',
       'caimento e piso acabado têm de caber entre a laje e a cota única — e o esgoto tem de',
@@ -61,25 +62,41 @@ IMPASSES = [
       'Se o rebaixo for raso, ou a cota única cai, ou o caimento cai. Não dá para ter os dois.',
       'PORTÃO: medir o desnível real e a cota de saída do esgoto no dia seguinte à D03,',
       'antes de comprar impermeabilizante, piso ou ralo.']),
-    ('L1', 'A porta de entrada varre o quadro',
-     ['O quadro fica junto à porta, no início da extensão da cozinha. Com 1,00 m de vão, a folha',
-      'tem 1,00 m de raio e passa sobre ele. A NBR 5410 exige acesso livre e permanente ao quadro.',
-      'São três saídas, e todas custam: deslocar o quadro, reduzir a folha, ou inverter o giro.',
-      'PORTÃO: decidir antes da IN1, porque todo o traçado embutido sai dali.']),
-    ('C1', 'A coifa pode não ter para onde descarregar',
-     ['A vazão de 279,8 m³/h pressupõe duto próprio até uma saída permitida. Se o condomínio não',
-      'tiver shaft de cozinha nem autorizar furo de fachada, a coifa vira recirculação com carvão',
-      'ativado — e aí a conta de vazão não vale mais, o filtro vira manutenção periódica e a',
-      'cozinha integrada passa a conviver com o odor.',
-      'PORTÃO: consultar o condomínio antes de escolher a coifa e antes de fechar a marcenaria.']),
+    ('E1', 'EM CURSO', 'A piscina sobre a sala',
+     'visita técnica agendada · condomínio em contato',
+     ['São 5,76 m² de lâmina sobre a sala. Enquanto havia forro, qualquer infiltração ficava',
+      'escondida; com a laje aparente, mancha e eflorescência passam a ser o acabamento.',
+      'O QUE LEVAR NA VISITA: projeto estrutural do trecho, data e sistema da última',
+      'impermeabilização da piscina, e histórico de manutenção. Inspecionar a face inferior',
+      'logo após a D07, antes de assumir concreto à vista na sala.']),
+    ('C1', 'EM CURSO', 'A rota de descarte da coifa',
+     'em alinhamento com a construtora',
+     ['A vazão de 279,8 m³/h pressupõe duto próprio até uma saída permitida. Sem shaft de cozinha',
+      'nem autorização de furo de fachada, a coifa vira recirculação com carvão ativado — a conta',
+      'de vazão deixa de valer, o filtro vira manutenção periódica e a cozinha integrada convive',
+      'com o odor.',
+      'O QUE PERGUNTAR: existe shaft de exaustão de cozinha na prumada da unidade, e a fachada',
+      'admite furo? Resolver antes de escolher a coifa e antes de fechar a marcenaria.']),
+]
+
+RESOLVIDOS = [
+    ('L1', 'Quadro atrás da folha da porta',
+     'O cliente confirmou em 21.09 que o arranjo é comum no edifício e o acesso é fácil — o quadro',
+     'fica atrás da folha quando aberta. Decisão registrada. Resta só conferir que a porta do',
+     'próprio quadro abre sem bater no batente.'),
+    ('D2', 'A altura de parede',
+     'Era erro de digitação. O cliente confirmou: 2,40 m com o forro atual e 2,62 m sem ele. O',
+     'caderno inteiro foi recalculado nesta revisão — plenum passa a 0,22 m, o revestimento do',
+     'banheiro a 2,40 m e a exaustão a 91,2 m³/h.'),
 ]
 
 NOTAS = [
-    ['**A piscina é o item que merece a primeira visita técnica.',
-     'São 5,76 m² de lâmina sobre a sala. Enquanto havia forro, qualquer infiltração ficava',
-     'escondida; com a laje aparente, mancha e eflorescência passam a ser o acabamento. Antes de',
-     'assumir concreto à vista na sala, pedir ao condomínio o projeto estrutural e a data da',
-     'última impermeabilização da piscina, e inspecionar a face inferior logo após a D07.'],
+    ['**Juntas no piso monolítico: a pergunta certa é qual sistema, não se tem junta.',
+     'Cimentício — cimento queimado, concreto polido, autonivelante aparente — retrai ao curar e',
+     'acompanha o movimento da laje: pede painéis de 3 a 6 m de lado, o que dá de 4 a 8 juntas',
+     'nos 56,50 m². Microcimento de 2 a 3 mm, com tela e primer, reduz as juntas às do substrato',
+     'e ao perímetro. Resina epóxi ou poliuretano fecha contínuo de verdade — mas parece resina,',
+     'não concreto. Em qualquer um deles, junta sobre junta estrutural é obrigatória.'],
     ['**A escada aberta contamina a conta de ar.',
      'Os dois pavimentos trocam ar livremente, então dimensionar o MainFloor isolado é otimista.',
      'É por isso que a seleção vai pela coluna base sol, e ainda assim com ressalva.'],
@@ -90,8 +107,10 @@ NOTAS = [
      'substitui quem responde.'],
 ]
 
-COR_GRAU = {'impasse': DEMO, 'alto': AMARELO, 'medio': BRANCO}
-NOME_GRAU = {'impasse': 'IMPASSE', 'alto': 'ATENÇÃO', 'medio': 'ACOMPANHAR'}
+COR_GRAU = {'impasse': DEMO, 'curso': CIANO, 'alto': AMARELO,
+            'medio': BRANCO, 'ok': K12}
+NOME_GRAU = {'impasse': 'IMPASSE', 'curso': 'EM CURSO', 'alto': 'ATENÇÃO',
+             'medio': 'ACOMPANHAR', 'ok': 'RESOLVIDO'}
 
 
 def registro(d, x, y, largura):
@@ -120,26 +139,48 @@ def registro(d, x, y, largura):
     return yy
 
 
-def bloco_impasse(d, x, y, largura, ident, titulo, linhas):
-    alt = 42 + len(linhas) * 11.6
-    d.rect(x, y, largura, alt, fill=MAGENTA18, stroke=DEMO, sw=1.4)
-    d.rect(x, y, 34, 20, fill=DEMO)
-    d.txt(x + 17, y + 14, ident, 8.6, BRANCO, 'bold', 'middle', ls=0.4)
+def bloco_impasse(d, x, y, largura, ident, selo, titulo, dono, linhas):
+    aberto = (selo == 'IMPASSE')
+    fundo = MAGENTA18 if aberto else CIANO18
+    borda = DEMO if aberto else CIANO
+    alt = 54 + len(linhas) * 11.6
+    d.rect(x, y, largura, alt, fill=fundo, stroke=borda, sw=1.4)
+    d.rect(x, y, 34, 20, fill=borda)
+    d.txt(x + 17, y + 14, ident, 8.6, BRANCO if aberto else K, 'bold', 'middle', ls=0.4)
     d.txt(x + 42, y + 14, titulo, 9.2, K, 'bold')
-    yy = y + 33
+    d.txt(x + largura - 10, y + 14, selo, 7.0, K, 'bold', 'end', ls=0.6)
+    d.txt(x + 12, y + 30, dono, 7.6, INK_SOFT, 'normal')
+    yy = y + 45
     for ln in linhas:
-        forte = ln.startswith('PORTÃO:')
-        d.txt(x + 12, yy, ln, 8.1, DEMO if forte else INK, 'bold' if forte else 'normal')
+        forte = ln.startswith('PORTÃO:') or ln.startswith('O QUE ')
+        d.txt(x + 12, yy, ln, 8.1, DEMO if (forte and aberto) else
+              (K if forte else INK), 'bold' if forte else 'normal')
         yy += 11.6
-    return y + alt + 14
+    return y + alt + 12
+
+
+def bloco_resolvido(d, x, y, largura, itens):
+    d.txt(x, y - 10, 'RESOLVIDOS EM 21.09', 8.0, INK_SOFT, 'bold', ls=1.2)
+    yy = y
+    for (ident, titulo, *linhas) in itens:
+        d.rect(x, yy, largura, 18 + len(linhas) * 11.2, fill=K04, stroke=K20, sw=0.8)
+        d.rect(x, yy, 30, 16, fill=K45)
+        d.txt(x + 15, yy + 11.5, ident, 7.6, BRANCO, 'bold', 'middle', ls=0.4)
+        d.txt(x + 38, yy + 11.5, titulo, 8.4, K, 'bold')
+        y2 = yy + 27
+        for ln in linhas:
+            d.txt(x + 12, y2, ln, 7.9, INK_SOFT)
+            y2 += 11.2
+        yy += 18 + len(linhas) * 11.2 + 10
+    return yy
 
 
 def construir():
     d = folha_nova()
     cabecalho(d, 'Análise técnica: riscos, impasses e verificações',
               'Leitura crítica do conjunto. Separa risco de custo, risco técnico e impasse — a decisão que trava serviço se não for respondida antes de começar.',
-              REV, '18 pontos  ·  3 impasses',
-              'orientação de escopo, não laudo')
+              REV, '18 pontos  ·  1 impasse aberto',
+              '2 em curso  ·  3 resolvidos em 21.09')
 
     cx, cw = MARGIN, 700
     fim = registro(d, cx, 162, cw)
@@ -147,12 +188,13 @@ def construir():
 
     d.line(776, 140, 776, 916, RULE, 0.8, opacity=0.8)
     cx2, cw2 = 806, W - MARGIN - 806
-    d.txt(cx2, 152, 'OS TRÊS IMPASSES', 8.0, INK_SOFT, 'bold', ls=1.2)
-    d.txt(cx2, 170, 'Cada um trava um serviço. Nenhum se resolve', 8.4, INK_SOFT)
-    d.txt(cx2, 182, 'no desenho — os três pedem campo ou terceiro.', 8.4, INK_SOFT)
+    d.txt(cx2, 152, 'O QUE TRAVA SERVIÇO', 8.0, INK_SOFT, 'bold', ls=1.2)
+    d.txt(cx2, 170, 'Um impasse aberto e dois em curso, já com dono.', 8.4, INK_SOFT)
+    d.txt(cx2, 182, 'Nenhum se resolve no desenho: os três pedem campo.', 8.4, INK_SOFT)
     yy = 200
-    for (ident, titulo, linhas) in IMPASSES:
-        yy = bloco_impasse(d, cx2, yy, cw2, ident, titulo, linhas)
+    for (ident, selo, titulo, dono, linhas) in IMPASSES:
+        yy = bloco_impasse(d, cx2, yy, cw2, ident, selo, titulo, dono, linhas)
+    bloco_resolvido(d, cx2, yy + 18, cw2, RESOLVIDOS)
 
     rodape(d,
            'Análise sobre levantamento digital de 02.09.2026 e sobre as decisões registradas até a REV. M. Sem vistoria, sem ensaio e sem acesso aos projetos do edifício.',

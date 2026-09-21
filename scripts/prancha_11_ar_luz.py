@@ -3,7 +3,7 @@
 
 Refaz a planilha de pré-dimensionamento recebida em 11.09.2026. A conta de
 exaustão do banheiro muda: o ambiente mantém forro, logo o volume é calculado
-com 2,42 m.
+com 2,40 m.
 """
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -16,7 +16,7 @@ TAB_PREM = [
     ('Fator de sombra', '600 BTU/h por m²', 'regra simplificada — não é cálculo térmico'),
     ('Fator de sol', '800 BTU/h por m²', 'fachada envidraçada a noroeste, sol de tarde'),
     ('Pé-direito de estudo', '2,62 m', 'laje aparente, fora do banheiro'),
-    ('Altura do banheiro', '2,42 m', 'sob o forro, que permanece'),
+    ('Altura do banheiro', '2,40 m', 'sob o forro, que permanece'),
     ('Renovações — banheiro', '10 por hora', 'ventilação volumétrica preliminar'),
     ('Renovações — cozinha', '12 por hora', 'hipótese de cozinha isolada'),
     ('Fator de utilização', '0,60', 'iluminação — refletâncias e geometria'),
@@ -31,7 +31,7 @@ TAB_TERM = [
 ]
 
 TAB_EXA = [
-    ('EX01', 'Banheiro', '3,80 × 2,42 = 9,20 m³', '× 10', '92,0 m³/h'),
+    ('EX01', 'Banheiro', '3,80 × 2,40 = 9,12 m³', '× 10', '91,2 m³/h'),
     ('CF01', 'Cozinha isolada — hipótese', '8,90 × 2,62 = 23,32 m³', '× 12', '279,8 m³/h'),
 ]
 
@@ -45,8 +45,8 @@ TAB_LUZ = [
 ]
 
 NOTAS = [
-    ['**Correção desde a folha de 11.09: a exaustão do banheiro cai de 99,6 para 92,0 m³/h.',
-     'O volume se calcula com 2,42 m, a altura sob o forro que permanece, e não com os 2,62 m',
+    ['**Correção desde a folha de 11.09: a exaustão do banheiro cai de 99,6 para 91,2 m³/h.',
+     'O volume se calcula com 2,40 m, a altura sob o forro que permanece, e não com os 2,62 m',
      'da laje. A cozinha segue em 2,62 m porque lá a laje é o teto acabado.'],
     ['**A regra 600/800 BTU/h por m² não é cálculo térmico.',
      'Ela não conta pessoas, equipamentos, a claraboia, a piscina sobre a sala, a escada aberta',
@@ -71,7 +71,7 @@ def construir():
     cabecalho(d, 'Ar, exaustão e iluminação: base de cálculo',
               'Pré-dimensionamento de estudo. Não define compra, compatibilidade de equipamento, circuitos, cabos, disjuntores nem perfurações.',
               REV, '45.200 BTU/h na base sol',
-              'exaustão do banheiro corrigida para 92,0 m³/h')
+              'exaustão do banheiro corrigida para 91,2 m³/h')
 
     cx, cw = MARGIN, 648
     fim = tabela(d, cx, 158, cw,

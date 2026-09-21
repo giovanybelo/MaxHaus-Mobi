@@ -140,19 +140,19 @@ AREA_TETO_M2 = AREA_PISCINA_M2
 
 # --- dados do levantamento (relatório Polycam, captura 02.09.2026) ----------
 # Alturas informadas pelo cliente (12.09.2026). O relatório do scan mede 2,40 m
-# com o forro, o que confere com os 2,42 m abaixo; o plenum de 0,20 m é o que
+# com o forro, o que o cliente confirmou em 21.09; o plenum de 0,22 m é o que
 # se ganha ao retirar o forro (D07).
 PE_DIREITO = 2.62          # m, piso ao fundo da laje — depois da demolição
-PE_DIREITO_FORRO = 2.42    # m, altura livre com o forro atual
-PLENUM_FORRO = 0.20        # m, o que o forro consome
+PE_DIREITO_FORRO = 2.40    # m, altura livre com o forro atual (cliente, 21.09)
+PLENUM_FORRO = 0.22        # m, o que o forro consome
 AREA_LIVABLE = 60.2        # m² (soma dos ambientes: 60,30)
 AREA_EXTERIOR = 64.7       # m²
 AREA_PAREDES = 130.4       # m²
-AREA_JANELAS = 14.77       # m² — vão, com as alturas do cliente (o scan dava 12,70)
+AREA_JANELAS = 14.73       # m² — vão, com as alturas do cliente (o scan dava 12,70)
 VOLUME_TOTAL = 144.51      # m³ com forro; 158,0 m³ com a laje aparente
 PERIMETRO_AMBIENTES = 78.1 # m
 
-# J06 é do piso ao teto: 2,42 m de altura livre menos 0,15 m de apoio no topo
+# J06 é do piso ao teto: 2,40 m de altura livre menos 0,15 m de apoio no topo
 # e 0,10 m de peitoril — os únicos 0,10 m de peitoril medidos até agora.
 # esquadrias: (id, tipo, ambiente, larg, alt, área, situação)
 ESQUADRIAS = [
@@ -161,7 +161,7 @@ ESQUADRIAS = [
     ('J03', 'Janela', 'Sala',     1.00, 1.63, 1.63, 'manter'),
     ('J04', 'Janela', 'Quarto',   1.20, 1.63, 1.96, 'manter'),
     ('J05', 'Janela', 'Quarto',   1.20, 1.63, 1.96, 'manter'),
-    ('J06', 'Janela', 'Closet',   2.00, 2.17, 4.34, 'manter — do piso ao teto'),
+    ('J06', 'Janela', 'Closet',   2.00, 2.15, 4.30, 'manter — do piso ao teto'),
     ('P01', 'Porta',  'Entrada',  1.00, 2.29, 2.29, 'manter'),
     ('P02', 'Porta',  'Banheiro', 0.80, 2.00, 1.64, 'giro invertido — abre p/ escada'),
     ('P03', 'Porta de correr', 'Quarto', 1.00, 2.29, 2.29, 'nova, na drywall R01'),

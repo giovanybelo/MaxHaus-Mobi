@@ -55,7 +55,7 @@ TAB_PISO_WC = [
 ]
 TAB_INST_WC = [
     ('EM',   'Embutidos no forro — 2 pontos, eixo a 4,85 m', '2 pontos'),
-    ('EX01', 'Exaustor no forro — 92,0 m³/h de referência', '1 ponto'),
+    ('EX01', 'Exaustor no forro — 91,2 m³/h de referência', '1 ponto'),
     ('T17',  'Tomada do lavatório, a validar em volume de proteção', '1 ponto'),
     ('S03',  'Comando das arandelas do espelho, junto à bancada', '1 ponto'),
     ('S04',  'Comando do banheiro, fora do ambiente, na quina do box', '1 ponto'),
@@ -64,7 +64,7 @@ TAB_INST_WC = [
 
 NOTAS = [
     ['**O banheiro é o único ambiente que mantém forro.',
-     'Altura livre de 2,42 m, contra 2,62 m no resto do pavimento, onde a laje fica aparente.',
+     'Altura livre de 2,40 m, contra 2,62 m no resto do pavimento, onde a laje fica aparente.',
      'É por isso que só aqui cabem embutido e exaustor — fora daqui, tudo é aplicado na laje.'],
     ['**Descer até a laje e voltar na cota da casa é o problema desta folha.',
      'O piso, a base e o rebaixo saem (D03) e o pavimento passa a ter cota única (P05): a soleira',
@@ -182,7 +182,7 @@ def teto_refletido(d, ox, oy, S):
     d.rect(cx - 11, cy - 8, 22, 16, fill=CIANO35, stroke=K, sw=1.2)
     d.txt(cx, cy + 3.4, 'EX01', 6.4, K, 'bold', 'middle', ls=0.3)
     cx, cy = d.P((WC_O + WC_L) / 2.0, WC_S - 6.0)
-    d.txt(cx, cy, 'forro mantido  ·  2,42 m livres', 6.6, INK_SOFT, 'normal',
+    d.txt(cx, cy, 'forro mantido  ·  2,40 m livres', 6.6, INK_SOFT, 'normal',
           'middle', ls=0.3)
     # pontos existentes
     for (ident, xm, ym, nome) in (('E1', 2.55, 5.15, ''), ('E2', 3.05, 5.15, ''),
@@ -288,7 +288,7 @@ def construir():
     cabecalho(d, 'Banheiro: planta detalhada',
               'O trecho mais denso do pavimento, em escala grande. Desce até a laje, mantém forro e volta na cota única da casa. Cotas em faces internas, com o revestimento retirado.',
               REV, '1,43 × 2,64 m  ·  3,80 m²',
-              'único ambiente com forro — 2,42 m livres')
+              'único ambiente com forro — 2,40 m livres')
 
     S = 118.0
     OY = 222.0

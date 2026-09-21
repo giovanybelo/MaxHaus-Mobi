@@ -3,7 +3,7 @@
 
 Refaz a folha de quantitativos do banheiro recebida em 11.09.2026, com a
 correção que muda o resultado: o banheiro mantém forro, então o revestimento
-sobe até 2,42 m e não até 2,62 m.
+sobe até 2,40 m e não até 2,62 m.
 """
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -12,7 +12,7 @@ from base_mainfloor import *      # noqa
 REV = 'REV. M'
 PRANCHA = 'Prancha 10 / 12'
 
-H_REV = 2.42          # altura de revestimento: até o forro
+H_REV = 2.40          # altura de revestimento: até o forro
 LARG_BOX, PROF_BOX = 1.432, 0.930
 PERIM, PISO = 8.139, 3.80
 RUN_BOX = LARG_BOX + 2 * PROF_BOX
@@ -21,7 +21,7 @@ VAO_PORTA = 0.80 * 2.00
 
 TAB_PREM = [
     ('Perímetro interno', '8,14 m', 'faces com revestimento retirado', 'scan · confere com 8,10 do CSV'),
-    ('Altura de revestimento', '2,42 m', 'até o forro, que permanece', 'CORRIGIDO — não 2,62'),
+    ('Altura de revestimento', '2,40 m', 'até o forro, que permanece', 'CORRIGIDO — não 2,62'),
     ('Largura do box', '1,43 m', 'toda a largura do banheiro', 'scan · 1,40 arredondado no CSV'),
     ('Profundidade do box', '0,93 m', 'do vidro K01 à parede R02', 'scan · 0,90 arredondado no CSV'),
     ('Paredes revestidas do box', '3', 'fundo R02 e duas laterais', 'a frente é o vidro K01'),
@@ -34,15 +34,15 @@ TAB_PREM = [
 TAB_SUP = [
     ('Piso do box', '1,43 × 0,93', '1,33', '0,13', '1,46'),
     ('Piso fora do box', '3,80 − 1,33', '2,47', '0,25', '2,72'),
-    ('Paredes do box', '(1,43 + 2 × 0,93) × 2,42', '7,97', '0,80', '8,77'),
-    ('Outras paredes', '4,85 × 2,42 − 1,60', '10,13', '1,01', '11,14'),
-    ('Total', 'pisos + todas as paredes', '21,90', '2,19', '24,09'),
+    ('Paredes do box', '(1,43 + 2 × 0,93) × 2,40', '7,90', '0,79', '8,69'),
+    ('Outras paredes', '4,85 × 2,40 − 1,60', '10,03', '1,00', '11,03'),
+    ('Total', 'pisos + todas as paredes', '21,73', '2,17', '23,90'),
 ]
 
 TAB_ANTES = [
     ('Total anterior', '23,38 m²', '25,72 m²', 'revestia até 2,62 m'),
-    ('Total corrigido', '21,90 m²', '24,09 m²', 'reveste até 2,42 m'),
-    ('Diferença', '−1,48 m²', '−1,63 m²', '6,3% a menos de material'),
+    ('Total corrigido', '21,73 m²', '23,90 m²', 'reveste até 2,40 m'),
+    ('Diferença', '−1,65 m²', '−1,82 m²', '7,1% a menos de material'),
 ]
 
 TAB_LOUCA = [
@@ -58,15 +58,15 @@ TAB_LOUCA = [
 
 NOTAS = [
     ['**A correção que muda a compra: o banheiro é o único ambiente que mantém forro.',
-     'A altura livre lá dentro é 2,42 m, não os 2,62 m da laje. Revestir até 2,62 m mede parede',
-     'que não existe — acima do forro. O total cai de 23,38 para 21,90 m² líquidos, e de 25,72',
-     'para 24,09 m² com a perda de 10%.'],
+     'A altura livre lá dentro é 2,40 m, não os 2,62 m da laje. Revestir até 2,62 m mede parede',
+     'que não existe — acima do forro. O total cai de 23,38 para 21,73 m² líquidos, e de 25,72',
+     'para 23,90 m² com a perda de 10%.'],
     ['**O box é uma parcela do banheiro, não um adicional.',
      'Suas três paredes revestidas ocupam 3,29 m dos 8,14 m de perímetro; as outras paredes são',
      'os 4,85 m restantes. Somar box e perímetro cheio contaria a mesma parede duas vezes.'],
     ['**O total é acabamento futuro, não área a demolir.',
      'A demolição do banheiro mede 3,80 m² de piso mais as paredes revestidas existentes, que só',
-     'se conhecem em campo. Os 21,90 m² acima são o que volta, não o que sai.'],
+     'se conhecem em campo. Os 21,73 m² acima são o que volta, não o que sai.'],
     ['**Impermeabilização é sistema à parte do revestimento.',
      'Rodapé virado, ralo, cantos, passagens e ensaio de estanqueidade entram antes de assentar',
      'qualquer peça, e a quantidade de produto depende do sistema escolhido. Não está embutida',
@@ -104,7 +104,7 @@ def diagrama_box(d, x, y, esc=92.0):
     d.txt(x - 10, y + (h_seca + h_box) / 2.0, '2,64 m', 7.2, DIM_TXT, 'normal', 'middle', rot=-90.0)
     d.txt(x + w + 40, y + 16, 'altura de', 7.0, INK_SOFT, 'normal', 'start')
     d.txt(x + w + 40, y + 27, 'revestimento', 7.0, INK_SOFT, 'normal', 'start')
-    d.txt(x + w + 40, y + 40, '2,42 m', 9.0, DEMO, 'bold', 'start', ls=0.4)
+    d.txt(x + w + 40, y + 40, '2,40 m', 9.0, DEMO, 'bold', 'start', ls=0.4)
     d.txt(x + w + 40, y + 52, 'até o forro', 6.8, INK_SOFT, 'normal', 'start')
     return y + h_seca + h_box + 34
 
@@ -113,8 +113,8 @@ def construir():
     d = folha_nova()
     cabecalho(d, 'Banheiro: louças, metais e revestimentos',
               'Quantitativo de acabamento sobre o layout existente. Pontos hidráulicos mantidos como hipótese até confirmar água, esgoto, aquecimento e interferência na laje.',
-              REV, '21,90 m² líquidos  ·  24,09 m² com 10%',
-              'revestimento até 2,42 m — o forro fica')
+              REV, '21,73 m² líquidos  ·  23,90 m² com 10%',
+              'revestimento até 2,40 m — o forro fica')
 
     cx, cw = MARGIN, 640
     fim = tabela(d, cx, 158, cw,

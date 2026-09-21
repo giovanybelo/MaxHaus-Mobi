@@ -154,8 +154,8 @@
 <text x="144.0" y="867.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Cálculo de referência</text>
 <text x="662.0" y="867.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Vazão</text>
 <text x="78.0" y="885.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">EX01</text>
-<text x="144.0" y="885.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Banheiro — 3,80 m² × 2,42 m × 10 trocas/h</text>
-<text x="662.0" y="885.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">92,0 m³/h</text>
+<text x="144.0" y="885.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Banheiro — 3,80 m² × 2,40 m × 10 trocas/h</text>
+<text x="662.0" y="885.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">91,2 m³/h</text>
 <line x1="70.00" y1="892.07" x2="670.00" y2="892.07" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="70.00" y="892.07" width="600.00" height="18.00" fill="#f5f5f5"/>
 <text x="78.0" y="903.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">CF01</text>

@@ -68,7 +68,7 @@ TAB_AR = [
 
 NOTAS = [
     ['**Não há forro: a laje de concreto é o teto acabado, a 2,62 m do piso.',
-     'Com o forro atual são 2,42 m; a retirada (D07) devolve os 0,20 m de plenum. É nessa faixa que',
+     'Com o forro atual são 2,40 m; a retirada (D07) devolve os 0,22 m de plenum. É nessa faixa que',
      'entram trilho, perfilado e evaporadora — e é ela que dá os 0,33 m acima da porta de correr de',
      '2,29 m. Fora do banheiro, único ambiente que mantém forro, nada de embutido.'],
     ['**Fiação e infraestrutura ficam à vista.',
@@ -98,7 +98,7 @@ NOTAS = [
      'depende de confirmar apoio acima do limite sala/jantar e o modelo da condensadora existente:',
      'não assumir que ela admite duas evaporadoras.'],
     ['**Vazões de referência, a validar com perda de carga do duto:',
-     'banheiro 3,8 × 2,42 × 10 = 92,0 m³/h (mantém forro); coifa 8,9 × 2,62 × 12 = 279,8 m³/h — o',
+     'banheiro 3,8 × 2,40 × 10 = 91,2 m³/h (mantém forro); coifa 8,9 × 2,62 × 12 = 279,8 m³/h — o',
      'segundo só valeria com cozinha isolada; integrada, seleciona-se por captura. Rotas próprias.'],
 ]
 

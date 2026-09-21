@@ -637,7 +637,7 @@ TAB_BTU = [
 ]
 
 TAB_VAZAO = [
-    ('EX01', 'Banheiro — 3,80 m² × 2,42 m × 10 trocas/h', '92,0 m³/h'),
+    ('EX01', 'Banheiro — 3,80 m² × 2,40 m × 10 trocas/h', '91,2 m³/h'),
     ('CF01', 'Cozinha — 8,90 m² × 2,62 m × 12 trocas/h', '279,8 m³/h'),
 ]
 

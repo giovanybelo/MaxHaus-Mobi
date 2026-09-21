@@ -5,7 +5,7 @@
 <text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">O trecho mais denso do pavimento, em escala grande. Desce até a laje, mantém forro e volta na cota única da casa. Cotas em faces internas, com o revestimento retirado.</text>
 <text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. M</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">1,43 × 2,64 m  ·  3,80 m²</text>
-<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">único ambiente com forro — 2,42 m livres</text>
+<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">único ambiente com forro — 2,40 m livres</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="190.0" y="148.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="start">PLANTA  ·  faces internas</text>
 <rect x="201.81" y="233.81" width="168.94" height="311.28" fill="#d6ffff"/>
@@ -120,7 +120,7 @@
 <text x="587.6" y="263.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.30">EM</text>
 <rect x="589.62" y="408.93" width="22.00" height="16.00" fill="#a6ffff" stroke="#000000" stroke-width="1.20"/>
 <text x="600.6" y="420.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.30">EX01</text>
-<text x="588.3" y="529.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" letter-spacing="0.30">forro mantido  ·  2,42 m livres</text>
+<text x="588.3" y="529.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" letter-spacing="0.30">forro mantido  ·  2,40 m livres</text>
 <circle cx="540.44" cy="309.55" r="4.20" fill="none" stroke="#8c8c8c" stroke-width="1.00"/>
 <text x="547.4" y="311.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.0" fill="#8c8c8c" font-weight="normal" text-anchor="start">E1</text>
 <circle cx="599.44" cy="309.55" r="4.20" fill="none" stroke="#8c8c8c" stroke-width="1.00"/>
@@ -176,14 +176,14 @@
 <rect x="470.00" y="690.12" width="88.20" height="9.00" fill="#cccccc" stroke="#000000" stroke-width="0.90"/>
 <rect x="470.00" y="829.12" width="88.20" height="7.00" fill="#ededed" stroke="#000000" stroke-width="0.90"/>
 <rect x="470.00" y="699.12" width="88.20" height="130.00" fill="#ffffff" stroke="#8c8c8c" stroke-width="0.50"/>
-<rect x="470.00" y="699.12" width="88.20" height="9.92" fill="#d6ffff" stroke="#00ffff" stroke-width="0.90"/>
-<line x1="470.00" y1="709.04" x2="558.20" y2="709.04" stroke="#000000" stroke-width="1.60"/>
-<text x="514.1" y="706.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="5.8" fill="#000000" font-weight="normal" text-anchor="middle">0,20  plenum</text>
-<text x="514.1" y="719.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">forro</text>
-<line x1="484.00" y1="709.04" x2="484.00" y2="829.12" stroke="#8c8c8c" stroke-width="0.70"/>
-<line x1="481.00" y1="712.04" x2="487.00" y2="706.04" stroke="#8c8c8c" stroke-width="1.10"/>
+<rect x="470.00" y="699.12" width="88.20" height="10.92" fill="#d6ffff" stroke="#00ffff" stroke-width="0.90"/>
+<line x1="470.00" y1="710.04" x2="558.20" y2="710.04" stroke="#000000" stroke-width="1.60"/>
+<text x="514.1" y="707.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="5.8" fill="#000000" font-weight="normal" text-anchor="middle">0,20  plenum</text>
+<text x="514.1" y="720.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">forro</text>
+<line x1="484.00" y1="710.04" x2="484.00" y2="829.12" stroke="#8c8c8c" stroke-width="0.70"/>
+<line x1="481.00" y1="713.04" x2="487.00" y2="707.04" stroke="#8c8c8c" stroke-width="1.10"/>
 <line x1="481.00" y1="832.12" x2="487.00" y2="826.12" stroke="#8c8c8c" stroke-width="1.10"/>
-<text x="480.0" y="769.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 480.0 769.1)">2,42</text>
+<text x="480.0" y="769.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 480.0 769.6)">2,40</text>
 <text x="514.1" y="849.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.8" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.40">BANHEIRO</text>
 <rect x="591.80" y="690.12" width="88.20" height="9.00" fill="#cccccc" stroke="#000000" stroke-width="0.90"/>
 <rect x="591.80" y="829.12" width="88.20" height="7.00" fill="#ededed" stroke="#000000" stroke-width="0.90"/>
@@ -280,7 +280,7 @@
 <line x1="722.00" y1="586.00" x2="1352.00" y2="586.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="586.00" width="630.00" height="18.00" fill="#f5f5f5"/>
 <text x="730.0" y="597.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">EX01</text>
-<text x="811.9" y="597.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Exaustor no forro — 92,0 m³/h de referência</text>
+<text x="811.9" y="597.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Exaustor no forro — 91,2 m³/h de referência</text>
 <text x="1344.0" y="597.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1 ponto</text>
 <line x1="722.00" y1="604.00" x2="1352.00" y2="604.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="615.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">T17</text>
@@ -302,7 +302,7 @@
 <text x="1344.0" y="669.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">3 pontos</text>
 <line x1="722.00" y1="676.00" x2="1352.00" y2="676.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="722.0" y="702.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#000000" font-weight="bold" text-anchor="start">O banheiro é o único ambiente que mantém forro.</text>
-<text x="722.0" y="713.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Altura livre de 2,42 m, contra 2,62 m no resto do pavimento, onde a laje fica aparente.</text>
+<text x="722.0" y="713.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Altura livre de 2,40 m, contra 2,62 m no resto do pavimento, onde a laje fica aparente.</text>
 <text x="722.0" y="725.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">É por isso que só aqui cabem embutido e exaustor — fora daqui, tudo é aplicado na laje.</text>
 <text x="722.0" y="743.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#000000" font-weight="bold" text-anchor="start">Descer até a laje e voltar na cota da casa é o problema desta folha.</text>
 <text x="722.0" y="755.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">O piso, a base e o rebaixo saem (D03) e o pavimento passa a ter cota única (P05): a soleira</text>

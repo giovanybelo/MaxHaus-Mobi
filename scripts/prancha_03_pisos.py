@@ -40,6 +40,10 @@ TAB_B = [
 ]
 
 NOTAS_A = [
+    ['**A zona monolítica da opção A quase não tem problema de junta.',
+     'São 11,81 m² num pano estreito: cabe em um ou dois painéis, e a junta de material com o',
+     'cumaru já resolve a maior parte do movimento. O desenho de juntas vira questão de verdade',
+     'só na opção B, com 56,50 m² contínuos — ver a Prancha 04.'],
     ['**Cozinha e closet formam uma zona monolítica só.',
      'A zona é um retângulo contínuo, da parede oeste até a linha da sala e do degrau até a fachada',
      'sul, passando pela abertura entre cozinha e closet. O corredor da entrada e a escada ficam em',
@@ -74,10 +78,22 @@ NOTAS_B = [
      'O piso corre contínuo da entrada ao quarto. Não há curva porque não há encontro de materiais:',
      'a ponta em curva da cozinha só existe na opção A. As únicas transições são a soleira do',
      'banheiro — sem degrau — e a da porta de entrada.'],
-    ['**Juntas de movimentação são projeto, não improviso de obra.',
-     'Monolítico contínuo em 56,50 m² trabalha: prever juntas conforme o sistema escolhido, nos vãos',
-     'de porta e nos encontros com a estrutura. Posição e desenho entram no executivo, junto com o',
-     'fornecedor — uma trinca num piso sem junta não tem remendo invisível.'],
+    ['**Contínuo não quer dizer sem junta — e quantas juntas depende do sistema.',
+     'Cimentício (cimento queimado, concreto polido, autonivelante aparente) retrai ao curar e',
+     'acompanha o movimento da laje: trabalha em painéis de 3 a 6 m de lado, próximos do quadrado,',
+     'o que dá de 4 a 8 juntas nos 56,50 m². Microcimento de 2 a 3 mm, com tela e primer, reduz as',
+     'juntas às do substrato e à dessolidarização de perímetro. Resina epóxi ou poliuretano fecha',
+     'contínuo de verdade, mas tem cara de resina e não de concreto.'],
+    ['**Três juntas são obrigatórias em qualquer sistema.',
+     'Sobre junta estrutural ou linha de viga, porque ali a laje se move e o acabamento trinca se',
+     'for contínuo. No perímetro, para o pano poder trabalhar sem romper no canto — fica escondida',
+     'no rodapé. E na parada de concretagem, onde a aplicação do dia terminou.',
+     'A boa notícia: a casa já tem lugares naturais para elas — a soleira da entrada, a do banheiro',
+     'e a linha da porta de correr entre sala e quarto.'],
+    ['**Peça a paginação de juntas junto com a proposta, antes de assinar.',
+     'Quem desenha as juntas escolhe onde a trinca vai aparecer; quem não desenha deixa o material',
+     'escolher. Fornecedor que promete 56,50 m² sem nenhuma junta ou está propondo resina, ou não',
+     'vai entregar o que prometeu — trinca em piso monolítico não tem remendo invisível.'],
     ['**A base manda no resultado — o monolítico copia o que está embaixo.',
      'Depois de retirar os pisos (D08), todo o contrapiso é lixado, regularizado e nivelado (P06),',
      'com conferência de aderência, umidade e fissuras. Espessura, sistema e acabamento ainda não',
@@ -89,9 +105,6 @@ NOTAS_B = [
     ['**Sequência importa mais que no piso em réguas.',
      'O monolítico entra depois das paredes prontas e antes da marcenaria: o closet (M01) só volta',
      'depois do piso curado. Prever tempo de cura e proteção da superfície até o fim da obra.'],
-    ['**Sem reserva de corte, o que não significa margem zero.',
-     'Aplicação moldada in loco não tem perda de régua, mas prever retrabalho de textura e acerto de',
-     'bordas. Os degraus da escada estão fora da conta; o piso sob a escada permanece.'],
 ]
 
 

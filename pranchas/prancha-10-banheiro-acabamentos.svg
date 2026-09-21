@@ -4,8 +4,8 @@
 <text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Banheiro: louças, metais e revestimentos</text>
 <text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Quantitativo de acabamento sobre o layout existente. Pontos hidráulicos mantidos como hipótese até confirmar água, esgoto, aquecimento e interferência na laje.</text>
 <text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. M</text>
-<text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">21,90 m² líquidos  ·  24,09 m² com 10%</text>
-<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">revestimento até 2,42 m — o forro fica</text>
+<text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">21,73 m² líquidos  ·  23,90 m² com 10%</text>
+<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">revestimento até 2,40 m — o forro fica</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="48.0" y="149.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">PREMISSAS DO CÁLCULO</text>
 <rect x="48.00" y="158.00" width="640.00" height="20.00" fill="#e0e0e0"/>
@@ -20,7 +20,7 @@
 <line x1="48.00" y1="197.00" x2="688.00" y2="197.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="48.00" y="197.00" width="640.00" height="19.00" fill="#f5f5f5"/>
 <text x="56.0" y="209.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Altura de revestimento</text>
-<text x="235.2" y="209.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">2,42 m</text>
+<text x="235.2" y="209.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">2,40 m</text>
 <text x="350.4" y="209.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">até o forro, que permanece</text>
 <text x="680.0" y="209.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">CORRIGIDO — não 2,62</text>
 <line x1="48.00" y1="216.00" x2="688.00" y2="216.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
@@ -83,23 +83,23 @@
 <text x="680.0" y="438.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">2,72</text>
 <line x1="48.00" y1="445.00" x2="688.00" y2="445.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="56.0" y="457.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Paredes do box</text>
-<text x="209.6" y="457.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">(1,43 + 2 × 0,93) × 2,42</text>
-<text x="488.0" y="457.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">7,97</text>
-<text x="577.6" y="457.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,80</text>
-<text x="680.0" y="457.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">8,77</text>
+<text x="209.6" y="457.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">(1,43 + 2 × 0,93) × 2,40</text>
+<text x="488.0" y="457.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">7,90</text>
+<text x="577.6" y="457.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,79</text>
+<text x="680.0" y="457.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">8,69</text>
 <line x1="48.00" y1="464.00" x2="688.00" y2="464.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="48.00" y="464.00" width="640.00" height="19.00" fill="#f5f5f5"/>
 <text x="56.0" y="476.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Outras paredes</text>
-<text x="209.6" y="476.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">4,85 × 2,42 − 1,60</text>
-<text x="488.0" y="476.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">10,13</text>
-<text x="577.6" y="476.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,01</text>
-<text x="680.0" y="476.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">11,14</text>
+<text x="209.6" y="476.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">4,85 × 2,40 − 1,60</text>
+<text x="488.0" y="476.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">10,03</text>
+<text x="577.6" y="476.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,00</text>
+<text x="680.0" y="476.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">11,03</text>
 <line x1="48.00" y1="483.00" x2="688.00" y2="483.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="56.0" y="495.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Total</text>
 <text x="209.6" y="495.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">pisos + todas as paredes</text>
-<text x="488.0" y="495.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">21,90</text>
-<text x="577.6" y="495.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">2,19</text>
-<text x="680.0" y="495.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">24,09</text>
+<text x="488.0" y="495.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">21,73</text>
+<text x="577.6" y="495.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">2,17</text>
+<text x="680.0" y="495.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">23,90</text>
 <line x1="48.00" y1="502.00" x2="688.00" y2="502.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="48.0" y="531.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">O QUE MUDOU DESDE A FOLHA DE 11.09</text>
 <rect x="48.00" y="540.00" width="640.00" height="20.00" fill="#e0e0e0"/>
@@ -114,14 +114,14 @@
 <line x1="48.00" y1="579.00" x2="688.00" y2="579.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="48.00" y="579.00" width="640.00" height="19.00" fill="#f5f5f5"/>
 <text x="56.0" y="591.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Total corrigido</text>
-<text x="347.2" y="591.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">21,90 m²</text>
-<text x="475.2" y="591.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">24,09 m²</text>
-<text x="680.0" y="591.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">reveste até 2,42 m</text>
+<text x="347.2" y="591.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">21,73 m²</text>
+<text x="475.2" y="591.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">23,90 m²</text>
+<text x="680.0" y="591.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">reveste até 2,40 m</text>
 <line x1="48.00" y1="598.00" x2="688.00" y2="598.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="56.0" y="610.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Diferença</text>
-<text x="347.2" y="610.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">−1,48 m²</text>
-<text x="475.2" y="610.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">−1,63 m²</text>
-<text x="680.0" y="610.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">6,3% a menos de material</text>
+<text x="347.2" y="610.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">−1,65 m²</text>
+<text x="475.2" y="610.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">−1,82 m²</text>
+<text x="680.0" y="610.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">7,1% a menos de material</text>
 <line x1="48.00" y1="617.00" x2="688.00" y2="617.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <line x1="716.00" y1="140.00" x2="716.00" y2="916.00" stroke="#cccccc" stroke-width="0.80" opacity="0.80"/>
 <text x="748.0" y="149.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">LOUÇAS E METAIS</text>
@@ -175,15 +175,15 @@
 <text x="1344.0" y="323.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">Fora do total de compra</text>
 <line x1="748.00" y1="330.00" x2="1352.00" y2="330.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="748.0" y="360.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#000000" font-weight="bold" text-anchor="start">A correção que muda a compra: o banheiro é o único ambiente que mantém forro.</text>
-<text x="748.0" y="371.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">A altura livre lá dentro é 2,42 m, não os 2,62 m da laje. Revestir até 2,62 m mede parede</text>
-<text x="748.0" y="383.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">que não existe — acima do forro. O total cai de 23,38 para 21,90 m² líquidos, e de 25,72</text>
-<text x="748.0" y="395.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">para 24,09 m² com a perda de 10%.</text>
+<text x="748.0" y="371.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">A altura livre lá dentro é 2,40 m, não os 2,62 m da laje. Revestir até 2,62 m mede parede</text>
+<text x="748.0" y="383.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">que não existe — acima do forro. O total cai de 23,38 para 21,73 m² líquidos, e de 25,72</text>
+<text x="748.0" y="395.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">para 23,90 m² com a perda de 10%.</text>
 <text x="748.0" y="413.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#000000" font-weight="bold" text-anchor="start">O box é uma parcela do banheiro, não um adicional.</text>
 <text x="748.0" y="425.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Suas três paredes revestidas ocupam 3,29 m dos 8,14 m de perímetro; as outras paredes são</text>
 <text x="748.0" y="437.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">os 4,85 m restantes. Somar box e perímetro cheio contaria a mesma parede duas vezes.</text>
 <text x="748.0" y="455.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#000000" font-weight="bold" text-anchor="start">O total é acabamento futuro, não área a demolir.</text>
 <text x="748.0" y="467.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">A demolição do banheiro mede 3,80 m² de piso mais as paredes revestidas existentes, que só</text>
-<text x="748.0" y="479.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">se conhecem em campo. Os 21,90 m² acima são o que volta, não o que sai.</text>
+<text x="748.0" y="479.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">se conhecem em campo. Os 21,73 m² acima são o que volta, não o que sai.</text>
 <text x="748.0" y="497.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#000000" font-weight="bold" text-anchor="start">Impermeabilização é sistema à parte do revestimento.</text>
 <text x="748.0" y="509.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Rodapé virado, ralo, cantos, passagens e ensaio de estanqueidade entram antes de assentar</text>
 <text x="748.0" y="521.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">qualquer peça, e a quantidade de produto depende do sistema escolhido. Não está embutida</text>
@@ -207,7 +207,7 @@
 <text x="888.0" y="753.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 888.0 753.9)">2,64 m</text>
 <text x="1066.9" y="651.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">altura de</text>
 <text x="1066.9" y="662.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">revestimento</text>
-<text x="1066.9" y="675.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.40">2,42 m</text>
+<text x="1066.9" y="675.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.40">2,40 m</text>
 <text x="1066.9" y="687.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">até o forro</text>
 <line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="48.0" y="940.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Geometria interna do scan de 02.09.2026 nas faces de revestimento retirado: 1,432 × 2,638 m. O CSV arredonda box e perímetro; esta folha usa o medido e mostra os dois.</text>

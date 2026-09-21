@@ -5,7 +5,7 @@
 <text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Pré-dimensionamento de estudo. Não define compra, compatibilidade de equipamento, circuitos, cabos, disjuntores nem perfurações.</text>
 <text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. M</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">45.200 BTU/h na base sol</text>
-<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">exaustão do banheiro corrigida para 92,0 m³/h</text>
+<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">exaustão do banheiro corrigida para 91,2 m³/h</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="48.0" y="149.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">PREMISSAS — O QUE A CONTA ASSUME</text>
 <rect x="48.00" y="158.00" width="648.00" height="20.00" fill="#e0e0e0"/>
@@ -27,7 +27,7 @@
 <line x1="48.00" y1="235.00" x2="696.00" y2="235.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="48.00" y="235.00" width="648.00" height="19.00" fill="#f5f5f5"/>
 <text x="56.0" y="247.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Altura do banheiro</text>
-<text x="250.4" y="247.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">2,42 m</text>
+<text x="250.4" y="247.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">2,40 m</text>
 <text x="405.9" y="247.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">sob o forro, que permanece</text>
 <line x1="48.00" y1="254.00" x2="696.00" y2="254.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="56.0" y="266.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Renovações — banheiro</text>
@@ -87,9 +87,9 @@
 <text x="688.0" y="515.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Vazão</text>
 <text x="56.0" y="534.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">EX01</text>
 <text x="114.3" y="534.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Banheiro</text>
-<text x="295.8" y="534.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">3,80 × 2,42 = 9,20 m³</text>
+<text x="295.8" y="534.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">3,80 × 2,40 = 9,12 m³</text>
 <text x="539.0" y="534.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">× 10</text>
-<text x="688.0" y="534.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">92,0 m³/h</text>
+<text x="688.0" y="534.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">91,2 m³/h</text>
 <line x1="48.00" y1="541.00" x2="696.00" y2="541.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="48.00" y="541.00" width="648.00" height="19.00" fill="#f5f5f5"/>
 <text x="56.0" y="553.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">CF01</text>
@@ -152,8 +152,8 @@
 <text x="688.0" y="725.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">espelho frontal e balizamento</text>
 <line x1="48.00" y1="732.00" x2="696.00" y2="732.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <line x1="724.00" y1="140.00" x2="724.00" y2="916.00" stroke="#cccccc" stroke-width="0.80" opacity="0.80"/>
-<text x="756.0" y="168.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="bold" text-anchor="start">Correção desde a folha de 11.09: a exaustão do banheiro cai de 99,6 para 92,0 m³/h.</text>
-<text x="756.0" y="180.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">O volume se calcula com 2,42 m, a altura sob o forro que permanece, e não com os 2,62 m</text>
+<text x="756.0" y="168.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="bold" text-anchor="start">Correção desde a folha de 11.09: a exaustão do banheiro cai de 99,6 para 91,2 m³/h.</text>
+<text x="756.0" y="180.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">O volume se calcula com 2,40 m, a altura sob o forro que permanece, e não com os 2,62 m</text>
 <text x="756.0" y="192.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">da laje. A cozinha segue em 2,62 m porque lá a laje é o teto acabado.</text>
 <text x="756.0" y="213.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="bold" text-anchor="start">A regra 600/800 BTU/h por m² não é cálculo térmico.</text>
 <text x="756.0" y="225.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Ela não conta pessoas, equipamentos, a claraboia, a piscina sobre a sala, a escada aberta</text>
