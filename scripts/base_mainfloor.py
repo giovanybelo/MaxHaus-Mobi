@@ -650,11 +650,13 @@ def cabecalho(d, titulo, subtitulo, rev, dir1='', dir2=''):
     if dir2: d.txt(W - MARGIN, 99, dir2, 9.6, INK_SOFT, 'normal', 'end')
     d.line(MARGIN, 116, W - MARGIN, 116, RULE, 1.0)
 
+DATA_EMISSAO = '21/09/2026'
+
 def rodape(d, nota1, nota2, prancha, rev):
     d.line(MARGIN, 922, W - MARGIN, 922, RULE, 1.0)
     if nota1: d.txt(MARGIN, 940, nota1, 8.3, INK_SOFT)
     if nota2: d.txt(MARGIN, 953, nota2, 8.3, INK_SOFT)
-    d.txt(MARGIN, 975, 'ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   12/09/2026',
+    d.txt(MARGIN, 975, 'ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   ' + DATA_EMISSAO,
           9.0, RED, 'bold', ls=0.5)
     d.txt(W - MARGIN, 975, '%s   ·   %s' % (prancha, rev), 9.0, INK_SOFT, 'normal', 'end')
 

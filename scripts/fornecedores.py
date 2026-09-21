@@ -15,7 +15,7 @@ from base_mainfloor import *      # noqa
 
 EMISSAO = 'EMISSÃO 01'
 DATA = '12.09.2026'
-ORIGEM = 'extraído do caderno de estudo REV. L'
+ORIGEM = 'extraído do caderno de estudo REV. M'
 
 # ---------------------------------------------------------------------------
 # FASES GERAIS DA OBRA — a mesma régua nas três folhas

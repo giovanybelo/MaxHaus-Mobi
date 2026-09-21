@@ -11,7 +11,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. L'
+REV = 'REV. M'
 
 AREA_CUMARU = 44.69          # sala + quarto + jantar + corredor
 AREA_CUMARU_RESERVA = 49.16  # + 10% de corte e reposição
@@ -207,7 +207,7 @@ def construir(opcao='A'):
     rodape(d,
            'Revestimento contínuo: toda a área de piso é revestida, inclusive sob móveis e equipamentos — nenhum recorte de mobiliário foi descontado. Áreas conforme o scan de 02.09.2026.',
            'Estudo preliminar de superfície: não substitui especificação de sistema, projeto de juntas nem memorial de aplicação do fornecedor.',
-           'Prancha %s / 08' % ('03' if A else '04'), REV)
+           'Prancha %s / 12' % ('03' if A else '04'), REV)
     return d
 
 

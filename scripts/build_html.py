@@ -211,6 +211,22 @@ BOARDS = [
      'O trecho mais denso do pavimento em escala grande: desce até a laje, mantém forro e volta na cota única da casa.',
      ['<b>1,43 × 2,64 m</b> · 3,80 m²', '<b>2,42 m</b> livres — único com forro',
       '<b>Cota única</b> com a casa, sem degrau', '<b>K01</b> vidro do box que fica']),
+    ('09', 'Base de medição e decisões', 'prancha-09-medicao.svg',
+     'A base de compra do MainFloor, rastreável ao scan — e o que ela não é: a área comercial do duplex.',
+     ['<b>60,30 m²</b> úteis', '<b>130,20 m²</b> de parede',
+      '<b>63,13 m²</b> na malha do OBJ', '<b>2,62 / 2,42 m</b> resolvidos']),
+    ('10', 'Banheiro: louças, metais e revestimentos', 'prancha-10-banheiro-acabamentos.svg',
+     'Quantitativo de acabamento corrigido: o banheiro mantém forro, então o revestimento sobe até 2,42 m e não até 2,62 m.',
+     ['<b>21,90 m²</b> líquidos', '<b>24,09 m²</b> com 10%',
+      '<b>−6,3%</b> sobre a folha de 11.09', '<b>K01</b> medido só no fim']),
+    ('11', 'Ar, exaustão e iluminação: base de cálculo', 'prancha-11-ar-luz.svg',
+     'Premissas explícitas de pré-dimensionamento, com a exaustão do banheiro corrigida pela altura sob o forro.',
+     ['<b>45.200</b> BTU/h base sol', '<b>92,0 m³/h</b> no banheiro',
+      '<b>279,8 m³/h</b> na cozinha', '<b>0,48</b> de divisor de fluxo']),
+    ('12', 'Análise técnica: riscos, impasses e verificações', 'prancha-12-riscos.svg',
+     'Leitura crítica do conjunto: o que é risco de custo, o que é risco técnico e o que trava serviço se não for respondido antes.',
+     ['<b>18</b> pontos catalogados', '<b>3</b> impasses',
+      '<b>Piscina</b> sobre a sala', '<b>Rebaixo</b> contra a cota única']),
 ]
 
 DECISOES = [

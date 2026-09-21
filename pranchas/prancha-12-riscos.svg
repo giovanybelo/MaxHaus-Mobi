@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 990" width="1400" height="990">
+<rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
+<text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
+<text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Análise técnica: riscos, impasses e verificações</text>
+<text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Leitura crítica do conjunto. Separa risco de custo, risco técnico e impasse — a decisão que trava serviço se não for respondida antes de começar.</text>
+<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. M</text>
+<text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">18 pontos  ·  3 impasses</text>
+<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">orientação de escopo, não laudo</text>
+<line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="152.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">REGISTRO DE RISCO — CONJUNTO DO PROJETO</text>
+<rect x="48.00" y="162.00" width="700.00" height="20.00" fill="#e0e0e0"/>
+<text x="56.0" y="175.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">ID</text>
+<text x="94.0" y="175.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Disciplina</text>
+<text x="198.0" y="175.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Ponto</text>
+<text x="740.0" y="175.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Grau</text>
+<text x="56.0" y="198.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">E1</text>
+<text x="94.0" y="198.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Estrutura</text>
+<text x="198.0" y="198.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Piscina de 5,76 m² sobre a sala, em laje que a D07 vai expor</text>
+<rect x="678.00" y="187.50" width="62.00" height="14.00" fill="#ff00ff" stroke="#000000" stroke-width="1.40"/>
+<text x="709.0" y="197.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#ffffff" font-weight="bold" text-anchor="middle" letter-spacing="0.50">IMPASSE</text>
+<line x1="48.00" y1="207.00" x2="748.00" y2="207.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="207.00" width="700.00" height="25.00" fill="#f5f5f5"/>
+<text x="56.0" y="223.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">E2</text>
+<text x="94.0" y="223.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Estrutura</text>
+<text x="198.0" y="223.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Condição real da laje só aparece depois do forro sair — P03 é escopo aberto</text>
+<rect x="678.00" y="212.50" width="62.00" height="14.00" fill="#ffff00" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="222.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ATENÇÃO</text>
+<line x1="48.00" y1="232.00" x2="748.00" y2="232.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="248.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">E3</text>
+<text x="94.0" y="248.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Estrutura</text>
+<text x="198.0" y="248.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Toda fixação de trilho, perfilado e evaporadora fura estrutura</text>
+<rect x="678.00" y="237.50" width="62.00" height="14.00" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="247.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ACOMPANHAR</text>
+<line x1="48.00" y1="257.00" x2="748.00" y2="257.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="257.00" width="700.00" height="25.00" fill="#f5f5f5"/>
+<text x="56.0" y="273.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">H1</text>
+<text x="94.0" y="273.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Hidráulica</text>
+<text x="198.0" y="273.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Rebaixo do banheiro: caimento do esgoto contra a cota única</text>
+<rect x="678.00" y="262.50" width="62.00" height="14.00" fill="#ff00ff" stroke="#000000" stroke-width="1.40"/>
+<text x="709.0" y="272.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#ffffff" font-weight="bold" text-anchor="middle" letter-spacing="0.50">IMPASSE</text>
+<line x1="48.00" y1="282.00" x2="748.00" y2="282.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="298.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">H2</text>
+<text x="94.0" y="298.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Hidráulica</text>
+<text x="198.0" y="298.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Sem degrau, a contenção passa a ser caimento e ralo linear</text>
+<rect x="678.00" y="287.50" width="62.00" height="14.00" fill="#ffff00" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="297.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ATENÇÃO</text>
+<line x1="48.00" y1="307.00" x2="748.00" y2="307.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="307.00" width="700.00" height="25.00" fill="#f5f5f5"/>
+<text x="56.0" y="323.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">H3</text>
+<text x="94.0" y="323.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Hidráulica</text>
+<text x="198.0" y="323.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">D04 pode abrir shaft de prumada — prumada é do condomínio</text>
+<rect x="678.00" y="312.50" width="62.00" height="14.00" fill="#ffff00" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="322.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ATENÇÃO</text>
+<line x1="48.00" y1="332.00" x2="748.00" y2="332.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="348.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">H4</text>
+<text x="94.0" y="348.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Hidráulica</text>
+<text x="198.0" y="348.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Pressão e água quente não levantadas; o chuveiro depende delas</text>
+<rect x="678.00" y="337.50" width="62.00" height="14.00" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="347.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ACOMPANHAR</text>
+<line x1="48.00" y1="357.00" x2="748.00" y2="357.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="357.00" width="700.00" height="25.00" fill="#f5f5f5"/>
+<text x="56.0" y="373.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">L1</text>
+<text x="94.0" y="373.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Elétrica</text>
+<text x="198.0" y="373.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Folha da porta de entrada varre o quadro de distribuição</text>
+<rect x="678.00" y="362.50" width="62.00" height="14.00" fill="#ff00ff" stroke="#000000" stroke-width="1.40"/>
+<text x="709.0" y="372.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#ffffff" font-weight="bold" text-anchor="middle" letter-spacing="0.50">IMPASSE</text>
+<line x1="48.00" y1="382.00" x2="748.00" y2="382.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="398.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">L2</text>
+<text x="94.0" y="398.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Elétrica</text>
+<text x="198.0" y="398.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Condensadora existente: modelo e nº de evaporadoras desconhecidos</text>
+<rect x="678.00" y="387.50" width="62.00" height="14.00" fill="#ffff00" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="397.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ATENÇÃO</text>
+<line x1="48.00" y1="407.00" x2="748.00" y2="407.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="407.00" width="700.00" height="25.00" fill="#f5f5f5"/>
+<text x="56.0" y="423.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">L3</text>
+<text x="94.0" y="423.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Elétrica</text>
+<text x="198.0" y="423.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Demanda nova sobre instalação de 17 anos — quadro e ramal a dimensionar</text>
+<rect x="678.00" y="412.50" width="62.00" height="14.00" fill="#ffff00" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="422.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ATENÇÃO</text>
+<line x1="48.00" y1="432.00" x2="748.00" y2="432.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="448.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">L4</text>
+<text x="94.0" y="448.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Elétrica</text>
+<text x="198.0" y="448.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Faixa de 1,00 m a leste do vão da porta de correr é reservada</text>
+<rect x="678.00" y="437.50" width="62.00" height="14.00" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="447.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ACOMPANHAR</text>
+<line x1="48.00" y1="457.00" x2="748.00" y2="457.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="457.00" width="700.00" height="25.00" fill="#f5f5f5"/>
+<text x="56.0" y="473.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">A1</text>
+<text x="94.0" y="473.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Acabamento</text>
+<text x="198.0" y="473.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Monolítico de 56,50 m² não existe sem junta de movimentação</text>
+<rect x="678.00" y="462.50" width="62.00" height="14.00" fill="#ffff00" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="472.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ATENÇÃO</text>
+<line x1="48.00" y1="482.00" x2="748.00" y2="482.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="498.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">A2</text>
+<text x="94.0" y="498.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Acabamento</text>
+<text x="198.0" y="498.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Cumaru sobre contrapiso de 17 anos: umidade e folga de movimentação</text>
+<rect x="678.00" y="487.50" width="62.00" height="14.00" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="497.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ACOMPANHAR</text>
+<line x1="48.00" y1="507.00" x2="748.00" y2="507.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="507.00" width="700.00" height="25.00" fill="#f5f5f5"/>
+<text x="56.0" y="523.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">A3</text>
+<text x="94.0" y="523.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Acabamento</text>
+<text x="198.0" y="523.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">P06 pode não bastar: contrapiso trincado pede autonivelante</text>
+<rect x="678.00" y="512.50" width="62.00" height="14.00" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="522.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ACOMPANHAR</text>
+<line x1="48.00" y1="532.00" x2="748.00" y2="532.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="548.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">C1</text>
+<text x="94.0" y="548.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Condomínio</text>
+<text x="198.0" y="548.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Rota de descarte da coifa pode não existir</text>
+<rect x="678.00" y="537.50" width="62.00" height="14.00" fill="#ff00ff" stroke="#000000" stroke-width="1.40"/>
+<text x="709.0" y="547.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#ffffff" font-weight="bold" text-anchor="middle" letter-spacing="0.50">IMPASSE</text>
+<line x1="48.00" y1="557.00" x2="748.00" y2="557.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="557.00" width="700.00" height="25.00" fill="#f5f5f5"/>
+<text x="56.0" y="573.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">C2</text>
+<text x="94.0" y="573.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Condomínio</text>
+<text x="198.0" y="573.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Exaustor do banheiro: mesma pergunta de rota e fachada</text>
+<rect x="678.00" y="562.50" width="62.00" height="14.00" fill="#ffff00" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="572.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ATENÇÃO</text>
+<line x1="48.00" y1="582.00" x2="748.00" y2="582.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="598.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">D1</text>
+<text x="94.0" y="598.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Documento</text>
+<text x="198.0" y="598.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Duas séries numeradas / 08 circulando — resolvido nesta emissão</text>
+<rect x="678.00" y="587.50" width="62.00" height="14.00" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="597.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ACOMPANHAR</text>
+<line x1="48.00" y1="607.00" x2="748.00" y2="607.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="607.00" width="700.00" height="25.00" fill="#f5f5f5"/>
+<text x="56.0" y="623.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">D2</text>
+<text x="94.0" y="623.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Documento</text>
+<text x="198.0" y="623.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Altura de parede informada como 1,62 / 1,42 é impossível com janela de 1,63</text>
+<rect x="678.00" y="612.50" width="62.00" height="14.00" fill="#ffff00" stroke="#000000" stroke-width="0.80"/>
+<text x="709.0" y="622.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ATENÇÃO</text>
+<line x1="48.00" y1="632.00" x2="748.00" y2="632.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="48.0" y="666.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">A piscina é o item que merece a primeira visita técnica.</text>
+<text x="48.0" y="678.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">São 5,76 m² de lâmina sobre a sala. Enquanto havia forro, qualquer infiltração ficava</text>
+<text x="48.0" y="690.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">escondida; com a laje aparente, mancha e eflorescência passam a ser o acabamento. Antes de</text>
+<text x="48.0" y="702.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">assumir concreto à vista na sala, pedir ao condomínio o projeto estrutural e a data da</text>
+<text x="48.0" y="714.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">última impermeabilização da piscina, e inspecionar a face inferior logo após a D07.</text>
+<text x="48.0" y="733.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">A escada aberta contamina a conta de ar.</text>
+<text x="48.0" y="745.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Os dois pavimentos trocam ar livremente, então dimensionar o MainFloor isolado é otimista.</text>
+<text x="48.0" y="757.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">É por isso que a seleção vai pela coluna base sol, e ainda assim com ressalva.</text>
+<text x="48.0" y="776.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Nada aqui é laudo.</text>
+<text x="48.0" y="788.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">É leitura de projeto sobre levantamento digital, sem vistoria, sem ensaio e sem acesso aos</text>
+<text x="48.0" y="801.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">projetos do edifício. Os ensaios E01 e E02 respondem a condição das instalações; a laje, a</text>
+<text x="48.0" y="813.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">piscina e o esgoto pedem engenheiro em campo. Esta folha diz o que perguntar e quando — não</text>
+<text x="48.0" y="825.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">substitui quem responde.</text>
+<line x1="776.00" y1="140.00" x2="776.00" y2="916.00" stroke="#cccccc" stroke-width="0.80" opacity="0.80"/>
+<text x="806.0" y="152.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">OS TRÊS IMPASSES</text>
+<text x="806.0" y="170.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cada um trava um serviço. Nenhum se resolve</text>
+<text x="806.0" y="182.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">no desenho — os três pedem campo ou terceiro.</text>
+<rect x="806.00" y="200.00" width="546.00" height="123.20" fill="#ffd6ff" stroke="#ff00ff" stroke-width="1.40"/>
+<rect x="806.00" y="200.00" width="34.00" height="20.00" fill="#ff00ff"/>
+<text x="823.0" y="214.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#ffffff" font-weight="bold" text-anchor="middle" letter-spacing="0.40">H1</text>
+<text x="848.0" y="214.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.2" fill="#000000" font-weight="bold" text-anchor="start">O rebaixo do banheiro contra a cota única</text>
+<text x="818.0" y="233.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#000000" font-weight="normal" text-anchor="start">A D03 retira piso, base e rebaixo até a laje, e a P05 manda o banheiro voltar na cota da</text>
+<text x="818.0" y="244.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#000000" font-weight="normal" text-anchor="start">casa. O esgoto mora nesse rebaixo. Ao subir o piso, impermeabilização, regularização com</text>
+<text x="818.0" y="256.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#000000" font-weight="normal" text-anchor="start">caimento e piso acabado têm de caber entre a laje e a cota única — e o esgoto tem de</text>
+<text x="818.0" y="267.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#000000" font-weight="normal" text-anchor="start">manter queda até a prumada. Sobre 2,64 m, 1% de caimento já consome 2,6 cm.</text>
+<text x="818.0" y="279.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#000000" font-weight="normal" text-anchor="start">Se o rebaixo for raso, ou a cota única cai, ou o caimento cai. Não dá para ter os dois.</text>
+<text x="818.0" y="291.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#ff00ff" font-weight="bold" text-anchor="start">PORTÃO: medir o desnível real e a cota de saída do esgoto no dia seguinte à D03,</text>
+<text x="818.0" y="302.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#000000" font-weight="normal" text-anchor="start">antes de comprar impermeabilizante, piso ou ralo.</text>
+<rect x="806.00" y="337.20" width="546.00" height="88.40" fill="#ffd6ff" stroke="#ff00ff" stroke-width="1.40"/>
+<rect x="806.00" y="337.20" width="34.00" height="20.00" fill="#ff00ff"/>
+<text x="823.0" y="351.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#ffffff" font-weight="bold" text-anchor="middle" letter-spacing="0.40">L1</text>
+<text x="848.0" y="351.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.2" fill="#000000" font-weight="bold" text-anchor="start">A porta de entrada varre o quadro</text>
+<text x="818.0" y="370.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#000000" font-weight="normal" text-anchor="start">O quadro fica junto à porta, no início da extensão da cozinha. Com 1,00 m de vão, a folha</text>
+<text x="818.0" y="381.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#000000" font-weight="normal" text-anchor="start">tem 1,00 m de raio e passa sobre ele. A NBR 5410 exige acesso livre e permanente ao quadro.</text>
+<text x="818.0" y="393.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#000000" font-weight="normal" text-anchor="start">São três saídas, e todas custam: deslocar o quadro, reduzir a folha, ou inverter o giro.</text>
+<text x="818.0" y="405.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#ff00ff" font-weight="bold" text-anchor="start">PORTÃO: decidir antes da IN1, porque todo o traçado embutido sai dali.</text>
+<rect x="806.00" y="439.60" width="546.00" height="100.00" fill="#ffd6ff" stroke="#ff00ff" stroke-width="1.40"/>
+<rect x="806.00" y="439.60" width="34.00" height="20.00" fill="#ff00ff"/>
+<text x="823.0" y="453.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#ffffff" font-weight="bold" text-anchor="middle" letter-spacing="0.40">C1</text>
+<text x="848.0" y="453.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.2" fill="#000000" font-weight="bold" text-anchor="start">A coifa pode não ter para onde descarregar</text>
+<text x="818.0" y="472.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#000000" font-weight="normal" text-anchor="start">A vazão de 279,8 m³/h pressupõe duto próprio até uma saída permitida. Se o condomínio não</text>
+<text x="818.0" y="484.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#000000" font-weight="normal" text-anchor="start">tiver shaft de cozinha nem autorizar furo de fachada, a coifa vira recirculação com carvão</text>
+<text x="818.0" y="495.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#000000" font-weight="normal" text-anchor="start">ativado — e aí a conta de vazão não vale mais, o filtro vira manutenção periódica e a</text>
+<text x="818.0" y="507.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#000000" font-weight="normal" text-anchor="start">cozinha integrada passa a conviver com o odor.</text>
+<text x="818.0" y="519.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.1" fill="#ff00ff" font-weight="bold" text-anchor="start">PORTÃO: consultar o condomínio antes de escolher a coifa e antes de fechar a marcenaria.</text>
+<line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="940.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Análise sobre levantamento digital de 02.09.2026 e sobre as decisões registradas até a REV. M. Sem vistoria, sem ensaio e sem acesso aos projetos do edifício.</text>
+<text x="48.0" y="953.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Orientação de escopo, não laudo. A decisão final sobre estrutura, impermeabilização e instalações pede engenheiro responsável em inspeção.</text>
+<text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   21/09/2026</text>
+<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 12 / 12   ·   REV. M</text>
+</svg>

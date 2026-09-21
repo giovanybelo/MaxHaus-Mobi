@@ -9,7 +9,7 @@ gerais do pavimento (7,85 × 9,43 m).
 Todo o material fecha em **A3 deitado (420 × 297 mm)** e é exportado em **PDF
 vetorial**.
 
-## Caderno (REV. L)
+## Caderno (REV. M)
 
 | Prancha | Assunto | Arquivo |
 |---|---|---|
@@ -21,7 +21,11 @@ vetorial**.
 | 06 | Tomadas, comandos e quadro | `pranchas/prancha-06-eletrica-A3.pdf` |
 | 07 | Esquadrias e dados do levantamento | `pranchas/prancha-07-esquadrias-A3.pdf` |
 | 08 | Banheiro: planta detalhada | `pranchas/prancha-08-banheiro-A3.pdf` |
-| — | Caderno completo, 8 folhas | `pranchas/caderno-mainfloor-A3.pdf` |
+| 09 | Base de medição e decisões | `pranchas/prancha-09-medicao-A3.pdf` |
+| 10 | Banheiro: louças, metais e revestimentos | `pranchas/prancha-10-banheiro-acabamentos-A3.pdf` |
+| 11 | Ar, exaustão e iluminação: base de cálculo | `pranchas/prancha-11-ar-luz-A3.pdf` |
+| 12 | Análise técnica: riscos, impasses e verificações | `pranchas/prancha-12-riscos-A3.pdf` |
+| — | Caderno completo, 12 folhas | `pranchas/caderno-mainfloor-A3.pdf` |
 
 Versão web responsiva: `pranchas/caderno-mainfloor.html`.
 
@@ -162,6 +166,34 @@ instalação, em vez da idade. Prumadas e colunas são do condomínio — confir
 que é privativo.
 
 Orientação de escopo, não laudo: a decisão final pede um engenheiro na inspeção.
+## REV. M — o que entrou e o que foi corrigido
+
+A REV. M absorve uma série paralela de quantitativos recebida em 11.09.2026,
+redesenhada na identidade do caderno, e acrescenta a leitura crítica do
+conjunto. Quatro folhas novas: 09 a 12.
+
+**A correção que muda compra.** As planilhas recebidas revestiam o banheiro até
+**2,62 m** e calculavam a exaustão com o mesmo valor. O banheiro é o único
+ambiente que **mantém forro**: a altura livre lá dentro é **2,42 m**. Revestir
+até 2,62 m mede parede acima do forro, que não existe.
+
+| Grandeza | Folha de 11.09 | REV. M | Diferença |
+| --- | --- | --- | --- |
+| Revestimento líquido | 23,38 m² | 21,90 m² | −1,48 m² |
+| Revestimento com 10% | 25,72 m² | 24,09 m² | −1,63 m² |
+| Exaustão do banheiro | 99,6 m³/h | 92,0 m³/h | −7,6 m³/h |
+
+Outras reconciliações: o box passa a usar o medido (**1,43 × 0,93 m**, contra
+1,40 × 0,90 arredondados no CSV); o vão da porta fica em **0,80 × 2,00 m** com
+a divergência do modelo (0,81 × 2,03) registrada para conferência em campo; e
+a numeração `/ 08` duplicada entre duas séries foi resolvida numa série única
+de doze folhas.
+
+A **Prancha 12** cataloga 18 pontos e isola **três impasses** — decisões que
+travam serviço se não forem respondidas antes de começar: o rebaixo do banheiro
+contra a cota única, a folha da porta de entrada varrendo o quadro, e a rota de
+descarte da coifa.
+
 ## Banheiro (Prancha 08)
 
 O banheiro é o trecho mais denso do pavimento e ganhou folha própria, em
@@ -232,7 +264,7 @@ Arquivos: `pranchas/fornecedor-01-demolicao-A3.pdf`, `fornecedor-02-piso-A3.pdf`
 ## Como regerar
 
 ```bash
-python3 scripts/build_all.py     # o caderno: 7 pranchas, os PDFs A3 e a versão web
+python3 scripts/build_all.py     # o caderno: 12 pranchas, os PDFs A3 e a versão web
 python3 scripts/fornecedores.py  # o pacote para fornecedores: FO1 a FO5
 ```
 

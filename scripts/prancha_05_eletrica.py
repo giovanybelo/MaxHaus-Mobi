@@ -4,8 +4,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. L'
-PRANCHA = 'Prancha 06 / 08'
+REV = 'REV. M'
+PRANCHA = 'Prancha 06 / 12'
 
 # --- pontos existentes marcados pelo cliente (metros) -----------------------
 TOMADAS_EXIST = [
