@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 990" width="1400" height="990">
 <rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
 <text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.40">MAXHAUS 81I  ·  CADERNO ALTERNATIVO A  ·  PAREDE COZINHA/CLOSET</text>
-<text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="25.0" fill="#000000" font-weight="bold" text-anchor="start">Demolição e construção</text>
-<text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Sequência de execução desta alteração — orientação de escopo, não laudo.</text>
+<text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="25.0" fill="#000000" font-weight="bold" text-anchor="start">Demolição e construção desta alteração</text>
+<text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Sequência de execução — orientação de escopo, não laudo.</text>
 <text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">ALT. A</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">7 passos  ·  2 paradas</text>
-<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">ver Prancha 04 para os riscos</text>
+<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">ver Alt A · 11 para os riscos</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
 <path d="M229.76 154.32 L356.16 154.32 L356.16 565.92 L174.28 565.92 L174.28 291.34 L229.76 291.34 Z" fill="#ededed"/>
 <path d="M356.16 371.57 L486.28 371.57 L486.28 604.45 L356.16 604.45 Z" fill="#ededed"/>
@@ -99,5 +99,5 @@
 <text x="48.0" y="940.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Sequência de estudo, sem cronograma. Prazos e mão de obra a definir com a contratada.</text>
 <text x="48.0" y="953.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Passos em amarelo (PARADA) não seguem sem aceite por escrito ou confirmação de engenheiro.</text>
 <text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">PROPOSTA DE ESTUDO — PARALELA À REV. M, NÃO A SUBSTITUI   |   21/09/2026</text>
-<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Alt A · 03 / 4   ·   ALT. A</text>
+<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Alt A · 04 / 11   ·   ALT. A</text>
 </svg>
