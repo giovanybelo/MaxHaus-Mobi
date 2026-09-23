@@ -54,7 +54,7 @@
 <line x1="48.00" y1="366.00" x2="708.00" y2="366.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="56.0" y="380.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Profundidade do closet</text>
 <text x="396.4" y="380.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">2,59 m</text>
-<text x="528.4" y="380.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">2,13 m</text>
+<text x="528.4" y="380.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">2,14 m</text>
 <text x="700.0" y="380.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">−0,45 m</text>
 <line x1="48.00" y1="388.00" x2="708.00" y2="388.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="48.00" y="388.00" width="660.00" height="22.00" fill="#f5f5f5"/>
@@ -82,7 +82,7 @@
 <rect x="626.00" y="549.60" width="74.00" height="13.00" fill="#ffff00" stroke="#000000" stroke-width="0.70"/>
 <text x="663.0" y="558.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.40">ATENÇÃO</text>
 <text x="60.0" y="573.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">M01 precisa de módulo novo, não o mesmo remontado</text>
-<text x="60.0" y="585.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.9" fill="#000000" font-weight="normal" text-anchor="start">A profundidade útil do closet cai de 2,58 para 2,13 m. Armários e cabideiros</text>
+<text x="60.0" y="585.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.9" fill="#000000" font-weight="normal" text-anchor="start">A profundidade útil do closet cai de 2,59 para 2,14 m. Armários e cabideiros</text>
 <text x="60.0" y="597.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.9" fill="#000000" font-weight="normal" text-anchor="start">projetados para a medida antiga não cabem mais. M01 (desmontar, etiquetar e</text>
 <text x="60.0" y="608.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.9" fill="#000000" font-weight="normal" text-anchor="start">acondicionar) segue igual, mas a remontagem exige projeto de marcenaria novo,</text>
 <text x="60.0" y="619.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.9" fill="#000000" font-weight="normal" text-anchor="start">não a simples devolução dos módulos existentes.</text>

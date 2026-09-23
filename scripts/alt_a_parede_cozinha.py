@@ -139,7 +139,7 @@ RISCOS_ALT = [
     ('R2', 'Marcenaria', 'alto',
      'Armário do closet perde profundidade',
      'M01 precisa de módulo novo, não o mesmo remontado',
-     ['A profundidade útil do closet cai de 2,58 para 2,13 m. Armários e cabideiros',
+     ['A profundidade útil do closet cai de 2,59 para 2,14 m. Armários e cabideiros',
       'projetados para a medida antiga não cabem mais. M01 (desmontar, etiquetar e',
       'acondicionar) segue igual, mas a remontagem exige projeto de marcenaria novo,',
       'não a simples devolução dos módulos existentes.']),
@@ -820,19 +820,21 @@ def construir_07_teto():
     fim = tabela(d, cx, 160, cw,
                  [('Ambiente', 0.34, 'start'), ('Alvo geral', 0.22, 'end'),
                   ('Fluxo inicial', 0.22, 'end'), ('Temperatura de cor', 0.22, 'end')],
-                 p04t.TAB_LUZ, titulo='ILUMINAÇÃO POR AMBIENTE')
+                 [(amb, alvo, fluxo, cct) for (amb, _, alvo, fluxo, cct, _) in TAB_LUZ_ALT],
+                 titulo='ILUMINAÇÃO POR AMBIENTE')
     fim = tabela(d, cx, fim + 34, cw,
                  [('Zona', 0.34, 'start'), ('Área', 0.22, 'end'),
                   ('Base sombra', 0.22, 'end'), ('Base sol', 0.22, 'end')],
-                 p04t.TAB_AR, titulo='AR-CONDICIONADO — REGRA SIMPLIFICADA 600/800 BTU/h POR m²')
+                 TAB_TERM_ALT, titulo='AR-CONDICIONADO — REGRA SIMPLIFICADA 600/800 BTU/h POR m²')
     paragrafos(d, cx, fim + 24,
                cw, [['**Nada aqui se move.',
                      'Trilhos, luminárias de destaque, pontos existentes e máquinas ficam nas',
                      'mesmas posições da REV. M — nenhum está no trecho de laje que a cozinha',
                      'ganha (faixa sul, ver Alt A · 03). Ganho: essa faixa fica sem trilho',
                      'próprio; ao aprovar a proposta, avaliar estender o TR4 ou somar um',
-                     'spot para cobrir os 0,92 m² adicionais de teto da cozinha.']] + p04t.NOTAS,
-               size=8.0, lh=11.4, gap=5.5)
+                     'spot para cobrir os 0,92 m² adicionais de teto da cozinha.']]
+               + p04t.NOTAS[:-1] + [NOTA_VAZAO_ALT],
+               size=8.0, lh=11.0, gap=4.5)
 
     rodape_alt(d,
                'Fluxo = área × lux ÷ (0,60 × 0,80). Fatores de utilização e manutenção são hipóteses; a laje aparente escura reduz o fator de utilização e deve ser reavaliada.',
@@ -1001,6 +1003,10 @@ TAB_LUZ_ALT = [
     ('Closet',   '4,38',  '200 lux', '1.825 lm', '3.000 K', 'luz vertical das roupas'),
     ('Banheiro', '3,80',  '200 lux', '1.583 lm', '3.000 K', 'espelho frontal e balizamento'),
 ]
+NOTA_VAZAO_ALT = [
+    '**Vazões de referência, a validar com perda de carga do duto:',
+    'banheiro 3,8 × 2,40 × 10 = 91,2 m³/h (mantém forro); coifa 9,82 × 2,62 × 12 = 308,7 m³/h — o',
+    'segundo só valeria com cozinha isolada; integrada, seleciona-se por captura. Rotas próprias.']
 
 
 def construir_10_ar_luz():
@@ -1074,7 +1080,7 @@ def construir_11_riscos():
     tab_dim = [
         ('Largura interna (comum)', '2,04 m', '2,04 m', 'sem variação'),
         ('Profundidade da cozinha', '3,18 m', '3,63 m', '+0,45 m'),
-        ('Profundidade do closet', '2,59 m', '2,13 m', '−0,45 m'),
+        ('Profundidade do closet', '2,59 m', '2,14 m', '−0,45 m'),
         ('Posição da parede', '—', '0,45 m ao sul', 'alinhada ao banheiro'),
     ]
     fim = tabela(d, cx, fim + 34, cw,
