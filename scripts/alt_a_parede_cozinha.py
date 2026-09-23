@@ -222,7 +222,7 @@ def registro_riscos(d, x, y, largura):
 ALVOS_ALT_EXTRA = [
     ('D09', 281.64, 488.0, 'demo', -10, 3),
     ('D10', 312.50, 432.35, 'demo', 10, -8),
-    ('R03', 294.50, 452.96, 'novo', -10, 16),
+    ('R03', 294.50, 452.96, 'novo', 10, 16),
 ]
 LINHAS_ALT_EXTRA = [
     ('D09', 'Parede interna do closet — sem função estrutural aparente (Alt A)', '2,54 m'),
