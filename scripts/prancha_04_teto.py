@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Prancha 05 — Teto: laje aparente, iluminação e ar-condicionado (REV. K).
+"""Prancha 05 — Teto: laje aparente, iluminação e ar-condicionado (REV. N).
 
 Substitui as pranchas anteriores de iluminação e de ar-condicionado: sem forro,
 as duas disciplinas dividem a mesma laje e precisam ser resolvidas juntas.
@@ -7,9 +7,10 @@ as duas disciplinas dividem a mesma laje e precisam ser resolvidas juntas.
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
+import quarto_adaptavel as qa
 
-REV = 'REV. M'
-PRANCHA = 'Prancha 05 / 12'
+REV = 'REV. N'
+PRANCHA = 'Prancha 05 / 13'
 
 # --- trilhos eletrificados: (id, (x0,y0), (x1,y1), nº de spots) em metros ---
 TRILHOS = [
@@ -46,7 +47,7 @@ EMBUTIDOS_WC = [(2.60, 4.85), (3.30, 4.85)]
 
 # --- ar-condicionado, coifa e exaustão --------------------------------------
 MAQUINAS = [
-    ('AC01', 4.70, 2.25, 'evaporadora — social + cozinha'),
+    ('AC01', qa.AC01_NOVO[0], qa.AC01_NOVO[1], 'evaporadora — social + cozinha'),
     ('AC02', 5.72, 9.15, 'evaporadora — quarto + closet'),
     ('EX01', 3.06, 6.06, 'exaustor do banheiro'),
     ('CF01', 0.60, 6.20, 'coifa da cozinha'),
@@ -75,8 +76,8 @@ NOTAS = [
      'Perfilados ou eletrocalhas pintadas, alinhados às vigas e aos trilhos: o caminho da fiação',
      'vira desenho, não sobra de obra.'],
     ['**P01, P02 e P03 são as três luminárias de destaque pedidas pelo cliente',
-     '— jantar, cama e office. Corpo e diâmetro maiores que os spots dos trilhos, em pendente',
-     'ou plafon de sobrepor. No quarto o TR5 passa a correr no eixo de P02 e P03, a 8,28 m: as duas',
+     '— jantar, cama e office. Corpo maior que os spots; P01 em plafon, porque fica sobre a',
+     'cama quando o jantar vira quarto. No quarto o TR5 passa a correr no eixo de P02 e P03, a 8,28 m: as duas',
      'podem ser alimentadas pelo próprio trilho, com adaptador, dispensando saídas novas na laje.'],
     ['**Traçado dos trilhos revisado conforme a sua marcação:',
      'TR3 desceu para 5,60 m, ganhando recuo da drywall; TR5 desceu para 8,28 m, no eixo das duas',
@@ -88,15 +89,16 @@ NOTAS = [
      'Evaporadoras hi-wall ou cassete aparente, com frigorígena, dreno e interligação elétrica',
      'aparentes, em calha e com caimento contínuo. Sala e jantar tomam o sol da tarde: dimensionar',
      'pela coluna base sol, não pela sombra. Somente Electrolux — marca igual não garante compatibilidade.'],
-    ['**A piscina do pavimento superior fica sobre a sala — 1,92 × 3,00 m, centrada em',
-     '6,13 / 3,14 m do canto noroeste. Essa laje não recebe furação: nem luminária, nem trilho,',
-     'nem evaporadora ou tubulação podem invadi-la, e a região exige impermeabilização e',
-     'sobrecarga verificadas em estrutura. Nenhum trilho a invade: TR2 corre a oeste e TR3 passa',
-     '0,96 m ao sul.'],
-    ['**A reserva AC01 caía dentro da projeção da piscina.',
-     'Foi deslocada para oeste, mantendo a insuflação para sala e jantar. A posição definitiva',
-     'depende de confirmar apoio acima do limite sala/jantar e o modelo da condensadora existente:',
-     'não assumir que ela admite duas evaporadoras.'],
+    ['**A piscina fica sobre a sala, e o fundo dela é a claraboia: vidro, não furável.',
+     '1,92 × 3,00 m, centrada em 6,13 / 3,14 m do canto noroeste. Nada fixa no vidro: trilho,',
+     'luminária, evaporadora e a moldura do fechamento elétrico (FC01, 2027/28) apoiam no concreto',
+     'em volta. TR2 corre 0,50 m a oeste da moldura e TR3 passa 0,84 m ao sul dela.'],
+    ['**CT01 — cortina que fecha o jantar como quarto adaptável.',
+     'Recolhida no canto do jantar; estendida, contorna a ponta da escada e corre a 2,85 m até a',
+     'fachada. Sob a claraboia o trilho vence %s m sem apoio: perfil autoportante. Ver Prancha 13.' % br(qa.VAO_LIVRE)],
+    ['**AC01 saiu da linha da cortina: agora em 4,76 / 3,05 m,',
+     'fora da moldura e ao sul da cortina, insuflando a sala. Posição final depende da condensadora',
+     'existente — não assumir que ela admite duas evaporadoras.'],
     ['**Vazões de referência, a validar com perda de carga do duto:',
      'banheiro 3,8 × 2,40 × 10 = 91,2 m³/h (mantém forro); coifa 8,9 × 2,62 × 12 = 279,8 m³/h — o',
      'segundo só valeria com cozinha isolada; integrada, seleciona-se por captura. Rotas próprias.'],
@@ -108,7 +110,7 @@ def construir():
     cabecalho(d, 'Teto: laje aparente, iluminação e ar-condicionado',
               'Distribuição conceitual sobre a laje de concreto. Reservas de posição, não quantidade final de luminárias nem de equipamentos.',
               REV, 'sem forro — tudo aplicado na laje',
-              'piscina do pavimento superior sobre a sala')
+              'cortina do quarto adaptável e claraboia')
 
     S = 70.0
     d.set_plan(70, 156, S)
@@ -126,26 +128,16 @@ def construir():
     d.path(path_d(pp), fill=WET, opacity=0.6)
     d.path(path_d(pp), fill='none', stroke=WET_LINE, sw=0.9, dash='3 2.5')
 
-    # área da piscina do pavimento superior
-    x, y, w_, h_ = d.R(AREA_PISCINA)
-    d.rect(x, y, w_, h_, fill=AMARELO, opacity=0.30)
-    d.rect(x, y, w_, h_, fill='none', stroke=K, sw=1.2, dash='6 4')
-    t = -h_
-    while t <= w_:
-        ax, ay = x + max(0.0, t), y + h_ - max(0.0, -t) * 0 - (h_ - min(h_, h_)) 
-        x0 = x + max(0.0, t); y0 = y + h_ - (x0 - (x + t))
-        x1 = min(x + w_, x + t + h_); y1 = y + h_ - (x1 - (x + t))
-        if x1 > x0:
-            d.line(x0, y0, x1, y1, K, 0.5, opacity=0.22)
-        t += 13
+    # claraboia (fundo de vidro da piscina), moldura do fechamento e cortina
+    qa.desenhar_vidro(d)
+    qa.desenhar_moldura(d, rotulo=False)
+    qa.desenhar_trilho(d, rotulo=False)
     cxp, cyp = d.PM(PISCINA_CX, PISCINA_CY)
-    d.line(cxp - 11, cyp, cxp + 11, cyp, K, 1.0)
-    d.line(cxp, cyp - 11, cxp, cyp + 11, K, 1.0)
-    d.circle(cxp, cyp, 3.4, fill='none', stroke=K, sw=1.0)
-    d.txt(x + w_ / 2, y + h_ / 2 - 40, 'ÁREA DA PISCINA', 7.6, K, 'bold', 'middle', ls=0.5)
-    d.txt(x + w_ / 2, y + h_ / 2 - 29, 'pavimento superior', 7.2, K70, 'normal', 'middle')
-    d.txt(x + w_ / 2, y + h_ / 2 + 34, '1,92 × 3,00 m  ·  5,76 m²', 7.2, K70, 'normal', 'middle')
-    d.txt(x + w_ / 2, y + h_ / 2 + 45, 'centro em 6,13 / 3,14 m', 7.0, K70, 'normal', 'middle')
+    x, y, w_, h_ = d.R(AREA_PISCINA)
+    d.txt(x + w_ / 2, y + h_ / 2 + 34, '1,92 × 3,00 m  ·  5,76 m²', 7.0, K70, 'normal', 'middle')
+    a = d.PM(qa.FACE_OESTE_JANTAR - 0.18, 0.55)
+    d.txt(a[0], a[1], 'CT01', 7.2, DEMO, 'bold', 'end', ls=0.4)
+    d.txt(a[0], a[1] + 10, 'cortina', 6.8, DEMO, 'normal', 'end')
 
     for k, lx, ly in (('jantar', 520.0, 142.0), ('sala', 470.0, 300.0),
                       ('cozinha', 300.0, 352.0), ('closet', 277.6, 505.0),
@@ -207,7 +199,9 @@ def construir():
                 ('fill', AMARELO, 'Luminária de destaque (corpo maior)'),
                 ('dot', EXIST, 'Ponto existente — confirmar'),
                 ('dot', WET_LINE, 'Embutido no forro do banheiro'),
-                ('fill', CIANO35, 'Ar-condicionado / exaustão')],
+                ('fill', CIANO35, 'Ar-condicionado / exaustão'),
+                ('line', DEMO, 'Cortina CT01'),
+                ('ghost', CIANO, 'Moldura FC01 — 2027/28')],
             70, 156 + BUILDING_H * S + 64, largura=600)
 
     d.line(690, 140, 690, 900, RULE, 0.8, opacity=0.8)
@@ -237,4 +231,4 @@ if __name__ == '__main__':
     exportar_pdf_a3([caminho], os.path.join(pasta, 'prancha-05-teto-A3.pdf'),
                     'MaxHaus MainFloor — Prancha 05: teto, iluminação e ar-condicionado')
     exportar_png(caminho, os.path.join(pasta, 'prancha-05-teto.png'))
-    print('ok prancha 04')
+    print('ok prancha 05')

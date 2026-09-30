@@ -3,9 +3,9 @@
 <text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
 <text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Teto: laje aparente, iluminação e ar-condicionado</text>
 <text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Distribuição conceitual sobre a laje de concreto. Reservas de posição, não quantidade final de luminárias nem de equipamentos.</text>
-<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. M</text>
+<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. N</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">sem forro — tudo aplicado na laje</text>
-<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">piscina do pavimento superior sobre a sala</text>
+<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">cortina do quarto adaptável e claraboia</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
 <path d="M380.75 159.56 L615.77 159.56 L615.77 289.10 L380.75 289.10 Z" fill="#ededed" opacity="1.00"/>
 <path d="M223.31 289.10 L615.77 289.10 L615.77 628.06 L330.47 628.06 L330.47 468.01 L223.31 468.01 Z" fill="#ededed" opacity="1.00"/>
@@ -102,39 +102,23 @@
 <path d="M223.31 468.01 L330.47 468.01 L330.47 659.80 L223.31 659.80 Z" fill="none" stroke="#00ffff" stroke-width="0.90" stroke-dasharray="3 2.5"/>
 <rect x="431.90" y="270.80" width="134.40" height="210.00" fill="#ffff00" opacity="0.30"/>
 <rect x="431.90" y="270.80" width="134.40" height="210.00" fill="none" stroke="#000000" stroke-width="1.20" stroke-dasharray="6 4"/>
-<line x1="431.90" y1="283.80" x2="444.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="296.80" x2="457.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="309.80" x2="470.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="322.80" x2="483.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="335.80" x2="496.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="348.80" x2="509.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="361.80" x2="522.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="374.80" x2="535.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="387.80" x2="548.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="400.80" x2="561.90" y2="270.80" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="413.80" x2="566.30" y2="279.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="426.80" x2="566.30" y2="292.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="439.80" x2="566.30" y2="305.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="452.80" x2="566.30" y2="318.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="465.80" x2="566.30" y2="331.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="431.90" y1="478.80" x2="566.30" y2="344.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="442.90" y1="480.80" x2="566.30" y2="357.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="455.90" y1="480.80" x2="566.30" y2="370.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="468.90" y1="480.80" x2="566.30" y2="383.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="481.90" y1="480.80" x2="566.30" y2="396.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="494.90" y1="480.80" x2="566.30" y2="409.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="507.90" y1="480.80" x2="566.30" y2="422.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="520.90" y1="480.80" x2="566.30" y2="435.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="533.90" y1="480.80" x2="566.30" y2="448.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="546.90" y1="480.80" x2="566.30" y2="461.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="559.90" y1="480.80" x2="566.30" y2="474.40" stroke="#000000" stroke-width="0.50" opacity="0.22"/>
-<line x1="488.10" y1="375.80" x2="510.10" y2="375.80" stroke="#000000" stroke-width="1.00"/>
-<line x1="499.10" y1="364.80" x2="499.10" y2="386.80" stroke="#000000" stroke-width="1.00"/>
-<circle cx="499.10" cy="375.80" r="3.40" fill="none" stroke="#000000" stroke-width="1.00"/>
-<text x="499.1" y="335.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">ÁREA DA PISCINA</text>
-<text x="499.1" y="346.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">pavimento superior</text>
-<text x="499.1" y="409.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1,92 × 3,00 m  ·  5,76 m²</text>
-<text x="499.1" y="420.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="middle">centro em 6,13 / 3,14 m</text>
+<text x="499.1" y="369.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">CLARABOIA</text>
+<text x="499.1" y="381.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">fundo de vidro da piscina</text>
+<text x="499.1" y="392.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.8" fill="#ff00ff" font-weight="bold" text-anchor="middle">não furável</text>
+<rect x="423.50" y="262.40" width="151.20" height="226.80" fill="none" stroke="#00ffff" stroke-width="3.20" opacity="0.90"/>
+<rect x="423.50" y="262.40" width="151.20" height="226.80" fill="none" stroke="#000000" stroke-width="0.80" stroke-dasharray="2 2"/>
+<path d="M388.45 167.19 L388.45 254.00 L388.65 257.15 L389.23 259.88 L390.11 262.27 L391.23 264.38 L392.55 266.28 L393.98 268.05 L395.47 269.75 L396.97 271.45 L398.40 273.22 L399.71 275.12 L400.84 277.23 L401.72 279.62 L402.30 282.35 L402.50 285.50 L402.50 338.00 L402.77 341.04 L403.56 343.99 L404.84 346.75 L406.59 349.25 L408.75 351.41 L411.25 353.16 L414.01 354.44 L416.96 355.23 L420.00 355.50 L608.14 355.50" fill="none" stroke="#ffffff" stroke-width="5.60"/>
+<path d="M388.45 167.19 L388.45 254.00 L388.65 257.15 L389.23 259.88 L390.11 262.27 L391.23 264.38 L392.55 266.28 L393.98 268.05 L395.47 269.75 L396.97 271.45 L398.40 273.22 L399.71 275.12 L400.84 277.23 L401.72 279.62 L402.30 282.35 L402.50 285.50 L402.50 338.00 L402.77 341.04 L403.56 343.99 L404.84 346.75 L406.59 349.25 L408.75 351.41 L411.25 353.16 L414.01 354.44 L416.96 355.23 L420.00 355.50 L608.14 355.50" fill="none" stroke="#ff00ff" stroke-width="2.60"/>
+<rect x="385.25" y="167.19" width="6.40" height="42.70" fill="#ffd6ff" stroke="#ff00ff" stroke-width="0.90"/>
+<rect x="385.85" y="195.40" width="5.20" height="5.20" fill="#000000"/>
+<rect x="385.85" y="244.40" width="5.20" height="5.20" fill="#000000"/>
+<rect x="399.90" y="307.40" width="5.20" height="5.20" fill="#000000"/>
+<rect x="417.40" y="352.90" width="5.20" height="5.20" fill="#000000"/>
+<rect x="573.50" y="352.90" width="5.20" height="5.20" fill="#000000"/>
+<rect x="601.34" y="352.90" width="5.20" height="5.20" fill="#000000"/>
+<text x="499.1" y="409.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1,92 × 3,00 m  ·  5,76 m²</text>
+<text x="371.6" y="194.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.40">CT01</text>
+<text x="371.6" y="204.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.8" fill="#ff00ff" font-weight="normal" text-anchor="end">cortina</text>
 <text x="490.5" y="183.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">JANTAR</text>
 <text x="413.9" y="425.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA</text>
 <text x="153.2" y="505.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">COZINHA</text>
@@ -224,8 +208,8 @@
 <line x1="582.70" y1="800.30" x2="589.10" y2="806.70" stroke="#8c8c8c" stroke-width="1.00"/>
 <circle cx="99.40" cy="527.00" r="4.60" fill="none" stroke="#8c8c8c" stroke-width="1.30"/>
 <line x1="96.20" y1="523.80" x2="102.60" y2="530.20" stroke="#8c8c8c" stroke-width="1.00"/>
-<rect x="381.00" y="307.50" width="36.00" height="12.00" fill="#a6ffff" stroke="#000000" stroke-width="1.20"/>
-<text x="399.0" y="316.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.30">AC01</text>
+<rect x="385.20" y="363.50" width="36.00" height="12.00" fill="#a6ffff" stroke="#000000" stroke-width="1.20"/>
+<text x="403.2" y="372.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.30">AC01</text>
 <rect x="452.40" y="790.50" width="36.00" height="12.00" fill="#a6ffff" stroke="#000000" stroke-width="1.20"/>
 <text x="470.4" y="799.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.30">AC02</text>
 <circle cx="284.20" cy="580.20" r="6.00" fill="#a6ffff" stroke="#000000" stroke-width="1.20"/>
@@ -252,6 +236,10 @@
 <text x="92.0" y="897.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Embutido no forro do banheiro</text>
 <rect x="242.10" y="889.10" width="15.00" height="10.00" fill="#a6ffff" stroke="#8c8c8c" stroke-width="0.70"/>
 <text x="264.1" y="897.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Ar-condicionado / exaustão</text>
+<line x1="399.50" y1="894.10" x2="414.50" y2="894.10" stroke="#ff00ff" stroke-width="2.20"/>
+<text x="421.5" y="897.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Cortina CT01</text>
+<rect x="488.30" y="889.10" width="15.00" height="10.00" fill="none" stroke="#00ffff" stroke-width="0.90" stroke-dasharray="3 2.5"/>
+<text x="510.3" y="897.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Moldura FC01 — 2027/28</text>
 <line x1="690.00" y1="140.00" x2="690.00" y2="900.00" stroke="#cccccc" stroke-width="0.80" opacity="0.80"/>
 <text x="722.0" y="151.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">ILUMINAÇÃO POR AMBIENTE</text>
 <rect x="722.00" y="160.00" width="630.00" height="20.00" fill="#e0e0e0"/>
@@ -322,8 +310,8 @@
 <text x="722.0" y="524.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Perfilados ou eletrocalhas pintadas, alinhados às vigas e aos trilhos: o caminho da fiação</text>
 <text x="722.0" y="536.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">vira desenho, não sobra de obra.</text>
 <text x="722.0" y="554.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">P01, P02 e P03 são as três luminárias de destaque pedidas pelo cliente</text>
-<text x="722.0" y="567.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">— jantar, cama e office. Corpo e diâmetro maiores que os spots dos trilhos, em pendente</text>
-<text x="722.0" y="579.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">ou plafon de sobrepor. No quarto o TR5 passa a correr no eixo de P02 e P03, a 8,28 m: as duas</text>
+<text x="722.0" y="567.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">— jantar, cama e office. Corpo maior que os spots; P01 em plafon, porque fica sobre a</text>
+<text x="722.0" y="579.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">cama quando o jantar vira quarto. No quarto o TR5 passa a correr no eixo de P02 e P03, a 8,28 m: as duas</text>
 <text x="722.0" y="592.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">podem ser alimentadas pelo próprio trilho, com adaptador, dispensando saídas novas na laje.</text>
 <text x="722.0" y="610.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Traçado dos trilhos revisado conforme a sua marcação:</text>
 <text x="722.0" y="622.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">TR3 desceu para 5,60 m, ganhando recuo da drywall; TR5 desceu para 8,28 m, no eixo das duas</text>
@@ -335,21 +323,22 @@
 <text x="722.0" y="703.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Evaporadoras hi-wall ou cassete aparente, com frigorígena, dreno e interligação elétrica</text>
 <text x="722.0" y="715.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">aparentes, em calha e com caimento contínuo. Sala e jantar tomam o sol da tarde: dimensionar</text>
 <text x="722.0" y="728.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">pela coluna base sol, não pela sombra. Somente Electrolux — marca igual não garante compatibilidade.</text>
-<text x="722.0" y="746.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">A piscina do pavimento superior fica sobre a sala — 1,92 × 3,00 m, centrada em</text>
-<text x="722.0" y="758.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">6,13 / 3,14 m do canto noroeste. Essa laje não recebe furação: nem luminária, nem trilho,</text>
-<text x="722.0" y="771.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">nem evaporadora ou tubulação podem invadi-la, e a região exige impermeabilização e</text>
-<text x="722.0" y="783.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">sobrecarga verificadas em estrutura. Nenhum trilho a invade: TR2 corre a oeste e TR3 passa</text>
-<text x="722.0" y="796.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">0,96 m ao sul.</text>
-<text x="722.0" y="814.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">A reserva AC01 caía dentro da projeção da piscina.</text>
-<text x="722.0" y="826.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Foi deslocada para oeste, mantendo a insuflação para sala e jantar. A posição definitiva</text>
-<text x="722.0" y="839.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">depende de confirmar apoio acima do limite sala/jantar e o modelo da condensadora existente:</text>
-<text x="722.0" y="851.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">não assumir que ela admite duas evaporadoras.</text>
-<text x="722.0" y="870.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Vazões de referência, a validar com perda de carga do duto:</text>
-<text x="722.0" y="882.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">banheiro 3,8 × 2,40 × 10 = 91,2 m³/h (mantém forro); coifa 8,9 × 2,62 × 12 = 279,8 m³/h — o</text>
-<text x="722.0" y="894.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">segundo só valeria com cozinha isolada; integrada, seleciona-se por captura. Rotas próprias.</text>
+<text x="722.0" y="746.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">A piscina fica sobre a sala, e o fundo dela é a claraboia: vidro, não furável.</text>
+<text x="722.0" y="758.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1,92 × 3,00 m, centrada em 6,13 / 3,14 m do canto noroeste. Nada fixa no vidro: trilho,</text>
+<text x="722.0" y="771.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">luminária, evaporadora e a moldura do fechamento elétrico (FC01, 2027/28) apoiam no concreto</text>
+<text x="722.0" y="783.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">em volta. TR2 corre 0,50 m a oeste da moldura e TR3 passa 0,84 m ao sul dela.</text>
+<text x="722.0" y="802.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">CT01 — cortina que fecha o jantar como quarto adaptável.</text>
+<text x="722.0" y="814.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Recolhida no canto do jantar; estendida, contorna a ponta da escada e corre a 2,85 m até a</text>
+<text x="722.0" y="826.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">fachada. Sob a claraboia o trilho vence 2,23 m sem apoio: perfil autoportante. Ver Prancha 13.</text>
+<text x="722.0" y="845.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">AC01 saiu da linha da cortina: agora em 4,76 / 3,05 m,</text>
+<text x="722.0" y="857.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">fora da moldura e ao sul da cortina, insuflando a sala. Posição final depende da condensadora</text>
+<text x="722.0" y="870.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">existente — não assumir que ela admite duas evaporadoras.</text>
+<text x="722.0" y="888.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Vazões de referência, a validar com perda de carga do duto:</text>
+<text x="722.0" y="900.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">banheiro 3,8 × 2,40 × 10 = 91,2 m³/h (mantém forro); coifa 8,9 × 2,62 × 12 = 279,8 m³/h — o</text>
+<text x="722.0" y="913.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">segundo só valeria com cozinha isolada; integrada, seleciona-se por captura. Rotas próprias.</text>
 <line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="48.0" y="940.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Fluxo = área × lux ÷ (0,60 × 0,80). Fatores de utilização e manutenção são hipóteses; a laje aparente escura reduz o fator de utilização e deve ser reavaliada.</text>
 <text x="48.0" y="953.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Carga térmica não é carga final: a fachada envidraçada a noroeste, a piscina sobre a sala, a escada aberta e a ocupação mudam o resultado. Estudar 2 ou 3 evaporadoras; não há número fechado.</text>
-<text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   21/09/2026</text>
-<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 05 / 12   ·   REV. M</text>
+<text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   30/09/2026</text>
+<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 05 / 13   ·   REV. N</text>
 </svg>

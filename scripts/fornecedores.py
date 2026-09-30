@@ -4,6 +4,9 @@
 FO1  Demolição e preparo
 FO2  Piso
 FO3  Elétrica
+FO4  Iluminação
+FO5  Ar-condicionado e exaustão
+FO6  Cortina do quarto adaptável e fechamento da claraboia (REV. N)
 
 Cada folha é autossuficiente e sai como PDF próprio: especificação de tarefa,
 quantidade e sequência de execução. Sem justificativa de projeto, sem
@@ -13,9 +16,10 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-EMISSAO = 'EMISSÃO 01'
-DATA = '12.09.2026'
-ORIGEM = 'extraído do caderno de estudo REV. M'
+EMISSAO = 'EMISSÃO 02'
+DATA = '30.09.2026'
+ORIGEM = 'extraído do caderno de estudo REV. N'
+TOTAL_FO = 6
 
 # ---------------------------------------------------------------------------
 # FASES GERAIS DA OBRA — a mesma régua nas três folhas
@@ -203,7 +207,7 @@ def folha_demolicao():
                   ('Quantidade', 0.22, 'end')],
                  TAB_DEMO, titulo='ESCOPO — TAREFA E QUANTIDADE', alt=19)
     sequencia(d, cx, fim + 30, cw, 'ORDEM DE EXECUÇÃO', SEQ_DEMO, size=8.4, lh=12.1)
-    rodape_fo(d, 'FOLHA FO1 / 5', 'Demolição')
+    rodape_fo(d, 'FOLHA FO1 / %d' % TOTAL_FO, 'Demolição')
     return d
 
 
@@ -317,7 +321,7 @@ def folha_piso():
                   [('ID', 0.07, 'start'), ('Tarefa', 0.71, 'start'), ('Quantidade', 0.22, 'end')],
                   TAB_PISO_C, titulo='NAS DUAS OPÇÕES — BANHEIRO E SOLEIRAS', alt=18)
     regua_fases(d, cx, fim2 + 58, cw, (6,))
-    rodape_fo(d, 'FOLHA FO2 / 5', 'Piso')
+    rodape_fo(d, 'FOLHA FO2 / %d' % TOTAL_FO, 'Piso')
     return d
 
 
@@ -327,6 +331,7 @@ def folha_piso():
 from prancha_05_eletrica import (TOMADAS_EXIST, TOMADAS_NOVAS, COMANDOS, QUADRO,
                                  ROTULO_LESTE)
 from prancha_04_teto import TRILHOS, DESTAQUES, EMBUTIDOS_WC, MAQUINAS
+import quarto_adaptavel as qa
 
 S_INST = 63.0
 
@@ -374,15 +379,15 @@ def ponto_alim(d, xm, ym, ident, lado='n'):
 
 
 def zona_piscina(d, rotulo=True):
-    """Projeção da piscina do pavimento superior: laje sem furação."""
+    """Claraboia — fundo de vidro da piscina do pavimento superior: não furável."""
     x0, y0 = d.P(AREA_PISCINA[0], AREA_PISCINA[1])
     x1, y1 = d.P(AREA_PISCINA[2], AREA_PISCINA[3])
     d.rect(x0, y0, x1 - x0, y1 - y0, fill=AMARELO40, stroke=DEMO, sw=1.4,
            dash='5 3')
     if rotulo:
-        d.txt((x0 + x1) / 2.0, (y0 + y1) / 2.0 - 4, 'PISCINA ACIMA', 6.8, DEMO,
+        d.txt((x0 + x1) / 2.0, (y0 + y1) / 2.0 - 4, 'CLARABOIA', 6.8, DEMO,
               'bold', 'middle', ls=0.5)
-        d.txt((x0 + x1) / 2.0, (y0 + y1) / 2.0 + 7, 'não furar a laje', 6.4,
+        d.txt((x0 + x1) / 2.0, (y0 + y1) / 2.0 + 7, 'vidro — não furar', 6.4,
               DEMO, 'normal', 'middle')
 
 
@@ -392,8 +397,8 @@ def zona_piscina(d, rotulo=True):
 TAB_ELE = [
     ('QD',  'Quadro de distribuição: avaliar, dimensionar e substituir',       '1 conjunto'),
     ('T01–T09', 'Tomadas existentes: conferir caixa, altura e circuito',       '9 pontos'),
-    ('T10–T17', 'Tomadas novas',                                               '8 pontos'),
-    ('S01–S08', 'Comandos / interruptores, com paralelos na cabeceira',        '8 pontos'),
+    ('T10–T19', 'Tomadas novas, T18 é espera no teto',                         '10 pontos'),
+    ('S01–S10', 'Comandos / interruptores, com paralelos na cabeceira',        '10 pontos'),
     ('IN1', 'Infraestrutura embutida em parede — antes de fechar a drywall R01', '4,08 m'),
     ('IN2', 'Infraestrutura aparente no teto: perfilado ou eletrocalha pintada', 'a medir'),
     ('IN3', 'Circuitos dedicados: geladeira, forno, cooktop, lava-louças, coifa', '5 circuitos'),
@@ -402,6 +407,7 @@ TAB_ELE = [
     ('AL3', 'Alimentação de embutido no forro do banheiro (ver FO4)',          '2 pontos'),
     ('AL4', 'Alimentação de evaporadora — entregar caixa (ver FO5)',           '2 pontos'),
     ('AL5', 'Alimentação de exaustor e de coifa (ver FO5)',                    '2 pontos'),
+    ('AL6', 'Espera do motor da claraboia: caixa T18, eletroduto e guia até S10 (ver FO6)', '1 ponto'),
     ('PR',  'Proteção: disjuntores, DR e DPS conforme projeto elétrico',       '1 conjunto'),
     ('AT',  'Aterramento e equipotencialização',                               '1 conjunto'),
     ('EN',  'Ensaios: continuidade, isolamento, DR e aterramento',             '1 conjunto'),
@@ -422,9 +428,9 @@ SEQ_ELE = [
            'Somente após o preparo da laje (P03), alinhada aos trilhos da FO4.'], False),
     ('6', ['Descidas, caixas e passagem de cabos.',
            'Concluir antes do piso.'], True),
-    ('7', ['Entrega das alimentações — AL1 a AL5.',
+    ('7', ['Entrega das alimentações — AL1 a AL6.',
            'Caixa no ponto, cabo passado e circuito identificado, para a iluminação',
-           '(FO4) e o ar-condicionado (FO5) instalarem sem abrir parede ou laje.'], True),
+           '(FO4), o ar (FO5) e a claraboia (FO6, 2027/28) instalarem sem abrir laje.'], True),
     ('8', ['Quadro, proteção e aterramento — QD, PR e AT.'], False),
     ('9', ['Ensaios — EN.',
            'Continuidade, isolamento, DR e aterramento, com laudo por escrito.'], False),
@@ -492,7 +498,7 @@ def folha_eletrica():
                  [('ID', 0.16, 'start'), ('Tarefa', 0.62, 'start'), ('Quantidade', 0.22, 'end')],
                  TAB_ELE, titulo='ESCOPO — TAREFA E QUANTIDADE', alt=19)
     sequencia(d, cx2, fim + 32, cw, 'ORDEM DE EXECUÇÃO', SEQ_ELE, size=8.4, lh=12.2)
-    rodape_fo(d, 'FOLHA FO3 / 5', 'Elétrica')
+    rodape_fo(d, 'FOLHA FO3 / %d' % TOTAL_FO, 'Elétrica')
     return d
 
 
@@ -507,7 +513,7 @@ TAB_LUZ_FO = [
     ('TR5', 'Trilho eletrificado — quarto, eixo 8,28 m', '3,65 m  ·  3 spots'),
     ('TR6', 'Trilho eletrificado — closet, eixo 1,45 m', '1,50 m  ·  3 spots'),
     ('—',   'Total de trilho e de spots nos seis trechos', '15,80 m  ·  21 spots'),
-    ('P01', 'Luminária de destaque — jantar, pendente ou plafon', '1 peça'),
+    ('P01', 'Luminária de destaque — jantar, plafon (fica sobre a cama)', '1 peça'),
     ('P02', 'Luminária de destaque — cama, no eixo do TR5', '1 peça'),
     ('P03', 'Luminária de destaque — office, no eixo do TR5', '1 peça'),
     ('EM',  'Embutido no forro do banheiro — único ambiente com forro', '2 peças'),
@@ -534,9 +540,9 @@ SEQ_LUZ = [
     ('3', ['Marcação dos eixos no teto.',
            'Alinhar cada trecho às vigas e ao perfilado da elétrica. Trilho não cruza',
            'trilho: se dois trechos tiverem de se encontrar, é com conector T.'], True),
-    ('4', ['Zona sem furação — piscina do pavimento superior.',
+    ('4', ['Zona sem furação — claraboia, o fundo de vidro da piscina.',
            'Retângulo de 1,92 × 3,00 m sobre a sala, centrado em 6,13 / 3,14 m do canto',
-           'noroeste. Nenhuma fixação, furo ou passagem dentro dele.'], True),
+           'noroeste, mais 0,12 m em volta para a moldura FC01. Nada fixa ali.'], True),
     ('5', ['Pintura concluída antes de instalar.',
            'Trilho, spot e luminária entram depois da pintura da laje e das paredes.'], False),
     ('6', ['Montagem de trilho e spots — TR1 a TR6.'], False),
@@ -592,7 +598,7 @@ def folha_iluminacao():
     escala(d, base + 26)
     legenda(d, [('line', K, 'Trilho eletrificado'), ('dot', K, 'Spot no trilho'),
                 ('fill', AMARELO, 'Alimentação entregue pela elétrica'),
-                ('ghost', DEMO, 'Laje sem furação — piscina acima'),
+                ('ghost', DEMO, 'Claraboia — vidro, não furar'),
                 ('ghost', K45, 'Comando (referência, escopo da FO3)')],
             70, base + 62, largura=600)
     tabela(d, 70, base + 120, 600,
@@ -607,7 +613,7 @@ def folha_iluminacao():
                  TAB_LUZ_FO, titulo='ESCOPO — TAREFA E QUANTIDADE', alt=19)
     fim = sequencia(d, cx2, fim + 32, cw, 'ORDEM DE EXECUÇÃO', SEQ_LUZ, size=8.4, lh=12.0)
     regua_fases(d, cx2, fim + 40, cw, (8,))
-    rodape_fo(d, 'FOLHA FO4 / 5', 'Iluminação')
+    rodape_fo(d, 'FOLHA FO4 / %d' % TOTAL_FO, 'Iluminação')
     return d
 
 
@@ -651,12 +657,12 @@ SEQ_AR = [
     ('3', ['Não há forro para dutar, fora do banheiro.',
            'Evaporadora hi-wall ou cassete aparente; frigorígena, dreno e interligação',
            'aparentes, em calha, alinhados às vigas e ao perfilado da elétrica.'], False),
-    ('4', ['Zona sem furação — piscina do pavimento superior.',
-           'Retângulo de 1,92 × 3,00 m sobre a sala. Nem equipamento, nem suporte,',
-           'nem tubulação dentro dele.'], True),
-    ('5', ['Posição definitiva do AC01 em obra.',
-           'A posição em planta é reserva: confirmar apoio acima do limite sala/jantar',
-           'e altura livre na faixa de 2,62 m antes de fixar.'], True),
+    ('4', ['Zona sem furação — claraboia, o fundo de vidro da piscina.',
+           'Retângulo de 1,92 × 3,00 m sobre a sala, mais 0,12 m em volta para a',
+           'moldura do fechamento. Nem equipamento, nem suporte, nem tubulação ali.'], True),
+    ('5', ['Posição definitiva do AC01 em obra — reserva em 4,76 / 3,05 m.',
+           'Fora da linha da cortina do quarto adaptável e da moldura da claraboia.',
+           'Confirmar apoio e altura livre na faixa de 2,62 m antes de fixar.'], True),
     ('6', ['Infraestrutura: passagens, calha, frigorígena e dreno — FG, DR, IE.',
            'Executar após o preparo da laje (P03) e antes da pintura.'], False),
     ('7', ['Exaustão — EX01 e CF01, com rotas próprias.',
@@ -689,7 +695,7 @@ def folha_ar():
     escala(d, base + 26)
     legenda(d, [('fill', CIANO35, 'Evaporadora, exaustor e coifa'),
                 ('fill', AMARELO, 'Alimentação entregue pela elétrica'),
-                ('ghost', DEMO, 'Laje sem furação — piscina acima')],
+                ('ghost', DEMO, 'Claraboia — vidro, não furar')],
             70, base + 62, largura=600)
     fim = tabela(d, 70, base + 120, 600,
                  [('Zona', 0.34, 'start'), ('Área', 0.20, 'end'),
@@ -708,7 +714,110 @@ def folha_ar():
                  TAB_AR_FO, titulo='ESCOPO — TAREFA E QUANTIDADE', alt=19)
     fim = sequencia(d, cx2, fim + 32, cw, 'ORDEM DE EXECUÇÃO', SEQ_AR, size=8.4, lh=12.0)
     regua_fases(d, cx2, fim + 40, cw, (4, 8))
-    rodape_fo(d, 'FOLHA FO5 / 5', 'Ar-condicionado')
+    rodape_fo(d, 'FOLHA FO5 / %d' % TOTAL_FO, 'Ar-condicionado')
+    return d
+
+
+# ---------------------------------------------------------------------------
+# FO6 — CORTINA DO QUARTO ADAPTÁVEL E FECHAMENTO DA CLARABOIA (REV. N)
+# ---------------------------------------------------------------------------
+_PERIM_MOLDURA = 2 * ((qa.MOLDURA[2] - qa.MOLDURA[0]) + (qa.MOLDURA[3] - qa.MOLDURA[1]))
+
+TAB_CORT = [
+    ('CT01', 'Trilho de cortina com curvas, do canto do jantar à fachada leste', '%s m' % br(qa.TRILHO_M)),
+    ('PF1',  'Perfil autoportante sob a claraboia, com o trilho preso nele', '%s m de vão' % br(qa.VAO_LIVRE)),
+    ('AP',   'Apoios no concreto — nunca no vidro nem na faixa da moldura', '6 pontos'),
+    ('CT02', 'Cortina de tecido, pé-direito inteiro — franzido 2×, blackout a definir', '≈ %s m de largura' % br(2 * qa.TRILHO_M, 1)),
+    ('RC',   'Pacote recolhido no canto noroeste do jantar', '~%s m de trilho' % br(qa.PACOTE_M)),
+    ('MR1',  'Faixa de 0,12 m em volta do vidro reservada à moldura FC01', '%s m de perímetro' % br(_PERIM_MOLDURA)),
+    ('FC01', '2027/28 — fechamento elétrico: moldura, motor e painel', '1 conjunto'),
+    ('FC02', '2027/28 — ligação na espera T18 e programação do comando S10', '1 conjunto'),
+]
+
+SEQ_CORT = [
+    ('1', ['Estrutura em volta da claraboia.',
+           'O vidro não é furável. Confirmar com engenheiro onde há viga de borda da',
+           'piscina e onde o concreto admite apoio, antes de marcar qualquer furo.'], True),
+    ('2', ['Medição em obra da linha da cortina.',
+           'Vira no fim da ponta da escada, a 2,85 m da parede norte. Medir vidro,',
+           'ponta da escada e a J02: se tiver montante central, o trilho termina nele.'], True),
+    ('3', ['Espera da claraboia entregue pela elétrica — AL6 (FO3).',
+           'Caixa T18 fora da moldura, eletroduto aparente e guia até o S10. Antes da pintura.'], True),
+    ('4', ['Apoios e perfil autoportante — AP e PF1.',
+           'Somente fora da faixa de 0,12 m em volta do vidro. %s m sem apoio no teto.' % br(qa.VAO_LIVRE)], False),
+    ('5', ['Pintura da laje concluída antes do trilho.'], False),
+    ('6', ['Montagem do trilho CT01.',
+           'Ajustar a curva da ponta da escada e o desvio de 0,20 m junto à parede.'], False),
+    ('7', ['Cortina CT02.',
+           'Medir a altura final com o piso pronto; folga de ~1 cm do piso acabado.'], False),
+    ('8', ['2027/28 — fechamento elétrico FC01 e FC02.',
+           'Moldura na faixa reservada, motor ligado na espera T18, comando S10.',
+           'Não pode interferir no perfil PF1 que cruza por baixo da claraboia.'], True),
+]
+
+
+def folha_cortina():
+    d = folha_nova()
+    cabeca_fo(d, 'Cortina e claraboia', 'FO6 — CORTINA / CLARABOIA',
+              'Cortina que fecha o jantar como quarto adaptável e fechamento elétrico da claraboia (2027/28). Vidro não furável: tudo apoia no concreto em volta.')
+
+    S = 120.0
+    X0, Y0, OX, OY = 4.0, -0.05, 70.0, 150.0
+    d.set_plan(OX - X0 * S, OY - Y0 * S, S)
+    fundo_ambientes(d, K07)
+    pq = [d.PM(x, y) for x, y in qa.poly_quarto()]
+    d.path(path_d(pq), fill=CIANO18)
+    paredes(d, estado='novo')
+    janelas(d)
+    escada(d)
+    qa.desenhar_vidro(d, size=7.6)
+    qa.desenhar_moldura(d, rotulo=True, size=7.2)
+    qa.desenhar_trilho(d, sw=3.0, rotulo=False)
+    c = d.PM(qa.FACE_OESTE_JANTAR - 0.12, 0.45)
+    d.txt(c[0], c[1], 'RC', 7.6, DEMO, 'bold', 'end', ls=0.4)
+    d.txt(c[0], c[1] + 10, 'recolhida', 6.8, DEMO, 'normal', 'end')
+    c = d.PM(5.30, 1.20)
+    d.txt(c[0], c[1], 'QUARTO ADAPTÁVEL', 8.2, INK, 'bold', 'start', ls=0.6)
+    d.txt(c[0], c[1] + 11, 'cortina fechada', 7.0, K70, 'normal', 'start')
+    c = d.PM(4.62, 3.60)
+    d.txt(c[0], c[1], 'SALA', 8.6, INK, 'bold', 'start', ls=0.9)
+    c = d.PM(6.10, 0.55)
+    d.txt(c[0], c[1], 'JANTAR', 8.0, INK_SOFT, 'bold', 'middle', ls=0.9)
+    for (ident, xm, ym) in (qa.COMANDO_CLARABOIA,):
+        cx, cy = d.PM(xm, ym)
+        d.rect(cx - 5, cy - 5, 10, 10, fill=BG, stroke=K, sw=1.2)
+        d.line(cx - 2.3, cy + 2.3, cx + 2.3, cy - 2.3, K, 1.1)
+        d.txt(cx - 9, cy + 2.5, ident, 7.0, K, 'bold', 'end')
+    ponto_alim(d, qa.PONTO_CLARABOIA[1], qa.PONTO_CLARABOIA[2], 'T18 · AL6', 'o')
+
+    def ch(x0m, x1m, ym, off, texto):
+        cota_h(d, px_(x0m), px_(x1m), py_(ym), off, texto, size=7.6)
+    def cv(y0m, y1m, xm, off, texto):
+        cota_v(d, py_(y0m), py_(y1m), px_(xm), off, texto, size=7.6)
+    ch(qa.FIX_OESTE, qa.FIX_LESTE, qa.Y_CORTINA, 20, '%s — PF1, sem apoio no teto' % br(qa.VAO_LIVRE))
+    cv(qa.FACE_NORTE, qa.Y_CORTINA, 7.45, 0, '2,85')
+    c = d.PM(4.05, 3.02)
+    d.txt(c[0], c[1], '↑ fim da ponta da escada', 7.0, K70, 'normal', 'start')
+
+    d.rect(-60, 120, OX - 8 + 60, H - 60, fill=BG)
+    d.rect(-60, 770, 750, H - 700, fill=BG)
+    d.rect(560, 120, 128, 660, fill=BG)
+    d.set_plan(OX, OY, S)
+    escala(d, 780)
+    legenda(d, [('line', DEMO, 'Trilho CT01 — ■ apoio no concreto'),
+                ('ghost', CIANO, 'Moldura FC01 — 2027/28'),
+                ('fill', AMARELO, 'Claraboia — vidro, não furar'),
+                ('fill', AMARELO, 'Alimentação da FO3')],
+            70, 816, largura=600)
+    regua_fases(d, 70, 862, 600, (4, 8))
+
+    d.line(690, 140, 690, 916, RULE, 0.8, opacity=0.8)
+    cx2, cw = 722, W - MARGIN - 722
+    fim = tabela(d, cx2, 160, cw,
+                 [('ID', 0.11, 'start'), ('Tarefa', 0.63, 'start'), ('Quantidade', 0.26, 'end')],
+                 TAB_CORT, titulo='ESCOPO — TAREFA E QUANTIDADE', alt=19)
+    sequencia(d, cx2, fim + 32, cw, 'ORDEM DE EXECUÇÃO', SEQ_CORT, size=8.4, lh=12.0)
+    rodape_fo(d, 'FOLHA FO6 / %d' % TOTAL_FO, 'Cortina e claraboia')
     return d
 
 
@@ -720,7 +829,8 @@ if __name__ == '__main__':
                              (folha_piso,       'fornecedor-02-piso',       'FO2: piso'),
                              (folha_eletrica,   'fornecedor-03-eletrica',   'FO3: elétrica'),
                              (folha_iluminacao, 'fornecedor-04-iluminacao', 'FO4: iluminação'),
-                             (folha_ar,         'fornecedor-05-ar',         'FO5: ar-condicionado e exaustão')):
+                             (folha_ar,         'fornecedor-05-ar',         'FO5: ar-condicionado e exaustão'),
+                             (folha_cortina,    'fornecedor-06-cortina-claraboia', 'FO6: cortina e claraboia')):
         caminho = salvar(fn(), pasta, nome)
         exportar_pdf_a3([caminho], os.path.join(pasta, nome + '-A3.pdf'),
                         'MaxHaus 81I — fornecedores — ' + titulo)
@@ -728,4 +838,4 @@ if __name__ == '__main__':
         saidas.append(caminho)
     exportar_pdf_a3(saidas, os.path.join(pasta, 'caderno-fornecedores-A3.pdf'),
                     'MaxHaus 81I — pacote para fornecedores (A3)')
-    print('ok fornecedores: 5 folhas + pacote')
+    print('ok fornecedores: 6 folhas + pacote')

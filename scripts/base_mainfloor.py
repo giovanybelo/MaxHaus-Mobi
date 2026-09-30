@@ -650,7 +650,7 @@ def cabecalho(d, titulo, subtitulo, rev, dir1='', dir2=''):
     if dir2: d.txt(W - MARGIN, 99, dir2, 9.6, INK_SOFT, 'normal', 'end')
     d.line(MARGIN, 116, W - MARGIN, 116, RULE, 1.0)
 
-DATA_EMISSAO = '21/09/2026'
+DATA_EMISSAO = '30/09/2026'
 
 def rodape(d, nota1, nota2, prancha, rev):
     d.line(MARGIN, 922, W - MARGIN, 922, RULE, 1.0)

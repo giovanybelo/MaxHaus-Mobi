@@ -9,8 +9,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. M'
-PRANCHA = 'Prancha 10 / 12'
+REV = 'REV. N'
+PRANCHA = 'Prancha 10 / 13'
 
 H_REV = 2.40          # altura de revestimento: até o forro
 LARG_BOX, PROF_BOX = 1.432, 0.930

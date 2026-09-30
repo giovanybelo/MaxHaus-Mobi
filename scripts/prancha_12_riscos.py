@@ -9,8 +9,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. M'
-PRANCHA = 'Prancha 12 / 12'
+REV = 'REV. N'
+PRANCHA = 'Prancha 12 / 13'
 
 # grau: 'impasse' | 'curso' | 'alto' | 'medio' | 'ok'
 RISCOS = [
@@ -20,6 +20,10 @@ RISCOS = [
      'alto'),
     ('E3', 'Estrutura', 'Toda fixação de trilho, perfilado e evaporadora fura estrutura',
      'medio'),
+    ('E4', 'Estrutura', 'Claraboia de vidro não furável: cortina e moldura só apoiam no concreto em volta',
+     'alto'),
+    ('E5', 'Estrutura', 'Trilho da cortina vence 2,23 m sem apoio sob a claraboia — perfil autoportante',
+     'alto'),
     ('H1', 'Hidráulica', 'Rebaixo do banheiro: caimento do esgoto contra a cota única',
      'impasse'),
     ('H2', 'Hidráulica', 'Sem degrau, a contenção passa a ser caimento e ralo linear',
@@ -46,6 +50,12 @@ RISCOS = [
      'curso'),
     ('C2', 'Condomínio', 'Exaustor do banheiro: mesma pergunta de rota e fachada',
      'alto'),
+    ('Q1', 'Uso', 'Quarto adaptável sem evaporadora própria com a cortina fechada',
+     'medio'),
+    ('Q2', 'Uso', 'Cortina termina sobre o vidro da J02 — conferir montante central',
+     'medio'),
+    ('Q3', 'Uso', 'Linha da cortina definida pelo cliente em 30.09: fim da ponta da escada',
+     'ok'),
     ('D1', 'Documento', 'Duas séries numeradas / 08 circulando — resolvido na REV. M',
      'ok'),
     ('D2', 'Documento', 'Altura de parede: erro de digitação confirmado — 2,40 com forro, 2,62 sem',
@@ -84,6 +94,10 @@ RESOLVIDOS = [
      'O cliente confirmou em 21.09 que o arranjo é comum no edifício e o acesso é fácil — o quadro',
      'fica atrás da folha quando aberta. Decisão registrada. Resta só conferir que a porta do',
      'próprio quadro abre sem bater no batente.'),
+    ('Q3', 'A linha da cortina',
+     'Definida pelo cliente em 30.09: a cortina vira exatamente no fim da ponta da escada, a',
+     '2,85 m da parede norte. Com isso cabe cama de casal com 0,60 m de circulação nos três',
+     'lados — detalhe na Prancha 13.'),
     ('D2', 'A altura de parede',
      'Era erro de digitação. O cliente confirmou: 2,40 m com o forro atual e 2,62 m sem ele. O',
      'caderno inteiro foi recalculado nesta revisão — plenum passa a 0,22 m, o revestimento do',
@@ -120,19 +134,19 @@ def registro(d, x, y, largura):
                         (x + 150, 'Ponto', 'start'), (x + largura - 8, 'Grau', 'end')):
         d.txt(tx, y + 13.5, rot, 8.2, INK_SOFT, 'bold', al, ls=0.6)
     yy = y + 20
-    alt = 25.0
+    alt = 21.5
     for i, (ident, disc, texto, grau) in enumerate(RISCOS):
         if i % 2 == 1:
             d.rect(x, yy, largura, alt, fill=K04)
-        d.txt(x + 8, yy + 16, ident, 8.6, INK, 'bold')
-        d.txt(x + 46, yy + 16, disc, 8.4, INK_SOFT)
-        d.txt(x + 150, yy + 16, texto, 8.4, INK)
+        d.txt(x + 8, yy + 14.5, ident, 8.6, INK, 'bold')
+        d.txt(x + 46, yy + 14.5, disc, 8.4, INK_SOFT)
+        d.txt(x + 150, yy + 14.5, texto, 8.4, INK)
         # selo de grau
         sw = 62.0
         sx = x + largura - sw - 8
-        d.rect(sx, yy + 5.5, sw, 14, fill=COR_GRAU[grau], stroke=K,
+        d.rect(sx, yy + 4.0, sw, 14, fill=COR_GRAU[grau], stroke=K,
                sw=1.4 if grau == 'impasse' else 0.8)
-        d.txt(sx + sw / 2.0, yy + 15.6, NOME_GRAU[grau], 6.6,
+        d.txt(sx + sw / 2.0, yy + 14.1, NOME_GRAU[grau], 6.6,
               BRANCO if grau == 'impasse' else K, 'bold', 'middle', ls=0.5)
         d.line(x, yy + alt, x + largura, yy + alt, RULE, 0.6, opacity=0.8)
         yy += alt
@@ -160,7 +174,7 @@ def bloco_impasse(d, x, y, largura, ident, selo, titulo, dono, linhas):
 
 
 def bloco_resolvido(d, x, y, largura, itens):
-    d.txt(x, y - 10, 'RESOLVIDOS EM 21.09', 8.0, INK_SOFT, 'bold', ls=1.2)
+    d.txt(x, y - 10, 'RESOLVIDOS EM 21.09 E 30.09', 8.0, INK_SOFT, 'bold', ls=1.2)
     yy = y
     for (ident, titulo, *linhas) in itens:
         d.rect(x, yy, largura, 18 + len(linhas) * 11.2, fill=K04, stroke=K20, sw=0.8)
@@ -179,8 +193,8 @@ def construir():
     d = folha_nova()
     cabecalho(d, 'Análise técnica: riscos, impasses e verificações',
               'Leitura crítica do conjunto. Separa risco de custo, risco técnico e impasse — a decisão que trava serviço se não for respondida antes de começar.',
-              REV, '18 pontos  ·  1 impasse aberto',
-              '2 em curso  ·  3 resolvidos em 21.09')
+              REV, '23 pontos  ·  1 impasse aberto',
+              '2 em curso  ·  4 resolvidos até 30.09')
 
     cx, cw = MARGIN, 700
     fim = registro(d, cx, 162, cw)
@@ -197,7 +211,7 @@ def construir():
     bloco_resolvido(d, cx2, yy + 18, cw2, RESOLVIDOS)
 
     rodape(d,
-           'Análise sobre levantamento digital de 02.09.2026 e sobre as decisões registradas até a REV. M. Sem vistoria, sem ensaio e sem acesso aos projetos do edifício.',
+           'Análise sobre levantamento digital de 02.09.2026 e sobre as decisões registradas até a REV. N. Sem vistoria, sem ensaio e sem acesso aos projetos do edifício.',
            'Orientação de escopo, não laudo. A decisão final sobre estrutura, impermeabilização e instalações pede engenheiro responsável em inspeção.',
            PRANCHA, REV)
     return d

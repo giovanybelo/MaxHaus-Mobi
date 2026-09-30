@@ -9,8 +9,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. M'
-PRANCHA = 'Prancha 01 / 12'
+REV = 'REV. N'
+PRANCHA = 'Prancha 01 / 13'
 
 TAB_AMB = [(n, '%s m²' % br(a), '%s m' % br(per, 1), bb, ins)
            for (n, a, per, bb, ins, _w) in AMBIENTES_SCAN] + \

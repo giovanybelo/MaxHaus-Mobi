@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
-"""Prancha 06 — Tomadas, comandos e quadro (REV. K)."""
+"""Prancha 06 — Tomadas, comandos e quadro (REV. N)."""
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
+import quarto_adaptavel as qa
 
-REV = 'REV. M'
-PRANCHA = 'Prancha 06 / 12'
+REV = 'REV. N'
+PRANCHA = 'Prancha 06 / 13'
 
 # --- pontos existentes marcados pelo cliente (metros) -----------------------
 TOMADAS_EXIST = [
@@ -21,8 +22,10 @@ TOMADAS_NOVAS = [
     ('T13', 5.05, 9.20, 'cabeceira'),
     ('T14', 6.95, 9.20, 'cabeceira'),
     ('T15', 3.40, 9.20, 'office'),
-    ('T16', 6.60, 0.30, 'jantar'),
+    qa.T16_NOVO,
     ('T17', 3.45, 4.78, 'lavatório'),
+    qa.PONTO_CLARABOIA,
+    qa.TOMADA_CABECEIRA,
 ]
 # --- comandos ---------------------------------------------------------------
 COMANDOS = [
@@ -30,6 +33,8 @@ COMANDOS = [
     ('S04', 3.92, 4.88), ('S05', 4.90, 6.98),
     ('S06', 5.05, 9.05), ('S07', 6.95, 9.05),
     ('S08', 3.92, 4.62),      # luz da sala, na quina do box voltada para a escada
+    qa.COMANDO_QUARTO,        # paralelo do S02 dentro do quarto adaptável
+    qa.COMANDO_CLARABOIA,     # fechamento elétrico da claraboia
 ]
 # comandos com o id ao lado, para não empilhar rótulo sobre símbolo
 ROTULO_LESTE = {'S04', 'S05', 'S08'}
@@ -40,8 +45,9 @@ LINHAS = [
     ('Quadro elétrico', 'junto à porta de entrada, na extensão da cozinha',
      'tensão, fases, demanda, proteção e espaços'),
     ('Tomadas existentes', '9 posições levantadas pelo cliente', 'confirmar altura, caixa e circuito'),
-    ('Tomadas novas', '8 reservas — T10 a T17', 'não é número normativo nem total final'),
-    ('Comandos', '8 posições — S01 a S08, duas na cabeceira', 'lado da porta, marcenaria e cenas'),
+    ('Tomadas novas', '10 reservas — T10 a T19', 'não é número normativo nem total final'),
+    ('Comandos', '10 posições — S01 a S10, duas na cabeceira', 'lado da porta, marcenaria e cenas'),
+    ('Claraboia', 'espera T18 no teto e comando S10', 'motor em 2027/28; eletroduto e guia agora'),
     ('Cozinha', 'geladeira, forno, lava-louças, coifa e bancada', 'pontos dedicados, circuito exclusivo'),
     ('Ar-condicionado', 'alimentação conforme manual da unidade', 'quem alimenta varia com o sistema'),
     ('Banheiro', 'ponto junto ao lavatório a validar', 'volumes de proteção, DR e cargas'),
@@ -61,7 +67,7 @@ NOTAS = [
      'As marcações não autorizam instalação em parede sem localizar estrutura e tubulações.'],
     ['**Os pontos T01 a T09 são os existentes que você marcou em planta.',
      'Estão desenhados na posição aproximada do levantamento: servem para decidir o que se aproveita',
-     'e o que se remaneja, não para medir. T10 a T17 são reservas novas do estudo.'],
+     'e o que se remaneja, não para medir. T10 a T19 são reservas novas do estudo.'],
     ['**A porta de correr reserva um trecho de parede — e isso é questão elétrica.',
      'A folha estaciona no 1,00 m de drywall a leste do vão, pela face da sala: nesse trecho não',
      'cabe tomada, interruptor nem quadro. Por isso o S05 foi para a face do quarto, encostado no',
@@ -70,7 +76,12 @@ NOTAS = [
     ['**O que cada comando aciona — leitura de folha, não diagrama de circuito:',
      'S01 entrada e cozinha (TR4 e coifa, junto ao quadro) · S02 jantar (TR1 e P01) · S03 arandelas',
      'do espelho, junto à bancada · S04 banheiro, na quina do box · S05 quarto, ao lado da porta',
-     'de correr (TR5, P02 e P03) · S06 e S07 cabeceira, em paralelo com o S05 · S08 sala (TR2 e TR3).'],
+     'de correr (TR5, P02 e P03) · S06 e S07 cabeceira, em paralelo com o S05 · S08 sala (TR2 e TR3)',
+     '· S09 paralelo do S02, dentro do quarto adaptável · S10 fechamento da claraboia.'],
+    ['**Quarto adaptável e claraboia — REV. N, detalhe na Prancha 13.',
+     'T16 foi para 7,05 m e T19 entrou a 5,25 m: uma tomada em cada cabeceira da cama. T18 é caixa',
+     'de espera no teto, fora da moldura da claraboia, com eletroduto até o S10: o motor do',
+     'fechamento chega em 2027/28 e liga ali sem abrir laje. Nada fixa no vidro.'],
     ['**S08 é o novo comando da luz da sala.',
      'Fica na quina do box voltada para a escada, encostado no S04 do banheiro: é o primeiro',
      'anteparo de quem entra na sala vindo da escada ou da cozinha. Os dois ocupam a faixa de',
@@ -83,9 +94,6 @@ NOTAS = [
      'forro sai, o banheiro desce até a laje e as paredes perdem revestimento. Trocar agora é material',
      'e mão de obra; depois é refazer piso e acabamento. Antes, dois ensaios baratos: estanqueidade na',
      'hidráulica e medição de isolamento na elétrica. Prumadas e colunas são do condomínio.'],
-    ['**Circuitos, seções, disjuntores, aterramento, DR, demanda e proteção contra surtos',
-     'ficam a cargo do projeto elétrico após o levantamento. Não usar estas reservas como projeto',
-     'para o eletricista executar.'],
 ]
 
 
@@ -111,6 +119,8 @@ def construir():
                       ('quarto', 500.0, 480.0), ('banheiro', 380.6, 428.0)):
         ROOMS[k]['lx'], ROOMS[k]['ly'] = lx, ly
     rotulos(d, areas=False, size=8.4)
+    qa.desenhar_vidro(d, rotulo=False)
+    qa.desenhar_trilho(d, sw=1.8, rotulo=False, apoios=False)
 
     # tomadas existentes
     for (ident, xm, ym) in TOMADAS_EXIST:
@@ -158,7 +168,7 @@ def construir():
                  [('Grupo', 0.24, 'start'), ('Reservas', 0.40, 'start'),
                   ('Revisão necessária', 0.36, 'end')],
                  LINHAS, titulo='RESERVAS DE INFRAESTRUTURA ELÉTRICA')
-    paragrafos(d, cx2, fim + 26, cw, NOTAS, size=8.4, lh=12.0, gap=6.5)
+    paragrafos(d, cx2, fim + 26, cw, NOTAS, size=8.3, lh=11.5, gap=5.5)
 
     rodape(d,
            'Posições aproximadas sobre o modelo do scan. Quadro e trajetos existentes não estão identificados no levantamento: confirmar em campo antes de qualquer medição.',
@@ -174,4 +184,4 @@ if __name__ == '__main__':
     exportar_pdf_a3([caminho], os.path.join(pasta, 'prancha-06-eletrica-A3.pdf'),
                     'MaxHaus MainFloor — Prancha 06: tomadas, comandos e quadro')
     exportar_png(caminho, os.path.join(pasta, 'prancha-06-eletrica.png'))
-    print('ok prancha 05')
+    print('ok prancha 06')

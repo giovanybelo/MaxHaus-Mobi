@@ -9,8 +9,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. M'
-PRANCHA = 'Prancha 11 / 12'
+REV = 'REV. N'
+PRANCHA = 'Prancha 11 / 13'
 
 TAB_PREM = [
     ('Fator de sombra', '600 BTU/h por m²', 'regra simplificada — não é cálculo térmico'),

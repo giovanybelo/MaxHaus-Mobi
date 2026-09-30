@@ -24,6 +24,7 @@ from alt_a_parede_cozinha import (ORIG_WALLS, ORIG_ROOMS, ALT_WALLS, ALT_ROOMS,
 fo.EMISSAO = 'ALT. A  ·  EMISSÃO 01'
 fo.DATA = '23.09.2026'
 fo.ORIGEM = 'extraído do Caderno Alternativo A'
+fo.TOTAL_FO = 5              # o pacote alternativo não tem a FO6
 
 CHAMADAS = {
     'FO1 — DEMOLIÇÃO': 'Escopo de retirada, preparo e reconstruções, com a parede cozinha/closet da proposta alternativa (D09, D10, R03). Planta no estado existente.',

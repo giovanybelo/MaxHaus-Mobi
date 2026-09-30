@@ -14,8 +14,8 @@ from base_mainfloor import *      # noqa
 from base_mainfloor import _tick
 from prancha_04_teto import EMBUTIDOS_WC
 
-REV = 'REV. M'
-PRANCHA = 'Prancha 08 / 12'
+REV = 'REV. N'
+PRANCHA = 'Prancha 08 / 13'
 
 # --- faces do banheiro, em pt do scan ---------------------------------------
 WC_O, WC_L = 347.96, 413.33        # faces internas oeste e leste

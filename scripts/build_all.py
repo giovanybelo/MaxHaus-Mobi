@@ -22,6 +22,7 @@ FOLHAS = [
     ('prancha_10_banheiro_acabamentos.py', ['prancha-10-banheiro-acabamentos.svg']),
     ('prancha_11_ar_luz.py',     ['prancha-11-ar-luz.svg']),
     ('prancha_12_riscos.py',     ['prancha-12-riscos.svg']),
+    ('prancha_13_quarto_claraboia.py', ['prancha-13-quarto-claraboia.svg']),
 ]
 
 def main():

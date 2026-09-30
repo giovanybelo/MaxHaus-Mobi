@@ -9,8 +9,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. M'
-PRANCHA = 'Prancha 09 / 12'
+REV = 'REV. N'
+PRANCHA = 'Prancha 09 / 13'
 
 TAB_AMB = [
     ('Sala',     '23,00', '29,80', '60,26'),
@@ -38,6 +38,8 @@ TAB_DEC = [
     ('Norte', 'Medido', '126°, do scan do pavimento superior'),
     ('Tomadas', 'Permanecem', 'posição existente, sem remanejamento'),
     ('Ar', 'Somente Electrolux', 'condensadora existente a conferir'),
+    ('Quarto adaptável', 'Cortina no fim da escada', '8,54 m² dentro da cortina · cama de casal cabe'),
+    ('Claraboia', 'Fechamento em 2027/28', 'vidro não furável · espera elétrica feita agora'),
 ]
 
 NOTAS = [
@@ -83,7 +85,7 @@ def construir():
     fim = tabela(d, cx, fim + 40, cw,
                  [('Tema', 0.20, 'start'), ('Estado', 0.24, 'start'),
                   ('Leitura', 0.56, 'start')],
-                 TAB_DEC, titulo='DECISÕES FECHADAS ATÉ A REV. M', alt=20)
+                 TAB_DEC, titulo='DECISÕES FECHADAS ATÉ A REV. N', alt=20)
 
     d.line(700, 140, 700, 916, RULE, 0.8, opacity=0.8)
     cx2, cw2 = 732, W - MARGIN - 732

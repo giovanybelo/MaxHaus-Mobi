@@ -11,7 +11,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. M'
+REV = 'REV. N'
 
 AREA_CUMARU = 44.69          # sala + quarto + jantar + corredor
 AREA_CUMARU_RESERVA = 49.16  # + 10% de corte e reposição
@@ -140,12 +140,12 @@ def construir(opcao='A'):
     if A:
         cabecalho(d, 'Opção A — cumaru-ferro, cozinha e closet em monolítico',
                   'Piso pronto em réguas nas áreas de estar e dormir; cozinha e closet numa zona monolítica contínua. Cores e desenho de régua ilustrativos.',
-                  REV, 'norte 126°  ·  Prancha 03 de 07',
+                  REV, 'norte 126°  ·  Prancha 03 de 13',
                   'ponta arredondada: canto reto com filete de 0,70 m')
     else:
         cabecalho(d, 'Opção B — monolítico em todo o MainFloor',
                   'Sistema único nos cinco ambientes secos, com o banheiro à parte. Cores ilustrativas; nenhum produto, espessura ou acabamento especificado.',
-                  REV, 'norte 126°  ·  Prancha 04 de 07',
+                  REV, 'norte 126°  ·  Prancha 04 de 13',
                   'piso contínuo — sem junta de material entre ambientes secos')
 
     S = 70.0
@@ -220,7 +220,7 @@ def construir(opcao='A'):
     rodape(d,
            'Revestimento contínuo: toda a área de piso é revestida, inclusive sob móveis e equipamentos — nenhum recorte de mobiliário foi descontado. Áreas conforme o scan de 02.09.2026.',
            'Estudo preliminar de superfície: não substitui especificação de sistema, projeto de juntas nem memorial de aplicação do fornecedor.',
-           'Prancha %s / 12' % ('03' if A else '04'), REV)
+           'Prancha %s / 13' % ('03' if A else '04'), REV)
     return d
 
 

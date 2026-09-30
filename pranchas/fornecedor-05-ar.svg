@@ -3,9 +3,9 @@
 <text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS 81I  ·  PACOTE PARA FORNECEDORES</text>
 <text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Ar-condicionado e exaustão</text>
 <text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Evaporadoras, exaustor e coifa sobre laje aparente, sem forro para dutar. Somente Electrolux. A alimentação é entregue pela elétrica (FO3).</text>
-<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">EMISSÃO 01</text>
+<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">EMISSÃO 02</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">FO5 — AR</text>
-<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">extraído do caderno de estudo REV. M</text>
+<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">extraído do caderno de estudo REV. N</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
 <path d="M287.53 158.49 L452.04 158.49 L452.04 249.17 L287.53 249.17 Z" fill="#ededed" opacity="1.00"/>
 <path d="M177.31 249.17 L452.04 249.17 L452.04 486.44 L252.33 486.44 L252.33 374.41 L177.31 374.41 Z" fill="#ededed" opacity="1.00"/>
@@ -100,11 +100,11 @@
 <text x="214.8" y="484.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">BANHEIRO</text>
 <text x="159.4" y="557.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.8" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">CLOSET</text>
 <rect x="323.33" y="236.36" width="94.08" height="147.00" fill="#ffff99" stroke="#ff00ff" stroke-width="1.40" stroke-dasharray="5 3"/>
-<text x="370.4" y="305.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.8" fill="#ff00ff" font-weight="bold" text-anchor="middle" letter-spacing="0.50">PISCINA ACIMA</text>
-<text x="370.4" y="316.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.4" fill="#ff00ff" font-weight="normal" text-anchor="middle">não furar a laje</text>
-<rect x="281.30" y="258.25" width="38.00" height="16.00" fill="#a6ffff" stroke="#000000" stroke-width="1.40"/>
-<text x="303.3" y="269.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.40">AC01</text>
-<rect x="282.30" y="262.05" width="8.40" height="8.40" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
+<text x="370.4" y="305.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.8" fill="#ff00ff" font-weight="bold" text-anchor="middle" letter-spacing="0.50">CLARABOIA</text>
+<text x="370.4" y="316.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.4" fill="#ff00ff" font-weight="normal" text-anchor="middle">vidro — não furar</text>
+<rect x="284.24" y="297.45" width="38.00" height="16.00" fill="#a6ffff" stroke="#000000" stroke-width="1.40"/>
+<text x="306.2" y="309.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.40">AC01</text>
+<rect x="285.24" y="301.25" width="8.40" height="8.40" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
 <rect x="331.28" y="596.35" width="38.00" height="16.00" fill="#a6ffff" stroke="#000000" stroke-width="1.40"/>
 <text x="353.3" y="608.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.40">AC02</text>
 <rect x="332.28" y="600.15" width="8.40" height="8.40" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
@@ -125,7 +125,7 @@
 <rect x="242.10" y="672.07" width="15.00" height="10.00" fill="#ffff00" stroke="#8c8c8c" stroke-width="0.70"/>
 <text x="264.1" y="680.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Alimentação entregue pela elétrica</text>
 <rect x="438.70" y="672.07" width="15.00" height="10.00" fill="none" stroke="#ff00ff" stroke-width="0.90" stroke-dasharray="3 2.5"/>
-<text x="460.7" y="680.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Laje sem furação — piscina acima</text>
+<text x="460.7" y="680.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Claraboia — vidro, não furar</text>
 <text x="70.0" y="729.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">CARGA TÉRMICA — 600 / 800 BTU/h POR m², SELECIONAR PELA BASE SOL</text>
 <rect x="70.00" y="738.07" width="600.00" height="20.00" fill="#e0e0e0"/>
 <text x="78.0" y="751.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Zona</text>
@@ -244,14 +244,14 @@
 <text x="744.0" y="585.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">aparentes, em calha, alinhados às vigas e ao perfilado da elétrica.</text>
 <circle cx="729.00" cy="600.00" r="7.50" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
 <text x="729.0" y="603.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">4</text>
-<text x="744.0" y="603.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Zona sem furação — piscina do pavimento superior.</text>
-<text x="744.0" y="615.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Retângulo de 1,92 × 3,00 m sobre a sala. Nem equipamento, nem suporte,</text>
-<text x="744.0" y="627.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">nem tubulação dentro dele.</text>
+<text x="744.0" y="603.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Zona sem furação — claraboia, o fundo de vidro da piscina.</text>
+<text x="744.0" y="615.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Retângulo de 1,92 × 3,00 m sobre a sala, mais 0,12 m em volta para a</text>
+<text x="744.0" y="627.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">moldura do fechamento. Nem equipamento, nem suporte, nem tubulação ali.</text>
 <circle cx="729.00" cy="642.00" r="7.50" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
 <text x="729.0" y="645.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">5</text>
-<text x="744.0" y="645.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Posição definitiva do AC01 em obra.</text>
-<text x="744.0" y="657.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">A posição em planta é reserva: confirmar apoio acima do limite sala/jantar</text>
-<text x="744.0" y="669.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">e altura livre na faixa de 2,62 m antes de fixar.</text>
+<text x="744.0" y="645.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Posição definitiva do AC01 em obra — reserva em 4,76 / 3,05 m.</text>
+<text x="744.0" y="657.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Fora da linha da cortina do quarto adaptável e da moldura da claraboia.</text>
+<text x="744.0" y="669.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Confirmar apoio e altura livre na faixa de 2,62 m antes de fixar.</text>
 <circle cx="729.00" cy="684.00" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
 <text x="729.0" y="687.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">6</text>
 <text x="744.0" y="687.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Infraestrutura: passagens, calha, frigorígena e dreno — FG, DR, IE.</text>
@@ -301,6 +301,6 @@
 <line x1="48.00" y1="930.00" x2="1352.00" y2="930.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="48.0" y="948.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Quantidades preliminares sobre levantamento por scan de 02.09.2026. Conferir medidas e alvos em campo antes de mobilizar equipe, cortar material ou fechar medição.</text>
 <text x="48.0" y="961.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Durações e prazos não estão definidos: preencher no cronograma da contratada. Alterações de escopo somente por escrito.</text>
-<text x="48.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81I  ·  JOÃO BALDINATO 109  ·  AR-CONDICIONADO  ·  12.09.2026</text>
-<text x="1352.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">FOLHA FO5 / 5   ·   EMISSÃO 01</text>
+<text x="48.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81I  ·  JOÃO BALDINATO 109  ·  AR-CONDICIONADO  ·  30.09.2026</text>
+<text x="1352.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">FOLHA FO5 / 6   ·   EMISSÃO 02</text>
 </svg>

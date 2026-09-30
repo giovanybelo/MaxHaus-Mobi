@@ -198,11 +198,11 @@ BOARDS = [
     ('05', 'Teto, iluminação e ar-condicionado', 'prancha-05-teto.svg',
      'Sem forro, luz e ar dividem a mesma laje: trilhos aplicados, três luminárias de destaque e evaporadoras aparentes.',
      ['<b>6</b> trilhos, traçado revisado', '<b>P01–P03</b> destaques: jantar, cama, office',
-      '<b>Piscina acima</b> 1,92 × 3,00 m', '<b>33.900–45.200</b> BTU/h']),
+      '<b>Claraboia</b> 1,92 × 3,00 m, não furável', '<b>CT01</b> cortina do quarto adaptável']),
     ('06', 'Tomadas, comandos e quadro', 'prancha-06-eletrica.svg',
      'Reservas de localização com os pontos existentes que você marcou e o quadro junto à porta de entrada.',
-     ['<b>9</b> tomadas existentes', '<b>8</b> reservas novas',
-      '<b>8</b> comandos, dois na cabeceira', '<b>Quadro</b> na entrada']),
+     ['<b>9</b> tomadas existentes', '<b>10</b> reservas novas',
+      '<b>10</b> comandos, dois na cabeceira', '<b>T18 · S10</b> espera da claraboia']),
     ('07', 'Esquadrias e dados do levantamento', 'prancha-07-esquadrias.svg',
      'Seis janelas e três portas na mesma escala, com os números que o relatório do scan entrega e o inventário do que ele reconheceu.',
      ['<b>6</b> janelas · <b>14,73 m²</b>', '<b>3</b> portas',
@@ -225,11 +225,20 @@ BOARDS = [
       '<b>279,8 m³/h</b> na cozinha', '<b>0,48</b> de divisor de fluxo']),
     ('12', 'Análise técnica: riscos, impasses e verificações', 'prancha-12-riscos.svg',
      'Leitura crítica do conjunto: o que é risco de custo, o que é risco técnico e o que trava serviço se não for respondido antes.',
-     ['<b>18</b> pontos catalogados', '<b>3</b> impasses',
-      '<b>Piscina</b> sobre a sala', '<b>Rebaixo</b> contra a cota única']),
+     ['<b>23</b> pontos catalogados', '<b>1</b> impasse aberto',
+      '<b>Claraboia</b> não furável', '<b>Rebaixo</b> contra a cota única']),
+    ('13', 'Quarto adaptável e fechamento da claraboia', 'prancha-13-quarto-claraboia.svg',
+     'A cortina fecha o jantar como quarto de hóspede, virando no fim da ponta da escada; a claraboia ganha fechamento elétrico em 2027/28, com a espera feita agora.',
+     ['<b>8,54 m²</b> dentro da cortina', '<b>Cama de casal</b> com 0,60 m nos três lados',
+      '<b>2,23 m</b> de trilho sem apoio', '<b>FC01</b> em 2027/28']),
 ]
 
 DECISOES = [
+    ('Quarto adaptável e claraboia — REV. N',
+     'Uma cortina fecha o jantar como quarto de hóspede: recolhida no canto do jantar, estendida '
+     'vira no fim da ponta da escada e corre até a fachada. Cabe cama de casal com 0,60 m de '
+     'circulação nos três lados. A claraboia — o fundo de vidro da piscina — ganha fechamento '
+     'elétrico em 2027/28; eletroduto, espera e comando entram agora.'),
     ('Planta baixa cotada, com norte medido',
      'O caderno ganhou a folha que faltava: cotas gerais, cadeias de cota nas quatro faces, '
      'posição dos vãos na fachada leste, cotas internas, nível ±0,00 e norte. O norte veio da rosa '
@@ -330,9 +339,9 @@ def build():
 
     stamp = [
         ('Obra', 'MaxHaus MainFloor — João Baldinato 109, 81I', ''),
-        ('Caderno', '7 pranchas — 01 a 07', ''),
+        ('Caderno', '13 pranchas — 01 a 13', ''),
         ('Formato', 'A3 deitado — 420 × 297 mm', 'mono'),
-        ('Revisão', 'L — 12.09.2026', 'mono'),
+        ('Revisão', 'N — 30.09.2026', 'mono'),
         ('Escala', 'gráfica (barra de 2 m em cada planta)', ''),
         ('Base', 'scan MaxHaus MainFloor, 02.09.2026', ''),
         ('Área do pavimento', '60,30 m²', 'mono'),
@@ -343,7 +352,7 @@ def build():
         for (k, v, c) in stamp)
 
     return """<title>Caderno MainFloor</title>
-<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. L.">
+<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. N.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
@@ -355,11 +364,11 @@ def build():
     <div>
       <p class="eyebrow">MaxHaus · MainFloor · João Baldinato 109 — 81I</p>
       <h1>Caderno MainFloor</h1>
-      <p class="lede">Sete pranchas sobre o mesmo levantamento: o que se demole, que piso entra,
+      <p class="lede">Treze pranchas sobre o mesmo levantamento: o que se demole, que piso entra,
       como fica o teto agora que não há forro e onde ficam os pontos elétricos. Estudo preliminar —
       cores ilustrativas, nenhum produto ou espessura especificado.</p>
     </div>
-    <p class="rev">REV. L · 12.09.2026</p>
+    <p class="rev">REV. N · 30.09.2026</p>
   </header>
 
   <div class="rule"></div>
