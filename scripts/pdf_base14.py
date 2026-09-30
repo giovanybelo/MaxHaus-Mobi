@@ -43,15 +43,11 @@ def converter(src, dst):
     if not fontes:
         doc.save(dst, garbage=4, deflate=True, use_objstms=1)
         return
-    mapa = next(iter(fontes.values()))[1]
-    if any(f[1] != mapa for f in fontes.values()):
-        raise ValueError('ToUnicode diferente entre fontes: %s' % src)
     faltas = set()
 
-    def recodifica(m):
-        h = m.group(1)
+    def recodifica(h, mapa):
         if len(h) % 4:
-            return m.group(0)
+            return None
         out = []
         for i in range(0, len(h), 4):
             ch = mapa.get(int(h[i:i + 4], 16), '?')
@@ -63,15 +59,30 @@ def converter(src, dst):
                 out.append(b'?')
         return b'<' + b''.join(out).hex().encode() + b'>'
 
+    # cada fonte tem seu ToUnicode: o texto é recodificado pela fonte ativa (Tf)
+    token = re.compile(rb'/([A-Za-z0-9_.+-]+)\s+[-0-9.]+\s+Tf|<([0-9A-Fa-f]+)>')
     for x in range(1, doc.xref_length()):
         if doc.xref_get_key(x, 'Subtype')[1] != '/Form':
             continue
         fluxo = doc.xref_stream(x)
         if not fluxo or b'Tf' not in fluxo:
             continue
+        recursos = doc.xref_get_key(x, 'Resources/Font')[1]
+        nomes = {n.encode(): int(r) for n, r in re.findall(r'/(\w+)\s+(\d+)\s+0\s+R', recursos)}
+        atual = {'mapa': None}
+
+        def troca(m):
+            if m.group(1) is not None:
+                xr = nomes.get(m.group(1))
+                atual['mapa'] = fontes[xr][1] if xr in fontes else None
+                return m.group(0)
+            if atual['mapa'] is None:
+                return m.group(0)
+            novo = recodifica(m.group(2), atual['mapa'])
+            return novo if novo is not None else m.group(0)
+
         partes = re.split(rb'(BT.*?ET)', fluxo, flags=re.S)
-        novo = b''.join(RE_HEX.sub(recodifica, p) if p.startswith(b'BT') else p
-                        for p in partes)
+        novo = b''.join(token.sub(troca, p) if p.startswith(b'BT') else p for p in partes)
         doc.update_stream(x, novo, compress=True)
     for x, (base, _) in fontes.items():
         doc.update_object(x, '<</Type/Font/Subtype/Type1/BaseFont/%s'

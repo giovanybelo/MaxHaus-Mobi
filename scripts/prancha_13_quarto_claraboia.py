@@ -162,7 +162,7 @@ def construir():
     cv(qa.FACE_NORTE + qa.CASAL[2], qa.Y_CORTINA - qa.FOLGA_TECIDO, 6.14, 0, br(p))
     ch(qa.FIX_OESTE, qa.FIX_LESTE, qa.Y_CORTINA, 22, '%s sem apoio no teto' % br(qa.VAO_LIVRE))
     c = d.PM(4.05, 3.02)
-    d.txt(c[0], c[1], '↑ fim da ponta da escada', 7.2, K70, 'normal', 'start')
+    d.txt(c[0], c[1], 'fim da ponta da escada (acima)', 7.2, K70, 'normal', 'start')
 
     # recorte: máscaras fora da janela de desenho
     d.rect(-60, 120, OX - 8 + 60, H - 60, fill=BG)
@@ -172,7 +172,7 @@ def construir():
     base = 866
     d.set_plan(OX, OY, S)
     escala(d, base)
-    legenda(d, [('line', DEMO, 'Cortina CT01 — apoio ■ só no concreto'),
+    legenda(d, [('line', DEMO, 'Cortina CT01 — apoios só no concreto'),
                 ('ghost', CIANO, 'Moldura FC01 — 2027/28'),
                 ('fill', AMARELO, 'Claraboia de vidro'),
                 ('fill', CIANO18, 'Quarto com a cortina fechada'),
@@ -186,7 +186,7 @@ def construir():
                  TAB_NUM, titulo='QUARTO ADAPTÁVEL — NÚMEROS', alt=18)
     fim = tabela(d, cx2, fim + 34, cw,
                  [('Cama', 0.28, 'start'), ('Medida m', 0.18, 'end'), ('Lado cortina', 0.15, 'end'),
-                  ('Lado J01', 0.13, 'end'), ('Pé', 0.11, 'end'), ('≥ 0,60', 0.15, 'end')],
+                  ('Lado J01', 0.13, 'end'), ('Pé', 0.11, 'end'), ('Atende 0,60', 0.15, 'end')],
                  TAB_CAMA, titulo='CAMA × CIRCULAÇÃO — CABECEIRA NA PAREDE NORTE', alt=18)
     fim = tabela(d, cx2, fim + 34, cw,
                  [('ID', 0.12, 'start'), ('Item', 0.70, 'start'), ('Fase', 0.18, 'end')],

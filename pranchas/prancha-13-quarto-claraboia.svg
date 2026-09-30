@@ -147,7 +147,7 @@
 <line x1="207.00" y1="581.00" x2="213.00" y2="575.00" stroke="#8c8c8c" stroke-width="1.10"/>
 <line x1="519.20" y1="581.00" x2="525.20" y2="575.00" stroke="#8c8c8c" stroke-width="1.10"/>
 <text x="366.1" y="574.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">2,23 sem apoio no teto</text>
-<text x="77.0" y="579.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">↑ fim da ponta da escada</text>
+<text x="77.0" y="579.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">fim da ponta da escada (acima)</text>
 <rect x="-60.00" y="120.00" width="122.00" height="930.00" fill="#ffffff"/>
 <rect x="-60.00" y="858.00" width="750.00" height="190.00" fill="#ffffff"/>
 <rect x="628.00" y="120.00" width="60.00" height="760.00" fill="#ffffff"/>
@@ -158,15 +158,15 @@
 <text x="350.0" y="882.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">2</text>
 <text x="363.0" y="882.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">m   (base do scan)</text>
 <line x1="70.00" y1="899.00" x2="85.00" y2="899.00" stroke="#ff00ff" stroke-width="2.20"/>
-<text x="92.0" y="902.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Cortina CT01 — apoio ■ só no concreto</text>
-<rect x="281.30" y="894.00" width="15.00" height="10.00" fill="none" stroke="#00ffff" stroke-width="0.90" stroke-dasharray="3 2.5"/>
-<text x="303.3" y="902.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Moldura FC01 — 2027/28</text>
-<rect x="419.10" y="894.00" width="15.00" height="10.00" fill="#ffff00" stroke="#8c8c8c" stroke-width="0.70"/>
-<text x="441.1" y="902.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Claraboia de vidro</text>
-<rect x="70.00" y="911.00" width="15.00" height="10.00" fill="#d6ffff" stroke="#8c8c8c" stroke-width="0.70"/>
-<text x="92.0" y="919.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Quarto com a cortina fechada</text>
-<rect x="237.20" y="911.00" width="15.00" height="10.00" fill="#ffff99" stroke="#8c8c8c" stroke-width="0.70"/>
-<text x="259.2" y="919.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Área de troca</text>
+<text x="92.0" y="902.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Cortina CT01 — apoios só no concreto</text>
+<rect x="276.40" y="894.00" width="15.00" height="10.00" fill="none" stroke="#00ffff" stroke-width="0.90" stroke-dasharray="3 2.5"/>
+<text x="298.4" y="902.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Moldura FC01 — 2027/28</text>
+<rect x="414.20" y="894.00" width="15.00" height="10.00" fill="#ffff00" stroke="#8c8c8c" stroke-width="0.70"/>
+<text x="436.2" y="902.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Claraboia de vidro</text>
+<rect x="532.40" y="894.00" width="15.00" height="10.00" fill="#d6ffff" stroke="#8c8c8c" stroke-width="0.70"/>
+<text x="554.4" y="902.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Quarto com a cortina fechada</text>
+<rect x="70.00" y="911.00" width="15.00" height="10.00" fill="#ffff99" stroke="#8c8c8c" stroke-width="0.70"/>
+<text x="92.0" y="919.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Área de troca</text>
 <line x1="700.00" y1="140.00" x2="700.00" y2="916.00" stroke="#cccccc" stroke-width="0.80" opacity="0.80"/>
 <text x="730.0" y="151.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">QUARTO ADAPTÁVEL — NÚMEROS</text>
 <rect x="730.00" y="160.00" width="622.00" height="20.00" fill="#e0e0e0"/>
@@ -207,7 +207,7 @@
 <text x="1101.4" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Lado cortina</text>
 <text x="1182.3" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Lado J01</text>
 <text x="1250.7" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Pé</text>
-<text x="1344.0" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">≥ 0,60</text>
+<text x="1344.0" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Atende 0,60</text>
 <text x="738.0" y="353.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Casal padrão</text>
 <text x="1008.1" y="353.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,38 × 1,88</text>
 <text x="1101.4" y="353.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,65</text>

@@ -727,7 +727,7 @@ TAB_CORT = [
     ('CT01', 'Trilho de cortina com curvas, do canto do jantar à fachada leste', '%s m' % br(qa.TRILHO_M)),
     ('PF1',  'Perfil autoportante sob a claraboia, com o trilho preso nele', '%s m de vão' % br(qa.VAO_LIVRE)),
     ('AP',   'Apoios no concreto — nunca no vidro nem na faixa da moldura', '6 pontos'),
-    ('CT02', 'Cortina de tecido, pé-direito inteiro — franzido 2×, blackout a definir', '≈ %s m de largura' % br(2 * qa.TRILHO_M, 1)),
+    ('CT02', 'Cortina de tecido, pé-direito inteiro — franzido 2×, blackout a definir', '~%s m de largura' % br(2 * qa.TRILHO_M, 1)),
     ('RC',   'Pacote recolhido no canto noroeste do jantar', '~%s m de trilho' % br(qa.PACOTE_M)),
     ('MR1',  'Faixa de 0,12 m em volta do vidro reservada à moldura FC01', '%s m de perímetro' % br(_PERIM_MOLDURA)),
     ('FC01', '2027/28 — fechamento elétrico: moldura, motor e painel', '1 conjunto'),
@@ -797,14 +797,14 @@ def folha_cortina():
     ch(qa.FIX_OESTE, qa.FIX_LESTE, qa.Y_CORTINA, 20, '%s — PF1, sem apoio no teto' % br(qa.VAO_LIVRE))
     cv(qa.FACE_NORTE, qa.Y_CORTINA, 7.45, 0, '2,85')
     c = d.PM(4.05, 3.02)
-    d.txt(c[0], c[1], '↑ fim da ponta da escada', 7.0, K70, 'normal', 'start')
+    d.txt(c[0], c[1], 'fim da ponta da escada (acima)', 7.0, K70, 'normal', 'start')
 
     d.rect(-60, 120, OX - 8 + 60, H - 60, fill=BG)
     d.rect(-60, 770, 750, H - 700, fill=BG)
     d.rect(560, 120, 128, 660, fill=BG)
     d.set_plan(OX, OY, S)
     escala(d, 780)
-    legenda(d, [('line', DEMO, 'Trilho CT01 — ■ apoio no concreto'),
+    legenda(d, [('line', DEMO, 'Trilho CT01 — apoios no concreto'),
                 ('ghost', CIANO, 'Moldura FC01 — 2027/28'),
                 ('fill', AMARELO, 'Claraboia — vidro, não furar'),
                 ('fill', AMARELO, 'Alimentação da FO3')],
