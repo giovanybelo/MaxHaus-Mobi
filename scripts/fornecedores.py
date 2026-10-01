@@ -7,6 +7,7 @@ FO3  Elétrica
 FO4  Iluminação
 FO5  Ar-condicionado e exaustão
 FO6  Cortina do quarto adaptável e fechamento da claraboia (REV. N)
+FO7  Pedras, vidro do box e portas (REV. O)
 
 Cada folha é autossuficiente e sai como PDF próprio: especificação de tarefa,
 quantidade e sequência de execução. Sem justificativa de projeto, sem
@@ -16,10 +17,10 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-EMISSAO = 'EMISSÃO 02'
-DATA = '30.09.2026'
-ORIGEM = 'extraído do caderno de estudo REV. N'
-TOTAL_FO = 6
+EMISSAO = 'EMISSÃO 03'
+DATA = '01.10.2026'
+ORIGEM = 'extraído do caderno de estudo REV. O'
+TOTAL_FO = 7
 
 # ---------------------------------------------------------------------------
 # FASES GERAIS DA OBRA — a mesma régua nas três folhas
@@ -94,21 +95,21 @@ TAB_DEMO = [
     ('E01', 'Ensaio de estanqueidade (pressão) na hidráulica', '1 ensaio'),
     ('E02', 'Medição de resistência de isolamento na elétrica', '1 ensaio'),
     ('M01', 'Desmontar closet, etiquetar módulos e ferragens, acondicionar', '1 conjunto'),
-    ('D05', 'Retirar canto alemão do jantar', '1 conjunto'),
+    ('D05', 'Retirar canto alemão da sala de estar', '1 conjunto'),
     ('D07', 'Retirar forro — 100%', '60,30 m²'),
-    ('D01', 'Demolir drywall entre sala e quarto', '4,08 m'),
+    ('D01', 'Demolir drywall entre sala de TV e quarto', '4,08 m'),
     ('D02', 'Demolir fechamento e base do box do banheiro', '1 conjunto'),
     ('D06', 'Demolir pano de vidro chão-teto do fundo do box', '1,63 m'),
     ('D04', 'Demolir parede atrás do espelho e da bancada do banheiro', '2,64 m a conferir'),
     ('D08', 'Retirar pisos do MainFloor', '60,30 m²'),
     ('D03', 'Retirar piso, base e rebaixo do banheiro até a laje', '3,80 m²'),
-    ('P01', 'Parede do jantar: retirar espelho e revestimento', '1,95 m'),
+    ('P01', 'Parede da sala de estar: retirar espelho e revestimento', '1,95 m'),
     ('P02', 'Parede sob a escada: retirar revestimento', 'a confirmar'),
     ('P04', 'Demais paredes com revestimento retirado', 'mapear em obra'),
     ('P03', 'Laje: restaurar, descascar, limpar e preparar', '60,30 m²'),
     ('P06', 'Regularizar e lixar todo o contrapiso — plano e nivelado', '60,30 m²'),
     ('P05', 'Nivelar o banheiro na cota do piso da casa', 'cota única'),
-    ('R01', 'Reconstruir drywall sala/quarto com vão de porta 1,00 × 2,29 m', '4,08 m + 1 vão'),
+    ('R01', 'Reconstruir drywall sala de TV/quarto com vão de porta 1,00 × 2,29 m', '4,08 m + 1 vão'),
     ('R02', 'Construir parede de fechamento do fundo do box', '1,63 m'),
     ('K01', 'Vidro do box — MANTER e proteger', '1 peça'),
 ]
@@ -120,7 +121,7 @@ SEQ_DEMO = [
            'Proteger K01, esquadrias, prumadas e caixilhos. Isolar acessos e prever',
            'remoção de entulho e horário de condomínio.'], False),
     ('3', ['Desmontagem — M01 e D05.',
-           'Closet etiquetado e acondicionado; canto alemão do jantar.'], False),
+           'Closet etiquetado e acondicionado; canto alemão da sala de estar.'], False),
     ('4', ['Forro — D07, 100%.',
            'Libera a laje e revela a altura livre real.'], False),
     ('5', ['Vedações — D01, D02, D06 e D04.'], False),
@@ -215,14 +216,14 @@ def folha_demolicao():
 # FO2 — PISO
 # ---------------------------------------------------------------------------
 TAB_PISO_A = [
-    ('A1', 'Cumaru-ferro, piso pronto em réguas — sala, quarto, jantar e corredor', '44,69 m²'),
+    ('A1', 'Cumaru-ferro, piso pronto em réguas — sala de TV, quarto, sala de estar e corredor', '44,69 m²'),
     ('A2', 'Reserva de 10% sobre A1 — cortes, perdas e reposição', '4,47 m²'),
     ('A3', 'Piso monolítico — zona contínua cozinha + closet', '11,81 m²'),
     ('A4', 'Perfil de transição com junta de movimentação', 'a medir em obra'),
     ('A5', 'Filete curvo de 0,70 m de raio na ponta da zona monolítica', '1 peça'),
 ]
 TAB_PISO_B = [
-    ('B1', 'Piso monolítico contínuo — sala, quarto, cozinha, jantar e closet', '56,50 m²'),
+    ('B1', 'Piso monolítico contínuo — sala de TV, quarto, cozinha, sala de estar e closet', '56,50 m²'),
     ('B2', 'Juntas de movimentação conforme projeto do fornecedor', 'a definir'),
     ('B3', 'Sem reserva de corte — aplicação moldada in loco', '—'),
 ]
@@ -506,14 +507,14 @@ def folha_eletrica():
 # FO4 — ILUMINAÇÃO
 # ---------------------------------------------------------------------------
 TAB_LUZ_FO = [
-    ('TR1', 'Trilho eletrificado — jantar, 4,75 a 7,50 m', '2,75 m  ·  4 spots'),
-    ('TR2', 'Trilho eletrificado — sala, eixo 4,55 m', '2,10 m  ·  3 spots'),
-    ('TR3', 'Trilho eletrificado — sala, 4,20 a 7,50 m', '3,30 m  ·  4 spots'),
+    ('TR1', 'Trilho eletrificado — sala de estar, 4,75 a 7,50 m', '2,75 m  ·  4 spots'),
+    ('TR2', 'Trilho eletrificado — sala de TV, eixo 4,55 m', '2,10 m  ·  3 spots'),
+    ('TR3', 'Trilho eletrificado — sala de TV, 4,20 a 7,50 m', '3,30 m  ·  4 spots'),
     ('TR4', 'Trilho eletrificado — cozinha, eixo 1,45 m', '2,50 m  ·  4 spots'),
     ('TR5', 'Trilho eletrificado — quarto, eixo 8,28 m', '3,65 m  ·  3 spots'),
     ('TR6', 'Trilho eletrificado — closet, eixo 1,45 m', '1,50 m  ·  3 spots'),
     ('—',   'Total de trilho e de spots nos seis trechos', '15,80 m  ·  21 spots'),
-    ('P01', 'Luminária de destaque — jantar, plafon (fica sobre a cama)', '1 peça'),
+    ('P01', 'Luminária de destaque — sala de estar, plafon (fica sobre a cama)', '1 peça'),
     ('P02', 'Luminária de destaque — cama, no eixo do TR5', '1 peça'),
     ('P03', 'Luminária de destaque — office, no eixo do TR5', '1 peça'),
     ('EM',  'Embutido no forro do banheiro — único ambiente com forro', '2 peças'),
@@ -522,10 +523,10 @@ TAB_LUZ_FO = [
 ]
 
 TAB_LUX = [
-    ('Sala',     '150 lux', '7.188 lm', '2.700 K'),
+    ('Sala de TV',     '150 lux', '7.188 lm', '2.700 K'),
     ('Quarto',   '150 lux', '4.188 lm', '2.700 K'),
     ('Cozinha',  '300 lux', '5.563 lm', '3.000 K'),
-    ('Jantar',   '150 lux', '1.844 lm', '2.700 K'),
+    ('Sala de estar',   '150 lux', '1.844 lm', '2.700 K'),
     ('Closet',   '200 lux', '2.208 lm', '3.000 K'),
     ('Banheiro', '200 lux', '1.583 lm', '3.000 K'),
 ]
@@ -541,7 +542,7 @@ SEQ_LUZ = [
            'Alinhar cada trecho às vigas e ao perfilado da elétrica. Trilho não cruza',
            'trilho: se dois trechos tiverem de se encontrar, é com conector T.'], True),
     ('4', ['Zona sem furação — claraboia, o fundo de vidro da piscina.',
-           'Retângulo de 1,92 × 3,00 m sobre a sala, centrado em 6,13 / 3,14 m do canto',
+           'Retângulo de 1,92 × 3,00 m sobre a sala de TV, centrado em 6,13 / 3,14 m do canto',
            'noroeste, mais 0,12 m em volta para a moldura FC01. Nada fixa ali.'], True),
     ('5', ['Pintura concluída antes de instalar.',
            'Trilho, spot e luminária entram depois da pintura da laje e das paredes.'], False),
@@ -658,7 +659,7 @@ SEQ_AR = [
            'Evaporadora hi-wall ou cassete aparente; frigorígena, dreno e interligação',
            'aparentes, em calha, alinhados às vigas e ao perfilado da elétrica.'], False),
     ('4', ['Zona sem furação — claraboia, o fundo de vidro da piscina.',
-           'Retângulo de 1,92 × 3,00 m sobre a sala, mais 0,12 m em volta para a',
+           'Retângulo de 1,92 × 3,00 m sobre a sala de TV, mais 0,12 m em volta para a',
            'moldura do fechamento. Nem equipamento, nem suporte, nem tubulação ali.'], True),
     ('5', ['Posição definitiva do AC01 em obra — reserva em 4,76 / 3,05 m.',
            'Fora da linha da cortina do quarto adaptável e da moldura da claraboia.',
@@ -724,11 +725,11 @@ def folha_ar():
 _PERIM_MOLDURA = 2 * ((qa.MOLDURA[2] - qa.MOLDURA[0]) + (qa.MOLDURA[3] - qa.MOLDURA[1]))
 
 TAB_CORT = [
-    ('CT01', 'Trilho de cortina com curvas, do canto do jantar à fachada leste', '%s m' % br(qa.TRILHO_M)),
+    ('CT01', 'Trilho de cortina reto, com uma curva, do canto da sala de estar à fachada leste', '%s m' % br(qa.TRILHO_M)),
     ('PF1',  'Perfil autoportante sob a claraboia, com o trilho preso nele', '%s m de vão' % br(qa.VAO_LIVRE)),
     ('AP',   'Apoios no concreto — nunca no vidro nem na faixa da moldura', '6 pontos'),
     ('CT02', 'Cortina de tecido, pé-direito inteiro — franzido 2×, blackout a definir', '~%s m de largura' % br(2 * qa.TRILHO_M, 1)),
-    ('RC',   'Pacote recolhido no canto noroeste do jantar', '~%s m de trilho' % br(qa.PACOTE_M)),
+    ('RC',   'Pacote recolhido no canto noroeste da sala de estar', '~%s m de trilho' % br(qa.PACOTE_M)),
     ('MR1',  'Faixa de 0,12 m em volta do vidro reservada à moldura FC01', '%s m de perímetro' % br(_PERIM_MOLDURA)),
     ('FC01', '2027/28 — fechamento elétrico: moldura, motor e painel', '1 conjunto'),
     ('FC02', '2027/28 — ligação na espera T18 e programação do comando S10', '1 conjunto'),
@@ -747,7 +748,7 @@ SEQ_CORT = [
            'Somente fora da faixa de 0,12 m em volta do vidro. %s m sem apoio no teto.' % br(qa.VAO_LIVRE)], False),
     ('5', ['Pintura da laje concluída antes do trilho.'], False),
     ('6', ['Montagem do trilho CT01.',
-           'Ajustar a curva da ponta da escada e o desvio de 0,20 m junto à parede.'], False),
+           'Trilho reto junto à parede, passando sobre o degrau; curva só no fim da ponta.'], False),
     ('7', ['Cortina CT02.',
            'Medir a altura final com o piso pronto; folga de ~1 cm do piso acabado.'], False),
     ('8', ['2027/28 — fechamento elétrico FC01 e FC02.',
@@ -759,7 +760,7 @@ SEQ_CORT = [
 def folha_cortina():
     d = folha_nova()
     cabeca_fo(d, 'Cortina e claraboia', 'FO6 — CORTINA / CLARABOIA',
-              'Cortina que fecha o jantar como quarto adaptável e fechamento elétrico da claraboia (2027/28). Vidro não furável: tudo apoia no concreto em volta.')
+              'Cortina que fecha a sala de estar como quarto adaptável e fechamento elétrico da claraboia (2027/28). Vidro não furável: tudo apoia no concreto em volta.')
 
     S = 120.0
     X0, Y0, OX, OY = 4.0, -0.05, 70.0, 150.0
@@ -780,9 +781,9 @@ def folha_cortina():
     d.txt(c[0], c[1], 'QUARTO ADAPTÁVEL', 8.2, INK, 'bold', 'start', ls=0.6)
     d.txt(c[0], c[1] + 11, 'cortina fechada', 7.0, K70, 'normal', 'start')
     c = d.PM(4.62, 3.60)
-    d.txt(c[0], c[1], 'SALA', 8.6, INK, 'bold', 'start', ls=0.9)
+    d.txt(c[0], c[1], 'SALA DE TV', 8.6, INK, 'bold', 'start', ls=0.9)
     c = d.PM(6.10, 0.55)
-    d.txt(c[0], c[1], 'JANTAR', 8.0, INK_SOFT, 'bold', 'middle', ls=0.9)
+    d.txt(c[0], c[1], 'SALA DE ESTAR', 8.0, INK_SOFT, 'bold', 'middle', ls=0.9)
     for (ident, xm, ym) in (qa.COMANDO_CLARABOIA,):
         cx, cy = d.PM(xm, ym)
         d.rect(cx - 5, cy - 5, 10, 10, fill=BG, stroke=K, sw=1.2)
@@ -821,6 +822,198 @@ def folha_cortina():
     return d
 
 
+# ---------------------------------------------------------------------------
+# FO7 — PEDRAS, VIDRO DO BOX E PORTAS (REV. O)
+# ---------------------------------------------------------------------------
+# Geometria em metros, mesma base das demais folhas (canto noroeste).
+COZ_OESTE, COZ_LESTE = mx(250.26), mx(343.39)       # 0,10 · 2,14
+COZ_NORTE, COZ_SUL = my(287.11), my(430.06)         # 3,56 · 6,69
+GELADEIRA = (COZ_OESTE, COZ_NORTE, COZ_OESTE + 0.80, COZ_NORTE + 0.90)
+NICHO_GEL = 0.92                                    # 0,90 do aparelho + 2 cm de folga
+KC1 = (COZ_OESTE, COZ_NORTE + NICHO_GEL, COZ_OESTE + 0.60, COZ_SUL)
+KC2 = (COZ_LESTE - 0.60, 4.40, COZ_LESTE, 5.60)     # opcional, junto a T05/T06
+WC_O, WC_L = mx(347.96), mx(413.33)                 # 2,24 · 3,67
+WC_N, K01_Y = my(330.22), my(408.20)                # 4,51 · 6,22
+BOX_S = my(450.67)                                  # 7,15
+WB1 = (WC_O, WC_N, WC_O + 0.40, K01_Y)
+BOX_L = WC_L - WC_O                                 # 1,43
+REVEST = 0.015                                      # revestimento por face, a conferir
+VAO_BOX_ACAB = BOX_L - 2 * REVEST                   # ≈ 1,40
+FOLGA_VIDRO = 0.005
+PAINEL_B = (VAO_BOX_ACAB - 3 * FOLGA_VIDRO) / 2.0   # fixo e porta, ≈ 0,69 cada
+
+
+def _ln(r):
+    return r[3] - r[1]
+
+
+TAB_PEDRA = [
+    ('KC1', 'Bancada da cozinha, parede oeste, do nicho da geladeira à parede sul — pedra 2 cm',
+     '%s × 0,60 m' % br(_ln(KC1))),
+    ('KC1f', 'Frontão 10 cm na parede oeste e na lateral da geladeira', '~%s m' % br(_ln(KC1) + 0.60)),
+    ('KC1r', 'Recortes na KC1: cuba e cooktop — modelos definidos antes do gabarito', '2 recortes'),
+    ('KC2', 'OPCIONAL — bancada na parede leste, junto a T05/T06; sobra 0,84 m de passagem',
+     '~1,20 × 0,60 m'),
+    ('WB1', 'Bancada do banheiro, parede oeste, da parede norte até o vidro do box',
+     '%s × 0,40 m' % br(_ln(WB1))),
+    ('WB1f', 'Frontão 10 cm em três lados: norte, oeste e sul (encontro com o vidro)',
+     '~%s m' % br(_ln(WB1) + 0.80)),
+    ('WB1r', 'Recorte da cuba — inventário 0,60 × 0,50: na bancada de 0,40 só apoio ou semiencaixe',
+     '1 recorte'),
+]
+
+TAB_VIDRO = [
+    ('A', 'K01 — manter o vidro atual, proteger durante a obra', '%s × ~2,10 m' % br(BOX_L)),
+    ('A1', 'Conferir altura real, ferragens e vedação; trocar só borrachas e silicone', '1 conjunto'),
+    ('B', 'VB1 — vidro novo, temperado 8 mm incolor, do piso acabado a 2,00 m',
+     '%s × 2,00 m' % br(VAO_BOX_ACAB)),
+    ('B1', 'Painel fixo, lado oeste (encontro com a WB1), perfil U no piso e na parede',
+     '%s × 2,00 m' % br(PAINEL_B)),
+    ('B2', 'Porta de giro, lado leste, abre para fora do box; dobradiça de vidro na parede',
+     '%s × 2,00 m' % br(PAINEL_B)),
+]
+
+TAB_PORTAS = [
+    ('P01', 'Entrada — existente, sem alteração', '1,00 × 2,29 m'),
+    ('P02', 'Banheiro — folha existente, abre para fora, agora para o lado do quarto', '0,80 × 2,00 m'),
+    ('P02a', 'Inverter o giro: dobradiças no lado sul, fechadura e batente refeitos', '1 conjunto'),
+    ('P03', 'Quarto / sala de TV — nova, de correr, trilho aparente; folha estaciona a leste, '
+            'pela face da sala de TV', 'vão 1,00 × 2,29 m'),
+]
+
+SEQ_FO7 = [
+    ('1', ['Decidir antes do revestimento: box A (K01) ou B (VB1).',
+           'B pede perfis e reforço na parede R02 antes de revestir.'], True),
+    ('2', ['Modelos de cuba, cooktop e metais definidos.',
+           'Sem modelo não há gabarito nem recorte.'], True),
+    ('3', ['Medição final e gabarito em obra — KC1, KC2 e WB1.',
+           'Com as paredes revestidas; as medidas desta folha são para orçamento.'], True),
+    ('4', ['Pedras assentadas depois da pintura; frontões por último.'], False),
+    ('5', ['Vidro do box — medir o vão com o revestimento pronto.',
+           'Desconta revestimento e folgas de 5 mm; altura a partir do piso acabado.'], False),
+    ('6', ['Portas — P02 com giro invertido e P03 de correr.',
+           'P03 só depois da laje pintada; deixar livre o trecho de parede a leste.'], False),
+]
+
+
+def _elev(d, x, y, larg_m, alt_m, s, titulo, sub, paineis=None, porta_lado=None):
+    """Vista frontal simples: retângulo, divisão de painéis e cotas."""
+    w, h = larg_m * s, alt_m * s
+    d.txt(x, y - 22, titulo, 7.6, K, 'bold', 'start', ls=0.4)
+    d.txt(x, y - 11, sub, 6.8, INK_SOFT, 'normal', 'start')
+    d.rect(x, y, w, h, fill=CIANO18, stroke=K, sw=1.1)
+    if paineis:
+        xx = x + paineis[0] * s
+        d.line(xx, y, xx, y + h, K, 0.9)
+    if porta_lado:
+        # triângulo de abertura: vértice no lado da fechadura
+        x0 = x + (paineis[0] * s if paineis else 0)
+        x1 = x + w
+        if porta_lado == 'l':
+            d.path('M %.1f %.1f L %.1f %.1f L %.1f %.1f' % (x1, y, x0, y + h / 2, x1, y + h),
+                   stroke=K45, sw=0.7, dash='3 2')
+        else:
+            d.path('M %.1f %.1f L %.1f %.1f L %.1f %.1f' % (x0, y, x1, y + h / 2, x0, y + h),
+                   stroke=K45, sw=0.7, dash='3 2')
+    d.line(x - 4, y + h, x + w + 4, y + h, K, 1.4)
+    d.txt(x + w / 2, y + h + 11, br(larg_m), 7.0, DIM_TXT, 'normal', 'middle')
+    d.txt(x + w + 5, y + h / 2, br(alt_m), 7.0, DIM_TXT, 'normal', 'start')
+
+
+def folha_pedras_vidro_portas():
+    d = folha_nova()
+    S = 100.0
+    X0, Y0, OX, OY = -0.45, 1.85, 70.0, 150.0
+    d.set_plan(OX - X0 * S, OY - Y0 * S, S)
+    fundo_ambientes(d, K07)
+    paredes(d, estado='novo')
+    janelas(d)
+    escada(d)
+
+    def rect_m(r, **kw):
+        a = d.PM(r[0], r[1]); b = d.PM(r[2], r[3])
+        d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], **kw)
+        return a, b
+
+    # cozinha
+    a, b = rect_m(GELADEIRA, fill='none', stroke=K45, sw=0.9, dash='4 3')
+    d.txt((a[0] + b[0]) / 2, (a[1] + b[1]) / 2 + 3, 'GELADEIRA', 6.4, K70, 'bold', 'middle')
+    a, b = rect_m(KC1, fill=AMARELO40, stroke=K, sw=1.2)
+    d.txt((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, 'KC1', 8.0, K, 'bold', 'middle', rot=-90)
+    a, b = rect_m(KC2, fill='none', stroke=K, sw=1.0, dash='5 3')
+    d.txt((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, 'KC2 opcional', 7.0, K, 'bold', 'middle', rot=-90)
+    # banheiro
+    a, b = rect_m(WB1, fill=AMARELO40, stroke=K, sw=1.2)
+    d.txt((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, 'WB1', 8.0, K, 'bold', 'middle', rot=-90)
+    a, b = rect_m((WC_O, K01_Y, WC_L, K01_Y + 0.06), fill=CIANO, stroke=K, sw=1.0)
+    d.txt((a[0] + b[0]) / 2, b[1] + 13, 'K01 / VB1 · vidro do box', 7.0, K, 'bold', 'middle')
+    c = d.PM((WC_O + WC_L) / 2, (K01_Y + BOX_S) / 2 + 0.20)
+    d.txt(c[0], c[1], 'BOX', 7.6, K70, 'bold', 'middle', ls=0.6)
+    # portas
+    porta(d, DOOR_ENTRADA)
+    porta(d, DOOR_BANHO)
+    porta_correr_horizontal(d, PORTA_NOVA, lado='n', sentido='e')
+    for ident, xm, ym, anc in (('P01', 0.95, 2.45, 'start'), ('P02', 3.80, 5.10, 'start'),
+                               ('P03', 4.23, 6.45, 'middle')):
+        c = d.PM(xm, ym)
+        d.txt(c[0], c[1], ident, 8.0, DEMO, 'bold', anc, ls=0.4)
+    c = d.PM(3.80, 5.10)
+    d.txt(c[0], c[1] + 10, 'abre p/ o quarto', 6.8, DEMO, 'normal', 'start')
+    # ambientes
+    for txt, xm, ym in (('COZINHA', 1.20, 6.20), ('BANHEIRO', 3.05, 4.85),
+                        ('SALA DE TV', 4.30, 3.50), ('QUARTO', 4.30, 7.25)):
+        c = d.PM(xm, ym)
+        d.txt(c[0], c[1], txt, 8.2, INK, 'bold', 'middle', ls=0.9)
+
+    # cotas
+    def ch(x0m, x1m, ym, off, texto):
+        cota_h(d, px_(x0m), px_(x1m), py_(ym), off, texto, size=7.4)
+    def cv(y0m, y1m, xm, off, texto):
+        cota_v(d, py_(y0m), py_(y1m), px_(xm), off, texto, size=7.4)
+    cv(KC1[1], KC1[3], COZ_OESTE, -26, '%s  KC1' % br(_ln(KC1)))
+    cv(GELADEIRA[1], KC1[1], COZ_OESTE, -26, br(NICHO_GEL))
+    ch(KC1[0], KC1[2], KC1[3], -10, '0,60')
+    ch(KC1[2], KC2[0], 5.80, 0, '0,84')
+    cv(WB1[1], WB1[3], WB1[2], 14, '%s  WB1' % br(_ln(WB1)))
+    ch(WB1[0], WB1[2], WB1[1], 12, '0,40')
+    ch(WC_O, WC_L, BOX_S, 20, '%s  vão do box' % br(BOX_L))
+
+    # recorte
+    d.rect(-60, -60, W + 120, OY - 8 + 60, fill=BG)
+    d.rect(-60, 120, OX - 8 + 60, H, fill=BG)
+    d.rect(-60, 718, W + 120, H, fill=BG)
+    d.rect(578, 120, W, H, fill=BG)
+    cabeca_fo(d, 'Pedras, vidro do box e portas', 'FO7 — PEDRAS / VIDRO / PORTAS',
+              'Medidas adiantadas para orçamento: bancadas da cozinha e do banheiro, as duas propostas do vidro do box e as portas P01 a P03.')
+
+    # vistas
+    se = 45.0
+    xe = 592
+    d.txt(xe, 160, 'VISTAS', 8.0, INK_SOFT, 'bold', ls=1.2)
+    _elev(d, xe, 210, BOX_L, 2.10, se, 'A · K01 mantido', 'altura a medir')
+    _elev(d, xe, 370, VAO_BOX_ACAB, 2.00, se, 'B · VB1 novo', 'fixo + porta',
+          paineis=(PAINEL_B,), porta_lado='r')
+    _elev(d, xe, 530, 0.80, 2.00, se, 'P02 · banheiro', 'vista da sala de TV', porta_lado='l')
+
+    d.set_plan(OX, OY, S)
+    escala(d, 732)
+    legenda(d, [('fill', AMARELO40, 'Pedra — bancada'),
+                ('fill', CIANO, 'Vidro do box')],
+            70, 780, largura=600)
+    regua_fases(d, 70, 862, 600, (5, 8))
+
+    d.line(690, 140, 690, 916, RULE, 0.8, opacity=0.8)
+    cx2, cw = 722, W - MARGIN - 722
+    cols = [('ID', 0.09, 'start'), ('Tarefa', 0.68, 'start'), ('Medida', 0.23, 'end')]
+    fim = tabela(d, cx2, 160, cw, cols, TAB_PEDRA, titulo='PEDRAS — COZINHA E BANHEIRO', alt=19)
+    fim = tabela(d, cx2, fim + 30, cw, cols, TAB_VIDRO,
+                 titulo='VIDRO DO BOX — DUAS PROPOSTAS (A OU B)', alt=19)
+    fim = tabela(d, cx2, fim + 30, cw, cols, TAB_PORTAS, titulo='PORTAS', alt=19)
+    sequencia(d, cx2, fim + 30, cw, 'ORDEM DE EXECUÇÃO', SEQ_FO7, size=8.2, lh=11.6)
+    rodape_fo(d, 'FOLHA FO7 / %d' % TOTAL_FO, 'Pedras, vidro e portas')
+    return d
+
+
 if __name__ == '__main__':
     raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     pasta = os.path.join(raiz, 'pranchas')
@@ -830,7 +1023,8 @@ if __name__ == '__main__':
                              (folha_eletrica,   'fornecedor-03-eletrica',   'FO3: elétrica'),
                              (folha_iluminacao, 'fornecedor-04-iluminacao', 'FO4: iluminação'),
                              (folha_ar,         'fornecedor-05-ar',         'FO5: ar-condicionado e exaustão'),
-                             (folha_cortina,    'fornecedor-06-cortina-claraboia', 'FO6: cortina e claraboia')):
+                             (folha_cortina,    'fornecedor-06-cortina-claraboia', 'FO6: cortina e claraboia'),
+                             (folha_pedras_vidro_portas, 'fornecedor-07-pedras-vidro-portas', 'FO7: pedras, vidro do box e portas')):
         caminho = salvar(fn(), pasta, nome)
         exportar_pdf_a3([caminho], os.path.join(pasta, nome + '-A3.pdf'),
                         'MaxHaus 81I — fornecedores — ' + titulo)
@@ -838,4 +1032,4 @@ if __name__ == '__main__':
         saidas.append(caminho)
     exportar_pdf_a3(saidas, os.path.join(pasta, 'caderno-fornecedores-A3.pdf'),
                     'MaxHaus 81I — pacote para fornecedores (A3)')
-    print('ok fornecedores: 6 folhas + pacote')
+    print('ok fornecedores: %d folhas + pacote' % len(saidas))

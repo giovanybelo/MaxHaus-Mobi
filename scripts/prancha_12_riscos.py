@@ -9,12 +9,12 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. N'
+REV = 'REV. O'
 PRANCHA = 'Prancha 12 / 13'
 
 # grau: 'impasse' | 'curso' | 'alto' | 'medio' | 'ok'
 RISCOS = [
-    ('E1', 'Estrutura', 'Piscina de 5,76 m² sobre a sala, em laje que a D07 vai expor',
+    ('E1', 'Estrutura', 'Piscina de 5,76 m² sobre a sala de TV, em laje que a D07 vai expor',
      'curso'),
     ('E2', 'Estrutura', 'Condição real da laje só aparece depois do forro sair — P03 é escopo aberto',
      'alto'),
@@ -72,13 +72,13 @@ IMPASSES = [
       'Se o rebaixo for raso, ou a cota única cai, ou o caimento cai. Não dá para ter os dois.',
       'PORTÃO: medir o desnível real e a cota de saída do esgoto no dia seguinte à D03,',
       'antes de comprar impermeabilizante, piso ou ralo.']),
-    ('E1', 'EM CURSO', 'A piscina sobre a sala',
+    ('E1', 'EM CURSO', 'A piscina sobre a sala de TV',
      'visita técnica agendada · condomínio em contato',
-     ['São 5,76 m² de lâmina sobre a sala. Enquanto havia forro, qualquer infiltração ficava',
+     ['São 5,76 m² de lâmina sobre a sala de TV. Enquanto havia forro, qualquer infiltração ficava',
       'escondida; com a laje aparente, mancha e eflorescência passam a ser o acabamento.',
       'O QUE LEVAR NA VISITA: projeto estrutural do trecho, data e sistema da última',
       'impermeabilização da piscina, e histórico de manutenção. Inspecionar a face inferior',
-      'logo após a D07, antes de assumir concreto à vista na sala.']),
+      'logo após a D07, antes de assumir concreto à vista na sala de TV.']),
     ('C1', 'EM CURSO', 'A rota de descarte da coifa',
      'em alinhamento com a construtora',
      ['A vazão de 279,8 m³/h pressupõe duto próprio até uma saída permitida. Sem shaft de cozinha',
@@ -96,8 +96,8 @@ RESOLVIDOS = [
      'próprio quadro abre sem bater no batente.'),
     ('Q3', 'A linha da cortina',
      'Definida pelo cliente em 30.09: a cortina vira exatamente no fim da ponta da escada, a',
-     '2,85 m da parede norte. Com isso cabe cama de casal com 0,60 m de circulação nos três',
-     'lados — detalhe na Prancha 13.'),
+     '2,85 m da parede norte; na REV. O o trilho ficou reto e a cama, leste–oeste. Cabe cama de',
+     'casal com 0,60 m de circulação no pé, na cabeceira e no lado sul — Prancha 13.'),
     ('D2', 'A altura de parede',
      'Era erro de digitação. O cliente confirmou: 2,40 m com o forro atual e 2,62 m sem ele. O',
      'caderno inteiro foi recalculado nesta revisão — plenum passa a 0,22 m, o revestimento do',
@@ -211,7 +211,7 @@ def construir():
     bloco_resolvido(d, cx2, yy + 18, cw2, RESOLVIDOS)
 
     rodape(d,
-           'Análise sobre levantamento digital de 02.09.2026 e sobre as decisões registradas até a REV. N. Sem vistoria, sem ensaio e sem acesso aos projetos do edifício.',
+           'Análise sobre levantamento digital de 02.09.2026 e sobre as decisões registradas até a REV. O. Sem vistoria, sem ensaio e sem acesso aos projetos do edifício.',
            'Orientação de escopo, não laudo. A decisão final sobre estrutura, impermeabilização e instalações pede engenheiro responsável em inspeção.',
            PRANCHA, REV)
     return d

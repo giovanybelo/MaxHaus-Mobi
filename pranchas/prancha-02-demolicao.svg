@@ -3,7 +3,7 @@
 <text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
 <text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Demolição e desmontagem</text>
 <text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Diagrama de escopo sobre o modelo de trabalho. Conferir os alvos presencialmente antes de mobilizar a demolidora.</text>
-<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. N</text>
+<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. O</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">estado existente: o que sai, o que se prepara</text>
 <text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">demolir e reconstruir são serviços separados</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
@@ -60,8 +60,8 @@
 <line x1="122.72" y1="302.75" x2="192.72" y2="302.75" stroke="#000000" stroke-width="1.40"/>
 <path d="M 192.72 302.75 A 70.00 70.00 0 0 1 122.72 372.75" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
 <rect x="326.69" y="503.12" width="7.61" height="56.25" fill="#ffffff"/>
-<line x1="333.99" y1="503.42" x2="389.65" y2="503.42" stroke="#000000" stroke-width="1.40"/>
-<path d="M 389.65 503.42 A 55.65 55.65 0 0 1 333.99 559.07" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
+<line x1="333.99" y1="559.07" x2="389.65" y2="559.07" stroke="#000000" stroke-width="1.40"/>
+<path d="M 389.65 559.07 A 55.65 55.65 0 0 0 333.99 503.42" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
 <rect x="186.05" y="292.58" width="211.56" height="58.61" fill="none" stroke="#000000" stroke-width="0.90" opacity="0.85"/>
 <line x1="205.29" y1="292.58" x2="205.29" y2="351.19" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
 <line x1="224.52" y1="292.58" x2="224.52" y2="351.19" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
@@ -293,8 +293,8 @@
 <line x1="223.31" y1="643.01" x2="330.47" y2="643.01" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
 <line x1="223.31" y1="650.01" x2="330.47" y2="650.01" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
 <line x1="223.31" y1="657.01" x2="330.47" y2="657.01" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<text x="498.2" y="218.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">JANTAR</text>
-<text x="472.1" y="402.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA</text>
+<text x="498.2" y="218.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA DE ESTAR</text>
+<text x="472.1" y="402.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA DE TV</text>
 <text x="148.6" y="529.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">COZINHA</text>
 <text x="174.7" y="728.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">CLOSET</text>
 <text x="467.5" y="731.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">QUARTO</text>
@@ -383,7 +383,7 @@
 <text x="799.3" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Serviço</text>
 <text x="1344.0" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Quantidade preliminar</text>
 <text x="730.0" y="192.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">D01</text>
-<text x="799.3" y="192.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Drywall entre sala e quarto</text>
+<text x="799.3" y="192.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Drywall entre sala de TV e quarto</text>
 <text x="1344.0" y="192.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1 trecho — 4,08 m</text>
 <line x1="722.00" y1="199.00" x2="1352.00" y2="199.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="199.00" width="630.00" height="19.00" fill="#f5f5f5"/>
@@ -401,7 +401,7 @@
 <text x="1344.0" y="249.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1 trecho — 2,64 m a conferir</text>
 <line x1="722.00" y1="256.00" x2="1352.00" y2="256.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="268.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">D05</text>
-<text x="799.3" y="268.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Canto alemão do jantar</text>
+<text x="799.3" y="268.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Canto alemão da sala de estar</text>
 <text x="1344.0" y="268.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1 conjunto — inventário por módulo</text>
 <line x1="722.00" y1="275.00" x2="1352.00" y2="275.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="275.00" width="630.00" height="19.00" fill="#f5f5f5"/>
@@ -419,7 +419,7 @@
 <text x="1344.0" y="325.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,30 m² úteis, sem dupla contagem</text>
 <line x1="722.00" y1="332.00" x2="1352.00" y2="332.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="344.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">P01</text>
-<text x="799.3" y="344.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Parede do jantar: retirar espelho e revestimento</text>
+<text x="799.3" y="344.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Parede da sala de estar: retirar espelho e revestimento</text>
 <text x="1344.0" y="344.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1 trecho — 1,95 m, preparo p/ pintura</text>
 <line x1="722.00" y1="351.00" x2="1352.00" y2="351.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="351.00" width="630.00" height="19.00" fill="#f5f5f5"/>
@@ -446,7 +446,7 @@
 <text x="1344.0" y="439.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,30 m² — plano e nivelado</text>
 <line x1="722.00" y1="446.00" x2="1352.00" y2="446.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="458.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">R01</text>
-<text x="799.3" y="458.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Nova drywall sala/quarto, com porta de correr 1,00 × 2,29 m</text>
+<text x="799.3" y="458.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Nova drywall sala de TV/quarto, com porta de correr 1,00 × 2,29 m</text>
 <text x="1344.0" y="458.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">4,08 m + 1 porta</text>
 <line x1="722.00" y1="465.00" x2="1352.00" y2="465.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="465.00" width="630.00" height="19.00" fill="#f5f5f5"/>
@@ -476,7 +476,7 @@
 <text x="722.0" y="591.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Box com o pano de vidro de hoje (D06) e drywall ainda sem porta. O proposto — box fechado, porta</text>
 <text x="722.0" y="603.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">de correr e porta do banheiro girando para a escada — está nas Pranchas 03 a 06.</text>
 <text x="722.0" y="620.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Demolir para refazer, não só demolir.</text>
-<text x="722.0" y="632.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">A drywall entre sala e quarto cai e volta (R01), com porta de correr de 1,00 × 2,29 m; a folha</text>
+<text x="722.0" y="632.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">A drywall entre sala de TV e quarto cai e volta (R01), com porta de correr de 1,00 × 2,29 m; a folha</text>
 <text x="722.0" y="644.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">estaciona no 1,00 m a leste do vão. O vidro do fundo do box cai e vira parede (R02).</text>
 <text x="722.0" y="661.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Banheiro: reforma integral, e agora no nível da casa.</text>
 <text x="722.0" y="673.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Saem piso, revestimentos, box e a parede atrás do espelho. A base desce até a laje (D03) para o</text>
@@ -499,6 +499,6 @@
 <line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="48.0" y="940.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Quantidades preliminares sobre o modelo do scan (02.09.2026): servem para orientar visita e proposta, não para fechar medição.</text>
 <text x="48.0" y="953.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Nenhum alvo foi verificado em campo. Instalações embutidas, estrutura e vedações devem ser identificadas antes do início dos serviços.</text>
-<text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   30/09/2026</text>
-<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 02 / 13   ·   REV. N</text>
+<text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   01/10/2026</text>
+<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 02 / 13   ·   REV. O</text>
 </svg>

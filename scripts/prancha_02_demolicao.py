@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. N'
+REV = 'REV. O'
 PRANCHA = 'Prancha 02 / 13'
 
 # --- alvos: (id, x_pt, y_pt, tipo, dx_rotulo, dy_rotulo) --------------------
@@ -36,21 +36,21 @@ COR_MIOLO = {'demo': DEMO, 'desm': CIANO, 'keep': K, 'prep': AMARELO, 'novo': BR
              'ensaio': BRANCO}
 
 LINHAS = [
-    ('D01', 'Drywall entre sala e quarto', '1 trecho — 4,08 m'),
+    ('D01', 'Drywall entre sala de TV e quarto', '1 trecho — 4,08 m'),
     ('D02', 'Box do banheiro: fechamento e base', '1 conjunto'),
     ('D03', 'Piso do banheiro: revestimento, base e rebaixo', '3,80 m² — descer até a laje'),
     ('D04', 'Parede atrás do espelho e da bancada', '1 trecho — 2,64 m a conferir'),
-    ('D05', 'Canto alemão do jantar', '1 conjunto — inventário por módulo'),
+    ('D05', 'Canto alemão da sala de estar', '1 conjunto — inventário por módulo'),
     ('D06', 'Pano de vidro chão-teto do fundo do box', '1,63 m, ponta a ponta'),
     ('D07', 'Forro: retirar 100%', '60,30 m² — teto passa a laje aparente'),
     ('D08', 'Retirar pisos do MainFloor', '60,30 m² úteis, sem dupla contagem'),
-    ('P01', 'Parede do jantar: retirar espelho e revestimento', '1 trecho — 1,95 m, preparo p/ pintura'),
+    ('P01', 'Parede da sala de estar: retirar espelho e revestimento', '1 trecho — 1,95 m, preparo p/ pintura'),
     ('P02', 'Parede sob a escada: retirar revestimento', 'trecho a confirmar — preparo p/ pintura'),
     ('P03', 'Laje: restaurar, descascar, limpar e preparar', '60,30 m² — acabamento a definir'),
     ('P04', 'Demais paredes com revestimento retirado', 'preparo p/ pintura — mapear em obra'),
     ('P05', 'Nivelar o banheiro com o piso da casa', 'cota única — soleira sem degrau'),
     ('P06', 'Regularizar e lixar todo o contrapiso', '60,30 m² — plano e nivelado'),
-    ('R01', 'Nova drywall sala/quarto, com porta de correr 1,00 × 2,29 m', '4,08 m + 1 porta'),
+    ('R01', 'Nova drywall sala de TV/quarto, com porta de correr 1,00 × 2,29 m', '4,08 m + 1 porta'),
     ('R02', 'Nova parede de fechamento do box', '1,63 m, no lugar do vidro'),
     ('M01', 'Desmontar e remontar closet', '1 conjunto — inventário por módulo'),
     ('K01', 'Vidro do box — MANTER', '1 peça'),
@@ -63,7 +63,7 @@ NOTAS = [
      'Box com o pano de vidro de hoje (D06) e drywall ainda sem porta. O proposto — box fechado, porta',
      'de correr e porta do banheiro girando para a escada — está nas Pranchas 03 a 06.'],
     ['**Demolir para refazer, não só demolir.',
-     'A drywall entre sala e quarto cai e volta (R01), com porta de correr de 1,00 × 2,29 m; a folha',
+     'A drywall entre sala de TV e quarto cai e volta (R01), com porta de correr de 1,00 × 2,29 m; a folha',
      'estaciona no 1,00 m a leste do vão. O vidro do fundo do box cai e vira parede (R02).'],
     ['**Banheiro: reforma integral, e agora no nível da casa.',
      'Saem piso, revestimentos, box e a parede atrás do espelho. A base desce até a laje (D03) para o',

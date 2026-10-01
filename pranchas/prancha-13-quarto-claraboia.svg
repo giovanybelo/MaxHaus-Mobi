@@ -2,10 +2,10 @@
 <rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
 <text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
 <text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Quarto adaptável e fechamento da claraboia</text>
-<text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">A cortina fecha o jantar como quarto de hóspede; a claraboia ganha fechamento elétrico em 2027/28, com a infraestrutura feita agora.</text>
-<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. N</text>
+<text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">A cortina fecha a sala de estar como quarto de hóspede; a claraboia ganha fechamento elétrico em 2027/28, com a infraestrutura feita agora.</text>
+<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. O</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">cama de casal com 0,60 m de circulação nos três lados</text>
-<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">8,54 m² dentro da cortina  ·  claraboia não furável</text>
+<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">8,78 m² dentro da cortina  ·  claraboia não furável</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
 <path d="M131.51 164.11 L601.55 164.11 L601.55 423.20 L131.51 423.20 Z" fill="#ededed" opacity="1.00"/>
 <path d="M-183.39 423.20 L601.55 423.20 L601.55 1101.13 L30.94 1101.13 L30.94 781.02 L-183.39 781.02 Z" fill="#ededed" opacity="1.00"/>
@@ -13,8 +13,8 @@
 <path d="M-482.95 1101.13 L-183.39 1101.13 L-183.39 1470.29 L-482.95 1470.29 Z" fill="#ededed" opacity="1.00"/>
 <path d="M30.94 1101.13 L601.55 1101.13 L601.55 1470.29 L-183.39 1470.29 L-183.39 1164.60 L30.94 1164.60 Z" fill="#ededed" opacity="1.00"/>
 <path d="M-183.39 781.02 L30.94 781.02 L30.94 1164.60 L-183.39 1164.60 Z" fill="#ededed" opacity="1.00"/>
-<path d="M146.90 170.98 L594.68 170.98 L594.68 556.00 L586.28 556.00 L210.00 556.00 L203.92 555.47 L198.03 553.89 L192.50 551.31 L187.50 547.81 L183.19 543.50 L179.69 538.50 L177.11 532.97 L175.53 527.08 L175.00 521.00 L175.00 416.00 L174.59 409.71 L173.44 404.24 L171.68 399.47 L169.43 395.24 L166.81 391.43 L163.94 387.90 L160.95 384.50 L157.96 381.10 L155.09 377.57 L152.47 373.76 L150.22 369.53 L148.45 364.76 L147.31 359.29 L146.90 353.00 L146.90 179.38 Z" fill="#d6ffff"/>
-<rect x="466.20" y="177.98" width="128.48" height="371.02" fill="#ffff99" opacity="0.70"/>
+<path d="M146.90 170.98 L594.68 170.98 L594.68 556.00 L586.28 556.00 L181.90 556.00 L175.82 555.47 L169.93 553.89 L164.40 551.31 L159.40 547.81 L155.09 543.50 L151.59 538.50 L149.01 532.97 L147.43 527.08 L146.90 521.00 L146.90 179.38 Z" fill="#d6ffff"/>
+<rect x="153.90" y="371.18" width="440.78" height="177.82" fill="#ffff99" opacity="0.70"/>
 <rect x="124.49" y="157.00" width="484.20" height="13.98" fill="#000000"/>
 <rect x="-398.57" y="416.18" width="537.07" height="13.98" fill="#000000"/>
 <rect x="-398.57" y="416.18" width="14.01" height="239.77" fill="#000000"/>
@@ -73,47 +73,47 @@
 <rect x="217.00" y="369.80" width="302.40" height="453.60" fill="none" stroke="#00ffff" stroke-width="3.20" opacity="0.90"/>
 <rect x="217.00" y="369.80" width="302.40" height="453.60" fill="none" stroke="#000000" stroke-width="0.80" stroke-dasharray="2 2"/>
 <text x="515.4" y="817.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="end" letter-spacing="0.30">FC01 · fechamento elétrico 2027/28</text>
-<rect x="273.00" y="170.98" width="193.20" height="263.20" fill="#ffffff" stroke="#000000" stroke-width="1.30"/>
-<rect x="277.00" y="174.98" width="90.60" height="31.58" fill="#cccccc" stroke="#8c8c8c" stroke-width="0.60"/>
-<rect x="371.60" y="174.98" width="90.60" height="31.58" fill="#cccccc" stroke="#8c8c8c" stroke-width="0.60"/>
-<line x1="273.00" y1="249.94" x2="466.20" y2="249.94" stroke="#8c8c8c" stroke-width="0.60"/>
-<text x="369.6" y="334.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle">cama de casal</text>
-<text x="369.6" y="346.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1,38 × 1,88 m</text>
-<path d="M146.90 179.38 L146.90 353.00 L147.31 359.29 L148.45 364.76 L150.22 369.53 L152.47 373.76 L155.09 377.57 L157.96 381.10 L160.95 384.50 L163.94 387.90 L166.81 391.43 L169.43 395.24 L171.68 399.47 L173.44 404.24 L174.59 409.71 L175.00 416.00 L175.00 521.00 L175.53 527.08 L177.11 532.97 L179.69 538.50 L183.19 543.50 L187.50 547.81 L192.50 551.31 L198.03 553.89 L203.92 555.47 L210.00 556.00 L586.28 556.00" fill="none" stroke="#ffffff" stroke-width="6.20"/>
-<path d="M146.90 179.38 L146.90 353.00 L147.31 359.29 L148.45 364.76 L150.22 369.53 L152.47 373.76 L155.09 377.57 L157.96 381.10 L160.95 384.50 L163.94 387.90 L166.81 391.43 L169.43 395.24 L171.68 399.47 L173.44 404.24 L174.59 409.71 L175.00 416.00 L175.00 521.00 L175.53 527.08 L177.11 532.97 L179.69 538.50 L183.19 543.50 L187.50 547.81 L192.50 551.31 L198.03 553.89 L203.92 555.47 L210.00 556.00 L586.28 556.00" fill="none" stroke="#ff00ff" stroke-width="3.20"/>
-<rect x="143.70" y="179.38" width="6.40" height="85.40" fill="#ffd6ff" stroke="#ff00ff" stroke-width="0.90"/>
+<rect x="245.00" y="170.98" width="263.20" height="193.20" fill="#ffffff" stroke="#000000" stroke-width="1.30"/>
+<rect x="472.62" y="174.98" width="31.58" height="90.60" fill="#cccccc" stroke="#8c8c8c" stroke-width="0.60"/>
+<rect x="472.62" y="269.58" width="31.58" height="90.60" fill="#cccccc" stroke="#8c8c8c" stroke-width="0.60"/>
+<line x1="429.24" y1="170.98" x2="429.24" y2="364.18" stroke="#8c8c8c" stroke-width="0.60"/>
+<text x="345.0" y="228.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle">cama de casal</text>
+<text x="345.0" y="240.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1,38 × 1,88 m</text>
+<path d="M146.90 179.38 L146.90 521.00 L147.43 527.08 L149.01 532.97 L151.59 538.50 L155.09 543.50 L159.40 547.81 L164.40 551.31 L169.93 553.89 L175.82 555.47 L181.90 556.00 L586.28 556.00" fill="none" stroke="#ffffff" stroke-width="6.20"/>
+<path d="M146.90 179.38 L146.90 521.00 L147.43 527.08 L149.01 532.97 L151.59 538.50 L155.09 543.50 L159.40 547.81 L164.40 551.31 L169.93 553.89 L175.82 555.47 L181.90 556.00 L586.28 556.00" fill="none" stroke="#ff00ff" stroke-width="3.20"/>
+<rect x="143.70" y="179.38" width="6.40" height="86.80" fill="#ffd6ff" stroke="#ff00ff" stroke-width="0.90"/>
 <rect x="144.30" y="238.40" width="5.20" height="5.20" fill="#000000"/>
 <rect x="144.30" y="336.40" width="5.20" height="5.20" fill="#000000"/>
-<rect x="172.40" y="462.40" width="5.20" height="5.20" fill="#000000"/>
+<rect x="144.30" y="462.40" width="5.20" height="5.20" fill="#000000"/>
 <rect x="207.40" y="553.40" width="5.20" height="5.20" fill="#000000"/>
 <rect x="519.60" y="553.40" width="5.20" height="5.20" fill="#000000"/>
 <rect x="575.28" y="553.40" width="5.20" height="5.20" fill="#000000"/>
-<text x="530.4" y="479.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.40">TROCA</text>
-<text x="530.4" y="489.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="middle">0,92 × 2,70</text>
-<text x="156.8" y="654.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.90">SALA</text>
-<text x="231.0" y="514.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.60">QUARTO ADAPTÁVEL</text>
-<text x="231.0" y="525.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">8,54 m² com a cortina fechada</text>
+<text x="455.0" y="430.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.40">TROCA</text>
+<text x="455.0" y="440.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="middle">3,15 × 1,32</text>
+<text x="156.8" y="654.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.90">SALA DE TV</text>
+<text x="252.0" y="495.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.60">QUARTO ADAPTÁVEL</text>
+<text x="252.0" y="506.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">8,78 m² com a cortina fechada</text>
 <text x="121.7" y="220.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.40">CT01</text>
 <text x="121.7" y="231.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#ff00ff" font-weight="normal" text-anchor="end">recolhida</text>
 <line x1="175.00" y1="290.00" x2="560.00" y2="290.00" stroke="#000000" stroke-width="2.00" opacity="0.55"/>
 <circle cx="366.80" cy="294.20" r="9.00" fill="#ffff00" stroke="#000000" stroke-width="1.40"/>
 <text x="379.8" y="286.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">P01 · plafon</text>
 <text x="178.0" y="285.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start">TR1</text>
-<circle cx="245.00" cy="199.00" r="5.60" fill="#00ffff" stroke="#000000" stroke-width="1.30"/>
-<circle cx="245.00" cy="199.00" r="1.80" fill="#000000"/>
-<text x="245.0" y="214.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle">T19</text>
-<circle cx="497.00" cy="199.00" r="5.60" fill="#00ffff" stroke="#000000" stroke-width="1.30"/>
-<circle cx="497.00" cy="199.00" r="1.80" fill="#000000"/>
-<text x="497.0" y="214.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle">T16</text>
+<circle cx="576.80" cy="383.80" r="5.60" fill="#00ffff" stroke="#000000" stroke-width="1.30"/>
+<circle cx="576.80" cy="383.80" r="1.80" fill="#000000"/>
+<text x="567.8" y="386.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="end">T19</text>
+<circle cx="553.00" cy="199.00" r="5.60" fill="#00ffff" stroke="#000000" stroke-width="1.30"/>
+<circle cx="553.00" cy="199.00" r="1.80" fill="#000000"/>
+<text x="553.0" y="214.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle">T16</text>
 <circle cx="576.80" cy="501.40" r="5.60" fill="#ffffff" stroke="#8c8c8c" stroke-width="1.30"/>
 <circle cx="576.80" cy="501.40" r="1.80" fill="#8c8c8c"/>
 <text x="567.8" y="503.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="end">T01</text>
 <circle cx="576.80" cy="788.40" r="5.60" fill="#ffffff" stroke="#8c8c8c" stroke-width="1.30"/>
 <circle cx="576.80" cy="788.40" r="1.80" fill="#8c8c8c"/>
 <text x="567.8" y="790.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="end">T02</text>
-<rect x="571.40" y="396.60" width="10.80" height="10.80" fill="#ffffff" stroke="#000000" stroke-width="1.30"/>
-<line x1="574.30" y1="404.50" x2="579.30" y2="399.50" stroke="#000000" stroke-width="1.20"/>
-<text x="567.8" y="404.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="end">S09</text>
+<rect x="571.40" y="414.80" width="10.80" height="10.80" fill="#ffffff" stroke="#000000" stroke-width="1.30"/>
+<line x1="574.30" y1="422.70" x2="579.30" y2="417.70" stroke="#000000" stroke-width="1.20"/>
+<text x="567.8" y="422.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="end">S09</text>
 <rect x="571.40" y="732.60" width="10.80" height="10.80" fill="#ffffff" stroke="#000000" stroke-width="1.30"/>
 <line x1="574.30" y1="740.50" x2="579.30" y2="735.50" stroke="#000000" stroke-width="1.20"/>
 <text x="567.8" y="740.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="end">S10</text>
@@ -123,31 +123,31 @@
 <text x="176.4" y="587.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.30">AC01</text>
 <text x="617.1" y="290.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" transform="rotate(90.0 617.1 290.0)">J01</text>
 <text x="617.1" y="633.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" transform="rotate(90.0 617.1 633.0)">J02</text>
-<line x1="182.00" y1="392.00" x2="182.00" y2="392.00" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
-<line x1="273.00" y1="392.00" x2="273.00" y2="392.00" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
-<line x1="182.00" y1="395.00" x2="273.00" y2="395.00" stroke="#8c8c8c" stroke-width="0.70"/>
-<line x1="179.00" y1="398.00" x2="185.00" y2="392.00" stroke="#8c8c8c" stroke-width="1.10"/>
-<line x1="270.00" y1="398.00" x2="276.00" y2="392.00" stroke="#8c8c8c" stroke-width="1.10"/>
-<text x="227.5" y="391.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">0,65</text>
-<line x1="466.20" y1="392.00" x2="466.20" y2="392.00" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
-<line x1="594.68" y1="392.00" x2="594.68" y2="392.00" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
-<line x1="466.20" y1="395.00" x2="594.68" y2="395.00" stroke="#8c8c8c" stroke-width="0.70"/>
-<line x1="463.20" y1="398.00" x2="469.20" y2="392.00" stroke="#8c8c8c" stroke-width="1.10"/>
-<line x1="591.68" y1="398.00" x2="597.68" y2="392.00" stroke="#8c8c8c" stroke-width="1.10"/>
-<text x="530.4" y="391.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">0,92</text>
-<line x1="366.60" y1="434.18" x2="366.60" y2="434.18" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
-<line x1="366.60" y1="549.00" x2="366.60" y2="549.00" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
-<line x1="369.60" y1="434.18" x2="369.60" y2="549.00" stroke="#8c8c8c" stroke-width="0.70"/>
-<line x1="366.60" y1="437.18" x2="372.60" y2="431.18" stroke="#8c8c8c" stroke-width="1.10"/>
-<line x1="366.60" y1="552.00" x2="372.60" y2="546.00" stroke="#8c8c8c" stroke-width="1.10"/>
-<text x="365.6" y="491.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 365.6 491.6)">0,82</text>
+<line x1="153.90" y1="249.20" x2="153.90" y2="249.20" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
+<line x1="245.00" y1="249.20" x2="245.00" y2="249.20" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
+<line x1="153.90" y1="252.20" x2="245.00" y2="252.20" stroke="#8c8c8c" stroke-width="0.70"/>
+<line x1="150.90" y1="255.20" x2="156.90" y2="249.20" stroke="#8c8c8c" stroke-width="1.10"/>
+<line x1="242.00" y1="255.20" x2="248.00" y2="249.20" stroke="#8c8c8c" stroke-width="1.10"/>
+<text x="199.4" y="248.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">0,65</text>
+<line x1="508.20" y1="249.20" x2="508.20" y2="249.20" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
+<line x1="594.68" y1="249.20" x2="594.68" y2="249.20" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
+<line x1="508.20" y1="252.20" x2="594.68" y2="252.20" stroke="#8c8c8c" stroke-width="0.70"/>
+<line x1="505.20" y1="255.20" x2="511.20" y2="249.20" stroke="#8c8c8c" stroke-width="1.10"/>
+<line x1="591.68" y1="255.20" x2="597.68" y2="249.20" stroke="#8c8c8c" stroke-width="1.10"/>
+<text x="551.4" y="248.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">0,62</text>
+<line x1="305.00" y1="364.18" x2="305.00" y2="364.18" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
+<line x1="305.00" y1="549.00" x2="305.00" y2="549.00" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
+<line x1="308.00" y1="364.18" x2="308.00" y2="549.00" stroke="#8c8c8c" stroke-width="0.70"/>
+<line x1="305.00" y1="367.18" x2="311.00" y2="361.18" stroke="#8c8c8c" stroke-width="1.10"/>
+<line x1="305.00" y1="552.00" x2="311.00" y2="546.00" stroke="#8c8c8c" stroke-width="1.10"/>
+<text x="304.0" y="456.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 304.0 456.6)">1,32</text>
 <line x1="210.00" y1="559.00" x2="210.00" y2="581.00" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
 <line x1="522.20" y1="559.00" x2="522.20" y2="581.00" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
 <line x1="210.00" y1="578.00" x2="522.20" y2="578.00" stroke="#8c8c8c" stroke-width="0.70"/>
 <line x1="207.00" y1="581.00" x2="213.00" y2="575.00" stroke="#8c8c8c" stroke-width="1.10"/>
 <line x1="519.20" y1="581.00" x2="525.20" y2="575.00" stroke="#8c8c8c" stroke-width="1.10"/>
 <text x="366.1" y="574.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">2,23 sem apoio no teto</text>
-<text x="77.0" y="579.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">fim da ponta da escada (acima)</text>
+<text x="77.0" y="621.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">fim da ponta da escada (acima)</text>
 <rect x="-60.00" y="120.00" width="122.00" height="930.00" fill="#ffffff"/>
 <rect x="-60.00" y="858.00" width="750.00" height="190.00" fill="#ffffff"/>
 <rect x="628.00" y="120.00" width="60.00" height="760.00" fill="#ffffff"/>
@@ -174,12 +174,12 @@
 <text x="1033.0" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Valor</text>
 <text x="1344.0" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Leitura</text>
 <text x="738.0" y="191.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Área dentro da cortina</text>
-<text x="1033.0" y="191.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">8,54 m²</text>
-<text x="1344.0" y="191.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">jantar 5,90 m² + faixa da sala até a ponta da escada</text>
+<text x="1033.0" y="191.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">8,78 m²</text>
+<text x="1344.0" y="191.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">sala de estar 5,90 m² + faixa da sala de TV até a ponta da escada</text>
 <line x1="730.00" y1="198.00" x2="1352.00" y2="198.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="730.00" y="198.00" width="622.00" height="18.00" fill="#f5f5f5"/>
 <text x="738.0" y="209.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Largura × profundidade</text>
-<text x="1033.0" y="209.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,00 × 2,75 m</text>
+<text x="1033.0" y="209.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,20 × 2,75 m</text>
 <text x="1344.0" y="209.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">da cortina à fachada · da parede norte à cortina</text>
 <line x1="730.00" y1="216.00" x2="1352.00" y2="216.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="738.0" y="227.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Linha da cortina</text>
@@ -188,11 +188,11 @@
 <line x1="730.00" y1="234.00" x2="1352.00" y2="234.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="730.00" y="234.00" width="622.00" height="18.00" fill="#f5f5f5"/>
 <text x="738.0" y="245.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Trilho CT01</text>
-<text x="1033.0" y="245.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">5,58 m</text>
-<text x="1344.0" y="245.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">eixo, do canto do jantar à fachada leste</text>
+<text x="1033.0" y="245.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">5,72 m</text>
+<text x="1344.0" y="245.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">eixo, do canto da sala de estar à fachada leste</text>
 <line x1="730.00" y1="252.00" x2="1352.00" y2="252.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="738.0" y="263.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Cortina recolhida</text>
-<text x="1033.0" y="263.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">~0,61 m de trilho</text>
+<text x="1033.0" y="263.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">~0,62 m de trilho</text>
 <text x="1344.0" y="263.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">pacote no canto noroeste, junto à parede</text>
 <line x1="730.00" y1="270.00" x2="1352.00" y2="270.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="730.00" y="270.00" width="622.00" height="18.00" fill="#f5f5f5"/>
@@ -200,35 +200,35 @@
 <text x="1033.0" y="281.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">2,23 m</text>
 <text x="1344.0" y="281.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">sob a claraboia: perfil autoportante</text>
 <line x1="730.00" y1="288.00" x2="1352.00" y2="288.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
-<text x="730.0" y="313.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">CAMA × CIRCULAÇÃO — CABECEIRA NA PAREDE NORTE</text>
+<text x="730.0" y="313.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">CAMA × CIRCULAÇÃO — LESTE–OESTE, JUNTO À PAREDE NORTE</text>
 <rect x="730.00" y="322.00" width="622.00" height="20.00" fill="#e0e0e0"/>
 <text x="738.0" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Cama</text>
 <text x="1008.1" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Medida m</text>
-<text x="1101.4" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Lado cortina</text>
-<text x="1182.3" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Lado J01</text>
-<text x="1250.7" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Pé</text>
+<text x="1082.8" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Pé oeste</text>
+<text x="1169.8" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Cabeceira</text>
+<text x="1250.7" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Lado sul</text>
 <text x="1344.0" y="335.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Atende 0,60</text>
 <text x="738.0" y="353.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Casal padrão</text>
 <text x="1008.1" y="353.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,38 × 1,88</text>
-<text x="1101.4" y="353.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,65</text>
-<text x="1182.3" y="353.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,92</text>
-<text x="1250.7" y="353.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,82</text>
+<text x="1082.8" y="353.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,65</text>
+<text x="1169.8" y="353.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,62</text>
+<text x="1250.7" y="353.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,32</text>
 <text x="1344.0" y="353.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">sim</text>
 <line x1="730.00" y1="360.00" x2="1352.00" y2="360.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="730.00" y="360.00" width="622.00" height="18.00" fill="#f5f5f5"/>
 <text x="738.0" y="371.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Viúva</text>
 <text x="1008.1" y="371.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,28 × 1,88</text>
-<text x="1101.4" y="371.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,65</text>
-<text x="1182.3" y="371.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,02</text>
-<text x="1250.7" y="371.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,82</text>
+<text x="1082.8" y="371.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,65</text>
+<text x="1169.8" y="371.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,62</text>
+<text x="1250.7" y="371.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,42</text>
 <text x="1344.0" y="371.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">sim</text>
 <line x1="730.00" y1="378.00" x2="1352.00" y2="378.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="738.0" y="389.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Queen — referência</text>
 <text x="1008.1" y="389.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,58 × 1,98</text>
-<text x="1101.4" y="389.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,65</text>
-<text x="1182.3" y="389.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,72</text>
-<text x="1250.7" y="389.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,72</text>
-<text x="1344.0" y="389.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">sim</text>
+<text x="1082.8" y="389.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,60</text>
+<text x="1169.8" y="389.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,57</text>
+<text x="1250.7" y="389.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,12</text>
+<text x="1344.0" y="389.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">no limite</text>
 <line x1="730.00" y1="396.00" x2="1352.00" y2="396.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="421.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">ESCOPO — O QUE ENTRA AGORA E O QUE FICA PARA 2027/28</text>
 <rect x="730.00" y="430.00" width="622.00" height="20.00" fill="#e0e0e0"/>
@@ -266,30 +266,31 @@
 <text x="812.6" y="569.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Ligação na espera T18 e programação do comando S10</text>
 <text x="1344.0" y="569.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">2027/28</text>
 <line x1="730.00" y1="576.00" x2="1352.00" y2="576.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
-<text x="730.0" y="600.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">A cortina vira exatamente no fim da ponta da escada.</text>
-<text x="730.0" y="611.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Recolhida, fica no canto noroeste do jantar. Estendida, desce pela parede, desvia 0,20 m</text>
-<text x="730.0" y="622.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">para contornar a lateral da escada, faz a curva no fim da ponta e corre reta a 2,85 m da</text>
-<text x="730.0" y="633.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">parede norte até a fachada. Ali a fachada é vidro (J02): a cortina encosta no caixilho — se a</text>
-<text x="730.0" y="644.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">J02 tiver montante central, o trilho termina nele. Conferir em obra.</text>
-<text x="730.0" y="660.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">Com a linha na ponta da escada cabe cama de casal, com folga.</text>
-<text x="730.0" y="671.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cabeceira na parede norte, que é cega (divisa). Sobram 0,65 m do lado da cortina, 0,92 m do</text>
-<text x="730.0" y="682.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">lado da J01 e 0,82 m no pé: os 0,60 m mínimos estão atendidos nos três lados. A faixa de</text>
-<text x="730.0" y="693.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">0,92 m junto à J01 é a área de troca de roupa. Viúva sobra mais; queen passa no limite.</text>
-<text x="730.0" y="709.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">Sob a claraboia o trilho não tem apoio no teto.</text>
-<text x="730.0" y="720.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Entre 5,00 e 7,23 m são 2,23 m sem fixação — trilho comum pede apoio a cada ~1,0 m. Entra</text>
-<text x="730.0" y="731.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">perfil autoportante (tubo metálico) fixado no concreto antes e depois da moldura, com o</text>
-<text x="730.0" y="742.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">trilho preso nele; alternativa, cabo de aço tensionado. Confirmar com o fornecedor.</text>
-<text x="730.0" y="758.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">Fechamento elétrico: o equipamento é de 2027/28, a espera é de agora.</text>
-<text x="730.0" y="769.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Com o teto aberto, eletroduto, caixa T18 e comando S10 com cabo guia custam pouco; depois</text>
-<text x="730.0" y="780.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">da pintura custam abrir laje aparente e repintar. A moldura fixa na faixa de 0,12 m em volta</text>
-<text x="730.0" y="791.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">do vidro — confirmar em estrutura se há viga de borda da piscina ali.</text>
-<text x="730.0" y="807.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">O que a cortina muda no resto do teto.</text>
-<text x="730.0" y="818.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">P01 passa a plafon, sobre a cama. AC01 sai da linha da cortina para 4,76 / 3,05 m: com a</text>
-<text x="730.0" y="829.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">cortina fechada o quarto fica sem evaporadora própria. T16 e T19 são as tomadas das duas</text>
-<text x="730.0" y="840.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">cabeceiras; S09 é paralelo da luz do jantar, no pilar entre J01 e J02.</text>
+<text x="730.0" y="600.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">O trilho é reto e vira exatamente no fim da ponta da escada.</text>
+<text x="730.0" y="611.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Recolhida, a cortina fica no canto noroeste da sala de estar. Estendida, desce em linha reta</text>
+<text x="730.0" y="622.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">rente à parede, sem desvio — passa por cima do degrau da ponta da escada —, faz a curva no</text>
+<text x="730.0" y="633.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">fim da ponta e corre reta a 2,85 m da parede norte até a fachada. Ali a fachada é vidro (J02):</text>
+<text x="730.0" y="644.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">a cortina encosta no caixilho; se a J02 tiver montante central, o trilho termina nele.</text>
+<text x="730.0" y="660.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">A cama fica no sentido leste–oeste, encostada na parede norte.</text>
+<text x="730.0" y="671.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">A lateral longa encosta na parede norte, que é cega (divisa); a cabeceira fica a leste. Sobram</text>
+<text x="730.0" y="682.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">0,65 m no pé, até a cortina, 0,62 m atrás da cabeceira (criado e acesso à J01) e 1,32 m</text>
+<text x="730.0" y="693.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">do lado sul: os 0,60 m mínimos estão atendidos. A faixa sul inteira, de 3,15 × 1,32 m,</text>
+<text x="730.0" y="704.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">é a área de troca de roupa. Viúva sobra mais; queen passa no limite.</text>
+<text x="730.0" y="720.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">Sob a claraboia o trilho não tem apoio no teto.</text>
+<text x="730.0" y="731.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Entre 5,00 e 7,23 m são 2,23 m sem fixação — trilho comum pede apoio a cada ~1,0 m. Entra</text>
+<text x="730.0" y="742.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">perfil autoportante (tubo metálico) fixado no concreto antes e depois da moldura, com o</text>
+<text x="730.0" y="753.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">trilho preso nele; alternativa, cabo de aço tensionado. Confirmar com o fornecedor.</text>
+<text x="730.0" y="769.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">Fechamento elétrico: o equipamento é de 2027/28, a espera é de agora.</text>
+<text x="730.0" y="780.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Com o teto aberto, eletroduto, caixa T18 e comando S10 com cabo guia custam pouco; depois</text>
+<text x="730.0" y="791.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">da pintura custam abrir laje aparente e repintar. A moldura fixa na faixa de 0,12 m em volta</text>
+<text x="730.0" y="802.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">do vidro — confirmar em estrutura se há viga de borda da piscina ali.</text>
+<text x="730.0" y="818.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">O que a cortina muda no resto do teto.</text>
+<text x="730.0" y="829.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">P01 passa a plafon, sobre a cama. AC01 sai da linha da cortina para 4,76 / 3,05 m: com a</text>
+<text x="730.0" y="840.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">cortina fechada o quarto fica sem evaporadora própria. T16 e T19 são as tomadas das duas</text>
+<text x="730.0" y="851.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">cabeceiras; S09 é paralelo da luz da sala de estar, no pilar entre J01 e J02.</text>
 <line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="48.0" y="940.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Circulação mínima adotada de 0,60 m em volta da cama; cortina com ~5 cm de tecido de cada lado do eixo do trilho. Medidas sobre o scan de 02.09.2026.</text>
 <text x="48.0" y="953.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">O vidro da claraboia não recebe fixação. Apoios do trilho e da moldura só no concreto em volta, com posição confirmada em estrutura antes de furar.</text>
-<text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   30/09/2026</text>
-<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 13 / 13   ·   REV. N</text>
+<text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   01/10/2026</text>
+<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 13 / 13   ·   REV. O</text>
 </svg>

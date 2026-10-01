@@ -9,7 +9,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. N'
+REV = 'REV. O'
 PRANCHA = 'Prancha 11 / 13'
 
 TAB_PREM = [
@@ -25,7 +25,7 @@ TAB_PREM = [
 ]
 
 TAB_TERM = [
-    ('Social + cozinha', '37,80', '22.680', '30.240', 'sala, jantar, cozinha e circulação'),
+    ('Social + cozinha', '37,80', '22.680', '30.240', 'sala de TV, sala de estar, cozinha e circulação'),
     ('Quarto + closet', '18,70', '11.220', '14.960', 'zona de dormir'),
     ('Total sem banheiro', '56,50', '33.900', '45.200', 'seleção pela coluna base sol'),
 ]
@@ -36,10 +36,10 @@ TAB_EXA = [
 ]
 
 TAB_LUZ = [
-    ('Sala',     '23,00', '150 lux', '7.188 lm', '2.700 K', 'leitura e cenas dimerizáveis'),
+    ('Sala de TV',     '23,00', '150 lux', '7.188 lm', '2.700 K', 'leitura e cenas dimerizáveis'),
     ('Quarto',   '13,40', '150 lux', '4.188 lm', '2.700 K', 'cabeceira independente'),
     ('Cozinha',  '8,90',  '300 lux', '5.563 lm', '3.000 K', 'bancada à parte, 500 lux'),
-    ('Jantar',   '5,90',  '150 lux', '1.844 lm', '2.700 K', 'pendente sobre a mesa'),
+    ('Sala de estar',   '5,90',  '150 lux', '1.844 lm', '2.700 K', 'pendente sobre a mesa'),
     ('Closet',   '5,30',  '200 lux', '2.208 lm', '3.000 K', 'luz vertical das roupas'),
     ('Banheiro', '3,80',  '200 lux', '1.583 lm', '3.000 K', 'espelho frontal e balizamento'),
 ]
@@ -49,14 +49,14 @@ NOTAS = [
      'O volume se calcula com 2,40 m, a altura sob o forro que permanece, e não com os 2,62 m',
      'da laje. A cozinha segue em 2,62 m porque lá a laje é o teto acabado.'],
     ['**A regra 600/800 BTU/h por m² não é cálculo térmico.',
-     'Ela não conta pessoas, equipamentos, a claraboia, a piscina sobre a sala, a escada aberta',
+     'Ela não conta pessoas, equipamentos, a claraboia, a piscina sobre a sala de TV, a escada aberta',
      'nem a troca entre pavimentos. Serve para dimensionar a conversa com o fornecedor e conferir',
      'se a condensadora existente tem alguma chance de atender. A seleção final pede cálculo.'],
     ['**A escada aberta é a maior incerteza desta base.',
      'Os dois pavimentos trocam ar livremente, então a carga do MainFloor sozinho é otimista.',
      'Dimensionar pela coluna base sol é a margem que resta — e ainda assim pode faltar.'],
     ['**A vazão da cozinha isolada não é seleção de coifa.',
-     'A cozinha é integrada à sala; 279,8 m³/h só valeria com ela fechada. Coifa se seleciona por',
+     'A cozinha é integrada à sala de TV; 279,8 m³/h só valeria com ela fechada. Coifa se seleciona por',
      'captura sobre o fogão, com o diâmetro e a altura do manual, e percurso próprio até uma saída',
      'permitida. Banheiro e cozinha não dividem rota.'],
     ['**Fluxo = área × iluminância ÷ (utilização × manutenção).',

@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-"""Quarto adaptável no jantar e fechamento da claraboia (REV. N).
+"""Quarto adaptável na sala de estar e fechamento da claraboia (REV. N).
 
 Duas decisões do cliente em 30.09.2026, as duas no teto:
 
-  · uma cortina fecha o jantar como um quarto de hóspede. Recolhida, ela fica
-    no canto noroeste do jantar, junto à parede oeste; estendida, desce pela
+  · uma cortina fecha a sala de estar como um quarto de hóspede. Recolhida, ela fica
+    no canto noroeste da sala de estar, junto à parede oeste; estendida, desce pela
     lateral da escada, vira exatamente no fim da ponta da escada e corre até a
     fachada leste, a das esquadrias;
   · a claraboia — o fundo de vidro da piscina do pavimento superior, sobre a
-    sala — recebe um fechamento elétrico em 2027/28. A infraestrutura entra
+    sala de TV — recebe um fechamento elétrico em 2027/28. A infraestrutura entra
     agora, enquanto o teto está aberto.
 
 O vidro não é furável. Tudo o que toca o teto nesta zona — trilho, moldura do
@@ -40,33 +40,21 @@ MOLDURA = (VIDRO[0] - MARGEM_MOLDURA, VIDRO[1] - MARGEM_MOLDURA,
            VIDRO[2] + MARGEM_MOLDURA, VIDRO[3] + MARGEM_MOLDURA)
 
 # --- trilho da cortina (eixo), CT01 -------------------------------------------
+# Reto, sem desvio: desce rente à parede oeste da sala de estar e segue na mesma
+# linha por cima do degrau da ponta da escada (REV. O, pedido do cliente) até
+# virar no fim da ponta da escada.
 AFASTAMENTO = 0.06                 # eixo do trilho à face da parede ou da escada
-X_JUNTO_PAREDE = FACE_OESTE_JANTAR + AFASTAMENTO          # 4,55
-X_JUNTO_ESCADA = round(ESCADA_LESTE + 0.07, 2)            # 4,75
+X_TRILHO = FACE_OESTE_JANTAR + AFASTAMENTO                # 4,55
 Y_CORTINA = round(ESCADA_PONTA + AFASTAMENTO, 2)          # 2,85
 R_CURVA = 0.25
 
 
-def _bezier(p0, c0, c1, p1, n=14):
-    out = []
-    for i in range(n + 1):
-        t = i / float(n)
-        a = (1 - t) ** 3; b = 3 * (1 - t) ** 2 * t; c = 3 * (1 - t) * t ** 2; e = t ** 3
-        out.append((a * p0[0] + b * c0[0] + c * c1[0] + e * p1[0],
-                    a * p0[1] + b * c0[1] + c * c1[1] + e * p1[1]))
-    return out
-
-
 def trilho_cortina():
-    """Eixo do trilho, do canto noroeste do jantar até a fachada leste."""
+    """Eixo do trilho, do canto noroeste da sala de estar até a fachada leste."""
     y0 = FACE_NORTE + AFASTAMENTO
-    y_s0, y_s1 = 1.40, 1.85        # desvio que contorna a ponta da escada
-    pts = [(X_JUNTO_PAREDE, y0), (X_JUNTO_PAREDE, y_s0)]
-    pts += _bezier((X_JUNTO_PAREDE, y_s0), (X_JUNTO_PAREDE, (y_s0 + y_s1) / 2),
-                   (X_JUNTO_ESCADA, (y_s0 + y_s1) / 2), (X_JUNTO_ESCADA, y_s1))[1:]
     yc = Y_CORTINA - R_CURVA
-    pts.append((X_JUNTO_ESCADA, yc))
-    cx = X_JUNTO_ESCADA + R_CURVA
+    pts = [(X_TRILHO, y0), (X_TRILHO, yc)]
+    cx = X_TRILHO + R_CURVA
     for i in range(1, 10):
         a = math.radians(90.0 * i / 9.0)
         pts.append((cx - R_CURVA * math.cos(a), yc + R_CURVA * math.sin(a)))
@@ -81,7 +69,7 @@ def comprimento(pts):
 def area_quarto():
     """Área dentro da cortina estendida, até as paredes norte e leste."""
     pts = trilho_cortina()
-    poly = [(X_JUNTO_PAREDE, FACE_NORTE), (FACE_LESTE, FACE_NORTE),
+    poly = [(X_TRILHO, FACE_NORTE), (FACE_LESTE, FACE_NORTE),
             (FACE_LESTE, Y_CORTINA)] + list(reversed(pts))
     s = 0.0
     for (x0, y0), (x1, y1) in zip(poly, poly[1:] + poly[:1]):
@@ -90,8 +78,8 @@ def area_quarto():
 
 
 TRILHO = trilho_cortina()
-TRILHO_M = comprimento(TRILHO)                 # ≈ 5,6 m
-AREA_QUARTO = area_quarto()                    # ≈ 8,5 m²
+TRILHO_M = comprimento(TRILHO)                 # ≈ 5,7 m
+AREA_QUARTO = area_quarto()                    # ≈ 8,8 m²
 PACOTE_M = round(TRILHO_M * 0.10 + 0.05, 2)    # cortina recolhida ocupa ~10 % do trilho
 
 # fixação do trilho no concreto: nunca dentro da moldura da claraboia
@@ -100,8 +88,11 @@ FIX_LESTE = MOLDURA[2] + 0.02                  # primeiro apoio depois
 VAO_LIVRE = FIX_LESTE - FIX_OESTE              # trecho sem apoio no teto ≈ 2,3 m
 
 # --- cama e circulação ---------------------------------------------------------
+# REV. O: a cama gira e fica no sentido leste–oeste, com a lateral longa
+# encostada na parede norte (a divisa, parede cega) e a cabeceira a leste, do
+# lado da fachada. Centrada no quadrado marcado pelo cliente (x 5,07 a 7,31).
 FOLGA_TECIDO = 0.05                            # a cortina ocupa uns 5 cm de cada lado do eixo
-CAMA_X = 5.45                                  # cabeceira na parede norte (divisa, parede cega)
+CAMA_CX = 6.19                                 # centro da cama no sentido leste–oeste
 CAMAS = [
     # (nome, largura, comprimento)
     ('Casal padrão', 1.38, 1.88),
@@ -111,23 +102,31 @@ CAMAS = [
 CIRCULACAO_MIN = 0.60
 
 
+def cama_rect(larg, comp):
+    """(x0, y0, x1, y1) da cama: comprimento no eixo x, largura a partir da parede norte."""
+    return (CAMA_CX - comp / 2.0, FACE_NORTE, CAMA_CX + comp / 2.0, FACE_NORTE + larg)
+
+
 def folgas(larg, comp):
-    oeste = CAMA_X - X_JUNTO_ESCADA - FOLGA_TECIDO
-    leste = FACE_LESTE - (CAMA_X + larg)
-    pe = Y_CORTINA - FOLGA_TECIDO - (FACE_NORTE + comp)
-    return oeste, leste, pe
+    """Folgas do pé (oeste, até a cortina), da cabeceira (leste) e da lateral sul."""
+    x0, y0, x1, y1 = cama_rect(larg, comp)
+    pe = x0 - X_TRILHO - FOLGA_TECIDO
+    cabeceira = FACE_LESTE - x1
+    sul = Y_CORTINA - FOLGA_TECIDO - y1
+    return pe, cabeceira, sul
 
 
 CASAL = CAMAS[0]
-# área de troca: faixa leste da cama até a cortina, junto à janela J01
-TROCA = (CAMA_X + CASAL[1], FACE_NORTE, FACE_LESTE, Y_CORTINA - FOLGA_TECIDO)
+_CASAL = cama_rect(CASAL[1], CASAL[2])
+# área de troca: a faixa sul inteira, entre a lateral da cama e a cortina
+TROCA = (X_TRILHO + FOLGA_TECIDO, _CASAL[3], FACE_LESTE, Y_CORTINA - FOLGA_TECIDO)
 
 # --- pontos novos (entram nas listas das Pranchas 05 e 06) ----------------------
 AC01_NOVO = (4.76, 3.05)          # sai da linha da cortina, fica fora da moldura
 PONTO_CLARABOIA = ('T18', 7.30, 4.86, 'espera do motor da claraboia — 2027/28')
-TOMADA_CABECEIRA = ('T19', 5.25, 0.30, 'cabeceira — quarto adaptável')
-T16_NOVO = ('T16', 7.05, 0.30, 'cabeceira / jantar')
-COMANDO_QUARTO = ('S09', 7.62, 1.75)      # paralelo do S02, no pilar entre J01 e J02
+TOMADA_CABECEIRA = ('T19', 7.62, 1.62, 'cabeceira sul — quarto adaptável')
+T16_NOVO = ('T16', 7.45, 0.30, 'cabeceira norte / sala de estar')
+COMANDO_QUARTO = ('S09', 7.62, 1.88)      # paralelo do S02, no pilar entre J01 e J02
 COMANDO_CLARABOIA = ('S10', 7.62, 4.15)   # pilar entre J02 e J03, ao lado do T02
 
 
@@ -159,13 +158,13 @@ def desenhar_trilho(d, sw=2.6, rotulo=True, size=7.2, apoios=True):
     d.path(path_d(pp, close=False), stroke=BG, sw=sw + 3.0)
     d.path(path_d(pp, close=False), stroke=DEMO, sw=sw)
     # pacote da cortina recolhida, no canto do jantar
-    a = d.PM(X_JUNTO_PAREDE, FACE_NORTE + 0.06)
-    b = d.PM(X_JUNTO_PAREDE, FACE_NORTE + 0.06 + PACOTE_M)
+    a = d.PM(X_TRILHO, FACE_NORTE + 0.06)
+    b = d.PM(X_TRILHO, FACE_NORTE + 0.06 + PACOTE_M)
     d.rect(a[0] - 3.2, a[1], 6.4, b[1] - a[1], fill=MAGENTA18, stroke=DEMO, sw=0.9)
     if apoios:
         # apoios no concreto; nenhum entre FIX_OESTE e FIX_LESTE
-        for (x, y) in [(X_JUNTO_PAREDE, 0.60), (X_JUNTO_PAREDE, 1.30),
-                       (X_JUNTO_ESCADA, 2.20), (FIX_OESTE, Y_CORTINA),
+        for (x, y) in [(X_TRILHO, 0.60), (X_TRILHO, 1.30),
+                       (X_TRILHO, 2.20), (FIX_OESTE, Y_CORTINA),
                        (FIX_LESTE, Y_CORTINA), (FACE_LESTE - 0.12, Y_CORTINA)]:
             cx, cy = d.PM(x, y)
             d.rect(cx - 2.6, cy - 2.6, 5.2, 5.2, fill=K, stroke=None)
@@ -175,22 +174,23 @@ def desenhar_trilho(d, sw=2.6, rotulo=True, size=7.2, apoios=True):
 
 
 def desenhar_cama(d, larg, comp, tracejada=False, rotulo=None, size=7.0):
-    x0, y0 = d.PM(CAMA_X, FACE_NORTE); x1, y1 = d.PM(CAMA_X + larg, FACE_NORTE + comp)
+    cx0, cy0, cx1, cy1 = cama_rect(larg, comp)
+    x0, y0 = d.PM(cx0, cy0); x1, y1 = d.PM(cx1, cy1)
     if tracejada:
         d.rect(x0, y0, x1 - x0, y1 - y0, fill='none', stroke=K45, sw=0.9, dash='4 3')
     else:
         d.rect(x0, y0, x1 - x0, y1 - y0, fill=BRANCO, stroke=K, sw=1.3)
-        # travesseiros
-        tw = (x1 - x0 - 12) / 2.0
+        # travesseiros na cabeceira, a leste
+        w = x1 - x0; th = (y1 - y0 - 12) / 2.0
         for i in range(2):
-            d.rect(x0 + 4 + i * (tw + 4), y0 + 4, tw, (y1 - y0) * 0.12, fill=K20,
+            d.rect(x1 - 4 - w * 0.12, y0 + 4 + i * (th + 4), w * 0.12, th, fill=K20,
                    stroke=K45, sw=0.6)
-        d.line(x0, y0 + (y1 - y0) * 0.30, x1, y0 + (y1 - y0) * 0.30, K45, 0.6)
+        d.line(x1 - w * 0.30, y0, x1 - w * 0.30, y1, K45, 0.6)
     if rotulo:
-        d.txt((x0 + x1) / 2.0, y0 + (y1 - y0) * 0.62, rotulo, size, K, 'bold', 'middle')
+        d.txt(x0 + (x1 - x0) * 0.38, y0 + (y1 - y0) * 0.30, rotulo, size, K, 'bold', 'middle')
 
 
 def poly_quarto():
     """Polígono (m) do quarto com a cortina estendida."""
-    return ([(X_JUNTO_PAREDE, FACE_NORTE), (FACE_LESTE, FACE_NORTE),
+    return ([(X_TRILHO, FACE_NORTE), (FACE_LESTE, FACE_NORTE),
              (FACE_LESTE, Y_CORTINA)] + list(reversed(TRILHO)))

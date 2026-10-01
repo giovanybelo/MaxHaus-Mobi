@@ -9,14 +9,14 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. N'
+REV = 'REV. O'
 PRANCHA = 'Prancha 09 / 13'
 
 TAB_AMB = [
-    ('Sala',     '23,00', '29,80', '60,26'),
+    ('Sala de TV',     '23,00', '29,80', '60,26'),
     ('Quarto',   '13,40', '30,30', '35,11'),
     ('Cozinha',  '8,90',  '23,30', '23,32'),
-    ('Jantar',   '5,90',  '15,20', '15,46'),
+    ('Sala de estar',   '5,90',  '15,20', '15,46'),
     ('Closet',   '5,30',  '14,90', '13,89'),
     ('Banheiro', '3,80',  '16,70', '9,12'),
     ('Soma por ambiente', '60,30', '130,20', '157,16'),
@@ -38,8 +38,10 @@ TAB_DEC = [
     ('Norte', 'Medido', '126°, do scan do pavimento superior'),
     ('Tomadas', 'Permanecem', 'posição existente, sem remanejamento'),
     ('Ar', 'Somente Electrolux', 'condensadora existente a conferir'),
-    ('Quarto adaptável', 'Cortina no fim da escada', '8,54 m² dentro da cortina · cama de casal cabe'),
+    ('Quarto adaptável', 'Cortina no fim da escada', '8,78 m² dentro da cortina · casal leste–oeste'),
     ('Claraboia', 'Fechamento em 2027/28', 'vidro não furável · espera elétrica feita agora'),
+    ('Ambientes', 'Sala de estar e sala de TV', 'o antigo jantar e a antiga sala — REV. O'),
+    ('Porta P02', 'Abre p/ o quarto', 'continua de abrir; vidro do box em A ou B (FO7)'),
 ]
 
 NOTAS = [
@@ -85,7 +87,7 @@ def construir():
     fim = tabela(d, cx, fim + 40, cw,
                  [('Tema', 0.20, 'start'), ('Estado', 0.24, 'start'),
                   ('Leitura', 0.56, 'start')],
-                 TAB_DEC, titulo='DECISÕES FECHADAS ATÉ A REV. N', alt=20)
+                 TAB_DEC, titulo='DECISÕES FECHADAS ATÉ A REV. O', alt=20)
 
     d.line(700, 140, 700, 916, RULE, 0.8, opacity=0.8)
     cx2, cw2 = 732, W - MARGIN - 732

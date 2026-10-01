@@ -9,11 +9,12 @@ conferida contra as cotas gerais do pavimento (7,85 m x 9,43 m).
 
 Dois estados convivem no caderno:
   ESTADO EXISTENTE (Prancha 02) — o fundo do box é um pano de vidro chão-teto,
-  ponta a ponta (o scan o leu como vão) e a drywall entre sala e quarto não tem
+  ponta a ponta (o scan o leu como vão) e a drywall entre sala de TV e quarto não tem
   porta.
   ESTADO PROPOSTO (Pranchas 03, 04 e 05) — o pano de vidro sai e entra uma
   parede fechando o box; a drywall é refeita com uma porta de correr de
-  1,00 x 2,29 m; a porta do banheiro abre para fora, no sentido da escada.
+  1,00 x 2,29 m; a porta do banheiro abre para fora, no sentido do quarto
+  (REV. O; antes abria para a escada).
 
 Demais decisões do cliente embutidas na base:
   · o teto é laje de concreto aparente — não há forro, salvo no banheiro;
@@ -38,9 +39,9 @@ def px_(m_): return m_ * PT_PER_M + ORIGIN_X      # metro -> pt (eixo x)
 def py_(m_): return m_ * PT_PER_M + ORIGIN_Y      # metro -> pt (eixo y)
 
 ROOMS = {
-    'jantar': dict(label='JANTAR', area=5.90, lx=525.0, ly=165.0,
+    'jantar': dict(label='SALA DE ESTAR', area=5.90, lx=525.0, ly=165.0,
         poly=[(448.4,126.7),(601.7,126.7),(601.7,211.2),(448.4,211.2)]),
-    'sala': dict(label='SALA', area=23.00, lx=508.0, ly=285.0,
+    'sala': dict(label='SALA DE TV', area=23.00, lx=508.0, ly=285.0,
         poly=[(345.7,211.2),(601.7,211.2),(601.7,432.3),(415.6,432.3),
               (415.6,327.9),(345.7,327.9)]),
     'cozinha': dict(label='COZINHA', area=8.90, lx=297.0, ly=368.0,
@@ -81,7 +82,7 @@ PAREDE_ESCADA_JANTAR = (446.11, 124.38, 450.68, 213.47)
 PAREDE_SOB_ESCADA = (321.40, 208.91, 459.40, 213.47)
 
 DOOR_ENTRADA = dict(rect=(275.52,220.10,280.09,265.76), hinge='n', leaf='e')  # 1,00 m
-DOOR_BANHO   = dict(rect=(413.33,351.00,417.90,387.30), hinge='n', leaf='e')
+DOOR_BANHO   = dict(rect=(413.33,351.00,417.90,387.30), hinge='s', leaf='e')  # REV. O: abre p/ o quarto
 JANELAS = [
     (599.46,142.50,604.03,193.20), (599.46,215.00,604.03,300.80),
     (599.46,348.00,604.03,394.40), (599.46,455.70,604.03,509.80),
@@ -156,23 +157,23 @@ PERIMETRO_AMBIENTES = 78.1 # m
 # e 0,10 m de peitoril — os únicos 0,10 m de peitoril medidos até agora.
 # esquadrias: (id, tipo, ambiente, larg, alt, área, situação)
 ESQUADRIAS = [
-    ('J01', 'Janela', 'Jantar',   1.10, 1.63, 1.79, 'manter'),
-    ('J02', 'Janela', 'Sala',     1.90, 1.63, 3.10, 'manter'),
-    ('J03', 'Janela', 'Sala',     1.00, 1.63, 1.63, 'manter'),
+    ('J01', 'Janela', 'Sala de estar',   1.10, 1.63, 1.79, 'manter'),
+    ('J02', 'Janela', 'Sala de TV',     1.90, 1.63, 3.10, 'manter'),
+    ('J03', 'Janela', 'Sala de TV',     1.00, 1.63, 1.63, 'manter'),
     ('J04', 'Janela', 'Quarto',   1.20, 1.63, 1.96, 'manter'),
     ('J05', 'Janela', 'Quarto',   1.20, 1.63, 1.96, 'manter'),
     ('J06', 'Janela', 'Closet',   2.00, 2.15, 4.30, 'manter — do piso ao teto'),
     ('P01', 'Porta',  'Entrada',  1.00, 2.29, 2.29, 'manter'),
-    ('P02', 'Porta',  'Banheiro', 0.80, 2.00, 1.64, 'giro invertido — abre p/ escada'),
+    ('P02', 'Porta',  'Banheiro', 0.80, 2.00, 1.64, 'de abrir — giro p/ o quarto'),
     ('P03', 'Porta de correr', 'Quarto', 1.00, 2.29, 2.29, 'nova, na drywall R01'),
 ]
 
 # ambientes: (nome, área, perímetro, bounding box, inscrita, parede s/ vãos)
 AMBIENTES_SCAN = [
-    ('Sala',     23.0, 20.7, '5,6 × 4,8', '4,8 × 4,0', 29.8),
+    ('Sala de TV',     23.0, 20.7, '5,6 × 4,8', '4,8 × 4,0', 29.8),
     ('Quarto',   13.4, 16.2, '5,6 × 2,5', '5,6 × 2,1', 30.3),
     ('Cozinha',   8.9, 13.7, '4,7 × 2,1', '4,7 × 1,4', 23.3),
-    ('Jantar',    5.9, 10.1, '3,3 × 1,8', '—',         15.2),
+    ('Sala de estar',    5.9, 10.1, '3,3 × 1,8', '—',         15.2),
     ('Closet',    5.3,  9.3, '2,5 × 2,1', '—',         14.9),
     ('Banheiro',  3.8,  8.1, '2,6 × 1,4', '—',         16.7),
 ]
@@ -650,7 +651,7 @@ def cabecalho(d, titulo, subtitulo, rev, dir1='', dir2=''):
     if dir2: d.txt(W - MARGIN, 99, dir2, 9.6, INK_SOFT, 'normal', 'end')
     d.line(MARGIN, 116, W - MARGIN, 116, RULE, 1.0)
 
-DATA_EMISSAO = '30/09/2026'
+DATA_EMISSAO = '01/10/2026'
 
 def rodape(d, nota1, nota2, prancha, rev):
     d.line(MARGIN, 922, W - MARGIN, 922, RULE, 1.0)

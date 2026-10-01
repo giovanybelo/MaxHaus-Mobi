@@ -186,7 +186,7 @@ BOARDS = [
     ('02', 'Demolição e desmontagem', 'prancha-02-demolicao.svg',
      'Escopo sobre o modelo do scan: o que sai, o que se desmonta para remontar e o que fica.',
      ['<b>14</b> itens catalogados', '<b>Demolir e reconstruir</b> como serviços separados',
-      '<b>Jantar e escada:</b> preparo para pintura', '<b>Porta de correr</b> 1,00 × 2,29 m']),
+      '<b>Sala de estar e escada:</b> preparo para pintura', '<b>Porta de correr</b> 1,00 × 2,29 m']),
     ('03', 'Opção A — cumaru-ferro, cozinha e closet em monolítico', 'prancha-03-piso-cumaru.svg',
      'Piso pronto em réguas nas áreas de estar e dormir; cozinha e closet numa zona monolítica contínua, de canto reto com a ponta arredondada.',
      ['<b>Cumaru</b> 44,69 m² (49,16 com reserva)', '<b>Monolítico</b> 11,81 m²',
@@ -197,7 +197,7 @@ BOARDS = [
       '<b>Total</b> 60,30 m²', '<b>Sem</b> junta de material']),
     ('05', 'Teto, iluminação e ar-condicionado', 'prancha-05-teto.svg',
      'Sem forro, luz e ar dividem a mesma laje: trilhos aplicados, três luminárias de destaque e evaporadoras aparentes.',
-     ['<b>6</b> trilhos, traçado revisado', '<b>P01–P03</b> destaques: jantar, cama, office',
+     ['<b>6</b> trilhos, traçado revisado', '<b>P01–P03</b> destaques: sala de estar, cama, office',
       '<b>Claraboia</b> 1,92 × 3,00 m, não furável', '<b>CT01</b> cortina do quarto adaptável']),
     ('06', 'Tomadas, comandos e quadro', 'prancha-06-eletrica.svg',
      'Reservas de localização com os pontos existentes que você marcou e o quadro junto à porta de entrada.',
@@ -228,25 +228,31 @@ BOARDS = [
      ['<b>23</b> pontos catalogados', '<b>1</b> impasse aberto',
       '<b>Claraboia</b> não furável', '<b>Rebaixo</b> contra a cota única']),
     ('13', 'Quarto adaptável e fechamento da claraboia', 'prancha-13-quarto-claraboia.svg',
-     'A cortina fecha o jantar como quarto de hóspede, virando no fim da ponta da escada; a claraboia ganha fechamento elétrico em 2027/28, com a espera feita agora.',
-     ['<b>8,54 m²</b> dentro da cortina', '<b>Cama de casal</b> com 0,60 m nos três lados',
+     'A cortina fecha a sala de estar como quarto de hóspede, virando no fim da ponta da escada; a claraboia ganha fechamento elétrico em 2027/28, com a espera feita agora.',
+     ['<b>8,78 m²</b> dentro da cortina', '<b>Cama de casal</b> com 0,60 m nos três lados',
       '<b>2,23 m</b> de trilho sem apoio', '<b>FC01</b> em 2027/28']),
 ]
 
 DECISOES = [
+    ('REV. O — nomes, trilho reto, cama leste–oeste e porta do banheiro',
+     'O antigo jantar passa a se chamar sala de estar e a antiga sala, sala de TV. O trilho da cortina '
+     'ficou reto, passando sobre o degrau da ponta da escada; a cama do quarto adaptável gira para o '
+     'sentido leste–oeste, encostada na parede norte. A porta do banheiro continua de abrir e passa a '
+     'girar para o lado do quarto. Nova folha FO7 para fornecedores: pedras da cozinha e do banheiro, '
+     'vidro do box em duas propostas (manter o K01 ou vidro novo de 2,00 m) e medidas das portas.'),
     ('Quarto adaptável e claraboia — REV. N',
-     'Uma cortina fecha o jantar como quarto de hóspede: recolhida no canto do jantar, estendida '
-     'vira no fim da ponta da escada e corre até a fachada. Cabe cama de casal com 0,60 m de '
-     'circulação nos três lados. A claraboia — o fundo de vidro da piscina — ganha fechamento '
+     'Uma cortina fecha a sala de estar como quarto de hóspede: recolhida no canto da sala de estar, estendida '
+     'desce em linha reta, vira no fim da ponta da escada e corre até a fachada. Cabe cama de casal, '
+     'no sentido leste–oeste, com 0,60 m de circulação nos três lados. A claraboia — o fundo de vidro da piscina — ganha fechamento '
      'elétrico em 2027/28; eletroduto, espera e comando entram agora.'),
     ('Planta baixa cotada, com norte medido',
      'O caderno ganhou a folha que faltava: cotas gerais, cadeias de cota nas quatro faces, '
      'posição dos vãos na fachada leste, cotas internas, nível ±0,00 e norte. O norte veio da rosa '
      'dos ventos do scan do pavimento superior: 126° do topo da folha.'),
     ('As fachadas envidraçadas dão para noroeste e nordeste',
-     'Noroeste — jantar, sala e uma janela do quarto — é a face que toma o sol da tarde, o mais '
+     'Noroeste — sala de estar, sala de TV e uma janela do quarto — é a face que toma o sol da tarde, o mais '
      'quente; nordeste, sol de manhã. As outras duas faces são divisa. Isso muda o '
-     'dimensionamento do ar: sala e jantar vão pela coluna base sol.'),
+     'dimensionamento do ar: sala de TV e sala de estar vão pela coluna base sol.'),
     ('Medidas de campo entraram no lugar das do scan',
      'Pé-direito: 2,40 m com o forro atual e 2,62 m na laje — 0,22 m de plenum, que é o que sobra '
      'acima da porta de correr. Portas de entrada e do quarto: 1,00 × 2,29 m. Janelas: 1,63 m de '
@@ -262,13 +268,13 @@ DECISOES = [
      'água, ar e obra nova, amarelo é preparo e atenção, preto é o que fica — e toda a tipografia. '
      'Ciano e amarelo puros não têm contraste para texto, então entram como área, nunca como letra.'),
     ('Demolir e reconstruir são serviços separados',
-     'A drywall entre sala e quarto cai e é refeita no mesmo eixo, agora com uma porta de '
+     'A drywall entre sala de TV e quarto cai e é refeita no mesmo eixo, agora com uma porta de '
      '1,00 × 2,29 m — a mesma altura da porta de entrada. O pano de vidro do fundo do box cai e '
      'vira parede. A Prancha 02 mostra o estado existente; as 03 a 06 já mostram o proposto.'),
-    ('Jantar e sob a escada: preparo, não demolição',
+    ('Sala de estar e sob a escada: preparo, não demolição',
      'Nessas duas paredes saem o espelho e os revestimentos e a superfície é preparada para '
      'pintura. A parede fica.'),
-    ('A piscina do pavimento superior fica sobre a sala',
+    ('A piscina do pavimento superior fica sobre a sala de TV',
      '1,92 × 3,00 m centrados em 6,13 / 3,14 m do canto noroeste. Essa laje não recebe furação: '
      'nem trilho, nem luminária, nem evaporadora podem invadi-la — a reserva AC01 caía dentro '
      'dela e foi deslocada.'),
@@ -294,24 +300,24 @@ DECISOES = [
      'Com o forro fora, a laje aparece como está. Restauro, descascamento, limpeza e preparo dos '
      '60,30 m² viram o item P03, com o acabamento a definir junto com a empreiteira.'),
     ('Toda parede sem revestimento vai preparada para pintura',
-     'Vale como regra de escopo, não só para o jantar e a parede sob a escada: o que aparecer '
+     'Vale como regra de escopo, não só para a sala de estar e a parede sob a escada: o que aparecer '
      'na obra entra no mesmo serviço (P04).'),
     ('Três luminárias maiores que as demais',
-     'Jantar, cama e office ganham corpo e diâmetro maiores que os spots dos trilhos — P01, P02 '
+     'Sala de estar, cama e office ganham corpo e diâmetro maiores que os spots dos trilhos — P01, P02 '
      'e P03. No quarto, o TR5 corre no eixo das duas: podem pendurar do próprio trilho.'),
     ('Traçado dos trilhos revisado',
      'TR3 desceu para 5,60 m e ganhou recuo da drywall; TR5 desceu para 8,28 m, no eixo de P02 e '
      'P03; TR6 saiu de junto da parede oeste e foi para 1,45 m, no mesmo eixo do TR4 da cozinha. '
-     'O TR2 foi encurtado: no traçado anterior ele cruzava o TR3 no meio da sala, e dois trilhos '
+     'O TR2 foi encurtado: no traçado anterior ele cruzava o TR3 no meio da sala de TV, e dois trilhos '
      'não se cruzam.'),
-    ('S08: a luz da sala ganhou comando próprio',
+    ('S08: a luz da sala de TV ganhou comando próprio',
      'Na quina do box voltada para a escada, encostado no S04 do banheiro — o primeiro anteparo '
-     'de quem chega à sala vindo da escada ou da cozinha.'),
-    ('A porta do banheiro abre para fora, no sentido da escada',
-     'Continua abrindo para o living; o giro é o do lado da escada.'),
+     'de quem chega à sala de TV vindo da escada ou da cozinha.'),
+    ('A porta do banheiro abre para fora, na direção do quarto',
+     'Continua de abrir e abrindo para o living; na REV. O o giro virou para o lado do quarto, liberando a saída da escada.'),
     ('A porta do quarto é de correr',
      'A folha de 1,00 × 2,29 m estaciona sobre o 1,00 m de drywall a leste do vão, pela face da '
-     'sala — trecho reservado: nada de tomada, quadro ou marcenaria ali. Falta decidir se o trilho '
+     'sala de TV — trecho reservado: nada de tomada, quadro ou marcenaria ali. Falta decidir se o trilho '
      'é aparente, mantendo a drywall de 10 cm, ou embutido em cassete, que exige engrossar a '
      'parede. O comando do quarto (S05) foi para a face do quarto, fora do caminho da folha.'),
 ]
@@ -341,7 +347,7 @@ def build():
         ('Obra', 'MaxHaus MainFloor — João Baldinato 109, 81I', ''),
         ('Caderno', '13 pranchas — 01 a 13', ''),
         ('Formato', 'A3 deitado — 420 × 297 mm', 'mono'),
-        ('Revisão', 'N — 30.09.2026', 'mono'),
+        ('Revisão', 'O — 01.10.2026', 'mono'),
         ('Escala', 'gráfica (barra de 2 m em cada planta)', ''),
         ('Base', 'scan MaxHaus MainFloor, 02.09.2026', ''),
         ('Área do pavimento', '60,30 m²', 'mono'),
@@ -352,7 +358,7 @@ def build():
         for (k, v, c) in stamp)
 
     return """<title>Caderno MainFloor</title>
-<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. N.">
+<meta name="description" content="Caderno de estudo preliminar MaxHaus MainFloor — REV. O.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
@@ -368,7 +374,7 @@ def build():
       como fica o teto agora que não há forro e onde ficam os pontos elétricos. Estudo preliminar —
       cores ilustrativas, nenhum produto ou espessura especificado.</p>
     </div>
-    <p class="rev">REV. N · 30.09.2026</p>
+    <p class="rev">REV. O · 01.10.2026</p>
   </header>
 
   <div class="rule"></div>
@@ -387,7 +393,7 @@ def build():
   <div class="stamp">""" + stamp_html + """</div>
 
   <p class="fine">Áreas conforme o levantamento MaxHaus MainFloor (captura de 02.09.2026):
-  sala 23,00 · quarto 13,40 · cozinha 8,90 · jantar 5,90 · closet 5,30 · banheiro 3,80 m².
+  sala de TV 23,00 · quarto 13,40 · cozinha 8,90 · sala de estar 5,90 · closet 5,30 · banheiro 3,80 m².
   Geometria de paredes, vãos e ambientes extraída do arquivo do scan e convertida pela escala
   45,66 pt/m, conferida contra as cotas gerais do pavimento (7,85 × 9,43 m). Quantidades e posições
   são preliminares: servem para orientar visita, proposta e projetos complementares, não para fechar

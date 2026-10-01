@@ -9,7 +9,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. N'
+REV = 'REV. O'
 PRANCHA = 'Prancha 01 / 13'
 
 TAB_AMB = [(n, '%s m²' % br(a), '%s m' % br(per, 1), bb, ins)
@@ -38,7 +38,7 @@ NOTAS = [
      '130,40 m², área de janela 12,70 m², perímetro somado dos ambientes 78,10 m.'],
     ['**Bounding box não é o ambiente.',
      'As dimensões do relatório vêm em duas leituras: o menor retângulo que contém o ambiente (B) e o',
-     'maior retângulo inscrito (I). Em planta irregular — sala e cozinha — as duas divergem bastante:',
+     'maior retângulo inscrito (I). Em planta irregular — sala de TV e cozinha — as duas divergem bastante:',
      'usar a inscrita para conferir mobiliário e a cotada em planta para obra.'],
     ['**O norte foi medido, não arbitrado: 126° do topo da folha.',
      'O relatório do pavimento superior — mesma captura — traz rosa dos ventos e GPS; o do MainFloor',
@@ -46,7 +46,7 @@ NOTAS = [
      'dois elementos que os pavimentos compartilham: a caixa da escada e a área da piscina, que só cai',
      'no terraço de cima com essa rotação. A pétala N do Upfloor marca −53,97°; somados 180°, dá 126°.'],
     ['**As duas fachadas envidraçadas dão para NOROESTE e NORDESTE.',
-     'Noroeste: jantar (J01), sala (J02 e J03) e uma janela do quarto (J04) — é a face que toma o sol',
+     'Noroeste: sala de estar (J01), sala de TV (J02 e J03) e uma janela do quarto (J04) — é a face que toma o sol',
      'de tarde, o mais quente. Nordeste: a outra janela do quarto (J05) e o closet (J06), sol de manhã.',
      'As outras duas faces são divisa, a sudeste e a sudoeste. Coordenadas do levantamento:',
      '23°36\'46,8"S  46°44\'15,8"O, altitude 822 m.'],

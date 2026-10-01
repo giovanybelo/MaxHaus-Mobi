@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 import quarto_adaptavel as qa
 
-REV = 'REV. N'
+REV = 'REV. O'
 PRANCHA = 'Prancha 06 / 13'
 
 # --- pontos existentes marcados pelo cliente (metros) -----------------------
@@ -69,24 +69,24 @@ NOTAS = [
      'Estão desenhados na posição aproximada do levantamento: servem para decidir o que se aproveita',
      'e o que se remaneja, não para medir. T10 a T19 são reservas novas do estudo.'],
     ['**A porta de correr reserva um trecho de parede — e isso é questão elétrica.',
-     'A folha estaciona no 1,00 m de drywall a leste do vão, pela face da sala: nesse trecho não',
+     'A folha estaciona no 1,00 m de drywall a leste do vão, pela face da sala de TV: nesse trecho não',
      'cabe tomada, interruptor nem quadro. Por isso o S05 foi para a face do quarto, encostado no',
      'batente leste, fora do caminho da folha. S06 e S07 seguem na cabeceira, um de cada lado da',
      'cama, em paralelo com as luminárias P02 e P03 da Prancha 05.'],
     ['**O que cada comando aciona — leitura de folha, não diagrama de circuito:',
-     'S01 entrada e cozinha (TR4 e coifa, junto ao quadro) · S02 jantar (TR1 e P01) · S03 arandelas',
+     'S01 entrada e cozinha (TR4 e coifa, junto ao quadro) · S02 sala de estar (TR1 e P01) · S03 arandelas',
      'do espelho, junto à bancada · S04 banheiro, na quina do box · S05 quarto, ao lado da porta',
-     'de correr (TR5, P02 e P03) · S06 e S07 cabeceira, em paralelo com o S05 · S08 sala (TR2 e TR3)',
+     'de correr (TR5, P02 e P03) · S06 e S07 cabeceira, em paralelo com o S05 · S08 sala de TV (TR2 e TR3)',
      '· S09 paralelo do S02, dentro do quarto adaptável · S10 fechamento da claraboia.'],
-    ['**Quarto adaptável e claraboia — REV. N, detalhe na Prancha 13.',
-     'T16 foi para 7,05 m e T19 entrou a 5,25 m: uma tomada em cada cabeceira da cama. T18 é caixa',
+    ['**Quarto adaptável e claraboia — REV. N/O, detalhe na Prancha 13.',
+     'T16 (parede norte) e T19 (fachada) ladeiam a cabeceira da cama, que fica a leste. T18 é caixa',
      'de espera no teto, fora da moldura da claraboia, com eletroduto até o S10: o motor do',
      'fechamento chega em 2027/28 e liga ali sem abrir laje. Nada fixa no vidro.'],
-    ['**S08 é o novo comando da luz da sala.',
+    ['**S08 é o novo comando da luz da sala de TV.',
      'Fica na quina do box voltada para a escada, encostado no S04 do banheiro: é o primeiro',
-     'anteparo de quem entra na sala vindo da escada ou da cozinha. Os dois ocupam a faixa de',
+     'anteparo de quem entra na sala de TV vindo da escada ou da cozinha. Os dois ocupam a faixa de',
      'parede de 0,45 m entre a quina e o batente — cabe, mas é a folga exata de duas placas 4×2:',
-     'confirmar em obra antes de fechar a caixa. Se a sala for acender também pelo outro extremo,',
+     'confirmar em obra antes de fechar a caixa. Se a sala de TV for acender também pelo outro extremo,',
      'S08 precisa de paralelo junto à porta nova da drywall, em conjunto com o S05.'],
     ['**Imóvel de 17 anos: a hora de trocar fiação e ramais é agora, e não por causa da idade.',
      'A NBR 15575 dá 20 anos de vida útil de projeto para instalação elétrica e hidráulica embutida,',

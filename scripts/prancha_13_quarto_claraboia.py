@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Prancha 13 — Quarto adaptável no jantar e fechamento da claraboia (REV. N).
+"""Prancha 13 — Quarto adaptável na sala de estar e fechamento da claraboia (REV. O).
 
 Detalha as duas decisões de 30.09.2026 que mexem no teto: a cortina que fecha
-o jantar como quarto de hóspede e o fechamento elétrico da claraboia, previsto
+a sala de estar como quarto de hóspede e o fechamento elétrico da claraboia, previsto
 para 2027/28 mas com infraestrutura feita agora.
 """
 import os, sys
@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 import quarto_adaptavel as qa
 
-REV = 'REV. N'
+REV = 'REV. O'
 PRANCHA = 'Prancha 13 / 13'
 
 S = 140.0
@@ -25,10 +25,11 @@ def _folgas_txt(larg, comp):
 
 
 TAB_NUM = [
-    ('Área dentro da cortina', '%s m²' % br(qa.AREA_QUARTO), 'jantar 5,90 m² + faixa da sala até a ponta da escada'),
-    ('Largura × profundidade', '3,00 × 2,75 m', 'da cortina à fachada · da parede norte à cortina'),
+    ('Área dentro da cortina', '%s m²' % br(qa.AREA_QUARTO), 'sala de estar 5,90 m² + faixa da sala de TV até a ponta da escada'),
+    ('Largura × profundidade', '%s × %s m' % (br(qa.FACE_LESTE - qa.X_TRILHO), br(qa.Y_CORTINA - qa.FACE_NORTE)),
+     'da cortina à fachada · da parede norte à cortina'),
     ('Linha da cortina', '2,85 m', 'da parede norte — 0,06 m além da ponta da escada'),
-    ('Trilho CT01', '%s m' % br(qa.TRILHO_M), 'eixo, do canto do jantar à fachada leste'),
+    ('Trilho CT01', '%s m' % br(qa.TRILHO_M), 'eixo, do canto da sala de estar à fachada leste'),
     ('Cortina recolhida', '~%s m de trilho' % br(qa.PACOTE_M), 'pacote no canto noroeste, junto à parede'),
     ('Vão sem apoio no teto', '%s m' % br(qa.VAO_LIVRE), 'sob a claraboia: perfil autoportante'),
 ]
@@ -47,15 +48,16 @@ TAB_FASE = [
 ]
 
 NOTAS = [
-    ['**A cortina vira exatamente no fim da ponta da escada.',
-     'Recolhida, fica no canto noroeste do jantar. Estendida, desce pela parede, desvia 0,20 m',
-     'para contornar a lateral da escada, faz a curva no fim da ponta e corre reta a 2,85 m da',
-     'parede norte até a fachada. Ali a fachada é vidro (J02): a cortina encosta no caixilho — se a',
-     'J02 tiver montante central, o trilho termina nele. Conferir em obra.'],
-    ['**Com a linha na ponta da escada cabe cama de casal, com folga.',
-     'Cabeceira na parede norte, que é cega (divisa). Sobram 0,65 m do lado da cortina, 0,92 m do',
-     'lado da J01 e 0,82 m no pé: os 0,60 m mínimos estão atendidos nos três lados. A faixa de',
-     '0,92 m junto à J01 é a área de troca de roupa. Viúva sobra mais; queen passa no limite.'],
+    ['**O trilho é reto e vira exatamente no fim da ponta da escada.',
+     'Recolhida, a cortina fica no canto noroeste da sala de estar. Estendida, desce em linha reta',
+     'rente à parede, sem desvio — passa por cima do degrau da ponta da escada —, faz a curva no',
+     'fim da ponta e corre reta a 2,85 m da parede norte até a fachada. Ali a fachada é vidro (J02):',
+     'a cortina encosta no caixilho; se a J02 tiver montante central, o trilho termina nele.'],
+    ['**A cama fica no sentido leste–oeste, encostada na parede norte.',
+     'A lateral longa encosta na parede norte, que é cega (divisa); a cabeceira fica a leste. Sobram',
+     '%s m no pé, até a cortina, %s m atrás da cabeceira (criado e acesso à J01) e %s m' % tuple(br(v) for v in qa.folgas(qa.CASAL[1], qa.CASAL[2])),
+     'do lado sul: os 0,60 m mínimos estão atendidos. A faixa sul inteira, de %s × %s m,' % (br(qa.TROCA[2] - qa.TROCA[0]), br(qa.TROCA[3] - qa.TROCA[1])),
+     'é a área de troca de roupa. Viúva sobra mais; queen passa no limite.'],
     ['**Sob a claraboia o trilho não tem apoio no teto.',
      'Entre 5,00 e 7,23 m são %s m sem fixação — trilho comum pede apoio a cada ~1,0 m. Entra' % br(qa.VAO_LIVRE),
      'perfil autoportante (tubo metálico) fixado no concreto antes e depois da moldura, com o',
@@ -67,14 +69,14 @@ NOTAS = [
     ['**O que a cortina muda no resto do teto.',
      'P01 passa a plafon, sobre a cama. AC01 sai da linha da cortina para 4,76 / 3,05 m: com a',
      'cortina fechada o quarto fica sem evaporadora própria. T16 e T19 são as tomadas das duas',
-     'cabeceiras; S09 é paralelo da luz do jantar, no pilar entre J01 e J02.'],
+     'cabeceiras; S09 é paralelo da luz da sala de estar, no pilar entre J01 e J02.'],
 ]
 
 
 def construir():
     d = folha_nova()
     cabecalho(d, 'Quarto adaptável e fechamento da claraboia',
-              'A cortina fecha o jantar como quarto de hóspede; a claraboia ganha fechamento elétrico em 2027/28, com a infraestrutura feita agora.',
+              'A cortina fecha a sala de estar como quarto de hóspede; a claraboia ganha fechamento elétrico em 2027/28, com a infraestrutura feita agora.',
               REV, 'cama de casal com 0,60 m de circulação nos três lados',
               '%s m² dentro da cortina  ·  claraboia não furável' % br(qa.AREA_QUARTO))
 
@@ -93,17 +95,18 @@ def construir():
     qa.desenhar_vidro(d, size=8.4)
     qa.desenhar_moldura(d, rotulo=True, size=8.0)
     qa.desenhar_cama(d, qa.CASAL[1], qa.CASAL[2], rotulo='cama de casal')
-    x0, y0 = d.PM(qa.CAMA_X, qa.FACE_NORTE)
-    d.txt(x0 + (qa.CASAL[1] * S) / 2, y0 + qa.CASAL[2] * S * 0.62 + 12, '1,38 × 1,88 m', 7.6, K70, 'normal', 'middle')
+    cr = qa.cama_rect(qa.CASAL[1], qa.CASAL[2])
+    x0, y0 = d.PM(cr[0], cr[1])
+    d.txt(x0 + (cr[2] - cr[0]) * S * 0.38, y0 + (cr[3] - cr[1]) * S * 0.30 + 12, '1,38 × 1,88 m', 7.6, K70, 'normal', 'middle')
     qa.desenhar_trilho(d, sw=3.2, rotulo=False)
 
     # textos de ambiente e da troca
-    c = d.PM((t[0] + t[2]) / 2, 2.30)
+    c = d.PM(6.75, 1.95)
     d.txt(c[0], c[1], 'TROCA', 7.6, K, 'bold', 'middle', ls=0.4)
-    d.txt(c[0], c[1] + 10, '0,92 × 2,70', 7.0, K70, 'normal', 'middle')
+    d.txt(c[0], c[1] + 10, '%s × %s' % (br(t[2] - t[0]), br(t[3] - t[1])), 7.0, K70, 'normal', 'middle')
     c = d.PM(4.62, 3.55)
-    d.txt(c[0], c[1], 'SALA', 9.0, INK, 'bold', 'start', ls=0.9)
-    c = d.PM(5.15, 2.55)
+    d.txt(c[0], c[1], 'SALA DE TV', 9.0, INK, 'bold', 'start', ls=0.9)
+    c = d.PM(5.30, 2.42)
     d.txt(c[0], c[1], 'QUARTO ADAPTÁVEL', 8.6, INK, 'bold', 'start', ls=0.6)
     d.txt(c[0], c[1] + 11, '%s m² com a cortina fechada' % br(qa.AREA_QUARTO), 7.4, K70, 'normal', 'start')
     c = d.PM(qa.FACE_OESTE_JANTAR - 0.12, 0.45)
@@ -134,7 +137,7 @@ def construir():
         d.line(cx - 2.5, cy + 2.5, cx + 2.5, cy - 2.5, K, 1.2)
         d.txt(cx - 9, cy + 2.5, ident, 7.0, K, 'bold', 'end')
 
-    tomada(qa.TOMADA_CABECEIRA[0], qa.TOMADA_CABECEIRA[1], qa.TOMADA_CABECEIRA[2])
+    tomada(qa.TOMADA_CABECEIRA[0], qa.TOMADA_CABECEIRA[1], qa.TOMADA_CABECEIRA[2], lado='o')
     tomada(qa.T16_NOVO[0], qa.T16_NOVO[1], qa.T16_NOVO[2])
     tomada('T01', 7.62, 2.46, nova=False, lado='o')
     tomada('T02', 7.62, 4.51, nova=False, lado='o')
@@ -157,11 +160,11 @@ def construir():
     def cv(y0m, y1m, xm, off, texto=None):
         cota_v(d, py_(y0m), py_(y1m), px_(xm), off, texto, size=7.8)
     o, l, p = qa.folgas(qa.CASAL[1], qa.CASAL[2])
-    ch(qa.X_JUNTO_ESCADA + qa.FOLGA_TECIDO, qa.CAMA_X, 1.70, 0, br(o))
-    ch(qa.CAMA_X + qa.CASAL[1], qa.FACE_LESTE, 1.70, 0, br(l))
-    cv(qa.FACE_NORTE + qa.CASAL[2], qa.Y_CORTINA - qa.FOLGA_TECIDO, 6.14, 0, br(p))
+    ch(qa.X_TRILHO + qa.FOLGA_TECIDO, cr[0], 0.68, 0, br(o))
+    ch(cr[2], qa.FACE_LESTE, 0.68, 0, br(l))
+    cv(cr[3], qa.Y_CORTINA - qa.FOLGA_TECIDO, 5.70, 0, br(p))
     ch(qa.FIX_OESTE, qa.FIX_LESTE, qa.Y_CORTINA, 22, '%s sem apoio no teto' % br(qa.VAO_LIVRE))
-    c = d.PM(4.05, 3.02)
+    c = d.PM(4.05, 3.32)
     d.txt(c[0], c[1], 'fim da ponta da escada (acima)', 7.2, K70, 'normal', 'start')
 
     # recorte: máscaras fora da janela de desenho
@@ -185,9 +188,9 @@ def construir():
                  [('Grandeza', 0.30, 'start'), ('Valor', 0.20, 'end'), ('Leitura', 0.50, 'end')],
                  TAB_NUM, titulo='QUARTO ADAPTÁVEL — NÚMEROS', alt=18)
     fim = tabela(d, cx2, fim + 34, cw,
-                 [('Cama', 0.28, 'start'), ('Medida m', 0.18, 'end'), ('Lado cortina', 0.15, 'end'),
-                  ('Lado J01', 0.13, 'end'), ('Pé', 0.11, 'end'), ('Atende 0,60', 0.15, 'end')],
-                 TAB_CAMA, titulo='CAMA × CIRCULAÇÃO — CABECEIRA NA PAREDE NORTE', alt=18)
+                 [('Cama', 0.28, 'start'), ('Medida m', 0.18, 'end'), ('Pé oeste', 0.12, 'end'),
+                  ('Cabeceira', 0.14, 'end'), ('Lado sul', 0.13, 'end'), ('Atende 0,60', 0.15, 'end')],
+                 TAB_CAMA, titulo='CAMA × CIRCULAÇÃO — LESTE–OESTE, JUNTO À PAREDE NORTE', alt=18)
     fim = tabela(d, cx2, fim + 34, cw,
                  [('ID', 0.12, 'start'), ('Item', 0.70, 'start'), ('Fase', 0.18, 'end')],
                  TAB_FASE, titulo='ESCOPO — O QUE ENTRA AGORA E O QUE FICA PARA 2027/28', alt=18)

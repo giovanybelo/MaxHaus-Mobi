@@ -3,9 +3,9 @@
 <text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS 81I  ·  PACOTE PARA FORNECEDORES</text>
 <text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Piso</text>
 <text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Duas opções para orçamento, na mesma escala. Quantidades por sistema; banheiro em sistema à parte nas duas.</text>
-<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">EMISSÃO 02</text>
+<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">EMISSÃO 03</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">FO2 — PISO</text>
-<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">extraído do caderno de estudo REV. N</text>
+<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">extraído do caderno de estudo REV. O</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
 <path d="M157.60 276.06 L381.87 276.06 L381.87 469.75 L218.84 469.75 L218.84 378.29 L157.60 378.29 Z" fill="#ffffff"/>
 <line x1="158.00" y1="276.06" x2="158.00" y2="378.29" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
@@ -209,8 +209,8 @@
 <line x1="100.13" y1="283.85" x2="140.13" y2="283.85" stroke="#000000" stroke-width="1.40"/>
 <path d="M 140.13 283.85 A 40.00 40.00 0 0 1 100.13 323.85" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
 <rect x="216.55" y="398.23" width="4.60" height="32.40" fill="#ffffff"/>
-<line x1="220.85" y1="398.53" x2="252.65" y2="398.53" stroke="#000000" stroke-width="1.40"/>
-<path d="M 252.65 398.53 A 31.80 31.80 0 0 1 220.85 430.33" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
+<line x1="220.85" y1="430.33" x2="252.65" y2="430.33" stroke="#000000" stroke-width="1.40"/>
+<path d="M 252.65 430.33 A 31.80 31.80 0 0 0 220.85 398.53" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
 <rect x="136.32" y="278.05" width="120.89" height="33.49" fill="none" stroke="#000000" stroke-width="0.90" opacity="0.85"/>
 <line x1="147.31" y1="278.05" x2="147.31" y2="311.54" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
 <line x1="158.30" y1="278.05" x2="158.30" y2="311.54" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
@@ -256,8 +256,8 @@
 <line x1="157.60" y1="522.88" x2="157.60" y2="526.88" stroke="#000000" stroke-width="1.70" stroke-linecap="butt"/>
 <line x1="157.60" y1="529.88" x2="157.60" y2="533.88" stroke="#000000" stroke-width="1.70" stroke-linecap="butt"/>
 <line x1="157.60" y1="536.88" x2="157.60" y2="540.81" stroke="#000000" stroke-width="1.70" stroke-linecap="butt"/>
-<text x="310.3" y="231.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">JANTAR</text>
-<text x="292.8" y="380.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">SALA</text>
+<text x="310.3" y="231.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">SALA DE ESTAR</text>
+<text x="292.8" y="380.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">SALA DE TV</text>
 <text x="117.6" y="388.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">COZINHA</text>
 <text x="128.1" y="542.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">CLOSET</text>
 <text x="310.3" y="511.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">QUARTO</text>
@@ -307,8 +307,8 @@
 <line x1="444.13" y1="283.85" x2="484.13" y2="283.85" stroke="#000000" stroke-width="1.40"/>
 <path d="M 484.13 283.85 A 40.00 40.00 0 0 1 444.13 323.85" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
 <rect x="560.55" y="398.23" width="4.60" height="32.40" fill="#ffffff"/>
-<line x1="564.85" y1="398.53" x2="596.65" y2="398.53" stroke="#000000" stroke-width="1.40"/>
-<path d="M 596.65 398.53 A 31.80 31.80 0 0 1 564.85 430.33" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
+<line x1="564.85" y1="430.33" x2="596.65" y2="430.33" stroke="#000000" stroke-width="1.40"/>
+<path d="M 596.65 430.33 A 31.80 31.80 0 0 0 564.85 398.53" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
 <rect x="480.32" y="278.05" width="120.89" height="33.49" fill="none" stroke="#000000" stroke-width="0.90" opacity="0.85"/>
 <line x1="491.31" y1="278.05" x2="491.31" y2="311.54" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
 <line x1="502.30" y1="278.05" x2="502.30" y2="311.54" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
@@ -320,8 +320,8 @@
 <line x1="568.24" y1="278.05" x2="568.24" y2="311.54" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
 <line x1="579.23" y1="278.05" x2="579.23" y2="311.54" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
 <line x1="590.22" y1="278.05" x2="590.22" y2="311.54" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
-<text x="654.3" y="231.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">JANTAR</text>
-<text x="636.8" y="380.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">SALA</text>
+<text x="654.3" y="231.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">SALA DE ESTAR</text>
+<text x="636.8" y="380.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">SALA DE TV</text>
 <text x="461.6" y="388.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">COZINHA</text>
 <text x="472.1" y="542.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">CLOSET</text>
 <text x="654.3" y="511.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">QUARTO</text>
@@ -348,7 +348,7 @@
 <text x="124.1" y="697.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Tarefa</text>
 <text x="720.0" y="697.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Quantidade</text>
 <text x="78.0" y="715.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">A1</text>
-<text x="124.1" y="715.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cumaru-ferro, piso pronto em réguas — sala, quarto, jantar e corredor</text>
+<text x="124.1" y="715.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cumaru-ferro, piso pronto em réguas — sala de TV, quarto, sala de estar e corredor</text>
 <text x="720.0" y="715.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">44,69 m²</text>
 <line x1="70.00" y1="722.00" x2="728.00" y2="722.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="70.00" y="722.00" width="658.00" height="18.00" fill="#f5f5f5"/>
@@ -375,7 +375,7 @@
 <text x="124.1" y="849.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Tarefa</text>
 <text x="720.0" y="849.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Quantidade</text>
 <text x="78.0" y="867.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">B1</text>
-<text x="124.1" y="867.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Piso monolítico contínuo — sala, quarto, cozinha, jantar e closet</text>
+<text x="124.1" y="867.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Piso monolítico contínuo — sala de TV, quarto, cozinha, sala de estar e closet</text>
 <text x="720.0" y="867.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">56,50 m²</text>
 <line x1="70.00" y1="874.00" x2="728.00" y2="874.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="70.00" y="874.00" width="658.00" height="18.00" fill="#f5f5f5"/>
@@ -473,6 +473,6 @@
 <line x1="48.00" y1="930.00" x2="1352.00" y2="930.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="48.0" y="948.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Quantidades preliminares sobre levantamento por scan de 02.09.2026. Conferir medidas e alvos em campo antes de mobilizar equipe, cortar material ou fechar medição.</text>
 <text x="48.0" y="961.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Durações e prazos não estão definidos: preencher no cronograma da contratada. Alterações de escopo somente por escrito.</text>
-<text x="48.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81I  ·  JOÃO BALDINATO 109  ·  PISO  ·  30.09.2026</text>
-<text x="1352.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">FOLHA FO2 / 6   ·   EMISSÃO 02</text>
+<text x="48.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81I  ·  JOÃO BALDINATO 109  ·  PISO  ·  01.10.2026</text>
+<text x="1352.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">FOLHA FO2 / 7   ·   EMISSÃO 03</text>
 </svg>

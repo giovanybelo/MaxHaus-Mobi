@@ -14,7 +14,7 @@ from base_mainfloor import *      # noqa
 from base_mainfloor import _tick
 from prancha_04_teto import EMBUTIDOS_WC
 
-REV = 'REV. N'
+REV = 'REV. O'
 PRANCHA = 'Prancha 08 / 13'
 
 # --- faces do banheiro, em pt do scan ---------------------------------------
@@ -43,7 +43,7 @@ TAB_DEMO_WC = [
 ]
 TAB_RECON_WC = [
     ('R02', 'Parede de fechamento do fundo do box, no lugar do vidro', '1,63 m'),
-    ('P02', 'Porta 0,80 × 2,00 m, giro invertido — abre para a escada', '1 vão'),
+    ('P02', 'Porta 0,80 × 2,00 m, de abrir — giro na direção do quarto', '1 vão'),
     ('P05', 'Nivelar o banheiro na cota do piso da casa', 'cota única'),
 ]
 TAB_PISO_WC = [
@@ -73,12 +73,12 @@ NOTAS = [
     ['**A contenção de água passa a ser o ralo linear, não o degrau.',
      'Sem degrau na soleira, o caimento e o ralo no fundo do box são o que retém a água.',
      'O caimento é executado na regularização, sobre a impermeabilização, nunca no piso acabado.'],
-    ['**O vidro interno do box (K01) fica.',
-     'Sai o pano de vidro chão-teto do fundo (D06) e entra parede (R02); o vidro que divide o box',
-     'do resto do banheiro é para manter e proteger durante toda a obra.'],
-    ['**A porta abre para fora, no sentido da escada.',
-     'Ganha área útil dentro do banheiro e libera a faixa junto à bancada. O giro passa a ocupar',
-     'o patamar: conferir se a folha aberta não invade a passagem da escada.'],
+    ['**O vidro interno do box: K01 fica (A) ou VB1 novo de 2,00 m (B) — ver FO7.',
+     'Sai o pano de vidro chão-teto do fundo (D06) e entra parede (R02). O vidro que divide o box',
+     'fica protegido na obra até a escolha; B pede perfis na parede antes do revestimento.'],
+    ['**A porta continua de abrir, para fora, e agora gira na direção do quarto (REV. O).',
+     'Ganha área útil dentro do banheiro e libera a faixa junto à bancada. Aberta, a folha fica',
+     'encostada do lado do quarto e deixa livre a saída da escada; dobradiça passa para o sul.'],
 ]
 
 

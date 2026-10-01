@@ -3,7 +3,7 @@
 <text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS / MAIN FLOOR</text>
 <text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Opção A — cumaru-ferro, cozinha e closet em monolítico</text>
 <text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Piso pronto em réguas nas áreas de estar e dormir; cozinha e closet numa zona monolítica contínua. Cores e desenho de régua ilustrativos.</text>
-<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. N</text>
+<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">REV. O</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">norte 126°  ·  Prancha 03 de 13</text>
 <text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">ponta arredondada: canto reto com filete de 0,70 m</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
@@ -246,8 +246,8 @@
 <line x1="122.72" y1="302.75" x2="192.72" y2="302.75" stroke="#000000" stroke-width="1.40"/>
 <path d="M 192.72 302.75 A 70.00 70.00 0 0 1 122.72 372.75" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
 <rect x="326.69" y="503.12" width="7.61" height="56.25" fill="#ffffff"/>
-<line x1="333.99" y1="503.42" x2="389.65" y2="503.42" stroke="#000000" stroke-width="1.40"/>
-<path d="M 389.65 503.42 A 55.65 55.65 0 0 1 333.99 559.07" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
+<line x1="333.99" y1="559.07" x2="389.65" y2="559.07" stroke="#000000" stroke-width="1.40"/>
+<path d="M 389.65 559.07 A 55.65 55.65 0 0 0 333.99 503.42" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
 <rect x="332.16" y="624.33" width="70.51" height="7.61" fill="#ffffff"/>
 <line x1="402.37" y1="617.83" x2="406.87" y2="617.83" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
 <line x1="410.37" y1="617.83" x2="414.87" y2="617.83" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
@@ -350,9 +350,9 @@
 <text x="273.3" y="370.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">canto reto com filete de</text>
 <text x="273.3" y="379.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">0,70 m de raio</text>
 <rect x="243.81" y="569.54" width="66.00" height="24.00" fill="#d6ffff" opacity="0.95"/>
-<text x="490.5" y="198.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">JANTAR</text>
+<text x="490.5" y="198.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA DE ESTAR</text>
 <text x="490.5" y="208.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.3" fill="#4d4d4d" font-weight="normal" text-anchor="middle">5,90 m²</text>
-<text x="459.9" y="425.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA</text>
+<text x="459.9" y="425.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA DE TV</text>
 <text x="459.9" y="435.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.3" fill="#4d4d4d" font-weight="normal" text-anchor="middle">23,00 m²</text>
 <text x="153.2" y="547.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">COZINHA</text>
 <text x="153.2" y="557.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.3" fill="#4d4d4d" font-weight="normal" text-anchor="middle">8,90 m²</text>
@@ -385,7 +385,7 @@
 <text x="868.6" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Onde</text>
 <text x="1344.0" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Área</text>
 <text x="730.0" y="194.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Cumaru-ferro</text>
-<text x="868.6" y="194.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">sala 23,00 + quarto 13,40 + jantar 5,90 + corredor 2,39</text>
+<text x="868.6" y="194.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">sala de TV 23,00 + quarto 13,40 + sala de estar 5,90 + corredor 2,39</text>
 <text x="1344.0" y="194.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">44,69 m²</text>
 <line x1="722.00" y1="202.00" x2="1352.00" y2="202.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="202.00" width="630.00" height="22.00" fill="#f5f5f5"/>
@@ -411,12 +411,12 @@
 <text x="722.0" y="344.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">cumaru já resolve a maior parte do movimento. O desenho de juntas vira questão de verdade</text>
 <text x="722.0" y="356.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">só na opção B, com 56,50 m² contínuos — ver a Prancha 04.</text>
 <text x="722.0" y="374.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Cozinha e closet formam uma zona monolítica só.</text>
-<text x="722.0" y="386.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">A zona é um retângulo contínuo, da parede oeste até a linha da sala e do degrau até a fachada</text>
+<text x="722.0" y="386.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">A zona é um retângulo contínuo, da parede oeste até a linha da sala de TV e do degrau até a fachada</text>
 <text x="722.0" y="398.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">sul, passando pela abertura entre cozinha e closet. O corredor da entrada e a escada ficam em</text>
 <text x="722.0" y="410.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">cumaru; o monolítico cobre a cozinha de trabalho e o closet.</text>
 <text x="722.0" y="428.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">A ponta é canto reto com filete de 0,70 m de raio.</text>
 <text x="722.0" y="440.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Não é mais um arco achatado atravessando a cozinha: o limite corre reto pela linha do degrau,</text>
-<text x="722.0" y="452.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">vira reto na linha da sala, e só a quina que aparece no corredor é arredondada. Um quarto de</text>
+<text x="722.0" y="452.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">vira reto na linha da sala de TV, e só a quina que aparece no corredor é arredondada. Um quarto de</text>
 <text x="722.0" y="464.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">círculo tangente aos dois lados — geometria que o marceneiro e o aplicador sabem replicar com</text>
 <text x="722.0" y="476.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">um compasso, e que o perfil de transição consegue acompanhar.</text>
 <text x="722.0" y="494.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">A junta é o detalhe mais caro desta opção.</text>
@@ -440,6 +440,6 @@
 <line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="48.0" y="940.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Revestimento contínuo: toda a área de piso é revestida, inclusive sob móveis e equipamentos — nenhum recorte de mobiliário foi descontado. Áreas conforme o scan de 02.09.2026.</text>
 <text x="48.0" y="953.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Estudo preliminar de superfície: não substitui especificação de sistema, projeto de juntas nem memorial de aplicação do fornecedor.</text>
-<text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   30/09/2026</text>
-<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 03 / 13   ·   REV. N</text>
+<text x="48.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   01/10/2026</text>
+<text x="1352.0" y="975.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">Prancha 03 / 13   ·   REV. O</text>
 </svg>

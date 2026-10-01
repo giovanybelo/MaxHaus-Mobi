@@ -3,9 +3,9 @@
 <text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS 81I  ·  PACOTE PARA FORNECEDORES</text>
 <text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Demolição e preparo</text>
 <text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Escopo de retirada, preparo de superfícies e reconstruções. Planta no estado existente.</text>
-<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">EMISSÃO 02</text>
+<text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">EMISSÃO 03</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">FO1 — DEMOLIÇÃO</text>
-<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">extraído do caderno de estudo REV. N</text>
+<text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">extraído do caderno de estudo REV. O</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
 <path d="M349.68 159.20 L561.20 159.20 L561.20 275.79 L349.68 275.79 Z" fill="#ededed" opacity="1.00"/>
 <path d="M207.98 275.79 L561.20 275.79 L561.20 580.86 L304.42 580.86 L304.42 436.81 L207.98 436.81 Z" fill="#ededed" opacity="1.00"/>
@@ -60,8 +60,8 @@
 <line x1="117.45" y1="288.07" x2="180.45" y2="288.07" stroke="#000000" stroke-width="1.40"/>
 <path d="M 180.45 288.07 A 63.00 63.00 0 0 1 117.45 351.07" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
 <rect x="300.99" y="468.38" width="6.91" height="50.69" fill="#ffffff"/>
-<line x1="307.60" y1="468.68" x2="357.68" y2="468.68" stroke="#000000" stroke-width="1.40"/>
-<path d="M 357.68 468.68 A 50.09 50.09 0 0 1 307.60 518.77" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
+<line x1="307.60" y1="518.77" x2="357.68" y2="518.77" stroke="#000000" stroke-width="1.40"/>
+<path d="M 357.68 518.77 A 50.09 50.09 0 0 0 307.60 468.68" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
 <rect x="174.45" y="278.92" width="190.41" height="52.75" fill="none" stroke="#000000" stroke-width="0.90" opacity="0.85"/>
 <line x1="191.76" y1="278.92" x2="191.76" y2="331.67" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
 <line x1="209.07" y1="278.92" x2="209.07" y2="331.67" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
@@ -271,8 +271,8 @@
 <line x1="207.98" y1="590.81" x2="304.42" y2="590.81" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
 <line x1="207.98" y1="597.81" x2="304.42" y2="597.81" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
 <line x1="207.98" y1="604.81" x2="304.42" y2="604.81" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<text x="448.5" y="194.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">JANTAR</text>
-<text x="420.9" y="398.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA</text>
+<text x="448.5" y="194.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA DE ESTAR</text>
+<text x="420.9" y="398.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA DE TV</text>
 <text x="144.9" y="481.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">COZINHA</text>
 <text x="144.9" y="674.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">CLOSET</text>
 <text x="448.5" y="674.3" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">QUARTO</text>
@@ -401,7 +401,7 @@
 <line x1="722.00" y1="237.00" x2="1352.00" y2="237.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="237.00" width="630.00" height="19.00" fill="#f5f5f5"/>
 <text x="730.0" y="249.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">D05</text>
-<text x="774.1" y="249.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Retirar canto alemão do jantar</text>
+<text x="774.1" y="249.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Retirar canto alemão da sala de estar</text>
 <text x="1344.0" y="249.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1 conjunto</text>
 <line x1="722.00" y1="256.00" x2="1352.00" y2="256.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="268.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">D07</text>
@@ -410,7 +410,7 @@
 <line x1="722.00" y1="275.00" x2="1352.00" y2="275.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="275.00" width="630.00" height="19.00" fill="#f5f5f5"/>
 <text x="730.0" y="287.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">D01</text>
-<text x="774.1" y="287.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Demolir drywall entre sala e quarto</text>
+<text x="774.1" y="287.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Demolir drywall entre sala de TV e quarto</text>
 <text x="1344.0" y="287.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">4,08 m</text>
 <line x1="722.00" y1="294.00" x2="1352.00" y2="294.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="306.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">D02</text>
@@ -437,7 +437,7 @@
 <line x1="722.00" y1="389.00" x2="1352.00" y2="389.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="389.00" width="630.00" height="19.00" fill="#f5f5f5"/>
 <text x="730.0" y="401.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">P01</text>
-<text x="774.1" y="401.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Parede do jantar: retirar espelho e revestimento</text>
+<text x="774.1" y="401.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Parede da sala de estar: retirar espelho e revestimento</text>
 <text x="1344.0" y="401.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,95 m</text>
 <line x1="722.00" y1="408.00" x2="1352.00" y2="408.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="420.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">P02</text>
@@ -464,7 +464,7 @@
 <line x1="722.00" y1="503.00" x2="1352.00" y2="503.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="503.00" width="630.00" height="19.00" fill="#f5f5f5"/>
 <text x="730.0" y="515.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">R01</text>
-<text x="774.1" y="515.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Reconstruir drywall sala/quarto com vão de porta 1,00 × 2,29 m</text>
+<text x="774.1" y="515.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Reconstruir drywall sala de TV/quarto com vão de porta 1,00 × 2,29 m</text>
 <text x="1344.0" y="515.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">4,08 m + 1 vão</text>
 <line x1="722.00" y1="522.00" x2="1352.00" y2="522.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="534.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">R02</text>
@@ -489,7 +489,7 @@
 <circle cx="729.00" cy="677.50" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
 <text x="729.0" y="680.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">3</text>
 <text x="744.0" y="680.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Desmontagem — M01 e D05.</text>
-<text x="744.0" y="692.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Closet etiquetado e acondicionado; canto alemão do jantar.</text>
+<text x="744.0" y="692.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Closet etiquetado e acondicionado; canto alemão da sala de estar.</text>
 <circle cx="729.00" cy="707.70" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
 <text x="729.0" y="710.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">4</text>
 <text x="744.0" y="710.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="normal" text-anchor="start">Forro — D07, 100%.</text>
@@ -520,6 +520,6 @@
 <line x1="48.00" y1="930.00" x2="1352.00" y2="930.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="48.0" y="948.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Quantidades preliminares sobre levantamento por scan de 02.09.2026. Conferir medidas e alvos em campo antes de mobilizar equipe, cortar material ou fechar medição.</text>
 <text x="48.0" y="961.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">Durações e prazos não estão definidos: preencher no cronograma da contratada. Alterações de escopo somente por escrito.</text>
-<text x="48.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81I  ·  JOÃO BALDINATO 109  ·  DEMOLIÇÃO  ·  30.09.2026</text>
-<text x="1352.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">FOLHA FO1 / 6   ·   EMISSÃO 02</text>
+<text x="48.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81I  ·  JOÃO BALDINATO 109  ·  DEMOLIÇÃO  ·  01.10.2026</text>
+<text x="1352.0" y="978.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="end">FOLHA FO1 / 7   ·   EMISSÃO 03</text>
 </svg>

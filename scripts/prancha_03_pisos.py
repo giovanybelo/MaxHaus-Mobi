@@ -11,7 +11,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. N'
+REV = 'REV. O'
 
 AREA_CUMARU = 44.69          # sala + quarto + jantar + corredor
 AREA_CUMARU_RESERVA = 49.16  # + 10% de corte e reposição
@@ -25,7 +25,7 @@ CONTORNO_SECO = [(448.4,126.7),(601.7,126.7),(601.7,552.7),(248.0,552.7),
                  (248.0,284.8),(277.8,284.8),(277.8,211.2),(448.4,211.2)]
 
 TAB_A = [
-    ('Cumaru-ferro',      'sala 23,00 + quarto 13,40 + jantar 5,90 + corredor 2,39', '44,69 m²'),
+    ('Cumaru-ferro',      'sala de TV 23,00 + quarto 13,40 + sala de estar 5,90 + corredor 2,39', '44,69 m²'),
     ('+ reserva de 10%',  'cortes, perdas e reposição futura',                       '49,16 m²'),
     ('Monolítico',        'cozinha 6,51 (de 8,90) + closet 5,30 — zona contínua',    '11,81 m²'),
     ('Banheiro',          'sistema à parte, área molhada, na mesma cota',             '3,80 m²'),
@@ -33,7 +33,7 @@ TAB_A = [
 ]
 
 TAB_B = [
-    ('Monolítico',   'sala, quarto, cozinha, jantar e closet — sem junta de material', '56,50 m²'),
+    ('Monolítico',   'sala de TV, quarto, cozinha, sala de estar e closet — sem junta de material', '56,50 m²'),
     ('Sem reserva',  'aplicação moldada in loco, sem perda de corte',                   '—'),
     ('Banheiro',     'sistema à parte, área molhada, na mesma cota',                    '3,80 m²'),
     ('MainFloor',    'total do pavimento',                                             '60,30 m²'),
@@ -45,12 +45,12 @@ NOTAS_A = [
      'cumaru já resolve a maior parte do movimento. O desenho de juntas vira questão de verdade',
      'só na opção B, com 56,50 m² contínuos — ver a Prancha 04.'],
     ['**Cozinha e closet formam uma zona monolítica só.',
-     'A zona é um retângulo contínuo, da parede oeste até a linha da sala e do degrau até a fachada',
+     'A zona é um retângulo contínuo, da parede oeste até a linha da sala de TV e do degrau até a fachada',
      'sul, passando pela abertura entre cozinha e closet. O corredor da entrada e a escada ficam em',
      'cumaru; o monolítico cobre a cozinha de trabalho e o closet.'],
     ['**A ponta é canto reto com filete de 0,70 m de raio.',
      'Não é mais um arco achatado atravessando a cozinha: o limite corre reto pela linha do degrau,',
-     'vira reto na linha da sala, e só a quina que aparece no corredor é arredondada. Um quarto de',
+     'vira reto na linha da sala de TV, e só a quina que aparece no corredor é arredondada. Um quarto de',
      'círculo tangente aos dois lados — geometria que o marceneiro e o aplicador sabem replicar com',
      'um compasso, e que o perfil de transição consegue acompanhar.'],
     ['**A junta é o detalhe mais caro desta opção.',
@@ -89,7 +89,7 @@ NOTAS_B = [
      'for contínuo. No perímetro, para o pano poder trabalhar sem romper no canto — fica escondida',
      'no rodapé. E na parada de concretagem, onde a aplicação do dia terminou.',
      'A boa notícia: a casa já tem lugares naturais para elas — a soleira da entrada, a do banheiro',
-     'e a linha da porta de correr entre sala e quarto.'],
+     'e a linha da porta de correr entre sala de TV e quarto.'],
     ['**Peça a paginação de juntas junto com a proposta, antes de assinar.',
      'Quem desenha as juntas escolhe onde a trinca vai aparecer; quem não desenha deixa o material',
      'escolher. Fornecedor que promete 56,50 m² sem nenhuma junta ou está propondo resina, ou não',

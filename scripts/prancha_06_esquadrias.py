@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
-REV = 'REV. N'
+REV = 'REV. O'
 PRANCHA = 'Prancha 07 / 13'
 
 ESC = 55.0          # px por metro no desenho das esquadrias
@@ -24,10 +24,10 @@ TAB_DADOS = [
 ]
 
 TAB_INV = [
-    ('Sala',     'sofá 2,60 × 1,60 · mesa de centro 1,60 × 1,00 · 3 cadeiras · armário 2,50 × 0,40 · escada 0,80 × 3,00'),
+    ('Sala de TV',     'sofá 2,60 × 1,60 · mesa de centro 1,60 × 1,00 · 3 cadeiras · armário 2,50 × 0,40 · escada 0,80 × 3,00'),
     ('Quarto',   'cama 1,50 × 2,00 · bancada 3,00 × 0,50 · mesa 0,50 × 0,50 · cadeira'),
     ('Cozinha',  'armário 1,60 × 0,60 · cuba 0,70 × 0,60 · geladeira 0,90 × 0,80 (h 1,80) · forno · cooktop · lava-louças'),
-    ('Jantar',   'armário de canto 2,50 × 0,40 — o canto alemão, item D05 da demolição'),
+    ('Sala de estar',   'armário de canto 2,50 × 0,40 — o canto alemão, item D05 da demolição'),
     ('Closet',   'marcenaria não discriminada pelo scan — inventariar módulo a módulo antes de desmontar (M01)'),
     ('Banheiro', 'bancada 1,70 × 0,40 · box 0,90 × 1,40 (h 2,10) · cuba 0,60 × 0,50 · bacia 0,40 × 0,70'),
 ]
@@ -42,8 +42,8 @@ NOTAS = [
      'As duas do quarto ficam idênticas, e a área de esquadria sobe de 12,70 para 14,73 m².'],
     ['**P03 é a única esquadria nova.',
      'Porta de correr de 1,00 × 2,29 m na drywall reconstruída, com a folha estacionando no 1,00 m',
-     'de parede a leste do vão, pela face da sala. P02 mantém a folha existente de 0,80 × 2,00 m e',
-     'só inverte o giro. P01, a porta de entrada, mede 1,00 × 2,29 m e não é alterada.'],
+     'de parede a leste do vão, pela face da sala de TV. P02 mantém a folha existente de 0,80 × 2,00 m e',
+     'muda o giro: abre na direção do quarto. P01, a entrada, 1,00 × 2,29 m, não é alterada.'],
     ['**O inventário do scan serve para escopo, não para especificação.',
      'É o que o algoritmo reconheceu no dia da captura. Há erro evidente — uma "mesa lateral" de',
      '6,60 × 2,00 m que é a projeção da escada — e há ausência: o closet inteiro não foi',

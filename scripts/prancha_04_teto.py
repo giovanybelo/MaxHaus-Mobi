@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 import quarto_adaptavel as qa
 
-REV = 'REV. N'
+REV = 'REV. O'
 PRANCHA = 'Prancha 05 / 13'
 
 # --- trilhos eletrificados: (id, (x0,y0), (x1,y1), nº de spots) em metros ---
@@ -27,7 +27,7 @@ ROTULO_ACIMA = {'TR1', 'TR5'}
 
 # --- luminárias de destaque (corpo maior que os spots dos trilhos) ----------
 DESTAQUES = [
-    ('P01', 6.12, 0.98, 'jantar'),
+    ('P01', 6.12, 0.98, 'sala de estar'),
     ('P02', 6.10, 8.28, 'cama'),
     ('P03', 3.90, 8.28, 'office'),
 ]
@@ -54,10 +54,10 @@ MAQUINAS = [
 ]
 
 TAB_LUZ = [
-    ('Sala',     '150 lux', '7.188 lm', '2.700 K'),
+    ('Sala de TV',     '150 lux', '7.188 lm', '2.700 K'),
     ('Quarto',   '150 lux', '4.188 lm', '2.700 K'),
     ('Cozinha',  '300 lux', '5.563 lm', '3.000 K'),
-    ('Jantar',   '150 lux', '1.844 lm', '2.700 K'),
+    ('Sala de estar',   '150 lux', '1.844 lm', '2.700 K'),
     ('Closet',   '200 lux', '2.208 lm', '3.000 K'),
     ('Banheiro', '200 lux', '1.583 lm', '3.000 K'),
 ]
@@ -76,28 +76,28 @@ NOTAS = [
      'Perfilados ou eletrocalhas pintadas, alinhados às vigas e aos trilhos: o caminho da fiação',
      'vira desenho, não sobra de obra.'],
     ['**P01, P02 e P03 são as três luminárias de destaque pedidas pelo cliente',
-     '— jantar, cama e office. Corpo maior que os spots; P01 em plafon, porque fica sobre a',
-     'cama quando o jantar vira quarto. No quarto o TR5 passa a correr no eixo de P02 e P03, a 8,28 m: as duas',
+     '— sala de estar, cama e office. Corpo maior que os spots; P01 em plafon, porque fica sobre a',
+     'cama quando a sala de estar vira quarto. No quarto o TR5 passa a correr no eixo de P02 e P03, a 8,28 m: as duas',
      'podem ser alimentadas pelo próprio trilho, com adaptador, dispensando saídas novas na laje.'],
     ['**Traçado dos trilhos revisado conforme a sua marcação:',
      'TR3 desceu para 5,60 m, ganhando recuo da drywall; TR5 desceu para 8,28 m, no eixo das duas',
      'luminárias do quarto; TR6 saiu de junto da parede oeste e foi para 1,45 m, no mesmo eixo do',
      'TR4 — os dois lêem como uma linha só. O TR2 foi encurtado para 5,30 m: no traçado anterior',
-     'ele cruzava o TR3 no meio da sala, e dois trilhos não se cruzam — se tiverem de se encontrar,',
+     'ele cruzava o TR3 no meio da sala de TV, e dois trilhos não se cruzam — se tiverem de se encontrar,',
      'é com conector T.'],
     ['**Sem forro para dutar, e fachada envidraçada a noroeste.',
      'Evaporadoras hi-wall ou cassete aparente, com frigorígena, dreno e interligação elétrica',
-     'aparentes, em calha e com caimento contínuo. Sala e jantar tomam o sol da tarde: dimensionar',
+     'aparentes, em calha e com caimento contínuo. Sala de TV e sala de estar tomam o sol da tarde: dimensionar',
      'pela coluna base sol, não pela sombra. Somente Electrolux — marca igual não garante compatibilidade.'],
-    ['**A piscina fica sobre a sala, e o fundo dela é a claraboia: vidro, não furável.',
+    ['**A piscina fica sobre a sala de TV, e o fundo dela é a claraboia: vidro, não furável.',
      '1,92 × 3,00 m, centrada em 6,13 / 3,14 m do canto noroeste. Nada fixa no vidro: trilho,',
      'luminária, evaporadora e a moldura do fechamento elétrico (FC01, 2027/28) apoiam no concreto',
      'em volta. TR2 corre 0,50 m a oeste da moldura e TR3 passa 0,84 m ao sul dela.'],
-    ['**CT01 — cortina que fecha o jantar como quarto adaptável.',
-     'Recolhida no canto do jantar; estendida, contorna a ponta da escada e corre a 2,85 m até a',
+    ['**CT01 — cortina que fecha a sala de estar como quarto adaptável.',
+     'Recolhida no canto da sala de estar; estendida, desce reta, vira no fim da ponta da escada e corre a 2,85 m até a',
      'fachada. Sob a claraboia o trilho vence %s m sem apoio: perfil autoportante. Ver Prancha 13.' % br(qa.VAO_LIVRE)],
     ['**AC01 saiu da linha da cortina: agora em 4,76 / 3,05 m,',
-     'fora da moldura e ao sul da cortina, insuflando a sala. Posição final depende da condensadora',
+     'fora da moldura e ao sul da cortina, insuflando a sala de TV. Posição final depende da condensadora',
      'existente — não assumir que ela admite duas evaporadoras.'],
     ['**Vazões de referência, a validar com perda de carga do duto:',
      'banheiro 3,8 × 2,40 × 10 = 91,2 m³/h (mantém forro); coifa 8,9 × 2,62 × 12 = 279,8 m³/h — o',
@@ -139,7 +139,7 @@ def construir():
     d.txt(a[0], a[1], 'CT01', 7.2, DEMO, 'bold', 'end', ls=0.4)
     d.txt(a[0], a[1] + 10, 'cortina', 6.8, DEMO, 'normal', 'end')
 
-    for k, lx, ly in (('jantar', 520.0, 142.0), ('sala', 470.0, 300.0),
+    for k, lx, ly in (('jantar', 520.0, 142.0), ('sala', 418.0, 296.0),
                       ('cozinha', 300.0, 352.0), ('closet', 277.6, 505.0),
                       ('quarto', 520.0, 442.0), ('banheiro', 380.6, 430.0)):
         ROOMS[k]['lx'], ROOMS[k]['ly'] = lx, ly
@@ -219,7 +219,7 @@ def construir():
 
     rodape(d,
            'Fluxo = área × lux ÷ (0,60 × 0,80). Fatores de utilização e manutenção são hipóteses; a laje aparente escura reduz o fator de utilização e deve ser reavaliada.',
-           'Carga térmica não é carga final: a fachada envidraçada a noroeste, a piscina sobre a sala, a escada aberta e a ocupação mudam o resultado. Estudar 2 ou 3 evaporadoras; não há número fechado.',
+           'Carga térmica não é carga final: a fachada envidraçada a noroeste, a piscina sobre a sala de TV, a escada aberta e a ocupação mudam o resultado. Estudar 2 ou 3 evaporadoras; não há número fechado.',
            PRANCHA, REV)
     return d
 
