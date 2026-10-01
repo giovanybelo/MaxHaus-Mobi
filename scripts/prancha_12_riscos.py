@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
 REV = 'REV. O'
-PRANCHA = 'Prancha 12 / 13'
+PRANCHA = 'Prancha 12 / 14'
 
 # grau: 'impasse' | 'curso' | 'alto' | 'medio' | 'ok'
 RISCOS = [

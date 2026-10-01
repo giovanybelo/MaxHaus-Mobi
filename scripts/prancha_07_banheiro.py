@@ -15,7 +15,7 @@ from base_mainfloor import _tick
 from prancha_04_teto import EMBUTIDOS_WC
 
 REV = 'REV. O'
-PRANCHA = 'Prancha 08 / 13'
+PRANCHA = 'Prancha 08 / 14'
 
 # --- faces do banheiro, em pt do scan ---------------------------------------
 WC_O, WC_L = 347.96, 413.33        # faces internas oeste e leste
@@ -38,11 +38,13 @@ TAB_DEMO_WC = [
     ('D03', 'Retirar piso, base e rebaixo até a laje', '3,80 m²'),
     ('D02', 'Demolir fechamento e base do box', '1 conjunto'),
     ('D06', 'Demolir pano de vidro chão-teto do fundo do box', '1,63 m'),
-    ('D04', 'Demolir parede atrás do espelho e da bancada', '2,64 m a conferir'),
-    ('K01', 'Vidro interno do box — MANTER e proteger', '1 peça'),
+    ('D04', 'Revestimento de todas as paredes, bancada, cuba, louças e metais', '16,70 m² + 1 conj.'),
+    ('D07', 'Forro do banheiro, com embutidos e exaustor existentes', '3,80 m²'),
+    ('K01', 'Vidro interno do box — manter (A) ou trocar (B): FO7', '1 peça'),
 ]
 TAB_RECON_WC = [
     ('R02', 'Parede de fechamento do fundo do box, no lugar do vidro', '1,63 m'),
+    ('R03', 'Forro novo resistente à umidade, a 2,40 m', '3,80 m²'),
     ('P02', 'Porta 0,80 × 2,00 m, de abrir — giro na direção do quarto', '1 vão'),
     ('P05', 'Nivelar o banheiro na cota do piso da casa', 'cota única'),
 ]
@@ -63,16 +65,13 @@ TAB_INST_WC = [
 ]
 
 NOTAS = [
-    ['**O banheiro é o único ambiente que mantém forro.',
+    ['**Reforma completa: paredes, piso e teto. O forro sai e volta novo (R03).',
      'Altura livre de 2,40 m, contra 2,62 m no resto do pavimento, onde a laje fica aparente.',
      'É por isso que só aqui cabem embutido e exaustor — fora daqui, tudo é aplicado na laje.'],
     ['**Descer até a laje e voltar na cota da casa é o problema desta folha.',
      'O piso, a base e o rebaixo saem (D03) e o pavimento passa a ter cota única (P05): a soleira',
      'vira junta de material, não degrau. Toda a espessura de impermeabilização, caimento e piso',
      'tem de caber entre a laje e essa cota — medir o desnível real antes de fechar o sistema.'],
-    ['**A contenção de água passa a ser o ralo linear, não o degrau.',
-     'Sem degrau na soleira, o caimento e o ralo no fundo do box são o que retém a água.',
-     'O caimento é executado na regularização, sobre a impermeabilização, nunca no piso acabado.'],
     ['**O vidro interno do box: K01 fica (A) ou VB1 novo de 2,00 m (B) — ver FO7.',
      'Sai o pano de vidro chão-teto do fundo (D06) e entra parede (R02). O vidro que divide o box',
      'fica protegido na obra até a escolha; B pede perfis na parede antes do revestimento.'],
@@ -143,7 +142,7 @@ def planta_detalhe(d, ox, oy, S, cotas=True):
     cx, cy = d.P((WC_O + WC_L) / 2.0, 430.0)
     d.txt(cx, cy, 'BOX', 8.0, INK, 'bold', 'middle', ls=0.9)
     cx, cy = d.P((WC_O + WC_L) / 2.0, VIDRO_BOX_INT[1])
-    d.txt(cx, cy - 5, 'K01  vidro que fica', 6.6, INK, 'bold', 'middle', ls=0.3)
+    d.txt(cx, cy - 5, 'K01  vidro do box (A ou B)', 6.6, INK, 'bold', 'middle', ls=0.3)
     cx, cy = d.P((WC_O + WC_L) / 2.0, WC_S - 9.0)
     d.txt(cx, cy - 5, 'C3  ralo linear', 6.6, INK, 'bold', 'middle', ls=0.3)
     cx, cy = d.P((WC_OE + WC_LE) / 2.0, WC_SE)
@@ -182,7 +181,7 @@ def teto_refletido(d, ox, oy, S):
     d.rect(cx - 11, cy - 8, 22, 16, fill=CIANO35, stroke=K, sw=1.2)
     d.txt(cx, cy + 3.4, 'EX01', 6.4, K, 'bold', 'middle', ls=0.3)
     cx, cy = d.P((WC_O + WC_L) / 2.0, WC_S - 6.0)
-    d.txt(cx, cy, 'forro mantido  ·  2,40 m livres', 6.6, INK_SOFT, 'normal',
+    d.txt(cx, cy, 'forro novo R03  ·  2,40 m livres', 6.6, INK_SOFT, 'normal',
           'middle', ls=0.3)
     # pontos existentes
     for (ident, xm, ym, nome) in (('E1', 2.55, 5.15, ''), ('E2', 3.05, 5.15, ''),
@@ -271,7 +270,7 @@ def corte_altura(d, x, y, largura):
         cota_v_px(d, xx + 14, base - livre * esc_v, base, br(livre))
         d.txt(xx + lg / 2.0, base + 20, rot, 6.8, INK, 'bold', 'middle', ls=0.4)
     for i, ln in enumerate(('A retirada do forro (D07) devolve 0,20 m fora',
-                            'do banheiro. Dentro dele o forro fica, para',
+                            'do banheiro. Dentro dele volta forro novo, para',
                             'abrigar embutido e exaustor.')):
         d.txt(x, base + 40 + i * 11, ln, 7.2, INK_SOFT)
     return base + 74
@@ -286,9 +285,9 @@ def cota_v_px(d, x, y0, y1, texto):
 def construir():
     d = folha_nova()
     cabecalho(d, 'Banheiro: planta detalhada',
-              'O trecho mais denso do pavimento, em escala grande. Desce até a laje, mantém forro e volta na cota única da casa. Cotas em faces internas, com o revestimento retirado.',
+              'O trecho mais denso do pavimento, em escala grande. Reforma completa: desce até a laje, ganha forro novo e volta na cota única da casa. Cotas em faces internas, com o revestimento retirado.',
               REV, '1,43 × 2,64 m  ·  3,80 m²',
-              'único ambiente com forro — 2,40 m livres')
+              'reforma completa — forro novo a 2,40 m')
 
     S = 118.0
     OY = 222.0

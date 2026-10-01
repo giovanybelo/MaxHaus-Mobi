@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
 REV = 'REV. O'
-PRANCHA = 'Prancha 09 / 13'
+PRANCHA = 'Prancha 09 / 14'
 
 TAB_AMB = [
     ('Sala de TV',     '23,00', '29,80', '60,26'),
@@ -42,6 +42,8 @@ TAB_DEC = [
     ('Claraboia', 'Fechamento em 2027/28', 'vidro não furável · espera elétrica feita agora'),
     ('Ambientes', 'Sala de estar e sala de TV', 'o antigo jantar e a antiga sala — REV. O'),
     ('Porta P02', 'Abre p/ o quarto', 'continua de abrir; vidro do box em A ou B (FO7)'),
+    ('Banheiro', 'Reforma completa', 'paredes, piso e forro novo a 2,40 m — REV. O'),
+    ('Programação', 'Prancha 14 / FO8', 'ordem das fases e decisões que liberam cada uma'),
 ]
 
 NOTAS = [
@@ -58,7 +60,7 @@ NOTAS = [
     ['**A altura deixou de ser hipótese.',
      'O scan lia 2,40 m porque mediu sob o forro. A medição de campo de 12.09 fechou 2,62 m da',
      'laje ao piso. As duas convivem: 2,62 m vale no pavimento inteiro depois da D07, e 2,40 m',
-     'vale dentro do banheiro, único ambiente que mantém forro. Revestimento, vazão e volume do',
+     'vale dentro do banheiro, único ambiente com forro (novo). Revestimento, vazão e volume do',
      'banheiro se calculam com 2,40 — usar 2,62 lá dentro superestima em 9%.'],
     ['**O que esta emissão ainda não resolve:',
      'instalação embutida, estrutura, quadro elétrico, drenos e saídas externas não foram',

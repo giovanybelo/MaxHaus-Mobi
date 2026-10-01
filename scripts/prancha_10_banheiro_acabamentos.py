@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
 REV = 'REV. O'
-PRANCHA = 'Prancha 10 / 13'
+PRANCHA = 'Prancha 10 / 14'
 
 H_REV = 2.40          # altura de revestimento: até o forro
 LARG_BOX, PROF_BOX = 1.432, 0.930
@@ -57,7 +57,7 @@ TAB_LOUCA = [
 ]
 
 NOTAS = [
-    ['**A correção que muda a compra: o banheiro é o único ambiente que mantém forro.',
+    ['**A correção que muda a compra: o banheiro é o único ambiente com forro.',
      'A altura livre lá dentro é 2,40 m, não os 2,62 m da laje. Revestir até 2,62 m mede parede',
      'que não existe — acima do forro. O total cai de 23,38 para 21,73 m² líquidos, e de 25,72',
      'para 23,90 m² com a perda de 10%.'],

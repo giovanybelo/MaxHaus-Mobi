@@ -208,7 +208,7 @@ BOARDS = [
      ['<b>6</b> janelas · <b>14,73 m²</b>', '<b>3</b> portas',
       '<b>P03</b> a única nova', '<b>144,51 m³</b> de volume']),
     ('08', 'Banheiro: planta detalhada', 'prancha-08-banheiro.svg',
-     'O trecho mais denso do pavimento em escala grande: desce até a laje, mantém forro e volta na cota única da casa.',
+     'O trecho mais denso do pavimento em escala grande: reforma completa — desce até a laje, ganha forro novo e volta na cota única da casa.',
      ['<b>1,43 × 2,64 m</b> · 3,80 m²', '<b>2,40 m</b> livres — único com forro',
       '<b>Cota única</b> com a casa, sem degrau', '<b>K01</b> vidro do box que fica']),
     ('09', 'Base de medição e decisões', 'prancha-09-medicao.svg',
@@ -216,7 +216,7 @@ BOARDS = [
      ['<b>60,30 m²</b> úteis', '<b>130,20 m²</b> de parede',
       '<b>63,13 m²</b> na malha do OBJ', '<b>2,62 / 2,40 m</b> resolvidos']),
     ('10', 'Banheiro: louças, metais e revestimentos', 'prancha-10-banheiro-acabamentos.svg',
-     'Quantitativo de acabamento corrigido: o banheiro mantém forro, então o revestimento sobe até 2,40 m e não até 2,62 m.',
+     'Quantitativo de acabamento corrigido: o banheiro tem forro (refeito novo), então o revestimento sobe até 2,40 m e não até 2,62 m.',
      ['<b>21,73 m²</b> líquidos', '<b>23,90 m²</b> com 10%',
       '<b>−6,3%</b> sobre a folha de 11.09', '<b>K01</b> medido só no fim']),
     ('11', 'Ar, exaustão e iluminação: base de cálculo', 'prancha-11-ar-luz.svg',
@@ -231,9 +231,18 @@ BOARDS = [
      'A cortina fecha a sala de estar como quarto de hóspede, virando no fim da ponta da escada; a claraboia ganha fechamento elétrico em 2027/28, com a espera feita agora.',
      ['<b>8,78 m²</b> dentro da cortina', '<b>Cama de casal</b> com 0,60 m nos três lados',
       '<b>2,23 m</b> de trilho sem apoio', '<b>FC01</b> em 2027/28']),
+    ('14', 'Programação da obra: quem entra quando', 'prancha-14-programacao.svg',
+     'As nove fases da obra, os catorze fornecedores e frentes em cada uma, e as cinco decisões que precisam estar fechadas antes de cada fase começar.',
+     ['<b>14</b> frentes', '<b>9</b> fases', '<b>5</b> decisões que liberam fase',
+      '<b>Banheiro</b> é o caminho crítico']),
 ]
 
 DECISOES = [
+    ('REV. O — banheiro em reforma completa e programação da obra',
+     'O banheiro passa a reforma completa: saem o revestimento das quatro paredes, bancada, louças, '
+     'metais, piso até a laje e o forro, que volta novo a 2,40 m com embutidos e exaustor. A nova '
+     'Prancha 14 (e a FO8 dos fornecedores) mostra em que fase cada fornecedor entra e quais '
+     'decisões precisam estar fechadas antes de cada fase.'),
     ('REV. O — nomes, trilho reto, cama leste–oeste e porta do banheiro',
      'O antigo jantar passa a se chamar sala de estar e a antiga sala, sala de TV. O trilho da cortina '
      'ficou reto, passando sobre o degrau da ponta da escada; a cama do quarto adaptável gira para o '
@@ -281,7 +290,7 @@ DECISOES = [
     ('Sem forro em todo o MainFloor',
      'O teto é a laje de concreto aparente. A iluminação passa a ser aplicada — trilhos '
      'eletrificados, spots de sobrepor e pendentes — e o ar-condicionado trabalha sem plenum, '
-     'com evaporadoras e tubulação aparentes. Só o banheiro mantém forro, para abrigar a '
+     'com evaporadoras e tubulação aparentes. Só o banheiro tem forro (novo), para abrigar a '
      'exaustão e a luminária do box.'),
     ('As duas propostas de piso voltaram, uma folha para cada',
      'Opção A: cumaru-ferro, piso pronto em réguas, com cozinha e closet formando uma zona '
@@ -345,7 +354,7 @@ def build():
 
     stamp = [
         ('Obra', 'MaxHaus MainFloor — João Baldinato 109, 81I', ''),
-        ('Caderno', '13 pranchas — 01 a 13', ''),
+        ('Caderno', '14 pranchas — 01 a 14', ''),
         ('Formato', 'A3 deitado — 420 × 297 mm', 'mono'),
         ('Revisão', 'O — 01.10.2026', 'mono'),
         ('Escala', 'gráfica (barra de 2 m em cada planta)', ''),

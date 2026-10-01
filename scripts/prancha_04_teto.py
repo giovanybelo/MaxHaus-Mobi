@@ -10,7 +10,7 @@ from base_mainfloor import *      # noqa
 import quarto_adaptavel as qa
 
 REV = 'REV. O'
-PRANCHA = 'Prancha 05 / 13'
+PRANCHA = 'Prancha 05 / 14'
 
 # --- trilhos eletrificados: (id, (x0,y0), (x1,y1), nº de spots) em metros ---
 TRILHOS = [
@@ -71,7 +71,7 @@ NOTAS = [
     ['**Não há forro: a laje de concreto é o teto acabado, a 2,62 m do piso.',
      'Com o forro atual são 2,40 m; a retirada (D07) devolve os 0,22 m de plenum. É nessa faixa que',
      'entram trilho, perfilado e evaporadora — e é ela que dá os 0,33 m acima da porta de correr de',
-     '2,29 m. Fora do banheiro, único ambiente que mantém forro, nada de embutido.'],
+     '2,29 m. Fora do banheiro, único com forro (refeito novo), nada de embutido.'],
     ['**Fiação e infraestrutura ficam à vista.',
      'Perfilados ou eletrocalhas pintadas, alinhados às vigas e aos trilhos: o caminho da fiação',
      'vira desenho, não sobra de obra.'],
@@ -100,7 +100,7 @@ NOTAS = [
      'fora da moldura e ao sul da cortina, insuflando a sala de TV. Posição final depende da condensadora',
      'existente — não assumir que ela admite duas evaporadoras.'],
     ['**Vazões de referência, a validar com perda de carga do duto:',
-     'banheiro 3,8 × 2,40 × 10 = 91,2 m³/h (mantém forro); coifa 8,9 × 2,62 × 12 = 279,8 m³/h — o',
+     'banheiro 3,8 × 2,40 × 10 = 91,2 m³/h (forro novo); coifa 8,9 × 2,62 × 12 = 279,8 m³/h — o',
      'segundo só valeria com cozinha isolada; integrada, seleciona-se por captura. Rotas próprias.'],
 ]
 

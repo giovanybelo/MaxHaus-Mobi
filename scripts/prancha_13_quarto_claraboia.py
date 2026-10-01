@@ -11,7 +11,7 @@ from base_mainfloor import *      # noqa
 import quarto_adaptavel as qa
 
 REV = 'REV. O'
-PRANCHA = 'Prancha 13 / 13'
+PRANCHA = 'Prancha 13 / 14'
 
 S = 140.0
 X0_M, Y0_M = 4.0, -0.05           # canto do recorte, em metros

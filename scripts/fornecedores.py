@@ -8,6 +8,7 @@ FO4  Iluminação
 FO5  Ar-condicionado e exaustão
 FO6  Cortina do quarto adaptável e fechamento da claraboia (REV. N)
 FO7  Pedras, vidro do box e portas (REV. O)
+FO8  Programação da obra — quem entra quando (REV. O)
 
 Cada folha é autossuficiente e sai como PDF próprio: especificação de tarefa,
 quantidade e sequência de execução. Sem justificativa de projeto, sem
@@ -20,7 +21,7 @@ from base_mainfloor import *      # noqa
 EMISSAO = 'EMISSÃO 03'
 DATA = '01.10.2026'
 ORIGEM = 'extraído do caderno de estudo REV. O'
-TOTAL_FO = 7
+TOTAL_FO = 8
 
 # ---------------------------------------------------------------------------
 # FASES GERAIS DA OBRA — a mesma régua nas três folhas
@@ -96,11 +97,11 @@ TAB_DEMO = [
     ('E02', 'Medição de resistência de isolamento na elétrica', '1 ensaio'),
     ('M01', 'Desmontar closet, etiquetar módulos e ferragens, acondicionar', '1 conjunto'),
     ('D05', 'Retirar canto alemão da sala de estar', '1 conjunto'),
-    ('D07', 'Retirar forro — 100%', '60,30 m²'),
+    ('D07', 'Retirar forro — 100%, inclusive o do banheiro', '60,30 m²'),
     ('D01', 'Demolir drywall entre sala de TV e quarto', '4,08 m'),
     ('D02', 'Demolir fechamento e base do box do banheiro', '1 conjunto'),
     ('D06', 'Demolir pano de vidro chão-teto do fundo do box', '1,63 m'),
-    ('D04', 'Demolir parede atrás do espelho e da bancada do banheiro', '2,64 m a conferir'),
+    ('D04', 'Banheiro: revestimento de todas as paredes, bancada, louças e metais', '16,70 m² + 1 conj.'),
     ('D08', 'Retirar pisos do MainFloor', '60,30 m²'),
     ('D03', 'Retirar piso, base e rebaixo do banheiro até a laje', '3,80 m²'),
     ('P01', 'Parede da sala de estar: retirar espelho e revestimento', '1,95 m'),
@@ -111,7 +112,8 @@ TAB_DEMO = [
     ('P05', 'Nivelar o banheiro na cota do piso da casa', 'cota única'),
     ('R01', 'Reconstruir drywall sala de TV/quarto com vão de porta 1,00 × 2,29 m', '4,08 m + 1 vão'),
     ('R02', 'Construir parede de fechamento do fundo do box', '1,63 m'),
-    ('K01', 'Vidro do box — MANTER e proteger', '1 peça'),
+    ('R03', 'Forro novo do banheiro, resistente à umidade, a 2,40 m', '3,80 m²'),
+    ('K01', 'Vidro do box — proteger até a escolha A/B (FO7)', '1 peça'),
 ]
 
 SEQ_DEMO = [
@@ -130,8 +132,8 @@ SEQ_DEMO = [
     ('7', ['Revestimentos de parede — P01, P02 e P04.'], False),
     ('8', ['Laje — P03.',
            'Restauro, descascamento e limpeza.'], False),
-    ('9', ['Reconstruções — R01 e R02.',
-           'R01 fecha somente após a infraestrutura elétrica embutida.'], True),
+    ('9', ['Reconstruções — R01, R02 e R03.',
+           'R01 e R03 fecham só depois da infraestrutura embutida (elétrica e exaustão).'], True),
     ('10', ['Contrapiso e nível — P06 e P05.',
             'Última etapa desta disciplina. Entregar plano, nivelado, seco e limpo,',
             'em cota única, para liberar o piso.'], True),
@@ -517,7 +519,7 @@ TAB_LUZ_FO = [
     ('P01', 'Luminária de destaque — sala de estar, plafon (fica sobre a cama)', '1 peça'),
     ('P02', 'Luminária de destaque — cama, no eixo do TR5', '1 peça'),
     ('P03', 'Luminária de destaque — office, no eixo do TR5', '1 peça'),
-    ('EM',  'Embutido no forro do banheiro — único ambiente com forro', '2 peças'),
+    ('EM',  'Embutido no forro novo do banheiro (R03)', '2 peças'),
     ('CT',  'Conector, emenda e terminação de trilho', 'a definir'),
     ('FX',  'Fixação direta na laje de concreto aparente — bucha e parafuso', 'a medir'),
 ]
@@ -629,7 +631,7 @@ TAB_AR_FO = [
     ('DR',   'Dreno aparente, com caimento contínuo até ponto de descarte', 'a medir'),
     ('IE',   'Interligação elétrica entre condensadora e evaporadoras', '2 linhas'),
     ('SU',   'Suporte de evaporadora fixado na laje ou na parede', '2 conjuntos'),
-    ('EX01', 'Exaustor do banheiro — único ambiente com forro', '1 unidade'),
+    ('EX01', 'Exaustor do banheiro, no forro novo (R03)', '1 unidade'),
     ('DU1',  'Duto e rota de descarte do exaustor do banheiro', 'a definir'),
     ('CF01', 'Coifa da cozinha — alimentação e fixação', '1 unidade'),
     ('DU2',  'Duto e rota de descarte da coifa, independente do banheiro', 'a definir'),
@@ -1014,6 +1016,22 @@ def folha_pedras_vidro_portas():
     return d
 
 
+# ---------------------------------------------------------------------------
+# FO8 — PROGRAMAÇÃO DA OBRA: QUEM ENTRA QUANDO (REV. O)
+# ---------------------------------------------------------------------------
+def folha_programacao():
+    import programacao as pg
+    d = folha_nova()
+    cabeca_fo(d, 'Programação da obra', 'FO8 — PROGRAMAÇÃO',
+              'Em que fase cada fornecedor entra, quando volta e qual decisão precisa estar fechada antes. Durações: cada contratada preenche as suas.')
+    fim = pg.desenhar(d, MARGIN, 140, W - 2 * MARGIN, alt=37.0)
+    pg.legenda_programacao(d, MARGIN, fim + 6)
+    d.txt(MARGIN, fim + 36, 'Ninguém entra antes de a fase anterior entregar a frente limpa. Pedras e vidro medem sobre o revestimento pronto; trilhos, portas e luminárias só depois da pintura.', 8.6, INK_SOFT)
+    d.txt(MARGIN, fim + 50, 'O banheiro é o caminho crítico: hidráulica, forro novo R03, impermeabilização, revestimento e, por último, pedra, vidro, louças e metais.', 8.6, INK_SOFT)
+    rodape_fo(d, 'FOLHA FO8 / %d' % TOTAL_FO, 'Programação da obra')
+    return d
+
+
 if __name__ == '__main__':
     raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     pasta = os.path.join(raiz, 'pranchas')
@@ -1024,7 +1042,8 @@ if __name__ == '__main__':
                              (folha_iluminacao, 'fornecedor-04-iluminacao', 'FO4: iluminação'),
                              (folha_ar,         'fornecedor-05-ar',         'FO5: ar-condicionado e exaustão'),
                              (folha_cortina,    'fornecedor-06-cortina-claraboia', 'FO6: cortina e claraboia'),
-                             (folha_pedras_vidro_portas, 'fornecedor-07-pedras-vidro-portas', 'FO7: pedras, vidro do box e portas')):
+                             (folha_pedras_vidro_portas, 'fornecedor-07-pedras-vidro-portas', 'FO7: pedras, vidro do box e portas'),
+                             (folha_programacao, 'fornecedor-08-programacao', 'FO8: programação da obra')):
         caminho = salvar(fn(), pasta, nome)
         exportar_pdf_a3([caminho], os.path.join(pasta, nome + '-A3.pdf'),
                         'MaxHaus 81I — fornecedores — ' + titulo)

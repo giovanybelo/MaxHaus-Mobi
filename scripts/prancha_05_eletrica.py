@@ -6,7 +6,7 @@ from base_mainfloor import *      # noqa
 import quarto_adaptavel as qa
 
 REV = 'REV. O'
-PRANCHA = 'Prancha 06 / 13'
+PRANCHA = 'Prancha 06 / 14'
 
 # --- pontos existentes marcados pelo cliente (metros) -----------------------
 TOMADAS_EXIST = [

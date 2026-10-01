@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_mainfloor import *      # noqa
 
 REV = 'REV. O'
-PRANCHA = 'Prancha 02 / 13'
+PRANCHA = 'Prancha 02 / 14'
 
 # --- alvos: (id, x_pt, y_pt, tipo, dx_rotulo, dy_rotulo) --------------------
 ALVOS = [
@@ -24,6 +24,7 @@ ALVOS = [
     ('P06', 290.0, 300.0, 'prep',  10,  3),
     ('R01', 555.0, 432.3, 'novo',  10, -6),
     ('R02', 353.0, 453.0, 'novo', -10, 11),
+    ('R03', 398.0, 384.0, 'novo', -10,  3),
     ('M01', 300.0, 520.0, 'desm',  10,  3),
     ('K01', 380.6, 409.0, 'keep',  10, -5),
     ('E01', 500.0, 330.0, 'ensaio', 10,  3),
@@ -39,10 +40,10 @@ LINHAS = [
     ('D01', 'Drywall entre sala de TV e quarto', '1 trecho — 4,08 m'),
     ('D02', 'Box do banheiro: fechamento e base', '1 conjunto'),
     ('D03', 'Piso do banheiro: revestimento, base e rebaixo', '3,80 m² — descer até a laje'),
-    ('D04', 'Parede atrás do espelho e da bancada', '1 trecho — 2,64 m a conferir'),
+    ('D04', 'Banheiro: revestimento de todas as paredes, bancada, cuba, louças e metais', '16,70 m² de parede + 1 conj.'),
     ('D05', 'Canto alemão da sala de estar', '1 conjunto — inventário por módulo'),
     ('D06', 'Pano de vidro chão-teto do fundo do box', '1,63 m, ponta a ponta'),
-    ('D07', 'Forro: retirar 100%', '60,30 m² — teto passa a laje aparente'),
+    ('D07', 'Forro: retirar 100%, inclusive o do banheiro', '60,30 m² — fora do banheiro, laje aparente'),
     ('D08', 'Retirar pisos do MainFloor', '60,30 m² úteis, sem dupla contagem'),
     ('P01', 'Parede da sala de estar: retirar espelho e revestimento', '1 trecho — 1,95 m, preparo p/ pintura'),
     ('P02', 'Parede sob a escada: retirar revestimento', 'trecho a confirmar — preparo p/ pintura'),
@@ -52,8 +53,9 @@ LINHAS = [
     ('P06', 'Regularizar e lixar todo o contrapiso', '60,30 m² — plano e nivelado'),
     ('R01', 'Nova drywall sala de TV/quarto, com porta de correr 1,00 × 2,29 m', '4,08 m + 1 porta'),
     ('R02', 'Nova parede de fechamento do box', '1,63 m, no lugar do vidro'),
+    ('R03', 'Forro novo do banheiro, resistente à umidade, a 2,40 m', '3,80 m² — embutidos e exaustor'),
     ('M01', 'Desmontar e remontar closet', '1 conjunto — inventário por módulo'),
-    ('K01', 'Vidro do box — MANTER', '1 peça'),
+    ('K01', 'Vidro do box — manter (A) ou trocar (B): ver FO7', '1 peça'),
     ('E01', 'Ensaio de estanqueidade (pressão) na hidráulica', 'antes de decidir a troca'),
     ('E02', 'Medição de resistência de isolamento na elétrica', 'megômetro — antes de decidir'),
 ]
@@ -61,14 +63,14 @@ LINHAS = [
 NOTAS = [
     ['**Esta planta mostra o estado existente.',
      'Box com o pano de vidro de hoje (D06) e drywall ainda sem porta. O proposto — box fechado, porta',
-     'de correr e porta do banheiro girando para a escada — está nas Pranchas 03 a 06.'],
+     'de correr e porta do banheiro girando para o quarto — está nas Pranchas 03 a 08.'],
     ['**Demolir para refazer, não só demolir.',
      'A drywall entre sala de TV e quarto cai e volta (R01), com porta de correr de 1,00 × 2,29 m; a folha',
      'estaciona no 1,00 m a leste do vão. O vidro do fundo do box cai e vira parede (R02).'],
-    ['**Banheiro: reforma integral, e agora no nível da casa.',
-     'Saem piso, revestimentos, box e a parede atrás do espelho. A base desce até a laje (D03) para o',
-     'banheiro nascer na cota do piso seco (P05) — soleira sem degrau, o que joga a contenção de água',
-     'para dentro do box: ralo linear, caimento e fecho de vidro fazem o serviço que o degrau fazia.'],
+    ['**Banheiro: reforma completa — paredes, piso e teto (REV. O).',
+     'Sai tudo até o osso: revestimento das quatro paredes, bancada, louças e metais (D04), box (D02),',
+     'piso e base até a laje (D03) e o forro (D07), que volta novo (R03) a 2,40 m com embutidos e',
+     'exaustor. O piso renasce na cota da casa (P05): soleira sem degrau, contenção no ralo linear.'],
     ['**Todo o contrapiso lixado, plano e nivelado (P06).',
      'Depois de tirar os pisos (D08), a base inteira precisa ficar reta: é condição do monolítico,',
      'que copia o que está embaixo. Uma cota única de piso acabado nos 60,30 m², amarrada ao hall.'],
@@ -110,6 +112,10 @@ def construir():
         x, y, w_, h_ = d.R(r)
         d.rect(x, y, w_, h_, fill=DEMO, opacity=0.22)
         d.rect(x, y, w_, h_, fill='none', stroke=DEMO, sw=1.1, dash='5 3')
+    # banheiro: reforma completa — paredes, piso e teto
+    pb = [d.P(px, py) for px, py in ROOMS['banheiro']['poly']]
+    d.path(path_d(pb), fill=DEMO, opacity=0.10)
+    d.path(path_d(pb), fill='none', stroke=DEMO, sw=1.3, dash='6 3')
     # paredes de preparo para pintura
     for r in (PAREDE_ESCADA_JANTAR, PAREDE_SOB_ESCADA):
         x, y, w_, h_ = d.R(r)
