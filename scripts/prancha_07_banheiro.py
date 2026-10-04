@@ -51,7 +51,7 @@ TAB_RECON_WC = [
 TAB_PISO_WC = [
     ('C1', 'Impermeabilização de área molhada, com rodapé virado', '3,80 m²'),
     ('C2', 'Regularização com caimento para o ralo linear', '3,80 m²'),
-    ('C3', 'Ralo linear no fundo do box, na face da parede R02', '1,43 m'),
+    ('C3', 'Ralo linear na lateral oeste do box, ao longo da parede', '0,80 m'),
     ('C4', 'Piso acabado, na mesma cota da casa', '3,80 m²'),
     ('C5', 'Soleira: junta de material no vão da porta, sem degrau', '0,80 m'),
 ]
@@ -97,20 +97,20 @@ def planta_detalhe(d, ox, oy, S, cotas=True):
     d.rect(b[0], b[1], b[2], b[3], fill=CIANO18, stroke=WET_LINE, sw=0.8)
     g = d.R(VIDRO_BOX_INT)
     d.rect(g[0], g[1], g[2], max(g[3], 2.4), fill=CIANO, stroke=K, sw=1.2)
-    # ralo linear, na face da parede nova
-    ra = d.P(WC_O + 2.0, WC_S - 7.0)
-    rb = d.P(WC_L - 2.0, WC_S - 2.0)
+    # ralo linear, ao longo da parede oeste do box (0,80 m)
+    ra = d.P(WC_O + 2.0, WC_S - 2.0 - 0.80 * PT_PER_M)
+    rb = d.P(WC_O + 7.0, WC_S - 2.0)
     d.rect(ra[0], ra[1], rb[0] - ra[0], rb[1] - ra[1], fill=BRANCO, stroke=K, sw=1.2)
-    for i in range(14):
-        xx = ra[0] + 3 + i * (rb[0] - ra[0] - 6) / 13.0
-        d.line(xx, ra[1] + 1.5, xx, rb[1] - 1.5, K45, 0.7)
-    # setas de caimento
-    for xm in (0.38, 0.72, 1.06):
-        p0 = d.P(WC_O + xm * PT_PER_M, WC_N + 90.0)
-        p1 = d.P(WC_O + xm * PT_PER_M, WC_S - 18.0)
+    for i in range(10):
+        yy = ra[1] + 3 + i * (rb[1] - ra[1] - 6) / 9.0
+        d.line(ra[0] + 1.5, yy, rb[0] - 1.5, yy, K45, 0.7)
+    # setas de caimento, de leste para oeste
+    for ym in (419.0, 442.0):
+        p0 = d.P(WC_L - 8.0, ym)
+        p1 = d.P(WC_O + 16.0, ym)
         d.line(p0[0], p0[1], p1[0], p1[1], WET_LINE, 0.9, opacity=0.9)
         d.path('M%.1f %.1f L%.1f %.1f L%.1f %.1f' %
-               (p1[0] - 3.2, p1[1] - 5.0, p1[0], p1[1], p1[0] + 3.2, p1[1] - 5.0),
+               (p1[0] + 5.0, p1[1] - 3.2, p1[0], p1[1], p1[0] + 5.0, p1[1] + 3.2),
                fill='none', stroke=WET_LINE, sw=1.1)
     # bancada e espelho, na parede oeste
     bc = d.R(BANCADA_WC)
@@ -143,8 +143,8 @@ def planta_detalhe(d, ox, oy, S, cotas=True):
     d.txt(cx, cy, 'BOX', 8.0, INK, 'bold', 'middle', ls=0.9)
     cx, cy = d.P((WC_O + WC_L) / 2.0, VIDRO_BOX_INT[1])
     d.txt(cx, cy - 5, 'K01  vidro do box (A ou B)', 6.6, INK, 'bold', 'middle', ls=0.3)
-    cx, cy = d.P((WC_O + WC_L) / 2.0, WC_S - 9.0)
-    d.txt(cx, cy - 5, 'C3  ralo linear', 6.6, INK, 'bold', 'middle', ls=0.3)
+    cx, cy = d.P(WC_O + 12.0, WC_S - 2.0 - 0.40 * PT_PER_M)
+    d.txt(cx, cy, 'C3  ralo linear', 6.6, INK, 'bold', 'middle', ls=0.3, rot=-90)
     cx, cy = d.P((WC_OE + WC_LE) / 2.0, WC_SE)
     d.txt(cx, cy + 15, 'R02  parede nova no lugar do vidro chão-teto', 6.8, DEMO,
           'bold', 'middle', ls=0.3)
