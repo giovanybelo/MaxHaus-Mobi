@@ -8,10 +8,10 @@
 <text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">extraído do Caderno Alternativo A — REV. O</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
 <path d="M287.53 158.49 L452.04 158.49 L452.04 249.17 L287.53 249.17 Z" fill="#ededed" opacity="1.00"/>
-<path d="M177.31 249.17 L452.04 249.17 L452.04 486.44 L252.33 486.44 L252.33 374.41 L177.31 374.41 Z" fill="#ededed" opacity="1.00"/>
+<path d="M177.31 249.17 L452.04 249.17 L452.04 478.11 L252.33 478.11 L252.33 374.41 L177.31 374.41 Z" fill="#ededed" opacity="1.00"/>
 <path d="M104.45 249.17 L177.31 249.17 L177.31 506.16 L72.47 506.16 L72.47 328.15 L104.45 328.15 Z" fill="#ededed" opacity="1.00"/>
 <path d="M72.47 511.06 L177.31 511.06 L177.31 615.65 L72.47 615.65 Z" fill="#ededed" opacity="1.00"/>
-<path d="M252.33 486.44 L452.04 486.44 L452.04 615.65 L177.31 615.65 L177.31 508.66 L252.33 508.66 Z" fill="#ededed" opacity="1.00"/>
+<path d="M252.33 478.11 L452.04 478.11 L452.04 615.65 L177.31 615.65 L177.31 508.66 L252.33 508.66 Z" fill="#ededed" opacity="1.00"/>
 <path d="M177.31 374.41 L252.33 374.41 L252.33 508.66 L177.31 508.66 Z" fill="#ededed" opacity="1.00"/>
 <rect x="285.07" y="156.00" width="169.47" height="4.89" fill="#000000"/>
 <rect x="102.00" y="246.71" width="187.97" height="4.89" fill="#000000"/>
@@ -20,7 +20,7 @@
 <rect x="177.28" y="613.16" width="277.26" height="4.89" fill="#000000"/>
 <rect x="174.84" y="486.49" width="4.90" height="24.58" fill="#000000"/>
 <rect x="174.84" y="371.99" width="4.90" height="114.49" fill="#000000"/>
-<rect x="252.34" y="484.04" width="199.75" height="4.90" fill="#000000"/>
+<rect x="252.34" y="475.71" width="199.75" height="4.90" fill="#000000"/>
 <rect x="249.89" y="371.99" width="4.90" height="114.49" fill="#000000"/>
 <rect x="449.64" y="486.49" width="4.90" height="131.57" fill="#000000"/>
 <rect x="70.00" y="613.16" width="107.28" height="4.89" fill="#000000"/>
@@ -56,26 +56,26 @@
 <rect x="249.59" y="398.90" width="5.50" height="39.56" fill="#ffffff"/>
 <line x1="254.80" y1="438.15" x2="293.75" y2="438.15" stroke="#000000" stroke-width="1.40"/>
 <path d="M 293.75 438.15 A 38.96 38.96 0 0 0 254.80 399.20" fill="none" stroke="#000000" stroke-width="0.8" opacity="0.5"/>
-<rect x="253.42" y="483.74" width="49.54" height="5.50" fill="#ffffff"/>
-<line x1="302.66" y1="477.24" x2="307.16" y2="477.24" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="310.66" y1="477.24" x2="315.16" y2="477.24" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="318.66" y1="477.24" x2="323.16" y2="477.24" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="326.66" y1="477.24" x2="331.16" y2="477.24" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="334.66" y1="477.24" x2="339.16" y2="477.24" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="342.66" y1="477.24" x2="347.16" y2="477.24" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="350.66" y1="477.24" x2="351.59" y2="477.24" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="302.66" y1="481.64" x2="307.16" y2="481.64" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="310.66" y1="481.64" x2="315.16" y2="481.64" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="318.66" y1="481.64" x2="323.16" y2="481.64" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="326.66" y1="481.64" x2="331.16" y2="481.64" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="334.66" y1="481.64" x2="339.16" y2="481.64" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="342.66" y1="481.64" x2="347.16" y2="481.64" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="350.66" y1="481.64" x2="351.59" y2="481.64" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="302.66" y1="477.24" x2="302.66" y2="481.64" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<line x1="351.59" y1="477.24" x2="351.59" y2="481.64" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
-<rect x="253.72" y="477.24" width="48.94" height="4.40" fill="#ffffff" stroke="#000000" stroke-width="1.50"/>
-<line x1="273.30" y1="469.94" x2="314.89" y2="469.94" stroke="#000000" stroke-width="0.90" opacity="0.75"/>
-<path d="M 314.89 469.94 L 310.29 467.54 L 310.29 472.34 Z" fill="#000000" opacity="0.75"/>
+<rect x="253.42" y="475.41" width="49.54" height="5.50" fill="#ffffff"/>
+<line x1="302.66" y1="468.91" x2="307.16" y2="468.91" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="310.66" y1="468.91" x2="315.16" y2="468.91" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="318.66" y1="468.91" x2="323.16" y2="468.91" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="326.66" y1="468.91" x2="331.16" y2="468.91" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="334.66" y1="468.91" x2="339.16" y2="468.91" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="342.66" y1="468.91" x2="347.16" y2="468.91" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="350.66" y1="468.91" x2="351.59" y2="468.91" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="302.66" y1="473.31" x2="307.16" y2="473.31" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="310.66" y1="473.31" x2="315.16" y2="473.31" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="318.66" y1="473.31" x2="323.16" y2="473.31" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="326.66" y1="473.31" x2="331.16" y2="473.31" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="334.66" y1="473.31" x2="339.16" y2="473.31" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="342.66" y1="473.31" x2="347.16" y2="473.31" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="350.66" y1="473.31" x2="351.59" y2="473.31" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="302.66" y1="468.91" x2="302.66" y2="473.31" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<line x1="351.59" y1="468.91" x2="351.59" y2="473.31" stroke="#000000" stroke-width="0.80" opacity="0.50"/>
+<rect x="253.72" y="468.91" width="48.94" height="4.40" fill="#ffffff" stroke="#000000" stroke-width="1.50"/>
+<line x1="273.30" y1="461.61" x2="314.89" y2="461.61" stroke="#000000" stroke-width="0.90" opacity="0.75"/>
+<path d="M 314.89 461.61 L 310.29 459.21 L 310.29 464.01 Z" fill="#000000" opacity="0.75"/>
 <rect x="151.24" y="251.61" width="148.09" height="41.03" fill="none" stroke="#000000" stroke-width="0.90" opacity="0.85"/>
 <line x1="164.70" y1="251.61" x2="164.70" y2="292.63" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
 <line x1="178.16" y1="251.61" x2="178.16" y2="292.63" stroke="#000000" stroke-width="0.70" opacity="0.60"/>
@@ -132,15 +132,15 @@
 <text x="524.0" y="751.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Base sombra</text>
 <text x="662.0" y="751.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Base sol</text>
 <text x="78.0" y="769.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Social + cozinha</text>
-<text x="386.0" y="769.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">38,72 m²</text>
-<text x="524.0" y="769.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">23.232 BTU/h</text>
-<text x="662.0" y="769.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">30.976 BTU/h</text>
+<text x="386.0" y="769.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">38,04 m²</text>
+<text x="524.0" y="769.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">22.824 BTU/h</text>
+<text x="662.0" y="769.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">30.432 BTU/h</text>
 <line x1="70.00" y1="776.07" x2="670.00" y2="776.07" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="70.00" y="776.07" width="600.00" height="18.00" fill="#f5f5f5"/>
 <text x="78.0" y="787.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Quarto + closet</text>
-<text x="386.0" y="787.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">17,78 m²</text>
-<text x="524.0" y="787.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">10.668 BTU/h</text>
-<text x="662.0" y="787.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">14.224 BTU/h</text>
+<text x="386.0" y="787.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">18,46 m²</text>
+<text x="524.0" y="787.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">11.076 BTU/h</text>
+<text x="662.0" y="787.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">14.768 BTU/h</text>
 <line x1="70.00" y1="794.07" x2="670.00" y2="794.07" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="78.0" y="805.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">Total sem banheiro</text>
 <text x="386.0" y="805.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">56,50 m²</text>
@@ -168,12 +168,12 @@
 <text x="799.3" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Tarefa</text>
 <text x="1344.0" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Quantidade</text>
 <text x="730.0" y="192.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">AC01</text>
-<text x="799.3" y="192.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Evaporadora — social + cozinha (38,72 m²)</text>
+<text x="799.3" y="192.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Evaporadora — social + cozinha (38,04 m²)</text>
 <text x="1344.0" y="192.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1 unidade</text>
 <line x1="722.00" y1="199.00" x2="1352.00" y2="199.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="199.00" width="630.00" height="19.00" fill="#f5f5f5"/>
 <text x="730.0" y="211.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">AC02</text>
-<text x="799.3" y="211.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Evaporadora — quarto + closet (17,78 m²)</text>
+<text x="799.3" y="211.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Evaporadora — quarto + closet (18,46 m²)</text>
 <text x="1344.0" y="211.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1 unidade</text>
 <line x1="722.00" y1="218.00" x2="1352.00" y2="218.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="230.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">CD</text>
@@ -233,7 +233,7 @@
 <text x="744.0" y="501.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">a atual aceita duas: se não aceitar, entra no orçamento.</text>
 <circle cx="729.00" cy="516.00" r="7.50" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
 <text x="729.0" y="519.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">2</text>
-<text x="744.0" y="519.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Seleção pela coluna base sol — 30.976 e 14.224 BTU/h, somente Electrolux.</text>
+<text x="744.0" y="519.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Seleção pela coluna base sol — 30.432 e 14.768 BTU/h, somente Electrolux.</text>
 <text x="744.0" y="531.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">A fachada envidraçada é noroeste e pega o sol da tarde. Marca igual não</text>
 <text x="744.0" y="543.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">garante compatibilidade: conferir o par no catálogo antes de comprar.</text>
 <circle cx="729.00" cy="558.00" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>

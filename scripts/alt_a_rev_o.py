@@ -48,10 +48,40 @@ TOPO = 'MAXHAUS / MAIN FLOOR  ·  CADERNO ALTERNATIVO A  ·  PAREDE COZINHA/CLOS
 # ---------------------------------------------------------------------------
 # geometria de trabalho — trocada no lugar, todos os módulos enxergam
 # ---------------------------------------------------------------------------
+# drywall sala de TV/quarto (R01) refeita 0,17 m ao norte: o quarto passa de
+# 2,54 para 2,71 m livres e a sala de TV perde o mesmo (0,68 m²). A D01 sai
+# onde está hoje; só a R01 e a porta P03 mudam de lugar.
+DY_R01 = 0.17 * PT_PER_M
+Y_R01_ANT = 432.3
+Y_R01 = Y_R01_ANT - DY_R01
+DRYWALL_ANT = bm.DRYWALL_SALA_QUARTO
+
+
+def _norte(r):
+    return (r[0], r[1] - DY_R01, r[2], r[3] - DY_R01)
+
+
+DRYWALL_R01 = _norte(DRYWALL_ANT)
+PORTA_R01 = _norte(bm.PORTA_NOVA)
+ALT_WALLS = [DRYWALL_R01 if w == DRYWALL_ANT else w for w in ALT_WALLS]
+for _k, _a in (('sala', 22.32), ('quarto', 14.08)):
+    ALT_ROOMS[_k]['poly'] = [(x, Y_R01 if (y == Y_R01_ANT and x >= 415.0) else y)
+                             for x, y in ALT_ROOMS[_k]['poly']]
+    ALT_ROOMS[_k]['area'] = _a
+for _m in (bm, p01, p02, p03, p04, p05, p06, p07, p13, fo):
+    if hasattr(_m, 'PORTA_NOVA'):
+        _m.PORTA_NOVA = PORTA_R01
+
+
+def realce_r01(d, cor=K):
+    x, y, w_, h_ = d.R(DRYWALL_R01)
+    d.rect(x, y, w_, h_, fill='none', stroke=cor, sw=1.3, dash='4 3')
+
+
 def geometria(proposta=True):
     bm.WALLS[:] = ALT_WALLS if proposta else ORIG_WALLS
     src = ALT_ROOMS if proposta else ORIG_ROOMS
-    for k in ('cozinha', 'closet'):
+    for k in ('cozinha', 'closet', 'sala', 'quarto'):
         bm.ROOMS[k]['poly'] = list(src[k]['poly'])
         bm.ROOMS[k]['area'] = src[k]['area']
 
@@ -69,8 +99,9 @@ def trocar(d, velho, novo):
 
 
 def realce_parede(d):
-    x, y, w_, h_ = d.R(WALL_NOVA)
-    d.rect(x - 1.5, y - 1.5, w_ + 3, h_ + 3, fill='none', stroke=DEMO, sw=1.1, dash='3 2.5')
+    for r in (WALL_NOVA, DRYWALL_R01):
+        x, y, w_, h_ = d.R(r)
+        d.rect(x - 1.5, y - 1.5, w_ + 3, h_ + 3, fill='none', stroke=DEMO, sw=1.1, dash='3 2.5')
 
 
 # ---------------------------------------------------------------------------
@@ -157,15 +188,23 @@ def _cadeia_v(d, cortes, x, off, *a, **k):
     return bm.cadeia_v(d, cortes, x, off, *a, **k)
 
 
+def _r01(v):
+    return v - DY_R01 if v in (430.06, 434.63) else v
+
+
 def _cota_v(d, y0, y1, x, off, *a, **k):
     if x < 300:
         y0, y1 = _ry(y0), _ry(y1)
+    elif x >= 415.0:
+        y0, y1 = _r01(y0), _r01(y1)
     return bm.cota_v(d, y0, y1, x, off, *a, **k)
 
 
 def _cota_h(d, x0, x1, y, off, *a, **k):
     if x1 <= 345.0 and y == 430.06:
         y = 450.67
+    elif x0 >= 415.0:
+        y = _r01(y)
     return bm.cota_h(d, x0, x1, y, off, *a, **k)
 
 
@@ -179,6 +218,7 @@ def construir_01():
     d.set_plan(132, 182, 64.0)
     realce_parede(d)
     bm.cota_v(d, 455.24, 550.38, 343.39, -16, size=6.6, ext=False)     # profundidade do closet
+    bm.cota_v(d, 434.63 - DY_R01, 550.38, 599.46, -16, size=6.6, ext=False)   # quarto, 2,71
     return d
 
 
@@ -231,6 +271,7 @@ def construir_02():
             d.rect(x, y, w_, h_, fill='none', stroke=DEMO, sw=1.4)
         x, y, w_, h_ = d.R(WALL_NOVA)
         d.rect(x, y, w_, h_, fill='none', stroke=K, sw=1.4, dash='4 3')
+        realce_r01(d)
     finally:
         geometria(True)
     return d
@@ -443,6 +484,7 @@ def folha_demolicao_alt():
             d.rect(x, y, w_, h_, fill='none', stroke=DEMO, sw=1.4)
         x, y, w_, h_ = d.R(WALL_NOVA)
         d.rect(x, y, w_, h_, fill='none', stroke=K, sw=1.3, dash='4 3')
+        realce_r01(d)
     finally:
         fo.tabela = tab
         geometria(True)
@@ -477,6 +519,50 @@ _subst(fo.TAB_PEDRA, 'KC1', ('KC1', 'Bancada da cozinha, parede oeste, do nicho 
 _subst(fo.TAB_PEDRA, 'KC1f', ('KC1f', 'Frontão 10 cm na parede oeste e na lateral da geladeira',
                               '~%s m' % br(fo._ln(fo.KC1) + 0.60)))
 
+
+# ---------------------------------------------------------------------------
+# R01 0,17 m ao norte — números de sala de TV e quarto
+#   sala de TV 23,00 → 22,32 m² · quarto 13,40 → 14,08 m² (Δ 0,17 × 3,98 m)
+#   perímetro ∓0,34 m · parede ∓0,82 m² · volume × 2,62 · lm = área × 150 / 0,48
+#   social + cozinha 38,04 m² · quarto + closet 18,46 m² (600 e 800 BTU/h·m²)
+# ---------------------------------------------------------------------------
+_subst(p01.TAB_AMB, 'Sala de TV', ('Sala de TV', '22,32 m²', '20,4 m', '5,6 × 4,6', '4,8 × 3,8'))
+_subst(p01.TAB_AMB, 'Quarto', ('Quarto', '14,08 m²', '16,5 m', '5,6 × 2,7', '5,6 × 2,3'))
+p01.NOTAS.insert(1, [
+    '**Alternativo A: a drywall sala de TV/quarto (R01) volta 0,17 m mais ao norte.',
+    'O quarto passa de 2,54 para 2,71 m livres (13,40 → 14,08 m²) e a sala de TV de 23,00 para',
+    '22,32 m². A porta de correr P03 acompanha a parede; o comprimento da drywall não muda.'])
+p02.ALVOS[:] = [(a[0], a[1], Y_R01, *a[3:]) if a[0] == 'R01' else a for a in p02.ALVOS]
+_subst(p02.LINHAS, 'R01', ('R01', 'Nova drywall sala de TV/quarto, 0,17 m ao norte, com porta de correr',
+                          '4,08 m + 1 porta'))
+for _n in p02.NOTAS:
+    for _j, _ln in enumerate(_n):
+        if _ln.startswith('A drywall entre sala de TV e quarto cai e volta (R01)'):
+            _n[_j] = 'A drywall sala de TV/quarto cai e volta 0,17 m ao norte (R01), com porta de correr de 1,00 × 2,29 m; a folha'
+_subst(p03.TAB_A, 'Cumaru-ferro',
+       ('Cumaru-ferro', 'sala de TV 22,32 + quarto 14,08 + sala de estar 5,90 + corredor 2,39', '44,69 m²'))
+_subst(p04.TAB_LUZ, 'Sala de TV', ('Sala de TV', '150 lux', '6.975 lm', '2.700 K'))
+_subst(p04.TAB_LUZ, 'Quarto', ('Quarto', '150 lux', '4.400 lm', '2.700 K'))
+_subst(p04.TAB_AR, 'Social + cozinha', ('Social + cozinha', '38,04 m²', '22.824 BTU/h', '30.432 BTU/h'))
+_subst(p04.TAB_AR, 'Quarto + closet', ('Quarto + closet', '18,46 m²', '11.076 BTU/h', '14.768 BTU/h'))
+_subst(p05.COMANDOS, 'S05', ('S05', 4.90, 6.98 - 0.17))      # acompanha a face do quarto
+_subst(p09.TAB_AMB, 'Sala de TV', ('Sala de TV', '22,32', '28,98', '58,48'))
+_subst(p09.TAB_AMB, 'Quarto', ('Quarto', '14,08', '31,12', '36,89'))
+p09.TAB_DEC.insert(1, ('Drywall R01', 'Alternativo A', '0,17 m ao norte · quarto 2,71 m livres · 14,08 m²'))
+_subst(p11.TAB_TERM, 'Social + cozinha', ('Social + cozinha', '38,04', '22.824', '30.432', 'sala de TV, sala de estar, cozinha e circulação'))
+_subst(p11.TAB_TERM, 'Quarto + closet', ('Quarto + closet', '18,46', '11.076', '14.768', 'zona de dormir'))
+_subst(p11.TAB_LUZ, 'Sala de TV', ('Sala de TV', '22,32', '150 lux', '6.975 lm', '2.700 K', 'leitura e cenas dimerizáveis'))
+_subst(p11.TAB_LUZ, 'Quarto', ('Quarto', '14,08', '150 lux', '4.400 lm', '2.700 K', 'cabeceira independente'))
+_subst(fo.TAB_DEMO, 'R01', ('R01', 'Reconstruir drywall sala de TV/quarto 0,17 m ao norte, com vão de porta 1,00 × 2,29 m',
+                            '4,08 m + 1 vão'))
+_subst(fo.TAB_LUX, 'Sala de TV', ('Sala de TV', '150 lux', '6.975 lm', '2.700 K'))
+_subst(fo.TAB_LUX, 'Quarto', ('Quarto', '150 lux', '4.400 lm', '2.700 K'))
+_subst(fo.TAB_AR_FO, 'AC01', ('AC01', 'Evaporadora — social + cozinha (38,04 m²)', '1 unidade'))
+_subst(fo.TAB_AR_FO, 'AC02', ('AC02', 'Evaporadora — quarto + closet (18,46 m²)', '1 unidade'))
+_subst(fo.TAB_BTU, 'Social + cozinha', ('Social + cozinha', '38,04 m²', '22.824 BTU/h', '30.432 BTU/h'))
+_subst(fo.TAB_BTU, 'Quarto + closet', ('Quarto + closet', '18,46 m²', '11.076 BTU/h', '14.768 BTU/h'))
+fo.SEQ_AR[1] = (fo.SEQ_AR[1][0], [fo.SEQ_AR[1][1][0].replace('30.976 e 14.224', '30.432 e 14.768')]
+                + list(fo.SEQ_AR[1][1][1:]), fo.SEQ_AR[1][2])
 
 # ---------------------------------------------------------------------------
 FOLHAS = (

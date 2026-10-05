@@ -8,10 +8,10 @@
 <text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">extraído do Caderno Alternativo A — REV. O</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
 <path d="M122.72 162.10 L525.61 162.10 L525.61 384.17 L122.72 384.17 Z" fill="#ededed" opacity="1.00"/>
-<path d="M-147.19 384.17 L525.61 384.17 L525.61 965.25 L36.52 965.25 L36.52 690.88 L-147.19 690.88 Z" fill="#ededed" opacity="1.00"/>
+<path d="M-147.19 384.17 L525.61 384.17 L525.61 944.85 L36.52 944.85 L36.52 690.88 L-147.19 690.88 Z" fill="#ededed" opacity="1.00"/>
 <path d="M-325.64 384.17 L-147.19 384.17 L-147.19 1013.53 L-403.96 1013.53 L-403.96 577.60 L-325.64 577.60 Z" fill="#ededed" opacity="1.00"/>
 <path d="M-403.96 1025.54 L-147.19 1025.54 L-147.19 1281.68 L-403.96 1281.68 Z" fill="#ededed" opacity="1.00"/>
-<path d="M36.52 965.25 L525.61 965.25 L525.61 1281.68 L-147.19 1281.68 L-147.19 1019.65 L36.52 1019.65 Z" fill="#ededed" opacity="1.00"/>
+<path d="M36.52 944.85 L525.61 944.85 L525.61 1281.68 L-147.19 1281.68 L-147.19 1019.65 L36.52 1019.65 Z" fill="#ededed" opacity="1.00"/>
 <path d="M-147.19 690.88 L36.52 690.88 L36.52 1019.65 L-147.19 1019.65 Z" fill="#ededed" opacity="1.00"/>
 <path d="M135.91 167.98 L519.72 167.98 L519.72 498.00 L512.52 498.00 L165.91 498.00 L160.70 497.54 L155.65 496.19 L150.91 493.98 L146.63 490.98 L142.93 487.28 L139.93 483.00 L137.72 478.26 L136.37 473.21 L135.91 468.00 L135.91 175.18 Z" fill="#d6ffff"/>
 <rect x="116.70" y="156.00" width="415.03" height="11.98" fill="#000000"/>
@@ -21,7 +21,7 @@
 <rect x="-147.27" y="1275.58" width="679.00" height="11.98" fill="#000000"/>
 <rect x="-153.26" y="965.36" width="12.01" height="60.18" fill="#000000"/>
 <rect x="-153.26" y="684.96" width="12.01" height="280.39" fill="#000000"/>
-<rect x="36.54" y="959.36" width="489.17" height="12.01" fill="#000000"/>
+<rect x="36.54" y="938.96" width="489.17" height="12.01" fill="#000000"/>
 <rect x="30.55" y="684.96" width="12.01" height="280.39" fill="#000000"/>
 <rect x="519.72" y="965.36" width="12.01" height="322.21" fill="#000000"/>
 <rect x="-410.00" y="1275.58" width="262.73" height="11.98" fill="#000000"/>

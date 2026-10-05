@@ -8,10 +8,10 @@
 <text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">8,78 m² dentro da cortina  ·  claraboia não furável</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
 <path d="M131.51 164.11 L601.55 164.11 L601.55 423.20 L131.51 423.20 Z" fill="#ededed" opacity="1.00"/>
-<path d="M-183.39 423.20 L601.55 423.20 L601.55 1101.13 L30.94 1101.13 L30.94 781.02 L-183.39 781.02 Z" fill="#ededed" opacity="1.00"/>
+<path d="M-183.39 423.20 L601.55 423.20 L601.55 1077.33 L30.94 1077.33 L30.94 781.02 L-183.39 781.02 Z" fill="#ededed" opacity="1.00"/>
 <path d="M-391.58 423.20 L-183.39 423.20 L-183.39 1157.45 L-482.95 1157.45 L-482.95 648.87 L-391.58 648.87 Z" fill="#ededed" opacity="1.00"/>
 <path d="M-482.95 1171.46 L-183.39 1171.46 L-183.39 1470.29 L-482.95 1470.29 Z" fill="#ededed" opacity="1.00"/>
-<path d="M30.94 1101.13 L601.55 1101.13 L601.55 1470.29 L-183.39 1470.29 L-183.39 1164.60 L30.94 1164.60 Z" fill="#ededed" opacity="1.00"/>
+<path d="M30.94 1077.33 L601.55 1077.33 L601.55 1470.29 L-183.39 1470.29 L-183.39 1164.60 L30.94 1164.60 Z" fill="#ededed" opacity="1.00"/>
 <path d="M-183.39 781.02 L30.94 781.02 L30.94 1164.60 L-183.39 1164.60 Z" fill="#ededed" opacity="1.00"/>
 <path d="M146.90 170.98 L594.68 170.98 L594.68 556.00 L586.28 556.00 L181.90 556.00 L175.82 555.47 L169.93 553.89 L164.40 551.31 L159.40 547.81 L155.09 543.50 L151.59 538.50 L149.01 532.97 L147.43 527.08 L146.90 521.00 L146.90 179.38 Z" fill="#d6ffff"/>
 <rect x="153.90" y="371.18" width="440.78" height="177.82" fill="#ffff99" opacity="0.70"/>
@@ -22,7 +22,7 @@
 <rect x="-183.48" y="1463.18" width="792.17" height="13.98" fill="#000000"/>
 <rect x="-190.47" y="1101.25" width="14.01" height="70.21" fill="#000000"/>
 <rect x="-190.47" y="774.12" width="14.01" height="327.13" fill="#000000"/>
-<rect x="30.97" y="1094.26" width="570.70" height="14.01" fill="#000000"/>
+<rect x="30.97" y="1070.46" width="570.70" height="14.01" fill="#000000"/>
 <rect x="23.98" y="774.12" width="14.01" height="327.13" fill="#000000"/>
 <rect x="594.68" y="1101.25" width="14.01" height="375.91" fill="#000000"/>
 <rect x="-490.00" y="1463.18" width="306.52" height="13.98" fill="#000000"/>
