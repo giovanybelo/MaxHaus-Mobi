@@ -530,7 +530,7 @@ _subst(p01.TAB_AMB, 'Sala de TV', ('Sala de TV', '22,32 m²', '20,4 m', '5,6 × 
 _subst(p01.TAB_AMB, 'Quarto', ('Quarto', '14,08 m²', '16,5 m', '5,6 × 2,7', '5,6 × 2,3'))
 p01.NOTAS.insert(1, [
     '**Alternativo A: a drywall sala de TV/quarto (R01) volta 0,17 m mais ao norte.',
-    'O quarto passa de 2,54 para 2,71 m livres (13,40 → 14,08 m²) e a sala de TV de 23,00 para',
+    'O quarto passa de 2,54 para 2,71 m livres (de 13,40 para 14,08 m²) e a sala de TV de 23,00 para',
     '22,32 m². A porta de correr P03 acompanha a parede; o comprimento da drywall não muda.'])
 p02.ALVOS[:] = [(a[0], a[1], Y_R01, *a[3:]) if a[0] == 'R01' else a for a in p02.ALVOS]
 _subst(p02.LINHAS, 'R01', ('R01', 'Nova drywall sala de TV/quarto, 0,17 m ao norte, com porta de correr',
