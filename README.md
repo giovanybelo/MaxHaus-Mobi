@@ -293,3 +293,22 @@ python3 scripts/enxugar_pdf.py pranchas/prancha-08-banheiro-A3.pdf
 > Estudo preliminar — não liberado para execução. Quantidades e posições são
 > preliminares: orientam visita, proposta e projetos complementares; não fecham
 > medição nem substituem projeto executivo.
+
+## Paginação do banheiro (revestimento de parede)
+
+Projeto executivo de paginação do revestimento do banheiro, em A3 deitado e PDF vetorial:
+`pranchas/paginacao-banheiro-projeto-executivo-A3.pdf` (16 pranchas). Cobre a análise de cinco arquivos de
+paginação recebidos, a paginação simétrica (cortes iguais nas duas pontas, meia peça quando a junta deixa)
+nas opções A (15,5 × 15,5) e B (7,5 × 15,5), quantitativo com a caixa do produto, escopo RV00 a RV11,
+execução, recálculo com a medida de obra e pendências.
+
+```bash
+python3 scripts/paginacao/build.py    # regera o PDF
+```
+
+`scripts/paginacao/engine.py` é a regra de paginação (um eixo); `calc.py` aplica às quatro paredes, ao vão
+da porta P02 e ao vidro K01; `sheets_*.py` desenham as pranchas. Cotas de entrada (143 × 264 × 240 cm) vêm
+dos arquivos recebidos e do scan: refazer com a medida de obra (Prancha 15).
+
+> Emissão para conferência em obra. Produto "Bouché" não localizado no site da Portobello; caixas e junta
+> usam a ficha da linha de mesmo formato (Gouache). Ver Prancha 16.
