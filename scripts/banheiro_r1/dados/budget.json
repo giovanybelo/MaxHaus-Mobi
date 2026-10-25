@@ -1,0 +1,571 @@
+{
+"cats": [
+[
+"Revestimentos",
+9524.65
+],
+[
+"Louças e metais",
+8060.22
+],
+[
+"Ralos e esgoto",
+1173
+],
+[
+"Água quente/fria",
+812
+],
+[
+"Impermeabilização",
+667.6
+]
+],
+"subtotal": 20237.47,
+"cont": 3035.6205,
+"total": 23273.0905,
+"r1_subtotal": 20023.85,
+"r1_total": 23027.43,
+"itens": [
+[
+"Revestimentos",
+"Gouache Bleu Nuit 7,5x15,5 BR BOLD",
+"cx",
+63,
+101.997,
+6425.81,
+"Cotado",
+"Área revestida 16,95 m² + 10% = 18,65 m², caixa de 0,30 m² / 26 peças. Cobre as 1480 peças físicas da paginação R2 com 11% de folga.",
+"Proposta Portobello 05310148, 13/10/2026, arquivo sem sufixo; validade 31/10/2026"
+],
+[
+"Revestimentos",
+"Gouache Nuage 7,5x15,5 BR BOLD",
+"cx",
+7,
+101.997,
+713.98,
+"Estimativa",
+"Área 1,73 m² (acentos + bancada) + 10% = 1,90 m². Cobre as 152 peças físicas com 20% de folga. Preço provisório igual ao Bleu; cotar.",
+"Proposta Portobello 05310148, 13/10/2026, arquivo sem sufixo; validade 31/10/2026"
+],
+[
+"Revestimentos",
+"Rejunte acrílico Pleno paredes, cor a aprovar",
+"kg",
+13,
+89.99,
+1169.87,
+"Referência",
+"Preço do Dansk na proposta; cor Moon sugerida no catálogo. Azul escuro exige amostra/aprovação.",
+"Proposta Portobello 05310148, 13/10/2026, arquivo sem sufixo; validade 31/10/2026"
+],
+[
+"Revestimentos",
+"Rejunte acrílico Pleno Blanc bancada",
+"kg",
+1,
+89.99,
+89.99,
+"Referência",
+"Preço de outra cor; confirmar preço Blanc e adequação ao tampo.",
+"Proposta Portobello 05310148, 13/10/2026, arquivo sem sufixo; validade 31/10/2026"
+],
+[
+"Revestimentos",
+"Argamassa colante compatível, saco 20 kg",
+"saco",
+0,
+65,
+0,
+"Contratado",
+"Fornecida pela empreiteira (contrato fechado). Referência de consumo: 5 kg/m² × 18,68 m² ≈ 93 kg; produto compatível com a impermeabilização.",
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Revestimentos",
+"Espaçadores 2 mm, pacote 500",
+"pct",
+4,
+25,
+100,
+"Estimativa",
+null,
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Revestimentos",
+"Selante sanitário neutro compatível, 280 ml",
+"un",
+4,
+45,
+180,
+"Estimativa",
+"Encontros, louça e perímetros; não substituir rejunte rígido em junta de movimento.",
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Revestimentos",
+"Perfis de acabamento: topo do revestimento a 2.353 mm e bordas/cantos",
+"m",
+13,
+65,
+845,
+"Estimativa",
+"Topo: 8,02 m (perímetro das paredes P1–P6) + 4 m de bordas e cantos; perfil reto inox/alumínio para borda de peça de 9 mm. Cantos a 45° dependem de ensaio de corte.",
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Louças e metais",
+"Cuba Ametista 16 branca Duramatt",
+"un",
+1,
+1557.9,
+1557.9,
+"Preço web",
+"Confirmar estoque e válvula inclusa antes de comprar.",
+"https://bellobanho.com.br/produtos/cuba-de-apoio-ametista-16-duramatt-branca-1dfq0/"
+],
+[
+"Louças e metais",
+"Bica de parede aço escovado 200 mm",
+"un",
+1,
+445.69,
+445.69,
+"Referência",
+"Alternativa funcional para dois registros; anúncio tem título aço e descrição preto. Confirmar SKU/acabamento.",
+"https://www.leroymerlin.com.br/bica-para-banheira-aco-escovado_1572794948"
+],
+[
+"Louças e metais",
+"Registros Round acabamentos quente/frio",
+"un",
+2,
+380,
+760,
+"Estimativa",
+"Modelo SKP não identifica SKU de compra. Preço provisório; duas bases compatíveis incluídas abaixo.",
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Louças e metais",
+"Bases completas para misturador de parede 3 furos",
+"cj",
+1,
+450,
+450,
+"Estimativa",
+"Não adaptar cegamente a Royale monocomando. Conjunto de bases, união de mistura e bica deve ser homologado junto.",
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Louças e metais",
+"Bracci Aria B09048BN acabamento chuveiro",
+"un",
+1,
+685.17,
+685.17,
+"Preço web",
+"Acabamento apenas: confirmar base DECA exata / conversor DOCOL.",
+"https://www.bracci.com.br/products/acabamento-monoc-chuveiro-aria-aco-escovado"
+],
+[
+"Louças e metais",
+"Base monocomando chuveiro compatível",
+"un",
+1,
+450,
+450,
+"Estimativa",
+"Provisão; retirar se base existente comprovadamente compatível e em bom estado.",
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Louças e metais",
+"Bracci B09052BN chuveiro teto",
+"un",
+1,
+933.7,
+933.7,
+"Preço web",
+"Preço cartão; conferir vazão/pressão e composição do kit.",
+"https://www.bracci.com.br/products/chuveiro-de-teto-aria-aco-escovado"
+],
+[
+"Louças e metais",
+"Bracci B09074BN porta-papel",
+"un",
+1,
+374.02,
+374.02,
+"Preço web",
+"Disponível em breve na consulta. Modelo BGH recolorido não muda SKU de compra.",
+"https://www.bracci.com.br/products/porta-papel-higienico-aria-aco-escovado"
+],
+[
+"Louças e metais",
+"Bracci B09075BN gancho",
+"un",
+2,
+292.72,
+585.44,
+"Preço web",
+"Esgotado na loja oficial; consultar revenda.",
+"https://www.bracci.com.br/products/gancho-simples-aria-aco-escovado"
+],
+[
+"Louças e metais",
+"Bracci Aria toalheiro de rosto aço escovado",
+"un",
+1,
+433.65,
+433.65,
+"Preço web",
+"Posição proposta junto à bancada, fora do giro da porta; validar interferências.",
+"https://www.bracci.com.br/products/toalheiro-rosto-aria-aco-escovado"
+],
+[
+"Louças e metais",
+"Aiello Unique Solo inox escovado fio oculto",
+"un",
+1,
+1384.65,
+1384.65,
+"Preço web",
+"Variante 47080769945771: botão; não presumir timer incluso.",
+"https://grupoaiello.com.br/products/toalheiro-termico-unique-solo?variant=47080769945771"
+],
+[
+"Ralos e esgoto",
+"Ralo linear box 720 mm completo",
+"un",
+1,
+450,
+450,
+"Estimativa",
+"Provisão para tamanho de projeto; link é 600 mm / R$199,00, não serve como cotação de 720 mm.",
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Ralos e esgoto",
+"Ralo seco externo quadrado oculto 100x100 mm",
+"un",
+1,
+180,
+180,
+"Estimativa",
+"Proposta de formato para ao lado do vaso; tampa removível, caixa e saída a verificar.",
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Ralos e esgoto",
+"Sifão rígido para cuba, compatível",
+"un",
+1,
+100,
+100,
+"Estimativa",
+"Confirmar medida real da válvula e saída existente.",
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Ralos e esgoto",
+"Vedação/anel e fixação para reinstalar vaso",
+"cj",
+1,
+65,
+65,
+"Estimativa",
+null,
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Ralos e esgoto",
+"Engate flexível certificado vaso",
+"un",
+1,
+45,
+45,
+"Estimativa",
+"Comprimento preliminar 40 cm; medir. Não embutir engate.",
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Ralos e esgoto",
+"PVC esgoto DN50, tubos",
+"m",
+3,
+22,
+66,
+"Estimativa",
+"Reserva, traçado/cotas de fundo não levantados; diâmetro depende dos ralos.",
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Ralos e esgoto",
+"PVC esgoto DN40 para cuba",
+"m",
+2,
+16,
+32,
+"Estimativa",
+null,
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Ralos e esgoto",
+"Joelhos/luvas/junções esgoto compatíveis",
+"un",
+10,
+15,
+150,
+"Estimativa",
+"Contagem provisória: lista final após abertura.",
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Ralos e esgoto",
+"Adesivo, solução limpadora, anéis esgoto",
+"cj",
+1,
+85,
+85,
+"Estimativa",
+null,
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Água quente/fria",
+"CPVC água quente, tubos e sobra",
+"m",
+6,
+22,
+132,
+"Estimativa",
+"Reserva de compra, não comprimento medido; diâmetro a dimensionar por pressão/vazão.",
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Água quente/fria",
+"Isolamento térmico do ramal quente",
+"m",
+6,
+15,
+90,
+"Estimativa",
+null,
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Água quente/fria",
+"Tês de derivação sistema existente",
+"un",
+2,
+25,
+50,
+"Estimativa",
+null,
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Água quente/fria",
+"Joelhos CPVC",
+"un",
+8,
+15,
+120,
+"Estimativa",
+null,
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Água quente/fria",
+"Luvas/transições roscadas metálicas",
+"un",
+6,
+25,
+150,
+"Estimativa",
+null,
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Água quente/fria",
+"Registro de isolamento acessível",
+"un",
+1,
+100,
+100,
+"Estimativa",
+null,
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Água quente/fria",
+"Adesivo CPVC e consumíveis",
+"cj",
+1,
+90,
+90,
+"Estimativa",
+null,
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Água quente/fria",
+"Abraçadeiras, suportes e veda-rosca",
+"cj",
+1,
+80,
+80,
+"Estimativa",
+null,
+"Estimativa de planejamento; substituir por cotação de instalador em São Paulo"
+],
+[
+"Impermeabilização",
+"Impermeabilizante cimentício flexível, balde 18 kg (ref. Quartzolit Tecplus Lastic)",
+"bd",
+3,
+199.9,
+599.7,
+"Preço web",
+"12 m² (piso, box até 2.400 mm, rodapé técnico, bancada e nicho) × cerca de 3,5 kg/m² + 10% ≈ 46 kg. Sistema, demãos e consumo a validar com fabricante e aplicador.",
+"https://www.telhanorte.com.br/impermeabilizante-quartzolit-18kg-cinza-tecplus-lastic-1619934/p"
+],
+[
+"Impermeabilização",
+"Tela estruturante de poliéster 73 cm × 10 m",
+"rl",
+1,
+67.9,
+67.9,
+"Preço web",
+"Reforço em cantos, encontro piso/parede, ralos R1 e R2, flanges e passagens (cerca de 25 m de faixa).",
+"https://www.telhanorte.com.br/tela-estruturante-quartzolit-1751182/p?skuId=1751182"
+]
+],
+"rev": [
+[
+"Bleu Nuit, caixas",
+70,
+63,
+-7,
+"Compra por área + 10% e paginação com mais peças inteiras"
+],
+[
+"Nuage, caixas",
+7,
+7,
+0,
+"Mesmos 152 acentos e bancada"
+],
+[
+"Peças físicas Bleu",
+1632,
+1480,
+-152,
+"Sem fiada de 36 mm no topo e com pontas simétricas"
+],
+[
+"Peças físicas Nuage",
+152,
+152,
+0,
+null
+],
+[
+"Perfis de acabamento, m",
+4,
+13,
+9,
+"Perfil no topo do revestimento (8,02 m)"
+],
+[
+"Argamassa colante, R$",
+325,
+0,
+-325,
+"Passa para a empreiteira (já contratada)"
+],
+[
+"Revestimentos, R$",
+9978.63,
+9524.65,
+-453.98,
+null
+],
+[
+"Impermeabilização, R$",
+0,
+667.6,
+667.6,
+"Incluída no R2: 3 baldes de 18 kg e 1 rolo de tela"
+],
+[
+"Subtotal, R$",
+20023.85,
+20237.47,
+213.619999999999,
+null
+],
+[
+"Total com contingência, R$",
+23027.43,
+23273.0905,
+245.660499999998,
+"Contingência de 15% mantida"
+]
+],
+"sob": [
+[
+"Ralo linear do box",
+"Ralo linear 720 mm completo",
+450,
+"Ralo linear 600 × 90 mm do link",
+199,
+"Projeto pede 720 mm. O de 600 mm não atende à medida e tem menor valor: descartado."
+],
+[
+"Misturador da bancada",
+"Bica 200 mm + 2 registros Round + bases 3 furos",
+1655.69,
+"Royale monocomando 21 cm",
+527,
+"O modelo desenha bica e dois comandos (3 furos). Royale é monocomando de 2 furos: não atende e tem menor valor."
+],
+[
+"Ligação do vaso",
+"Engate flexível certificado",
+45,
+"Tubo de ligação 1½\"",
+272.87,
+"Vaso com caixa acoplada: o tubo de 1½\" é para válvula de descarga e não atende. Mantido o engate, mesmo com valor menor."
+],
+[
+"Fixação da torneira",
+"Fixação do gabarito do fabricante",
+0,
+"Rosca longa 12 cm",
+36.75,
+"Só comprar se o gabarito real exigir. Fora do orçamento."
+],
+[
+"Argamassa colante",
+"Empreiteira (contratada)",
+0,
+"Argamassa no orçamento de materiais",
+325,
+"Fornecida pela empreiteira: não somar duas vezes."
+],
+[
+"Toalheiros",
+"Aiello térmico + Bracci de rosto",
+1818.3,
+"—",
+0,
+"Não é sobreposição: o térmico é para toalha de banho junto ao box; o de rosto fica junto à bancada. Se quiser um só, sai o Bracci (−R$ 433,65)."
+]
+]
+}

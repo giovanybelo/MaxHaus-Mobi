@@ -312,3 +312,24 @@ dos arquivos recebidos e do scan: refazer com a medida de obra (Prancha 15).
 
 > Emissão para conferência em obra. Produto "Bouché" não localizado no site da Portobello; caixas e junta
 > usam a ficha da linha de mesmo formato (Gouache). Ver Prancha 16.
+
+## Banheiro · caderno técnico R1 e orçamento R2 (25.10.2026)
+
+Reestruturação do caderno técnico R0 (Everest + Gouache Bleu Nuit / Nuage, modelo R47) em
+`pranchas/caderno-tecnico-banheiro-R1-A3.pdf` (22 pranchas A3) e do orçamento em
+`orcamento/Orcamento_Banheiro_R2.xlsx` (o R1 de entrada fica em `orcamento/Orcamento_Banheiro_R1.xlsx`).
+
+- **Paginação:** 15 fiadas inteiras desde o piso, revestimento até 2.353 mm com perfil (some a tira de
+  36 mm do topo); colunas simétricas no eixo com o maior número de peças inteiras e pontas ≥ 40% da peça;
+  nicho e porta preservados; 1.336 das 1.632 peças inteiras.
+- **Compra:** área revestida + 10%, por caixa fechada: 63 caixas Bleu Nuit e 7 Nuage.
+- **Orçamento R2:** argamassa com a empreiteira, impermeabilização incluída, sobreposições resolvidas
+  (aba `Sobreposicoes`); subtotal R$ 20.237,47, total com 15% de contingência R$ 23.273,09.
+
+```bash
+python3 scripts/banheiro_r1/build_r1.py                       # regera o caderno
+python3 scripts/banheiro_r1/orcamento_r2.py orcamento/Orcamento_Banheiro_R1.xlsx orcamento/Orcamento_Banheiro_R2.xlsx
+```
+
+`scripts/banheiro_r1/dados/` guarda a geometria lida do R0 (vãos, acentos Nuage) e os valores do
+orçamento recalculado que o caderno cita.
