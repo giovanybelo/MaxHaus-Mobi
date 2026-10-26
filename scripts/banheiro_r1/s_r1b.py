@@ -55,7 +55,7 @@ def wall_sheet(c, n, sid, titulo, sub, notes, extra=None, ox=None):
 def draw_nicho(c, x, y, wr):
     sc = SC10
     ns, area, nn = CR.nicho_surfaces()
-    y = section(c, x, y, 'Nicho · N1 a N5 · escala 1:10 (mantido 1000 × 400 × 118 mm)', wr)
+    y = section(c, x, y, 'Nicho · N1 a N5 · escala 1:10 (1000 × 400 × 118 mm, centrado na P1)', wr)
     rows = [(a0 - CR.NICHO['v0'], a1 - CR.NICHO['v0'], t) for (a0, a1, t) in ns['N1']['rows']]
     # N1
     by = y - 30 - 400 * sc
@@ -66,12 +66,12 @@ def draw_nicho(c, x, y, wr):
     frame(bx, by, 1000, 400, 'N1 · fundo')
     acc = {(0, 1), (4, 1)}
     for k in range(13):
-        x0 = 1.9 + 77 * k
+        x0 = 0.5 + 77 * k
         for ri, (a0, a1, t) in enumerate(rows):
             nua = (k, ri) in acc
             full = (t == 'f')
             col = (NUAGE if full else NUAGE_CUT) if nua else (BLEU if full else BLEU_CUT)
-            rect(c, bx + x0 * sc, by + a0 * sc, 75 * sc, (a1 - a0) * sc, col, JUNTA, 0.25)
+            rect(c, bx + x0 * sc, by + a0 * sc, 75 * sc, (a1 - a0) * sc, col, K, 0.22)
     dimh(c, bx, bx + 1000 * sc, by - 10, '1.000', 6.4, above=False)
     for (a0, a1, t) in rows:
         txt(c, bx + 1000 * sc + 4, by + (a0 + a1) / 2 * sc - 2, fm(a1 - a0), 6.0, 'S', K70)
@@ -81,8 +81,8 @@ def draw_nicho(c, x, y, wr):
         xx = lx + k * (118 * sc + 26)
         frame(xx, by, 118, 400, lab)
         for (a0, a1, t) in rows:
-            rect(c, xx, by + a0 * sc, 75 * sc, (a1 - a0) * sc, BLEU if t == 'f' else BLEU_CUT, JUNTA, 0.25)
-            rect(c, xx + 77 * sc, by + a0 * sc, 41 * sc, (a1 - a0) * sc, BLEU_CUT, JUNTA, 0.25)
+            rect(c, xx, by + a0 * sc, 75 * sc, (a1 - a0) * sc, BLEU if t == 'f' else BLEU_CUT, K, 0.22)
+            rect(c, xx + 77 * sc, by + a0 * sc, 41 * sc, (a1 - a0) * sc, BLEU_CUT, K, 0.22)
         txt(c, xx + 37 * sc, by - 9, 'frente', 5.8, 'S-I', K70, 'c')
     # N4 / N5
     y2 = by - 40 - 118 * sc
@@ -90,12 +90,12 @@ def draw_nicho(c, x, y, wr):
         yy = y2 - k * (118 * sc + 26)
         frame(bx, yy, 1000, 118, lab)
         for j in range(13):
-            rect(c, bx + (1.9 + 77 * j) * sc, yy, 75 * sc, 118 * sc, BLEU_CUT, JUNTA, 0.25)
+            rect(c, bx + (0.5 + 77 * j) * sc, yy, 75 * sc, 118 * sc, BLEU_CUT, K, 0.22)
     return y2 - (118 * sc + 26) - 14
 
 NOTES_P1 = [
     ('Eixo e pontas.', '15 colunas inteiras e pontas de 59 mm (79%) nos dois lados.'),
-    ('Nicho.', 'Os lados do nicho (59 e 1.061 mm) caem exatamente nas juntas: nenhuma peça cortada na vertical em volta dele. Embaixo, a fiada F7 é aparada 6 mm (149 mm); em cima, a F10 sobra com 77 mm (50%).'),
+    ('Nicho centrado.', 'O nicho passa a ficar no centro da parede, de 137,5 a 1.137,5 mm, sobre as 13 colunas centrais. Os dois lados caem exatamente nas juntas: nenhuma peça cortada na vertical em volta dele. Embaixo, a fiada F7 é aparada 6 mm (149 mm); em cima, a F10 sobra com 77 mm (50%).'),
     ('Dentro do nicho.', 'O fundo segue as 13 colunas e as fiadas da parede. Laterais com uma peça inteira na frente e corte de 41 mm junto ao fundo. Base e teto com peças de 118 mm. Base com caimento para fora e impermeabilização contínua.'),
     ('Acentos.', '8 Nuage na parede e 2 no fundo do nicho, sempre em peça inteira.'),
 ]
@@ -123,7 +123,7 @@ NOTES_P5 = [
 ]
 
 def s09(c):
-    wall_sheet(c, 9, 'P1', 'P1 · fundo do box e nicho', 'Parede do fundo do box com o nicho existente. Elevação 1:20 e detalhes do nicho 1:10.', NOTES_P1,
+    wall_sheet(c, 9, 'P1', 'P1 · fundo do box e nicho', 'Parede do fundo do box com o nicho centrado no eixo. Elevação 1:20 e detalhes do nicho 1:10.', NOTES_P1,
                extra=lambda c, x, y, w: draw_nicho(c, x, y, w))
 
 def s10(c):
@@ -169,7 +169,7 @@ def s14(c):
         for (x0, x1, tx) in xs_:
             for (y0, y1, ty) in ys_:
                 full = tx == 'f' and ty == 'f'
-                rect(c, xx + x0 * sc, yy + y0 * sc, (x1 - x0) * sc, (y1 - y0) * sc, NUAGE if full else NUAGE_CUT, JUNTA, 0.3)
+                rect(c, xx + x0 * sc, yy + y0 * sc, (x1 - x0) * sc, (y1 - y0) * sc, NUAGE if full else NUAGE_CUT, K, 0.25)
         txt(c, xx, yy + ys_[-1][1] * sc + 5, lab, 8.4, 'S-B')
     strip(ox, oy, b1['xs'], 530, 'B1 · tampo 1650 × 530 · frente embaixo, parede em cima', b1['ys'])
     txt(c, ox - 6, oy + 2, 'frente', 6.4, 'S-I', K70, 'r'); txt(c, ox - 6, oy + 530 * sc - 8, 'parede', 6.4, 'S-I', K70, 'r')

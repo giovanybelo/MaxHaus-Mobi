@@ -29,7 +29,7 @@ def draw_wall(c, ox, oy, sc, sid, chains='full', idx=True, nome=None, tag=None, 
     hatch(c, X(0), Y(HT), W * sc, (H - HT) * sc, 3, K45, 0.3)
     rect(c, X(0), Y(0), W * sc, HT * sc, JUNTA, None)
     for q in pcs:
-        rect(c, X(q['x0']), Y(q['y0']), (q['x1'] - q['x0']) * sc, (q['y1'] - q['y0']) * sc, tile_fill(q), JUNTA, 0.25)
+        rect(c, X(q['x0']), Y(q['y0']), (q['x1'] - q['x0']) * sc, (q['y1'] - q['y0']) * sc, tile_fill(q), K, 0.22)
     for (hx0, hx1, hy0, hy1, hn) in w['hole']:
         rect(c, X(hx0), Y(hy0), (hx1 - hx0) * sc, (hy1 - hy0) * sc, white, K, 0.8)
         hatch(c, X(hx0), Y(hy0), (hx1 - hx0) * sc, (hy1 - hy0) * sc, 5, K20, 0.35)
@@ -42,7 +42,7 @@ def draw_wall(c, ox, oy, sc, sid, chains='full', idx=True, nome=None, tag=None, 
     if tags:
         for q in pcs:
             if q['col'] == 'N' and (q['x1'] - q['x0']) * sc > 9:
-                txt(c, X((q['x0'] + q['x1']) / 2), Y((q['y0'] + q['y1']) / 2) - 2, q['tag'][-2:], 5.2, 'S-B', BLEU, 'c')
+                txt(c, X((q['x0'] + q['x1']) / 2), Y((q['y0'] + q['y1']) / 2) - 2, q['tag'][-2:], 5.2, 'S-B', K, 'c')
     if axis and sid != 'P6':
         line(c, X(W / 2), Y(0) - 7, X(W / 2), Y(H) + 7, 0.8, MAGENTA, (5, 1.6, 1, 1.6))
     if chains:
@@ -95,15 +95,15 @@ def draw_plan(c, ox, oy, sc, mode='demo', labels=True):
     X = lambda v: ox + v * sc
     Y = lambda v: oy - v * sc
     t = 100
-    rect(c, X(-t), Y(PL_L + t), (PL_W + 2 * t) * sc, (PL_L + 2 * t) * sc, HexColor('#3a3a3a'), None)
-    rect(c, X(0), Y(PL_L), PL_W * sc, PL_L * sc, HexColor('#f4f2ee'), None)
+    rect(c, X(-t), Y(PL_L + t), (PL_W + 2 * t) * sc, (PL_L + 2 * t) * sc, K, None)
+    rect(c, X(0), Y(PL_L), PL_W * sc, PL_L * sc, white, None)
     # box
     rect(c, X(150), Y(PL_L), (PL_W - 150) * sc, (PL_L - 1706) * sc, CIANO18, None)
     # área técnica
     rect(c, X(0), Y(PL_L), 152 * sc, (PL_L - 1706) * sc, HexColor('#bdbdbd'), K, 0.5)
     txt(c, X(76), Y(2150), 'área técnica', 6.0, 'S-I', K, 'c', rot=90)
     # vidro do box
-    line(c, X(152), Y(1706), X(PL_W), Y(1706), 2.4, HexColor('#00a8c6'))
+    line(c, X(152), Y(1706), X(PL_W), Y(1706), 3.0, CIANO)
     # bancada
     rect(c, X(10), Y(1670), 530 * sc, 1650 * sc, NUAGE, K, 0.6)
     txt(c, X(275), Y(845), 'BANCADA', 8, 'S-B', K, 'c', rot=90)
@@ -137,22 +137,22 @@ def draw_plan(c, ox, oy, sc, mode='demo', labels=True):
         txt(c, X(272), Y(2140), 'R1 · ralo linear 720 × 90', 6.6, 'S-B', K, 'l', rot=90)
         txt(c, X(1158), Y(335) - 9, 'R2 · 100 × 100', 6.6, 'S-B', K, 'c')
         # caimento
-        line(c, X(1200), Y(2200), X(330), Y(2200), 0.9, HexColor('#00a8c6'))
-        c.saveState(); c.setFillColor(HexColor('#00a8c6')); p = c.beginPath()
+        line(c, X(1200), Y(2200), X(330), Y(2200), 1.2, K)
+        c.saveState(); c.setFillColor(K); p = c.beginPath()
         p.moveTo(X(330), Y(2200)); p.lineTo(X(330) + 6, Y(2200) + 3); p.lineTo(X(330) + 6, Y(2200) - 3); p.close(); c.drawPath(p, fill=1, stroke=0); c.restoreState()
         txt(c, X(800), Y(2200) + 4, 'caimento 1–2 % para R1', 6.2, 'S', K, 'c')
         # água quente
-        red = HexColor('#b4432f')
+        red = MAGENTA
         line(c, X(99), Y(1950), X(99), Y(930), 1.4, red, (5, 3))
         line(c, X(99), Y(930), X(300), Y(930), 1.4, red, (5, 3))
         txt(c, X(99) + 4, Y(1300), 'AQ · derivação a confirmar', 6.2, 'S-B', red, 'l', rot=90)
     if mode == 'luz':
-        y_ = HexColor('#b07f20')
+        y_ = K
         for (x_, yy, lab, r) in ((696, 625, 'L1', 90), (960, 2165, 'L2', 50), (656, 2165, 'CH', 100)):
-            c.saveState(); c.setStrokeColor(y_ if lab != 'CH' else K45); c.setFillColor(white); c.setLineWidth(1.0)
+            c.saveState(); c.setStrokeColor(K); c.setFillColor(AMARELO if lab != 'CH' else CIANO18); c.setLineWidth(0.9)
             c.circle(X(x_), Y(yy), r * sc, stroke=1, fill=1); c.restoreState()
             txt(c, X(x_), Y(yy) - 2.5, lab, 6.6, 'S-B', K, 'c')
-        line(c, X(24), Y(20), X(24), Y(1670), 2.6, y_)
+        line(c, X(24), Y(20), X(24), Y(1670), 3.6, K); line(c, X(24), Y(20), X(24), Y(1670), 2.4, AMARELO)
         txt(c, X(24) + 6, Y(1300), 'L3 · perfil linear 1650 mm sobre o espelho (parede P3)', 6.2, 'S-B', y_, 'l', rot=90)
     if mode == 'demo':
         hatch(c, X(0), Y(PL_L), PL_W * sc, PL_L * sc, 9, MAGENTA, 0.25)

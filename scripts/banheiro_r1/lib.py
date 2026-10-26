@@ -23,7 +23,8 @@ CIANO = HexColor('#00e5ff'); CIANO18 = HexColor('#d7f7fb'); CIANO40 = HexColor('
 AMARELO = HexColor('#ffff00'); AMARELO45 = HexColor('#fffb8a')
 MAGENTA = HexColor('#e6007e'); MAGENTA12 = HexColor('#fde0ef')
 GROUT = HexColor('#bdbdbd')
-BLEU = HexColor('#173a4e'); BLEU_CUT = HexColor('#5f8299'); NUAGE = HexColor('#f3eddf'); NUAGE_CUT = HexColor('#d9cdb0'); JUNTA = HexColor('#9aa7ad')
+# CMYK: branco = Bleu inteira, amarelo = corte, ciano = Nuage, ciano + amarelo = Nuage cortada, magenta = eixo e alertas
+BLEU = HexColor('#ffffff'); BLEU_CUT = AMARELO45; NUAGE = CIANO40; NUAGE_CUT = HexColor('#c9f3b0'); JUNTA = HexColor('#a6a6a6')
 OK = HexColor('#1b7a3a')
 
 def f(v, d=1):
@@ -91,11 +92,11 @@ def hatch(c, x, y, w, h, step=5, col=K45, sw=0.4):
         c.line(x + t, y, x + t + h, y + h); t += step
     c.restoreState()
 
-def header(c, titulo, sub, nfolha, total, tag='R1'):
+def header(c, titulo, sub, nfolha, total, tag='R2'):
     txt(c, MG, PH - 34, 'MAXHAUS / MAIN FLOOR  ·  BANHEIRO  ·  CADERNO TÉCNICO DE REFORMA', 7.4, 'S-B', K70, ls=0.9)
     txt(c, MG, PH - 70, titulo, 25, 'S-B')
     para(c, MG, PH - 76, 760, sub, 9.2, 12, 'S', K70, maxlines=3)
-    txt(c, PW - MG, PH - 34, tag + '  ·  25.10.2026  ·  MODELO R47', 7.4, 'S-B', K70, 'r', ls=0.6)
+    txt(c, PW - MG, PH - 34, tag + '  ·  26.10.2026  ·  MODELO R47', 7.4, 'S-B', K70, 'r', ls=0.6)
     txt(c, PW - MG, PH - 66, '%02d' % nfolha, 34, 'S-B', K, 'r')
     txt(c, PW - MG, PH - 80, 'de %02d' % total, 8.4, 'S', K70, 'r')
     line(c, MG, PH - 112, PW - MG, PH - 112, 1.0, K)

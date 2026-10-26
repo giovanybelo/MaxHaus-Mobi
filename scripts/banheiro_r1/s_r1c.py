@@ -7,7 +7,7 @@ from s_r1a import TOTAL, RT, RES, ROWS_T, BUD, brl, fm, N_PCS, N_FULL, N_CUT
 
 def s15(c):
     header(c, 'Quantitativo e compra',
-           'Quantidades da paginação R1 e compra dos revestimentos por área revestida + 10%, arredondada para caixa fechada (0,30 m² / 26 peças) e conferida contra as peças físicas.', 15, TOTAL)
+           'Quantidades da paginação R2 e compra dos revestimentos por área revestida + 10%, arredondada para caixa fechada (0,30 m² / 26 peças) e conferida contra as peças físicas.', 15, TOTAL)
     xl = MG; wl = 600
     y = section(c, xl, PH - 130, 'Por superfície', wl)
     rows = []
@@ -109,6 +109,7 @@ def s18(c):
         R('DM01', 'Proteção e isolamento', 'Proteger áreas vizinhas; isolar água, esgoto e circuitos do banheiro; desmontar e guardar box, vaso, gabinete e metais reaproveitáveis.', 'Empreiteira', '—'),
         R('DM02', 'Demolição de acabamentos', 'Piso (3,54 m²), revestimentos verticais (≈ 17,9 m²), tampo e cuba, com remoção manual controlada. Não cortar laje, vigas, pilares ou shafts.', 'Empreiteira', 'DM01'),
         R('DM03', 'Entulho', 'Uma retirada prevista; volume real depende das espessuras.', 'Empreiteira (logística)', 'DM02'),
+        R('NI01', 'Nicho centrado', 'Fechar o vão atual e abrir o nicho 1000 × 400 × 118 mm centrado na P1 (137,5 a 1.137,5 mm), com base em caimento para fora.', 'Empreiteira · RT confirma', 'DM02'),
         R('LV01', 'Levantamento aberto', 'Prumos, medidas acabadas, contrapiso, redes, pressão e aquecedor. Atualiza a paginação (Prancha 20).', 'Responsável técnico', 'DM02'),
         R('HI01', 'Água quente da cuba', 'Derivação de ramal existente, 6 m de tubo com isolamento, registro acessível; quente e fria até as bases do misturador.', 'Hidráulica', 'LV01'),
         R('HI02', 'Ralos e esgoto', 'R1 linear 720 mm no box; R2 100 × 100 mm junto ao vaso; esgoto DN50/DN40 e reinstalação do vaso.', 'Hidráulica', 'LV01'),
@@ -194,7 +195,7 @@ def s20(c):
     yr -= 16
     p76 = CR.cols_sym(1275.0, 76.5)
     starts = [p76['c'] + 2 + k * 78.5 for k in range(p76['n'])]
-    d0 = min(abs(s - 61.1) for s in starts); d1 = min(abs(s + 76.5 - 1058.7) for s in starts)
+    d0 = min(abs(s - 137.5) for s in starts); d1 = min(abs(s + 76.5 - 1137.5) for s in starts)
     yr = section(c, xr, yr, 'O que muda com 76,5 mm', wr)
     for h, b in [
         ('Colunas.', 'P1, P3 e P5 perdem uma coluna inteira por fiada; as pontas continuam simétricas e largas.'),
@@ -211,6 +212,7 @@ def s21(c):
     rows = [
         ('1', 'Medir o calibre do lote (75 × 155 ou 76,5 × 155,5).', 'Muda colunas por parede, lados do nicho e topo (Prancha 20).', 'Obra e Portobello', 'Recálculo das pranchas 08–14', True),
         ('2', 'Aprovar o término em 2.353 mm com perfil e faixa pintada.', 'Alternativa até o forro: 107 tiras de 36 mm e +1 caixa.', 'Cliente', 'Prancha 07', True),
+        ('2a', 'Reconstrução do nicho centrado na P1.', 'Desloca 78 mm; estrutura, redes e impermeabilização do box conferidas pelo RT.', 'RT e empreiteira', 'Prancha 09', True),
         ('3', 'Gouache no tampo da bancada.', 'É revestimento de parede; uso horizontal depende do fabricante.', 'Portobello', 'Prancha 14', True),
         ('4', 'Junta 2 mm × 1,5 mm do fabricante.', 'Com 1,5 mm as pontas mudam alguns milímetros.', 'Assentador e cliente', 'Prancha 20', True),
         ('5', 'Cotação do Nuage.', 'Hoje usa o preço do Bleu.', 'Compras', 'Orçamento R2', False),

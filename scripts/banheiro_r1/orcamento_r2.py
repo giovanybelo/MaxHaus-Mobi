@@ -129,7 +129,7 @@ ws['A20'] = 'R2: paginação refeita (peças inteiras, topo a 2.353 mm, pontas s
 
 # ---------------------------------------------------------------- Premissas
 ws = wb['Premissas']
-ws['B6'] = 'R47; paredes Bleu Nuit com detalhes Nuage e tampo Nuage 7,5 × 15,5 cm. Paginação R2 no caderno técnico R1.'
+ws['B6'] = 'R47; paredes Bleu Nuit com detalhes Nuage e tampo Nuage 7,5 × 15,5 cm. Paginação no caderno técnico R2 (nicho centrado na P1).'
 ws['B19'] = 'Área revestida × 1,10, arredondada para caixa fechada; conferida contra as peças físicas da paginação. Compatibilizar bases, válvula/sifão, fixações e garantia antes da compra.'
 for row, a, b in ((20, 'Paginação R2', '15 fiadas inteiras desde o piso; revestimento termina em 2.353 mm com perfil, faixa até o teto em pintura. Colunas simétricas no eixo com o maior número de peças inteiras e pontas ≥ 40% da peça. Nicho e porta preservados.'),
                   (21, 'Alternativa', 'Revestir até 2.391 mm exige fiada de 36 mm em todas as paredes (107 tiras, cerca de 27 peças) e +1 caixa de Bleu Nuit.')):

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Paginação R1 do banheiro MaxHaus (Gouache 75 × 155 mm, junta 2 mm).
+"""Paginação R2 do banheiro MaxHaus (Gouache 75 × 155 mm, junta 2 mm).
 
 Regras (em ordem de prioridade):
   1. Máximo de peças inteiras: fiadas inteiras desde o piso; o revestimento termina
@@ -57,7 +57,7 @@ ROWS = [(k * (B + J), k * (B + J) + B, 'f') for k in range(15)]   # 0 → 2353
 
 # ---------------------------------------------------------------- superfícies
 WALLS = {
-    'P1': dict(nome='Fundo do box / nicho', W=1275.0, face='Sul', hole=[(59.1, 1060.7, 1091.0, 1491.0, 'nicho')]),
+    'P1': dict(nome='Fundo do box / nicho', W=1275.0, face='Sul', hole=[(137.5, 1137.5, 1091.0, 1491.0, 'nicho')]),   # nicho centrado (R2)
     'P2': dict(nome='Lateral do box / área técnica', W=877.0, face='Oeste (box)', hole=[]),
     'P3': dict(nome='Parede da bancada e espelho', W=1706.0, face='Oeste', hole=[]),
     'P4': dict(nome='Parede da porta', W=2583.0, face='Leste', hole=[(1337.0, 2137.0, 0.0, 1990.0, 'porta')]),
@@ -132,13 +132,13 @@ def wall_area(sid):
     return a / 1e6
 
 # ---------------------------------------------------------------- nicho (1000 × 400 × 118, preservado)
-NICHO = dict(u0=59.1, u1=1060.7, v0=1091.0, v1=1491.0, prof=118.0)
+NICHO = dict(u0=137.5, u1=1137.5, v0=1091.0, v1=1491.0, prof=118.0)   # centrado na P1
 T_LAYER = 11.0      # peça 9 mm + argamassa
 
 def nicho_surfaces():
     """Fundo alinhado às 13 colunas e às fiadas da parede; laterais, base e teto com peça em pé."""
     out = {}
-    # N1 fundo: 13 colunas (as da parede, 61 → 1060) × fiadas 8 e 9 inteiras + fiada 10 cortada
+    # N1 fundo: 13 colunas (as da parede, 138 → 1137) × fiadas 8 e 9 inteiras + fiada 10 cortada
     v0 = NICHO['v0'] + T_LAYER; v1 = NICHO['v1'] - T_LAYER
     rows = []
     for (y0, y1, t) in ROWS:

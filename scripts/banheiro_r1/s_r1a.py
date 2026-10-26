@@ -25,7 +25,7 @@ def brl(v):
 INDICE = [
     ('01', 'Capa, índice e premissas'), ('02', 'Condições para liberação e o que muda da R0'),
     ('03', 'Planta e demolição'), ('04', 'Água quente e ralos'), ('05', 'Iluminação e energia'),
-    ('06', 'Bancada e impermeabilização'), ('07', 'Critério de paginação e quadro R0 × R1'),
+    ('06', 'Bancada e impermeabilização'), ('07', 'Critério de paginação e quadro R0 × R2'),
     ('08', 'Planificação das paredes'), ('09', 'P1 · fundo do box e nicho'), ('10', 'P2 · lateral do box e P6 · retorno'),
     ('11', 'P3 · parede da bancada'), ('12', 'P4 · parede da porta'), ('13', 'P5 · parede do vaso'),
     ('14', 'Bancada · tampo e bordas'), ('15', 'Quantitativo e compra'), ('16', 'Orçamento R2'),
@@ -35,14 +35,14 @@ INDICE = [
 
 def s01(c):
     header(c, 'Caderno técnico de reforma do banheiro',
-           'Everest + Gouache Bleu Nuit / Nuage. A R1 reestrutura o caderno R0: paginação com o máximo de peças inteiras, eixo central e '
+           'Everest + Gouache Bleu Nuit / Nuage. A R2 reestrutura o caderno R0: nicho centrado na parede do box, paginação com o máximo de peças inteiras, eixo central e '
            'cortes simétricos; compra dos revestimentos por área + 10%; orçamento R2 com sobreposições resolvidas.', 1, TOTAL)
     x0 = MG; y = PH - 135
-    y = section(c, x0, y, 'R1 em quatro números', 580)
+    y = section(c, x0, y, 'R2 em quatro números', 580)
     tiles = [
         ('%d%%' % round(N_FULL / N_PCS * 100), 'das peças ficam inteiras', '%d de %d peças. Nenhuma fiada cortada no topo das paredes.' % (N_FULL, N_PCS)),
         ('%d' % (sum(R0S[k]['frag'] for k in R0S) - sum(RT[k]['nb'] + RT[k]['nn'] for k in ('P1', 'P2', 'P3', 'P4', 'P5', 'P6'))), 'fragmentos a menos', 'nas paredes, contra o R0: some a tira de 36 mm do topo (107 tiras).'),
-        ('%d + %d' % (RES['B']['caixas'], RES['N']['caixas']), 'caixas Bleu + Nuage', 'área revestida + 10%%: %s m² de compra. R0/R1 previam 70 + 7.' %
+        ('%d + %d' % (RES['B']['caixas'], RES['N']['caixas']), 'caixas Bleu + Nuage', 'área revestida + 10%%: %s m² de compra. R0 e R1 previam 70 + 7.' %
          fm(RES['B']['m2_compra'] + RES['N']['m2_compra'], 2)),
         (brl(BUD['total']).replace('R$ ', ''), 'total R2 com 15%', 'subtotal %s. Inclui impermeabilização; argamassa com a empreiteira.' % brl(BUD['subtotal'])),
     ]
@@ -83,25 +83,26 @@ def s02(c):
         ('Gouache no tampo.', 'Gouache é revestimento de parede. Uso horizontal no tampo depende de aprovação do fabricante e de base impermeável detalhada.'),
         ('Monofloor.', 'O fabricante aprova o sistema Everest para o box: aderência, atrito molhado, selagem, ralos e manutenção.'),
         ('Altura do revestimento.', 'Aprovar o término em 2.353 mm com perfil e a faixa de 38 mm em pintura até o forro (Prancha 07).'),
+        ('Nicho centrado.', 'O nicho anda 78 mm para o centro da P1: o responsável técnico confirma estrutura, impermeabilização e redes antes de reconstruí-lo.'),
     ]
     for i, (h, b) in enumerate(cond, 1):
         txt(c, xl, y - 12, str(i), 12, 'S-B')
         y = rich(c, xl + 20, y - 2, wl - 20, h, b, 9.4, 6)
     xr = MG + wl + 40; wr = PW - MG - xr
-    yr = section(c, xr, PH - 130, 'R0 → R1', wr)
+    yr = section(c, xr, PH - 130, 'R0 → R2', wr)
     rows = [
         ['Paginação das paredes', 'Malha a partir do canto inferior esquerdo; ponta inteira de um lado e corte de 30–42 mm do outro; fiada de 36 mm no topo.',
-         'Eixo central e pontas simétricas de 43,5 a 59 mm; 15 fiadas inteiras e topo em 2.353 mm; nicho com os lados exatamente nas juntas.'],
+         'Eixo central e pontas simétricas de 43,5 a 59 mm; 15 fiadas inteiras e topo em 2.353 mm; nicho centrado com os lados exatamente nas juntas.'],
         ['Peças nas paredes', '%d fragmentos (P1–P6)' % sum(R0S[k]['frag'] for k in R0S),
          '%d peças (P1–P6), %d inteiras' % (sum(RT[k]['nb'] + RT[k]['nn'] for k in ('P1', 'P2', 'P3', 'P4', 'P5', 'P6')),
                                            sum(RT[k]['full'] for k in ('P1', 'P2', 'P3', 'P4', 'P5', 'P6')))],
         ['Compra de revestimento', 'Cada peça cortada + 10%: 70 caixas Bleu e 7 Nuage.', 'Área + 10%%: %d caixas Bleu e %d Nuage, conferidas contra as peças físicas.' % (RES['B']['caixas'], RES['N']['caixas'])],
         ['Orçamento', 'R1: subtotal %s.' % brl(BUD['r1_subtotal']), 'R2: subtotal %s; argamassa com a empreiteira; impermeabilização incluída; sobreposições resolvidas.' % brl(BUD['subtotal'])],
-        ['Nicho', 'Peças cortadas nos lados (16, 17, 58 mm).', 'Mantido 1000 × 400 × 118; lados sobre juntas, peça de 77 mm acima.'],
+        ['Nicho', 'Deslocado para a esquerda (59 a 1.061 mm); peças cortadas nos lados (16, 17, 58 mm).', 'Centrado na parede (137,5 a 1.137,5 mm), 1000 × 400 × 118: ocupa 13 colunas inteiras, lados sobre juntas, peça de 77 mm acima.'],
         ['Bancada', '10 inteiras + corte por fiada.', 'Igual em contagem; corte de 80 mm na ponta norte, fiadas inteiras a partir da frente.'],
         ['Caderno', '23 folhas, paginação por parede sem cotas de corte.', '22 pranchas A3 com elevações cotadas, régua de fiadas, escopo, execução e pendências.'],
     ]
-    table(c, xr, yr, [112, (wr - 112) / 2, (wr - 112) / 2], ['Tema', 'R0', 'R1'], rows, size=8.6, pad=3.8, bold_first=True, hsize=8.6)
+    table(c, xr, yr, [112, (wr - 112) / 2, (wr - 112) / 2], ['Tema', 'R0', 'R2'], rows, size=8.6, pad=3.8, bold_first=True, hsize=8.6)
     footer(c, 2, TOTAL)
 
 def plan_sheet(c, n, titulo, sub, mode, blocks):
@@ -173,7 +174,7 @@ def s06(c):
     wx = 150  # largura do desenho (pt)
     rect(c, ox, Y(0), 18, CR.H_ROOM * sc, HexColor('#d9d9d9'), K, 0.6)
     for (y0, y1, t) in CR.ROWS:
-        rect(c, ox + 18, Y(y0), 5, (y1 - y0) * sc, BLEU, None)
+        rect(c, ox + 18, Y(y0), 5, (y1 - y0) * sc, BLEU, K, 0.3)
     rect(c, ox + 18, Y(CR.H_TILE), 5, (CR.H_ROOM - CR.H_TILE) * sc, white, K45, 0.3)
     # tampo, borda, gabinete, cuba, espelho
     d = 530 * sc
@@ -184,7 +185,7 @@ def s06(c):
     rect(c, ox + 23 + 170 * sc, Y(840), 300 * sc, 160 * sc, white, K, 0.6)
     txt(c, ox + 23 + 320 * sc, Y(905), 'cuba', 6.6, 'S-I', K70, 'c')
     line(c, ox + 23, Y(1140), ox + 23 + 6, Y(1140), 1.6, K)
-    rect(c, ox + 23, Y(1140), 4, 700 * sc, HexColor('#c9d6dc'), K, 0.4)
+    rect(c, ox + 23, Y(1140), 4, 700 * sc, CIANO18, K, 0.4)
     marks = [(840, 'tampo acabado 840'), (765, 'base da borda frontal 765'), (1000, 'borda da cuba ≈ 1.000'), (1105, 'eixo da bica ≈ 1.105'),
              (1140, 'espelho, borda inferior 1.140'), (CR.H_TILE, 'topo do revestimento 2.353'), (CR.H_ROOM, 'superfície do modelo 2.391')]
     for v, lab in marks:
@@ -217,14 +218,14 @@ def s06(c):
     footer(c, 6, TOTAL)
 
 def s07(c):
-    header(c, 'Critério de paginação e quadro R0 × R1',
+    header(c, 'Critério de paginação e quadro R0 × R2',
            'Prioridade: o máximo de peças inteiras com a paginação equilibrada. Os cortes que sobram ficam simétricos, largos e nas pontas.', 7, TOTAL)
     xl = MG; wl = 500
     y = section(c, xl, PH - 130, 'Regras', wl)
     regras = [
         ('R1 · Fiadas inteiras.', '15 fiadas inteiras desde o piso em todas as paredes (módulo 157 mm). O revestimento termina em 2.353 mm, com perfil; a faixa de 38 mm até o forro vai em pintura. Some a tira de 36 mm do R0.'),
         ('R2 · Eixo central.', 'Cada parede nasce do seu eixo. Fica o maior número de colunas inteiras em que a ponta ainda tem pelo menos 40% da peça (30 mm); as duas pontas recebem o mesmo corte.'),
-        ('R3 · Vãos preservados.', 'Nicho e porta existentes não se movem; a malha é recortada neles. No P1 os lados do nicho caem exatamente nas juntas.'),
+        ('R3 · Vãos.', 'A porta existente não se move; a malha é recortada nela. O nicho é centrado na P1: com 13 colunas de largura, os dois lados caem exatamente nas juntas.'),
         ('R4 · Retorno estreito.', 'Na P6 (150 mm) a peça inteira fica na quina externa e o corte de 73 mm no canto interno.'),
         ('R5 · Acentos Nuage.', 'Mesma quantidade e região do R0, sempre em peça inteira (56 nas paredes e no nicho).'),
         ('R6 · Bancada.', 'Fiadas inteiras a partir da frente; cortes junto à parede e na ponta norte.'),
@@ -237,7 +238,7 @@ def s07(c):
     para(c, xl, y, wl, 'Com 2.391 mm de parede e módulo de 157 mm, cabem 15 fiadas inteiras e sobram 36 mm. Revestir até o forro obriga uma fiada de 36 mm '
          'em todas as paredes (107 tiras, cerca de 27 peças a mais e +1 caixa). Parar na fiada 15 deixa todas as fiadas inteiras; o topo leva perfil e a faixa vai em pintura junto com o forro.', 9.0, 11.8)
     xr = MG + wl + 36; wr = PW - MG - xr
-    yr = section(c, xr, PH - 130, 'Quadro R0 × R1 por parede', wr)
+    yr = section(c, xr, PH - 130, 'Quadro R0 × R2 por parede', wr)
     rows = []
     for sid in ('P1', 'P2', 'P3', 'P4', 'P5', 'P6'):
         r0 = R0S[sid]; r1 = RT[sid]
@@ -245,11 +246,11 @@ def s07(c):
                      ('%s · %s' % (fm(r1['c'], 1), fm(r1['c'], 1))) if sid != 'P6' else '73 · inteira', '—', str(r1['nb'] + r1['nn']), str(r1['full'])])
     rows.append({'cells': ['Total', '', '', str(sum(R0S[k]['frag'] for k in R0S)), str(sum(R0S[k]['inteiras'] for k in R0S)), '', '',
                            str(sum(RT[k]['nb'] + RT[k]['nn'] for k in R0S)), str(sum(RT[k]['full'] for k in R0S))], 'bold': True, 'fill': K08})
-    yr = table(c, xr, yr, [40, 76, 54, 56, 52, 80, 44, 54, wr - 456], ['Parede', 'R0 pontas mm', 'R0 topo', 'R0 frag.', 'R0 int.', 'R1 pontas mm', 'R1 topo', 'R1 peças', 'R1 int.'],
+    yr = table(c, xr, yr, [40, 76, 54, 56, 52, 80, 44, 54, wr - 456], ['Parede', 'R0 pontas mm', 'R0 topo', 'R0 frag.', 'R0 int.', 'R2 pontas mm', 'R2 topo', 'R2 peças', 'R2 int.'],
                rows, size=8.4, pad=3.4, aligns=['l', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r'], bold_first=True, hsize=8.0)
     yr -= 14
     para(c, xr, yr, wr, 'O R0 conta mais peças inteiras em P1, P2, P4 e P5 porque ancorou a malha num canto: ganha uma coluna inteira por fiada, mas deixa um corte de 30 a 42 mm '
-         'de um lado só, a tira de 36 mm no topo e recortes estreitos nos lados do nicho. A R1 troca essa coluna por duas pontas iguais e largas e elimina a tira do topo. '
+         'de um lado só, a tira de 36 mm no topo e recortes estreitos nos lados do nicho. A R2 troca essa coluna por duas pontas iguais e largas e elimina a tira do topo. '
          'Se preferir ancorar em canto nas paredes sem vão (P2 e P5), a troca é de 15 peças inteiras por parede: posso gerar essa variante.', 8.8, 11.4, 'S', K70)
     footer(c, 7, TOTAL)
 
