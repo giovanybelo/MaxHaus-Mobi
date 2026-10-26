@@ -109,7 +109,7 @@ def plan_sheet(c, n, titulo, sub, mode, blocks):
     header(c, titulo, sub, n, TOTAL)
     ox = MG + 150; oy = PH - 175
     draw_plan(c, ox, oy, SC15, mode)
-    txt(c, ox - 10, 72, 'Esquema cotado, escala 1:15 · não medir pela impressão. Posição do vaso e da derivação de água quente: conferir em obra.', 7.2, 'S-I', K70)
+    txt(c, ox - 10, 72, 'Esquema cotado, escala 1:15 · não medir pela impressão. Vaso na P5 com eixo a 980 mm da P3, quase no centro da circulação; derivação de água quente a conferir em obra.', 7.2, 'S-I', K70)
     xr = 660; wr = PW - MG - xr
     yr = PH - 130
     for titulo_b, itens in blocks:
@@ -146,7 +146,7 @@ def s04(c):
             ('Caimento.', '1 a 2% até o coletor, sujeito ao sistema Monofloor e às cotas existentes.'),
         ]),
         ('R2 · ao lado do vaso', [
-            ('Proposta.', 'Grelha oculta quadrada 100 × 100 mm na posição da caixa existente, sem deslocar a saída. Posição desenhada é reserva: levantamento obrigatório. Preservar inspeção e desconexão sifonada.'),
+            ('Proposta.', 'Grelha oculta quadrada 100 × 100 mm, desenhada entre o vaso e a parede da porta. Fica na posição da caixa existente, sem deslocar a saída: o desenho é reserva e o levantamento é obrigatório. Preservar inspeção e desconexão sifonada.'),
         ]),
     ])
 

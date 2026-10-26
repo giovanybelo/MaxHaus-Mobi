@@ -108,11 +108,16 @@ def draw_plan(c, ox, oy, sc, mode='demo', labels=True):
     rect(c, X(10), Y(1670), 530 * sc, 1650 * sc, NUAGE, K, 0.6)
     txt(c, X(275), Y(845), 'BANCADA', 8, 'S-B', K, 'c', rot=90)
     txt(c, X(275) + 10, Y(845), '1650 × 530 · tampo a 840', 6.2, 'S', K70, 'c', rot=90)
-    # vaso (posição de referência)
-    rect(c, X(580), Y(180), 360 * sc, 180 * sc, white, K, 0.6)
+    # vaso na P5, quase no centro da circulação (eixo a 980 mm da P3); bacia 400 × 700
+    VX = 980.0
+    rect(c, X(VX - 200), Y(180), 400 * sc, 180 * sc, white, K, 0.6)
     c.saveState(); c.setStrokeColor(K); c.setFillColor(white); c.setLineWidth(0.6)
-    c.ellipse(X(580), Y(650), X(940), Y(190), stroke=1, fill=1); c.restoreState()
-    txt(c, X(760), Y(430), 'VASO', 7.2, 'S-B', K, 'c')
+    c.ellipse(X(VX - 180), Y(700), X(VX + 180), Y(185), stroke=1, fill=1); c.restoreState()
+    txt(c, X(VX), Y(470), 'VASO', 7.2, 'S-B', K, 'c')
+    line(c, X(VX), Y(-40), X(VX), Y(760), 0.6, MAGENTA, (4, 1.5, 1, 1.5))
+    dimh(c, X(540), X(VX), Y(800), '440', 6.2)
+    dimh(c, X(VX), X(PL_W), Y(800), '443', 6.2)
+    txt(c, X(VX), Y(800) - 10, 'eixo do vaso a 980 da P3', 6.0, 'S-I', K70, 'c')
     # porta (P4, leste)
     rect(c, X(PL_W), Y(1246), t * sc, 801 * sc, white, None)
     line(c, X(PL_W), Y(445), X(PL_W + t), Y(445), 0.6, K); line(c, X(PL_W), Y(1246), X(PL_W + t), Y(1246), 0.6, K)
@@ -132,10 +137,10 @@ def draw_plan(c, ox, oy, sc, mode='demo', labels=True):
     # ralos
     r1c = HexColor('#2b2b2b') if mode == 'agua' else HexColor('#7a7a7a')
     rect(c, X(177), Y(2497), 90 * sc, 720 * sc, r1c, None)
-    rect(c, X(1108), Y(335), 100 * sc, 100 * sc, r1c, None)
+    rect(c, X(1250), Y(335), 100 * sc, 100 * sc, r1c, None)
     if mode == 'agua':
         txt(c, X(272), Y(2140), 'R1 · ralo linear 720 × 90', 6.6, 'S-B', K, 'l', rot=90)
-        txt(c, X(1158), Y(335) - 9, 'R2 · 100 × 100', 6.6, 'S-B', K, 'c')
+        txt(c, X(1300), Y(335) - 9, 'R2 · 100 × 100', 6.6, 'S-B', K, 'c')
         # caimento
         line(c, X(1200), Y(2200), X(330), Y(2200), 1.2, K)
         c.saveState(); c.setFillColor(K); p = c.beginPath()

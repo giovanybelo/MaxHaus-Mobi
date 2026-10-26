@@ -219,7 +219,7 @@ def s21(c):
         ('6', 'Verga da porta a 1.990 mm.', 'Deixa 49 mm de peça acima do vão; a 2.041 mm o recorte some.', 'Cliente e marcenaria', 'Prancha 12', False),
         ('7', 'Sistema Everest no box.', 'Monofloor aprova aderência, atrito molhado, selagem e ralos.', 'Monofloor', 'MF01', False),
         ('8', 'Ralo R1 de 720 mm.', 'Produto e altura disponíveis; o link de 600 mm foi descartado.', 'Hidráulica', 'Prancha 04', False),
-        ('9', 'Posição do vaso e da caixa do R2.', 'Desenhados como reserva.', 'Obra', 'Pranchas 03–04', False),
+        ('9', 'Eixo do vaso e caixa do R2.', 'Vaso desenhado na P5 com eixo a 980 mm da P3; R2 entre o vaso e a P4. Confirmar a saída do vaso e a caixa existente.', 'Obra', 'Pranchas 03–05', False),
         ('10', 'Bases e metais.', 'Base do chuveiro, bica e registros; tonalidade dos metais.', 'Cliente e hidráulica', 'Prancha 17', False),
         ('11', 'Rejunte Moon nas paredes.', 'Azul escuro exige amostra e aprovação.', 'Cliente', 'RV04', False),
         ('12', 'Logística e gestão.', 'Frete, entrega no condomínio e caçamba fora do orçamento: incluir como provisão?', 'Cliente', 'Orçamento R2', False),

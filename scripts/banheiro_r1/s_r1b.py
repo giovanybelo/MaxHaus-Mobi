@@ -118,7 +118,7 @@ NOTES_P4 = [
 ]
 NOTES_P5 = [
     ('Eixo e pontas.', '17 colunas inteiras e pontas de 58 mm (77%) nos dois lados.'),
-    ('Vaso.', 'Vaso com caixa acoplada reaproveitado: engate e registro conferidos antes de assentar; ponto de alimentação no centro de uma peça ou na junta.'),
+    ('Vaso.', 'Vaso com caixa acoplada reaproveitado, encostado nesta parede com o eixo a 980 mm da P3, quase no centro da circulação. Engate e registro conferidos antes de assentar; ponto de alimentação no centro de uma peça ou na junta.'),
     ('Acentos.', '11 Nuage, em peça inteira.'),
 ]
 
