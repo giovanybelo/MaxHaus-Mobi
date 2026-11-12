@@ -29,9 +29,35 @@ TAB_NUM = [
     ('Largura × profundidade', '%s × %s m' % (br(qa.FACE_LESTE - qa.X_TRILHO), br(qa.Y_CORTINA - qa.FACE_NORTE)),
      'da cortina à fachada · da parede norte à cortina'),
     ('Linha da cortina', '2,85 m', 'da parede norte — 0,06 m além da ponta da escada'),
-    ('Trilho CT01', '%s m' % br(qa.TRILHO_M), 'eixo, do canto da sala de estar à fachada leste'),
     ('Cortina recolhida', '~%s m de trilho' % br(qa.PACOTE_M), 'pacote no canto noroeste, junto à parede'),
-    ('Vão sem apoio no teto', '%s m' % br(qa.VAO_LIVRE), 'sob a claraboia: perfil autoportante'),
+]
+
+
+def _m(a, b):
+    return '%s m' % br(b - a)
+
+
+# trilho CT01 — medidas no eixo, em metros a partir do canto noroeste
+TAB_TRILHO = [
+    ('Descida rente à parede oeste (x %s)' % br(qa.X_TRILHO), 'y %s a %s' % (br(qa.Y0_TRILHO), br(qa.Y_CURVA)),
+     '%s m' % br(qa.DESCIDA_M)),
+    ('Curva no fim da ponta da escada, R %s' % br(qa.R_CURVA), 'y %s a x %s' % (br(qa.Y_CURVA), br(qa.X_CURVA)),
+     '%s m' % br(qa.CURVA_M)),
+    ('Reta até o último apoio antes da claraboia', 'x %s a %s' % (br(qa.X_CURVA), br(qa.FIX_OESTE)),
+     _m(qa.X_CURVA, qa.FIX_OESTE)),
+    ('Vão sob a claraboia, sem apoio — perfil PF1', 'x %s a %s' % (br(qa.FIX_OESTE), br(qa.FIX_LESTE)),
+     '%s m' % br(qa.VAO_LIVRE)),
+    ('   · dentro do vão: faixa da moldura FC01', 'x %s a %s' % (br(qa.MOLDURA[0]), br(qa.MOLDURA[2])),
+     _m(qa.MOLDURA[0], qa.MOLDURA[2])),
+    ('   · dentro do vão: sobre o vidro', 'x %s a %s' % (br(qa.VIDRO[0]), br(qa.VIDRO[2])),
+     _m(qa.VIDRO[0], qa.VIDRO[2])),
+    ('Do apoio leste até a fachada (J02)', 'x %s a %s' % (br(qa.FIX_LESTE), br(qa.X_FIM)),
+     _m(qa.FIX_LESTE, qa.X_FIM)),
+    ('Total do eixo CT01', 'do canto noroeste à fachada', '%s m' % br(qa.TRILHO_M)),
+    ('Linha sob o vidro, a y %s' % br(qa.Y_CORTINA), 'borda norte %s · sul %s' % (br(qa.VIDRO[1]), br(qa.VIDRO[3])),
+     '%s / %s m' % (br(qa.Y_CORTINA - qa.VIDRO[1]), br(qa.VIDRO[3] - qa.Y_CORTINA))),
+    ('Apoios AP, só no concreto', 'y 0,60 · 1,30 · 2,20 · x %s · %s · %s' % tuple(br(a[0]) for a in qa.APOIOS[3:]),
+     '6 pontos'),
 ]
 
 TAB_CAMA = [(n, '%s × %s' % (br(l), br(c))) + tuple(_folgas_txt(l, c))
@@ -48,28 +74,16 @@ TAB_FASE = [
 ]
 
 NOTAS = [
-    ['**O trilho é reto e vira exatamente no fim da ponta da escada.',
-     'Recolhida, a cortina fica no canto noroeste da sala de estar. Estendida, desce em linha reta',
-     'rente à parede, sem desvio — passa por cima do degrau da ponta da escada —, faz a curva no',
-     'fim da ponta e corre reta a 2,85 m da parede norte até a fachada. Ali a fachada é vidro (J02):',
-     'a cortina encosta no caixilho; se a J02 tiver montante central, o trilho termina nele.'],
-    ['**A cama fica no sentido leste–oeste, encostada na parede norte.',
-     'A lateral longa encosta na parede norte, que é cega (divisa); a cabeceira fica a leste. Sobram',
-     '%s m no pé, até a cortina, %s m atrás da cabeceira (criado e acesso à J01) e %s m' % tuple(br(v) for v in qa.folgas(qa.CASAL[1], qa.CASAL[2])),
-     'do lado sul: os 0,60 m mínimos estão atendidos. A faixa sul inteira, de %s × %s m,' % (br(qa.TROCA[2] - qa.TROCA[0]), br(qa.TROCA[3] - qa.TROCA[1])),
-     'é a área de troca de roupa. Viúva sobra mais; queen passa no limite.'],
-    ['**Sob a claraboia o trilho não tem apoio no teto.',
-     'Entre 5,00 e 7,23 m são %s m sem fixação — trilho comum pede apoio a cada ~1,0 m. Entra' % br(qa.VAO_LIVRE),
-     'perfil autoportante (tubo metálico) fixado no concreto antes e depois da moldura, com o',
-     'trilho preso nele; alternativa, cabo de aço tensionado. Confirmar com o fornecedor.'],
+    ['**Trilho reto, com uma curva só, no fim da ponta da escada.',
+     'Desce rente à parede, passa sobre o degrau, vira e corre a 2,85 m da parede norte até a J02.',
+     'Se a J02 tiver montante central, o trilho termina nele. Cama e folgas: ver a tabela acima.'],
+    ['**Sob a claraboia: %s m sem fixação, do apoio x %s ao x %s.' % (br(qa.VAO_LIVRE), br(qa.FIX_OESTE), br(qa.FIX_LESTE)),
+     'Trilho comum pede apoio a cada ~1,0 m: perfil autoportante PF1 (tubo metálico) no concreto',
+     'antes e depois da moldura, com o trilho preso nele — ou cabo de aço tensionado. Medidas',
+     'sobre o scan: conferir vidro e moldura em obra antes de cortar o perfil.'],
     ['**Fechamento elétrico: o equipamento é de 2027/28, a espera é de agora.',
-     'Com o teto aberto, eletroduto, caixa T18 e comando S10 com cabo guia custam pouco; depois',
-     'da pintura custam abrir laje aparente e repintar. A moldura fixa na faixa de 0,12 m em volta',
-     'do vidro — confirmar em estrutura se há viga de borda da piscina ali.'],
-    ['**O que a cortina muda no resto do teto.',
-     'P01 passa a plafon, sobre a cama. AC01 sai da linha da cortina para 4,76 / 3,05 m: com a',
-     'cortina fechada o quarto fica sem evaporadora própria. T16 e T19 são as tomadas das duas',
-     'cabeceiras; S09 é paralelo da luz da sala de estar, no pilar entre J01 e J02.'],
+     'Eletroduto, caixa T18 e comando S10 com cabo guia entram com o teto aberto. A moldura fixa',
+     'na faixa de 0,12 m em volta do vidro — confirmar se há viga de borda da piscina ali.'],
 ]
 
 
@@ -163,7 +177,12 @@ def construir():
     ch(qa.X_TRILHO + qa.FOLGA_TECIDO, cr[0], 0.68, 0, br(o))
     ch(cr[2], qa.FACE_LESTE, 0.68, 0, br(l))
     cv(cr[3], qa.Y_CORTINA - qa.FOLGA_TECIDO, 5.70, 0, br(p))
+    ch(qa.X_CURVA, qa.FIX_OESTE, qa.Y_CORTINA, 22, br(qa.FIX_OESTE - qa.X_CURVA))
     ch(qa.FIX_OESTE, qa.FIX_LESTE, qa.Y_CORTINA, 22, '%s sem apoio no teto' % br(qa.VAO_LIVRE))
+    ch(qa.FIX_LESTE, qa.X_FIM, qa.Y_CORTINA, 22, br(qa.X_FIM - qa.FIX_LESTE))
+    ch(qa.VIDRO[0], qa.VIDRO[2], qa.Y_CORTINA, -16, '%s sobre o vidro' % br(qa.VIDRO[2] - qa.VIDRO[0]))
+    cv(qa.VIDRO[1], qa.Y_CORTINA, 7.00, 0, br(qa.Y_CORTINA - qa.VIDRO[1]))
+    cv(qa.Y_CORTINA, qa.VIDRO[3], 7.00, 0, br(qa.VIDRO[3] - qa.Y_CORTINA))
     c = d.PM(4.05, 3.32)
     d.txt(c[0], c[1], 'fim da ponta da escada (acima)', 7.2, K70, 'normal', 'start')
 
@@ -194,6 +213,9 @@ def construir():
     fim = tabela(d, cx2, fim + 34, cw,
                  [('ID', 0.12, 'start'), ('Item', 0.70, 'start'), ('Fase', 0.18, 'end')],
                  TAB_FASE, titulo='ESCOPO — O QUE ENTRA AGORA E O QUE FICA PARA 2027/28', alt=18)
+    fim = tabela(d, cx2, fim + 34, cw,
+                 [('Trilho CT01 — trecho', 0.46, 'start'), ('De – até (m)', 0.36, 'end'), ('Medida', 0.18, 'end')],
+                 TAB_TRILHO, titulo='TRILHO CT01 — MEDIDAS NO EIXO, A PARTIR DO CANTO NOROESTE', alt=17)
     paragrafos(d, cx2, fim + 24, cw, NOTAS, size=8.0, lh=11.0, gap=5.0)
 
     rodape(d,

@@ -87,6 +87,17 @@ FIX_OESTE = MOLDURA[0] - 0.05                  # último apoio antes do vidro
 FIX_LESTE = MOLDURA[2] + 0.02                  # primeiro apoio depois
 VAO_LIVRE = FIX_LESTE - FIX_OESTE              # trecho sem apoio no teto ≈ 2,3 m
 
+# trechos do eixo, em metros a partir do canto noroeste (Prancha 13 e FO6)
+Y0_TRILHO = FACE_NORTE + AFASTAMENTO           # 0,16 — início, no canto da sala de estar
+Y_CURVA = Y_CORTINA - R_CURVA                  # 2,60 — começo da curva
+X_CURVA = X_TRILHO + R_CURVA                   # 4,80 — fim da curva
+X_FIM = FACE_LESTE - AFASTAMENTO               # 7,69 — fim, junto à fachada (J02)
+DESCIDA_M = Y_CURVA - Y0_TRILHO                # 2,44
+CURVA_M = math.pi / 2.0 * R_CURVA              # 0,39
+RETA_M = X_FIM - X_CURVA                       # 2,89
+APOIOS = [(X_TRILHO, 0.60), (X_TRILHO, 1.30), (X_TRILHO, 2.20),
+          (FIX_OESTE, Y_CORTINA), (FIX_LESTE, Y_CORTINA), (FACE_LESTE - 0.12, Y_CORTINA)]
+
 # --- cama e circulação ---------------------------------------------------------
 # REV. O: a cama gira e fica no sentido leste–oeste, com a lateral longa
 # encostada na parede norte (a divisa, parede cega) e a cabeceira a leste, do
@@ -163,9 +174,7 @@ def desenhar_trilho(d, sw=2.6, rotulo=True, size=7.2, apoios=True):
     d.rect(a[0] - 3.2, a[1], 6.4, b[1] - a[1], fill=MAGENTA18, stroke=DEMO, sw=0.9)
     if apoios:
         # apoios no concreto; nenhum entre FIX_OESTE e FIX_LESTE
-        for (x, y) in [(X_TRILHO, 0.60), (X_TRILHO, 1.30),
-                       (X_TRILHO, 2.20), (FIX_OESTE, Y_CORTINA),
-                       (FIX_LESTE, Y_CORTINA), (FACE_LESTE - 0.12, Y_CORTINA)]:
+        for (x, y) in APOIOS:
             cx, cy = d.PM(x, y)
             d.rect(cx - 2.6, cy - 2.6, 5.2, 5.2, fill=K, stroke=None)
     if rotulo:

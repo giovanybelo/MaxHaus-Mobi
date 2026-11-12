@@ -7,163 +7,25 @@
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">FO2 — PISO</text>
 <text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">extraído do Caderno Alternativo A — REV. O</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
-<path d="M157.60 276.06 L381.87 276.06 L381.87 462.95 L218.84 462.95 L218.84 378.29 L157.60 378.29 Z" fill="#ffffff"/>
-<line x1="158.00" y1="276.06" x2="158.00" y2="378.29" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="157.60" y1="320.00" x2="158.00" y2="320.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="166.80" y1="276.06" x2="166.80" y2="378.29" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="158.00" y1="360.00" x2="166.80" y2="360.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="175.60" y1="276.06" x2="175.60" y2="378.29" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="166.80" y1="280.00" x2="175.60" y2="280.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="184.40" y1="276.06" x2="184.40" y2="378.29" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="175.60" y1="320.00" x2="184.40" y2="320.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="193.20" y1="276.06" x2="193.20" y2="378.29" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="184.40" y1="360.00" x2="193.20" y2="360.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="202.00" y1="276.06" x2="202.00" y2="378.29" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="193.20" y1="280.00" x2="202.00" y2="280.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="210.80" y1="276.06" x2="210.80" y2="378.29" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="202.00" y1="320.00" x2="210.80" y2="320.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="219.60" y1="276.06" x2="219.60" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="210.80" y1="360.00" x2="219.60" y2="360.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="228.40" y1="276.06" x2="228.40" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="219.60" y1="280.00" x2="228.40" y2="280.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="219.60" y1="400.00" x2="228.40" y2="400.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="237.20" y1="276.06" x2="237.20" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="228.40" y1="320.00" x2="237.20" y2="320.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="228.40" y1="440.00" x2="237.20" y2="440.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="246.00" y1="276.06" x2="246.00" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="237.20" y1="360.00" x2="246.00" y2="360.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="254.80" y1="276.06" x2="254.80" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="246.00" y1="280.00" x2="254.80" y2="280.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="246.00" y1="400.00" x2="254.80" y2="400.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="263.60" y1="276.06" x2="263.60" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="254.80" y1="320.00" x2="263.60" y2="320.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="254.80" y1="440.00" x2="263.60" y2="440.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="272.40" y1="276.06" x2="272.40" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="263.60" y1="360.00" x2="272.40" y2="360.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="281.20" y1="276.06" x2="281.20" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="272.40" y1="280.00" x2="281.20" y2="280.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="272.40" y1="400.00" x2="281.20" y2="400.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="290.00" y1="276.06" x2="290.00" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="281.20" y1="320.00" x2="290.00" y2="320.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="281.20" y1="440.00" x2="290.00" y2="440.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="298.80" y1="276.06" x2="298.80" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="290.00" y1="360.00" x2="298.80" y2="360.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="307.60" y1="276.06" x2="307.60" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="298.80" y1="280.00" x2="307.60" y2="280.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="298.80" y1="400.00" x2="307.60" y2="400.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="316.40" y1="276.06" x2="316.40" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="307.60" y1="320.00" x2="316.40" y2="320.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="307.60" y1="440.00" x2="316.40" y2="440.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="325.20" y1="276.06" x2="325.20" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="316.40" y1="360.00" x2="325.20" y2="360.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="334.00" y1="276.06" x2="334.00" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="325.20" y1="280.00" x2="334.00" y2="280.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="325.20" y1="400.00" x2="334.00" y2="400.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="342.80" y1="276.06" x2="342.80" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="334.00" y1="320.00" x2="342.80" y2="320.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="334.00" y1="440.00" x2="342.80" y2="440.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="351.60" y1="276.06" x2="351.60" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="342.80" y1="360.00" x2="351.60" y2="360.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="360.40" y1="276.06" x2="360.40" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="351.60" y1="280.00" x2="360.40" y2="280.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="351.60" y1="400.00" x2="360.40" y2="400.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="369.20" y1="276.06" x2="369.20" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="360.40" y1="320.00" x2="369.20" y2="320.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="360.40" y1="440.00" x2="369.20" y2="440.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="378.00" y1="276.06" x2="378.00" y2="462.95" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="369.20" y1="360.00" x2="378.00" y2="360.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="378.00" y1="280.00" x2="381.87" y2="280.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="378.00" y1="400.00" x2="381.87" y2="400.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<path d="M157.60 276.06 L381.87 276.06 L381.87 462.95 L218.84 462.95 L218.84 378.29 L157.60 378.29 Z" fill="none" stroke="#000000" stroke-width="0.90"/>
-<path d="M218.84 462.95 L381.87 462.95 L381.87 575.23 L157.60 575.23 L157.60 487.88 L218.84 487.88 Z" fill="#ffffff"/>
-<line x1="158.00" y1="487.88" x2="158.00" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="157.60" y1="560.00" x2="158.00" y2="560.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="166.80" y1="487.88" x2="166.80" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="175.60" y1="487.88" x2="175.60" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="166.80" y1="520.00" x2="175.60" y2="520.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="184.40" y1="487.88" x2="184.40" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="175.60" y1="560.00" x2="184.40" y2="560.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="193.20" y1="487.88" x2="193.20" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="202.00" y1="487.88" x2="202.00" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="193.20" y1="520.00" x2="202.00" y2="520.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="210.80" y1="487.88" x2="210.80" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="202.00" y1="560.00" x2="210.80" y2="560.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="219.60" y1="462.95" x2="219.60" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="218.84" y1="480.00" x2="219.60" y2="480.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="228.40" y1="462.95" x2="228.40" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="219.60" y1="520.00" x2="228.40" y2="520.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="237.20" y1="462.95" x2="237.20" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="228.40" y1="560.00" x2="237.20" y2="560.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="246.00" y1="462.95" x2="246.00" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="237.20" y1="480.00" x2="246.00" y2="480.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="254.80" y1="462.95" x2="254.80" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="246.00" y1="520.00" x2="254.80" y2="520.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="263.60" y1="462.95" x2="263.60" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="254.80" y1="560.00" x2="263.60" y2="560.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="272.40" y1="462.95" x2="272.40" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="263.60" y1="480.00" x2="272.40" y2="480.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="281.20" y1="462.95" x2="281.20" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="272.40" y1="520.00" x2="281.20" y2="520.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="290.00" y1="462.95" x2="290.00" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="281.20" y1="560.00" x2="290.00" y2="560.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="298.80" y1="462.95" x2="298.80" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="290.00" y1="480.00" x2="298.80" y2="480.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="307.60" y1="462.95" x2="307.60" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="298.80" y1="520.00" x2="307.60" y2="520.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="316.40" y1="462.95" x2="316.40" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="307.60" y1="560.00" x2="316.40" y2="560.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="325.20" y1="462.95" x2="325.20" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="316.40" y1="480.00" x2="325.20" y2="480.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="334.00" y1="462.95" x2="334.00" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="325.20" y1="520.00" x2="334.00" y2="520.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="342.80" y1="462.95" x2="342.80" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="334.00" y1="560.00" x2="342.80" y2="560.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="351.60" y1="462.95" x2="351.60" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="342.80" y1="480.00" x2="351.60" y2="480.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="360.40" y1="462.95" x2="360.40" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="351.60" y1="520.00" x2="360.40" y2="520.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="369.20" y1="462.95" x2="369.20" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="360.40" y1="560.00" x2="369.20" y2="560.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="378.00" y1="462.95" x2="378.00" y2="575.23" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="369.20" y1="480.00" x2="378.00" y2="480.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="378.00" y1="520.00" x2="381.87" y2="520.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<path d="M218.84 462.95 L381.87 462.95 L381.87 575.23 L157.60 575.23 L157.60 487.88 L218.84 487.88 Z" fill="none" stroke="#000000" stroke-width="0.90"/>
-<path d="M247.57 202.03 L381.87 202.03 L381.87 276.06 L247.57 276.06 Z" fill="#ffffff"/>
-<line x1="254.80" y1="202.03" x2="254.80" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="263.60" y1="202.03" x2="263.60" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="272.40" y1="202.03" x2="272.40" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="263.60" y1="240.00" x2="272.40" y2="240.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="281.20" y1="202.03" x2="281.20" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="290.00" y1="202.03" x2="290.00" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="298.80" y1="202.03" x2="298.80" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="290.00" y1="240.00" x2="298.80" y2="240.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="307.60" y1="202.03" x2="307.60" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="316.40" y1="202.03" x2="316.40" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="325.20" y1="202.03" x2="325.20" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="316.40" y1="240.00" x2="325.20" y2="240.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="334.00" y1="202.03" x2="334.00" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="342.80" y1="202.03" x2="342.80" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="351.60" y1="202.03" x2="351.60" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="342.80" y1="240.00" x2="351.60" y2="240.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="360.40" y1="202.03" x2="360.40" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="369.20" y1="202.03" x2="369.20" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="378.00" y1="202.03" x2="378.00" y2="276.06" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="369.20" y1="240.00" x2="378.00" y2="240.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<path d="M247.57 202.03 L381.87 202.03 L381.87 276.06 L247.57 276.06 Z" fill="none" stroke="#000000" stroke-width="0.90"/>
-<path d="M98.12 276.06 L157.60 276.06 L157.60 368.53 L157.52 366.34 L157.26 364.15 L156.83 362.00 L156.23 359.88 L155.47 357.82 L154.55 355.82 L153.48 353.90 L152.26 352.08 L150.90 350.35 L149.40 348.74 L147.79 347.24 L146.06 345.88 L144.23 344.66 L142.32 343.59 L140.32 342.67 L138.26 341.90 L136.14 341.31 L133.98 340.88 L131.80 340.62 L129.60 340.53 L98.12 340.53 Z" fill="#ffffff"/>
-<line x1="105.20" y1="276.06" x2="105.20" y2="340.53" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="98.12" y1="320.00" x2="105.20" y2="320.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="114.00" y1="276.06" x2="114.00" y2="340.53" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="122.80" y1="276.06" x2="122.80" y2="340.53" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="114.00" y1="280.00" x2="122.80" y2="280.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="131.60" y1="276.06" x2="131.60" y2="340.61" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="122.80" y1="320.00" x2="131.60" y2="320.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="140.40" y1="276.06" x2="140.40" y2="342.70" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="149.20" y1="276.06" x2="149.20" y2="348.55" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="140.40" y1="280.00" x2="149.20" y2="280.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<line x1="149.20" y1="320.00" x2="157.60" y2="320.00" stroke="#000000" stroke-width="0.40" opacity="0.30"/>
-<path d="M98.12 276.06 L157.60 276.06 L157.60 368.53 L157.52 366.34 L157.26 364.15 L156.83 362.00 L156.23 359.88 L155.47 357.82 L154.55 355.82 L153.48 353.90 L152.26 352.08 L150.90 350.35 L149.40 348.74 L147.79 347.24 L146.06 345.88 L144.23 344.66 L142.32 343.59 L140.32 342.67 L138.26 341.90 L136.14 341.31 L133.98 340.88 L131.80 340.62 L129.60 340.53 L98.12 340.53 Z" fill="none" stroke="#000000" stroke-width="0.90"/>
-<path d="M72.01 340.53 L129.60 340.53 L131.80 340.62 L133.98 340.88 L136.14 341.31 L138.26 341.90 L140.32 342.67 L142.32 343.59 L144.23 344.66 L146.06 345.88 L147.79 347.24 L149.40 348.74 L150.90 350.35 L152.26 352.08 L153.48 353.90 L154.55 355.82 L155.47 357.82 L156.23 359.88 L156.83 362.00 L157.26 364.15 L157.52 366.34 L157.60 368.53 L157.60 575.23 L72.01 575.23 Z" fill="#ededed"/>
+<path d="M157.60 276.06 L381.87 276.06 L381.87 462.95 L218.84 462.95 L218.84 378.29 L157.60 378.29 Z" fill="#ededed"/>
+<path d="M218.84 462.95 L381.87 462.95 L381.87 575.23 L157.60 575.23 L157.60 487.88 L218.84 487.88 Z" fill="#ededed"/>
+<path d="M247.57 202.03 L381.87 202.03 L381.87 276.06 L247.57 276.06 Z" fill="#ededed"/>
+<path d="M98.12 276.06 L157.60 276.06 L157.60 368.53 L157.52 366.34 L157.26 364.15 L156.83 362.00 L156.23 359.88 L155.47 357.82 L154.55 355.82 L153.48 353.90 L152.26 352.08 L150.90 350.35 L149.40 348.74 L147.79 347.24 L146.06 345.88 L144.23 344.66 L142.32 343.59 L140.32 342.67 L138.26 341.90 L136.14 341.31 L133.98 340.88 L131.80 340.62 L129.60 340.53 L98.12 340.53 Z" fill="#ededed"/>
+<path d="M72.01 340.53 L129.60 340.53 L131.80 340.62 L133.98 340.88 L136.14 341.31 L138.26 341.90 L140.32 342.67 L142.32 343.59 L144.23 344.66 L146.06 345.88 L147.79 347.24 L149.40 348.74 L150.90 350.35 L152.26 352.08 L153.48 353.90 L154.55 355.82 L155.47 357.82 L156.23 359.88 L156.83 362.00 L157.26 364.15 L157.52 366.34 L157.60 368.53 L157.60 575.23 L72.01 575.23 Z" fill="#ffffff"/>
+<line x1="94.00" y1="340.53" x2="94.00" y2="575.23" stroke="#8c8c8c" stroke-width="0.45" opacity="0.55"/>
+<line x1="118.00" y1="340.53" x2="118.00" y2="575.23" stroke="#8c8c8c" stroke-width="0.45" opacity="0.55"/>
+<line x1="142.00" y1="343.44" x2="142.00" y2="575.23" stroke="#8c8c8c" stroke-width="0.45" opacity="0.55"/>
+<line x1="72.01" y1="344.00" x2="143.05" y2="344.00" stroke="#8c8c8c" stroke-width="0.45" opacity="0.55"/>
+<line x1="72.01" y1="368.00" x2="157.58" y2="368.00" stroke="#8c8c8c" stroke-width="0.45" opacity="0.55"/>
+<line x1="72.01" y1="392.00" x2="157.60" y2="392.00" stroke="#8c8c8c" stroke-width="0.45" opacity="0.55"/>
+<line x1="72.01" y1="416.00" x2="157.60" y2="416.00" stroke="#8c8c8c" stroke-width="0.45" opacity="0.55"/>
+<line x1="72.01" y1="440.00" x2="157.60" y2="440.00" stroke="#8c8c8c" stroke-width="0.45" opacity="0.55"/>
+<line x1="72.01" y1="464.00" x2="157.60" y2="464.00" stroke="#8c8c8c" stroke-width="0.45" opacity="0.55"/>
+<line x1="72.01" y1="488.00" x2="157.60" y2="488.00" stroke="#8c8c8c" stroke-width="0.45" opacity="0.55"/>
+<line x1="72.01" y1="512.00" x2="157.60" y2="512.00" stroke="#8c8c8c" stroke-width="0.45" opacity="0.55"/>
+<line x1="72.01" y1="536.00" x2="157.60" y2="536.00" stroke="#8c8c8c" stroke-width="0.45" opacity="0.55"/>
+<line x1="72.01" y1="560.00" x2="157.60" y2="560.00" stroke="#8c8c8c" stroke-width="0.45" opacity="0.55"/>
+<path d="M72.01 340.53 L129.60 340.53 L131.80 340.62 L133.98 340.88 L136.14 341.31 L138.26 341.90 L140.32 342.67 L142.32 343.59 L144.23 344.66 L146.06 345.88 L147.79 347.24 L149.40 348.74 L150.90 350.35 L152.26 352.08 L153.48 353.90 L154.55 355.82 L155.47 357.82 L156.23 359.88 L156.83 362.00 L157.26 364.15 L157.52 366.34 L157.60 368.53 L157.60 575.23 L72.01 575.23 Z" fill="none"/>
 <path d="M72.01 340.53 L129.60 340.53 L131.80 340.62 L133.98 340.88 L136.14 341.31 L138.26 341.90 L140.32 342.67 L142.32 343.59 L144.23 344.66 L146.06 345.88 L147.79 347.24 L149.40 348.74 L150.90 350.35 L152.26 352.08 L153.48 353.90 L154.55 355.82 L155.47 357.82 L156.23 359.88 L156.83 362.00 L157.26 364.15 L157.52 366.34 L157.60 368.53 L157.60 575.23 L72.01 575.23 Z" fill="none" stroke="#000000" stroke-width="0.90"/>
 <path d="M157.60 378.29 L218.84 378.29 L218.84 487.88 L157.60 487.88 Z" fill="#d6ffff"/>
 <path d="M157.60 378.29 L218.84 378.29 L218.84 487.88 L157.60 487.88 Z" fill="none" stroke="#000000" stroke-width="0.90"/>
@@ -260,7 +122,7 @@
 <text x="117.6" y="388.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">COZINHA</text>
 <text x="128.1" y="542.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">CLOSET</text>
 <text x="310.3" y="511.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">QUARTO</text>
-<text x="70.0" y="186.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#000000" font-weight="bold" text-anchor="start">OPÇÃO A  ·  cumaru-ferro + monolítico</text>
+<text x="70.0" y="186.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#000000" font-weight="bold" text-anchor="start">OPÇÃO A  ·  monolítico + porcelanato</text>
 <path d="M591.57 202.03 L725.87 202.03 L725.87 575.23 L416.01 575.23 L416.01 340.53 L442.12 340.53 L442.12 276.06 L591.57 276.06 Z" fill="#ededed"/>
 <path d="M501.60 378.29 L562.84 378.29 L562.84 487.88 L501.60 487.88 Z" fill="#d6ffff"/>
 <path d="M501.60 378.29 L562.84 378.29 L562.84 487.88 L501.60 487.88 Z" fill="none" stroke="#000000" stroke-width="0.90"/>
@@ -330,42 +192,42 @@
 <text x="110.0" y="615.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1</text>
 <text x="150.0" y="615.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">2</text>
 <text x="163.0" y="615.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">m   (base do scan)</text>
-<line x1="70.00" y1="632.20" x2="85.00" y2="632.20" stroke="#000000" stroke-width="2.20"/>
-<text x="92.0" y="635.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Cumaru-ferro em réguas</text>
-<rect x="207.80" y="627.20" width="15.00" height="10.00" fill="#ededed" stroke="#8c8c8c" stroke-width="0.70"/>
-<text x="229.8" y="635.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Monolítico</text>
-<rect x="286.80" y="627.20" width="15.00" height="10.00" fill="#d6ffff" stroke="#8c8c8c" stroke-width="0.70"/>
-<text x="308.8" y="635.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Banheiro — sistema à parte</text>
-<line x1="444.20" y1="632.20" x2="448.20" y2="632.20" stroke="#000000" stroke-width="1.80" stroke-linecap="butt"/>
-<line x1="450.20" y1="632.20" x2="454.20" y2="632.20" stroke="#000000" stroke-width="1.80" stroke-linecap="butt"/>
-<line x1="456.20" y1="632.20" x2="460.20" y2="632.20" stroke="#000000" stroke-width="1.80" stroke-linecap="butt"/>
-<text x="466.2" y="635.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Junta / soleira</text>
-<text x="70.0" y="675.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">OPÇÃO A — CUMARU-FERRO COM COZINHA E CLOSET EM MONOLÍTICO</text>
+<rect x="70.00" y="627.20" width="15.00" height="10.00" fill="#ededed" stroke="#8c8c8c" stroke-width="0.70"/>
+<text x="92.0" y="635.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Monolítico</text>
+<rect x="149.00" y="627.20" width="15.00" height="10.00" fill="#ffffff" stroke="#8c8c8c" stroke-width="0.70"/>
+<text x="171.0" y="635.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Porcelanato — grade ilustrativa</text>
+<rect x="330.90" y="627.20" width="15.00" height="10.00" fill="#d6ffff" stroke="#8c8c8c" stroke-width="0.70"/>
+<text x="352.9" y="635.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Banheiro — sistema à parte</text>
+<line x1="488.30" y1="632.20" x2="492.30" y2="632.20" stroke="#000000" stroke-width="1.80" stroke-linecap="butt"/>
+<line x1="494.30" y1="632.20" x2="498.30" y2="632.20" stroke="#000000" stroke-width="1.80" stroke-linecap="butt"/>
+<line x1="500.30" y1="632.20" x2="504.30" y2="632.20" stroke="#000000" stroke-width="1.80" stroke-linecap="butt"/>
+<text x="510.3" y="635.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Junta / soleira</text>
+<text x="70.0" y="675.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">OPÇÃO A — MONOLÍTICO COM COZINHA E CLOSET EM PORCELANATO</text>
 <rect x="70.00" y="684.00" width="658.00" height="20.00" fill="#e0e0e0"/>
 <text x="78.0" y="697.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">ID</text>
 <text x="124.1" y="697.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Tarefa</text>
 <text x="720.0" y="697.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Quantidade</text>
 <text x="78.0" y="715.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">A1</text>
-<text x="124.1" y="715.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cumaru-ferro, piso pronto em réguas — sala de TV, quarto, sala de estar e corredor</text>
+<text x="124.1" y="715.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Piso monolítico — sala de TV, quarto, sala de estar e corredor; juntas conforme projeto</text>
 <text x="720.0" y="715.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">44,69 m²</text>
 <line x1="70.00" y1="722.00" x2="728.00" y2="722.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="70.00" y="722.00" width="658.00" height="18.00" fill="#f5f5f5"/>
 <text x="78.0" y="733.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">A2</text>
-<text x="124.1" y="733.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Reserva de 10% sobre A1 — cortes, perdas e reposição</text>
-<text x="720.0" y="733.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">4,47 m²</text>
+<text x="124.1" y="733.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Porcelanato — zona contínua cozinha + closet (formato a definir)</text>
+<text x="720.0" y="733.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">11,81 m²</text>
 <line x1="70.00" y1="740.00" x2="728.00" y2="740.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="78.0" y="751.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">A3</text>
-<text x="124.1" y="751.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Piso monolítico — zona contínua cozinha + closet</text>
-<text x="720.0" y="751.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">11,81 m²</text>
+<text x="124.1" y="751.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Reserva de 10% sobre A2 — cortes, perdas e reposição</text>
+<text x="720.0" y="751.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,18 m²</text>
 <line x1="70.00" y1="758.00" x2="728.00" y2="758.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="70.00" y="758.00" width="658.00" height="18.00" fill="#f5f5f5"/>
 <text x="78.0" y="769.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">A4</text>
-<text x="124.1" y="769.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Perfil de transição com junta de movimentação</text>
+<text x="124.1" y="769.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Perfil de transição com junta de movimentação, rente nos dois lados</text>
 <text x="720.0" y="769.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">a medir em obra</text>
 <line x1="70.00" y1="776.00" x2="728.00" y2="776.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="78.0" y="787.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="bold" text-anchor="start">A5</text>
-<text x="124.1" y="787.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Filete curvo de 0,70 m de raio na ponta da zona monolítica</text>
-<text x="720.0" y="787.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1 peça</text>
+<text x="124.1" y="787.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Ponta arredondada: porcelanato cortado em curva, filete de 0,70 m de raio</text>
+<text x="720.0" y="787.9" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">1 trecho</text>
 <line x1="70.00" y1="794.00" x2="728.00" y2="794.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="70.0" y="827.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">OPÇÃO B — MONOLÍTICO INTEGRAL</text>
 <rect x="70.00" y="836.00" width="658.00" height="20.00" fill="#e0e0e0"/>
@@ -403,7 +265,7 @@
 <circle cx="799.00" cy="281.20" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
 <text x="799.0" y="284.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">4</text>
 <text x="814.0" y="284.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#000000" font-weight="normal" text-anchor="start">Aplicação — A ou B, conforme opção contratada.</text>
-<text x="814.0" y="296.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">A: réguas + zona monolítica + perfil de transição (A1 a A5).</text>
+<text x="814.0" y="296.8" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">A: porcelanato e perfil de transição, depois o monolítico (A1 a A5).</text>
 <text x="814.0" y="309.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">B: aplicação monolítica contínua com juntas (B1 a B3).</text>
 <circle cx="799.00" cy="325.00" r="7.50" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
 <text x="799.0" y="328.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">5</text>

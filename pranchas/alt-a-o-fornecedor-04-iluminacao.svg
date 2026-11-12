@@ -2,7 +2,7 @@
 <rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
 <text x="48.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.60">MAXHAUS 81I  ·  PACOTE PARA FORNECEDORES  ·  ALTERNATIVO A</text>
 <text x="48.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="27.0" fill="#000000" font-weight="bold" text-anchor="start">Iluminação</text>
-<text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Trilho eletrificado e luminárias sobre a laje aparente. A alimentação é entregue pela elétrica (FO3): aqui é montagem, não fiação.</text>
+<text x="48.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Projeto de iluminação: FAS. Trilhos e luminárias desta folha são só referência de posição; a alimentação é da elétrica (FO3).</text>
 <text x="1352.0" y="42.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">ALT. A  ·  EMISSÃO 02</text>
 <text x="1352.0" y="78.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#000000" font-weight="bold" text-anchor="end">FO4 — ILUMINAÇÃO</text>
 <text x="1352.0" y="99.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">extraído do Caderno Alternativo A — REV. O</text>
@@ -195,7 +195,7 @@
 <text x="510.3" y="727.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Claraboia — vidro, não furar</text>
 <rect x="70.00" y="736.22" width="15.00" height="10.00" fill="none" stroke="#8c8c8c" stroke-width="0.90" stroke-dasharray="3 2.5"/>
 <text x="92.0" y="744.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.8" fill="#000000" font-weight="normal" text-anchor="start">Comando (referência, escopo da FO3)</text>
-<text x="70.0" y="776.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">ALVO POR AMBIENTE — PARA SELEÇÃO DE SPOT</text>
+<text x="70.0" y="776.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">ALVO POR AMBIENTE — REFERÊNCIA; VALE O PROJETO FAS</text>
 <rect x="70.00" y="785.22" width="600.00" height="20.00" fill="#e0e0e0"/>
 <text x="78.0" y="798.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Ambiente</text>
 <text x="398.0" y="798.7" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Nível</text>
@@ -235,7 +235,7 @@
 <text x="662.0" y="907.1" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">3.000 K</text>
 <line x1="70.00" y1="913.22" x2="670.00" y2="913.22" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <line x1="690.00" y1="140.00" x2="690.00" y2="916.00" stroke="#cccccc" stroke-width="0.80" opacity="0.80"/>
-<text x="722.0" y="151.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">ESCOPO — TAREFA E QUANTIDADE</text>
+<text x="722.0" y="151.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">REFERÊNCIA DO ESTUDO — VALEM QUANTIDADES E MODELOS DO PROJETO FAS</text>
 <rect x="722.00" y="160.00" width="630.00" height="20.00" fill="#e0e0e0"/>
 <text x="730.0" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">ID</text>
 <text x="799.3" y="173.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Tarefa</text>
@@ -301,9 +301,9 @@
 <text x="722.0" y="459.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">ORDEM DE EXECUÇÃO</text>
 <circle cx="729.00" cy="474.00" r="7.50" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
 <text x="729.0" y="477.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">1</text>
-<text x="744.0" y="477.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Recebimento das alimentações da elétrica — AL1, AL2 e AL3.</text>
-<text x="744.0" y="489.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Caixa no ponto, cabo passado e circuito identificado (FO3, passo 7).</text>
-<text x="744.0" y="501.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Conferir posição de cada uma antes de comprar trilho.</text>
+<text x="744.0" y="477.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Projeto de iluminação da FAS recebido e compatibilizado.</text>
+<text x="744.0" y="489.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Trilhos, spots e fluxos desta folha são referência: valem os da FAS.</text>
+<text x="744.0" y="501.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Conferir as alimentações AL1 a AL3 (FO3) contra o projeto antes de comprar.</text>
 <circle cx="729.00" cy="516.00" r="7.50" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
 <text x="729.0" y="519.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">2</text>
 <text x="744.0" y="519.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Conferência da laje preparada — P03.</text>

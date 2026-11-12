@@ -727,8 +727,11 @@ def folha_ar():
 _PERIM_MOLDURA = 2 * ((qa.MOLDURA[2] - qa.MOLDURA[0]) + (qa.MOLDURA[3] - qa.MOLDURA[1]))
 
 TAB_CORT = [
-    ('CT01', 'Trilho de cortina reto, com uma curva, do canto da sala de estar à fachada leste', '%s m' % br(qa.TRILHO_M)),
-    ('PF1',  'Perfil autoportante sob a claraboia, com o trilho preso nele', '%s m de vão' % br(qa.VAO_LIVRE)),
+    ('CT01', 'Trilho reto com uma curva: descida %s + curva %s + reta %s m, até a fachada' % (
+        br(qa.DESCIDA_M), br(qa.CURVA_M), br(qa.RETA_M)), '%s m' % br(qa.TRILHO_M)),
+    ('PF1',  'Perfil autoportante sob a claraboia, x %s a %s (vidro %s · moldura %s)' % (
+        br(qa.FIX_OESTE), br(qa.FIX_LESTE), br(qa.VIDRO[2] - qa.VIDRO[0]), br(qa.MOLDURA[2] - qa.MOLDURA[0])),
+     '%s m de vão' % br(qa.VAO_LIVRE)),
     ('AP',   'Apoios no concreto — nunca no vidro nem na faixa da moldura', '6 pontos'),
     ('CT02', 'Cortina de tecido, pé-direito inteiro — franzido 2×, blackout a definir', '~%s m de largura' % br(2 * qa.TRILHO_M, 1)),
     ('RC',   'Pacote recolhido no canto noroeste da sala de estar', '~%s m de trilho' % br(qa.PACOTE_M)),
@@ -797,7 +800,12 @@ def folha_cortina():
         cota_h(d, px_(x0m), px_(x1m), py_(ym), off, texto, size=7.6)
     def cv(y0m, y1m, xm, off, texto):
         cota_v(d, py_(y0m), py_(y1m), px_(xm), off, texto, size=7.6)
+    ch(qa.X_CURVA, qa.FIX_OESTE, qa.Y_CORTINA, 20, br(qa.FIX_OESTE - qa.X_CURVA))
     ch(qa.FIX_OESTE, qa.FIX_LESTE, qa.Y_CORTINA, 20, '%s — PF1, sem apoio no teto' % br(qa.VAO_LIVRE))
+    ch(qa.FIX_LESTE, qa.X_FIM, qa.Y_CORTINA, 20, br(qa.X_FIM - qa.FIX_LESTE))
+    ch(qa.VIDRO[0], qa.VIDRO[2], qa.Y_CORTINA, -14, '%s sobre o vidro' % br(qa.VIDRO[2] - qa.VIDRO[0]))
+    cv(qa.VIDRO[1], qa.Y_CORTINA, 6.95, 0, br(qa.Y_CORTINA - qa.VIDRO[1]))
+    cv(qa.Y_CORTINA, qa.VIDRO[3], 6.95, 0, br(qa.VIDRO[3] - qa.Y_CORTINA))
     cv(qa.FACE_NORTE, qa.Y_CORTINA, 7.45, 0, '2,85')
     c = d.PM(4.05, 3.02)
     d.txt(c[0], c[1], 'fim da ponta da escada (acima)', 7.0, K70, 'normal', 'start')

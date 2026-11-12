@@ -565,27 +565,232 @@ fo.SEQ_AR[1] = (fo.SEQ_AR[1][0], [fo.SEQ_AR[1][1][0].replace('30.976 e 14.224', 
                 + list(fo.SEQ_AR[1][1][1:]), fo.SEQ_AR[1][2])
 
 # ---------------------------------------------------------------------------
+# PISO — inversão de materiais (12.11.2026)
+#   onde era cumaru-ferro entra monolítico; onde era monolítico entra porcelanato.
+#   Opção A: monolítico 44,69 m² (sala de TV, quarto, sala de estar, corredor)
+#            + porcelanato 11,81 m² (cozinha 7,43 + closet 4,38), reserva de 10%.
+#   Opção B (monolítico integral) não muda.
+# ---------------------------------------------------------------------------
+PORC = BRANCO
+PORC_PASSO = 0.60          # grade ilustrativa — formato a definir
+
+
+def piso_porcelanato(d, poly_pt, passo=PORC_PASSO, cor=K45, op=0.55, sw=0.45):
+    pp = [d.P(a, b) for a, b in poly_pt]
+    d.path(path_d(pp), fill=PORC)
+    ox, oy = d.org
+    S = d.S
+    x0, y0, x1, y1 = bbox(pp)
+    i = int((x0 - ox) // (passo * S))
+    while ox + i * passo * S <= x1:
+        xx = ox + i * passo * S
+        for (a, b) in spans_at_x(pp, xx):
+            d.line(xx, a, xx, b, cor, sw, opacity=op)
+        i += 1
+    j = int((y0 - oy) // (passo * S))
+    while oy + j * passo * S <= y1:
+        yy = oy + j * passo * S
+        for (a, b) in spans_at_y(pp, yy):
+            d.line(a, yy, b, yy, cor, sw, opacity=op)
+        j += 1
+
+
+def _mono_no_lugar_do_cumaru(d, poly_pt, **k):
+    """Substitui as réguas de cumaru: o pano vira monolítico, e quando chega o
+    corredor (último pano) a zona cozinha + closet já sai em porcelanato."""
+    d.path(path_d([d.P(a, b) for a, b in poly_pt]), fill=K07)
+    if poly_pt is HALL_A_POLY:
+        piso_porcelanato(d, MONO_A_POLY)
+
+
+_LEG_PISO = {
+    'Cumaru-ferro — piso pronto em réguas': ('fill', K07, 'Monolítico — sala de TV, quarto, sala de estar e corredor'),
+    'Piso monolítico — cozinha e closet': ('fill', PORC, 'Porcelanato — cozinha e closet (grade ilustrativa)'),
+    'Cumaru-ferro em réguas': ('fill', K07, 'Monolítico'),
+    'Monolítico': ('fill', PORC, 'Porcelanato — grade ilustrativa'),
+}
+
+
+def _legenda_piso(orig):
+    def f(d, itens, *a, **k):
+        return orig(d, [_LEG_PISO.get(t, (tp, c, t)) for (tp, c, t) in itens], *a, **k)
+    return f
+
+
+p03.legenda = _legenda_piso(p03.legenda)
+fo.legenda = _legenda_piso(fo.legenda)
+
+p03.TAB_A[:] = [
+    ('Monolítico',        'sala de TV 22,32 + quarto 14,08 + sala de estar 5,90 + corredor 2,39', '44,69 m²'),
+    ('Sem reserva',       'moldado in loco, sem perda de corte',                     '—'),
+    ('Porcelanato',       'cozinha 7,43 (de 9,82) + closet 4,38 — zona contínua',     '11,81 m²'),
+    ('+ reserva de 10%',  'cortes, perdas e reposição futura',                       '12,99 m²'),
+    ('Banheiro',          'sistema à parte, área molhada, na mesma cota',             '3,80 m²'),
+    ('MainFloor',         'total do pavimento',                                      '60,30 m²'),
+]
+p03.NOTAS_A[:] = [
+    ['**Alternativo A: os dois materiais trocam de lugar.',
+     'Onde era cumaru-ferro — sala de TV, quarto, sala de estar e corredor — entra o monolítico; onde',
+     'era monolítico — cozinha e closet — entra porcelanato. O contorno da zona e a ponta arredondada',
+     'não mudam.'],
+    ['**O monolítico agora é o pano grande: 44,69 m² pedem projeto de juntas.',
+     'Cimentício trabalha em painéis de 3 a 6 m de lado; microcimento reduz as juntas às do substrato',
+     'e ao perímetro. Lugares naturais: as soleiras da entrada e do banheiro, a linha da porta de',
+     'correr P03 e o encontro com o porcelanato. Pedir a paginação de juntas junto com a proposta.'],
+    ['**Porcelanato na cozinha e no closet: formato, cor e rejunte a definir.',
+     'A grade de 0,60 m do desenho é ilustrativa. Juntas de assentamento e de movimentação conforme',
+     'o fabricante e a NBR 13753; reserva de 10% para cortes e reposição.'],
+    ['**Na ponta arredondada o monolítico acompanha e o porcelanato é cortado.',
+     'Filete de 0,70 m de raio, canto reto nos demais trechos. O monolítico, moldado in loco, segue a',
+     'curva sem esforço; do lado do porcelanato as peças são cortadas em curva (jato d\'água ou serra)',
+     'e o perfil de transição curvo fica no encontro.'],
+    ['**As duas espessuras se acertam no contrapiso, não na soleira.',
+     'Porcelanato com argamassa colante e monolítico somam alturas diferentes: o acerto é no',
+     'contrapiso (P06), para os dois se encontrarem rentes, sem degrau.'],
+    ['**Sequência sugerida: porcelanato e perfil, depois o monolítico.',
+     'O monolítico é aplicado contra o perfil de transição já fixado e cura antes da marcenaria: o',
+     'closet (M01) só volta com o piso curado.'],
+    p03.NOTAS_A[-1],
+]
+for _n in p03.NOTAS_B:
+    if _n[0].startswith('**Sequência importa mais que no piso em réguas'):
+        _n[0] = '**Sequência importa: o monolítico pede cura.'
+
+
+def construir_piso(opcao):
+    ROTULO_ALT.clear()
+    ROTULO_ALT.update({'cozinha': (300.0, 392.0), 'closet': (300.0, 508.0)})
+    A = (opcao == 'A')
+    reguas, mono = p03.piso_reguas, p03.MONO
+    if A:
+        p03.piso_reguas, p03.MONO = _mono_no_lugar_do_cumaru, 'none'
+    try:
+        d = p03.construir(opcao)
+    finally:
+        p03.piso_reguas, p03.MONO = reguas, mono
+    if A:
+        trocar(d, 'Opção A — cumaru-ferro, cozinha e closet em monolítico',
+               'Opção A — monolítico, cozinha e closet em porcelanato')
+        trocar(d, 'Piso pronto em réguas nas áreas de estar e dormir; cozinha e closet numa zona monolítica contínua. Cores e desenho de régua ilustrativos.',
+               'Monolítico nas áreas de estar e dormir; cozinha e closet numa zona contínua de porcelanato. Cores e paginação ilustrativas.')
+    d.set_plan(70, 156, 70.0)
+    realce_parede(d)
+    return d
+
+
+# FO2
+fo.TAB_PISO_A[:] = [
+    ('A1', 'Piso monolítico — sala de TV, quarto, sala de estar e corredor; juntas conforme projeto', '44,69 m²'),
+    ('A2', 'Porcelanato — zona contínua cozinha + closet (formato a definir)', '11,81 m²'),
+    ('A3', 'Reserva de 10% sobre A2 — cortes, perdas e reposição', '1,18 m²'),
+    ('A4', 'Perfil de transição com junta de movimentação, rente nos dois lados', 'a medir em obra'),
+    ('A5', 'Ponta arredondada: porcelanato cortado em curva, filete de 0,70 m de raio', '1 trecho'),
+]
+fo.SEQ_PISO[3] = ('4', ['Aplicação — A ou B, conforme opção contratada.',
+                        'A: porcelanato e perfil de transição, depois o monolítico (A1 a A5).',
+                        'B: aplicação monolítica contínua com juntas (B1 a B3).'], False)
+_planta_piso_orig = fo._planta_piso
+
+
+def _planta_piso_alt(d, ox, oy, S, opcao, titulo):
+    if opcao != 'A':
+        return _planta_piso_orig(d, ox, oy, S, opcao, titulo)
+    reguas, mono = fo.piso_reguas, fo.MONO
+    fo.piso_reguas, fo.MONO = _mono_no_lugar_do_cumaru, 'none'
+    try:
+        return _planta_piso_orig(d, ox, oy, S, opcao, 'OPÇÃO A  ·  monolítico + porcelanato')
+    finally:
+        fo.piso_reguas, fo.MONO = reguas, mono
+
+
+fo._planta_piso = _planta_piso_alt
+
+
+def folha_piso_alt():
+    d = fo.folha_piso()
+    trocar(d, 'OPÇÃO A — CUMARU-FERRO COM COZINHA E CLOSET EM MONOLÍTICO',
+           'OPÇÃO A — MONOLÍTICO COM COZINHA E CLOSET EM PORCELANATO')
+    return d
+
+
+# riscos, medição e programação
+_subst(p12.RISCOS, 'A1', ('A1', 'Acabamento', 'Monolítico de 44,69 a 56,50 m² pede juntas — quantas depende do sistema', 'alto'))
+_subst(p12.RISCOS, 'A2', ('A2', 'Acabamento', 'Porcelanato e monolítico rentes: espessuras diferentes, acerto no contrapiso', 'medio'))
+_subst(p09.TAB_DEC, 'Piso', ('Piso', 'Duas opções vivas', 'A monolítico + porcelanato · B monolítico integral'))
+_celula('Piso da casa', 6, 'opção A (monolítico + porcelanato) ou B (monolítico)')
+
+
+# ---------------------------------------------------------------------------
+# ILUMINAÇÃO — o projeto é da FAS (12.11.2026)
+#   trilhos, spots, destaques e fluxos do caderno ficam como referência de
+#   posição; valem o projeto, as quantidades e os modelos da FAS. O caderno
+#   garante as esperas de alimentação e a zona sem furação da claraboia.
+# ---------------------------------------------------------------------------
+for _i, _n in enumerate(p04.NOTAS):
+    if _n[0].startswith('**Traçado dos trilhos revisado'):
+        p04.NOTAS[_i] = [
+            '**Projeto de iluminação: FAS.',
+            'Trilhos, spots, destaques e fluxos desta folha são referência do estudo, não especificação:',
+            'valem o projeto, as quantidades e os modelos da FAS. O caderno garante só as esperas de',
+            'alimentação (AL1 a AL3) e a zona sem furação da claraboia — conferir as duas contra o projeto.']
+for _n in p11.NOTAS:
+    if _n[0].startswith('**Fluxo = área × iluminância'):
+        _n[0] = '**Iluminação: o projeto é da FAS — esta conta é só referência.'
+        _n.insert(1, 'Fluxo = área × iluminância ÷ (utilização × manutenção).')
+_luz = pg.LINHAS[[l[0] for l in pg.LINHAS].index('Iluminação')]
+pg.LINHAS[pg.LINHAS.index(_luz)] = ('Iluminação — projeto FAS', _luz[1], {**_luz[2], 4: 'projeto FAS e esperas'})
+pg.MARCOS[:] = [(f, ['Luminárias (FAS),', 'tecido da cortina', 'e louças']) if f == 8 else (f, l) for f, l in pg.MARCOS]
+_subst(fo.TAB_ELE, 'AL1', ('AL1', 'Alimentação de trilho no teto — posição do projeto FAS (ver FO4)', '6 pontos'))
+fo.SEQ_LUZ[0] = ('1', ['Projeto de iluminação da FAS recebido e compatibilizado.',
+                       'Trilhos, spots e fluxos desta folha são referência: valem os da FAS.',
+                       'Conferir as alimentações AL1 a AL3 (FO3) contra o projeto antes de comprar.'], True)
+
+
+def construir_teto_fas():
+    d = construir_teto()
+    trocar(d, 'Distribuição conceitual sobre a laje de concreto. Reservas de posição, não quantidade final de luminárias nem de equipamentos.',
+           'Distribuição conceitual sobre a laje de concreto. Iluminação: projeto da FAS — trilhos e luminárias aqui são só reserva de posição.')
+    trocar(d, 'ILUMINAÇÃO POR AMBIENTE', 'ILUMINAÇÃO POR AMBIENTE — REFERÊNCIA; VALE O PROJETO FAS')
+    return d
+
+
+def construir_11_fas():
+    d = p11.construir()
+    trocar(d, 'ILUMINAÇÃO — ALVO POR AMBIENTE', 'ILUMINAÇÃO — ALVO POR AMBIENTE (REFERÊNCIA; VALE O PROJETO FAS)')
+    return d
+
+
+def folha_iluminacao_fas():
+    d = fo.folha_iluminacao()
+    trocar(d, 'Trilho eletrificado e luminárias sobre a laje aparente. A alimentação é entregue pela elétrica (FO3): aqui é montagem, não fiação.',
+           'Projeto de iluminação: FAS. Trilhos e luminárias desta folha são só referência de posição; a alimentação é da elétrica (FO3).')
+    trocar(d, 'ESCOPO — TAREFA E QUANTIDADE', 'REFERÊNCIA DO ESTUDO — VALEM QUANTIDADES E MODELOS DO PROJETO FAS')
+    trocar(d, 'ALVO POR AMBIENTE — PARA SELEÇÃO DE SPOT', 'ALVO POR AMBIENTE — REFERÊNCIA; VALE O PROJETO FAS')
+    return d
+
+
+# ---------------------------------------------------------------------------
 FOLHAS = (
     (construir_01,                 'alt-a-o-prancha-01-planta-cotada',      'Prancha 01: planta baixa cotada'),
     (construir_02,                 'alt-a-o-prancha-02-demolicao',          'Prancha 02: demolição e desmontagem'),
-    (lambda: construir_piso('A'),  'alt-a-o-prancha-03-piso-cumaru',        'Prancha 03: piso em cumaru-ferro'),
+    (lambda: construir_piso('A'),  'alt-a-o-prancha-03-piso-monolitico-porcelanato', 'Prancha 03: piso monolítico + porcelanato'),
     (lambda: construir_piso('B'),  'alt-a-o-prancha-04-piso-monolitico',    'Prancha 04: piso monolítico'),
-    (construir_teto,               'alt-a-o-prancha-05-teto',               'Prancha 05: teto'),
+    (construir_teto_fas,           'alt-a-o-prancha-05-teto',               'Prancha 05: teto'),
     (construir_eletrica,           'alt-a-o-prancha-06-eletrica',           'Prancha 06: elétrica'),
     (p06.construir,                'alt-a-o-prancha-07-esquadrias',         'Prancha 07: esquadrias'),
     (p07.construir,                'alt-a-o-prancha-08-banheiro',           'Prancha 08: banheiro'),
     (p09.construir,                'alt-a-o-prancha-09-medicao',            'Prancha 09: medição e decisões'),
     (p10.construir,                'alt-a-o-prancha-10-banheiro-acabamentos', 'Prancha 10: banheiro, acabamentos'),
-    (p11.construir,                'alt-a-o-prancha-11-ar-luz',             'Prancha 11: ar, exaustão e iluminação'),
+    (construir_11_fas,             'alt-a-o-prancha-11-ar-luz',             'Prancha 11: ar, exaustão e iluminação'),
     (construir_riscos,             'alt-a-o-prancha-12-riscos',             'Prancha 12: riscos'),
     (construir_quarto,             'alt-a-o-prancha-13-quarto-claraboia',   'Prancha 13: quarto adaptável e claraboia'),
     (p14.construir,                'alt-a-o-prancha-14-programacao',        'Prancha 14: programação da obra'),
 )
 FOLHAS_FO = (
     (folha_demolicao_alt,          'alt-a-o-fornecedor-01-demolicao',       'FO1: demolição e preparo'),
-    (fo.folha_piso,                'alt-a-o-fornecedor-02-piso',            'FO2: piso'),
+    (folha_piso_alt,               'alt-a-o-fornecedor-02-piso',            'FO2: piso'),
     (fo.folha_eletrica,            'alt-a-o-fornecedor-03-eletrica',        'FO3: elétrica'),
-    (fo.folha_iluminacao,          'alt-a-o-fornecedor-04-iluminacao',      'FO4: iluminação'),
+    (folha_iluminacao_fas,         'alt-a-o-fornecedor-04-iluminacao',      'FO4: iluminação'),
     (fo.folha_ar,                  'alt-a-o-fornecedor-05-ar',              'FO5: ar-condicionado e exaustão'),
     (fo.folha_cortina,             'alt-a-o-fornecedor-06-cortina-claraboia', 'FO6: cortina e claraboia'),
     (fo.folha_pedras_vidro_portas, 'alt-a-o-fornecedor-07-pedras-vidro-portas', 'FO7: pedras, vidro do box e portas'),

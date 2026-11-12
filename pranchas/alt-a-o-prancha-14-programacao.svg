@@ -79,9 +79,11 @@
 <rect x="1126.56" y="289.00" width="108.22" height="29.00" fill="#d6ffff" stroke="#000000" stroke-width="0.70"/>
 <text x="1131.6" y="306.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">evaporadoras e exaustor</text>
 <line x1="48.00" y1="322.00" x2="1352.00" y2="322.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
-<text x="56.0" y="343.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">Iluminação</text>
+<text x="56.0" y="343.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">Iluminação — projeto FAS</text>
 <text x="304.0" y="343.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="bold" text-anchor="middle">FO4</text>
-<rect x="783.89" y="326.00" width="108.22" height="29.00" fill="#ffff99" stroke="#000000" stroke-width="0.70"/>
+<rect x="669.67" y="326.00" width="108.22" height="29.00" fill="#ffff99" stroke="#000000" stroke-width="0.70"/>
+<text x="674.7" y="343.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">projeto FAS e esperas</text>
+<rect x="783.89" y="326.00" width="108.22" height="29.00" fill="#d6ffff" stroke="#000000" stroke-width="0.70"/>
 <text x="788.9" y="343.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">embutidos no forro novo R03</text>
 <rect x="1126.56" y="326.00" width="108.22" height="29.00" fill="#d6ffff" stroke="#000000" stroke-width="0.70"/>
 <text x="1131.6" y="343.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">trilhos e luminárias</text>
@@ -99,8 +101,8 @@
 <text x="56.0" y="417.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">Piso da casa</text>
 <text x="304.0" y="417.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.6" fill="#4d4d4d" font-weight="bold" text-anchor="middle">FO2</text>
 <rect x="898.11" y="400.00" width="108.22" height="29.00" fill="#ffff99" stroke="#000000" stroke-width="0.70"/>
-<text x="903.1" y="412.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">opção A (cumaru + monolítico)</text>
-<text x="903.1" y="421.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">ou B (monolítico)</text>
+<text x="903.1" y="412.4" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">opção A (monolítico +</text>
+<text x="903.1" y="421.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">porcelanato) ou B (monolítico)</text>
 <line x1="48.00" y1="433.00" x2="1352.00" y2="433.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="48.00" y="433.00" width="1304.00" height="37.00" fill="#f5f5f5"/>
 <text x="56.0" y="454.5" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="start">Pintura</text>
@@ -191,8 +193,9 @@
 <text x="905.1" y="726.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">cooktop e metais</text>
 <line x1="1123.56" y1="692.00" x2="1123.56" y2="708.00" stroke="#ff00ff" stroke-width="1.40"/>
 <path d="M 1123.6 708.0 L 1129.6 714.0 L 1123.6 720.0 L 1117.6 714.0 Z" fill="#ff00ff" stroke="#ff00ff" stroke-width="0.80"/>
-<text x="1133.6" y="717.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start">Luminárias, tecido</text>
-<text x="1133.6" y="726.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">da cortina e louças</text>
+<text x="1133.6" y="717.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start">Luminárias (FAS),</text>
+<text x="1133.6" y="726.6" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">tecido da cortina</text>
+<text x="1133.6" y="736.2" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">e louças</text>
 <rect x="48.00" y="748.00" width="16.00" height="10.00" fill="#ffff99" stroke="#000000" stroke-width="0.80"/>
 <text x="70.0" y="756.0" font-family="'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif" font-size="8.6" fill="#000000" font-weight="normal" text-anchor="start">Entrada do fornecedor</text>
 <rect x="184.90" y="748.00" width="16.00" height="10.00" fill="#d6ffff" stroke="#000000" stroke-width="0.80"/>
