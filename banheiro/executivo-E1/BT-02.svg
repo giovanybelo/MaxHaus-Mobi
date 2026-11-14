@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 990" width="1400" height="990">
+<rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
+<text x="48.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.40">MAXHAUS 81  ·  BANHEIRO  ·  CADERNO TÉCNICO</text>
+<text x="48.0" y="76.0" font-family="Helvetica, Arial, sans-serif" font-size="24.0" fill="#000000" font-weight="bold" text-anchor="start">Medidas de referência e conferência em obra</text>
+<text x="48.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">De onde vem cada medida, o que é premissa e uma coluna em branco para anotar o que for medido depois da demolição.</text>
+<text x="1352.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">E1  ·  14/11/2026</text>
+<text x="1352.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="22.0" fill="#000000" font-weight="bold" text-anchor="end">BT-02</text>
+<text x="1352.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">escala sem escala  ·  A3, imprimir a 100%</text>
+<line x1="48.00" y1="112.00" x2="1352.00" y2="112.00" stroke="#cccccc" stroke-width="1.00"/>
+<line x1="48.00" y1="928.00" x2="1352.00" y2="928.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="944.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cotas em mm, em faces acabadas; nível ±0 = piso pronto. Medidas de 14/11/2026 informadas pelo cliente + modelo R95. Conferir em obra depois da demolição e antes de cortar qualquer peça.</text>
+<text x="48.0" y="956.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Orientação de escopo, não laudo: instalações, estrutura e impermeabilização pedem responsável técnico em obra.</text>
+<text x="48.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81  ·  JOÃO BALDINATO 109  ·  BANHEIRO  ·  CADERNO TÉCNICO</text>
+<text x="1352.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">BT-02   ·   E1  ·  14/11/2026</text>
+<text x="48.0" y="142.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.00">MEDIDAS ADOTADAS</text>
+<rect x="48.00" y="150.00" width="760.00" height="16.50" fill="#e0e0e0"/>
+<text x="54.0" y="160.9" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">Medida</text>
+<text x="282.0" y="160.9" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">Valor adotado (mm)</text>
+<text x="464.4" y="160.9" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">Fonte</text>
+<text x="802.0" y="160.9" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end">Medido em obra</text>
+<text x="54.0" y="177.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Parede da porta, por fora</text>
+<text x="282.0" y="177.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">880 + 800 + 1200 = 2880</text>
+<text x="464.4" y="177.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">cliente, 14/11</text>
+<text x="802.0" y="177.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="183.00" x2="808.00" y2="183.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="48.00" y="183.00" width="760.00" height="16.50" fill="#f5f5f5"/>
+<text x="54.0" y="193.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Comprimento por dentro (acabado)</text>
+<text x="282.0" y="193.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">2680</text>
+<text x="464.4" y="193.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">calculado: 2880 - 2 × 100</text>
+<text x="802.0" y="193.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="199.50" x2="808.00" y2="199.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="54.0" y="210.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Largura por dentro (acabado)</text>
+<text x="282.0" y="210.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">1420</text>
+<text x="464.4" y="210.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">modelo R95</text>
+<text x="802.0" y="210.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="216.00" x2="808.00" y2="216.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="48.00" y="216.00" width="760.00" height="16.50" fill="#f5f5f5"/>
+<text x="54.0" y="226.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Espessura das paredes</text>
+<text x="282.0" y="226.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">100</text>
+<text x="464.4" y="226.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">scan; pode ser 120</text>
+<text x="802.0" y="226.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="232.50" x2="808.00" y2="232.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="54.0" y="243.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Vão da porta P02</text>
+<text x="282.0" y="243.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">800 × 2150</text>
+<text x="464.4" y="243.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">cliente, 14/11</text>
+<text x="802.0" y="243.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="249.00" x2="808.00" y2="249.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="48.00" y="249.00" width="760.00" height="16.50" fill="#f5f5f5"/>
+<text x="54.0" y="259.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Fundo do box</text>
+<text x="282.0" y="259.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">920</text>
+<text x="464.4" y="259.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">scan / R95, mantido pelo cliente</text>
+<text x="802.0" y="259.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="265.50" x2="808.00" y2="265.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="54.0" y="276.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Área técnica AT-B</text>
+<text x="282.0" y="276.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">800 × 250</text>
+<text x="464.4" y="276.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">cliente, 14/11</text>
+<text x="802.0" y="276.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="282.00" x2="808.00" y2="282.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="48.00" y="282.00" width="760.00" height="16.50" fill="#f5f5f5"/>
+<text x="54.0" y="292.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Posição da AT-B no box</text>
+<text x="282.0" y="292.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">encostada no fundo</text>
+<text x="464.4" y="292.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">premissa desta emissão</text>
+<text x="802.0" y="292.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="298.50" x2="808.00" y2="298.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="54.0" y="309.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Bancada B01</text>
+<text x="282.0" y="309.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">1600 × 400, saia 100</text>
+<text x="464.4" y="309.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">cliente, 14/11</text>
+<text x="802.0" y="309.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="315.00" x2="808.00" y2="315.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="48.00" y="315.00" width="760.00" height="16.50" fill="#f5f5f5"/>
+<text x="54.0" y="325.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Gabinete</text>
+<text x="282.0" y="325.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">1600 × 400 × 880 de altura</text>
+<text x="464.4" y="325.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">cliente, 14/11</text>
+<text x="802.0" y="325.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="331.50" x2="808.00" y2="331.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="54.0" y="342.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Topo da bancada</text>
+<text x="282.0" y="342.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">+980</text>
+<text x="464.4" y="342.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">cliente, 14/11</text>
+<text x="802.0" y="342.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="348.00" x2="808.00" y2="348.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="48.00" y="348.00" width="760.00" height="16.50" fill="#f5f5f5"/>
+<text x="54.0" y="358.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Posição da bancada na parede</text>
+<text x="282.0" y="358.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">encostada no vidro do box</text>
+<text x="464.4" y="358.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">premissa desta emissão</text>
+<text x="802.0" y="358.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="364.50" x2="808.00" y2="364.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="54.0" y="375.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Espelho</text>
+<text x="282.0" y="375.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">1600 × 900</text>
+<text x="464.4" y="375.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">cliente, 14/11</text>
+<text x="802.0" y="375.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="381.00" x2="808.00" y2="381.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="48.00" y="381.00" width="760.00" height="16.50" fill="#f5f5f5"/>
+<text x="54.0" y="391.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Base do espelho</text>
+<text x="282.0" y="391.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">+1340</text>
+<text x="464.4" y="391.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">proposta: 360 acima do tampo</text>
+<text x="802.0" y="391.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="397.50" x2="808.00" y2="397.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="54.0" y="408.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Forro novo</text>
+<text x="282.0" y="408.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">+2500</text>
+<text x="464.4" y="408.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">modelo R95</text>
+<text x="802.0" y="408.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="414.00" x2="808.00" y2="414.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="48.00" y="414.00" width="760.00" height="16.50" fill="#f5f5f5"/>
+<text x="54.0" y="424.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Laje</text>
+<text x="282.0" y="424.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">+2620</text>
+<text x="464.4" y="424.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">cliente (pé-direito 2,62 m)</text>
+<text x="802.0" y="424.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="430.50" x2="808.00" y2="430.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="54.0" y="441.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Eixo do vaso</text>
+<text x="282.0" y="441.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">980 da parede da bancada</text>
+<text x="464.4" y="441.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">modelo R95</text>
+<text x="802.0" y="441.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="447.00" x2="808.00" y2="447.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="48.00" y="447.00" width="760.00" height="16.50" fill="#f5f5f5"/>
+<text x="54.0" y="457.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Esgoto do vaso até a parede</text>
+<text x="282.0" y="457.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">~300</text>
+<text x="464.4" y="457.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">típico; depende da bacia</text>
+<text x="802.0" y="457.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="463.50" x2="808.00" y2="463.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="54.0" y="474.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Ralo linear R1</text>
+<text x="282.0" y="474.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">720 × 90, a 62 da AT-B</text>
+<text x="464.4" y="474.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">modelo R95</text>
+<text x="802.0" y="474.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="480.00" x2="808.00" y2="480.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="48.00" y="480.00" width="760.00" height="16.50" fill="#f5f5f5"/>
+<text x="54.0" y="490.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Ralo R2</text>
+<text x="282.0" y="490.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">grelha 100 × 100</text>
+<text x="464.4" y="490.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">caixa existente a levantar</text>
+<text x="802.0" y="490.9" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="496.50" x2="808.00" y2="496.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="54.0" y="507.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Nicho do box</text>
+<text x="282.0" y="507.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">1000 × 400, base a +1100</text>
+<text x="464.4" y="507.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">modelo R95</text>
+<text x="802.0" y="507.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
+<line x1="48.00" y1="513.00" x2="808.00" y2="513.00" stroke="#cccccc" stroke-width="0.50"/>
+<text x="848.0" y="152.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Por que conferir.</text>
+<text x="848.0" y="164.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Só a parede da porta, a área técnica, a bancada, o gabinete e o espelho foram medidos em obra. O resto vem do modelo R95 e do</text>
+<text x="848.0" y="176.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">scan. O revestimento antigo esconde o prumo e a espessura real das paredes.</text>
+<text x="848.0" y="195.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Quando.</text>
+<text x="848.0" y="207.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Logo depois da demolição, com as paredes no osso e o piso aberto, antes da regularização. É a liberação 4 da sequência (BE-18).</text>
+<text x="848.0" y="226.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">O que muda se a medida mudar.</text>
+<text x="848.0" y="238.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Comprimento ou largura: refazer a paginação das paredes e o plano de corte do piso. Posição da área técnica ou da bancada:</text>
+<text x="848.0" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">refazer só a parede da bancada (BE-17) e o fundo do box (BE-15). Esgoto do vaso: conferir a bacia antes de fechar o piso.</text>
+<text x="848.0" y="269.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Três premissas a confirmar com o cliente.</text>
+<text x="848.0" y="281.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1. A área técnica encostada no fundo do box, com 120 mm de parede até o vidro. 2. A bancada encostada no vidro do box, com</text>
+<text x="848.0" y="293.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">160 mm de folga até a parede do vaso. 3. Parede com 100 mm: se tiver 120, o banheiro tem 2640 por dentro.</text>
+<text x="848.0" y="312.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Tolerância.</text>
+<text x="848.0" y="324.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">A paginação aceita até 5 mm de diferença por parede, absorvidos nas pontas. Acima disso, recalcular antes de cortar.</text>
+</svg>

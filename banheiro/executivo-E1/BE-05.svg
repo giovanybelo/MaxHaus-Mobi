@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 990" width="1400" height="990">
+<rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
+<text x="48.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.40">MAXHAUS 81  ·  BANHEIRO  ·  CADERNO EXECUTIVO</text>
+<text x="48.0" y="76.0" font-family="Helvetica, Arial, sans-serif" font-size="24.0" fill="#000000" font-weight="bold" text-anchor="start">Esgoto: ralo do box, ralo do vaso e vaso</text>
+<text x="48.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Remodelagem dos dois ralos e reinstalação do vaso no nível novo do piso. Posições das caixas existentes a confirmar depois da demolição.</text>
+<text x="1352.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">E1  ·  14/11/2026</text>
+<text x="1352.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="22.0" fill="#000000" font-weight="bold" text-anchor="end">BE-05</text>
+<text x="1352.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">escala 1:15  ·  A3, imprimir a 100%</text>
+<line x1="48.00" y1="112.00" x2="1352.00" y2="112.00" stroke="#cccccc" stroke-width="1.00"/>
+<line x1="48.00" y1="928.00" x2="1352.00" y2="928.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="944.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cotas em mm, em faces acabadas; nível ±0 = piso pronto. Medidas de 14/11/2026 informadas pelo cliente + modelo R95. Conferir em obra depois da demolição e antes de cortar qualquer peça.</text>
+<text x="48.0" y="956.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Orientação de escopo, não laudo: instalações, estrutura e impermeabilização pedem responsável técnico em obra.</text>
+<text x="48.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81  ·  JOÃO BALDINATO 109  ·  BANHEIRO  ·  CADERNO EXECUTIVO</text>
+<text x="1352.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">BE-05   ·   E1  ·  14/11/2026</text>
+<rect x="167.78" y="192.78" width="360.00" height="640.00" fill="#000000"/>
+<rect x="190.00" y="215.00" width="315.56" height="595.56" fill="#f5f5f5"/>
+<rect x="190.00" y="606.11" width="315.56" height="204.44" fill="#d6ffff"/>
+<rect x="190.00" y="632.78" width="55.56" height="177.78" fill="#cccccc" stroke="#000000" stroke-width="0.80"/>
+<text x="220.3" y="721.7" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" transform="rotate(-90.0 220.3 721.7)">AT-B</text>
+<rect x="505.56" y="388.33" width="22.22" height="177.78" fill="#ffffff"/>
+<line x1="505.56" y1="388.33" x2="527.78" y2="388.33" stroke="#000000" stroke-width="0.80"/>
+<line x1="505.56" y1="566.11" x2="527.78" y2="566.11" stroke="#000000" stroke-width="0.80"/>
+<line x1="527.78" y1="388.33" x2="705.56" y2="388.33" stroke="#000000" stroke-width="1.60"/>
+<path d="M705.6 388.3 A 177.8 177.8 0 0 1 527.8 566.1" fill="none" stroke="#8c8c8c" stroke-width="0.70" stroke-dasharray="4 3"/>
+<text x="607.8" y="468.3" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">P02</text>
+<line x1="190.00" y1="606.11" x2="505.56" y2="606.11" stroke="#00ffff" stroke-width="2.60"/>
+<rect x="190.00" y="250.56" width="88.89" height="355.56" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<rect x="201.11" y="381.67" width="66.67" height="93.33" fill="#ffffff" stroke="#8c8c8c" stroke-width="0.70"/>
+<text x="236.9" y="308.3" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle" transform="rotate(-90.0 236.9 308.3)">B01</text>
+<rect x="363.33" y="215.00" width="88.89" height="40.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<ellipse cx="407.8" cy="312.8" rx="40.0" ry="57.8" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<text x="407.8" y="315.8" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle">VASO</text>
+<text x="385.6" y="763.9" font-family="Helvetica, Arial, sans-serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">BOX</text>
+<rect x="259.33" y="637.89" width="20.00" height="160.00" fill="#8c8c8c" stroke="#000000" stroke-width="0.80"/>
+<rect x="463.33" y="270.56" width="22.22" height="22.22" fill="#8c8c8c" stroke="#000000" stroke-width="0.80"/>
+<text x="284.3" y="717.9" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start">R1</text>
+<text x="474.4" y="302.8" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle">R2</text>
+<line x1="487.78" y1="659.44" x2="287.78" y2="659.44" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="287.78" y1="659.44" x2="293.78" y2="655.84" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="287.78" y1="659.44" x2="293.78" y2="663.05" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="487.78" y1="726.11" x2="287.78" y2="726.11" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="287.78" y1="726.11" x2="293.78" y2="722.50" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="287.78" y1="726.11" x2="293.78" y2="729.72" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="487.78" y1="783.89" x2="287.78" y2="783.89" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="287.78" y1="783.89" x2="293.78" y2="780.28" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="287.78" y1="783.89" x2="293.78" y2="787.50" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="345.56" y1="548.33" x2="465.56" y2="308.33" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="465.56" y1="308.33" x2="466.10" y2="315.31" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="465.56" y1="308.33" x2="459.65" y2="312.08" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="323.33" y1="383.89" x2="456.67" y2="288.33" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="456.67" y1="288.33" x2="453.89" y2="294.76" stroke="#00ffff" stroke-width="1.20"/>
+<line x1="456.67" y1="288.33" x2="449.69" y2="288.89" stroke="#00ffff" stroke-width="1.20"/>
+<text x="385.6" y="688.3" font-family="Helvetica, Arial, sans-serif" font-size="6.8" fill="#000000" font-weight="normal" text-anchor="middle">caimento ~1,5% para o R1</text>
+<text x="412.2" y="477.2" font-family="Helvetica, Arial, sans-serif" font-size="6.8" fill="#000000" font-weight="normal" text-anchor="middle">0,5% para o R2</text>
+<circle cx="407.78" cy="281.67" r="11.11" fill="none" stroke="#ff00ff" stroke-width="1.40"/>
+<text x="394.0" y="266.1" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#ff00ff" font-weight="bold" text-anchor="end">esgoto DN100</text>
+<line x1="190.00" y1="281.67" x2="407.78" y2="281.67" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="187.50" y1="284.17" x2="192.50" y2="279.17" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="190.00" y1="277.67" x2="190.00" y2="285.67" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="405.28" y1="284.17" x2="410.28" y2="279.17" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="407.78" y1="277.67" x2="407.78" y2="285.67" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="298.9" y="278.2" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">980</text>
+<line x1="481.11" y1="215.00" x2="481.11" y2="281.67" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="478.61" y1="217.50" x2="483.61" y2="212.50" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="477.11" y1="215.00" x2="485.11" y2="215.00" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="478.61" y1="284.17" x2="483.61" y2="279.17" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="477.11" y1="281.67" x2="485.11" y2="281.67" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="477.1" y="248.3" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 477.1 248.3)">300</text>
+<line x1="245.56" y1="805.00" x2="259.33" y2="805.00" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="243.06" y1="807.50" x2="248.06" y2="802.50" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="245.56" y1="801.00" x2="245.56" y2="809.00" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="256.83" y1="807.50" x2="261.83" y2="802.50" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="259.33" y1="801.00" x2="259.33" y2="809.00" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="252.4" y="801.5" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">62</text>
+<line x1="259.33" y1="805.00" x2="279.33" y2="805.00" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="256.83" y1="807.50" x2="261.83" y2="802.50" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="259.33" y1="801.00" x2="259.33" y2="809.00" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="276.83" y1="807.50" x2="281.83" y2="802.50" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="279.33" y1="801.00" x2="279.33" y2="809.00" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="269.3" y="801.5" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">90</text>
+<line x1="296.67" y1="637.89" x2="296.67" y2="797.89" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="294.17" y1="640.39" x2="299.17" y2="635.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="292.67" y1="637.89" x2="300.67" y2="637.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="294.17" y1="800.39" x2="299.17" y2="795.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="292.67" y1="797.89" x2="300.67" y2="797.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="292.7" y="717.9" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 292.7 717.9)">720</text>
+<line x1="296.67" y1="797.89" x2="296.67" y2="810.56" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="294.17" y1="800.39" x2="299.17" y2="795.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="292.67" y1="797.89" x2="300.67" y2="797.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="294.17" y1="813.06" x2="299.17" y2="808.06" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="292.67" y1="810.56" x2="300.67" y2="810.56" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="292.7" y="804.2" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 292.7 804.2)">57</text>
+<line x1="485.56" y1="281.67" x2="505.56" y2="281.67" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="483.06" y1="284.17" x2="488.06" y2="279.17" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="485.56" y1="277.67" x2="485.56" y2="285.67" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="503.06" y1="284.17" x2="508.06" y2="279.17" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="505.56" y1="277.67" x2="505.56" y2="285.67" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="495.6" y="278.2" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">90</text>
+<line x1="168.00" y1="877.00" x2="182.00" y2="877.00" stroke="#00ffff" stroke-width="2.20"/>
+<text x="188.0" y="880.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Sentido do caimento</text>
+<rect x="286.66" y="872.00" width="14.00" height="10.00" fill="#8c8c8c" stroke="#8c8c8c" stroke-width="0.60"/>
+<text x="306.7" y="880.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Ralos</text>
+<circle cx="358.59" cy="877.00" r="4.50" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<text x="371.6" y="880.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Ponto de esgoto do vaso</text>
+<text x="760.0" y="142.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.00">PEÇAS</text>
+<rect x="760.00" y="150.00" width="592.00" height="17.00" fill="#e0e0e0"/>
+<text x="766.0" y="161.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">ID</text>
+<text x="813.4" y="161.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">Peça</text>
+<text x="1346.0" y="161.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end">Dado</text>
+<text x="766.0" y="178.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">R1</text>
+<text x="813.4" y="178.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Ralo linear do box, com corpo, flange e grelha</text>
+<text x="1346.0" y="178.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">720 × 90 mm; borda a -25</text>
+<line x1="760.00" y1="184.00" x2="1352.00" y2="184.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="760.00" y="184.00" width="592.00" height="17.00" fill="#f5f5f5"/>
+<text x="766.0" y="195.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">R2</text>
+<text x="813.4" y="195.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Ralo ao lado do vaso: grelha oculta quadrada</text>
+<text x="1346.0" y="195.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">100 × 100 mm; sobre a caixa existente</text>
+<line x1="760.00" y1="201.00" x2="1352.00" y2="201.00" stroke="#cccccc" stroke-width="0.50"/>
+<text x="766.0" y="212.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">VS</text>
+<text x="813.4" y="212.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Vaso com caixa acoplada, reaproveitado</text>
+<text x="1346.0" y="212.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">eixo a 980 da P3; esgoto a ~300 da P5</text>
+<line x1="760.00" y1="218.00" x2="1352.00" y2="218.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="760.00" y="218.00" width="592.00" height="17.00" fill="#f5f5f5"/>
+<text x="766.0" y="229.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">AV</text>
+<text x="813.4" y="229.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Anel de vedação novo e parafusos de fixação</text>
+<text x="1346.0" y="229.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">1 jogo</text>
+<line x1="760.00" y1="235.00" x2="1352.00" y2="235.00" stroke="#cccccc" stroke-width="0.50"/>
+<text x="766.0" y="246.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">PR</text>
+<text x="813.4" y="246.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Prolongadores para ajustar a altura dos ralos ao piso novo</text>
+<text x="1346.0" y="246.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">medir após a demolição</text>
+<line x1="760.00" y1="252.00" x2="1352.00" y2="252.00" stroke="#cccccc" stroke-width="0.50"/>
+<circle cx="768.00" cy="279.00" r="8.00" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
+<text x="768.0" y="282.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">1</text>
+<text x="784.0" y="282.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Levantar o que existe.</text>
+<text x="784.0" y="294.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Com o piso aberto: centro e profundidade da caixa sifonada do R2, saída do R1, ponto de esgoto do vaso e para onde cada um corre. Marcar na</text>
+<text x="784.0" y="306.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">planta e fotografar com trena.</text>
+<circle cx="768.00" cy="320.00" r="8.00" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="768.0" y="323.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">2</text>
+<text x="784.0" y="323.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">R2, o ralo ao lado do vaso.</text>
+<text x="784.0" y="335.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Manter a caixa sifonada e a saída onde estão. Trocar o porta-grelha por um modelo de grelha oculta 100 × 100 e ajustar a altura com prolongador</text>
+<text x="784.0" y="347.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">até o nível do piso pronto. Manter o fecho hídrico e o acesso para limpeza.</text>
+<circle cx="768.00" cy="361.00" r="8.00" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="768.0" y="364.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">3</text>
+<text x="784.0" y="364.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">R1, o ralo linear do box.</text>
+<text x="784.0" y="376.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Assentar o corpo do ralo antes da impermeabilização, com a flange colada na membrana. Conferir saída, sifão e vazão do modelo comprado. A</text>
+<text x="784.0" y="388.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">grelha fica 1 mm abaixo do porcelanato.</text>
+<circle cx="768.00" cy="402.00" r="8.00" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
+<text x="768.0" y="405.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">4</text>
+<text x="784.0" y="405.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Caimentos.</text>
+<text x="784.0" y="417.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Box: do vidro e da parede da porta para o R1, ~1,5%. Piso seco: caimento leve, 0,5%, para o R2. Fazer na regularização, antes da membrana; não</text>
+<text x="784.0" y="429.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">corrigir caimento com argamassa do piso.</text>
+<circle cx="768.00" cy="443.00" r="8.00" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
+<text x="768.0" y="446.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">5</text>
+<text x="784.0" y="446.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Esgoto do vaso.</text>
+<text x="784.0" y="458.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Conferir a distância do eixo do esgoto à parede acabada com a bacia em mãos (em geral 260 a 300 mm). Ajustar a altura da boca do tubo ao piso</text>
+<text x="784.0" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">novo: ela fica rente ao piso pronto.</text>
+<circle cx="768.00" cy="484.00" r="8.00" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="768.0" y="487.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">6</text>
+<text x="784.0" y="487.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Instalar o vaso.</text>
+<text x="784.0" y="499.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Depois do piso rejuntado: anel de vedação novo, bacia aparafusada no piso (não só colada), engate flexível novo na entrada de água, silicone neutro</text>
+<text x="784.0" y="511.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">na base. Testar descarga e procurar vazamento.</text>
+</svg>

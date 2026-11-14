@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 990" width="1400" height="990">
+<rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
+<text x="48.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.40">MAXHAUS 81  ·  BANHEIRO  ·  CADERNO TÉCNICO</text>
+<text x="48.0" y="76.0" font-family="Helvetica, Arial, sans-serif" font-size="24.0" fill="#000000" font-weight="bold" text-anchor="start">Reforma do banheiro: escopo e leitura dos cadernos</text>
+<text x="48.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Dois cadernos para dois públicos: este, técnico, para quem decide e contrata; o executivo (BE), para quem executa.</text>
+<text x="1352.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">E1  ·  14/11/2026</text>
+<text x="1352.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="22.0" fill="#000000" font-weight="bold" text-anchor="end">BT-01</text>
+<text x="1352.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">escala sem escala  ·  A3, imprimir a 100%</text>
+<line x1="48.00" y1="112.00" x2="1352.00" y2="112.00" stroke="#cccccc" stroke-width="1.00"/>
+<line x1="48.00" y1="928.00" x2="1352.00" y2="928.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="944.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cotas em mm, em faces acabadas; nível ±0 = piso pronto. Medidas de 14/11/2026 informadas pelo cliente + modelo R95. Conferir em obra depois da demolição e antes de cortar qualquer peça.</text>
+<text x="48.0" y="956.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Orientação de escopo, não laudo: instalações, estrutura e impermeabilização pedem responsável técnico em obra.</text>
+<text x="48.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81  ·  JOÃO BALDINATO 109  ·  BANHEIRO  ·  CADERNO TÉCNICO</text>
+<text x="1352.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">BT-01   ·   E1  ·  14/11/2026</text>
+<rect x="48.00" y="140.00" width="150.00" height="96.00" fill="none" stroke="#000000" stroke-width="1.00"/>
+<text x="58.0" y="178.0" font-family="Helvetica, Arial, sans-serif" font-size="19.0" fill="#000000" font-weight="bold" text-anchor="start">2880</text>
+<text x="58.0" y="198.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">mm de parede da porta, por fora</text>
+<text x="58.0" y="212.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">880 + vão de 800 + 1200</text>
+<rect x="210.00" y="140.00" width="150.00" height="96.00" fill="none" stroke="#000000" stroke-width="1.00"/>
+<text x="220.0" y="178.0" font-family="Helvetica, Arial, sans-serif" font-size="19.0" fill="#000000" font-weight="bold" text-anchor="start">800 × 2150</text>
+<text x="220.0" y="198.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">vão da porta P02</text>
+<text x="220.0" y="212.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">abre para fora, anti-horário</text>
+<rect x="372.00" y="140.00" width="150.00" height="96.00" fill="none" stroke="#000000" stroke-width="1.00"/>
+<text x="382.0" y="178.0" font-family="Helvetica, Arial, sans-serif" font-size="19.0" fill="#000000" font-weight="bold" text-anchor="start">800 × 250</text>
+<text x="382.0" y="198.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">área técnica do chuveiro</text>
+<text x="382.0" y="212.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">box mantido com 920 de fundo</text>
+<rect x="534.00" y="140.00" width="150.00" height="96.00" fill="none" stroke="#000000" stroke-width="1.00"/>
+<text x="544.0" y="178.0" font-family="Helvetica, Arial, sans-serif" font-size="19.0" fill="#000000" font-weight="bold" text-anchor="start">+980</text>
+<text x="544.0" y="198.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">topo da bancada</text>
+<text x="544.0" y="212.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">gabinete de 880 + saia de 100</text>
+<text x="48.0" y="272.0" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#000000" font-weight="bold" text-anchor="start">O que esta emissão corrige.</text>
+<text x="48.0" y="284.6" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">As plantas anteriores do banheiro (scan, caderno R2 e executivo R95) tinham a porta 0,33 m mais ao norte, a área técnica com 150 a 240 mm de</text>
+<text x="48.0" y="297.2" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">profundidade e a bancada com 530 mm. Em 14/11/2026 o cliente mediu em obra: a parede da porta, a área técnica, a bancada, o gabinete e o espelho.</text>
+<text x="48.0" y="309.8" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Tudo aqui parte dessas medidas.</text>
+<text x="48.0" y="329.4" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#000000" font-weight="bold" text-anchor="start">Escopo.</text>
+<text x="48.0" y="342.0" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Demolição dos acabamentos; rebaixo e nivelamento do piso com o monolítico Sinesse Pro de fora, sem soleira, com perfil de metal; impermeabilização;</text>
+<text x="48.0" y="354.6" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">remodelagem do ralo do box e do ralo ao lado do vaso; reinstalação do vaso e do esgoto; água quente na torneira da pia; pontos elétricos, com o ponto novo</text>
+<text x="48.0" y="367.2" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">do toalheiro acima do vaso; forro e iluminação da FAS; revestimento das paredes; piso; bancada; porta.</text>
+<text x="48.0" y="386.8" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#000000" font-weight="bold" text-anchor="start">O item que não pode falhar.</text>
+<text x="48.0" y="399.4" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Levar água quente à torneira da pia é a prioridade pessoal do cliente nesta reforma. O ramal está na BE-06 e na BT-04: derivação da coluna do chuveiro</text>
+<text x="48.0" y="412.0" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">dentro da área técnica, cerca de 1,1 m de tubo isolado, registro acessível e teste antes de fechar a parede.</text>
+<text x="48.0" y="431.6" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#000000" font-weight="bold" text-anchor="start">O que continua valendo do R95.</text>
+<text x="48.0" y="444.2" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Revestimento Gouache Bleu Nuit 155 × 155 com acentos Nuage, piso Confete 100 × 100, forro e topo do revestimento a +2500, nicho de 1000 × 400, ralo</text>
+<text x="48.0" y="456.8" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">linear de 720 × 90, toalheiro Aiello, porta com visor circular e Corian branco na bancada.</text>
+<text x="48.0" y="476.4" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#000000" font-weight="bold" text-anchor="start">O que foi superado.</text>
+<text x="48.0" y="489.0" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Do R95: comprimento de 2576, porta de 2103 de altura, bancada de 1640 × 530 a +840 com saia de 60, espelho de 1660 × 650 e área técnica de 240 ao</text>
+<text x="48.0" y="501.6" font-family="Helvetica, Arial, sans-serif" font-size="8.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">longo de todo o box. Do caderno geral: forro novo a 2,40 m (aqui, +2500).</text>
+<text x="730.0" y="142.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.00">CADERNO TÉCNICO</text>
+<rect x="730.00" y="150.00" width="622.00" height="17.00" fill="#e0e0e0"/>
+<text x="736.0" y="161.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">Folha</text>
+<text x="810.6" y="161.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">Conteúdo</text>
+<text x="1346.0" y="161.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end">Para quem</text>
+<text x="736.0" y="178.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BT-01</text>
+<text x="810.6" y="178.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Escopo e leitura dos cadernos</text>
+<text x="1346.0" y="178.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">gestão</text>
+<line x1="730.00" y1="184.00" x2="1352.00" y2="184.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="730.00" y="184.00" width="622.00" height="17.00" fill="#f5f5f5"/>
+<text x="736.0" y="195.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BT-02</text>
+<text x="810.6" y="195.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Medidas de referência e conferência em obra</text>
+<text x="1346.0" y="195.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">gestão e mestre</text>
+<line x1="730.00" y1="201.00" x2="1352.00" y2="201.00" stroke="#cccccc" stroke-width="0.50"/>
+<text x="736.0" y="212.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BT-03</text>
+<text x="810.6" y="212.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Piso, rebaixo e impermeabilização: critérios</text>
+<text x="1346.0" y="212.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">gestão e empreiteira</text>
+<line x1="730.00" y1="218.00" x2="1352.00" y2="218.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="730.00" y="218.00" width="622.00" height="17.00" fill="#f5f5f5"/>
+<text x="736.0" y="229.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BT-04</text>
+<text x="810.6" y="229.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Hidráulica: água quente, esgoto e ralos</text>
+<text x="1346.0" y="229.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">gestão e encanador</text>
+<line x1="730.00" y1="235.00" x2="1352.00" y2="235.00" stroke="#cccccc" stroke-width="0.50"/>
+<text x="736.0" y="246.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BT-05</text>
+<text x="810.6" y="246.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Elétrica, forro e iluminação FAS</text>
+<text x="1346.0" y="246.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">gestão e eletricista</text>
+<line x1="730.00" y1="252.00" x2="1352.00" y2="252.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="730.00" y="252.00" width="622.00" height="17.00" fill="#f5f5f5"/>
+<text x="736.0" y="263.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BT-06</text>
+<text x="810.6" y="263.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Quantitativos e compra</text>
+<text x="1346.0" y="263.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">gestão</text>
+<line x1="730.00" y1="269.00" x2="1352.00" y2="269.00" stroke="#cccccc" stroke-width="0.50"/>
+<text x="736.0" y="280.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BT-07</text>
+<text x="810.6" y="280.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Liberações, pendências e riscos</text>
+<text x="1346.0" y="280.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">gestão</text>
+<line x1="730.00" y1="286.00" x2="1352.00" y2="286.00" stroke="#cccccc" stroke-width="0.50"/>
+<text x="730.0" y="308.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.00">CADERNO EXECUTIVO</text>
+<rect x="730.00" y="316.00" width="622.00" height="15.50" fill="#e0e0e0"/>
+<text x="736.0" y="326.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">Folha</text>
+<text x="810.6" y="326.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">Conteúdo</text>
+<text x="1346.0" y="326.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end">Para quem</text>
+<text x="736.0" y="341.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BE-01</text>
+<text x="810.6" y="341.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Planta baixa do banheiro</text>
+<text x="1346.0" y="341.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">todos</text>
+<line x1="730.00" y1="347.00" x2="1352.00" y2="347.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="730.00" y="347.00" width="622.00" height="15.50" fill="#f5f5f5"/>
+<text x="736.0" y="357.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BE-02</text>
+<text x="810.6" y="357.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Demolição e o que preservar</text>
+<text x="1346.0" y="357.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">pedreiro</text>
+<line x1="730.00" y1="362.50" x2="1352.00" y2="362.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="736.0" y="372.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BE-03</text>
+<text x="810.6" y="372.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Níveis e rebaixo do piso</text>
+<text x="1346.0" y="372.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">pedreiro</text>
+<line x1="730.00" y1="378.00" x2="1352.00" y2="378.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="730.00" y="378.00" width="622.00" height="15.50" fill="#f5f5f5"/>
+<text x="736.0" y="388.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BE-04</text>
+<text x="810.6" y="388.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Impermeabilização</text>
+<text x="1346.0" y="388.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">impermeabilizador</text>
+<line x1="730.00" y1="393.50" x2="1352.00" y2="393.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="736.0" y="403.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BE-05</text>
+<text x="810.6" y="403.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Esgoto: ralos e vaso</text>
+<text x="1346.0" y="403.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">encanador</text>
+<line x1="730.00" y1="409.00" x2="1352.00" y2="409.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="730.00" y="409.00" width="622.00" height="15.50" fill="#f5f5f5"/>
+<text x="736.0" y="419.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BE-06</text>
+<text x="810.6" y="419.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Água quente na torneira da pia</text>
+<text x="1346.0" y="419.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">encanador</text>
+<line x1="730.00" y1="424.50" x2="1352.00" y2="424.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="736.0" y="434.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BE-07</text>
+<text x="810.6" y="434.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Elétrica: pontos e comandos</text>
+<text x="1346.0" y="434.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">eletricista</text>
+<line x1="730.00" y1="440.00" x2="1352.00" y2="440.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="730.00" y="440.00" width="622.00" height="15.50" fill="#f5f5f5"/>
+<text x="736.0" y="450.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BE-08</text>
+<text x="810.6" y="450.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Forro e iluminação da FAS</text>
+<text x="1346.0" y="450.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">gesseiro e eletricista</text>
+<line x1="730.00" y1="455.50" x2="1352.00" y2="455.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="736.0" y="465.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BE-09</text>
+<text x="810.6" y="465.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Bancada, gabinete e espelho</text>
+<text x="1346.0" y="465.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">marmorista / Corian</text>
+<line x1="730.00" y1="471.00" x2="1352.00" y2="471.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="730.00" y="471.00" width="622.00" height="15.50" fill="#f5f5f5"/>
+<text x="736.0" y="481.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BE-10</text>
+<text x="810.6" y="481.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Porta P02</text>
+<text x="1346.0" y="481.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">marceneiro</text>
+<line x1="730.00" y1="486.50" x2="1352.00" y2="486.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="736.0" y="496.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BE-11</text>
+<text x="810.6" y="496.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Piso Confete</text>
+<text x="1346.0" y="496.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">assentador</text>
+<line x1="730.00" y1="502.00" x2="1352.00" y2="502.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="730.00" y="502.00" width="622.00" height="15.50" fill="#f5f5f5"/>
+<text x="736.0" y="512.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BE-12 a BE-17</text>
+<text x="810.6" y="512.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Paginação das paredes, em duas versões</text>
+<text x="1346.0" y="512.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">assentador</text>
+<line x1="730.00" y1="517.50" x2="1352.00" y2="517.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="736.0" y="527.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">BE-18</text>
+<text x="810.6" y="527.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Sequência de execução</text>
+<text x="1346.0" y="527.7" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">todos</text>
+<line x1="730.00" y1="533.00" x2="1352.00" y2="533.00" stroke="#cccccc" stroke-width="0.50"/>
+</svg>
