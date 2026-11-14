@@ -43,12 +43,12 @@ ROOMS = {
         poly=[(448.4,126.7),(601.7,126.7),(601.7,211.2),(448.4,211.2)]),
     'sala': dict(label='SALA DE TV', area=23.00, lx=508.0, ly=285.0,
         poly=[(345.7,211.2),(601.7,211.2),(601.7,432.3),(415.6,432.3),
-              (415.6,327.9),(345.7,327.9)]),
+              (415.6,326.0),(345.7,326.0)]),
     'cozinha': dict(label='COZINHA', area=8.90, lx=297.0, ly=368.0,
         poly=[(277.8,211.2),(345.7,211.2),(345.7,432.3),(248.0,432.3),
               (248.0,284.8),(277.8,284.8)]),
     'banheiro': dict(label='BANHEIRO', area=3.80, lx=380.6, ly=360.0,
-        poly=[(345.7,327.9),(415.6,327.9),(415.6,453.0),(345.7,453.0)]),
+        poly=[(345.7,326.0),(415.6,326.0),(415.6,453.0),(345.7,453.0)]),
     'closet': dict(label='CLOSET', area=5.30, lx=314.0, ly=498.0,
         poly=[(248.0,432.3),(345.7,432.3),(345.7,552.7),(248.0,552.7)]),
     'quarto': dict(label='QUARTO', area=13.40, lx=505.0, ly=500.0,
@@ -61,13 +61,13 @@ WALLS = [
     (446.11,124.38,604.03,128.94), (275.52,208.91,450.68,213.47),
     (275.52,208.91,280.09,287.11), (245.70,282.54,280.09,287.11),
     (279.36,430.06,345.67,434.63), (345.67,550.38,604.03,554.94),
-    (343.39,432.34,347.96,455.24), (343.39,325.65,347.96,432.34),
+    (343.39,432.34,347.96,455.24), (343.39,323.74,347.96,432.34),
     (415.61,430.06,601.74,434.63),
-    (413.33,325.65,417.90,432.34), (599.46,432.34,604.03,554.94),
+    (413.33,323.74,417.90,432.34), (599.46,432.34,604.03,554.94),
     (279.36,430.06,283.92,545.96), (245.70,550.38,345.67,554.94),
     (343.39,513.42,347.96,552.66), (446.11,124.38,450.68,213.47),
     (413.33,432.34,417.90,455.24), (599.46,124.38,604.03,432.34),
-    (245.70,282.54,250.26,554.94), (343.39,325.65,417.90,330.22),
+    (245.70,282.54,250.26,554.94), (343.39,323.74,417.90,328.31),
 ]
 # fundo do box no estado existente: pano de vidro chão-teto, ponta a ponta.
 # Será derrubado e substituído por parede (PAREDE_FUNDO_BOX).
@@ -82,7 +82,13 @@ PAREDE_ESCADA_JANTAR = (446.11, 124.38, 450.68, 213.47)
 PAREDE_SOB_ESCADA = (321.40, 208.91, 459.40, 213.47)
 
 DOOR_ENTRADA = dict(rect=(275.52,220.10,280.09,265.76), hinge='n', leaf='e')  # 1,00 m
-DOOR_BANHO   = dict(rect=(413.33,351.00,417.90,387.30), hinge='s', leaf='e')  # REV. O: abre p/ o quarto
+# Banheiro remedido em obra (14.11.2026), pela face externa leste, de norte a sul:
+# 0,88 m de parede + 0,80 m de vão (2,15 m de altura) + 1,20 m de parede = 2,88 m.
+# A face sul fica onde o scan a leu; a norte sobe 4 cm (o scan dava 2,84 m).
+WC_NORTE_EXT = 455.24 - 2.88 * 45.66             # 323,74
+WC_NORTE_INT = WC_NORTE_EXT + 4.57               # 328,31
+DOOR_BANHO   = dict(rect=(413.33, WC_NORTE_EXT + 0.88 * 45.66, 417.90, WC_NORTE_EXT + 1.68 * 45.66),
+                    hinge='n', leaf='e')  # abre para fora, anti-horário
 JANELAS = [
     (599.46,142.50,604.03,193.20), (599.46,215.00,604.03,300.80),
     (599.46,348.00,604.03,394.40), (599.46,455.70,604.03,509.80),
@@ -91,7 +97,7 @@ JANELAS = [
 ESCADA = dict(rect=(321.40,213.47,459.40,251.70), degraus=11)
 
 # --- elementos existentes lidos do scan (para alvos de demolição) -----------
-BANCADA_WC   = (347.96, 352.00, 366.00, 380.00)   # bancada + espelho (parede oeste)
+BANCADA_WC   = (347.96, 408.20 - 1.60 * 45.66, 347.96 + 0.40 * 45.66, 408.20)   # bancada 1,60 x 0,40, até o vidro do box
 BOX_WC       = (347.96, 408.20, 413.33, 450.67)   # box do banheiro
 VIDRO_BOX_INT= (347.96, 408.20, 413.33, 411.00)   # vidro interno do box (manter)
 CANTO_ALEMAO = (450.68, 128.94, 599.46, 145.00)   # banco de canto do jantar
@@ -164,7 +170,7 @@ ESQUADRIAS = [
     ('J05', 'Janela', 'Quarto',   1.20, 1.63, 1.96, 'manter'),
     ('J06', 'Janela', 'Closet',   2.00, 2.15, 4.30, 'manter — do piso ao teto'),
     ('P01', 'Porta',  'Entrada',  1.00, 2.29, 2.29, 'manter'),
-    ('P02', 'Porta',  'Banheiro', 0.80, 2.00, 1.64, 'de abrir — giro p/ o quarto'),
+    ('P02', 'Porta',  'Banheiro', 0.80, 2.15, 1.72, 'de abrir — anti-horário, para fora'),
     ('P03', 'Porta de correr', 'Quarto', 1.00, 2.29, 2.29, 'nova, na drywall R01'),
 ]
 
@@ -254,7 +260,11 @@ RED       = MAGENTA        # carimbo de advertência
 # 3. FOLHA A3 E PRIMITIVAS
 # ---------------------------------------------------------------------------
 W, H = 1400, 990                      # proporção A3 deitado
-FONT = "'Tiempos Text', 'Source Serif 4', Georgia, 'Times New Roman', Times, serif"
+# Tipografia do projeto: família Helvetica (pedido do cliente, 14.11.2026).
+# As folhas foram compostas em Times; a Helvetica é ~10% mais larga, então o
+# corpo é reduzido na mesma proporção para as linhas caberem onde cabiam.
+FONT = "Helvetica, Arial, sans-serif"
+ESCALA_FONTE = 0.90
 MARGIN = 48
 
 def esc(t):
@@ -272,7 +282,7 @@ class Draw(object):
     def add(self, s): self.o.append(s)
     def txt(self, x, y, t, size=10, fill=INK, weight='normal', anchor='start', ls=None, rot=None):
         a = ('<text x="%.1f" y="%.1f" font-family="%s" font-size="%.1f" fill="%s" '
-             'font-weight="%s" text-anchor="%s"' % (x, y, FONT, size, fill, weight, anchor))
+             'font-weight="%s" text-anchor="%s"' % (x, y, FONT, size * ESCALA_FONTE, fill, weight, anchor))
         if ls: a += ' letter-spacing="%.2f"' % ls
         if rot: a += ' transform="rotate(%.1f %.1f %.1f)"' % (rot, x, y)
         self.add(a + '>' + esc(t) + '</text>')

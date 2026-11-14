@@ -89,8 +89,8 @@ def construir():
     cota_v(d, 124.38, 554.94, 604.03, 48, '9,43', size=8.0)
 
     # ---------------- cotas internas ----------------
-    cota_h(d, 347.96, 413.33, 330.22, 15, size=6.4, ext=False)     # banheiro
-    cota_v(d, 330.22, 450.67, 413.33, -15, size=6.4, ext=False)
+    cota_h(d, 347.96, 413.33, WC_NORTE_INT, 15, size=6.4, ext=False)     # banheiro
+    cota_v(d, WC_NORTE_INT, 450.67, 413.33, -15, size=6.4, ext=False)
     cota_h(d, 250.26, 343.39, 550.38, -16, size=6.6, ext=False)    # closet
     cota_h(d, 347.96, 599.46, 550.38, -16, size=6.6, ext=False)    # quarto
     cota_h(d, 417.90, 599.46, 430.06, -16, size=6.6, ext=False)    # sala

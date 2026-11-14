@@ -18,7 +18,7 @@ AREA_CUMARU_RESERVA = 49.16  # + 10% de corte e reposição
 AREA_MONO_B = 56.50
 AREA_WC = 3.80
 
-SOLEIRA_WC = (413.33, 351.00, 417.90, 387.30)
+SOLEIRA_WC = DOOR_BANHO['rect']
 SOLEIRA_ENTRADA = (275.52, 220.10, 280.09, 265.76)
 
 CONTORNO_SECO = [(448.4,126.7),(601.7,126.7),(601.7,552.7),(248.0,552.7),
@@ -163,7 +163,7 @@ def construir(opcao='A'):
 
     pp = [d.P(px, py) for px, py in ROOMS['banheiro']['poly']]
     d.path(path_d(pp), fill=WET)
-    hachura_wc(d, (345.7, 327.9, 415.6, 453.0))
+    hachura_wc(d, (345.7, 326.0, 415.6, 453.0))
     d.path(path_d(pp), fill='none', stroke=K, sw=1.0)
 
     paredes(d, estado='novo')
@@ -179,7 +179,7 @@ def construir(opcao='A'):
     if A:
         # junta só onde os dois pisos realmente se encontram — não sobre parede
         tracejado(d, [(280.09, 284.8), (313.74, 284.8)] + filete_pts()
-                     + [(345.7, 325.65)])
+                     + [(345.7, WC_NORTE_EXT)])
         tracejado(d, [(345.7, 453.0), (345.7, 513.42)])
         qx, qy = d.P(*PONTA_MONO)
         d.circle(qx, qy, 3.0, fill=K)

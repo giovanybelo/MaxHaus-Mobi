@@ -279,7 +279,7 @@ def _planta_piso(d, ox, oy, S, opcao, titulo):
     porta(d, DOOR_BANHO)
     escada(d, rotulo=False)
     if A:
-        tracejado(d, [(280.09, 284.8), (313.74, 284.8)] + filete_pts() + [(345.7, 325.65)],
+        tracejado(d, [(280.09, 284.8), (313.74, 284.8)] + filete_pts() + [(345.7, WC_NORTE_EXT)],
                   dash=4.0, gap=3.0, halo=False)
         tracejado(d, [(345.7, 453.0), (345.7, 513.42)], dash=4.0, gap=3.0, halo=False)
     for k, lx, ly in (('jantar', 520.0, 160.0), ('sala', 500.0, 330.0),
@@ -843,9 +843,9 @@ NICHO_GEL = 0.92                                    # 0,90 do aparelho + 2 cm de
 KC1 = (COZ_OESTE, COZ_NORTE + NICHO_GEL, COZ_OESTE + 0.60, COZ_SUL)
 KC2 = (COZ_LESTE - 0.60, 4.40, COZ_LESTE, 5.60)     # opcional, junto a T05/T06
 WC_O, WC_L = mx(347.96), mx(413.33)                 # 2,24 · 3,67
-WC_N, K01_Y = my(330.22), my(408.20)                # 4,51 · 6,22
+WC_N, K01_Y = my(WC_NORTE_INT), my(408.20)          # 4,47 · 6,22
 BOX_S = my(450.67)                                  # 7,15
-WB1 = (WC_O, WC_N, WC_O + 0.40, K01_Y)
+WB1 = (WC_O, K01_Y - 1.60, WC_O + 0.40, K01_Y)       # 1,60 x 0,40, encostada no vidro do box
 BOX_L = WC_L - WC_O                                 # 1,43
 REVEST = 0.015                                      # revestimento por face, a conferir
 VAO_BOX_ACAB = BOX_L - 2 * REVEST                   # ≈ 1,40
@@ -864,10 +864,10 @@ TAB_PEDRA = [
     ('KC1r', 'Recortes na KC1: cuba e cooktop — modelos definidos antes do gabarito', '2 recortes'),
     ('KC2', 'OPCIONAL — bancada na parede leste, junto a T05/T06; sobra 0,84 m de passagem',
      '~1,20 × 0,60 m'),
-    ('WB1', 'Bancada do banheiro, parede oeste, da parede norte até o vidro do box',
+    ('WB1', 'Bancada do banheiro sobre o gabinete (0,88 m), saia de 10 cm, topo a 0,98 m — ver executivo',
      '%s × 0,40 m' % br(_ln(WB1))),
-    ('WB1f', 'Frontão 10 cm em três lados: norte, oeste e sul (encontro com o vidro)',
-     '~%s m' % br(_ln(WB1) + 0.80)),
+    ('WB1f', 'Saia frontal de 10 cm; sem frontão (material: executivo do banheiro)',
+     '%s m' % br(_ln(WB1))),
     ('WB1r', 'Recorte da cuba — inventário 0,60 × 0,50: na bancada de 0,40 só apoio ou semiencaixe',
      '1 recorte'),
 ]
@@ -885,7 +885,7 @@ TAB_VIDRO = [
 
 TAB_PORTAS = [
     ('P01', 'Entrada — existente, sem alteração', '1,00 × 2,29 m'),
-    ('P02', 'Banheiro — folha existente, abre para fora, agora para o lado do quarto', '0,80 × 2,00 m'),
+    ('P02', 'Banheiro — abre para fora, anti-horário (dobradiça norte)', '0,80 × 2,15 m'),
     ('P02a', 'Inverter o giro: dobradiças no lado sul, fechadura e batente refeitos', '1 conjunto'),
     ('P03', 'Quarto / sala de TV — nova, de correr, trilho aparente; folha estaciona a leste, '
             'pela face da sala de TV', 'vão 1,00 × 2,29 m'),
@@ -1003,7 +1003,7 @@ def folha_pedras_vidro_portas():
     _elev(d, xe, 210, BOX_L, 2.10, se, 'A · K01 mantido', 'altura a medir')
     _elev(d, xe, 370, VAO_BOX_ACAB, 2.00, se, 'B · VB1 novo', 'fixo + porta',
           paineis=(PAINEL_B,), porta_lado='r')
-    _elev(d, xe, 530, 0.80, 2.00, se, 'P02 · banheiro', 'vista da sala de TV', porta_lado='l')
+    _elev(d, xe, 530, 0.80, 2.15, se, 'P02 · banheiro', 'vista da sala de TV', porta_lado='l')
 
     d.set_plan(OX, OY, S)
     escala(d, 732)

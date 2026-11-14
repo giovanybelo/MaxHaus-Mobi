@@ -823,9 +823,10 @@ def _quebra(texto, largura, size):
     return linhas
 
 
-def nota_at(d, x, y, w, texto=AT_CURTO, extra=None, titulo=AT_TITULO, size=7.4, lh=10.2):
-    if w < 150 and titulo == AT_TITULO:
-        titulo = 'ÁREAS TÉCNICAS · REV. Q'
+def nota_at(d, x, y, w, texto=None, extra=None, titulo=None, size=7.4, lh=10.2):
+    texto = AT_CURTO if texto is None else texto
+    if titulo is None:
+        titulo = AT_TITULO if w >= 150 else 'BANHEIRO · OBRA 14/11'
     corpo = _quebra(texto, w - 16, size)
     if extra:
         corpo += _quebra(extra, w - 16, size)
@@ -886,7 +887,7 @@ def construir_riscos_r():
     return d
 
 
-def _com_at(fn, caixa, plano=None, texto=AT_CURTO, extra=None, desenho=True):
+def _com_at(fn, caixa, plano=None, texto=None, extra=None, desenho=True):
     """Envolve uma folha: desenha AT-A/AT-B no plano dado e põe a nota."""
     def f():
         d = fn()
@@ -1119,44 +1120,95 @@ p12.RISCOS[_i:_i] = [('A4', 'Acabamento', 'Opção A: monolítico no box pede si
 _subst(p09.TAB_DEC, 'Piso', ('Piso', 'Duas opções vivas', 'A monolítico integral, com banheiro · B porcelanato acetinado + monolítico'))
 _celula('Piso da casa', 6, 'opção A (monolítico integral) ou B (porcelanato + monolítico)')
 
+# ---------------------------------------------------------------------------
+# REV. T (14.11.2026) — banheiro remedido em obra pelo cliente
+#   · parede da porta, por fora: 0,88 + 0,80 (vão, 2,15 m de altura) + 1,20 = 2,88 m
+#     (a geometria está em base_mainfloor; por dentro o banheiro tem 2,68 m)
+#   · AT-B (shaft do chuveiro): 0,80 × 0,25 m, no canto sudoeste do box
+#   · bancada 1,60 × 0,40 m com saia de 10 cm, sobre o gabinete de 0,88 m (topo 0,98 m)
+#   · espelho 1,60 × 0,90 m · T20 é o ponto do toalheiro, acima do vaso
+#   · tipografia: família Helvetica em todas as folhas
+#   As áreas dos quadros continuam as do scan: a diferença de 4 cm no comprimento
+#   (~0,06 m²) fica para a medição depois da demolição.
+# ---------------------------------------------------------------------------
+REV_ALT = 'ALT. A  ·  REV. T'
+bm.DATA_EMISSAO = '14/11/2026'
+fo.DATA = '14.11.2026'
+fo.EMISSAO = 'ALT. A  ·  EMISSÃO 06'
+fo.ORIGEM = 'extraído do Caderno Alternativo A — REV. T'
+
+AT_B = (347.96, 450.67 - 0.80 * PT_PER_M, 347.96 + 0.25 * PT_PER_M, 450.67)
+AT_TITULO = 'BANHEIRO · MEDIDO EM OBRA (14/11/2026)'
+AT_CURTO = ('Parede da porta, por fora: 0,88 m + vão de 0,80 × 2,15 m + 1,20 m = 2,88 m. AT-B (shaft do '
+            'chuveiro) 0,80 × 0,25 m. AT-A aquecedor no closet (~0,60 × 0,40 m, NBR 13103 a liberar). '
+            'Detalhes no Executivo do Banheiro.')
+AT_MINI = 'AT-A aquecedor no closet (~0,60 × 0,40 m, NBR 13103) e AT-B shaft do chuveiro (0,80 × 0,25 m). Ver FO1 e Prancha 01.'
+AT_TXT = ('Banheiro remedido em 14/11/2026. Parede da porta, pela face externa, de norte a sul: 0,88 m de parede, '
+          'vão de 0,80 m com 2,15 m de altura e 1,20 m de parede; total 2,88 m (o scan dava 2,84 m). Por dentro: '
+          '1,43 × 2,68 m. AT-B · área técnica do chuveiro, no canto sudoeste do box: 0,80 m ao longo da parede da '
+          'bancada por 0,25 m de profundidade; o box continua com 0,92 m. Prumada do condomínio: não demolir. '
+          'Bancada 1,60 × 0,40 m com saia de 10 cm sobre o gabinete de 0,88 m (topo a 0,98 m); espelho 1,60 × 0,90 m. '
+          'AT-A · aquecedor a gás no closet, nicho ~0,60 × 0,40 m piso-laje na parede de divisa, chaminé sob a laje '
+          'até a bandeira da J06 (posição esquemática); NBR 13103: liberação por instalador credenciado / Comgás. '
+          'As áreas do quadro seguem o scan: os 4 cm a mais no comprimento (~0,06 m²) entram depois da medição pós-demolição.')
+
+_subst(p12.RISCOS, 'H6', ('H6', 'Hidráulica', 'Shaft AT-B: 0,80 × 0,25 m medido em 14/11; posição dentro do box a confirmar após a D04', 'alto'))
+_subst(fo.TAB_PORTAS, 'P02', ('P02', 'Banheiro — abre para fora em sentido anti-horário; vão a 0,88 m do canto norte', '0,80 × 2,15 m'))
+_subst(p07.TAB_RECON_WC, 'P02', ('P02', 'Porta 0,80 × 2,15 m, de abrir para fora — anti-horário, dobradiça norte', '1 vão'))
+p05.TOMADAS_NOVAS[:] = [t for t in p05.TOMADAS_NOVAS if t[0] != 'T20'] + [('T20', 3.22, 4.62, 'toalheiro, acima do vaso')]
+_subst(p05.LINHAS, 'Banheiro', ('Banheiro', 'lavatório (T17) e T20: toalheiro, acima do vaso', 'volumes de proteção, DR e cargas'))
+_subst(fo.TAB_ELE, 'T10–T20', ('T10–T20', 'Tomadas novas; T18 é espera no teto, T20 é o toalheiro acima do vaso', '11 pontos'))
+_subst(p07.TAB_INST_WC, 'T20', ('T20', 'Ponto 127 V do toalheiro térmico, acima do vaso — circuito com DR', '1 ponto'))
+
+# áreas líquidas com o AT-B de 0,80 × 0,25 (0,20 m²): banheiro 3,60 m²
+_subst(p03.TAB_B, 'Monolítico', ('Monolítico', 'sala de TV, quarto, cozinha, sala de estar, closet e corredor (sem AT-A)', '56,26 m²'))
+_subst(p03.TAB_B, 'Banheiro e box', ('Banheiro e box', 'mesmo monolítico, sistema para área molhada sobre impermeabilização (sem AT-B)', '3,60 m²'))
+_subst(p03.TAB_B, 'MainFloor', ('MainFloor', 'total revestido, líquido das áreas técnicas', '59,86 m²'))
+_subst(p03.TAB_A, 'Porcelanato', ('Porcelanato', 'cozinha 7,43 + closet 4,14 + banheiro e box 3,60 (líquidos) — no banheiro: Confete', '15,17 m²'))
+_subst(p03.TAB_A, '+ reserva de 10%', ('+ reserva de 10%', 'cortes, perdas e reposição futura do porcelanato', '16,69 m²'))
+_subst(p03.TAB_A, 'MainFloor', ('MainFloor', 'total revestido, líquido das áreas técnicas', '59,86 m²'))
+_subst(fo.TAB_PISO_A, 'A2', ('A2', 'Monolítico no banheiro e no box — sistema de área molhada, antiderrapante no box', '3,60 m²'))
+_subst(fo.TAB_PISO_B, 'B3', ('B3', 'Porcelanato Confete 100 × 100 — banheiro e box, sem o AT-B; ver executivo do banheiro', '3,60 m²'))
+_subst(p12.RISCOS, 'A1', ('A1', 'Acabamento', 'Monolítico de 44,69 a 59,86 m² pede juntas — quantas depende do sistema', 'alto'))
+EXTRA_03 = 'Piso não corre sob AT-A nem AT-B: closet 4,14 m² e banheiro 3,60 m² líquidos.'
+EXTRA_03A = 'Piso não corre sob AT-A nem AT-B: monolítico 59,86 m² líquidos, banheiro e box incluídos.'
+EXTRA_03B = 'Piso não corre sob AT-A nem AT-B: porcelanato 15,17 m² líquidos (cozinha 7,43, closet 4,14, banheiro 3,60).'
+EXTRA_WC = 'Folha anterior às medidas de 14/11: quantidades e detalhes do banheiro valem pelo Executivo do Banheiro.'
+
 CX = (172, 146, 200)          # nota sobre o recorte vazio acima da escada (plantas a 70)
 P70 = (70, 156, 70.0, 6.4)
-EXTRA_03 = 'Piso não corre sob AT-A nem AT-B: closet 4,14 m² e banheiro 3,66 m² líquidos.'
-EXTRA_03A = 'Piso não corre sob AT-A nem AT-B: monolítico 59,92 m² líquidos, banheiro e box incluídos.'
-EXTRA_03B = 'Piso não corre sob AT-A nem AT-B: porcelanato 15,23 m² líquidos (cozinha 7,43, closet 4,14, banheiro 3,66).'
 EXTRA_DEMO = 'Demolição: não tocar no AT-B (prumada). No closet, preservar ponto de gás, água fria/quente e saída de exaustão do AT-A.'
 EXTRA_AR = 'Ar/exaustão: o aquecedor tem ar de combustão e exaustão próprios — não interligar à exaustão do banheiro nem ao ar-condicionado.'
 EXTRA_RISCOS = 'NOVOS RISCOS — H6 (ATENÇÃO): posição/medida do shaft AT-B estimada, confirmar após D04. H7 (IMPASSE): aquecedor a gás no closet só segue com laudo NBR 13103 do instalador credenciado / Comgás.'
 EXTRA_13 = 'Quarto: sem mudança de layout; o closet perde ~0,24 m² para o nicho AT-A.'
-AT_MINI = 'AT-A aquecedor no closet (nicho ~0,60 × 0,40 m, NBR 13103) e AT-B shaft do banho (0,93 × 0,15 m) — ver FO1 e Prancha 01.'
 EXTRA_TETO = 'Teto: a chaminé do AT-A corre sob a laje até a J06 — nenhum trilho, luminária ou evaporadora sobre ela.'
 EXTRA_ELE = 'Elétrica: conferir com o fabricante do aquecedor se o AT-A pede ponto de força; nada embutido no AT-B.'
 
 FOLHAS = (
-    (_com_at(construir_01, (722, 800, 628), (132, 182, 64.0, 6.2), AT_TXT), 'alt-a-s-prancha-01-planta-cotada', 'Prancha 01: planta baixa cotada'),
-    (_com_at(construir_02, CX, P70, extra=EXTRA_DEMO), 'alt-a-s-prancha-02-demolicao', 'Prancha 02: demolição e desmontagem'),
-    (_com_at(lambda: construir_piso_s('A'), CX, P70, extra=EXTRA_03A), 'alt-a-s-prancha-03-piso-monolitico-integral', 'Prancha 03: piso monolítico integral'),
-    (_com_at(lambda: construir_piso_s('B'), CX, P70, extra=EXTRA_03B), 'alt-a-s-prancha-04-piso-porcelanato-monolitico', 'Prancha 04: piso porcelanato + monolítico'),
-    (_com_at(construir_teto_fas, CX, P70, extra=EXTRA_TETO), 'alt-a-s-prancha-05-teto', 'Prancha 05: teto'),
-    (_com_at(construir_eletrica, CX, P70, extra=EXTRA_ELE), 'alt-a-s-prancha-06-eletrica', 'Prancha 06: elétrica'),
-    (_com_at(p06.construir, (70, 150, 600), desenho=False), 'alt-a-s-prancha-07-esquadrias', 'Prancha 07: esquadrias'),
-    (_com_at(p07.construir, (70, 818, 345), [_plano_wc(190, 222.0, 118.0) + (7.0, True)]), 'alt-a-s-prancha-08-banheiro', 'Prancha 08: banheiro'),
-    (_com_at(p09.construir, (722, 820, 628), desenho=False), 'alt-a-s-prancha-09-medicao', 'Prancha 09: medição e decisões'),
-    (_com_at(p10.construir, (70, 640, 600), desenho=False), 'alt-a-s-prancha-10-banheiro-acabamentos', 'Prancha 10: banheiro, acabamentos'),
-    (_com_at(construir_11_fas, (755, 450, 590), desenho=False), 'alt-a-s-prancha-11-ar-luz', 'Prancha 11: ar, exaustão e iluminação'),
-    (_com_at(construir_riscos_r, None, desenho=False), 'alt-a-s-prancha-12-riscos', 'Prancha 12: riscos'),
-    (_com_at(construir_quarto_s, (66, 660, 138), desenho=False, extra=EXTRA_13), 'alt-a-s-prancha-13-quarto-claraboia', 'Prancha 13: quarto adaptável e claraboia'),
-    (_com_at(p14.construir, None, desenho=False), 'alt-a-s-prancha-14-programacao', 'Prancha 14: programação da obra'),
+    (_com_at(construir_01, (722, 800, 628), (132, 182, 64.0, 6.2), AT_TXT), 'alt-a-t-prancha-01-planta-cotada', 'Prancha 01: planta baixa cotada'),
+    (_com_at(construir_02, CX, P70, extra=EXTRA_DEMO), 'alt-a-t-prancha-02-demolicao', 'Prancha 02: demolição e desmontagem'),
+    (_com_at(lambda: construir_piso_s('A'), CX, P70, extra=EXTRA_03A), 'alt-a-t-prancha-03-piso-monolitico-integral', 'Prancha 03: piso monolítico integral'),
+    (_com_at(lambda: construir_piso_s('B'), CX, P70, extra=EXTRA_03B), 'alt-a-t-prancha-04-piso-porcelanato-monolitico', 'Prancha 04: piso porcelanato + monolítico'),
+    (_com_at(construir_teto_fas, CX, P70, extra=EXTRA_TETO), 'alt-a-t-prancha-05-teto', 'Prancha 05: teto'),
+    (_com_at(construir_eletrica, CX, P70, extra=EXTRA_ELE), 'alt-a-t-prancha-06-eletrica', 'Prancha 06: elétrica'),
+    (_com_at(p06.construir, (70, 150, 600), desenho=False), 'alt-a-t-prancha-07-esquadrias', 'Prancha 07: esquadrias'),
+    (_com_at(p07.construir, (70, 818, 345), [_plano_wc(190, 222.0, 118.0) + (7.0, True)]), 'alt-a-t-prancha-08-banheiro', 'Prancha 08: banheiro'),
+    (_com_at(p09.construir, (722, 820, 628), desenho=False), 'alt-a-t-prancha-09-medicao', 'Prancha 09: medição e decisões'),
+    (_com_at(p10.construir, (70, 640, 600), desenho=False, extra=EXTRA_WC), 'alt-a-t-prancha-10-banheiro-acabamentos', 'Prancha 10: banheiro, acabamentos'),
+    (_com_at(construir_11_fas, (755, 450, 590), desenho=False), 'alt-a-t-prancha-11-ar-luz', 'Prancha 11: ar, exaustão e iluminação'),
+    (_com_at(construir_riscos_r, None, desenho=False), 'alt-a-t-prancha-12-riscos', 'Prancha 12: riscos'),
+    (_com_at(construir_quarto_s, (66, 660, 138), desenho=False, extra=EXTRA_13), 'alt-a-t-prancha-13-quarto-claraboia', 'Prancha 13: quarto adaptável e claraboia'),
+    (_com_at(p14.construir, None, desenho=False), 'alt-a-t-prancha-14-programacao', 'Prancha 14: programação da obra'),
 )
 FOLHAS_FO = (
-    (_com_at(folha_demolicao_alt, (165, 138, 180, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_DEMO), 'alt-a-s-fornecedor-01-demolicao', 'FO1: demolição e preparo'),
-    (_com_at(folha_piso_s, (1130 - 340, 820, 560), [(70, 200, 40.0, 5.0), (414, 200, 40.0, 5.0)], extra=EXTRA_03), 'alt-a-s-fornecedor-02-piso', 'FO2: piso'),
-    (_com_at(fo.folha_eletrica, (165, 138, 180, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_ELE), 'alt-a-s-fornecedor-03-eletrica', 'FO3: elétrica'),
-    (_com_at(folha_iluminacao_fas, (162, 136, 143, 6.6), (70, 156, 54.0, 5.6), AT_MINI, EXTRA_TETO), 'alt-a-s-fornecedor-04-iluminacao', 'FO4: iluminação'),
-    (_com_at(fo.folha_ar, (160, 134, 125, 6.3), (70, 156, 49.0, 5.4), AT_MINI, EXTRA_AR), 'alt-a-s-fornecedor-05-ar', 'FO5: ar-condicionado e exaustão'),
-    (_com_at(fo.folha_cortina, (722, 760, 628), desenho=False), 'alt-a-s-fornecedor-06-cortina-claraboia', 'FO6: cortina e claraboia'),
-    (_com_at(fo.folha_pedras_vidro_portas, (722, 820, 628), desenho=False), 'alt-a-s-fornecedor-07-pedras-vidro-portas', 'FO7: pedras, vidro do box e portas'),
-    (_com_at(fo.folha_programacao, None, desenho=False), 'alt-a-s-fornecedor-08-programacao', 'FO8: programação da obra'),
+    (_com_at(folha_demolicao_alt, (178, 138, 168, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_DEMO), 'alt-a-t-fornecedor-01-demolicao', 'FO1: demolição e preparo'),
+    (_com_at(folha_piso_s, (1130 - 340, 820, 560), [(70, 200, 40.0, 5.0), (414, 200, 40.0, 5.0)], extra=EXTRA_03), 'alt-a-t-fornecedor-02-piso', 'FO2: piso'),
+    (_com_at(fo.folha_eletrica, (165, 138, 180, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_ELE), 'alt-a-t-fornecedor-03-eletrica', 'FO3: elétrica'),
+    (_com_at(folha_iluminacao_fas, (162, 136, 143, 6.6), (70, 156, 54.0, 5.6), AT_MINI, EXTRA_TETO), 'alt-a-t-fornecedor-04-iluminacao', 'FO4: iluminação'),
+    (_com_at(fo.folha_ar, (160, 134, 125, 6.3), (70, 156, 49.0, 5.4), AT_MINI, EXTRA_AR), 'alt-a-t-fornecedor-05-ar', 'FO5: ar-condicionado e exaustão'),
+    (_com_at(fo.folha_cortina, (722, 760, 628), desenho=False), 'alt-a-t-fornecedor-06-cortina-claraboia', 'FO6: cortina e claraboia'),
+    (_com_at(fo.folha_pedras_vidro_portas, (722, 820, 628), desenho=False), 'alt-a-t-fornecedor-07-pedras-vidro-portas', 'FO7: pedras, vidro do box e portas'),
+    (_com_at(fo.folha_programacao, None, desenho=False), 'alt-a-t-fornecedor-08-programacao', 'FO8: programação da obra'),
 )
 
 if __name__ == '__main__':
@@ -1165,17 +1217,17 @@ if __name__ == '__main__':
     so = set(sys.argv[1:])
     geometria(True)
     for grupo, caderno, titulo_cad in (
-            (FOLHAS, 'caderno-alternativo-a-rev-s-A3.pdf',
-             'MaxHaus MainFloor — Caderno Alternativo A, REV. S (A3)'),
-            (FOLHAS_FO, 'caderno-fornecedores-alternativo-a-rev-s-A3.pdf',
-             'MaxHaus 81I — pacote para fornecedores, Alternativo A, REV. S (A3)')):
+            (FOLHAS, 'caderno-alternativo-a-rev-t-A3.pdf',
+             'MaxHaus MainFloor — Caderno Alternativo A, REV. T (A3)'),
+            (FOLHAS_FO, 'caderno-fornecedores-alternativo-a-rev-t-A3.pdf',
+             'MaxHaus 81I — pacote para fornecedores, Alternativo A, REV. T (A3)')):
         saidas = []
         for fn, nome, titulo in grupo:
             if so and not any(s in nome for s in so):
                 continue
             caminho = salvar(fn(), pasta, nome)
             exportar_pdf_a3([caminho], os.path.join(pasta, nome + '-A3.pdf'),
-                            'MaxHaus MainFloor — Alternativo A, REV. S — ' + titulo)
+                            'MaxHaus MainFloor — Alternativo A, REV. T — ' + titulo)
             exportar_png(caminho, os.path.join(pasta, nome + '.png'))
             saidas.append(caminho)
         if not so:

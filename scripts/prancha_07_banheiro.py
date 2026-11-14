@@ -19,9 +19,10 @@ PRANCHA = 'Prancha 08 / 14'
 
 # --- faces do banheiro, em pt do scan ---------------------------------------
 WC_O, WC_L = 347.96, 413.33        # faces internas oeste e leste
-WC_N, WC_S = 330.22, 450.67        # faces internas norte e sul
+WC_N, WC_S = WC_NORTE_INT, 450.67  # faces internas norte e sul
 WC_OE, WC_LE = 343.39, 417.90      # faces externas
-WC_NE, WC_SE = 325.65, 455.24
+WC_NE, WC_SE = WC_NORTE_EXT, 455.24
+P02_N, P02_S = DOOR_BANHO['rect'][1], DOOR_BANHO['rect'][3]
 
 WC_W_M = (WC_L - WC_O) / PT_PER_M  # 1,432
 WC_H_M = (WC_S - WC_N) / PT_PER_M  # 2,638
@@ -127,7 +128,7 @@ def planta_detalhe(d, ox, oy, S, cotas=True):
     r = d.R((WC_OE, WC_NE, WC_O, WC_SE))
     d.rect(r[0] - 3.0, r[1], 3.0, r[3], fill=AMARELO, stroke=K, sw=0.5)
     # vão e folha da porta, abrindo para fora (leste), dobradiça no batente norte
-    pr = d.R((WC_L, 351.00, WC_LE, 387.30))
+    pr = d.R((WC_L, P02_N, WC_LE, P02_S))
     d.rect(pr[0], pr[1], pr[2], pr[3], fill=BG)
     vaol = abs(pr[3])
     x0 = pr[0] + pr[2]
@@ -151,15 +152,15 @@ def planta_detalhe(d, ox, oy, S, cotas=True):
     cx, cy = d.P((BANCADA_WC[0] + BANCADA_WC[2]) / 2.0, BANCADA_WC[1])
     d.txt(cx + 22, cy - 6, 'BANCADA  ·  D04 revestimento sai', 6.4, INK, 'bold',
           'start', ls=0.3)
-    cx, cy = d.P(WC_LE, (351.00 + 387.30) / 2.0)
+    cx, cy = d.P(WC_LE, (P02_N + P02_S) / 2.0)
     d.txt(cx + 8, cy + 14, 'P02', 6.8, INK, 'bold', 'start', ls=0.3)
     if cotas:
         cadeia_h(d, [WC_OE, WC_O, WC_L, WC_LE], WC_NE, -26)
         cota_h(d, WC_OE, WC_LE, WC_NE, -50, texto='1,63  externo')
         cadeia_v(d, [WC_NE, WC_N, 408.20, WC_S, WC_SE], WC_OE, -30)
-        cota_v(d, WC_NE, WC_SE, WC_OE, -56, texto='2,84  externo')
-        cota_v(d, 351.00, 387.30, WC_OE, -84, texto='0,80  vão')
-        cota_v(d, BANCADA_WC[1], BANCADA_WC[3], WC_OE, -110, texto='0,61  bancada')
+        cota_v(d, WC_NE, WC_SE, WC_OE, -56, texto='2,88  externo')
+        cota_v(d, P02_N, P02_S, WC_OE, -84, texto='0,80  vão')
+        cota_v(d, BANCADA_WC[1], BANCADA_WC[3], WC_OE, -110, texto='1,60  bancada')
     return d
 
 
@@ -286,7 +287,7 @@ def construir():
     d = folha_nova()
     cabecalho(d, 'Banheiro: planta detalhada',
               'O trecho mais denso do pavimento, em escala grande. Reforma completa: desce até a laje, ganha forro novo e volta na cota única da casa. Cotas em faces internas, com o revestimento retirado.',
-              REV, '1,43 × 2,64 m  ·  3,80 m²',
+              REV, '1,43 × 2,68 m por dentro  ·  2,88 m por fora',
               'reforma completa — forro novo a 2,40 m')
 
     S = 118.0
