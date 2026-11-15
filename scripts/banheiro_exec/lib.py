@@ -10,7 +10,8 @@ Fontes das medidas
     1600 × 400 com saia de 100; gabinete 880 de altura × 1600 × 400; espelho
     1600 × 900; topo da bancada a 980; box com 920 de fundo.
   · modelo R95 (12.11.2026): largura acabada 1420; forro e topo do revestimento
-    a 2500; nicho 1000 × 400 a +1100; ralo linear 720 × 90; vaso com eixo a 980
+    a 2500; nicho a +1100, com 400 de altura (de parede a parede: cliente, 14/11);
+    ralo linear 720 × 90; vaso com eixo a 980
     da parede da bancada; toalheiro 550 × 370; Bleu Nuit 155 × 155, junta 2.
   · FAS, pedido 22804 e folha F02: D1 Halo 7 W e D2 Tiny 5,8 W IP.
 """
@@ -50,7 +51,8 @@ CH = (653.0, 2208.0)                            # eixo do chuveiro
 D1 = (910.0, 880.0)                             # FAS D1 Halo — luz geral
 D2 = (957.0, 2261.0)                            # FAS D2 Tiny IP — box
 EX = (1150.0, 1480.0)
-NICHO = (85.0, 1085.0, 1100.0, 1500.0)          # na P1: u0, u1, z0, z1
+NICHO_PROF = 118.0                              # profundidade do nicho (R95)
+NICHO = (0.0, LARG - 250.0, 1100.0, 1500.0)     # na P1, de parede a parede: u0, u1, z0, z1
 TOALHEIRO = (VASO_X - 275.0, VASO_X + 275.0, 989.0, 1359.0)   # na P5
 
 PECA, JUNTA = 155.0, 2.0
@@ -134,7 +136,7 @@ PAREDES = [
            furos=[(PORTA[0], PORTA[1], 0.0, PORTA_H, 'PORTA  800 × 2150')],
            vista='de frente para o leste · esquerda = parede do vaso'),
     Parede('P1', 'Fundo do box e nicho (sul)', LARG - AT[2],
-           furos=[NICHO + ('NICHO  1000 × 400',)],
+           furos=[NICHO + ('NICHO DE PAREDE A PAREDE  1170 × 400',)],
            vista='de frente para o sul · esquerda = parede da porta'),
     Parede('P2', 'Face da área técnica dentro do box', AT[3] - AT[1],
            vista='de frente para o oeste · esquerda = fundo do box'),

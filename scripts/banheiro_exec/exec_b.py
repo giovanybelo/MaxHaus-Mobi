@@ -90,8 +90,9 @@ def be14():
 
 def be15():
     return _parede('BE-15', 'P1', 15, notas=[
-        ('Nicho.', 'Vão de 1000 × 400, base a +1100, centrado na parede (85 mm de cada lado). Fundo, laterais, base e teto do nicho são revestidos; '
-         'a base tem caimento para dentro do box.'),
+        ('Nicho de parede a parede.', 'Faixa de 1170 × 400, base a +1100, da parede da porta até a face da área técnica: não é mais um retângulo fechado. '
+         'A parede fica dividida em duas partes, abaixo e acima do nicho. Fundo, base, teto e as duas pontas do nicho são revestidos; a base tem caimento para dentro do box.'),
+        ('Fiadas no nicho.', 'A base a +1100 cai 1 mm acima da junta da 7ª fiada: ajustar a base para +1099 e a fiada fica inteira. O topo a +1500 corta a 10ª fiada: sobram 68 mm acima do nicho.'),
         ('Largura.', 'A parede tem 1170 mm porque a área técnica ocupa 250 mm do fundo do box.')])
 
 

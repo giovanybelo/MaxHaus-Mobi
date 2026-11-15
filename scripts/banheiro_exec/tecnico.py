@@ -32,7 +32,7 @@ def bt01():
         ('O item que não pode falhar.', 'Levar água quente à torneira da pia é a prioridade pessoal do cliente nesta reforma. O ramal está na BE-06 e na BT-04: '
          'derivação da coluna do chuveiro dentro da área técnica, cerca de 1,1 m de tubo isolado, registro acessível e teste antes de fechar a parede.'),
         ('O que continua valendo do R95.', 'Revestimento Gouache Bleu Nuit 155 × 155 com acentos Nuage, piso Confete 100 × 100, forro e topo do revestimento a +2500, '
-         'nicho de 1000 × 400, ralo linear de 720 × 90, toalheiro Aiello, porta com visor circular e Corian branco na bancada.'),
+         'ralo linear de 720 × 90, toalheiro Aiello, porta com visor circular e Corian branco na bancada.'),
         ('O que foi superado.', 'Do R95: comprimento de 2576, porta de 2103 de altura, bancada de 1640 × 530 a +840 com saia de 60, espelho de 1660 × 650 '
          'e área técnica de 240 ao longo de todo o box. Do caderno geral: forro novo a 2,40 m (aqui, +2500).'),
     ], size=8.8, lh=12.6)
@@ -86,7 +86,7 @@ def bt02():
         ('Esgoto do vaso até a parede', '~300', 'típico; depende da bacia', ''),
         ('Ralo linear R1', '720 × 90, a 62 da AT-B', 'modelo R95', ''),
         ('Ralo R2', 'grelha 100 × 100', 'caixa existente a levantar', ''),
-        ('Nicho do box', '1000 × 400, base a +1100', 'modelo R95', ''),
+        ('Nicho do box', 'de parede a parede: 1170 × 400, base a +1100', 'cliente, 14/11; altura e base do R95', ''),
     ]
     f.tab(X1, 150, 760, [('Medida', 0.30, 'start'), ('Valor adotado (mm)', 0.24, 'start'), ('Fonte', 0.28, 'start'), ('Medido em obra', 0.18, 'end')],
           linhas, titulo='MEDIDAS ADOTADAS', alt=16.5)
@@ -224,9 +224,12 @@ def bt06():
     f = Folha(CAD, 'BT-06', 'Quantitativos e compra', 'Quantidades calculadas sobre as medidas desta emissão. Refazer depois da medição de obra e antes de comprar.')
     tot_p = sum(len(p.pecas) for p in PAREDES)
     tot_a = sum(p.area for p in PAREDES)
-    res = math.ceil(tot_p * 1.10)
+    # nicho de parede a parede (1170 x 400 x 118): fundo 8 x 3, base e teto 8 + 8 tiras, duas pontas 3 + 3
+    nicho_p = 24 + 16 + 6
+    nicho_a = (1170 * 400 + 2 * 1170 * 118 + 2 * 118 * 400) / 1e6
+    res = math.ceil((tot_p + nicho_p) * 1.10)
     cx_pecas = math.ceil(res / 36.0)
-    cx_area = math.ceil(tot_a * 1.10 / 0.87)
+    cx_area = math.ceil((tot_a + nicho_a) * 1.10 / 0.87)
     caixas = max(cx_pecas, cx_area)
     _, pecas_piso, area_piso = exec_a.be11()
     y = f.tab(X1, 150, W1, [('Parede', 0.10, 'start'), ('Superfície', 0.40, 'start'), ('Peças', 0.12, 'end'), ('Inteiras', 0.12, 'end'), ('Cortadas', 0.12, 'end'), ('Área m²', 0.14, 'end')],
@@ -234,10 +237,10 @@ def bt06():
               + [('Total', '', tot_p, sum(p.inteiras for p in PAREDES), tot_p - sum(p.inteiras for p in PAREDES), br(tot_a))],
               titulo='PAREDES — GOUACHE BLEU NUIT 155 × 155')
     y = f.tab(X1, y + 30, W1, [('Material', 0.30, 'start'), ('Conta', 0.44, 'start'), ('Compra', 0.26, 'end')], [
-        ('Bleu Nuit 155 × 155 (211997E)', '%d peças + 10%% = %d; caixa com 36 peças / 0,87 m²' % (tot_p, res), '%d caixas' % caixas),
+        ('Bleu Nuit 155 × 155 (211997E)', '%d de parede + %d do nicho = %d peças; + 10%% = %d; caixa com 36 / 0,87 m²' % (tot_p, nicho_p, tot_p + nicho_p, res), '%d caixas' % caixas),
         ('Nuage 75 × 155 (12935E)', 'acentos: posições a transportar do R95 (lá eram ~50 peças)', '3 caixas (R95)'),
         ('Confete 100 × 100 (5041209)', '%s m² em %d recortes; 5 placas + 1 de reserva' % (br(area_piso), len(pecas_piso)), '3 caixas (6 placas)'),
-        ('Nicho', 'fundo, laterais, base e teto: ~0,75 m², incluído na reserva', '-'),
+        ('Nicho de parede a parede', 'fundo 1170 × 400 (24 peças), base e teto (16 tiras de 118), duas pontas (6): %d peças, %s m²' % (nicho_p, br(nicho_a)), 'na conta acima'),
     ], titulo='REVESTIMENTOS')
     f.par(X1, y + 24, W1, [
         ('Como a conta foi feita.', 'Cada posição da malha conta uma peça, inteira ou cortada. Um corte pequeno não aproveita a sobra de outro: '
