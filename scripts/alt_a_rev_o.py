@@ -1203,31 +1203,339 @@ EXTRA_13 = 'Quarto: sem mudança de layout; o closet perde ~0,24 m² para o nich
 EXTRA_TETO = 'Teto: a chaminé do AT-A corre sob a laje até a J06 — nenhum trilho, luminária ou evaporadora sobre ela.'
 EXTRA_ELE = 'Elétrica: conferir com o fabricante do aquecedor se o AT-A pede ponto de força; nada embutido no AT-B.'
 
+# ---------------------------------------------------------------------------
+# REV. V (15.11.2026) — respostas do cliente às divergências da revisão
+#   · forro do banheiro a 2,50 m (como no Executivo); exaustor 3,80 × 2,50 × 10 = 95,0 m³/h
+#   · revestimento do banheiro = Executivo E3: paredes 14,93 + nicho 0,84 + bancada 0,84 m²
+#   · elétrica: só troca de fiação; pontos mantidos; único ponto novo é o T20 (toalheiro)
+#   · porta P03: vão existente ampliado, porta de abrir 0,90 × 2,10 m para o quarto,
+#     sentido horário, a 0,15 m da parede do banheiro
+# ---------------------------------------------------------------------------
+REV_ALT = 'ALT. A  ·  REV. V'
+fo.EMISSAO = 'ALT. A  ·  EMISSÃO 08'
+fo.ORIGEM = 'extraído do Caderno Alternativo A — REV. V'
+
+
+def _varrer(obj, pares):
+    """Troca trechos de texto dentro de listas/tuplas aninhadas (dados das folhas)."""
+    if isinstance(obj, str):
+        for a, b in pares:
+            obj = obj.replace(a, b)
+        return obj
+    if isinstance(obj, tuple):
+        return tuple(_varrer(o, pares) for o in obj)
+    if isinstance(obj, list):
+        obj[:] = [_varrer(o, pares) for o in obj]
+        return obj
+    if isinstance(obj, dict):
+        for k in list(obj):
+            obj[k] = _varrer(obj[k], pares)
+        return obj
+    return obj
+
+
+def _paragrafo(notas, inicio, novo):
+    for i, n in enumerate(notas):
+        if n and n[0].startswith(inicio):
+            notas[i] = novo
+            return
+    raise ValueError('parágrafo não encontrado: %r' % inicio)
+
+
+# ---- porta P03 de abrir --------------------------------------------------
+X_BANHO_LESTE = 417.90
+P03_VAO = (X_BANHO_LESTE + 0.15 * PT_PER_M, DRYWALL_R01[1], X_BANHO_LESTE + 1.13 * PT_PER_M, DRYWALL_R01[3])
+PORTA_R01 = (P03_VAO[0] + 0.04 * PT_PER_M, DRYWALL_R01[1], P03_VAO[0] + 0.94 * PT_PER_M, DRYWALL_R01[3])
+
+
+def _porta_p03(d, rect, lado='n', sentido='e'):
+    bm.porta_horizontal(d, rect, hinge='w', swing='s')      # abre para o quarto, horário
+
+
+import alt_a_parede_cozinha as _apc
+for _m in (bm, p01, p02, p03, p04, p05, p06, p07, p13, fo, _apc):
+    if hasattr(_m, 'PORTA_NOVA'):
+        _m.PORTA_NOVA = PORTA_R01
+    if hasattr(_m, 'DRYWALL_SALA_QUARTO'):
+        _m.DRYWALL_SALA_QUARTO = PORTA_R01
+    if hasattr(_m, 'porta_correr_horizontal'):
+        _m.porta_correr_horizontal = _porta_p03
+bm.ESQUADRIAS[:] = [('P03', 'Porta de abrir', 'Quarto', 0.90, 2.10, 1.89, 'vão existente ampliado; abre para o quarto, horário')
+                    if e[0] == 'P03' else e for e in bm.ESQUADRIAS]
+_XP03 = (PORTA_R01[0] + PORTA_R01[2]) / 2.0
+p02.ALVOS[:] = [('D01', _XP03, Y_R01, 'demo', 0, -9) if a[0] == 'D01' else
+                ('R01', _XP03 + 14.0, Y_R01, 'novo', 10, 11) if a[0] == 'R01' else a for a in p02.ALVOS]
+_subst(p02.LINHAS, 'D01', ('D01', 'Ampliar o vão existente da porta sala de TV/quarto (parede mantida)', '1 vão — ~0,98 × 2,14 m'))
+_subst(p02.LINHAS, 'R01', ('R01', 'Requadrar o vão e instalar a P03: porta de abrir 0,90 × 2,10 m, para o quarto', '1 vão + 1 porta'))
+_subst(fo.TAB_DEMO, 'D01', ('D01', 'Ampliar o vão existente sala de TV/quarto para ~0,98 × 2,14 m, a 0,15 m do banheiro', '1 vão'))
+_subst(fo.TAB_DEMO, 'R01', ('R01', 'Requadrar o vão para a porta P03 de abrir, 0,90 × 2,10 m', '1 vão'))
+for _n in p02.NOTAS:
+    for _j, _ln in enumerate(_n):
+        if _ln.startswith('A parede sala de TV/quarto fica onde está'):
+            assert 'O vidro do fundo do box' in _n[_j + 1], _n[_j + 1]
+            _n[_j] = 'A parede sala de TV/quarto fica onde está: o vão existente é ampliado para a porta P03 de abrir,'
+            _n[_j + 1] = '0,90 × 2,10 m, a 0,15 m do banheiro (D01, R01). O vidro do fundo do box cai e vira parede (R02).'
+_paragrafo(p06.NOTAS, '**P03 é a única esquadria nova.', [
+    '**P03 é a única porta nova (REV. V).',
+    'Porta de abrir de 0,90 × 2,10 m, no vão existente ampliado da parede sala de TV/quarto, a 0,15 m',
+    'da parede do banheiro. Abre para o quarto, em sentido horário, com a dobradiça do lado do banheiro.',
+    'P02, do banheiro, 0,80 × 2,15 m, abre para fora, anti-horário. P01, a entrada, não muda.'])
+_paragrafo(p01.NOTAS, '**Pé-direito: 2,40 m com o forro atual', [
+    '**Pé-direito: 2,40 m com o forro atual, 2,62 m na laje.',
+    'Alturas informadas pelo cliente; o relatório do scan mede 2,40 m com forro, o que confere. Com',
+    'a retirada total do forro (D07) ganham-se os 0,22 m de plenum; só o banheiro recebe forro novo,',
+    'a 2,50 m. O volume passa de 144,51 m³ para cerca de 158 m³ com a laje aparente.'])
+_paragrafo(p01.NOTAS, '**Espessuras e níveis', [
+    '**Espessuras e níveis: uma cota única para o pavimento.',
+    'Todas as paredes lidas no scan têm 0,10 m. A parede sala de TV/quarto fica com a espessura atual;',
+    'só o vão da P03 é ampliado. O banheiro passa a nascer na mesma cota do piso seco (P05), sem',
+    'degrau de soleira, e todo o contrapiso é lixado e nivelado (P06): ±0,00 é o piso acabado atual,',
+    'e o nível final precisa ser amarrado ao hall.'])
+_varrer(p01.NOTAS, [('Só o vão da porta de correr P03 é aberto. Conferir a posição em obra.',
+                     'O vão da P03 é ampliado para porta de abrir de 0,90 × 2,10 m.')])
+_subst(fo.TAB_PORTAS, 'P03', ('P03', 'Quarto / sala de TV — de abrir, para o quarto, sentido horário; dobradiça do lado '
+                                     'do banheiro; vão a 0,15 m da parede dele', 'folha 0,90 × 2,10 m'))
+fo.SEQ_FO7[-1] = ('6', ['Portas — P02 com giro invertido e P03 nova, de abrir.',
+                        'Vão da P03 ampliado antes do revestimento; folha depois da pintura.'], False)
+_subst(p12.RISCOS, 'L4', ('L4', 'Elétrica', 'Eletroduto existente obstruído na troca da fiação — decidir antes de abrir parede', 'medio'))
+
+# ---- forro do banheiro a 2,50 m ------------------------------------------
+p07.PE_DIREITO_FORRO = 2.50
+_subst(p09.TAB_AMB, 'Banheiro', ('Banheiro', '3,80', '16,70', '9,50'))
+p09.TAB_DEC[0:0] = [
+    ('Forro do banheiro', 'REV. V', '2,50 m, forro novo, como no Executivo'),
+    ('Elétrica', 'REV. V', 'troca de fiação; só o T20 é ponto novo'),
+    ('Porta P03', 'REV. V', 'de abrir, 0,90 × 2,10 m, para o quarto'),
+    ('Bancada do banheiro', 'REV. V', 'balcão atual revestido em Bleu Nuit'),
+]
+for _m in (p11,):
+    for _nome in ('TAB_PREM',):
+        _subst(getattr(_m, _nome), 'Altura do banheiro', ('Altura do banheiro', '2,50 m', 'sob o forro novo'))
+
+# ---- prancha 10: resumo do Executivo E3 -----------------------------------
+p10.TAB_PREM[:] = [
+    ('Medidas', 'interno 1,42 × 2,68 m', 'medidas de obra de 14/11', 'Executivo E3'),
+    ('Altura de revestimento', '2,50 m', 'até o forro novo', 'REV. V — não 2,40'),
+    ('Box', '1,42 × 0,92 m', 'AT-B de 0,80 × 0,25 no canto', 'cliente, 14/11'),
+    ('Porta P02', '0,80 × 2,15 m', 'descontada; guarnição de 50 mm', 'cliente, 14/11'),
+    ('Sem revestimento', 'gabinete e espelho', 'P3 só na faixa e acima do espelho', 'BE-17'),
+    ('Nicho', '1,17 × 0,40 m', 'de parede a parede, base a +1,10', 'cliente, 14 e 15/11'),
+    ('Bancada B01', '1,60 × 0,40 + saia', 'balcão atual revestido', 'cliente, 15/11'),
+    ('Perda', '10%', 'sobre as peças contadas na malha', 'conta conservadora'),
+]
+p10.TAB_SUP[:] = [
+    ('Paredes P1 a P6', 'malha 155 × 155, 745 peças', '14,93', '1,49', '16,42'),
+    ('Nicho', 'fundo, base, teto e pontas, 46 peças', '0,84', '0,08', '0,92'),
+    ('Bancada B01', 'tampo, saia e lateral, 47 peças', '0,84', '0,08', '0,92'),
+    ('Bleu Nuit — total', '838 peças + 10% = 922 · 26 caixas', '16,61', '1,66', '18,27'),
+    ('Piso Confete', '100 × 100 em placas, 12 recortes', '3,82', '—', '6 placas'),
+]
+p10.TAB_ANTES[:] = [
+    ('REV. U (até 2,40 m)', '21,73 m²', '23,90 m²', 'perímetro cheio, sem paginação'),
+    ('REV. V = Executivo E3', '20,43 m²', '22,09 m²', 'malha real, nicho e bancada'),
+    ('Diferença', '−1,30 m²', '−1,81 m²', 'gabinete e espelho sem azulejo'),
+]
+p10.TAB_LOUCA[:] = [
+    ('Bacia sanitária', '1 un.', 'Reinstalar', 'anel e engate novos; eixo a 0,98 m'),
+    ('Cuba de apoio', '1 un.', 'Definir modelo', 'borda a +1,14 m com tampo a +0,98'),
+    ('Misturador da pia', '1 un.', 'Novo, com água quente', 'comandos a +1,245; bica a +1,25'),
+    ('Chuveiro', '1 conj.', 'Manter / definir', 'água quente da coluna no AT-B'),
+    ('Ralo linear do box', '1 un.', 'Novo, 720 × 90', 'caimento −10 / −25 mm'),
+    ('Ralo R2, junto ao vaso', '1 un.', 'Grelha oculta 100 × 100', 'prolongador a medir'),
+    ('Toalheiro elétrico', '1 un.', 'Aiello Unique Solo', 'ponto novo T20, atrás do vaso'),
+    ('Box de vidro — K01', '1 conj.', 'Manter e proteger', 'medir o vão só após revestir'),
+]
+p10.NOTAS[:] = [
+    ['**Esta folha resume o Executivo do Banheiro E3.',
+     'Quantidades, paginação e detalhes valem pelos cadernos Executivo e Técnico E3.',
+     'Aqui ficam só os totais, para o orçamento geral.'],
+    ['**Forro novo a 2,50 m.',
+     'O revestimento vai até o forro novo. Da laje (2,62 m) sobram 0,12 m para as luminárias',
+     'da FAS, que pedem no mínimo 0,10 m.'],
+    ['**Por que o total caiu, mesmo com o forro mais alto.',
+     'A conta antiga revestia o perímetro inteiro. Na malha real não há azulejo atrás do gabinete e',
+     'do espelho, e porta e nicho saem da área; entram o interior do nicho e a bancada revestida.'],
+    ['**Impermeabilização é sistema à parte.',
+     'Piso, box até o forro, rodapé e nicho: cerca de 12 m², com ensaio de 72 horas antes de assentar.'],
+    ['**Rejunte.',
+     'Paredes e piso com acrílico Quartzolit: 5 dias antes de molhar. Tampo da bancada com epóxi.'],
+]
+
+# ---- elétrica: troca de fiação, só o T20 é novo ----------------------------
+p05.TOMADAS_NOVAS[:] = [('T20', 3.22, 4.62, 'toalheiro, atrás do vaso')]
+p05.COMANDOS[:] = []
+p05.LINHAS[:] = [
+    ('Regra desta obra', 'trocar toda a fiação; manter todos os pontos', 'nenhuma saída nova, exceto o T20'),
+    ('Quadro elétrico', 'existente, junto à porta de entrada', 'avaliar proteção: DR e DPS'),
+    ('Tomadas existentes', 'T01 a T09, posições do cliente', 'trocar espelhos; módulo se gasto'),
+    ('Comandos existentes', 'posições atuais, fora do scan', 'trocar espelhos e os comandos indicados'),
+    ('Ponto novo', 'T20 — toalheiro elétrico, atrás do vaso', 'único; circuito com DR'),
+    ('Banheiro', 'bancada, luz e exaustor nos pontos atuais', 'volumes de proteção e DR'),
+    ('Iluminação FAS e ar', 'alimentar a partir dos pontos existentes', 'ponto novo só com aprovação'),
+    ('Claraboia', 'espera T18 cancelada', 'o motor de 2027/28 leva ponto próprio'),
+]
+p05.NOTAS[:] = [
+    ['**O quadro de energia fica junto à porta de entrada (posição do cliente).',
+     'Com a porta de entrada medindo 1,00 m de vão, a folha passa sobre o quadro: confirmar espaço',
+     'livre e altura antes de trocar a proteção — todo o traçado sai dali.'],
+    ['**Regra desta obra: troca de fiação, sem saídas novas.',
+     'Toda a fiação é trocada pelos eletrodutos existentes. Tomadas e comandos ficam onde estão:',
+     'nas tomadas trocam-se os espelhos; nos interruptores, os espelhos e os comandos que o cliente',
+     'indicar. O único ponto novo é o T20, do toalheiro elétrico, atrás do vaso.'],
+    ['**Eletroduto obstruído é decisão, não improviso.',
+     'Se um trecho não aceitar o cabo novo, parar e decidir com o cliente antes de abrir parede ou',
+     'de passar cabo aparente.'],
+    ['**Iluminação FAS e ar-condicionado: conferir a alimentação.',
+     'Trilhos, destaques e evaporadoras das Pranchas 05 e 11 precisam de energia no teto. Se o projeto',
+     'da FAS ou o manual da Electrolux pedir ponto que não existe, é exceção a aprovar pelo cliente.'],
+    ['**Claraboia e quarto adaptável: sem pontos novos.',
+     'A espera T18 e os comandos S09/S10 saem desta obra. O quarto adaptável usa as tomadas',
+     'existentes T01 e T02; o motor do fechamento, em 2027/28, leva ponto e eletroduto próprios.'],
+    p05.NOTAS[-1]]
+fo.ESPERA_CLARABOIA = False
+fo.TAB_ELE[:] = [
+    ('QD', 'Quadro existente: avaliar; proteção DR e DPS conforme projeto', '1 conjunto'),
+    ('FI', 'Troca de toda a fiação pelos eletrodutos existentes', 'todos os circuitos'),
+    ('T01–T09', 'Tomadas existentes: manter posição; trocar espelho (e módulo, se gasto)', '9 pontos'),
+    ('SX', 'Comandos existentes: manter posição; trocar espelhos e os comandos indicados', 'a levantar'),
+    ('T20', 'Ponto novo do toalheiro elétrico, atrás do vaso — o único ponto novo', '1 ponto'),
+    ('IN2', 'Infraestrutura aparente no teto para a iluminação FAS (perfilado pintado)', 'a medir'),
+    ('AL1', 'Trilhos e destaques FAS: alimentar de ponto existente; ponto novo só com aprovação', 'a confirmar'),
+    ('AL3', 'Luz do banheiro no forro novo (D1, D2): circuito existente', '2 pontos'),
+    ('AL4', 'Evaporadoras Electrolux: idem AL1', 'a confirmar'),
+    ('AL5', 'Exaustor do banheiro e coifa: pontos existentes', '2 pontos'),
+    ('PR', 'Proteção: disjuntores, DR e DPS conforme projeto elétrico', '1 conjunto'),
+    ('AT', 'Aterramento e equipotencialização', '1 conjunto'),
+    ('EN', 'Ensaios: continuidade, isolamento, DR e aterramento', '1 conjunto'),
+]
+fo.SEQ_ELE[:] = [
+    ('1', ['Levantamento e ensaio — E02.',
+           'Identificar quadro, circuitos e eletrodutos existentes. Medir isolamento.'], True),
+    ('2', ['Projeto de retrofit.',
+           'Diagrama unifilar, seções e proteção para a fiação nova nos eletrodutos existentes.'], True),
+    ('3', ['Teste de passagem.',
+           'Conferir cada eletroduto antes de comprar cabo. Obstruído: parar e decidir com o cliente.'], True),
+    ('4', ['Retirada da fiação antiga e passagem da nova — FI.'], False),
+    ('5', ['Ponto novo T20, antes da impermeabilização do banheiro.'], True),
+    ('6', ['Infraestrutura aparente no teto — IN2.',
+           'Somente após o preparo da laje, alinhada aos trilhos da FO4.'], False),
+    ('7', ['Quadro, proteção e aterramento — QD, PR e AT.'], False),
+    ('8', ['Ensaios — EN.', 'Continuidade, isolamento, DR e aterramento, com laudo por escrito.'], False),
+    ('9', ['Espelhos e comandos novos.', 'Somente após a pintura concluída.'], False),
+]
+_varrer(p07.TAB_INST_WC, [('Tomada do lavatório, a validar em volume de proteção', 'Tomada existente do lavatório: manter, trocar espelho'),
+                          ('Comando das arandelas do espelho, junto à bancada', 'Interruptor existente do espelho: trocar comando e espelho')])
+_varrer(pg.LINHAS, [('eletrodutos, quadro, esperas AL e T18', 'troca da fiação, quadro e T20'), ('espera T18 e comando S10', 'sem espera da claraboia'), ('FC01 e FC02 na espera T18', 'FC01 e FC02, ponto próprio')])
+p13.TOMADAS_Q[:] = []
+p13.COMANDOS_Q[:] = []
+p13.ESPERA_CLARABOIA = False
+p13.TAB_FASE[:] = [r for r in p13.TAB_FASE if r[0] not in ('IN4', 'IN5')]
+_subst(p13.TAB_FASE, 'FC02', ('FC02', 'Ponto e eletroduto do motor, aparentes sobre a laje pintada', '2027/28'))
+_paragrafo(p13.NOTAS, '**Fechamento elétrico', [
+    '**Fechamento elétrico: equipamento e ponto ficam para 2027/28.',
+    'Sem pontos novos nesta obra, a espera T18 saiu. O motor vai precisar de ponto e eletroduto',
+    'aparentes na época. A moldura fixa na faixa de 0,12 m em volta do vidro — confirmar viga de borda.'])
+_subst(fo.TAB_CORT, 'FC02', ('FC02', '2027/28 — ponto e eletroduto do motor, aparentes, e comando', '1 conjunto'))
+fo.SEQ_CORT[:] = [s for s in fo.SEQ_CORT if not s[1][0].startswith('Espera da claraboia')]
+fo.SEQ_CORT[:] = [(str(i + 1),) + s[1:] for i, s in enumerate(fo.SEQ_CORT)]
+fo.SEQ_CORT[-1] = (fo.SEQ_CORT[-1][0], ['2027/28 — fechamento elétrico FC01 e FC02.',
+                                        'Moldura na faixa reservada; motor com ponto e eletroduto próprios.',
+                                        'Não pode interferir no perfil PF1 que cruza por baixo da claraboia.'], True)
+
+# ---- textos já desenhados: trocas na saída SVG ------------------------------
+PARES_REV_V = [
+    ('de correr e porta do banheiro girando para o quarto — está nas Pranchas 03 a 08.',
+     'P03 de abrir e giro novo da porta do banheiro — está nas Pranchas 03 a 08.'),
+    ('S04/S08 ficam do lado da dobradiça', 'S04 fica do lado da dobradiça'),
+    ('esperas AL e T18', 'esperas AL'),
+    ('espera T18 e comando S10', 'sem espera da claraboia'),
+    ('FC01 e FC02 na espera T18', 'FC01 e FC02, com ponto próprio'),
+    ('vão de 1,00 m na drywall R01', 'vão da P03 ampliado'),
+    ('trilho P03 · giro novo da P02', 'porta P03 · giro novo da P02'),
+    ('Forro novo do banheiro, resistente à umidade, a 2,40 m', 'Forro novo do banheiro, resistente à umidade, a 2,50 m'),
+    ('Forro novo resistente à umidade, a 2,40 m', 'Forro novo resistente à umidade, a 2,50 m'),
+    ('que volta novo (R03) a 2,40 m', 'que volta novo (R03) a 2,50 m'),
+    ('3,8 × 2,40 × 10 = 91,2 m³/h', '3,8 × 2,50 × 10 = 95,0 m³/h'),
+    ('(mantém forro)', '(forro novo)'),
+    ('3,80 × 2,40 = 9,12 m³', '3,80 × 2,50 = 9,50 m³'),
+    ('3,80 m² × 2,40 m × 10 trocas/h', '3,80 m² × 2,50 m × 10 trocas/h'),
+    ('91,2 m³/h', '95,0 m³/h'),
+    ('forro novo R03  ·  2,40 m livres', 'forro novo R03  ·  2,50 m livres'),
+    ('forro novo a 2,40 m', 'forro novo a 2,50 m'),
+    ('Altura livre de 2,40 m, contra 2,62 m', 'Altura livre de 2,50 m, contra 2,62 m'),
+    ('2,40 m sob o forro do banheiro', '2,50 m sob o forro novo do banheiro'),
+    ('2,40 sob o forro do banheiro', '2,50 sob o forro novo do banheiro'),
+    ('exceto o banheiro, com 2,40 m sob o forro', 'exceto o banheiro, com 2,50 m sob o forro novo'),
+    ('depois da D07, e 2,40 m', 'depois da D07, e 2,50 m'),
+    ('banheiro se calculam com 2,40 — usar 2,62 lá dentro superestima em 9%.',
+     'banheiro se calculam com 2,50 — usar 2,62 lá dentro superestima em 5%.'),
+    ('piso e paredes até 2,40 m', 'piso e paredes até 2,50 m'),
+    ('banheiro a 2,40 m e a exaustão a', 'banheiro a 2,50 m e a exaustão a'),
+    ('O volume se calcula com 2,40 m, a altura sob o forro que permanece', 'O volume se calcula com 2,50 m, a altura sob o forro novo'),
+    ('entram trilho, perfilado e evaporadora — e é ela que dá os 0,33 m acima da porta de correr de',
+     'entram trilho, perfilado e evaporadora. O banheiro é o único com forro: novo, a 2,50 m;'),
+    ('2,29 m. Fora do banheiro, único com forro (refeito novo), nada de embutido.', 'fora dele, nada de embutido.'),
+    ('e a linha da porta de correr entre sala de TV e quarto.', 'e a soleira da porta P03, entre sala de TV e quarto.'),
+    ('as soleiras da entrada e do banheiro, a linha da porta de', 'as soleiras da entrada, do banheiro e da porta'),
+    ('correr P03 e o encontro com o porcelanato.', 'P03 e o encontro com o porcelanato.'),
+    ('O trilho CT01 e o da porta P03 vão na laje pintada; o perfil PF1 e os apoios da cortina',
+     'O trilho CT01 vai na laje pintada; o perfil PF1 e os apoios da cortina'),
+    ('entram antes, com a espera T18 da claraboia. O fechamento elétrico é de 2027/28 e só usa',
+     'entram antes. O fechamento elétrico da claraboia é de 2027/28 e terá'),
+    ('o que fica pronto agora.', 'ponto e eletroduto próprios, feitos na época.'),
+    ('Reservas de localização, sem circuitos executivos. Posições existentes conforme marcação do cliente sobre o estudo anterior.',
+     'Retrofit: troca de toda a fiação e dos espelhos, pontos existentes mantidos. Único ponto novo: T20, atrás do vaso.'),
+    ('>RESERVAS DE INFRAESTRUTURA ELÉTRICA<', '>ESCOPO ELÉTRICO — RETROFIT<'),
+    ('>Tomada nova (reserva)<', '>Ponto novo — só o T20<'),
+    ('>Comando / interruptor<', '>Comandos existentes<'),
+    ('a claraboia ganha fechamento elétrico em 2027/28, com a infraestrutura feita agora.',
+     'a claraboia ganha fechamento elétrico em 2027/28, com ponto e eletroduto feitos na época.'),
+]
+PARES_FOLHA = {
+    'prancha-08-banheiro': [('0,20  plenum', '0,12  plenum')],
+    'prancha-10-banheiro': [
+        ('Folha anterior às medidas de 14/11: quantidades e detalhes do banheiro valem pelo Executivo do Banheiro.',
+         'Quantidades desta folha = Executivo do Banheiro E3 (15/11). Detalhes e paginação, só no executivo.'),
+        ('Geometria interna do scan de 02.09.2026 nas faces de revestimento retirado: 1,432 × 2,638 m. O CSV arredonda box e perímetro; esta folha usa o medido e mostra os dois.',
+         'Medidas de obra de 14/11/2026, faces acabadas: 1,42 × 2,68 m internos. Quantidades pela malha do Executivo E3, peça a peça.'),
+        ('Arredondar por caixa só após a paginação do produto.', 'Compra arredondada por caixa: 26 caixas de Bleu Nuit.'),
+        ('Quantitativo de acabamento sobre o layout existente. Pontos hidráulicos mantidos como hipótese até confirmar água, esgoto, aquecimento e interferência na laje.',
+         'Resumo do Executivo do Banheiro E3: medidas de obra de 14/11, paginação real, nicho e bancada revestida.'),
+        ('21,73 m² líquidos  ·  23,90 m² com 10%', '20,43 m² líquidos  ·  22,09 m² com 10%'),
+        ('revestimento até 2,40 m — o forro fica', 'revestimento até 2,50 m — forro novo'),
+        ('>SUPERFÍCIES — SEM DUPLA CONTAGEM<', '>SUPERFÍCIES — EXECUTIVO E3<'),
+        ('>O QUE MUDOU DESDE A FOLHA DE 11.09<', '>O QUE MUDOU DESDE A REV. U<'),
+        ('>2,40 m<', '>2,50 m<'), ('>até o forro<', '>até o forro novo<'),
+        ('BOX  1,43 × 0,93', 'BOX  1,42 × 0,92'), ('>2,47 m²<', '>2,50 m²<'), ('>1,33 m²<', '>1,31 m²<'),
+        ('>1,43 m<', '>1,42 m<'), ('>2,64 m<', '>2,68 m<')],
+}
+
+
 FOLHAS = (
-    (_com_at(construir_01, (722, 800, 628), (132, 182, 64.0, 6.2), AT_TXT), 'alt-a-u-prancha-01-planta-cotada', 'Prancha 01: planta baixa cotada'),
-    (_com_at(construir_02, CX, P70, extra=EXTRA_DEMO), 'alt-a-u-prancha-02-demolicao', 'Prancha 02: demolição e desmontagem'),
-    (_com_at(lambda: construir_piso_s('A'), CX, P70, extra=EXTRA_03A), 'alt-a-u-prancha-03-piso-monolitico-integral', 'Prancha 03: piso monolítico integral'),
-    (_com_at(lambda: construir_piso_s('B'), CX, P70, extra=EXTRA_03B), 'alt-a-u-prancha-04-piso-porcelanato-monolitico', 'Prancha 04: piso porcelanato + monolítico'),
-    (_com_at(construir_teto_fas, CX, P70, extra=EXTRA_TETO), 'alt-a-u-prancha-05-teto', 'Prancha 05: teto'),
-    (_com_at(construir_eletrica, CX, P70, extra=EXTRA_ELE), 'alt-a-u-prancha-06-eletrica', 'Prancha 06: elétrica'),
-    (_com_at(p06.construir, (70, 150, 600), desenho=False), 'alt-a-u-prancha-07-esquadrias', 'Prancha 07: esquadrias'),
-    (_com_at(p07.construir, (70, 818, 345), [_plano_wc(190, 222.0, 118.0) + (7.0, True)]), 'alt-a-u-prancha-08-banheiro', 'Prancha 08: banheiro'),
-    (_com_at(p09.construir, (722, 820, 628), desenho=False), 'alt-a-u-prancha-09-medicao', 'Prancha 09: medição e decisões'),
-    (_com_at(p10.construir, (70, 640, 600), desenho=False, extra=EXTRA_WC), 'alt-a-u-prancha-10-banheiro-acabamentos', 'Prancha 10: banheiro, acabamentos'),
-    (_com_at(construir_11_fas, (755, 450, 590), desenho=False), 'alt-a-u-prancha-11-ar-luz', 'Prancha 11: ar, exaustão e iluminação'),
-    (_com_at(construir_riscos_r, None, desenho=False), 'alt-a-u-prancha-12-riscos', 'Prancha 12: riscos'),
-    (_com_at(construir_quarto_s, (66, 660, 138), desenho=False, extra=EXTRA_13), 'alt-a-u-prancha-13-quarto-claraboia', 'Prancha 13: quarto adaptável e claraboia'),
-    (_com_at(p14.construir, None, desenho=False), 'alt-a-u-prancha-14-programacao', 'Prancha 14: programação da obra'),
+    (_com_at(construir_01, (722, 800, 628), (132, 182, 64.0, 6.2), AT_TXT), 'alt-a-v-prancha-01-planta-cotada', 'Prancha 01: planta baixa cotada'),
+    (_com_at(construir_02, CX, P70, extra=EXTRA_DEMO), 'alt-a-v-prancha-02-demolicao', 'Prancha 02: demolição e desmontagem'),
+    (_com_at(lambda: construir_piso_s('A'), CX, P70, extra=EXTRA_03A), 'alt-a-v-prancha-03-piso-monolitico-integral', 'Prancha 03: piso monolítico integral'),
+    (_com_at(lambda: construir_piso_s('B'), CX, P70, extra=EXTRA_03B), 'alt-a-v-prancha-04-piso-porcelanato-monolitico', 'Prancha 04: piso porcelanato + monolítico'),
+    (_com_at(construir_teto_fas, CX, P70, extra=EXTRA_TETO), 'alt-a-v-prancha-05-teto', 'Prancha 05: teto'),
+    (_com_at(construir_eletrica, CX, P70, extra=EXTRA_ELE), 'alt-a-v-prancha-06-eletrica', 'Prancha 06: elétrica'),
+    (_com_at(p06.construir, (70, 150, 600), desenho=False), 'alt-a-v-prancha-07-esquadrias', 'Prancha 07: esquadrias'),
+    (_com_at(p07.construir, (70, 818, 345), [_plano_wc(190, 222.0, 118.0) + (7.0, True)]), 'alt-a-v-prancha-08-banheiro', 'Prancha 08: banheiro'),
+    (_com_at(p09.construir, (722, 820, 628), desenho=False), 'alt-a-v-prancha-09-medicao', 'Prancha 09: medição e decisões'),
+    (_com_at(p10.construir, (70, 640, 600), desenho=False, extra=EXTRA_WC), 'alt-a-v-prancha-10-banheiro-acabamentos', 'Prancha 10: banheiro, acabamentos'),
+    (_com_at(construir_11_fas, (755, 450, 590), desenho=False), 'alt-a-v-prancha-11-ar-luz', 'Prancha 11: ar, exaustão e iluminação'),
+    (_com_at(construir_riscos_r, None, desenho=False), 'alt-a-v-prancha-12-riscos', 'Prancha 12: riscos'),
+    (_com_at(construir_quarto_s, (66, 660, 138), desenho=False, extra=EXTRA_13), 'alt-a-v-prancha-13-quarto-claraboia', 'Prancha 13: quarto adaptável e claraboia'),
+    (_com_at(p14.construir, None, desenho=False), 'alt-a-v-prancha-14-programacao', 'Prancha 14: programação da obra'),
 )
 FOLHAS_FO = (
-    (_com_at(folha_demolicao_alt, (178, 138, 168, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_DEMO), 'alt-a-u-fornecedor-01-demolicao', 'FO1: demolição e preparo'),
-    (_com_at(folha_piso_s, (1130 - 340, 820, 560), [(70, 200, 40.0, 5.0), (414, 200, 40.0, 5.0)], extra=EXTRA_03), 'alt-a-u-fornecedor-02-piso', 'FO2: piso'),
-    (_com_at(fo.folha_eletrica, (165, 138, 180, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_ELE), 'alt-a-u-fornecedor-03-eletrica', 'FO3: elétrica'),
-    (_com_at(folha_iluminacao_fas, (162, 136, 143, 6.6), (70, 156, 54.0, 5.6), AT_MINI, EXTRA_TETO), 'alt-a-u-fornecedor-04-iluminacao', 'FO4: iluminação'),
-    (_com_at(fo.folha_ar, (160, 134, 125, 6.3), (70, 156, 49.0, 5.4), AT_MINI, EXTRA_AR), 'alt-a-u-fornecedor-05-ar', 'FO5: ar-condicionado e exaustão'),
-    (_com_at(fo.folha_cortina, (722, 760, 628), desenho=False), 'alt-a-u-fornecedor-06-cortina-claraboia', 'FO6: cortina e claraboia'),
-    (_com_at(fo.folha_pedras_vidro_portas, (722, 820, 628), desenho=False), 'alt-a-u-fornecedor-07-pedras-vidro-portas', 'FO7: pedras, vidro do box e portas'),
-    (_com_at(fo.folha_programacao, None, desenho=False), 'alt-a-u-fornecedor-08-programacao', 'FO8: programação da obra'),
+    (_com_at(folha_demolicao_alt, (178, 138, 168, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_DEMO), 'alt-a-v-fornecedor-01-demolicao', 'FO1: demolição e preparo'),
+    (_com_at(folha_piso_s, (1130 - 340, 820, 560), [(70, 200, 40.0, 5.0), (414, 200, 40.0, 5.0)], extra=EXTRA_03), 'alt-a-v-fornecedor-02-piso', 'FO2: piso'),
+    (_com_at(fo.folha_eletrica, (165, 138, 180, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_ELE), 'alt-a-v-fornecedor-03-eletrica', 'FO3: elétrica'),
+    (_com_at(folha_iluminacao_fas, (162, 136, 143, 6.6), (70, 156, 54.0, 5.6), AT_MINI, EXTRA_TETO), 'alt-a-v-fornecedor-04-iluminacao', 'FO4: iluminação'),
+    (_com_at(fo.folha_ar, (160, 134, 125, 6.3), (70, 156, 49.0, 5.4), AT_MINI, EXTRA_AR), 'alt-a-v-fornecedor-05-ar', 'FO5: ar-condicionado e exaustão'),
+    (_com_at(fo.folha_cortina, (722, 760, 628), desenho=False), 'alt-a-v-fornecedor-06-cortina-claraboia', 'FO6: cortina e claraboia'),
+    (_com_at(fo.folha_pedras_vidro_portas, (722, 820, 628), desenho=False), 'alt-a-v-fornecedor-07-pedras-vidro-portas', 'FO7: pedras, vidro do box e portas'),
+    (_com_at(fo.folha_programacao, None, desenho=False), 'alt-a-v-fornecedor-08-programacao', 'FO8: programação da obra'),
 )
 
 if __name__ == '__main__':
@@ -1236,10 +1544,10 @@ if __name__ == '__main__':
     so = set(sys.argv[1:])
     geometria(True)
     for grupo, caderno, titulo_cad in (
-            (FOLHAS, 'caderno-alternativo-a-rev-u-A3.pdf',
-             'MaxHaus MainFloor — Caderno Alternativo A, REV. U (A3)'),
-            (FOLHAS_FO, 'caderno-fornecedores-alternativo-a-rev-u-A3.pdf',
-             'MaxHaus 81I — pacote para fornecedores, Alternativo A, REV. U (A3)')):
+            (FOLHAS, 'caderno-alternativo-a-rev-v-A3.pdf',
+             'MaxHaus MainFloor — Caderno Alternativo A, REV. V (A3)'),
+            (FOLHAS_FO, 'caderno-fornecedores-alternativo-a-rev-v-A3.pdf',
+             'MaxHaus 81I — pacote para fornecedores, Alternativo A, REV. V (A3)')):
         saidas = []
         for fn, nome, titulo in grupo:
             if so and not any(s in nome for s in so):
@@ -1247,14 +1555,16 @@ if __name__ == '__main__':
             d_ = fn()
             for _i, _s in enumerate(d_.o):          # REV. U: a parede sala de TV/quarto não é refeita
                 for _a, _b in (('na drywall reconstruída', 'na parede mantida'), ('na drywall R01', 'na parede sala/quarto'),
-                               ('e drywall ainda sem porta', 'e parede sala de TV/quarto ainda sem porta'),
-                               ('fechar a drywall R01', 'requadrar o vão R01'), ('drywall R01', 'parede sala/quarto')):
+                               ('e drywall ainda sem porta', 'e o vão atual da porta sala de TV/quarto'),
+                               ('fechar a drywall R01', 'requadrar o vão R01')) + tuple(PARES_REV_V) + \
+                              tuple(par for k, v in PARES_FOLHA.items() if k in nome for par in v) + \
+                              (('drywall R01', 'parede sala/quarto'),):
                     if _a in _s:
                         _s = _s.replace(_a, _b)
                 d_.o[_i] = _s
             caminho = salvar(d_, pasta, nome)
             exportar_pdf_a3([caminho], os.path.join(pasta, nome + '-A3.pdf'),
-                            'MaxHaus MainFloor — Alternativo A, REV. U — ' + titulo)
+                            'MaxHaus MainFloor — Alternativo A, REV. V — ' + titulo)
             exportar_png(caminho, os.path.join(pasta, nome + '.png'))
             saidas.append(caminho)
         if not so:

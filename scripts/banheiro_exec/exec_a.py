@@ -367,7 +367,7 @@ def be06():
 
 
 def be07():
-    f = Folha(CAD, 'BE-07', 'Elétrica: pontos e comandos', 'Pontos de coordenação. Circuito, bitola e proteção são do eletricista, depois do levantamento do quadro.', '1:15')
+    f = Folha(CAD, 'BE-07', 'Elétrica: pontos e comandos', 'Troca de toda a fiação; pontos existentes mantidos. Único ponto novo: T20, do toalheiro, atrás do vaso.', '1:15')
     P, s = f.planta(OX, OY, N)
     d = f.d
     def ponto(x, y, rot, cor=CIANO, dx=12, dy=3, an='start'):
@@ -388,24 +388,26 @@ def be07():
         f.t(c[0] + 12, c[1] + 3, rot, 7.0, K, True)
     f.legenda(OX - 22, 880, [('dot', CIANO, 'Tomada / ponto de força'), ('dot', AMARELO, 'Ponto de luz'), ('dot', BRANCO, 'Exaustor')])
     y = f.tab(CX, 150, CW, [('ID', 0.10, 'start'), ('Ponto', 0.50, 'start'), ('Altura / dado', 0.40, 'end')], [
-        ('T20', 'Toalheiro térmico Aiello Unique Solo, acima do vaso (ponto novo)', '127 V; caixa atrás do aparelho, +1170'),
-        ('T17', 'Tomada da bancada, na faixa entre tampo e espelho', '+1160; 2P+T'),
-        ('D1', 'Luz geral: FAS Halo embutido 7 W, 2700 K', 'no forro; furo de 53 mm'),
-        ('D2', 'Luz do box: FAS Tiny embutido 5,8 W, 2700 K, IP', 'no forro; furo de 34 mm'),
-        ('L3', 'Perfil linear sobre o espelho (existente)', 'reinstalar; fonte acessível'),
-        ('EX01', 'Exaustor no forro', 'posição e duto a levantar'),
-        ('S04', 'Comando do banheiro: D1 + D2 e exaustor', 'fora, ao norte da porta; +1100'),
-        ('S03', 'Comando do perfil do espelho', 'junto ao S04; +1100'),
+        ('T20', 'NOVO · toalheiro elétrico Aiello Unique Solo, atrás do vaso', '127 V; caixa atrás do aparelho, +1170'),
+        ('T17', 'Tomada existente da bancada: manter, trocar espelho', 'conferir a posição no levantamento'),
+        ('D1', 'Luz geral: FAS Halo 7 W no forro novo', 'circuito de luz existente; furo de 53 mm'),
+        ('D2', 'Luz do box: FAS Tiny 5,8 W IP no forro novo', 'circuito de luz existente; furo de 34 mm'),
+        ('L3', 'Perfil sobre o espelho (existente)', 'reinstalar no ponto existente'),
+        ('EX01', 'Exaustor no forro', 'ponto existente; duto a levantar'),
+        ('S04', 'Interruptor existente: D1 + D2 e exaustor', 'manter posição; trocar comando e espelho'),
+        ('S03', 'Interruptor existente do espelho', 'manter posição; trocar comando e espelho'),
     ], titulo='PONTOS')
     f.par(CX, y + 26, CW, [
+        ('Regra desta obra.', 'Toda a fiação é trocada pelos eletrodutos existentes; nenhum ponto muda de lugar. Nas tomadas, troca o espelho; '
+         'nos interruptores, o espelho e o comando. A única saída nova é o T20.'),
         ('O T20 é o ponto do toalheiro.', 'Fica na parede do vaso, no eixo dele, atrás do toalheiro (550 × 370 mm, base a +989). '
          'A versão de fio oculto liga direto na caixa, sem plugue: conferir a interface com a peça comprada antes de fechar a parede.'),
         ('Proteção.', 'Todos os circuitos do banheiro com DR de 30 mA e condutor de terra. Nada de emenda solta dentro da parede. '
          'Respeitar os volumes do box: nenhum ponto de força dentro dele.'),
         ('Interruptores do lado da dobradiça.', 'Com a porta abrindo em sentido anti-horário, S03 e S04 ficam do lado da dobradiça, a 880 mm '
          'de parede livre ao norte do vão. Conferir se o alcance fica bom com a folha aberta.'),
-        ('Levar a fiação pelo forro.', 'O forro novo a +2500 deixa 120 mm até a laje. As descidas para T17, T20 e comandos são embutidas, '
-         'feitas antes da impermeabilização e do revestimento.'),
+        ('Fiação pelo forro.', 'O forro novo a +2500 deixa 120 mm até a laje para os cabos de D1, D2 e exaustor. '
+         'A descida do T20 é a única nova: embutida, feita antes da impermeabilização e do revestimento.'),
     ])
     return f
 
@@ -489,7 +491,7 @@ def be09():
     f.t((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, 'GABINETE EXISTENTE  1600 × 880 × 400', 7.6, K70, True, 'middle')
     a, b = E(120, TOPO_BANC), E(1720, GABINETE_H)
     d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=BRANCO, stroke=K, sw=1.4)
-    f.t((a[0] + b[0]) / 2, (a[1] + b[1]) / 2 + 3, 'B01  ·  saia de 100', 7.4, K, True, 'middle')
+    f.t((a[0] + b[0]) / 2, (a[1] + b[1]) / 2 + 3, 'B01  ·  revestida em Bleu Nuit  ·  saia de 100', 7.4, K, True, 'middle')
     a, b = E(120, ESP_BASE + ESP_H), E(1720, ESP_BASE)
     d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=CIANO18, stroke=K, sw=0.9)
     f.t((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, 'ESPELHO  1600 × 900', 8.0, K70, True, 'middle')
@@ -542,13 +544,14 @@ def be09():
         ('Espelho', '1600 × 900; base a +1340'),
         ('Faixa livre', '360 mm entre tampo e espelho'),
         ('Comandos / bica', '+1245 / +1250'),
-        ('Material', 'Corian branco (R95), a confirmar'),
+        ('Acabamento', 'Bleu Nuit 155 × 155 no tampo, na saia e na lateral (BE-19)'),
+        ('Base', 'tampo existente, se firme; senão placa cimentícia'),
     ], titulo='BANCADA B01')
     f.par(cx, y + 24, cw, [
         ('Altura a conferir no uso.', 'Com o tampo a +980 e uma cuba de apoio de 160 mm, a borda da cuba fica a +1140: é alto. '
          'Vale simular com as peças antes de fabricar; uma cuba de semiencaixe ou de embutir baixa a borda.'),
-        ('Saia e apoio.', 'A saia de 100 mm cobre a frente, do topo do gabinete ao topo do tampo. O gabinete não é presumido estrutural: '
-         'apoios e reforços do tampo pelo fabricante.'),
+        ('Bancada revestida (cliente, 15/11).', 'O balcão atual é coberto com o mesmo azulejo das paredes: tampo, saia de 100 mm e lateral norte, '
+         'com perfil metálico na aresta e rejunte epóxi no tampo. Paginação na BE-19.'),
         ('Furos.', 'Cuba, válvula e metais só com o gabarito das peças reais. A bancada tem 400 mm de fundo: conferir se a cuba cabe com a bica na parede.'),
         ('Espelho.', 'A base a +1340 mantém 90 mm acima do eixo da bica, como na R95. Se o espelho existente for reaproveitado, conferir a fixação.'),
         ('Parede.', 'Sem revestimento atrás do gabinete e do espelho: só na faixa de 360 mm e acima do espelho. Ver a paginação na BE-17.'),

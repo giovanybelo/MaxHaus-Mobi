@@ -397,6 +397,8 @@ def zona_piscina(d, rotulo=True):
 # ---------------------------------------------------------------------------
 # FO3 — ELÉTRICA (força, comando e quadro)
 # ---------------------------------------------------------------------------
+ESPERA_CLARABOIA = True       # o Alternativo A pode cancelar a espera
+
 TAB_ELE = [
     ('QD',  'Quadro de distribuição: avaliar, dimensionar e substituir',       '1 conjunto'),
     ('T01–T09', 'Tomadas existentes: conferir caixa, altura e circuito',       '9 pontos'),
@@ -789,12 +791,13 @@ def folha_cortina():
     d.txt(c[0], c[1], 'SALA DE TV', 8.6, INK, 'bold', 'start', ls=0.9)
     c = d.PM(6.10, 0.55)
     d.txt(c[0], c[1], 'SALA DE ESTAR', 8.0, INK_SOFT, 'bold', 'middle', ls=0.9)
-    for (ident, xm, ym) in (qa.COMANDO_CLARABOIA,):
+    for (ident, xm, ym) in ((qa.COMANDO_CLARABOIA,) if ESPERA_CLARABOIA else ()):
         cx, cy = d.PM(xm, ym)
         d.rect(cx - 5, cy - 5, 10, 10, fill=BG, stroke=K, sw=1.2)
         d.line(cx - 2.3, cy + 2.3, cx + 2.3, cy - 2.3, K, 1.1)
         d.txt(cx - 9, cy + 2.5, ident, 7.0, K, 'bold', 'end')
-    ponto_alim(d, qa.PONTO_CLARABOIA[1], qa.PONTO_CLARABOIA[2], 'T18 · AL6', 'o')
+    if ESPERA_CLARABOIA:
+        ponto_alim(d, qa.PONTO_CLARABOIA[1], qa.PONTO_CLARABOIA[2], 'T18 · AL6', 'o')
 
     def ch(x0m, x1m, ym, off, texto):
         cota_h(d, px_(x0m), px_(x1m), py_(ym), off, texto, size=7.6)

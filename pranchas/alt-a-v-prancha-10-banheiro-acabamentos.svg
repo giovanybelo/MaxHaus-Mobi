@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 990" width="1400" height="990">
+<rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
+<text x="48.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.40">MAXHAUS / MAIN FLOOR  ·  CADERNO ALTERNATIVO A  ·  PAREDE COZINHA/CLOSET 0,45 M AO SUL</text>
+<text x="48.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="24.3" fill="#000000" font-weight="bold" text-anchor="start">Banheiro: louças, metais e revestimentos</text>
+<text x="48.0" y="99.0" font-family="Helvetica, Arial, sans-serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Resumo do Executivo do Banheiro E3: medidas de obra de 14/11, paginação real, nicho e bancada revestida.</text>
+<text x="1352.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">ALT. A  ·  REV. V</text>
+<text x="1352.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#000000" font-weight="bold" text-anchor="end">20,43 m² líquidos  ·  22,09 m² com 10%</text>
+<text x="1352.0" y="99.0" font-family="Helvetica, Arial, sans-serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">revestimento até 2,50 m — forro novo</text>
+<line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="149.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">PREMISSAS DO CÁLCULO</text>
+<rect x="48.00" y="158.00" width="640.00" height="20.00" fill="#e0e0e0"/>
+<text x="56.0" y="171.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Premissa</text>
+<text x="235.2" y="171.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Valor</text>
+<text x="350.4" y="171.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">O que é</text>
+<text x="680.0" y="171.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Fonte / condição</text>
+<text x="56.0" y="190.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Medidas</text>
+<text x="235.2" y="190.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">interno 1,42 × 2,68 m</text>
+<text x="350.4" y="190.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">medidas de obra de 14/11</text>
+<text x="680.0" y="190.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">Executivo E3</text>
+<line x1="48.00" y1="197.00" x2="688.00" y2="197.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="197.00" width="640.00" height="19.00" fill="#f5f5f5"/>
+<text x="56.0" y="209.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Altura de revestimento</text>
+<text x="235.2" y="209.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">2,50 m</text>
+<text x="350.4" y="209.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">até o forro novo</text>
+<text x="680.0" y="209.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">REV. V — não 2,40</text>
+<line x1="48.00" y1="216.00" x2="688.00" y2="216.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="228.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Box</text>
+<text x="235.2" y="228.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">1,42 × 0,92 m</text>
+<text x="350.4" y="228.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">AT-B de 0,80 × 0,25 no canto</text>
+<text x="680.0" y="228.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">cliente, 14/11</text>
+<line x1="48.00" y1="235.00" x2="688.00" y2="235.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="235.00" width="640.00" height="19.00" fill="#f5f5f5"/>
+<text x="56.0" y="247.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Porta P02</text>
+<text x="235.2" y="247.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">0,80 × 2,15 m</text>
+<text x="350.4" y="247.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">descontada; guarnição de 50 mm</text>
+<text x="680.0" y="247.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">cliente, 14/11</text>
+<line x1="48.00" y1="254.00" x2="688.00" y2="254.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="266.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Sem revestimento</text>
+<text x="235.2" y="266.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">gabinete e espelho</text>
+<text x="350.4" y="266.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">P3 só na faixa e acima do espelho</text>
+<text x="680.0" y="266.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">BE-17</text>
+<line x1="48.00" y1="273.00" x2="688.00" y2="273.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="273.00" width="640.00" height="19.00" fill="#f5f5f5"/>
+<text x="56.0" y="285.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Nicho</text>
+<text x="235.2" y="285.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">1,17 × 0,40 m</text>
+<text x="350.4" y="285.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">de parede a parede, base a +1,10</text>
+<text x="680.0" y="285.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">cliente, 14 e 15/11</text>
+<line x1="48.00" y1="292.00" x2="688.00" y2="292.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="304.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Bancada B01</text>
+<text x="235.2" y="304.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">1,60 × 0,40 + saia</text>
+<text x="350.4" y="304.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">balcão atual revestido</text>
+<text x="680.0" y="304.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">cliente, 15/11</text>
+<line x1="48.00" y1="311.00" x2="688.00" y2="311.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="311.00" width="640.00" height="19.00" fill="#f5f5f5"/>
+<text x="56.0" y="323.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Perda</text>
+<text x="235.2" y="323.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">10%</text>
+<text x="350.4" y="323.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">sobre as peças contadas na malha</text>
+<text x="680.0" y="323.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">conta conservadora</text>
+<line x1="48.00" y1="330.00" x2="688.00" y2="330.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="48.0" y="359.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">SUPERFÍCIES — EXECUTIVO E3</text>
+<rect x="48.00" y="368.00" width="640.00" height="20.00" fill="#e0e0e0"/>
+<text x="56.0" y="381.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Superfície</text>
+<text x="209.6" y="381.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Conta</text>
+<text x="488.0" y="381.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Líquido m²</text>
+<text x="577.6" y="381.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Perda m²</text>
+<text x="680.0" y="381.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Compra m²</text>
+<text x="56.0" y="400.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Paredes P1 a P6</text>
+<text x="209.6" y="400.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">malha 155 × 155, 745 peças</text>
+<text x="488.0" y="400.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">14,93</text>
+<text x="577.6" y="400.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,49</text>
+<text x="680.0" y="400.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">16,42</text>
+<line x1="48.00" y1="407.00" x2="688.00" y2="407.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="407.00" width="640.00" height="19.00" fill="#f5f5f5"/>
+<text x="56.0" y="419.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Nicho</text>
+<text x="209.6" y="419.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">fundo, base, teto e pontas, 46 peças</text>
+<text x="488.0" y="419.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,84</text>
+<text x="577.6" y="419.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,08</text>
+<text x="680.0" y="419.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,92</text>
+<line x1="48.00" y1="426.00" x2="688.00" y2="426.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="438.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Bancada B01</text>
+<text x="209.6" y="438.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">tampo, saia e lateral, 47 peças</text>
+<text x="488.0" y="438.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,84</text>
+<text x="577.6" y="438.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,08</text>
+<text x="680.0" y="438.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,92</text>
+<line x1="48.00" y1="445.00" x2="688.00" y2="445.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="445.00" width="640.00" height="19.00" fill="#f5f5f5"/>
+<text x="56.0" y="457.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Bleu Nuit — total</text>
+<text x="209.6" y="457.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">838 peças + 10% = 922 · 26 caixas</text>
+<text x="488.0" y="457.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">16,61</text>
+<text x="577.6" y="457.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,66</text>
+<text x="680.0" y="457.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">18,27</text>
+<line x1="48.00" y1="464.00" x2="688.00" y2="464.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="476.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Piso Confete</text>
+<text x="209.6" y="476.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">100 × 100 em placas, 12 recortes</text>
+<text x="488.0" y="476.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,82</text>
+<text x="577.6" y="476.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">—</text>
+<text x="680.0" y="476.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">6 placas</text>
+<line x1="48.00" y1="483.00" x2="688.00" y2="483.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="48.0" y="512.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">O QUE MUDOU DESDE A REV. U</text>
+<rect x="48.00" y="521.00" width="640.00" height="20.00" fill="#e0e0e0"/>
+<text x="56.0" y="534.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Emissão</text>
+<text x="347.2" y="534.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Líquido</text>
+<text x="475.2" y="534.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Com 10%</text>
+<text x="680.0" y="534.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Por quê</text>
+<text x="56.0" y="553.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">REV. U (até 2,40 m)</text>
+<text x="347.2" y="553.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">21,73 m²</text>
+<text x="475.2" y="553.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">23,90 m²</text>
+<text x="680.0" y="553.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">perímetro cheio, sem paginação</text>
+<line x1="48.00" y1="560.00" x2="688.00" y2="560.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="48.00" y="560.00" width="640.00" height="19.00" fill="#f5f5f5"/>
+<text x="56.0" y="572.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">REV. V = Executivo E3</text>
+<text x="347.2" y="572.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">20,43 m²</text>
+<text x="475.2" y="572.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">22,09 m²</text>
+<text x="680.0" y="572.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">malha real, nicho e bancada</text>
+<line x1="48.00" y1="579.00" x2="688.00" y2="579.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="56.0" y="591.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Diferença</text>
+<text x="347.2" y="591.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">−1,30 m²</text>
+<text x="475.2" y="591.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">−1,81 m²</text>
+<text x="680.0" y="591.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">gabinete e espelho sem azulejo</text>
+<line x1="48.00" y1="598.00" x2="688.00" y2="598.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<line x1="716.00" y1="140.00" x2="716.00" y2="916.00" stroke="#cccccc" stroke-width="0.80" opacity="0.80"/>
+<text x="748.0" y="149.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">LOUÇAS E METAIS</text>
+<rect x="748.00" y="158.00" width="604.00" height="20.00" fill="#e0e0e0"/>
+<text x="756.0" y="171.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Louça / metal</text>
+<text x="937.2" y="171.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Quantidade</text>
+<text x="1033.8" y="171.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Tratamento</text>
+<text x="1344.0" y="171.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Verificar antes de selecionar</text>
+<text x="756.0" y="190.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Bacia sanitária</text>
+<text x="937.2" y="190.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">1 un.</text>
+<text x="1033.8" y="190.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Reinstalar</text>
+<text x="1344.0" y="190.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">anel e engate novos; eixo a 0,98 m</text>
+<line x1="748.00" y1="197.00" x2="1352.00" y2="197.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="748.00" y="197.00" width="604.00" height="19.00" fill="#f5f5f5"/>
+<text x="756.0" y="209.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Cuba de apoio</text>
+<text x="937.2" y="209.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">1 un.</text>
+<text x="1033.8" y="209.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Definir modelo</text>
+<text x="1344.0" y="209.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">borda a +1,14 m com tampo a +0,98</text>
+<line x1="748.00" y1="216.00" x2="1352.00" y2="216.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="756.0" y="228.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Misturador da pia</text>
+<text x="937.2" y="228.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">1 un.</text>
+<text x="1033.8" y="228.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Novo, com água quente</text>
+<text x="1344.0" y="228.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">comandos a +1,245; bica a +1,25</text>
+<line x1="748.00" y1="235.00" x2="1352.00" y2="235.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="748.00" y="235.00" width="604.00" height="19.00" fill="#f5f5f5"/>
+<text x="756.0" y="247.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Chuveiro</text>
+<text x="937.2" y="247.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">1 conj.</text>
+<text x="1033.8" y="247.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Manter / definir</text>
+<text x="1344.0" y="247.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">água quente da coluna no AT-B</text>
+<line x1="748.00" y1="254.00" x2="1352.00" y2="254.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="756.0" y="266.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Ralo linear do box</text>
+<text x="937.2" y="266.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">1 un.</text>
+<text x="1033.8" y="266.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Novo, 720 × 90</text>
+<text x="1344.0" y="266.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">caimento −10 / −25 mm</text>
+<line x1="748.00" y1="273.00" x2="1352.00" y2="273.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="748.00" y="273.00" width="604.00" height="19.00" fill="#f5f5f5"/>
+<text x="756.0" y="285.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Ralo R2, junto ao vaso</text>
+<text x="937.2" y="285.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">1 un.</text>
+<text x="1033.8" y="285.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Grelha oculta 100 × 100</text>
+<text x="1344.0" y="285.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">prolongador a medir</text>
+<line x1="748.00" y1="292.00" x2="1352.00" y2="292.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="756.0" y="304.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Toalheiro elétrico</text>
+<text x="937.2" y="304.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">1 un.</text>
+<text x="1033.8" y="304.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Aiello Unique Solo</text>
+<text x="1344.0" y="304.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">ponto novo T20, atrás do vaso</text>
+<line x1="748.00" y1="311.00" x2="1352.00" y2="311.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<rect x="748.00" y="311.00" width="604.00" height="19.00" fill="#f5f5f5"/>
+<text x="756.0" y="323.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Box de vidro — K01</text>
+<text x="937.2" y="323.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">1 conj.</text>
+<text x="1033.8" y="323.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Manter e proteger</text>
+<text x="1344.0" y="323.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">medir o vão só após revestir</text>
+<line x1="748.00" y1="330.00" x2="1352.00" y2="330.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
+<text x="748.0" y="360.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#000000" font-weight="bold" text-anchor="start">Esta folha resume o Executivo do Banheiro E3.</text>
+<text x="748.0" y="371.9" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Quantidades, paginação e detalhes valem pelos cadernos Executivo e Técnico E3.</text>
+<text x="748.0" y="383.8" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Aqui ficam só os totais, para o orçamento geral.</text>
+<text x="748.0" y="401.9" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#000000" font-weight="bold" text-anchor="start">Forro novo a 2,50 m.</text>
+<text x="748.0" y="413.8" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">O revestimento vai até o forro novo. Da laje (2,62 m) sobram 0,12 m para as luminárias</text>
+<text x="748.0" y="425.7" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">da FAS, que pedem no mínimo 0,10 m.</text>
+<text x="748.0" y="443.8" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#000000" font-weight="bold" text-anchor="start">Por que o total caiu, mesmo com o forro mais alto.</text>
+<text x="748.0" y="455.7" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">A conta antiga revestia o perímetro inteiro. Na malha real não há azulejo atrás do gabinete e</text>
+<text x="748.0" y="467.6" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">do espelho, e porta e nicho saem da área; entram o interior do nicho e a bancada revestida.</text>
+<text x="748.0" y="485.7" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#000000" font-weight="bold" text-anchor="start">Impermeabilização é sistema à parte.</text>
+<text x="748.0" y="497.6" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Piso, box até o forro, rodapé e nicho: cerca de 12 m², com ensaio de 72 horas antes de assentar.</text>
+<text x="748.0" y="515.7" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#000000" font-weight="bold" text-anchor="start">Rejunte.</text>
+<text x="748.0" y="527.6" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Paredes e piso com acrílico Quartzolit: 5 dias antes de molhar. Tampo da bancada com epóxi.</text>
+<text x="898.0" y="563.7" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">ESQUEMA DIMENSIONAL — PLANTA</text>
+<rect x="898.00" y="575.70" width="128.88" height="153.72" fill="#ffffff" stroke="#000000" stroke-width="1.60"/>
+<text x="962.4" y="648.6" font-family="Helvetica, Arial, sans-serif" font-size="6.7" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">ÁREA SECA</text>
+<text x="962.4" y="660.6" font-family="Helvetica, Arial, sans-serif" font-size="6.3" fill="#4d4d4d" font-weight="normal" text-anchor="middle">2,50 m²</text>
+<rect x="898.00" y="729.42" width="128.88" height="83.70" fill="#d6ffff" stroke="#000000" stroke-width="1.60"/>
+<text x="962.4" y="767.3" font-family="Helvetica, Arial, sans-serif" font-size="6.7" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.40">BOX  1,42 × 0,92</text>
+<text x="962.4" y="779.3" font-family="Helvetica, Arial, sans-serif" font-size="6.3" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1,31 m²</text>
+<line x1="898.00" y1="729.42" x2="1026.88" y2="729.42" stroke="#00ffff" stroke-width="4.00"/>
+<text x="1034.9" y="732.4" font-family="Helvetica, Arial, sans-serif" font-size="6.1" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.30">K01</text>
+<line x1="898.00" y1="813.12" x2="1026.88" y2="813.12" stroke="#ff00ff" stroke-width="3.00"/>
+<text x="1034.9" y="816.1" font-family="Helvetica, Arial, sans-serif" font-size="6.1" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.30">R02</text>
+<text x="962.4" y="835.1" font-family="Helvetica, Arial, sans-serif" font-size="6.5" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1,42 m</text>
+<text x="888.0" y="694.4" font-family="Helvetica, Arial, sans-serif" font-size="6.5" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 888.0 694.4)">2,68 m</text>
+<text x="1066.9" y="591.7" font-family="Helvetica, Arial, sans-serif" font-size="6.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">altura de</text>
+<text x="1066.9" y="602.7" font-family="Helvetica, Arial, sans-serif" font-size="6.3" fill="#4d4d4d" font-weight="normal" text-anchor="start">revestimento</text>
+<text x="1066.9" y="615.7" font-family="Helvetica, Arial, sans-serif" font-size="8.1" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.40">2,50 m</text>
+<text x="1066.9" y="627.7" font-family="Helvetica, Arial, sans-serif" font-size="6.1" fill="#4d4d4d" font-weight="normal" text-anchor="start">até o forro novo</text>
+<line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="940.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Medidas de obra de 14/11/2026, faces acabadas: 1,42 × 2,68 m internos. Quantidades pela malha do Executivo E3, peça a peça.</text>
+<text x="48.0" y="953.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Quantidade de acabamento, não de demolição. Impermeabilização, soleira, juntas e paginação são serviços à parte. Compra arredondada por caixa: 26 caixas de Bleu Nuit.</text>
+<text x="48.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.1" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   CADERNO ALTERNATIVO A   |   15/11/2026</text>
+<text x="1352.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.1" fill="#4d4d4d" font-weight="normal" text-anchor="end">Alt A · Prancha 10 / 14   ·   ALT. A  ·  REV. V</text>
+<rect x="70.00" y="640.00" width="600.00" height="56.64" fill="#ffffff" stroke="#ff00ff" stroke-width="0.90"/>
+<text x="78.0" y="654.0" font-family="Helvetica, Arial, sans-serif" font-size="6.7" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.40">BANHEIRO · MEDIDO EM OBRA (14/11/2026)</text>
+<text x="78.0" y="666.0" font-family="Helvetica, Arial, sans-serif" font-size="6.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Parede da porta, por fora: 0,88 m + vão de 0,80 × 2,15 m + 1,20 m = 2,88 m. AT-B (shaft do chuveiro) 0,80 × 0,25 m. AT-A aquecedor no closet (~0,60 × 0,40 m, NBR 13103 a</text>
+<text x="78.0" y="676.2" font-family="Helvetica, Arial, sans-serif" font-size="6.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">liberar). Detalhes no Executivo do Banheiro.</text>
+<text x="78.0" y="686.4" font-family="Helvetica, Arial, sans-serif" font-size="6.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Quantidades desta folha = Executivo do Banheiro E3 (15/11). Detalhes e paginação, só no executivo.</text>
+</svg>

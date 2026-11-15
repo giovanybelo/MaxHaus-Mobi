@@ -85,9 +85,9 @@ def be13():
 def be14():
     return _parede('BE-14', 'P4', 20, notas=[
         ('Porta.', 'Vão de 800 × 2150 a 780 mm da parede do vaso, por dentro. A guarnição cobre o corte nos batentes.'),
-        ('Verga: atenção à tira de 46 mm.', 'A porta termina a +2150 e a junta da 14ª fiada fica a +2196: sobre o vão sobra uma tira de 46 mm: 4 peças, mais as duas em L dos batentes. '
-         'Tira com menos de 1/3 da peça não se assenta. Saída preferida: guarnição da porta com 50 mm, cobrindo até a junta. '
-         'Sem guarnição: sobre o vão, trocar a tira e a 15ª fiada por duas fiadas iguais de 100 mm. Decidir com o fornecedor da porta antes de assentar a P4.'),
+        ('Verga: guarnição de 50 mm.', 'A porta tem 2150 de altura e a junta da 14ª fiada fica a +2196: sobre o vão sobram 46 mm, menos que 1/3 da peça. '
+         'Solução adotada: a guarnição da porta, por dentro, tem 50 mm e cobre a faixa até a junta. As 4 peças sobre o vão e as 2 em L dos batentes são cortadas e escondidas pela guarnição. '
+         'Pedir a guarnição de 50 mm junto com a porta P02.'),
         ('Batentes.', 'Os cortes de 67 e 73 mm encostam no vão; nas fiadas 14 a 16 as peças das duas colunas do batente são inteiras ou em L.')])
 
 
@@ -95,9 +95,9 @@ def be15():
     return _parede('BE-15', 'P1', 15, notas=[
         ('Nicho de parede a parede.', 'Faixa de 1170 × 400, base a +1100, da parede da porta até a face da área técnica: não é mais um retângulo fechado. '
          'A parede fica dividida em duas partes, abaixo e acima do nicho. Fundo, base, teto e as duas pontas do nicho são revestidos; a base tem caimento para dentro do box.'),
-        ('Fiadas no nicho.', 'A base a +1100 cai 1 mm acima da junta da 7ª fiada: ajustar a base para +1099 e a fiada fica inteira. O topo a +1500 corta a 10ª fiada: sobram 68 mm acima do nicho.'),
-        ('Recomendação de paginação.', 'Nicho com 314 mm (2 fiadas) ou 471 mm (3 fiadas) de altura fecha na junta em cima e embaixo, e o fundo leva só peças inteiras. '
-         'Com 400 mm, o fundo tem 2 fiadas inteiras e uma tira de 87 mm. Decisão do cliente.'),
+        ('Fiadas no nicho.', 'Base a +1100 (cliente, 15/11): fica 1 mm acima da junta da 7ª fiada; esse 1 mm some no assentamento da base do nicho e a 7ª fiada fica inteira. '
+         'O topo a +1500 corta a 10ª fiada: 87 mm dentro do nicho e 68 mm acima dele.'),
+        ('Fundo do nicho.', 'Altura de 400 mantida (cliente, 15/11): duas fiadas inteiras e, no alto, a tira de 87 mm, que fica sob o teto do nicho e quase não aparece.'),
         ('Largura.', 'A parede tem 1170 mm porque a área técnica ocupa 250 mm do fundo do box.')])
 
 
@@ -183,4 +183,132 @@ def be18():
     return f
 
 
-FOLHAS = [be12, be13, be14, be15, be16, be17, be18]
+def bancada_pecas():
+    """Peças do tampo, da saia e da lateral norte, alinhadas às juntas da P3."""
+    u0, u1 = TAMPO_U
+    u = P3_E0 + JUNTA                                  # início da 2ª coluna da P3
+    while u + PECA < u0:
+        u += MOD
+    cols = [(u0, u + PECA)]                            # primeiro corte, até a junta da P3
+    u += MOD
+    while u + PECA <= u1:
+        cols.append((u, u + PECA))
+        u += MOD
+    if u1 - u > 1:
+        cols.append((u, u1))
+    fil = [(0.0, PECA), (MOD, MOD + PECA), (2 * MOD, BANC[2])]   # profundidade, a partir da frente
+    tampo = [(c, f) for f in fil for c in cols]
+    saia = [(c, (0.0, SAIA)) for c in cols]
+    lateral = [(f, (0.0, SAIA)) for f in fil]
+    return cols, fil, tampo, saia, lateral
+
+
+def _mm(a):
+    return round(a[1] - a[0])
+
+
+def bancada_resumo():
+    cols, fil, tampo, saia, lateral = bancada_pecas()
+    inteiras = sum(1 for c, f in tampo if _mm(c) == PECA and _mm(f) == PECA)
+    n = len(tampo) + len(saia) + len(lateral)
+    area = (TAMPO_U[1] - TAMPO_U[0]) * (BANC[2] + SAIA) / 1e6 + BANC[2] * SAIA / 1e6
+    return n, inteiras, area
+
+
+def be19():
+    f = Folha(CAD, 'BE-19', 'Paginação · bancada revestida B01', 'Tampo, saia e lateral norte em Bleu Nuit 155 × 155, com as juntas alinhadas às da parede da bancada (P3).', '1:8')
+    cols, fil, tampo, saia, lateral = bancada_pecas()
+    N = 8.0
+    s = MM / N
+    d = f.d
+    u0 = TAMPO_U[0]
+    ox, oy = 110.0, 400.0          # canto da frente do tampo, lado do box
+
+    def T(u, p):                   # planta do tampo: u ao longo da parede, p a partir da frente
+        return (ox + (u - u0) * s, oy - p * s)
+    # parede ao fundo
+    a, b = T(u0 - 120, BANC[2] + 60), T(TAMPO_U[1] + 160, BANC[2])
+    d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=K20, stroke=K, sw=0.8)
+    f.t((a[0] + b[0]) / 2, a[1] - 6, 'PAREDE P3 (oeste) · juntas da parede continuam no tampo', 7.0, K70, False, 'middle')
+    n = 0
+    for (c, fl) in tampo:
+        n += 1
+        a, b = T(c[0], fl[1]), T(c[1], fl[0])
+        cheia = _mm(c) == PECA and _mm(fl) == PECA
+        d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=BRANCO, stroke=K, sw=0.7)
+        if not cheia:
+            f.t((a[0] + b[0]) / 2, (a[1] + b[1]) / 2 + 2.5, '%d×%d' % (_mm(c), _mm(fl)), 6.0, DEMO, False, 'middle')
+    # cuba de apoio e furo da válvula
+    uc = AT[1] - CUBA_Y
+    c = T(uc, BANC[2] - 200)
+    d.circle(c[0], c[1], 180 * s, fill='none', stroke=K45, sw=0.8)
+    d.circle(c[0], c[1], 20 * s, fill=K, stroke=K, sw=0.6)
+    f.t(T(TAMPO_U[1], 0)[0], oy + 52, 'círculo: cuba de apoio (Ø ~360, modelo a definir); ponto: válvula, no centro de uma peça', 6.8, K70, False, 'end')
+    f.cota_h(T(u0, 0)[0], T(TAMPO_U[1], 0)[0], oy + 22, '1600', 7.0)
+    f.cota_v(T(u0, 0)[0] - 22, T(u0, BANC[2])[1], oy, '400', 7.0)
+    xs = [cc[0] for cc in cols] + [cols[-1][1]]
+    for a_, b_ in zip(xs, xs[1:]):
+        f.t((T(a_, 0)[0] + T(b_, 0)[0]) / 2, oy + 36, '%d' % round(b_ - a_), 5.8, K70, False, 'middle')
+    f.t(ox, oy - BANC[2] * s - 62, 'A · TAMPO EM PLANTA', 8.4, INK, True)
+    f.t(T(u0, 0)[0], oy + 52, 'frente (lado de quem usa)', 7.0, INK_SOFT)
+    f.t(T(u0, 0)[0], T(u0, 0)[1] - BANC[2] * s - 16, 'box', 7.0, INK_SOFT)
+    # saia em elevação
+    ey = 570.0
+    f.t(ox, ey - SAIA * s - 22, 'B · SAIA FRONTAL EM ELEVAÇÃO (+880 a +980)', 8.4, INK, True)
+    for (c, z) in saia:
+        a, b = (ox + (c[0] - u0) * s, ey - z[1] * s), (ox + (c[1] - u0) * s, ey)
+        d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=BRANCO, stroke=K, sw=0.7)
+        f.t((a[0] + b[0]) / 2, (a[1] + b[1]) / 2 + 2.5, '%d×%d' % (_mm(c), _mm(z)), 6.0, DEMO, False, 'middle')
+    d.line(ox, ey - SAIA * s, ox + (TAMPO_U[1] - u0) * s, ey - SAIA * s, K, 2.4)
+    f.t(ox + (TAMPO_U[1] - u0) * s + 8, ey - SAIA * s + 3, 'perfil de canto', 6.8, K70)
+    f.cota_v(ox - 22, ey - SAIA * s, ey, '100', 7.0)
+    # lateral norte
+    lx, ey2 = ox, ey + 95
+    f.t(lx, ey2 - SAIA * s - 22, 'C · LATERAL NORTE (frente à esquerda)', 8.4, INK, True)
+    x = lx
+    for (fl, z) in lateral:
+        w_ = _mm(fl) * s
+        d.rect(x, ey2 - z[1] * s, w_, z[1] * s, fill=BRANCO, stroke=K, sw=0.7)
+        f.t(x + w_ / 2, ey2 - z[1] * s / 2 + 2.5, '%d×%d' % (_mm(fl), _mm(z)), 6.0, DEMO, False, 'middle')
+        x += w_ + JUNTA * s
+    f.t(x + 14, ey2 - 12, 'fica à vista: 160 mm livres até a parede do vaso', 7.0, INK_SOFT)
+    # corte
+    cy0, cx0 = 880.0, 110.0
+    f.t(cx0, cy0 - 150, 'D · CORTE NA FRENTE DA BANCADA (1:1,1)', 8.4, INK, True)
+    k = 0.9
+    def C(xw, z):
+        return (cx0 + xw * k, cy0 - (z - 850) * k)
+    d.rect(*C(0, 880), 400 * k, 30 * k, fill=K04, stroke=K45, sw=0.6)
+    d.rect(C(0, 966)[0], C(0, 966)[1], 400 * k, 22 * k, fill=K12, stroke=K, sw=0.9)
+    d.rect(C(0, 980)[0], C(0, 980)[1], 400 * k, 9 * k, fill=CIANO18, stroke=K, sw=0.9)
+    d.rect(C(400, 980)[0], C(400, 980)[1], 9 * k, 100 * k, fill=CIANO18, stroke=K, sw=0.9)
+    d.line(C(400, 980)[0], C(400, 980)[1], C(409, 980)[0], C(409, 980)[1], K, 2.6)
+    for z, rot in ((980, '+980 topo acabado'), (966, '+966 topo da base'), (880, '+880 topo do gabinete')):
+        c = C(430, z)
+        d.line(c[0] - 14, c[1], c[0] - 2, c[1], K70, 0.6)
+        f.t(c[0], c[1] + 2.5, rot, 6.6, K70)
+    f.t(C(0, 960)[0] + 4, C(0, 960)[1] + 9, 'base rígida', 6.6, K70)
+    # texto
+    n_, inteiras, area = bancada_resumo()
+    cx = 980.0
+    cw = W - MARGIN - cx
+    y = f.tab(cx, 150, cw, [('Parte', 0.36, 'start'), ('Peças', 0.20, 'end'), ('Medida', 0.44, 'end')], [
+        ('Tampo', len(tampo), '1600 × 400'),
+        ('Saia frontal', len(saia), '1600 × 100'),
+        ('Lateral norte', len(lateral), '400 × 100'),
+        ('Total', n_, '%s m² · %d inteiras' % (br(area), inteiras)),
+    ], titulo='PEÇAS DA BANCADA', alt=15.5)
+    f.par(cx, y + 26, cw, [
+        ('Base.', 'O tampo existente serve de base se for pedra ou cimentício e estiver firme, sem trinca nem flexão. Se for MDF ou madeira, '
+         'trocar por placa cimentícia de 12 mm colada e parafusada no gabinete. O topo da base fica a +966: azulejo e argamassa somam 14 mm.'),
+        ('Juntas.', 'As colunas do tampo continuam as juntas da parede P3, a mesma malha da BE-17. Na profundidade, duas fiadas inteiras na frente e o corte de 86 mm junto à parede, '
+         'escondido pela primeira fiada da parede.'),
+        ('Aresta.', 'Perfil metálico de canto (alumínio anodizado ou inox, 10 mm) na aresta frontal e na aresta da lateral. Nada de peça com borda crua.'),
+        ('Rejunte do tampo.', 'Epóxi, não acrílico: o tampo recebe água parada, sabão e creme. Nas paredes segue o acrílico Quartzolit, com os 5 dias de espera.'),
+        ('Cuba e válvula.', 'A cuba de apoio fica no eixo do tampo (u 920): o furo da válvula cai no centro de uma peça. Furar com serra-copo diamantada, depois do assentamento.'),
+        ('Conferir com o fabricante.', 'Bleu Nuit é revestimento de parede. Confirmar que aceita uso em tampo de bancada; se não, só a saia e a lateral levam azulejo.'),
+    ], size=7.8, lh=11.0, gap=6.0)
+    return f
+
+
+FOLHAS = [be12, be13, be14, be15, be16, be17, be18, be19]

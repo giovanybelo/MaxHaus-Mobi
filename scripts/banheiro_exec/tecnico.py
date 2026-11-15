@@ -3,6 +3,7 @@
 import math
 from lib import *      # noqa
 import exec_a
+import exec_b
 
 CAD = 'CADERNO TÉCNICO'
 X1, X2 = MARGIN, 730.0
@@ -32,7 +33,7 @@ def bt01():
         ('O item que não pode falhar.', 'Levar água quente à torneira da pia é a prioridade pessoal do cliente nesta reforma. O ramal está na BE-06 e na BT-04: '
          'derivação da coluna do chuveiro dentro da área técnica, cerca de 1,1 m de tubo isolado, registro acessível e teste antes de fechar a parede.'),
         ('O que continua valendo do R95.', 'Revestimento Gouache Bleu Nuit 155 × 155 com acentos Nuage, piso Confete 100 × 100, forro e topo do revestimento a +2500, '
-         'ralo linear de 720 × 90, toalheiro Aiello, porta com visor circular e Corian branco na bancada.'),
+         'ralo linear de 720 × 90, toalheiro Aiello e porta com visor circular. A bancada em Corian do R95 foi trocada pelo balcão atual revestido em Bleu Nuit.'),
         ('O que foi superado.', 'Do R95: comprimento de 2576, porta de 2103 de altura, bancada de 1640 × 530 a +840 com saia de 60, espelho de 1660 × 650 '
          'e área técnica de 240 ao longo de todo o box. Do caderno geral: forro novo a 2,40 m (aqui, +2500).'),
     ], size=8.8, lh=12.6)
@@ -54,7 +55,7 @@ def bt01():
         ('BE-06', 'Água quente na torneira da pia', 'encanador'),
         ('BE-07', 'Elétrica: pontos e comandos', 'eletricista'),
         ('BE-08', 'Forro e iluminação da FAS', 'gesseiro e eletricista'),
-        ('BE-09', 'Bancada, gabinete e espelho', 'marmorista / Corian'),
+        ('BE-09', 'Bancada, gabinete e espelho', 'azulejista / marceneiro'),
         ('BE-10', 'Porta P02', 'marceneiro'),
         ('BE-11', 'Piso Confete', 'assentador'),
         ('BE-12 a BE-17', 'Paginação das paredes, em duas versões', 'assentador'),
@@ -189,15 +190,16 @@ def bt04():
 def bt05():
     f = Folha(CAD, 'BT-05', 'Elétrica, forro e iluminação da FAS', 'Pontos, cargas a confirmar e a compatibilização do forro com as luminárias compradas.')
     y = f.tab(X1, 150, W1, [('ID', 0.08, 'start'), ('Ponto', 0.40, 'start'), ('Dado', 0.52, 'start')], [
-        ('T20', 'Toalheiro térmico, acima do vaso (novo)', '127 V; potência pela placa do aparelho; ligação direta na versão de fio oculto'),
-        ('T17', 'Tomada da bancada', '2P+T, a +1160, na faixa entre tampo e espelho'),
+        ('T20', 'Toalheiro elétrico, atrás do vaso: ÚNICO PONTO NOVO', '127 V; potência pela placa do aparelho; ligação direta na versão de fio oculto'),
+        ('T17', 'Tomada existente da bancada', 'manter; trocar espelho'),
         ('D1', 'FAS Halo 7 W (TE.4106)', 'embutido orientável, 2700 K, 36°; furo de 53 mm'),
         ('D2', 'FAS Tiny 5,8 W IP (TE.4676)', 'embutido para o box, 2700 K, 36°, bivolt; furo de 34 mm'),
         ('L3', 'Perfil linear do espelho (existente)', 'reinstalar; fonte fora da área de respingos'),
-        ('EX01', 'Exaustor no forro', 'vazão de referência 91 m³/h; duto e saída a levantar'),
-        ('S03 / S04', 'Comandos', 'fora do banheiro, ao norte da porta, a +1100'),
+        ('EX01', 'Exaustor no forro (existente)', 'vazão de referência 95 m³/h (3,80 × 2,50 × 10); duto a levantar'),
+        ('S03 / S04', 'Interruptores existentes', 'manter posição; trocar comando e espelho'),
     ], titulo='PONTOS')
     f.par(X1, y + 26, W1, [
+        ('Regra.', 'Troca de toda a fiação pelos eletrodutos existentes; pontos mantidos, espelhos trocados. Só o T20 é novo.'),
         ('Proteção.', 'Circuitos do banheiro com DR de 30 mA e terra. Dimensionamento, bitola e disjuntor pelo eletricista, '
          'depois do levantamento do quadro, que tem 17 anos.'),
         ('Toalheiro.', 'O ponto T20 fica no eixo do vaso, atrás do aparelho (550 × 370 mm, base a +989). Confirmar a variante comprada: '
@@ -227,9 +229,10 @@ def bt06():
     # nicho de parede a parede (1170 x 400 x 118): fundo 8 x 3, base e teto 8 + 8 tiras, duas pontas 3 + 3
     nicho_p = 24 + 16 + 6
     nicho_a = (1170 * 400 + 2 * 1170 * 118 + 2 * 118 * 400) / 1e6
-    res = math.ceil((tot_p + nicho_p) * 1.10)
+    banc_p, _banc_int, banc_a = exec_b.bancada_resumo()
+    res = math.ceil((tot_p + nicho_p + banc_p) * 1.10)
     cx_pecas = math.ceil(res / 36.0)
-    cx_area = math.ceil((tot_a + nicho_a) * 1.10 / 0.87)
+    cx_area = math.ceil((tot_a + nicho_a + banc_a) * 1.10 / 0.87)
     caixas = max(cx_pecas, cx_area)
     _, pecas_piso, area_piso = exec_a.be11()
     y = f.tab(X1, 150, W1, [('Parede', 0.10, 'start'), ('Superfície', 0.40, 'start'), ('Peças', 0.12, 'end'), ('Inteiras', 0.12, 'end'), ('Cortadas', 0.12, 'end'), ('Área m²', 0.14, 'end')],
@@ -237,10 +240,11 @@ def bt06():
               + [('Total', '', tot_p, sum(p.inteiras for p in PAREDES), tot_p - sum(p.inteiras for p in PAREDES), br(tot_a))],
               titulo='PAREDES — GOUACHE BLEU NUIT 155 × 155')
     y = f.tab(X1, y + 30, W1, [('Material', 0.30, 'start'), ('Conta', 0.44, 'start'), ('Compra', 0.26, 'end')], [
-        ('Bleu Nuit 155 × 155 (211997E)', '%d de parede + %d do nicho = %d peças; + 10%% = %d; caixa com 36 / 0,87 m²' % (tot_p, nicho_p, tot_p + nicho_p, res), '%d caixas' % caixas),
+        ('Bleu Nuit 155 × 155 (211997E)', '%d parede + %d nicho + %d bancada = %d peças; + 10%% = %d; caixa com 36 / 0,87 m²' % (tot_p, nicho_p, banc_p, tot_p + nicho_p + banc_p, res), '%d caixas' % caixas),
         ('Nuage 75 × 155 (12935E)', 'acentos: posições a transportar do R95 (lá eram ~50 peças)', '3 caixas (R95)'),
         ('Confete 100 × 100 (5041209)', '%s m² em %d recortes; 5 placas + 1 de reserva' % (br(area_piso), len(pecas_piso)), '3 caixas (6 placas)'),
         ('Nicho de parede a parede', 'fundo 1170 × 400 (24 peças), base e teto (16 tiras de 118), duas pontas (6): %d peças, %s m²' % (nicho_p, br(nicho_a)), 'na conta acima'),
+        ('Bancada revestida B01', 'tampo 1600 × 400, saia 100 e lateral norte: %d peças, %s m² (BE-19)' % (banc_p, br(banc_a)), 'na conta acima'),
     ], titulo='REVESTIMENTOS')
     f.par(X1, y + 24, W1, [
         ('Como a conta foi feita.', 'Cada posição da malha conta uma peça, inteira ou cortada. Um corte pequeno não aproveita a sobra de outro: '
@@ -259,7 +263,9 @@ def bt06():
         ('Grelha oculta 100 × 100', '1', 'ralo R2; prolongador a medir'),
         ('Anel de vedação e engate do vaso', '1 jogo', 'novos'),
         ('Forro de gesso RU', '3,81 m²', 'a +2500, com tabica'),
-        ('Tampo B01', '1600 × 400, saia 100', 'Corian branco (R95), a confirmar'),
+        ('Base do tampo B01', 'tampo existente ou placa cimentícia 12 mm', 'conferir firmeza em obra'),
+        ('Perfil metálico de canto', '~2,0 m (frente + lateral)', 'alumínio anodizado ou inox, 10 mm'),
+        ('Rejunte epóxi', '1 kg', 'só no tampo da bancada'),
         ('Porta P02', 'folha 794 × 2135 × 40', 'com visor Ø400'),
         ('Luminárias FAS', 'D1 + D2', 'já compradas (pedido 22804)'),
     ], titulo='COMPLEMENTOS', alt=16.0)
@@ -272,11 +278,11 @@ def bt07():
         ('1', 'Área técnica: encostada no fundo do box ou no vidro?', 'cliente', 'antes da paginação'),
         ('2', 'Bancada: encostada no vidro do box ou na parede do vaso?', 'cliente', 'antes de fabricar'),
         ('3', 'Topo da bancada a +980 com cuba de apoio (borda a +1140): confirmar ou trocar a cuba', 'cliente', 'antes de fabricar'),
-        ('4', 'Material da bancada: Corian branco (R95)?', 'cliente', 'antes de fabricar'),
+        ('4', 'Bleu Nuit aceito em tampo pelo fabricante? Base atual firme?', 'loja / obra', 'antes de revestir'),
         ('5', 'Base do espelho a +1340 e reaproveitamento do espelho existente', 'cliente', 'antes do revestimento'),
         ('6', 'Posição dos acentos Nuage na malha nova', 'cliente', 'antes de assentar'),
         ('7', 'Folha F01 da FAS e aprovação do projeto de iluminação', 'cliente / FAS', 'antes do forro'),
-        ('8', 'Forro a +2500 (R95) ou 2,40 m (caderno geral)', 'cliente', 'antes do forro'),
+        ('8', 'Guarnição de 50 mm na porta P02 (esconde a tira sobre o vão)', 'fornecedor da porta', 'com o pedido da porta'),
         ('9', 'Produto de impermeabilização e responsável técnico', 'empreiteira', 'antes da demolição'),
         ('10', 'Antiderrapante do Confete no box', 'cliente / loja', 'antes da compra'),
     ], titulo='PENDÊNCIAS')

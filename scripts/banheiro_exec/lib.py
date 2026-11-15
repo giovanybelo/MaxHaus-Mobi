@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Executivo do banheiro — geometria, paginação e desenho (emissão E2, 15.11.2026; E1 de 14.11.2026).
+"""Executivo do banheiro — geometria, paginação e desenho (emissão E3, 15.11.2026; E1 e E2 superadas).
 
 Medidas em milímetros, faces ACABADAS, origem no canto interno noroeste do
 banheiro: x cresce para leste, y para sul, z para cima a partir do piso pronto.
@@ -26,7 +26,7 @@ from base_mainfloor import (folha_nova, salvar, exportar_pdf_a3, exportar_png, e
                             INK, INK_SOFT, RULE, DEMO, CIANO, CIANO18, AMARELO,
                             AMARELO40, BRANCO, br)
 
-EMISSAO = 'E2  ·  15/11/2026'
+EMISSAO = 'E3  ·  15/11/2026'
 MM = 1.0 / 0.3                      # unidades da folha por mm de papel (A3 = 1400 × 990)
 
 # --- geometria ---------------------------------------------------------------
@@ -57,6 +57,10 @@ TOALHEIRO = (VASO_X - 275.0, VASO_X + 275.0, 989.0, 1359.0)   # na P5
 
 PECA, JUNTA = 155.0, 2.0
 MOD = PECA + JUNTA
+
+# bancada revestida com Bleu Nuit (cliente, 15/11): tampo, saia e lateral norte
+TAMPO_U = (AT[1] - BANC[3], AT[1] - BANC[1])     # 120 → 1720, na coordenada da P3 (u a partir do box)
+P3_E0 = 59.0                                     # primeiro corte da malha da P3
 
 
 # --- paginação -----------------------------------------------------------------

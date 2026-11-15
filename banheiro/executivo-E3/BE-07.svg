@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 990" width="1400" height="990">
+<rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
+<text x="48.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.40">MAXHAUS 81  ·  BANHEIRO  ·  CADERNO EXECUTIVO</text>
+<text x="48.0" y="76.0" font-family="Helvetica, Arial, sans-serif" font-size="24.0" fill="#000000" font-weight="bold" text-anchor="start">Elétrica: pontos e comandos</text>
+<text x="48.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Troca de toda a fiação; pontos existentes mantidos. Único ponto novo: T20, do toalheiro, atrás do vaso.</text>
+<text x="1352.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">E3  ·  15/11/2026</text>
+<text x="1352.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="22.0" fill="#000000" font-weight="bold" text-anchor="end">BE-07</text>
+<text x="1352.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">escala 1:15  ·  A3, imprimir a 100%</text>
+<line x1="48.00" y1="112.00" x2="1352.00" y2="112.00" stroke="#cccccc" stroke-width="1.00"/>
+<line x1="48.00" y1="928.00" x2="1352.00" y2="928.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="944.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cotas em mm, em faces acabadas; nível ±0 = piso pronto. Medidas de 14/11/2026 informadas pelo cliente + modelo R95. Conferir em obra depois da demolição e antes de cortar qualquer peça.</text>
+<text x="48.0" y="956.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Orientação de escopo, não laudo: instalações, estrutura e impermeabilização pedem responsável técnico em obra.</text>
+<text x="48.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81  ·  JOÃO BALDINATO 109  ·  BANHEIRO  ·  CADERNO EXECUTIVO</text>
+<text x="1352.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">BE-07   ·   E3  ·  15/11/2026</text>
+<rect x="167.78" y="192.78" width="360.00" height="640.00" fill="#000000"/>
+<rect x="190.00" y="215.00" width="315.56" height="595.56" fill="#f5f5f5"/>
+<rect x="190.00" y="606.11" width="315.56" height="204.44" fill="#d6ffff"/>
+<rect x="190.00" y="632.78" width="55.56" height="177.78" fill="#cccccc" stroke="#000000" stroke-width="0.80"/>
+<text x="220.3" y="721.7" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" transform="rotate(-90.0 220.3 721.7)">AT-B</text>
+<rect x="505.56" y="388.33" width="22.22" height="177.78" fill="#ffffff"/>
+<line x1="505.56" y1="388.33" x2="527.78" y2="388.33" stroke="#000000" stroke-width="0.80"/>
+<line x1="505.56" y1="566.11" x2="527.78" y2="566.11" stroke="#000000" stroke-width="0.80"/>
+<line x1="527.78" y1="388.33" x2="705.56" y2="388.33" stroke="#000000" stroke-width="1.60"/>
+<path d="M705.6 388.3 A 177.8 177.8 0 0 1 527.8 566.1" fill="none" stroke="#8c8c8c" stroke-width="0.70" stroke-dasharray="4 3"/>
+<text x="607.8" y="468.3" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">P02</text>
+<line x1="190.00" y1="606.11" x2="505.56" y2="606.11" stroke="#00ffff" stroke-width="2.60"/>
+<rect x="190.00" y="250.56" width="88.89" height="355.56" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<rect x="201.11" y="381.67" width="66.67" height="93.33" fill="#ffffff" stroke="#8c8c8c" stroke-width="0.70"/>
+<text x="236.9" y="308.3" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle" transform="rotate(-90.0 236.9 308.3)">B01</text>
+<rect x="363.33" y="215.00" width="88.89" height="40.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<ellipse cx="407.8" cy="312.8" rx="40.0" ry="57.8" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<text x="407.8" y="315.8" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle">VASO</text>
+<text x="385.6" y="763.9" font-family="Helvetica, Arial, sans-serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">BOX</text>
+<circle cx="407.78" cy="218.11" r="6.50" fill="#00ffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="407.78" cy="218.11" r="2.00" fill="#000000"/>
+<text x="347.8" y="240.1" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start">T20</text>
+<circle cx="193.11" cy="286.11" r="6.50" fill="#00ffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="193.11" cy="286.11" r="2.00" fill="#000000"/>
+<text x="205.1" y="289.1" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start">T17</text>
+<circle cx="193.11" cy="535.00" r="6.50" fill="#ffff00" stroke="#000000" stroke-width="1.20"/>
+<circle cx="193.11" cy="535.00" r="2.00" fill="#000000"/>
+<text x="205.1" y="538.0" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start">L3</text>
+<circle cx="392.22" cy="410.56" r="6.50" fill="#ffff00" stroke="#000000" stroke-width="1.20"/>
+<circle cx="392.22" cy="410.56" r="2.00" fill="#000000"/>
+<text x="404.2" y="413.6" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start">D1</text>
+<circle cx="402.67" cy="717.44" r="6.50" fill="#ffff00" stroke="#000000" stroke-width="1.20"/>
+<circle cx="402.67" cy="717.44" r="2.00" fill="#000000"/>
+<text x="414.7" y="720.4" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start">D2</text>
+<circle cx="445.56" cy="543.89" r="6.50" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<circle cx="445.56" cy="543.89" r="2.00" fill="#000000"/>
+<text x="457.6" y="546.9" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start">EX01</text>
+<rect x="527.56" y="337.89" width="12.00" height="12.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<line x1="530.56" y1="346.89" x2="536.56" y2="340.89" stroke="#000000" stroke-width="1.10"/>
+<text x="545.6" y="346.9" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start">S04</text>
+<rect x="527.56" y="309.00" width="12.00" height="12.00" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<line x1="530.56" y1="318.00" x2="536.56" y2="312.00" stroke="#000000" stroke-width="1.10"/>
+<text x="545.6" y="318.0" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start">S03</text>
+<circle cx="175.00" cy="877.00" r="4.50" fill="#00ffff" stroke="#000000" stroke-width="0.90"/>
+<text x="188.0" y="880.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Tomada / ponto de força</text>
+<circle cx="303.68" cy="877.00" r="4.50" fill="#ffff00" stroke="#000000" stroke-width="0.90"/>
+<text x="316.7" y="880.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Ponto de luz</text>
+<circle cx="393.20" cy="877.00" r="4.50" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<text x="406.2" y="880.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Exaustor</text>
+<text x="760.0" y="142.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.00">PONTOS</text>
+<rect x="760.00" y="150.00" width="592.00" height="17.00" fill="#e0e0e0"/>
+<text x="766.0" y="161.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">ID</text>
+<text x="825.2" y="161.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">Ponto</text>
+<text x="1346.0" y="161.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end">Altura / dado</text>
+<text x="766.0" y="178.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">T20</text>
+<text x="825.2" y="178.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">NOVO · toalheiro elétrico Aiello Unique Solo, atrás do vaso</text>
+<text x="1346.0" y="178.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">127 V; caixa atrás do aparelho, +1170</text>
+<line x1="760.00" y1="184.00" x2="1352.00" y2="184.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="760.00" y="184.00" width="592.00" height="17.00" fill="#f5f5f5"/>
+<text x="766.0" y="195.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">T17</text>
+<text x="825.2" y="195.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Tomada existente da bancada: manter, trocar espelho</text>
+<text x="1346.0" y="195.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">conferir a posição no levantamento</text>
+<line x1="760.00" y1="201.00" x2="1352.00" y2="201.00" stroke="#cccccc" stroke-width="0.50"/>
+<text x="766.0" y="212.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">D1</text>
+<text x="825.2" y="212.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Luz geral: FAS Halo 7 W no forro novo</text>
+<text x="1346.0" y="212.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">circuito de luz existente; furo de 53 mm</text>
+<line x1="760.00" y1="218.00" x2="1352.00" y2="218.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="760.00" y="218.00" width="592.00" height="17.00" fill="#f5f5f5"/>
+<text x="766.0" y="229.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">D2</text>
+<text x="825.2" y="229.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Luz do box: FAS Tiny 5,8 W IP no forro novo</text>
+<text x="1346.0" y="229.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">circuito de luz existente; furo de 34 mm</text>
+<line x1="760.00" y1="235.00" x2="1352.00" y2="235.00" stroke="#cccccc" stroke-width="0.50"/>
+<text x="766.0" y="246.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">L3</text>
+<text x="825.2" y="246.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Perfil sobre o espelho (existente)</text>
+<text x="1346.0" y="246.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">reinstalar no ponto existente</text>
+<line x1="760.00" y1="252.00" x2="1352.00" y2="252.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="760.00" y="252.00" width="592.00" height="17.00" fill="#f5f5f5"/>
+<text x="766.0" y="263.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">EX01</text>
+<text x="825.2" y="263.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Exaustor no forro</text>
+<text x="1346.0" y="263.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">ponto existente; duto a levantar</text>
+<line x1="760.00" y1="269.00" x2="1352.00" y2="269.00" stroke="#cccccc" stroke-width="0.50"/>
+<text x="766.0" y="280.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">S04</text>
+<text x="825.2" y="280.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Interruptor existente: D1 + D2 e exaustor</text>
+<text x="1346.0" y="280.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">manter posição; trocar comando e espelho</text>
+<line x1="760.00" y1="286.00" x2="1352.00" y2="286.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="760.00" y="286.00" width="592.00" height="17.00" fill="#f5f5f5"/>
+<text x="766.0" y="297.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">S03</text>
+<text x="825.2" y="297.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">Interruptor existente do espelho</text>
+<text x="1346.0" y="297.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="end">manter posição; trocar comando e espelho</text>
+<line x1="760.00" y1="303.00" x2="1352.00" y2="303.00" stroke="#cccccc" stroke-width="0.50"/>
+<text x="760.0" y="329.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Regra desta obra.</text>
+<text x="760.0" y="341.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Toda a fiação é trocada pelos eletrodutos existentes; nenhum ponto muda de lugar. Nas tomadas, troca o espelho; nos interruptores, o espelho e o</text>
+<text x="760.0" y="353.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">comando. A única saída nova é o T20.</text>
+<text x="760.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">O T20 é o ponto do toalheiro.</text>
+<text x="760.0" y="384.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Fica na parede do vaso, no eixo dele, atrás do toalheiro (550 × 370 mm, base a +989). A versão de fio oculto liga direto na caixa, sem plugue: conferir a</text>
+<text x="760.0" y="396.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">interface com a peça comprada antes de fechar a parede.</text>
+<text x="760.0" y="415.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Proteção.</text>
+<text x="760.0" y="427.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Todos os circuitos do banheiro com DR de 30 mA e condutor de terra. Nada de emenda solta dentro da parede. Respeitar os volumes do box: nenhum</text>
+<text x="760.0" y="439.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">ponto de força dentro dele.</text>
+<text x="760.0" y="458.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Interruptores do lado da dobradiça.</text>
+<text x="760.0" y="470.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Com a porta abrindo em sentido anti-horário, S03 e S04 ficam do lado da dobradiça, a 880 mm de parede livre ao norte do vão. Conferir se o alcance fica</text>
+<text x="760.0" y="482.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">bom com a folha aberta.</text>
+<text x="760.0" y="501.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Fiação pelo forro.</text>
+<text x="760.0" y="513.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">O forro novo a +2500 deixa 120 mm até a laje para os cabos de D1, D2 e exaustor. A descida do T20 é a única nova: embutida, feita antes da</text>
+<text x="760.0" y="525.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">impermeabilização e do revestimento.</text>
+</svg>

@@ -63,6 +63,11 @@ TAB_TRILHO = [
 TAB_CAMA = [(n, '%s × %s' % (br(l), br(c))) + tuple(_folgas_txt(l, c))
             for (n, l, c) in qa.CAMAS]
 
+# pontos novos desenhados na folha (o Alternativo A pode zerar as listas)
+TOMADAS_Q = [qa.TOMADA_CABECEIRA, qa.T16_NOVO]
+COMANDOS_Q = [qa.COMANDO_QUARTO, qa.COMANDO_CLARABOIA]
+ESPERA_CLARABOIA = True
+
 TAB_FASE = [
     ('CT01', 'Trilho da cortina + perfil autoportante no trecho da claraboia', 'agora'),
     ('CT02', 'Cortina de tecido, pé-direito inteiro — blackout a definir', 'agora'),
@@ -151,15 +156,16 @@ def construir():
         d.line(cx - 2.5, cy + 2.5, cx + 2.5, cy - 2.5, K, 1.2)
         d.txt(cx - 9, cy + 2.5, ident, 7.0, K, 'bold', 'end')
 
-    tomada(qa.TOMADA_CABECEIRA[0], qa.TOMADA_CABECEIRA[1], qa.TOMADA_CABECEIRA[2], lado='o')
-    tomada(qa.T16_NOVO[0], qa.T16_NOVO[1], qa.T16_NOVO[2])
+    for _t in TOMADAS_Q:
+        tomada(_t[0], _t[1], _t[2], **({'lado': 'o'} if _t[0] == qa.TOMADA_CABECEIRA[0] else {}))
     tomada('T01', 7.62, 2.46, nova=False, lado='o')
     tomada('T02', 7.62, 4.51, nova=False, lado='o')
-    comando(*qa.COMANDO_QUARTO)
-    comando(*qa.COMANDO_CLARABOIA)
-    cx, cy = d.PM(qa.PONTO_CLARABOIA[1], qa.PONTO_CLARABOIA[2])
-    d.rect(cx - 5, cy - 5, 10, 10, fill=AMARELO, stroke=K, sw=1.3)
-    d.txt(cx - 9, cy + 16, 'T18 · espera do motor', 7.0, K, 'bold', 'end')
+    for _c in COMANDOS_Q:
+        comando(*_c)
+    if ESPERA_CLARABOIA:
+        cx, cy = d.PM(qa.PONTO_CLARABOIA[1], qa.PONTO_CLARABOIA[2])
+        d.rect(cx - 5, cy - 5, 10, 10, fill=AMARELO, stroke=K, sw=1.3)
+        d.txt(cx - 9, cy + 16, 'T18 · espera do motor', 7.0, K, 'bold', 'end')
     cx, cy = d.PM(*qa.AC01_NOVO)
     d.rect(cx - 18, cy - 6, 36, 12, fill=CIANO35, stroke=K, sw=1.2)
     d.txt(cx, cy + 3.4, 'AC01', 7.0, K, 'bold', 'middle', ls=0.3)
