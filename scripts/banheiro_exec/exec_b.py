@@ -43,7 +43,7 @@ def be12():
         ('Como ler.', 'Peças em branco, só com as juntas. O número em magenta dentro de uma peça é a medida do corte, em mm. '
          'As áreas em cinza não levam revestimento: porta, nicho, gabinete e espelho.'),
         ('Regras da malha.', 'Fiadas inteiras a partir do piso pronto; a 16ª fiada é cortada em 145 mm junto ao forro. '
-         'Cada parede nasce do seu eixo, com o mesmo corte nas duas pontas. As juntas horizontais dão a volta no banheiro na mesma altura.'),
+         'Cada parede nasce do seu eixo, com o mesmo corte nas duas pontas; a P3 é deslocada (59 mm no box, 92 mm na parede do vaso) para não deixar tira menor que 1/3 de peça ao lado do gabinete e do espelho. As juntas horizontais dão a volta no banheiro na mesma altura.'),
         ('Acentos Nuage.', 'As peças Nuage 75 × 155 do modelo R95 não estão marcadas: as paredes mudaram de medida e as posições precisam ser '
          'transportadas para esta malha. Marcar com o cliente antes de assentar.'),
     ], size=8.0, lh=11.4)
@@ -85,7 +85,10 @@ def be13():
 def be14():
     return _parede('BE-14', 'P4', 20, notas=[
         ('Porta.', 'Vão de 800 × 2150 a 780 mm da parede do vaso, por dentro. A guarnição cobre o corte nos batentes.'),
-        ('Verga.', 'Acima da porta sobram 350 mm até o forro: duas fiadas, uma delas cortada.')])
+        ('Verga: atenção à tira de 46 mm.', 'A porta termina a +2150 e a junta da 14ª fiada fica a +2196: sobre o vão sobra uma tira de 46 mm: 4 peças, mais as duas em L dos batentes. '
+         'Tira com menos de 1/3 da peça não se assenta. Saída preferida: guarnição da porta com 50 mm, cobrindo até a junta. '
+         'Sem guarnição: sobre o vão, trocar a tira e a 15ª fiada por duas fiadas iguais de 100 mm. Decidir com o fornecedor da porta antes de assentar a P4.'),
+        ('Batentes.', 'Os cortes de 67 e 73 mm encostam no vão; nas fiadas 14 a 16 as peças das duas colunas do batente são inteiras ou em L.')])
 
 
 def be15():
@@ -93,6 +96,8 @@ def be15():
         ('Nicho de parede a parede.', 'Faixa de 1170 × 400, base a +1100, da parede da porta até a face da área técnica: não é mais um retângulo fechado. '
          'A parede fica dividida em duas partes, abaixo e acima do nicho. Fundo, base, teto e as duas pontas do nicho são revestidos; a base tem caimento para dentro do box.'),
         ('Fiadas no nicho.', 'A base a +1100 cai 1 mm acima da junta da 7ª fiada: ajustar a base para +1099 e a fiada fica inteira. O topo a +1500 corta a 10ª fiada: sobram 68 mm acima do nicho.'),
+        ('Recomendação de paginação.', 'Nicho com 314 mm (2 fiadas) ou 471 mm (3 fiadas) de altura fecha na junta em cima e embaixo, e o fundo leva só peças inteiras. '
+         'Com 400 mm, o fundo tem 2 fiadas inteiras e uma tira de 87 mm. Decisão do cliente.'),
         ('Largura.', 'A parede tem 1170 mm porque a área técnica ocupa 250 mm do fundo do box.')])
 
 

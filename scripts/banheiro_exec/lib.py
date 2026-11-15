@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Executivo do banheiro — geometria, paginação e desenho (emissão E1, 14.11.2026).
+"""Executivo do banheiro — geometria, paginação e desenho (emissão E2, 15.11.2026; E1 de 14.11.2026).
 
 Medidas em milímetros, faces ACABADAS, origem no canto interno noroeste do
 banheiro: x cresce para leste, y para sul, z para cima a partir do piso pronto.
@@ -26,7 +26,7 @@ from base_mainfloor import (folha_nova, salvar, exportar_pdf_a3, exportar_png, e
                             INK, INK_SOFT, RULE, DEMO, CIANO, CIANO18, AMARELO,
                             AMARELO40, BRANCO, br)
 
-EMISSAO = 'E1  ·  14/11/2026'
+EMISSAO = 'E2  ·  15/11/2026'
 MM = 1.0 / 0.3                      # unidades da folha por mm de papel (A3 = 1400 × 990)
 
 # --- geometria ---------------------------------------------------------------
@@ -60,10 +60,18 @@ MOD = PECA + JUNTA
 
 
 # --- paginação -----------------------------------------------------------------
-def colunas(larg, quina=False):
+def colunas(larg, quina=False, e0=None):
     """Colunas (u0, u1, inteira) com eixo central e pontas iguais (>= 40% da peça)."""
     if quina:   # retorno estreito: peça inteira na quina externa, corte no canto
         return [(0.0, PECA, True), (PECA + JUNTA, larg - JUNTA, False)]
+    if e0 is not None:   # malha deslocada: primeiro corte e0, o último é o que sobrar
+        cols, u = [(0.0, e0, False)], e0 + JUNTA
+        while u + PECA <= larg - JUNTA:
+            cols.append((u, u + PECA, True))
+            u += MOD
+        if larg - u > 1.0:
+            cols.append((u, larg, False))
+        return cols
     n = int((larg - JUNTA) // MOD)
     while n > 0:
         e = (larg - n * PECA - (n + 1) * JUNTA) / 2.0
@@ -105,9 +113,9 @@ def _menos(r, h):
 
 
 class Parede:
-    def __init__(self, pid, nome, larg, furos=(), quina=False, vista=''):
+    def __init__(self, pid, nome, larg, furos=(), quina=False, vista='', e0=None):
         self.id, self.nome, self.larg, self.furos, self.vista = pid, nome, larg, list(furos), vista
-        self.cols, self.rows = colunas(larg, quina), fiadas()
+        self.cols, self.rows = colunas(larg, quina, e0), fiadas()
         self.pecas = []          # (num, fi, ci, [frags], inteira)
         n = 0
         for fi, (z0, z1, rf) in enumerate(self.rows):
@@ -145,7 +153,7 @@ PAREDES = [
     Parede('P3', 'Parede da bancada e do espelho (oeste)', AT[1],
            furos=[(AT[1] - BANC[3], AT[1] - BANC[1], 0.0, TOPO_BANC, 'GABINETE E BANCADA'),
                   (AT[1] - BANC[3], AT[1] - BANC[1], ESP_BASE, ESP_BASE + ESP_H, 'ESPELHO  1600 × 900')],
-           vista='de frente para o oeste · esquerda = box'),
+           vista='de frente para o oeste · esquerda = box', e0=59.0),
 ]
 PAR = {p.id: p for p in PAREDES}
 
