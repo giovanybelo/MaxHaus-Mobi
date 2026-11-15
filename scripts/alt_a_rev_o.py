@@ -48,10 +48,11 @@ TOPO = 'MAXHAUS / MAIN FLOOR  ·  CADERNO ALTERNATIVO A  ·  PAREDE COZINHA/CLOS
 # ---------------------------------------------------------------------------
 # geometria de trabalho — trocada no lugar, todos os módulos enxergam
 # ---------------------------------------------------------------------------
-# drywall sala de TV/quarto (R01) refeita 0,17 m ao norte: o quarto passa de
-# 2,54 para 2,71 m livres e a sala de TV perde o mesmo (0,68 m²). A D01 sai
-# onde está hoje; só a R01 e a porta P03 mudam de lugar.
-DY_R01 = 0.17 * PT_PER_M
+# parede sala de TV/quarto: NÃO é demolida (cliente, 15.11.2026). Fica na posição
+# original, que é 0,42 m ao norte do que o scan leu: a face norte coincide com a
+# linha da cota de 3,98 m da REV. T. O quarto fica com 2,96 m livres e a sala de
+# TV com 4,32 m. Só o vão da porta P03 é aberto (D01) e requadrado (R01).
+DY_R01 = 0.42 * PT_PER_M
 Y_R01_ANT = 432.3
 Y_R01 = Y_R01_ANT - DY_R01
 DRYWALL_ANT = bm.DRYWALL_SALA_QUARTO
@@ -64,18 +65,26 @@ def _norte(r):
 DRYWALL_R01 = _norte(DRYWALL_ANT)
 PORTA_R01 = _norte(bm.PORTA_NOVA)
 ALT_WALLS = [DRYWALL_R01 if w == DRYWALL_ANT else w for w in ALT_WALLS]
-for _k, _a in (('sala', 22.32), ('quarto', 14.08)):
+for _k, _a in (('sala', 21.33), ('quarto', 15.07)):
     ALT_ROOMS[_k]['poly'] = [(x, Y_R01 if (y == Y_R01_ANT and x >= 415.0) else y)
                              for x, y in ALT_ROOMS[_k]['poly']]
     ALT_ROOMS[_k]['area'] = _a
 for _m in (bm, p01, p02, p03, p04, p05, p06, p07, p13, fo):
     if hasattr(_m, 'PORTA_NOVA'):
         _m.PORTA_NOVA = PORTA_R01
+    if hasattr(_m, 'DRYWALL_SALA_QUARTO'):
+        _m.DRYWALL_SALA_QUARTO = PORTA_R01      # da parede só sai o vão da porta
+# o estado existente também mostra a parede no lugar real
+ORIG_WALLS[:] = [DRYWALL_R01 if w == DRYWALL_ANT else w for w in ORIG_WALLS]
+for _k, _a in (('sala', 21.33), ('quarto', 15.07)):
+    ORIG_ROOMS[_k]['poly'] = [(x, Y_R01 if (y == Y_R01_ANT and x >= 415.0) else y)
+                              for x, y in ORIG_ROOMS[_k]['poly']]
+    ORIG_ROOMS[_k]['area'] = _a
 
 
 def realce_r01(d, cor=K):
-    x, y, w_, h_ = d.R(DRYWALL_R01)
-    d.rect(x, y, w_, h_, fill='none', stroke=cor, sw=1.3, dash='4 3')
+    """A parede sala de TV/quarto é mantida: nada a realçar além do vão da porta."""
+    return
 
 
 def geometria(proposta=True):
@@ -99,7 +108,7 @@ def trocar(d, velho, novo):
 
 
 def realce_parede(d):
-    for r in (WALL_NOVA, DRYWALL_R01):
+    for r in (WALL_NOVA,):
         x, y, w_, h_ = d.R(r)
         d.rect(x - 1.5, y - 1.5, w_ + 3, h_ + 3, fill='none', stroke=DEMO, sw=1.1, dash='3 2.5')
 
@@ -218,7 +227,7 @@ def construir_01():
     d.set_plan(132, 182, 64.0)
     realce_parede(d)
     bm.cota_v(d, 455.24, 550.38, 343.39, -16, size=6.6, ext=False)     # profundidade do closet
-    bm.cota_v(d, 434.63 - DY_R01, 550.38, 599.46, -16, size=6.6, ext=False)   # quarto, 2,71
+    bm.cota_v(d, 434.63 - DY_R01, 550.38, 599.46, -16, size=6.6, ext=False)   # quarto, 2,96
     return d
 
 
@@ -467,7 +476,7 @@ fo.SEQ_DEMO[4] = ('5', ['Vedações — D01, D02, D06, D04, D09 e D10.',
                         'Abrir D10 com cautela: confirmar hidráulica ou gás embutido no trecho.'], False)
 fo.SEQ_DEMO[8] = ('9', ['Reconstruções — R01, R02, R03 e R04.',
                         'Marcar R04 antes de levantar: face sul do banheiro, em esquadro com a oeste.',
-                        'R01 e R03 fecham só depois da infraestrutura embutida.'], True)
+                        'R03 fecha só depois da infraestrutura embutida; R01 é só o requadro do vão da P03.'], True)
 
 
 def folha_demolicao_alt():
@@ -521,47 +530,51 @@ _subst(fo.TAB_PEDRA, 'KC1f', ('KC1f', 'Frontão 10 cm na parede oeste e na later
 
 
 # ---------------------------------------------------------------------------
-# R01 0,17 m ao norte — números de sala de TV e quarto
-#   sala de TV 23,00 → 22,32 m² · quarto 13,40 → 14,08 m² (Δ 0,17 × 3,98 m)
-#   perímetro ∓0,34 m · parede ∓0,82 m² · volume × 2,62 · lm = área × 150 / 0,48
-#   social + cozinha 38,04 m² · quarto + closet 18,46 m² (600 e 800 BTU/h·m²)
+# parede sala de TV/quarto 0,42 m ao norte do scan — números de sala de TV e quarto
+#   sala de TV 23,00 → 21,33 m² · quarto 13,40 → 15,07 m² (Δ 0,42 × 3,98 m)
+#   perímetro ∓0,84 m · parede ∓2,03 m² · volume × 2,62 · lm = área × 150 / 0,48
+#   social + cozinha 37,05 m² · quarto + closet 19,45 m² (600 e 800 BTU/h·m²)
 # ---------------------------------------------------------------------------
-_subst(p01.TAB_AMB, 'Sala de TV', ('Sala de TV', '22,32 m²', '20,4 m', '5,6 × 4,6', '4,8 × 3,8'))
-_subst(p01.TAB_AMB, 'Quarto', ('Quarto', '14,08 m²', '16,5 m', '5,6 × 2,7', '5,6 × 2,3'))
+_subst(p01.TAB_AMB, 'Sala de TV', ('Sala de TV', '21,33 m²', '19,9 m', '5,6 × 4,4', '4,8 × 3,6'))
+_subst(p01.TAB_AMB, 'Quarto', ('Quarto', '15,07 m²', '17,0 m', '5,6 × 3,0', '5,6 × 2,5'))
 p01.NOTAS.insert(1, [
-    '**Alternativo A: a drywall sala de TV/quarto (R01) volta 0,17 m mais ao norte.',
-    'O quarto passa de 2,54 para 2,71 m livres (de 13,40 para 14,08 m²) e a sala de TV de 23,00 para',
-    '22,32 m². A porta de correr P03 acompanha a parede; o comprimento da drywall não muda.'])
-p02.ALVOS[:] = [(a[0], a[1], Y_R01, *a[3:]) if a[0] == 'R01' else a for a in p02.ALVOS]
-_subst(p02.LINHAS, 'R01', ('R01', 'Nova drywall sala de TV/quarto, 0,17 m ao norte, com porta de correr',
-                          '4,08 m + 1 porta'))
+    '**Parede sala de TV/quarto: mantida, sem demolição (cliente, 15.11.2026).',
+    'Fica na posição original, 0,42 m ao norte da leitura do scan. O quarto tem 2,96 m livres (15,07 m²) e a',
+    'sala de TV 4,32 m (21,33 m²). Só o vão da porta de correr P03 é aberto. Conferir a posição em obra.'])
+_XP03 = (PORTA_R01[0] + PORTA_R01[2]) / 2.0
+p02.ALVOS[:] = [('D01', _XP03, Y_R01, 'demo', 0, -9) if a[0] == 'D01' else
+                ('R01', _XP03 + 14.0, Y_R01, 'novo', 10, 11) if a[0] == 'R01' else a for a in p02.ALVOS]
+_subst(p02.LINHAS, 'D01', ('D01', 'Abrir vão de porta na parede sala de TV/quarto (parede mantida)', '1 vão — 1,00 × 2,29 m'))
+_subst(fo.TAB_DEMO, 'D01', ('D01', 'Abrir vão de porta 1,00 × 2,29 m na parede sala de TV/quarto; a parede fica', '1 vão'))
+_subst(p02.LINHAS, 'R01', ('R01', 'Parede sala de TV/quarto mantida: requadrar o vão e instalar a porta de correr P03',
+                          '1 vão + 1 porta'))
 for _n in p02.NOTAS:
     for _j, _ln in enumerate(_n):
         if _ln.startswith('A drywall entre sala de TV e quarto cai e volta (R01)'):
-            _n[_j] = 'A drywall sala de TV/quarto cai e volta 0,17 m ao norte (R01), com porta de correr de 1,00 × 2,29 m; a folha'
+            _n[_j] = 'A parede sala de TV/quarto fica onde está: só se abre o vão da porta de correr de 1,00 × 2,29 m (D01, R01); a folha'
 _subst(p03.TAB_A, 'Cumaru-ferro',
-       ('Cumaru-ferro', 'sala de TV 22,32 + quarto 14,08 + sala de estar 5,90 + corredor 2,39', '44,69 m²'))
-_subst(p04.TAB_LUZ, 'Sala de TV', ('Sala de TV', '150 lux', '6.975 lm', '2.700 K'))
-_subst(p04.TAB_LUZ, 'Quarto', ('Quarto', '150 lux', '4.400 lm', '2.700 K'))
-_subst(p04.TAB_AR, 'Social + cozinha', ('Social + cozinha', '38,04 m²', '22.824 BTU/h', '30.432 BTU/h'))
-_subst(p04.TAB_AR, 'Quarto + closet', ('Quarto + closet', '18,46 m²', '11.076 BTU/h', '14.768 BTU/h'))
-_subst(p05.COMANDOS, 'S05', ('S05', 4.90, 6.98 - 0.17))      # acompanha a face do quarto
-_subst(p09.TAB_AMB, 'Sala de TV', ('Sala de TV', '22,32', '28,98', '58,48'))
-_subst(p09.TAB_AMB, 'Quarto', ('Quarto', '14,08', '31,12', '36,89'))
-p09.TAB_DEC.insert(1, ('Drywall R01', 'Alternativo A', '0,17 m ao norte · quarto 2,71 m livres · 14,08 m²'))
-_subst(p11.TAB_TERM, 'Social + cozinha', ('Social + cozinha', '38,04', '22.824', '30.432', 'sala de TV, sala de estar, cozinha e circulação'))
-_subst(p11.TAB_TERM, 'Quarto + closet', ('Quarto + closet', '18,46', '11.076', '14.768', 'zona de dormir'))
-_subst(p11.TAB_LUZ, 'Sala de TV', ('Sala de TV', '22,32', '150 lux', '6.975 lm', '2.700 K', 'leitura e cenas dimerizáveis'))
-_subst(p11.TAB_LUZ, 'Quarto', ('Quarto', '14,08', '150 lux', '4.400 lm', '2.700 K', 'cabeceira independente'))
-_subst(fo.TAB_DEMO, 'R01', ('R01', 'Reconstruir drywall sala de TV/quarto 0,17 m ao norte, com vão de porta 1,00 × 2,29 m',
-                            '4,08 m + 1 vão'))
-_subst(fo.TAB_LUX, 'Sala de TV', ('Sala de TV', '150 lux', '6.975 lm', '2.700 K'))
-_subst(fo.TAB_LUX, 'Quarto', ('Quarto', '150 lux', '4.400 lm', '2.700 K'))
-_subst(fo.TAB_AR_FO, 'AC01', ('AC01', 'Evaporadora — social + cozinha (38,04 m²)', '1 unidade'))
-_subst(fo.TAB_AR_FO, 'AC02', ('AC02', 'Evaporadora — quarto + closet (18,46 m²)', '1 unidade'))
-_subst(fo.TAB_BTU, 'Social + cozinha', ('Social + cozinha', '38,04 m²', '22.824 BTU/h', '30.432 BTU/h'))
-_subst(fo.TAB_BTU, 'Quarto + closet', ('Quarto + closet', '18,46 m²', '11.076 BTU/h', '14.768 BTU/h'))
-fo.SEQ_AR[1] = (fo.SEQ_AR[1][0], [fo.SEQ_AR[1][1][0].replace('30.976 e 14.224', '30.432 e 14.768')]
+       ('Cumaru-ferro', 'sala de TV 21,33 + quarto 15,07 + sala de estar 5,90 + corredor 2,39', '44,69 m²'))
+_subst(p04.TAB_LUZ, 'Sala de TV', ('Sala de TV', '150 lux', '6.665 lm', '2.700 K'))
+_subst(p04.TAB_LUZ, 'Quarto', ('Quarto', '150 lux', '4.710 lm', '2.700 K'))
+_subst(p04.TAB_AR, 'Social + cozinha', ('Social + cozinha', '37,05 m²', '22.230 BTU/h', '29.640 BTU/h'))
+_subst(p04.TAB_AR, 'Quarto + closet', ('Quarto + closet', '19,45 m²', '11.670 BTU/h', '15.560 BTU/h'))
+_subst(p05.COMANDOS, 'S05', ('S05', 4.90, 6.98 - 0.42))      # acompanha a face do quarto
+_subst(p09.TAB_AMB, 'Sala de TV', ('Sala de TV', '21,33', '27,77', '55,88'))
+_subst(p09.TAB_AMB, 'Quarto', ('Quarto', '15,07', '32,33', '39,48'))
+p09.TAB_DEC.insert(1, ('Parede sala de TV/quarto', 'cliente, 15.11.2026', 'mantida, sem demolição · quarto 2,96 m livres · 15,07 m²'))
+_subst(p11.TAB_TERM, 'Social + cozinha', ('Social + cozinha', '37,05', '22.230', '29.640', 'sala de TV, sala de estar, cozinha e circulação'))
+_subst(p11.TAB_TERM, 'Quarto + closet', ('Quarto + closet', '19,45', '11.670', '15.560', 'zona de dormir'))
+_subst(p11.TAB_LUZ, 'Sala de TV', ('Sala de TV', '21,33', '150 lux', '6.665 lm', '2.700 K', 'leitura e cenas dimerizáveis'))
+_subst(p11.TAB_LUZ, 'Quarto', ('Quarto', '15,07', '150 lux', '4.710 lm', '2.700 K', 'cabeceira independente'))
+_subst(fo.TAB_DEMO, 'R01', ('R01', 'Parede sala de TV/quarto mantida: requadrar o vão de 1,00 × 2,29 m para a porta de correr P03',
+                            '1 vão'))
+_subst(fo.TAB_LUX, 'Sala de TV', ('Sala de TV', '150 lux', '6.665 lm', '2.700 K'))
+_subst(fo.TAB_LUX, 'Quarto', ('Quarto', '150 lux', '4.710 lm', '2.700 K'))
+_subst(fo.TAB_AR_FO, 'AC01', ('AC01', 'Evaporadora — social + cozinha (37,05 m²)', '1 unidade'))
+_subst(fo.TAB_AR_FO, 'AC02', ('AC02', 'Evaporadora — quarto + closet (19,45 m²)', '1 unidade'))
+_subst(fo.TAB_BTU, 'Social + cozinha', ('Social + cozinha', '37,05 m²', '22.230 BTU/h', '29.640 BTU/h'))
+_subst(fo.TAB_BTU, 'Quarto + closet', ('Quarto + closet', '19,45 m²', '11.670 BTU/h', '15.560 BTU/h'))
+fo.SEQ_AR[1] = (fo.SEQ_AR[1][0], [fo.SEQ_AR[1][1][0].replace('30.976 e 14.224', '29.640 e 15.560')]
                 + list(fo.SEQ_AR[1][1][1:]), fo.SEQ_AR[1][2])
 
 # ---------------------------------------------------------------------------
@@ -626,7 +639,7 @@ p03.legenda = _legenda_piso(p03.legenda)
 fo.legenda = _legenda_piso(fo.legenda)
 
 p03.TAB_A[:] = [
-    ('Monolítico',        'sala de TV 22,32 + quarto 14,08 + sala de estar 5,90 + corredor 2,39', '44,69 m²'),
+    ('Monolítico',        'sala de TV 21,33 + quarto 15,07 + sala de estar 5,90 + corredor 2,39', '44,69 m²'),
     ('Sem reserva',       'moldado in loco, sem perda de corte',                     '—'),
     ('Porcelanato',       'cozinha 7,43 (de 9,82) + closet 4,38 — zona contínua',     '11,81 m²'),
     ('+ reserva de 10%',  'cortes, perdas e reposição futura',                       '12,99 m²'),
@@ -962,7 +975,7 @@ def construir_quarto_s():
 # PISO — duas propostas
 #   A  monolítico integral: secos 56,26 (sem AT-A) + banheiro e box 3,66 (sem AT-B) = 59,92 m²
 #   B  porcelanato acetinado: cozinha 7,43 + closet 4,14 + banheiro e box 3,66 = 15,23 m²
-#      monolítico: sala de TV 22,32 + quarto 14,08 + sala de estar 5,90 + corredor 2,39 = 44,69 m²
+#      monolítico: sala de TV 21,33 + quarto 15,07 + sala de estar 5,90 + corredor 2,39 = 44,69 m²
 p03.TAB_B[:] = [
     ('Monolítico',      'sala de TV, quarto, cozinha, sala de estar, closet e corredor (sem AT-A)', '56,26 m²'),
     ('Banheiro e box',  'mesmo monolítico, sistema para área molhada sobre impermeabilização (sem AT-B)', '3,66 m²'),
@@ -970,7 +983,7 @@ p03.TAB_B[:] = [
     ('MainFloor',       'total revestido, líquido das áreas técnicas',                      '59,92 m²'),
 ]
 p03.TAB_A[:] = [
-    ('Monolítico',        'sala de TV 22,32 + quarto 14,08 + sala de estar 5,90 + corredor 2,39', '44,69 m²'),
+    ('Monolítico',        'sala de TV 21,33 + quarto 15,07 + sala de estar 5,90 + corredor 2,39', '44,69 m²'),
     ('Porcelanato',       'acetinado: cozinha 7,43 + closet 4,14 + banheiro e box 3,66 (líquidos)', '15,23 m²'),
     ('+ reserva de 10%',  'cortes, perdas e reposição futura do porcelanato',                 '16,75 m²'),
     ('MainFloor',         'total revestido, líquido das áreas técnicas',                      '59,92 m²'),
@@ -1131,11 +1144,17 @@ _celula('Piso da casa', 6, 'opção A (monolítico integral) ou B (porcelanato +
 #   As áreas dos quadros continuam as do scan: a diferença de 4 cm no comprimento
 #   (~0,06 m²) fica para a medição depois da demolição.
 # ---------------------------------------------------------------------------
-REV_ALT = 'ALT. A  ·  REV. T'
-bm.DATA_EMISSAO = '14/11/2026'
-fo.DATA = '14.11.2026'
-fo.EMISSAO = 'ALT. A  ·  EMISSÃO 06'
-fo.ORIGEM = 'extraído do Caderno Alternativo A — REV. T'
+for _n in p01.NOTAS:
+    for _j, _ln in enumerate(_n):
+        if 'A nova drywall (R01) repete a espessura' in _ln:
+            _n[_j] = _ln.replace('A nova drywall (R01) repete a espessura', 'A parede sala de TV/quarto é mantida com a espessura atual')
+bm.ESQUADRIAS[:] = [e[:-1] + ('nova, na parede sala de TV/quarto (mantida)',) if e[0] == 'P03' else e for e in bm.ESQUADRIAS] if hasattr(bm, 'ESQUADRIAS') else []
+# REV. U (15.11.2026) — parede sala de TV/quarto mantida, na posição original (ver topo)
+REV_ALT = 'ALT. A  ·  REV. U'
+bm.DATA_EMISSAO = '15/11/2026'
+fo.DATA = '15.11.2026'
+fo.EMISSAO = 'ALT. A  ·  EMISSÃO 07'
+fo.ORIGEM = 'extraído do Caderno Alternativo A — REV. U'
 
 AT_B = (347.96, 450.67 - 0.80 * PT_PER_M, 347.96 + 0.25 * PT_PER_M, 450.67)
 AT_TITULO = 'BANHEIRO · MEDIDO EM OBRA (14/11/2026)'
@@ -1185,30 +1204,30 @@ EXTRA_TETO = 'Teto: a chaminé do AT-A corre sob a laje até a J06 — nenhum tr
 EXTRA_ELE = 'Elétrica: conferir com o fabricante do aquecedor se o AT-A pede ponto de força; nada embutido no AT-B.'
 
 FOLHAS = (
-    (_com_at(construir_01, (722, 800, 628), (132, 182, 64.0, 6.2), AT_TXT), 'alt-a-t-prancha-01-planta-cotada', 'Prancha 01: planta baixa cotada'),
-    (_com_at(construir_02, CX, P70, extra=EXTRA_DEMO), 'alt-a-t-prancha-02-demolicao', 'Prancha 02: demolição e desmontagem'),
-    (_com_at(lambda: construir_piso_s('A'), CX, P70, extra=EXTRA_03A), 'alt-a-t-prancha-03-piso-monolitico-integral', 'Prancha 03: piso monolítico integral'),
-    (_com_at(lambda: construir_piso_s('B'), CX, P70, extra=EXTRA_03B), 'alt-a-t-prancha-04-piso-porcelanato-monolitico', 'Prancha 04: piso porcelanato + monolítico'),
-    (_com_at(construir_teto_fas, CX, P70, extra=EXTRA_TETO), 'alt-a-t-prancha-05-teto', 'Prancha 05: teto'),
-    (_com_at(construir_eletrica, CX, P70, extra=EXTRA_ELE), 'alt-a-t-prancha-06-eletrica', 'Prancha 06: elétrica'),
-    (_com_at(p06.construir, (70, 150, 600), desenho=False), 'alt-a-t-prancha-07-esquadrias', 'Prancha 07: esquadrias'),
-    (_com_at(p07.construir, (70, 818, 345), [_plano_wc(190, 222.0, 118.0) + (7.0, True)]), 'alt-a-t-prancha-08-banheiro', 'Prancha 08: banheiro'),
-    (_com_at(p09.construir, (722, 820, 628), desenho=False), 'alt-a-t-prancha-09-medicao', 'Prancha 09: medição e decisões'),
-    (_com_at(p10.construir, (70, 640, 600), desenho=False, extra=EXTRA_WC), 'alt-a-t-prancha-10-banheiro-acabamentos', 'Prancha 10: banheiro, acabamentos'),
-    (_com_at(construir_11_fas, (755, 450, 590), desenho=False), 'alt-a-t-prancha-11-ar-luz', 'Prancha 11: ar, exaustão e iluminação'),
-    (_com_at(construir_riscos_r, None, desenho=False), 'alt-a-t-prancha-12-riscos', 'Prancha 12: riscos'),
-    (_com_at(construir_quarto_s, (66, 660, 138), desenho=False, extra=EXTRA_13), 'alt-a-t-prancha-13-quarto-claraboia', 'Prancha 13: quarto adaptável e claraboia'),
-    (_com_at(p14.construir, None, desenho=False), 'alt-a-t-prancha-14-programacao', 'Prancha 14: programação da obra'),
+    (_com_at(construir_01, (722, 800, 628), (132, 182, 64.0, 6.2), AT_TXT), 'alt-a-u-prancha-01-planta-cotada', 'Prancha 01: planta baixa cotada'),
+    (_com_at(construir_02, CX, P70, extra=EXTRA_DEMO), 'alt-a-u-prancha-02-demolicao', 'Prancha 02: demolição e desmontagem'),
+    (_com_at(lambda: construir_piso_s('A'), CX, P70, extra=EXTRA_03A), 'alt-a-u-prancha-03-piso-monolitico-integral', 'Prancha 03: piso monolítico integral'),
+    (_com_at(lambda: construir_piso_s('B'), CX, P70, extra=EXTRA_03B), 'alt-a-u-prancha-04-piso-porcelanato-monolitico', 'Prancha 04: piso porcelanato + monolítico'),
+    (_com_at(construir_teto_fas, CX, P70, extra=EXTRA_TETO), 'alt-a-u-prancha-05-teto', 'Prancha 05: teto'),
+    (_com_at(construir_eletrica, CX, P70, extra=EXTRA_ELE), 'alt-a-u-prancha-06-eletrica', 'Prancha 06: elétrica'),
+    (_com_at(p06.construir, (70, 150, 600), desenho=False), 'alt-a-u-prancha-07-esquadrias', 'Prancha 07: esquadrias'),
+    (_com_at(p07.construir, (70, 818, 345), [_plano_wc(190, 222.0, 118.0) + (7.0, True)]), 'alt-a-u-prancha-08-banheiro', 'Prancha 08: banheiro'),
+    (_com_at(p09.construir, (722, 820, 628), desenho=False), 'alt-a-u-prancha-09-medicao', 'Prancha 09: medição e decisões'),
+    (_com_at(p10.construir, (70, 640, 600), desenho=False, extra=EXTRA_WC), 'alt-a-u-prancha-10-banheiro-acabamentos', 'Prancha 10: banheiro, acabamentos'),
+    (_com_at(construir_11_fas, (755, 450, 590), desenho=False), 'alt-a-u-prancha-11-ar-luz', 'Prancha 11: ar, exaustão e iluminação'),
+    (_com_at(construir_riscos_r, None, desenho=False), 'alt-a-u-prancha-12-riscos', 'Prancha 12: riscos'),
+    (_com_at(construir_quarto_s, (66, 660, 138), desenho=False, extra=EXTRA_13), 'alt-a-u-prancha-13-quarto-claraboia', 'Prancha 13: quarto adaptável e claraboia'),
+    (_com_at(p14.construir, None, desenho=False), 'alt-a-u-prancha-14-programacao', 'Prancha 14: programação da obra'),
 )
 FOLHAS_FO = (
-    (_com_at(folha_demolicao_alt, (178, 138, 168, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_DEMO), 'alt-a-t-fornecedor-01-demolicao', 'FO1: demolição e preparo'),
-    (_com_at(folha_piso_s, (1130 - 340, 820, 560), [(70, 200, 40.0, 5.0), (414, 200, 40.0, 5.0)], extra=EXTRA_03), 'alt-a-t-fornecedor-02-piso', 'FO2: piso'),
-    (_com_at(fo.folha_eletrica, (165, 138, 180, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_ELE), 'alt-a-t-fornecedor-03-eletrica', 'FO3: elétrica'),
-    (_com_at(folha_iluminacao_fas, (162, 136, 143, 6.6), (70, 156, 54.0, 5.6), AT_MINI, EXTRA_TETO), 'alt-a-t-fornecedor-04-iluminacao', 'FO4: iluminação'),
-    (_com_at(fo.folha_ar, (160, 134, 125, 6.3), (70, 156, 49.0, 5.4), AT_MINI, EXTRA_AR), 'alt-a-t-fornecedor-05-ar', 'FO5: ar-condicionado e exaustão'),
-    (_com_at(fo.folha_cortina, (722, 760, 628), desenho=False), 'alt-a-t-fornecedor-06-cortina-claraboia', 'FO6: cortina e claraboia'),
-    (_com_at(fo.folha_pedras_vidro_portas, (722, 820, 628), desenho=False), 'alt-a-t-fornecedor-07-pedras-vidro-portas', 'FO7: pedras, vidro do box e portas'),
-    (_com_at(fo.folha_programacao, None, desenho=False), 'alt-a-t-fornecedor-08-programacao', 'FO8: programação da obra'),
+    (_com_at(folha_demolicao_alt, (178, 138, 168, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_DEMO), 'alt-a-u-fornecedor-01-demolicao', 'FO1: demolição e preparo'),
+    (_com_at(folha_piso_s, (1130 - 340, 820, 560), [(70, 200, 40.0, 5.0), (414, 200, 40.0, 5.0)], extra=EXTRA_03), 'alt-a-u-fornecedor-02-piso', 'FO2: piso'),
+    (_com_at(fo.folha_eletrica, (165, 138, 180, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_ELE), 'alt-a-u-fornecedor-03-eletrica', 'FO3: elétrica'),
+    (_com_at(folha_iluminacao_fas, (162, 136, 143, 6.6), (70, 156, 54.0, 5.6), AT_MINI, EXTRA_TETO), 'alt-a-u-fornecedor-04-iluminacao', 'FO4: iluminação'),
+    (_com_at(fo.folha_ar, (160, 134, 125, 6.3), (70, 156, 49.0, 5.4), AT_MINI, EXTRA_AR), 'alt-a-u-fornecedor-05-ar', 'FO5: ar-condicionado e exaustão'),
+    (_com_at(fo.folha_cortina, (722, 760, 628), desenho=False), 'alt-a-u-fornecedor-06-cortina-claraboia', 'FO6: cortina e claraboia'),
+    (_com_at(fo.folha_pedras_vidro_portas, (722, 820, 628), desenho=False), 'alt-a-u-fornecedor-07-pedras-vidro-portas', 'FO7: pedras, vidro do box e portas'),
+    (_com_at(fo.folha_programacao, None, desenho=False), 'alt-a-u-fornecedor-08-programacao', 'FO8: programação da obra'),
 )
 
 if __name__ == '__main__':
@@ -1217,17 +1236,25 @@ if __name__ == '__main__':
     so = set(sys.argv[1:])
     geometria(True)
     for grupo, caderno, titulo_cad in (
-            (FOLHAS, 'caderno-alternativo-a-rev-t-A3.pdf',
-             'MaxHaus MainFloor — Caderno Alternativo A, REV. T (A3)'),
-            (FOLHAS_FO, 'caderno-fornecedores-alternativo-a-rev-t-A3.pdf',
-             'MaxHaus 81I — pacote para fornecedores, Alternativo A, REV. T (A3)')):
+            (FOLHAS, 'caderno-alternativo-a-rev-u-A3.pdf',
+             'MaxHaus MainFloor — Caderno Alternativo A, REV. U (A3)'),
+            (FOLHAS_FO, 'caderno-fornecedores-alternativo-a-rev-u-A3.pdf',
+             'MaxHaus 81I — pacote para fornecedores, Alternativo A, REV. U (A3)')):
         saidas = []
         for fn, nome, titulo in grupo:
             if so and not any(s in nome for s in so):
                 continue
-            caminho = salvar(fn(), pasta, nome)
+            d_ = fn()
+            for _i, _s in enumerate(d_.o):          # REV. U: a parede sala de TV/quarto não é refeita
+                for _a, _b in (('na drywall reconstruída', 'na parede mantida'), ('na drywall R01', 'na parede sala/quarto'),
+                               ('e drywall ainda sem porta', 'e parede sala de TV/quarto ainda sem porta'),
+                               ('fechar a drywall R01', 'requadrar o vão R01'), ('drywall R01', 'parede sala/quarto')):
+                    if _a in _s:
+                        _s = _s.replace(_a, _b)
+                d_.o[_i] = _s
+            caminho = salvar(d_, pasta, nome)
             exportar_pdf_a3([caminho], os.path.join(pasta, nome + '-A3.pdf'),
-                            'MaxHaus MainFloor — Alternativo A, REV. T — ' + titulo)
+                            'MaxHaus MainFloor — Alternativo A, REV. U — ' + titulo)
             exportar_png(caminho, os.path.join(pasta, nome + '.png'))
             saidas.append(caminho)
         if not so:
