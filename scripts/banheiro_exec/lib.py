@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Executivo do banheiro — geometria, paginação e desenho (emissão E3, 15.11.2026; E1 e E2 superadas).
+"""Executivo do banheiro — geometria, paginação e desenho (emissão E4, 16.11.2026: pares Nuage; E1 a E3 superadas).
 
 Medidas em milímetros, faces ACABADAS, origem no canto interno noroeste do
 banheiro: x cresce para leste, y para sul, z para cima a partir do piso pronto.
@@ -26,7 +26,7 @@ from base_mainfloor import (folha_nova, salvar, exportar_pdf_a3, exportar_png, e
                             INK, INK_SOFT, RULE, DEMO, CIANO, CIANO18, AMARELO,
                             AMARELO40, BRANCO, br)
 
-EMISSAO = 'E3  ·  15/11/2026'
+EMISSAO = 'E4  ·  16/11/2026'
 MM = 1.0 / 0.3                      # unidades da folha por mm de papel (A3 = 1400 × 990)
 
 # --- geometria ---------------------------------------------------------------
@@ -57,6 +57,11 @@ TOALHEIRO = (VASO_X - 275.0, VASO_X + 275.0, 989.0, 1359.0)   # na P5
 
 PECA, JUNTA = 155.0, 2.0
 MOD = PECA + JUNTA
+
+# acentos Nuage 75 x 155: sempre em par, ocupando uma célula inteira da malha (75 + 5 + 75 = 155)
+NUAGE_L, NUAGE_J = 75.0, 5.0
+NUAGE_COR = AMARELO40
+ACENTO_DENS = 10          # 1 par a cada ~10 peças inteiras elegíveis
 
 # bancada revestida com Bleu Nuit (cliente, 15/11): tampo, saia e lateral norte
 TAMPO_U = (AT[1] - BANC[3], AT[1] - BANC[1])     # 120 → 1720, na coordenada da P3 (u a partir do box)
@@ -117,7 +122,8 @@ def _menos(r, h):
 
 
 class Parede:
-    def __init__(self, pid, nome, larg, furos=(), quina=False, vista='', e0=None):
+    def __init__(self, pid, nome, larg, furos=(), quina=False, vista='', e0=None, evitar=()):
+        self.evitar = list(evitar)
         self.id, self.nome, self.larg, self.furos, self.vista = pid, nome, larg, list(furos), vista
         self.cols, self.rows = colunas(larg, quina, e0), fiadas()
         self.pecas = []          # (num, fi, ci, [frags], inteira)
@@ -132,18 +138,47 @@ class Parede:
                 n += 1
                 cheia = rf and cf and len(fr) == 1 and fr[0] == (u0, u1, z0, z1)
                 self.pecas.append((n, fi, ci, fr, cheia))
+        self.acentos = self._acentos()
+
+    def _acentos(self):
+        """Pares Nuage espalhados: só em peças inteiras (fora da fiada cortada do topo), no máximo um por fiada,
+        sem encostar em outro par (nem na diagonal) e sem repetir a coluna a menos de 4 fiadas."""
+        import random
+        ult = len(self.rows) - 1
+        cand = [(n, fi, ci) for (n, fi, ci, fr, cheia) in self.pecas if cheia and fi < ult
+                and not any(_menos(fr[0], e) != [fr[0]] for e in self.evitar)]
+        alvo = int(round(len(cand) / float(ACENTO_DENS)))
+        rnd = random.Random('nuage-' + self.id)
+        rnd.shuffle(cand)
+        ok = []
+        for n, fi, ci in cand:
+            if len(ok) >= alvo:
+                break
+            if any(f == fi or (abs(f - fi) <= 1 and abs(c - ci) <= 1) or (c == ci and abs(f - fi) <= 3) for _, f, c in ok):
+                continue
+            ok.append((n, fi, ci))
+        return {n for n, _, _ in ok}
+
+    @property
+    def n_bleu(self):
+        return len(self.pecas) - len(self.acentos)
+
+    @property
+    def n_nuage(self):
+        return 2 * len(self.acentos)
 
     @property
     def area(self):
         return sum((b - a) * (d - c) for p in self.pecas for (a, b, c, d) in p[3]) / 1e6
 
     @property
-    def inteiras(self):
-        return sum(1 for p in self.pecas if p[4])
+    def inteiras(self):       # Bleu Nuit inteiras (as células dos pares Nuage não contam)
+        return sum(1 for p in self.pecas if p[4] and p[0] not in self.acentos)
 
 
 PAREDES = [
-    Parede('P5', 'Parede do vaso e do toalheiro (norte)', LARG, vista='de frente para o norte · esquerda = bancada'),
+    Parede('P5', 'Parede do vaso e do toalheiro (norte)', LARG, vista='de frente para o norte · esquerda = bancada',
+           evitar=[TOALHEIRO]),
     Parede('P4', 'Parede da porta (leste)', COMP,
            furos=[(PORTA[0], PORTA[1], 0.0, PORTA_H, 'PORTA  800 × 2150')],
            vista='de frente para o leste · esquerda = parede do vaso'),
@@ -403,6 +438,18 @@ class Folha:
                 self.t((p0[0] + p1[0]) / 2.0, (p0[1] + p1[1]) / 2.0 + 3 + (i - (len(lin) - 1) / 2.0) * 9.5, ln, 7.0, K70, True, 'middle')
         fs = 6.0 if N <= 15 else 5.2
         for (n, fi, ci, frags, cheia) in par.pecas:
+            if n in par.acentos:      # par Nuage 75 + 5 + 75
+                u0, u1, z0, z1 = frags[0]
+                for a_ in (u0, u1 - NUAGE_L):
+                    p0, p1 = P(a_, z1), P(a_ + NUAGE_L, z0)
+                    d.rect(p0[0], p0[1], p1[0] - p0[0], p1[1] - p0[1], fill=NUAGE_COR, stroke=K, sw=0.55)
+                p0, p1 = P(u0, z1), P(u1, z0)
+                cx, cy = (p0[0] + p1[0]) / 2.0, (p0[1] + p1[1]) / 2.0 + fs * 0.36
+                if modo == 'numeros':
+                    self.t(cx, cy, str(n), fs, K, False, 'middle')
+                else:
+                    self.t(cx, cy, 'N', fs, K, True, 'middle')
+                continue
             for (u0, u1, z0, z1) in frags:
                 p0, p1 = P(u0, z1), P(u1, z0)
                 w_, h_ = p1[0] - p0[0], p1[1] - p0[1]

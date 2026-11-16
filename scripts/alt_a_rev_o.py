@@ -1206,7 +1206,7 @@ EXTRA_ELE = 'Elétrica: conferir com o fabricante do aquecedor se o AT-A pede po
 # ---------------------------------------------------------------------------
 # REV. V (15.11.2026) — respostas do cliente às divergências da revisão
 #   · forro do banheiro a 2,50 m (como no Executivo); exaustor 3,80 × 2,50 × 10 = 95,0 m³/h
-#   · revestimento do banheiro = Executivo E3: paredes 14,93 + nicho 0,84 + bancada 0,84 m²
+#   · revestimento do banheiro = Executivo E4: paredes 14,93 + nicho 0,84 + bancada 0,84 m²
 #   · elétrica: só troca de fiação; pontos mantidos; único ponto novo é o T20 (toalheiro)
 #   · porta P03: vão existente ampliado, porta de abrir 0,90 × 2,10 m para o quarto,
 #     sentido horário, a 0,15 m da parede do banheiro
@@ -1314,9 +1314,9 @@ for _m in (p11,):
     for _nome in ('TAB_PREM',):
         _subst(getattr(_m, _nome), 'Altura do banheiro', ('Altura do banheiro', '2,50 m', 'sob o forro novo'))
 
-# ---- prancha 10: resumo do Executivo E3 -----------------------------------
+# ---- prancha 10: resumo do Executivo E4 -----------------------------------
 p10.TAB_PREM[:] = [
-    ('Medidas', 'interno 1,42 × 2,68 m', 'medidas de obra de 14/11', 'Executivo E3'),
+    ('Medidas', 'interno 1,42 × 2,68 m', 'medidas de obra de 14/11', 'Executivo E4'),
     ('Altura de revestimento', '2,50 m', 'até o forro novo', 'REV. V — não 2,40'),
     ('Box', '1,42 × 0,92 m', 'AT-B de 0,80 × 0,25 no canto', 'cliente, 14/11'),
     ('Porta P02', '0,80 × 2,15 m', 'descontada; guarnição de 50 mm', 'cliente, 14/11'),
@@ -1326,15 +1326,16 @@ p10.TAB_PREM[:] = [
     ('Perda', '10%', 'sobre as peças contadas na malha', 'conta conservadora'),
 ]
 p10.TAB_SUP[:] = [
-    ('Paredes P1 a P6', 'malha 155 × 155, 745 peças', '14,93', '1,49', '16,42'),
+    ('Paredes P1 a P6', 'malha 155: 704 Bleu + 41 pares Nuage', '14,93', '1,49', '16,42'),
     ('Nicho', 'fundo, base, teto e pontas, 46 peças', '0,84', '0,08', '0,92'),
     ('Bancada B01', 'tampo, saia e lateral, 47 peças', '0,84', '0,08', '0,92'),
-    ('Bleu Nuit — total', '838 peças + 10% = 922 · 26 caixas', '16,61', '1,66', '18,27'),
+    ('Bleu Nuit — total', '797 peças + 10% = 877 · 25 caixas', '16,61', '1,66', '18,27'),
+    ('Nuage 75 × 155', '82 peças (41 pares) + 10% = 91', 'na área', '—', '91 peças'),
     ('Piso Confete', '100 × 100 em placas, 12 recortes', '3,82', '—', '6 placas'),
 ]
 p10.TAB_ANTES[:] = [
     ('REV. U (até 2,40 m)', '21,73 m²', '23,90 m²', 'perímetro cheio, sem paginação'),
-    ('REV. V = Executivo E3', '20,43 m²', '22,09 m²', 'malha real, nicho e bancada'),
+    ('REV. V = Executivo E4', '20,43 m²', '22,09 m²', 'malha real, nicho e bancada'),
     ('Diferença', '−1,30 m²', '−1,81 m²', 'gabinete e espelho sem azulejo'),
 ]
 p10.TAB_LOUCA[:] = [
@@ -1348,8 +1349,8 @@ p10.TAB_LOUCA[:] = [
     ('Box de vidro — K01', '1 conj.', 'Manter e proteger', 'medir o vão só após revestir'),
 ]
 p10.NOTAS[:] = [
-    ['**Esta folha resume o Executivo do Banheiro E3.',
-     'Quantidades, paginação e detalhes valem pelos cadernos Executivo e Técnico E3.',
+    ['**Esta folha resume o Executivo do Banheiro E4.',
+     'Quantidades, paginação e detalhes valem pelos cadernos Executivo e Técnico E4.',
      'Aqui ficam só os totais, para o orçamento geral.'],
     ['**Forro novo a 2,50 m.',
      'O revestimento vai até o forro novo. Da laje (2,62 m) sobram 0,12 m para as luminárias',
@@ -1497,15 +1498,15 @@ PARES_FOLHA = {
     'prancha-08-banheiro': [('0,20  plenum', '0,12  plenum')],
     'prancha-10-banheiro': [
         ('Folha anterior às medidas de 14/11: quantidades e detalhes do banheiro valem pelo Executivo do Banheiro.',
-         'Quantidades desta folha = Executivo do Banheiro E3 (15/11). Detalhes e paginação, só no executivo.'),
+         'Quantidades desta folha = Executivo do Banheiro E4 (16/11). Detalhes e paginação, só no executivo.'),
         ('Geometria interna do scan de 02.09.2026 nas faces de revestimento retirado: 1,432 × 2,638 m. O CSV arredonda box e perímetro; esta folha usa o medido e mostra os dois.',
-         'Medidas de obra de 14/11/2026, faces acabadas: 1,42 × 2,68 m internos. Quantidades pela malha do Executivo E3, peça a peça.'),
-        ('Arredondar por caixa só após a paginação do produto.', 'Compra arredondada por caixa: 26 caixas de Bleu Nuit.'),
+         'Medidas de obra de 14/11/2026, faces acabadas: 1,42 × 2,68 m internos. Quantidades pela malha do Executivo E4, peça a peça.'),
+        ('Arredondar por caixa só após a paginação do produto.', 'Compra arredondada por caixa: 25 caixas de Bleu Nuit + 91 Nuage.'),
         ('Quantitativo de acabamento sobre o layout existente. Pontos hidráulicos mantidos como hipótese até confirmar água, esgoto, aquecimento e interferência na laje.',
-         'Resumo do Executivo do Banheiro E3: medidas de obra de 14/11, paginação real, nicho e bancada revestida.'),
+         'Resumo do Executivo do Banheiro E4: medidas de obra de 14/11, paginação real, nicho e bancada revestida.'),
         ('21,73 m² líquidos  ·  23,90 m² com 10%', '20,43 m² líquidos  ·  22,09 m² com 10%'),
         ('revestimento até 2,40 m — o forro fica', 'revestimento até 2,50 m — forro novo'),
-        ('>SUPERFÍCIES — SEM DUPLA CONTAGEM<', '>SUPERFÍCIES — EXECUTIVO E3<'),
+        ('>SUPERFÍCIES — SEM DUPLA CONTAGEM<', '>SUPERFÍCIES — EXECUTIVO E4<'),
         ('>O QUE MUDOU DESDE A FOLHA DE 11.09<', '>O QUE MUDOU DESDE A REV. U<'),
         ('>2,40 m<', '>2,50 m<'), ('>até o forro<', '>até o forro novo<'),
         ('BOX  1,43 × 0,93', 'BOX  1,42 × 0,92'), ('>2,47 m²<', '>2,50 m²<'), ('>1,33 m²<', '>1,31 m²<'),
@@ -1758,7 +1759,7 @@ def construir_cotas():
          'Calculadas pelas faces desta folha (%s m²). O quadro da Prancha 01 usa o relatório do scan' % br(tot),
          '(%s m²), que mede até o eixo e o rodapé: até 0,3 m² de diferença por ambiente.' % br(tot_q)],
         ['**Banheiro.',
-         'Aqui, 1,43 × 2,68 m pelas faces do scan. O Executivo E3 trabalha com 1,42 × 2,68 m em faces',
+         'Aqui, 1,43 × 2,68 m pelas faces do scan. O Executivo E4 trabalha com 1,42 × 2,68 m em faces',
          'acabadas, já com revestimento. Para o banheiro, vale o executivo.'],
         ['**Cantos a 90°.',
          'Todos os cantos são desenhados em esquadro. Conferir em obra pelas diagonais antes de',

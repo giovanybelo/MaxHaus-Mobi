@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib import exportar_pdf_a3, exportar_png
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-PASTA = os.path.join(RAIZ, 'banheiro', 'executivo-E3')
+PASTA = os.path.join(RAIZ, 'banheiro', 'executivo-E4')
 
 
 def gerar(nome_mod, caderno, titulo, so=None):
@@ -30,8 +30,8 @@ def gerar(nome_mod, caderno, titulo, so=None):
 if __name__ == '__main__':
     so = set(sys.argv[1:])
     for nome_mod, caderno, titulo in MODULOS if (MODULOS := [
-            ('exec_all', 'Banheiro_Caderno_Executivo_E3_A3.pdf', 'MaxHaus 81 — Banheiro — Caderno Executivo E3 (A3)'),
-            ('tecnico', 'Banheiro_Caderno_Tecnico_E3_A3.pdf', 'MaxHaus 81 — Banheiro — Caderno Técnico E3 (A3)')]) else []:
+            ('exec_all', 'Banheiro_Caderno_Executivo_E4_A3.pdf', 'MaxHaus 81 — Banheiro — Caderno Executivo E4 (A3)'),
+            ('tecnico', 'Banheiro_Caderno_Tecnico_E4_A3.pdf', 'MaxHaus 81 — Banheiro — Caderno Técnico E4 (A3)')]) else []:
         try:
             gerar(nome_mod, caderno, titulo, so)
         except ModuleNotFoundError as e:

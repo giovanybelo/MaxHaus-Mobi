@@ -20,13 +20,13 @@ def cortes(par):
 
 def resumo(par):
     n = len(par.pecas)
-    return [('Largura da parede', '%d mm' % par.larg), ('Peças', str(n)), ('Inteiras', str(par.inteiras)),
-            ('Cortadas', str(n - par.inteiras)), ('Área revestida', '%s m²' % br(par.area)),
+    return [('Largura da parede', '%d mm' % par.larg), ('Bleu Nuit 155 × 155', str(par.n_bleu)), ('· inteiras', str(par.inteiras)),
+            ('· cortadas', str(par.n_bleu - par.inteiras)), ('Nuage 75 × 155 (%d pares)' % len(par.acentos), str(par.n_nuage)), ('Área revestida', '%s m²' % br(par.area)),
             ('Colunas', '%d' % len(par.cols)), ('Fiadas', '%d (15 inteiras + topo de 145)' % len(par.rows))]
 
 
 def be12():
-    f = Folha(CAD, 'BE-12', 'Paginação: todas as paredes abertas', 'As seis faces na ordem em que se dá a volta no banheiro. Bleu Nuit 155 × 155, junta de 2 mm, 16 fiadas até o forro.', '1:30')
+    f = Folha(CAD, 'BE-12', 'Paginação: todas as paredes abertas', 'As seis faces na ordem em que se dá a volta no banheiro. Bleu Nuit 155 × 155 com pares Nuage 75 × 155, junta de 2 mm, 16 fiadas até o forro.', '1:30')
     x, N = 70.0, 30
     for par in PAREDES:
         P, s = f.elevacao(x, 560.0, N, par, 'linhas', indices=False)
@@ -34,18 +34,20 @@ def be12():
         f.t(x, 560.0 - FORRO * s - 10, '%d mm' % par.larg, 7.0, K70)
         x += par.larg * s + 26
     f.cota_v(52, 560.0 - FORRO * MM / N, 560.0, '2500', 7.0)
-    f.tab(70, 640, 800, [('Parede', 0.07, 'start'), ('Superfície', 0.37, 'start'), ('Largura', 0.11, 'end'), ('Peças', 0.10, 'end'),
-                         ('Inteiras', 0.11, 'end'), ('Cortadas', 0.11, 'end'), ('Área m²', 0.13, 'end')],
-          [(p.id, p.nome, '%d' % p.larg, len(p.pecas), p.inteiras, len(p.pecas) - p.inteiras, br(p.area)) for p in PAREDES]
-          + [('Total', '', '', sum(len(p.pecas) for p in PAREDES), sum(p.inteiras for p in PAREDES),
-              sum(len(p.pecas) - p.inteiras for p in PAREDES), br(sum(p.area for p in PAREDES)))], titulo='RESUMO POR PAREDE')
+    f.tab(70, 640, 800, [('Parede', 0.07, 'start'), ('Superfície', 0.33, 'start'), ('Largura', 0.09, 'end'), ('Bleu', 0.08, 'end'),
+                         ('Inteiras', 0.10, 'end'), ('Cortadas', 0.10, 'end'), ('Nuage', 0.10, 'end'), ('Área m²', 0.13, 'end')],
+          [(p.id, p.nome, '%d' % p.larg, p.n_bleu, p.inteiras, p.n_bleu - p.inteiras, p.n_nuage, br(p.area)) for p in PAREDES]
+          + [('Total', '', '', sum(p.n_bleu for p in PAREDES), sum(p.inteiras for p in PAREDES),
+              sum(p.n_bleu - p.inteiras for p in PAREDES), sum(p.n_nuage for p in PAREDES), br(sum(p.area for p in PAREDES)))], titulo='RESUMO POR PAREDE')
     f.par(910, 648, W - MARGIN - 910, [
         ('Como ler.', 'Peças em branco, só com as juntas. O número em magenta dentro de uma peça é a medida do corte, em mm. '
          'As áreas em cinza não levam revestimento: porta, nicho, gabinete e espelho.'),
         ('Regras da malha.', 'Fiadas inteiras a partir do piso pronto; a 16ª fiada é cortada em 145 mm junto ao forro. '
          'Cada parede nasce do seu eixo, com o mesmo corte nas duas pontas; a P3 é deslocada (59 mm no box, 92 mm na parede do vaso) para não deixar tira menor que 1/3 de peça ao lado do gabinete e do espelho. As juntas horizontais dão a volta no banheiro na mesma altura.'),
-        ('Acentos Nuage.', 'As peças Nuage 75 × 155 do modelo R95 não estão marcadas: as paredes mudaram de medida e as posições precisam ser '
-         'transportadas para esta malha. Marcar com o cliente antes de assentar.'),
+        ('Acentos Nuage: sempre em par.', 'Duas peças Nuage 75 × 155 lado a lado ocupam exatamente uma célula de 155 (75 + junta de 5 + 75). '
+         'Assim nenhuma Bleu Nuit é cortada no meio da parede e todas as juntas verticais continuam alinhadas. No R95 cada Nuage vinha com uma Bleu cortada em 78 mm: isso saiu.'),
+        ('Onde ficam os pares (amarelo, "N").', 'Cerca de 1 par a cada 10 peças, só em peças inteiras: no máximo um por fiada em cada parede, nenhum encostado em outro (nem na diagonal) '
+         'e a mesma coluna só se repete depois de 4 fiadas. Não vão na fiada cortada do topo, nos cortes, no nicho nem na bancada. As posições podem mudar com o cliente: a quantidade quase não muda.'),
     ], size=8.0, lh=11.4)
     return f
 
@@ -65,6 +67,7 @@ def _parede(cod, pid, N, extras=(), notas=()):
     f.cota_v(x1 - 26, top, PISO_Y, '2500', 7.0)
     f.t(x1, PISO_Y + 30, par.vista, 7.6, INK_SOFT)
     f.t(x1, PISO_Y + 44, 'Números da versão B: da fiada de baixo para cima, da esquerda para a direita. C = coluna, F = fiada.', 7.6, INK_SOFT)
+    f.legenda(x1, PISO_Y + 62, [('fill', BRANCO, 'Bleu Nuit 155 × 155'), ('fill', NUAGE_COR, 'N = par Nuage 75 × 155 (75 + 5 + 75 = 155)')])
     cx = max(x2 + wl + 60, 900.0)
     cw = W - MARGIN - cx
     y = f.tab(cx, 150, cw, [('Dado', 0.50, 'start'), ('Valor', 0.50, 'end')], resumo(par), titulo='RESUMO', alt=15.5)

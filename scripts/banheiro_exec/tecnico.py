@@ -224,7 +224,9 @@ def bt05():
 
 def bt06():
     f = Folha(CAD, 'BT-06', 'Quantitativos e compra', 'Quantidades calculadas sobre as medidas desta emissão. Refazer depois da medição de obra e antes de comprar.')
-    tot_p = sum(len(p.pecas) for p in PAREDES)
+    tot_p = sum(p.n_bleu for p in PAREDES)
+    tot_n = sum(p.n_nuage for p in PAREDES)
+    res_n = math.ceil(tot_n * 1.10)
     tot_a = sum(p.area for p in PAREDES)
     # nicho de parede a parede (1170 x 400 x 118): fundo 8 x 3, base e teto 8 + 8 tiras, duas pontas 3 + 3
     nicho_p = 24 + 16 + 6
@@ -235,13 +237,13 @@ def bt06():
     cx_area = math.ceil((tot_a + nicho_a + banc_a) * 1.10 / 0.87)
     caixas = max(cx_pecas, cx_area)
     _, pecas_piso, area_piso = exec_a.be11()
-    y = f.tab(X1, 150, W1, [('Parede', 0.10, 'start'), ('Superfície', 0.40, 'start'), ('Peças', 0.12, 'end'), ('Inteiras', 0.12, 'end'), ('Cortadas', 0.12, 'end'), ('Área m²', 0.14, 'end')],
-              [(p.id, p.nome, len(p.pecas), p.inteiras, len(p.pecas) - p.inteiras, br(p.area)) for p in PAREDES]
-              + [('Total', '', tot_p, sum(p.inteiras for p in PAREDES), tot_p - sum(p.inteiras for p in PAREDES), br(tot_a))],
-              titulo='PAREDES — GOUACHE BLEU NUIT 155 × 155')
+    y = f.tab(X1, 150, W1, [('Parede', 0.10, 'start'), ('Superfície', 0.34, 'start'), ('Peças', 0.18, 'end'), ('Inteiras', 0.12, 'end'), ('Cortadas', 0.12, 'end'), ('Área m²', 0.14, 'end')],
+              [(p.id, p.nome, '%d + %d N' % (p.n_bleu, p.n_nuage), p.inteiras, p.n_bleu - p.inteiras, br(p.area)) for p in PAREDES]
+              + [('Total', '', '%d + %d N' % (tot_p, tot_n), sum(p.inteiras for p in PAREDES), tot_p - sum(p.inteiras for p in PAREDES), br(tot_a))],
+              titulo='PAREDES — BLEU NUIT 155 × 155 + NUAGE 75 × 155 (N)')
     y = f.tab(X1, y + 30, W1, [('Material', 0.30, 'start'), ('Conta', 0.44, 'start'), ('Compra', 0.26, 'end')], [
         ('Bleu Nuit 155 × 155 (211997E)', '%d parede + %d nicho + %d bancada = %d peças; + 10%% = %d; caixa com 36 / 0,87 m²' % (tot_p, nicho_p, banc_p, tot_p + nicho_p + banc_p, res), '%d caixas' % caixas),
-        ('Nuage 75 × 155 (12935E)', 'acentos: posições a transportar do R95 (lá eram ~50 peças)', '3 caixas (R95)'),
+        ('Nuage 75 × 155 (12935E)', '%d pares nas paredes = %d peças; + 10%% = %d (BE-12)' % (tot_n // 2, tot_n, res_n), 'conferir peças por caixa'),
         ('Confete 100 × 100 (5041209)', '%s m² em %d recortes; 5 placas + 1 de reserva' % (br(area_piso), len(pecas_piso)), '3 caixas (6 placas)'),
         ('Nicho de parede a parede', 'fundo 1170 × 400 (24 peças), base e teto (16 tiras de 118), duas pontas (6): %d peças, %s m²' % (nicho_p, br(nicho_a)), 'na conta acima'),
         ('Bancada revestida B01', 'tampo 1600 × 400, saia 100 e lateral norte: %d peças, %s m² (BE-19)' % (banc_p, br(banc_a)), 'na conta acima'),
@@ -255,6 +257,7 @@ def bt06():
     f.tab(X2, 150, W2, [('Item', 0.34, 'start'), ('Quantidade', 0.22, 'start'), ('Base', 0.44, 'start')], [
         ('Impermeabilização', '~12 m²', 'piso, box até o forro, rodapé, nicho; consumo pelo sistema'),
         ('Rejunte acrílico Quartzolit, paredes', '~5 kg', 'junta de 2 mm; cor próxima do Bleu Nuit'),
+        ('Espaçador de 5 mm', '1 pacote', 'junta entre as duas Nuage de cada par'),
         ('Rejunte acrílico Quartzolit, piso', '1 kg', 'cor próxima do Confete'),
         ('Perfil de metal da porta', '1 peça de 0,80 m', '3 mm à vista'),
         ('Tubo de água quente + isolamento', 'até 6 m', 'reserva; percurso estimado de 1,1 m'),
@@ -280,7 +283,7 @@ def bt07():
         ('3', 'Topo da bancada a +980 com cuba de apoio (borda a +1140): confirmar ou trocar a cuba', 'cliente', 'antes de fabricar'),
         ('4', 'Bleu Nuit aceito em tampo pelo fabricante? Base atual firme?', 'loja / obra', 'antes de revestir'),
         ('5', 'Base do espelho a +1340 e reaproveitamento do espelho existente', 'cliente', 'antes do revestimento'),
-        ('6', 'Posição dos acentos Nuage na malha nova', 'cliente', 'antes de assentar'),
+        ('6', 'Aprovar a posição dos pares Nuage (BE-12 a BE-17)', 'cliente', 'antes de assentar'),
         ('7', 'Folha F01 da FAS e aprovação do projeto de iluminação', 'cliente / FAS', 'antes do forro'),
         ('8', 'Guarnição de 50 mm na porta P02 (esconde a tira sobre o vão)', 'fornecedor da porta', 'com o pedido da porta'),
         ('9', 'Produto de impermeabilização e responsável técnico', 'empreiteira', 'antes da demolição'),
