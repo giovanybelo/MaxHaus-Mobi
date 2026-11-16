@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Executivo do banheiro — geometria, paginação e desenho (emissão E4, 16.11.2026: pares Nuage; E1 a E3 superadas).
+"""Executivo do banheiro — geometria, paginação e desenho (emissão E5, 16.11.2026: parede norte de 220 mm,
+banheiro com 2560 por dentro e tampo de parede a vidro; E1 a E4 superadas).
 
 Medidas em milímetros, faces ACABADAS, origem no canto interno noroeste do
 banheiro: x cresce para leste, y para sul, z para cima a partir do piso pronto.
@@ -14,6 +15,10 @@ Fontes das medidas
     ralo linear 720 × 90; vaso com eixo a 980
     da parede da bancada; toalheiro 550 × 370; Bleu Nuit 155 × 155, junta 2.
   · FAS, pedido 22804 e folha F02: D1 Halo 7 W e D2 Tiny 5,8 W IP.
+  · cliente, 16.11.2026: parede norte (do vaso) com 220 mm. Comprimento por dentro =
+    2880 − 220 − 100 = 2560 (era 2680); a porta fica a 660 da P5. Box (920) e área técnica
+    (800) contam da parede sul e não mudam; a bancada perde 120 mm de folga: o gabinete
+    fica encostado no vidro e o tampo corre de parede a vidro (1640).
 """
 import os
 import sys
@@ -26,31 +31,33 @@ from base_mainfloor import (folha_nova, salvar, exportar_pdf_a3, exportar_png, e
                             INK, INK_SOFT, RULE, DEMO, CIANO, CIANO18, AMARELO,
                             AMARELO40, BRANCO, br)
 
-EMISSAO = 'E4  ·  16/11/2026'
+EMISSAO = 'E5  ·  16/11/2026'
 MM = 1.0 / 0.3                      # unidades da folha por mm de papel (A3 = 1400 × 990)
 
 # --- geometria ---------------------------------------------------------------
-LARG, COMP = 1420.0, 2680.0         # x, y
-PAREDE = 100.0
-BOX_Y = COMP - 920.0                # 1760: linha do vidro do box
+PAREDE = 100.0                      # paredes sul, leste e oeste
+PAREDE_N = 220.0                    # parede norte (do vaso), medida em obra: 22 cm
+EXT = 2880.0                        # parede da porta por fora, de quina a quina
+LARG, COMP = 1420.0, EXT - PAREDE_N - PAREDE   # x, y · 2560 por dentro
+BOX_Y = COMP - 920.0                # 1640: linha do vidro do box
 AT = (0.0, COMP - 800.0, 250.0, COMP)            # área técnica do chuveiro
 BANC = (0.0, BOX_Y - 1600.0, 400.0, BOX_Y)       # bancada / gabinete / espelho
-PORTA = (880.0 - PAREDE, 880.0 - PAREDE + 800.0)  # 780 → 1580, na parede leste
+PORTA = (880.0 - PAREDE_N, 880.0 - PAREDE_N + 800.0)  # 660 → 1460, na parede leste
 PORTA_H = 2150.0
 FORRO = 2500.0
 LAJE = 2620.0
 TOPO_BANC, GABINETE_H, SAIA = 980.0, 880.0, 100.0
 ESP_BASE, ESP_H = 1340.0, 900.0      # espelho: base proposta 360 acima do tampo
 VASO_X = 980.0
-R1 = (312.0, 1903.0, 402.0, 2623.0)             # ralo linear 720 × 90
+R1 = (312.0, COMP - 777.0, 402.0, COMP - 57.0)   # ralo linear 720 × 90, junto à AT
 R2 = (1230.0, 250.0, 1330.0, 350.0)             # ralo ao lado do vaso, grelha 100 × 100
-CUBA_Y = (BANC[1] + BANC[3]) / 2.0              # 960
+CUBA_Y = (BANC[1] + BANC[3]) / 2.0              # 840: eixo do gabinete
 Q_Y, F_Y = CUBA_Y + 100.0, CUBA_Y - 100.0       # quente ao sul (esquerda de quem usa)
 Z_COMANDO, Z_BICA = 1245.0, 1250.0
-CH = (653.0, 2208.0)                            # eixo do chuveiro
-D1 = (910.0, 880.0)                             # FAS D1 Halo — luz geral
-D2 = (957.0, 2261.0)                            # FAS D2 Tiny IP — box
-EX = (1150.0, 1480.0)
+CH = (653.0, COMP - 472.0)                      # eixo do chuveiro
+D1 = (910.0, BOX_Y / 2.0)                       # FAS D1 Halo — luz geral, no meio da área seca
+D2 = (957.0, COMP - 419.0)                      # FAS D2 Tiny IP — box
+EX = (1150.0, BOX_Y - 280.0)
 NICHO_PROF = 118.0                              # profundidade do nicho (R95)
 NICHO = (0.0, LARG - 250.0, 1100.0, 1500.0)     # na P1, de parede a parede: u0, u1, z0, z1
 TOALHEIRO = (VASO_X - 275.0, VASO_X + 275.0, 989.0, 1359.0)   # na P5
@@ -63,9 +70,13 @@ NUAGE_L, NUAGE_J = 75.0, 5.0
 NUAGE_COR = AMARELO40
 ACENTO_DENS = 10          # 1 par a cada ~10 peças inteiras elegíveis
 
-# bancada revestida com Bleu Nuit (cliente, 15/11): tampo, saia e lateral norte
-TAMPO_U = (AT[1] - BANC[3], AT[1] - BANC[1])     # 120 → 1720, na coordenada da P3 (u a partir do box)
-P3_E0 = 59.0                                     # primeiro corte da malha da P3
+# bancada revestida com Bleu Nuit (cliente, 15/11). E5: com a parede norte de 220 sobram 40 mm entre o gabinete
+# (encostado no vidro do box) e a P5; o tampo e a saia correm de parede a vidro (cliente, 16/11): sem lateral
+TAMPO_U = (AT[1] - BOX_Y, AT[1])                 # 120 → 1760, na coordenada da P3 (u a partir do box)
+GAB_U = (AT[1] - BANC[3], AT[1] - BANC[1])       # 120 → 1720: gabinete e espelho
+FRESTA = BANC[1]                                 # 40 mm entre o gabinete e a P5, fechados pela saia
+P4_E0 = 117.0                                    # P4 deslocada: cortes de 70 e 85 junto ao vão (E5)
+P3_E0 = 59.0                                     # primeiro corte da malha da P3 (válvula no centro de uma peça)
 
 
 # --- paginação -----------------------------------------------------------------
@@ -181,7 +192,7 @@ PAREDES = [
            evitar=[TOALHEIRO]),
     Parede('P4', 'Parede da porta (leste)', COMP,
            furos=[(PORTA[0], PORTA[1], 0.0, PORTA_H, 'PORTA  800 × 2150')],
-           vista='de frente para o leste · esquerda = parede do vaso'),
+           vista='de frente para o leste · esquerda = parede do vaso', e0=P4_E0),
     Parede('P1', 'Fundo do box e nicho (sul)', LARG - AT[2],
            furos=[NICHO + ('NICHO DE PAREDE A PAREDE  1170 × 400',)],
            vista='de frente para o sul · esquerda = parede da porta'),
@@ -190,9 +201,9 @@ PAREDES = [
     Parede('P6', 'Retorno da área técnica', AT[2], quina=True,
            vista='de frente para o sul · esquerda = quina externa'),
     Parede('P3', 'Parede da bancada e do espelho (oeste)', AT[1],
-           furos=[(AT[1] - BANC[3], AT[1] - BANC[1], 0.0, TOPO_BANC, 'GABINETE E BANCADA'),
-                  (AT[1] - BANC[3], AT[1] - BANC[1], ESP_BASE, ESP_BASE + ESP_H, 'ESPELHO  1600 × 900')],
-           vista='de frente para o oeste · esquerda = box', e0=59.0),
+           furos=[(TAMPO_U[0], TAMPO_U[1], 0.0, TOPO_BANC, 'GABINETE E BANCADA'),
+                  (GAB_U[0], GAB_U[1], ESP_BASE, ESP_BASE + ESP_H, 'ESPELHO  1600 × 900')],
+           vista='de frente para o oeste · esquerda = box', e0=P3_E0),
 ]
 PAR = {p.id: p for p in PAREDES}
 
@@ -355,7 +366,7 @@ class Folha:
             d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], **k)
 
         t = PAREDE
-        R(-t, -t, LARG + t, COMP + t, fill=K)
+        R(-t, -PAREDE_N, LARG + t, COMP + t, fill=K)
         R(0, 0, LARG, COMP, fill=piso)
         if box_cor:
             R(0, BOX_Y, LARG, COMP, fill=box_cor)
@@ -381,7 +392,7 @@ class Folha:
         a, b = P(0, BOX_Y), P(LARG, BOX_Y)
         d.line(a[0], a[1], b[0], b[1], CIANO, 2.6)
         if objetos:
-            R(*BANC, fill=BRANCO, stroke=K, sw=1.0)
+            R(0.0, 0.0, BANC[2], BOX_Y, fill=BRANCO, stroke=K, sw=1.0)     # tampo de parede a vidro
             c = P(BANC[2] / 2.0, CUBA_Y)
             d.rect(c[0] - 150 * s, c[1] - 210 * s, 300 * s, 420 * s, fill=BG, stroke=K45, sw=0.7)
             if rotulos:
@@ -409,9 +420,9 @@ class Folha:
             self.t(a2[0] + (b2[0] - a2[0]) / 2.0, b2[1] + 10, 'R2', 7.0, K, True, 'middle')
 
     def ids_paredes(self, P):
-        for pid, x, y, an, rot in (('P5', LARG / 2, -PAREDE - 70, 'middle', None),
+        for pid, x, y, an, rot in (('P5', LARG / 2, -PAREDE_N - 70, 'middle', None),
                                    ('P1', (AT[2] + LARG) / 2, COMP + PAREDE + 130, 'middle', None),
-                                   ('P4', LARG + PAREDE + 90, 2250, 'start', None),
+                                   ('P4', LARG + PAREDE + 90, COMP - 430, 'start', None),
                                    ('P3', -PAREDE - 90, 900, 'end', None),
                                    ('P2', AT[2] + 45, 2330, 'start', None),
                                    ('P6', 125, AT[1] - 40, 'middle', None)):

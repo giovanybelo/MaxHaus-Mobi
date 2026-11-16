@@ -24,7 +24,10 @@ def bt01():
         f.t(x + 10, 198, a, 7.8, INK, True)
         f.t(x + 10, 212, b, 7.4, INK_SOFT)
     y = f.par(X1, 272, W1, [
-        ('O que esta emissão corrige.', 'As plantas anteriores do banheiro (scan, caderno R2 e executivo R95) tinham a porta 0,33 m mais ao norte, '
+        ('E5 (16/11): parede norte de 220 mm.', 'O cliente mediu a parede do vaso: 220 mm, não 100. O banheiro tem %d por dentro (era 2680) e a porta fica a %d da parede do vaso. '
+         'Box e área técnica contam da parede sul e não mudam. A bancada perdeu a folga: o gabinete encosta no vidro e o tampo corre de parede a vidro (1640), sem lateral. '
+         'Paginação da P3, da P4, do piso e as quantidades foram refeitas.' % (COMP, PORTA[0])),
+        ('O que a E4 já corrigia.', 'As plantas anteriores do banheiro (scan, caderno R2 e executivo R95) tinham a porta 0,33 m mais ao norte, '
          'a área técnica com 150 a 240 mm de profundidade e a bancada com 530 mm. Em 14/11/2026 o cliente mediu em obra: a parede da porta, '
          'a área técnica, a bancada, o gabinete e o espelho. Tudo aqui parte dessas medidas.'),
         ('Escopo.', 'Demolição dos acabamentos; rebaixo e nivelamento do piso com o monolítico Sinesse Pro de fora, sem soleira, com perfil de metal; '
@@ -68,17 +71,18 @@ def bt02():
     f = Folha(CAD, 'BT-02', 'Medidas de referência e conferência em obra', 'De onde vem cada medida, o que é premissa e uma coluna em branco para anotar o que for medido depois da demolição.')
     linhas = [
         ('Parede da porta, por fora', '880 + 800 + 1200 = 2880', 'cliente, 14/11', ''),
-        ('Comprimento por dentro (acabado)', '2680', 'calculado: 2880 - 2 × 100', ''),
+        ('Comprimento por dentro (acabado)', '%d' % COMP, 'calculado: 2880 - 220 (norte) - 100 (sul)', ''),
         ('Largura por dentro (acabado)', '1420', 'modelo R95', ''),
-        ('Espessura das paredes', '100', 'scan; pode ser 120', ''),
+        ('Parede norte (do vaso)', '220', 'cliente, 16/11', ''),
+        ('Demais paredes', '100', 'scan; podem ser 120', ''),
         ('Vão da porta P02', '800 × 2150', 'cliente, 14/11', ''),
         ('Fundo do box', '920', 'scan / R95, mantido pelo cliente', ''),
         ('Área técnica AT-B', '800 × 250', 'cliente, 14/11', ''),
         ('Posição da AT-B no box', 'encostada no fundo', 'premissa desta emissão', ''),
-        ('Bancada B01', '1600 × 400, saia 100', 'cliente, 14/11', ''),
+        ('Bancada B01 (tampo)', '%d × 400, saia 100' % (TAMPO_U[1] - TAMPO_U[0]), 'de parede a vidro (cliente, 16/11)', ''),
         ('Gabinete', '1600 × 400 × 880 de altura', 'cliente, 14/11', ''),
         ('Topo da bancada', '+980', 'cliente, 14/11', ''),
-        ('Posição da bancada na parede', 'encostada no vidro do box', 'premissa desta emissão', ''),
+        ('Posição do gabinete', 'encostado no vidro; 40 até a P5', 'premissa desta emissão', ''),
         ('Espelho', '1600 × 900', 'cliente, 14/11', ''),
         ('Base do espelho', '+1340', 'proposta: 360 acima do tampo', ''),
         ('Forro novo', '+2500', 'modelo R95', ''),
@@ -101,8 +105,8 @@ def bt02():
          'Posição da área técnica ou da bancada: refazer só a parede da bancada (BE-17) e o fundo do box (BE-15). '
          'Esgoto do vaso: conferir a bacia antes de fechar o piso.'),
         ('Três premissas a confirmar com o cliente.', '1. A área técnica encostada no fundo do box, com 120 mm de parede até o vidro. '
-         '2. A bancada encostada no vidro do box, com 160 mm de folga até a parede do vaso. '
-         '3. Parede com 100 mm: se tiver 120, o banheiro tem 2640 por dentro.'),
+         '2. O gabinete encostado no vidro do box; os 40 mm até a parede do vaso fechados pelo tampo e pela saia, de parede a vidro. '
+         '3. Parede norte com 220 mm (medida em 16/11) e a sul com 100: se a sul tiver 120, o banheiro tem %d por dentro.' % (COMP - 20)),
         ('Tolerância.', 'A paginação aceita até 5 mm de diferença por parede, absorvidos nas pontas. Acima disso, recalcular antes de cortar.'),
     ], size=8.4, lh=12.0)
     return f
@@ -195,7 +199,7 @@ def bt05():
         ('D1', 'FAS Halo 7 W (TE.4106)', 'embutido orientável, 2700 K, 36°; furo de 53 mm'),
         ('D2', 'FAS Tiny 5,8 W IP (TE.4676)', 'embutido para o box, 2700 K, 36°, bivolt; furo de 34 mm'),
         ('L3', 'Perfil linear do espelho (existente)', 'reinstalar; fonte fora da área de respingos'),
-        ('EX01', 'Exaustor no forro (existente)', 'vazão de referência 95 m³/h (3,80 × 2,50 × 10); duto a levantar'),
+        ('EX01', 'Exaustor no forro (existente)', 'vazão de referência %d m³/h (%s × 2,50 × 10); duto a levantar' % (round(LARG * COMP / 1e6 * 25), br(LARG * COMP / 1e6))),
         ('S03 / S04', 'Interruptores existentes', 'manter posição; trocar comando e espelho'),
     ], titulo='PONTOS')
     f.par(X1, y + 26, W1, [
@@ -246,13 +250,13 @@ def bt06():
         ('Nuage 75 × 155 (12935E)', '%d pares nas paredes = %d peças; + 10%% = %d (BE-12)' % (tot_n // 2, tot_n, res_n), 'conferir peças por caixa'),
         ('Confete 100 × 100 (5041209)', '%s m² em %d recortes; 5 placas + 1 de reserva' % (br(area_piso), len(pecas_piso)), '3 caixas (6 placas)'),
         ('Nicho de parede a parede', 'fundo 1170 × 400 (24 peças), base e teto (16 tiras de 118), duas pontas (6): %d peças, %s m²' % (nicho_p, br(nicho_a)), 'na conta acima'),
-        ('Bancada revestida B01', 'tampo 1600 × 400, saia 100 e lateral norte: %d peças, %s m² (BE-19)' % (banc_p, br(banc_a)), 'na conta acima'),
+        ('Bancada revestida B01', 'tampo %d × 400 e saia 100, de parede a vidro: %d peças, %s m² (BE-19)' % (TAMPO_U[1] - TAMPO_U[0], banc_p, br(banc_a)), 'na conta acima'),
     ], titulo='REVESTIMENTOS')
     f.par(X1, y + 24, W1, [
         ('Como a conta foi feita.', 'Cada posição da malha conta uma peça, inteira ou cortada. Um corte pequeno não aproveita a sobra de outro: '
          'é a conta conservadora. Com plano de aproveitamento, a compra de Bleu Nuit pode cair uma ou duas caixas.'),
         ('Comparação com o R95.', 'O R95 comprava 21 caixas de Bleu Nuit para 15,16 m². Aqui são %s m²: a parede da bancada perde revestimento '
-         '(o espelho cresceu) e a da porta ganha (o banheiro ficou 104 mm mais comprido).' % br(tot_a)),
+         '(o espelho cresceu e o tampo vai de parede a vidro); o comprimento voltou a ficar perto do R95 (%d contra 2576).' % (br(tot_a), COMP)),
     ], size=8.6, lh=12.2)
     f.tab(X2, 150, W2, [('Item', 0.34, 'start'), ('Quantidade', 0.22, 'start'), ('Base', 0.44, 'start')], [
         ('Impermeabilização', '~12 m²', 'piso, box até o forro, rodapé, nicho; consumo pelo sistema'),
@@ -265,9 +269,9 @@ def bt06():
         ('Ralo linear 720 × 90', '1', 'com corpo e flange'),
         ('Grelha oculta 100 × 100', '1', 'ralo R2; prolongador a medir'),
         ('Anel de vedação e engate do vaso', '1 jogo', 'novos'),
-        ('Forro de gesso RU', '3,81 m²', 'a +2500, com tabica'),
+        ('Forro de gesso RU', '%s m²' % br(LARG * COMP / 1e6), 'a +2500, com tabica'),
         ('Base do tampo B01', 'tampo existente ou placa cimentícia 12 mm', 'conferir firmeza em obra'),
-        ('Perfil metálico de canto', '~2,0 m (frente + lateral)', 'alumínio anodizado ou inox, 10 mm'),
+        ('Perfil metálico de canto', '~%s m (frente do tampo)' % br((TAMPO_U[1] - TAMPO_U[0]) / 1000.0), 'alumínio anodizado ou inox, 10 mm'),
         ('Rejunte epóxi', '1 kg', 'só no tampo da bancada'),
         ('Porta P02', 'folha 794 × 2135 × 40', 'com visor Ø400'),
         ('Luminárias FAS', 'D1 + D2', 'já compradas (pedido 22804)'),
@@ -300,7 +304,7 @@ def bt06b():
         ('Gouache Bleu Nuit 155 × 155', br(a_bleu), br(a_bleu * k), '%d peças · %d caixas' % (math.ceil(n_bleu * k), math.ceil(math.ceil(n_bleu * k) / 36.0))),
         ('· paredes P1 a P6', br(a_bleu_par), br(a_bleu_par * k), ''),
         ('· nicho (fundo, base, teto, pontas)', br(a_nicho), br(a_nicho * k), ''),
-        ('· bancada B01 (tampo, saia, lateral)', br(a_banc), br(a_banc * k), ''),
+        ('· bancada B01 (tampo e saia)', br(a_banc), br(a_banc * k), ''),
         ('Gouache Nuage mate 75 × 155', br(a_nuage), br(a_nuage * k), '%d peças (%d pares)' % (math.ceil(n_nuage * k), pares)),
         ('Porcelanato Confete 100 × 100 (piso)', br(a_piso), br(a_piso * k), '6 placas (5 + 1 reserva)'),
     ], titulo='REVESTIMENTOS — m² COM 10%', alt=16.0)
@@ -336,7 +340,7 @@ def bt06b():
     r_piso = _rej(a_piso, 1000, 1000) * k
     az = r_bleu + r_nuage
     y2 = f.tab(X2, 150, W2, [('Rejunte · cor', 0.40, 'start'), ('Onde', 0.36, 'start'), ('kg c/ 10%', 0.24, 'end')], [
-        ('Acrílico Quartzolit — azul-marinho (próximo do Bleu Nuit)', 'todas as juntas de 2 mm das paredes, do nicho, da saia e da lateral, inclusive em volta dos pares Nuage',
+        ('Acrílico Quartzolit — azul-marinho (próximo do Bleu Nuit)', 'todas as juntas de 2 mm das paredes, do nicho e da saia, inclusive em volta dos pares Nuage',
          '%s: compra %d kg' % (br(az), math.ceil(az))),
         ('Acrílico Quartzolit — claro (próximo do Nuage)', 'só a junta de 5 mm entre as duas Nuage de cada par', '%s: compra 1 kg' % br(r_par5)),
         ('Epóxi — azul-marinho', 'tampo da bancada', '%s: compra 1 kg' % br(r_tampo)),
@@ -348,10 +352,10 @@ def bt06b():
         ('Cor da junta do par.', 'Com rejunte claro na junta de 5 mm, o par Nuage lê como uma peça clara só. Se preferir ver as duas faixas, use o azul também ali '
          '(some 1 kg ao azul e corte a linha do claro). Escolher pela cartela com as peças na mão.'),
     ], size=8.2, lh=11.6)
-    cantos = 2.50 + 2.00 + 2 * 1.17
+    cantos = 2.50 + (TAMPO_U[1] - TAMPO_U[0]) / 1000.0 + 2 * 1.17
     f.tab(X2, y2 + 18, W2, [('Perfil de metal', 0.40, 'start'), ('Medida', 0.30, 'start'), ('Compra', 0.30, 'end')], [
         ('Canto — quina externa da área técnica', '2,50 m (piso ao forro)', ''),
-        ('Canto — bancada (frente + lateral)', '2,00 m', ''),
+        ('Canto — bancada (frente do tampo)', '%s m' % br((TAMPO_U[1] - TAMPO_U[0]) / 1000.0), ''),
         ('Canto — bordas do nicho (base e teto)', '2 × 1,17 = 2,34 m', ''),
         ('Perfil de canto, total', '%s m + 10%% = %s m' % (br(cantos), br(cantos * k)), '%d barras de 3 m' % math.ceil(cantos * k / 3.0)),
         ('Transição de piso na porta P02', '0,80 m (3 mm à vista)', '1 barra de 1 m'),

@@ -43,7 +43,8 @@ def be12():
         ('Como ler.', 'Peças em branco, só com as juntas. O número em magenta dentro de uma peça é a medida do corte, em mm. '
          'As áreas em cinza não levam revestimento: porta, nicho, gabinete e espelho.'),
         ('Regras da malha.', 'Fiadas inteiras a partir do piso pronto; a 16ª fiada é cortada em 145 mm junto ao forro. '
-         'Cada parede nasce do seu eixo, com o mesmo corte nas duas pontas; a P3 é deslocada (59 mm no box, 92 mm na parede do vaso) para não deixar tira menor que 1/3 de peça ao lado do gabinete e do espelho. As juntas horizontais dão a volta no banheiro na mesma altura.'),
+         'Cada parede nasce do seu eixo, com o mesmo corte nas duas pontas. Duas exceções: a P3 é deslocada (%d mm no box, %d mm na parede do vaso) para a válvula da cuba cair no centro de uma peça; '
+         'a P4 também (%d e %d mm nas pontas) para os cortes junto ao vão da porta não ficarem menores que 70 mm. As juntas horizontais dão a volta no banheiro na mesma altura.' % (round(PAR['P3'].cols[0][1]), round(PAR['P3'].cols[-1][1] - PAR['P3'].cols[-1][0]), round(PAR['P4'].cols[0][1]), round(PAR['P4'].cols[-1][1] - PAR['P4'].cols[-1][0]))),
         ('Acentos Nuage: sempre em par.', 'Duas peças Nuage 75 × 155 lado a lado ocupam exatamente uma célula de 155 (75 + junta de 5 + 75). '
          'Assim nenhuma Bleu Nuit é cortada no meio da parede e todas as juntas verticais continuam alinhadas. No R95 cada Nuage vinha com uma Bleu cortada em 78 mm: isso saiu.'),
         ('Onde ficam os pares (amarelo, "N").', 'Cerca de 1 par a cada 10 peças, só em peças inteiras: no máximo um por fiada em cada parede, nenhum encostado em outro (nem na diagonal) '
@@ -85,13 +86,20 @@ def be13():
         ('Vaso e toalheiro.', 'Eixo do vaso a 980 mm da parede da bancada. O ponto T20 do toalheiro fica nesse eixo, a +1170: furar no centro de uma peça ou na junta.')])
 
 
+def _batentes():
+    cols = PAR['P4'].cols
+    a = [PORTA[0] - c[0] for c in cols if c[0] < PORTA[0] < c[1]][0]
+    b = [c[1] - PORTA[1] for c in cols if c[0] < PORTA[1] < c[1]][0]
+    return round(a), round(b)
+
+
 def be14():
     return _parede('BE-14', 'P4', 20, notas=[
-        ('Porta.', 'Vão de 800 × 2150 a 780 mm da parede do vaso, por dentro. A guarnição cobre o corte nos batentes.'),
+        ('Porta.', 'Vão de 800 × 2150 a %d mm da parede do vaso, por dentro (parede norte de 220, E5). A guarnição cobre o corte nos batentes.' % PORTA[0]),
         ('Verga: guarnição de 50 mm.', 'A porta tem 2150 de altura e a junta da 14ª fiada fica a +2196: sobre o vão sobram 46 mm, menos que 1/3 da peça. '
          'Solução adotada: a guarnição da porta, por dentro, tem 50 mm e cobre a faixa até a junta. As 4 peças sobre o vão e as 2 em L dos batentes são cortadas e escondidas pela guarnição. '
          'Pedir a guarnição de 50 mm junto com a porta P02.'),
-        ('Batentes.', 'Os cortes de 67 e 73 mm encostam no vão; nas fiadas 14 a 16 as peças das duas colunas do batente são inteiras ou em L.')])
+        ('Batentes.', 'Os cortes de %d e %d mm encostam no vão; nas fiadas 14 a 16 as peças das duas colunas do batente são inteiras ou em L.' % _batentes())])
 
 
 def be15():
@@ -135,10 +143,10 @@ def be16():
 
 def be17():
     return _parede('BE-17', 'P3', 20, notas=[
-        ('Onde não vai revestimento.', 'Atrás do gabinete e da bancada (do piso a +980) e atrás do espelho (de +1340 a +2240), no trecho de 1600 mm. '
-         'Revestir a faixa de 360 mm entre o tampo e o espelho e a faixa acima do espelho.'),
+        ('Onde não vai revestimento.', 'Atrás do gabinete e do tampo, do piso a +980, de parede a vidro (1640 mm); atrás do espelho, de +1340 a +2240, no trecho de 1600. '
+         'Revestir a faixa de 360 mm entre o tampo e o espelho, a faixa acima do espelho e os 40 mm entre o espelho e a parede do vaso.'),
         ('Pontos.', 'Comandos Q e F a +1245, bica a +1250, tomada T17 a +1160: marcar sobre a malha antes de assentar.'),
-        ('Pontas.', 'As duas pontas são revestidas do piso ao forro: 120 mm junto ao box e 160 mm junto à parede do vaso.')])
+        ('Pontas.', 'Junto ao box, 120 mm revestidos do piso ao forro. Junto à parede do vaso o tampo encosta na parede; acima dele, peças de %d mm na coluna da ponta e de 39 mm ao lado do espelho.' % round(PAR['P3'].cols[-1][1] - PAR['P3'].cols[-1][0]))])
 
 
 def be18():
@@ -187,7 +195,7 @@ def be18():
 
 
 def bancada_pecas():
-    """Peças do tampo, da saia e da lateral norte, alinhadas às juntas da P3."""
+    """Peças do tampo e da saia, alinhadas às juntas da P3 (E5: sem lateral, o tampo vai de parede a vidro)."""
     u0, u1 = TAMPO_U
     u = P3_E0 + JUNTA                                  # início da 2ª coluna da P3
     while u + PECA < u0:
@@ -202,7 +210,7 @@ def bancada_pecas():
     fil = [(0.0, PECA), (MOD, MOD + PECA), (2 * MOD, BANC[2])]   # profundidade, a partir da frente
     tampo = [(c, f) for f in fil for c in cols]
     saia = [(c, (0.0, SAIA)) for c in cols]
-    lateral = [(f, (0.0, SAIA)) for f in fil]
+    lateral = []
     return cols, fil, tampo, saia, lateral
 
 
@@ -214,12 +222,12 @@ def bancada_resumo():
     cols, fil, tampo, saia, lateral = bancada_pecas()
     inteiras = sum(1 for c, f in tampo if _mm(c) == PECA and _mm(f) == PECA)
     n = len(tampo) + len(saia) + len(lateral)
-    area = (TAMPO_U[1] - TAMPO_U[0]) * (BANC[2] + SAIA) / 1e6 + BANC[2] * SAIA / 1e6
+    area = (TAMPO_U[1] - TAMPO_U[0]) * (BANC[2] + SAIA) / 1e6
     return n, inteiras, area
 
 
 def be19():
-    f = Folha(CAD, 'BE-19', 'Paginação · bancada revestida B01', 'Tampo, saia e lateral norte em Bleu Nuit 155 × 155, com as juntas alinhadas às da parede da bancada (P3).', '1:8')
+    f = Folha(CAD, 'BE-19', 'Paginação · bancada revestida B01', 'Tampo e saia em Bleu Nuit 155 × 155, de parede a vidro (1640), com as juntas alinhadas às da parede da bancada (P3).', '1:8')
     cols, fil, tampo, saia, lateral = bancada_pecas()
     N = 8.0
     s = MM / N
@@ -230,7 +238,7 @@ def be19():
     def T(u, p):                   # planta do tampo: u ao longo da parede, p a partir da frente
         return (ox + (u - u0) * s, oy - p * s)
     # parede ao fundo
-    a, b = T(u0 - 120, BANC[2] + 60), T(TAMPO_U[1] + 160, BANC[2])
+    a, b = T(u0 - 120, BANC[2] + 60), T(TAMPO_U[1], BANC[2])
     d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=K20, stroke=K, sw=0.8)
     f.t((a[0] + b[0]) / 2, a[1] - 6, 'PAREDE P3 (oeste) · juntas da parede continuam no tampo', 7.0, K70, False, 'middle')
     n = 0
@@ -247,7 +255,7 @@ def be19():
     d.circle(c[0], c[1], 180 * s, fill='none', stroke=K45, sw=0.8)
     d.circle(c[0], c[1], 20 * s, fill=K, stroke=K, sw=0.6)
     f.t(T(TAMPO_U[1], 0)[0], oy + 52, 'círculo: cuba de apoio (Ø ~360, modelo a definir); ponto: válvula, no centro de uma peça', 6.8, K70, False, 'end')
-    f.cota_h(T(u0, 0)[0], T(TAMPO_U[1], 0)[0], oy + 22, '1600', 7.0)
+    f.cota_h(T(u0, 0)[0], T(TAMPO_U[1], 0)[0], oy + 22, '%d' % (TAMPO_U[1] - u0), 7.0)
     f.cota_v(T(u0, 0)[0] - 22, T(u0, BANC[2])[1], oy, '400', 7.0)
     xs = [cc[0] for cc in cols] + [cols[-1][1]]
     for a_, b_ in zip(xs, xs[1:]):
@@ -265,16 +273,11 @@ def be19():
     d.line(ox, ey - SAIA * s, ox + (TAMPO_U[1] - u0) * s, ey - SAIA * s, K, 2.4)
     f.t(ox + (TAMPO_U[1] - u0) * s + 8, ey - SAIA * s + 3, 'perfil de canto', 6.8, K70)
     f.cota_v(ox - 22, ey - SAIA * s, ey, '100', 7.0)
-    # lateral norte
-    lx, ey2 = ox, ey + 95
-    f.t(lx, ey2 - SAIA * s - 22, 'C · LATERAL NORTE (frente à esquerda)', 8.4, INK, True)
-    x = lx
-    for (fl, z) in lateral:
-        w_ = _mm(fl) * s
-        d.rect(x, ey2 - z[1] * s, w_, z[1] * s, fill=BRANCO, stroke=K, sw=0.7)
-        f.t(x + w_ / 2, ey2 - z[1] * s / 2 + 2.5, '%d×%d' % (_mm(fl), _mm(z)), 6.0, DEMO, False, 'middle')
-        x += w_ + JUNTA * s
-    f.t(x + 14, ey2 - 12, 'fica à vista: 160 mm livres até a parede do vaso', 7.0, INK_SOFT)
+    # sem lateral (E5): o tampo encosta na parede do vaso
+    a, b = T(TAMPO_U[1], BANC[2] + 60), T(TAMPO_U[1] + 60, -40)
+    d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=K, stroke=K, sw=0.8)
+    f.t(a[0], b[1] + 12, 'P5 · parede do vaso', 7.0, K70)
+    f.t(ox, ey + 70, 'Sem lateral: com a parede norte de 220 o tampo e a saia vão até a parede do vaso e fecham a fresta de %d mm do gabinete.' % FRESTA, 7.4, INK_SOFT)
     # corte
     cy0, cx0 = 880.0, 110.0
     f.t(cx0, cy0 - 150, 'D · CORTE NA FRENTE DA BANCADA (1:1,1)', 8.4, INK, True)
@@ -296,9 +299,8 @@ def be19():
     cx = 980.0
     cw = W - MARGIN - cx
     y = f.tab(cx, 150, cw, [('Parte', 0.36, 'start'), ('Peças', 0.20, 'end'), ('Medida', 0.44, 'end')], [
-        ('Tampo', len(tampo), '1600 × 400'),
-        ('Saia frontal', len(saia), '1600 × 100'),
-        ('Lateral norte', len(lateral), '400 × 100'),
+        ('Tampo', len(tampo), '%d × 400' % (TAMPO_U[1] - u0)),
+        ('Saia frontal', len(saia), '%d × 100' % (TAMPO_U[1] - u0)),
         ('Total', n_, '%s m² · %d inteiras' % (br(area), inteiras)),
     ], titulo='PEÇAS DA BANCADA', alt=15.5)
     f.par(cx, y + 26, cw, [
@@ -306,10 +308,10 @@ def be19():
          'trocar por placa cimentícia de 12 mm colada e parafusada no gabinete. O topo da base fica a +966: azulejo e argamassa somam 14 mm.'),
         ('Juntas.', 'As colunas do tampo continuam as juntas da parede P3, a mesma malha da BE-17. Na profundidade, duas fiadas inteiras na frente e o corte de 86 mm junto à parede, '
          'escondido pela primeira fiada da parede.'),
-        ('Aresta.', 'Perfil metálico de canto (alumínio anodizado ou inox, 10 mm) na aresta frontal e na aresta da lateral. Nada de peça com borda crua.'),
+        ('Aresta.', 'Perfil metálico de canto (alumínio anodizado ou inox, 10 mm) na aresta frontal, de parede a vidro. Nada de peça com borda crua.'),
         ('Rejunte do tampo.', 'Epóxi, não acrílico: o tampo recebe água parada, sabão e creme. Nas paredes segue o acrílico Quartzolit, com os 5 dias de espera.'),
-        ('Cuba e válvula.', 'A cuba de apoio fica no eixo do tampo (u 920): o furo da válvula cai no centro de uma peça. Furar com serra-copo diamantada, depois do assentamento.'),
-        ('Conferir com o fabricante.', 'Bleu Nuit é revestimento de parede. Confirmar que aceita uso em tampo de bancada; se não, só a saia e a lateral levam azulejo.'),
+        ('Cuba e válvula.', 'A cuba de apoio fica no eixo do gabinete (u 920): o furo da válvula cai no centro de uma peça. Furar com serra-copo diamantada, depois do assentamento.'),
+        ('Conferir com o fabricante.', 'Bleu Nuit é revestimento de parede. Confirmar que aceita uso em tampo de bancada; se não, só a saia leva azulejo.'),
     ], size=7.8, lh=11.0, gap=6.0)
     return f
 

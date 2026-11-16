@@ -12,7 +12,7 @@
 <path d="M119.21 289.10 L223.31 289.10 L223.31 628.06 L73.53 628.06 L73.53 401.94 L119.21 401.94 Z" fill="#ededed" opacity="1.00"/>
 <path d="M73.53 628.06 L223.31 628.06 L223.31 812.64 L73.53 812.64 Z" fill="#ededed" opacity="1.00"/>
 <path d="M330.47 598.66 L615.77 598.66 L615.77 812.64 L223.31 812.64 L223.31 659.80 L330.47 659.80 Z" fill="#ededed" opacity="1.00"/>
-<path d="M223.31 465.10 L330.47 465.10 L330.47 659.80 L223.31 659.80 Z" fill="#ededed" opacity="1.00"/>
+<path d="M223.31 473.51 L330.47 473.51 L330.47 659.80 L223.31 659.80 Z" fill="#ededed" opacity="1.00"/>
 <rect x="377.24" y="156.00" width="242.10" height="6.99" fill="#000000"/>
 <rect x="115.72" y="285.59" width="268.53" height="6.99" fill="#000000"/>
 <rect x="115.72" y="285.59" width="7.01" height="119.89" fill="#000000"/>
@@ -31,7 +31,7 @@
 <rect x="326.99" y="628.12" width="7.01" height="35.11" fill="#000000"/>
 <rect x="612.34" y="156.00" width="7.01" height="472.12" fill="#000000"/>
 <rect x="70.00" y="398.47" width="6.99" height="417.61" fill="#000000"/>
-<rect x="219.77" y="461.63" width="114.23" height="7.01" fill="#000000"/>
+<rect x="219.77" y="461.63" width="114.23" height="15.39" fill="#000000"/>
 <rect x="612.04" y="183.48" width="7.61" height="78.33" fill="#ffffff"/>
 <rect x="612.34" y="183.78" width="7.01" height="77.73" fill="none" stroke="#000000" stroke-width="0.90"/>
 <line x1="615.84" y1="183.78" x2="615.84" y2="261.51" stroke="#000000" stroke-width="0.90"/>
@@ -89,8 +89,8 @@
 <rect x="384.25" y="162.99" width="228.09" height="24.62" fill="none" stroke="#ff00ff" stroke-width="1.10" stroke-dasharray="5 3"/>
 <rect x="219.77" y="656.23" width="114.23" height="7.01" fill="#ff00ff" opacity="0.22"/>
 <rect x="219.77" y="656.23" width="114.23" height="7.01" fill="none" stroke="#ff00ff" stroke-width="1.10" stroke-dasharray="5 3"/>
-<path d="M223.31 465.10 L330.47 465.10 L330.47 659.80 L223.31 659.80 Z" fill="#ff00ff" opacity="0.10"/>
-<path d="M223.31 465.10 L330.47 465.10 L330.47 659.80 L223.31 659.80 Z" fill="none" stroke="#ff00ff" stroke-width="1.30" stroke-dasharray="6 3"/>
+<path d="M223.31 473.51 L330.47 473.51 L330.47 659.80 L223.31 659.80 Z" fill="#ff00ff" opacity="0.10"/>
+<path d="M223.31 473.51 L330.47 473.51 L330.47 659.80 L223.31 659.80 Z" fill="none" stroke="#ff00ff" stroke-width="1.30" stroke-dasharray="6 3"/>
 <rect x="377.24" y="156.00" width="7.01" height="136.58" fill="#ffff00" opacity="0.55"/>
 <rect x="377.24" y="156.00" width="7.01" height="136.58" fill="none" stroke="#000000" stroke-width="1.00" stroke-dasharray="4 3"/>
 <rect x="186.05" y="285.59" width="211.56" height="6.99" fill="#ffff00" opacity="0.55"/>
@@ -267,34 +267,33 @@
 <line x1="223.31" y1="794.66" x2="615.77" y2="794.66" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
 <line x1="223.31" y1="801.66" x2="615.77" y2="801.66" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
 <line x1="223.31" y1="808.66" x2="615.77" y2="808.66" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="465.10" x2="330.47" y2="465.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="472.10" x2="330.47" y2="472.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="479.10" x2="330.47" y2="479.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="486.10" x2="330.47" y2="486.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="493.10" x2="330.47" y2="493.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="500.10" x2="330.47" y2="500.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="507.10" x2="330.47" y2="507.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="514.10" x2="330.47" y2="514.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="521.10" x2="330.47" y2="521.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="528.10" x2="330.47" y2="528.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="535.10" x2="330.47" y2="535.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="542.10" x2="330.47" y2="542.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="549.10" x2="330.47" y2="549.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="556.10" x2="330.47" y2="556.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="563.10" x2="330.47" y2="563.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="570.10" x2="330.47" y2="570.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="577.10" x2="330.47" y2="577.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="584.10" x2="330.47" y2="584.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="591.10" x2="330.47" y2="591.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="598.10" x2="330.47" y2="598.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="605.10" x2="330.47" y2="605.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="612.10" x2="330.47" y2="612.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="619.10" x2="330.47" y2="619.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="626.10" x2="330.47" y2="626.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="633.10" x2="330.47" y2="633.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="640.10" x2="330.47" y2="640.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="647.10" x2="330.47" y2="647.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
-<line x1="223.31" y1="654.10" x2="330.47" y2="654.10" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="473.51" x2="330.47" y2="473.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="480.51" x2="330.47" y2="480.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="487.51" x2="330.47" y2="487.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="494.51" x2="330.47" y2="494.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="501.51" x2="330.47" y2="501.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="508.51" x2="330.47" y2="508.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="515.51" x2="330.47" y2="515.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="522.51" x2="330.47" y2="522.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="529.51" x2="330.47" y2="529.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="536.51" x2="330.47" y2="536.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="543.51" x2="330.47" y2="543.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="550.51" x2="330.47" y2="550.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="557.51" x2="330.47" y2="557.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="564.51" x2="330.47" y2="564.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="571.51" x2="330.47" y2="571.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="578.51" x2="330.47" y2="578.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="585.51" x2="330.47" y2="585.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="592.51" x2="330.47" y2="592.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="599.51" x2="330.47" y2="599.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="606.51" x2="330.47" y2="606.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="613.51" x2="330.47" y2="613.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="620.51" x2="330.47" y2="620.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="627.51" x2="330.47" y2="627.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="634.51" x2="330.47" y2="634.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="641.51" x2="330.47" y2="641.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="648.51" x2="330.47" y2="648.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
+<line x1="223.31" y1="655.51" x2="330.47" y2="655.51" stroke="#ff00ff" stroke-width="0.45" opacity="0.10"/>
 <text x="498.2" y="207.5" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA DE ESTAR</text>
 <text x="467.5" y="409.9" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">SALA DE TV</text>
 <text x="153.2" y="540.2" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">COZINHA</text>
@@ -411,7 +410,7 @@
 <line x1="722.00" y1="213.20" x2="1352.00" y2="213.20" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="224.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">D03</text>
 <text x="799.3" y="224.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Piso do banheiro: revestimento, base e rebaixo</text>
-<text x="1344.0" y="224.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,80 m² — descer até a laje</text>
+<text x="1344.0" y="224.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,64 m² — descer até a laje</text>
 <line x1="722.00" y1="229.80" x2="1352.00" y2="229.80" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="229.80" width="630.00" height="16.60" fill="#f5f5f5"/>
 <text x="730.0" y="240.8" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">D04</text>
@@ -438,12 +437,12 @@
 <line x1="722.00" y1="312.80" x2="1352.00" y2="312.80" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="323.8" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">D07</text>
 <text x="799.3" y="323.8" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Forro: retirar 100%, inclusive o do banheiro</text>
-<text x="1344.0" y="323.8" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,30 m² — fora do banheiro, laje aparente</text>
+<text x="1344.0" y="323.8" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,14 m² — fora do banheiro, laje aparente</text>
 <line x1="722.00" y1="329.40" x2="1352.00" y2="329.40" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="329.40" width="630.00" height="16.60" fill="#f5f5f5"/>
 <text x="730.0" y="340.4" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">D08</text>
 <text x="799.3" y="340.4" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Retirar pisos do MainFloor</text>
-<text x="1344.0" y="340.4" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,30 m² úteis, sem dupla contagem</text>
+<text x="1344.0" y="340.4" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,14 m² úteis, sem dupla contagem</text>
 <line x1="722.00" y1="346.00" x2="1352.00" y2="346.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="357.0" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">P01</text>
 <text x="799.3" y="357.0" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Parede da sala de estar: retirar espelho e revestimento</text>
@@ -456,7 +455,7 @@
 <line x1="722.00" y1="379.20" x2="1352.00" y2="379.20" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="390.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">P03</text>
 <text x="799.3" y="390.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Laje: restaurar, descascar, limpar e preparar</text>
-<text x="1344.0" y="390.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,30 m² — acabamento a definir</text>
+<text x="1344.0" y="390.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,14 m² — acabamento a definir</text>
 <line x1="722.00" y1="395.80" x2="1352.00" y2="395.80" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="395.80" width="630.00" height="16.60" fill="#f5f5f5"/>
 <text x="730.0" y="406.8" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">P04</text>
@@ -470,7 +469,7 @@
 <rect x="722.00" y="429.00" width="630.00" height="16.60" fill="#f5f5f5"/>
 <text x="730.0" y="440.0" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">P06</text>
 <text x="799.3" y="440.0" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Regularizar e lixar todo o contrapiso</text>
-<text x="1344.0" y="440.0" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,30 m² — plano e nivelado</text>
+<text x="1344.0" y="440.0" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,14 m² — plano e nivelado</text>
 <line x1="722.00" y1="445.60" x2="1352.00" y2="445.60" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="456.6" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">R01</text>
 <text x="799.3" y="456.6" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Requadrar o vão e instalar a P03: porta de abrir 0,90 × 2,10 m, para o quarto</text>
@@ -483,7 +482,7 @@
 <line x1="722.00" y1="478.80" x2="1352.00" y2="478.80" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="489.8" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">R03</text>
 <text x="799.3" y="489.8" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Forro novo do banheiro, resistente à umidade, a 2,50 m</text>
-<text x="1344.0" y="489.8" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,80 m² — embutidos e exaustor</text>
+<text x="1344.0" y="489.8" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,64 m² — embutidos e exaustor</text>
 <line x1="722.00" y1="495.40" x2="1352.00" y2="495.40" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="495.40" width="630.00" height="16.60" fill="#f5f5f5"/>
 <text x="730.0" y="506.4" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">R04</text>

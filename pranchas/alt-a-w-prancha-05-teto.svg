@@ -12,7 +12,7 @@
 <path d="M119.21 289.10 L223.31 289.10 L223.31 656.23 L73.53 656.23 L73.53 401.94 L119.21 401.94 Z" fill="#ededed" opacity="1.00"/>
 <path d="M73.53 663.23 L223.31 663.23 L223.31 812.64 L73.53 812.64 Z" fill="#ededed" opacity="1.00"/>
 <path d="M330.47 598.66 L615.77 598.66 L615.77 812.64 L223.31 812.64 L223.31 659.80 L330.47 659.80 Z" fill="#ededed" opacity="1.00"/>
-<path d="M223.31 465.10 L330.47 465.10 L330.47 659.80 L223.31 659.80 Z" fill="#ededed" opacity="1.00"/>
+<path d="M223.31 473.51 L330.47 473.51 L330.47 659.80 L223.31 659.80 Z" fill="#ededed" opacity="1.00"/>
 <rect x="377.24" y="156.00" width="242.10" height="6.99" fill="#000000"/>
 <rect x="115.72" y="285.59" width="268.53" height="6.99" fill="#000000"/>
 <rect x="115.72" y="285.59" width="7.01" height="119.89" fill="#000000"/>
@@ -29,7 +29,7 @@
 <rect x="326.99" y="628.12" width="7.01" height="35.11" fill="#000000"/>
 <rect x="612.34" y="156.00" width="7.01" height="472.12" fill="#000000"/>
 <rect x="70.00" y="398.47" width="6.99" height="417.61" fill="#000000"/>
-<rect x="219.77" y="461.63" width="114.23" height="7.01" fill="#000000"/>
+<rect x="219.77" y="461.63" width="114.23" height="15.39" fill="#000000"/>
 <rect x="70.00" y="656.23" width="149.77" height="7.01" fill="#000000"/>
 <rect x="219.77" y="656.23" width="114.23" height="7.01" fill="#000000"/>
 <rect x="612.04" y="183.48" width="7.61" height="78.33" fill="#ffffff"/>
@@ -76,8 +76,8 @@
 <path d="M 127.86 203.18 L 137.71 215.16 L 142.29 208.84 Z" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
 <text x="161.8" y="231.3" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">N</text>
 <text x="140.0" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="6.3" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.40">NORTE 126°</text>
-<path d="M223.31 465.10 L330.47 465.10 L330.47 659.80 L223.31 659.80 Z" fill="#d6ffff" opacity="0.60"/>
-<path d="M223.31 465.10 L330.47 465.10 L330.47 659.80 L223.31 659.80 Z" fill="none" stroke="#00ffff" stroke-width="0.90" stroke-dasharray="3 2.5"/>
+<path d="M223.31 473.51 L330.47 473.51 L330.47 659.80 L223.31 659.80 Z" fill="#d6ffff" opacity="0.60"/>
+<path d="M223.31 473.51 L330.47 473.51 L330.47 659.80 L223.31 659.80 Z" fill="none" stroke="#00ffff" stroke-width="0.90" stroke-dasharray="3 2.5"/>
 <rect x="431.90" y="270.80" width="134.40" height="210.00" fill="#ffff00" opacity="0.30"/>
 <rect x="431.90" y="270.80" width="134.40" height="210.00" fill="none" stroke="#000000" stroke-width="1.20" stroke-dasharray="6 4"/>
 <text x="499.1" y="369.8" font-family="Helvetica, Arial, sans-serif" font-size="6.7" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.50">CLARABOIA</text>
@@ -312,7 +312,7 @@
 <text x="722.0" y="832.8" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">fora da moldura e ao sul da cortina, insuflando a sala de TV. Posição final depende da condensadora</text>
 <text x="722.0" y="845.2" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">existente — não assumir que ela admite duas evaporadoras.</text>
 <text x="722.0" y="863.6" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#000000" font-weight="bold" text-anchor="start">Vazões de referência, a validar com perda de carga do duto:</text>
-<text x="722.0" y="876.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">banheiro 3,8 × 2,50 × 10 = 95,0 m³/h (forro novo); coifa 9,82 × 2,62 × 12 = 308,7 m³/h — o</text>
+<text x="722.0" y="876.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">banheiro 3,64 × 2,50 × 10 = 91,0 m³/h (forro novo); coifa 9,82 × 2,62 × 12 = 308,7 m³/h — o</text>
 <text x="722.0" y="888.4" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">segundo só valeria com cozinha isolada; integrada, seleciona-se por captura. Rotas próprias.</text>
 <line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="48.0" y="940.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Fluxo = área × lux ÷ (0,60 × 0,80). Fatores de utilização e manutenção são hipóteses; a laje aparente escura reduz o fator de utilização e deve ser reavaliada.</text>

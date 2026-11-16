@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 990" width="1400" height="990">
+<rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
+<text x="48.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.40">MAXHAUS 81  ·  BANHEIRO  ·  CADERNO EXECUTIVO</text>
+<text x="48.0" y="76.0" font-family="Helvetica, Arial, sans-serif" font-size="24.0" fill="#000000" font-weight="bold" text-anchor="start">Planta baixa do banheiro</text>
+<text x="48.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Faces acabadas, com as medidas de obra de 14/11/2026. É a folha de referência de todas as outras.</text>
+<text x="1352.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">E5  ·  16/11/2026</text>
+<text x="1352.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="22.0" fill="#000000" font-weight="bold" text-anchor="end">BE-01</text>
+<text x="1352.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">escala 1:15  ·  A3, imprimir a 100%</text>
+<line x1="48.00" y1="112.00" x2="1352.00" y2="112.00" stroke="#cccccc" stroke-width="1.00"/>
+<line x1="48.00" y1="928.00" x2="1352.00" y2="928.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="944.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cotas em mm, em faces acabadas; nível ±0 = piso pronto. Medidas de 14/11/2026 informadas pelo cliente + modelo R95. Conferir em obra depois da demolição e antes de cortar qualquer peça.</text>
+<text x="48.0" y="956.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Orientação de escopo, não laudo: instalações, estrutura e impermeabilização pedem responsável técnico em obra.</text>
+<text x="48.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81  ·  JOÃO BALDINATO 109  ·  BANHEIRO  ·  CADERNO EXECUTIVO</text>
+<text x="1352.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">BE-01   ·   E5  ·  16/11/2026</text>
+<rect x="167.78" y="166.11" width="360.00" height="640.00" fill="#000000"/>
+<rect x="190.00" y="215.00" width="315.56" height="568.89" fill="#f5f5f5"/>
+<rect x="190.00" y="579.44" width="315.56" height="204.44" fill="#d6ffff"/>
+<rect x="190.00" y="606.11" width="55.56" height="177.78" fill="#cccccc" stroke="#000000" stroke-width="0.80"/>
+<text x="220.3" y="695.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle" transform="rotate(-90.0 220.3 695.0)">AT-B</text>
+<rect x="505.56" y="361.67" width="22.22" height="177.78" fill="#ffffff"/>
+<line x1="505.56" y1="361.67" x2="527.78" y2="361.67" stroke="#000000" stroke-width="0.80"/>
+<line x1="505.56" y1="539.44" x2="527.78" y2="539.44" stroke="#000000" stroke-width="0.80"/>
+<line x1="527.78" y1="361.67" x2="705.56" y2="361.67" stroke="#000000" stroke-width="1.60"/>
+<path d="M705.6 361.7 A 177.8 177.8 0 0 1 527.8 539.4" fill="none" stroke="#8c8c8c" stroke-width="0.70" stroke-dasharray="4 3"/>
+<text x="607.8" y="441.7" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">P02</text>
+<line x1="190.00" y1="579.44" x2="505.56" y2="579.44" stroke="#00ffff" stroke-width="2.60"/>
+<rect x="190.00" y="215.00" width="88.89" height="364.44" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<rect x="201.11" y="355.00" width="66.67" height="93.33" fill="#ffffff" stroke="#8c8c8c" stroke-width="0.70"/>
+<text x="236.9" y="281.7" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle" transform="rotate(-90.0 236.9 281.7)">B01</text>
+<rect x="363.33" y="215.00" width="88.89" height="40.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<ellipse cx="407.8" cy="312.8" rx="40.0" ry="57.8" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<text x="407.8" y="315.8" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="bold" text-anchor="middle">VASO</text>
+<text x="385.6" y="737.2" font-family="Helvetica, Arial, sans-serif" font-size="8.0" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.80">BOX</text>
+<rect x="259.33" y="611.22" width="20.00" height="160.00" fill="#8c8c8c" stroke="#000000" stroke-width="0.80"/>
+<rect x="463.33" y="270.56" width="22.22" height="22.22" fill="#8c8c8c" stroke="#000000" stroke-width="0.80"/>
+<text x="284.3" y="691.2" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="start">R1</text>
+<text x="474.4" y="302.8" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#000000" font-weight="bold" text-anchor="middle">R2</text>
+<text x="347.8" y="150.6" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="middle">P5</text>
+<text x="375.6" y="835.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="middle">P1</text>
+<text x="547.8" y="688.3" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="start">P4</text>
+<text x="147.8" y="415.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="end">P3</text>
+<text x="255.6" y="732.8" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="start">P2</text>
+<text x="217.8" y="597.2" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="middle">P6</text>
+<line x1="190.00" y1="132.11" x2="505.56" y2="132.11" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="187.50" y1="134.61" x2="192.50" y2="129.61" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="190.00" y1="128.11" x2="190.00" y2="136.11" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="503.06" y1="134.61" x2="508.06" y2="129.61" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="505.56" y1="128.11" x2="505.56" y2="136.11" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="347.8" y="128.6" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1420</text>
+<line x1="133.78" y1="215.00" x2="133.78" y2="579.44" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="131.28" y1="217.50" x2="136.28" y2="212.50" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="129.78" y1="215.00" x2="137.78" y2="215.00" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="131.28" y1="581.94" x2="136.28" y2="576.94" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="129.78" y1="579.44" x2="137.78" y2="579.44" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="129.8" y="397.2" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 129.8 397.2)">1640</text>
+<line x1="133.78" y1="579.44" x2="133.78" y2="783.89" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="131.28" y1="581.94" x2="136.28" y2="576.94" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="129.78" y1="579.44" x2="137.78" y2="579.44" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="131.28" y1="786.39" x2="136.28" y2="781.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="129.78" y1="783.89" x2="137.78" y2="783.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="129.8" y="681.7" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 129.8 681.7)">920</text>
+<line x1="732.78" y1="166.11" x2="732.78" y2="361.67" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="730.28" y1="168.61" x2="735.28" y2="163.61" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="728.78" y1="166.11" x2="736.78" y2="166.11" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="730.28" y1="364.17" x2="735.28" y2="359.17" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="728.78" y1="361.67" x2="736.78" y2="361.67" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="728.8" y="263.9" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 728.8 263.9)">880</text>
+<line x1="732.78" y1="361.67" x2="732.78" y2="539.44" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="730.28" y1="364.17" x2="735.28" y2="359.17" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="728.78" y1="361.67" x2="736.78" y2="361.67" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="730.28" y1="541.94" x2="735.28" y2="536.94" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="728.78" y1="539.44" x2="736.78" y2="539.44" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="728.8" y="450.6" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 728.8 450.6)">800</text>
+<line x1="732.78" y1="539.44" x2="732.78" y2="806.11" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="730.28" y1="541.94" x2="735.28" y2="536.94" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="728.78" y1="539.44" x2="736.78" y2="539.44" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="730.28" y1="808.61" x2="735.28" y2="803.61" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="728.78" y1="806.11" x2="736.78" y2="806.11" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="728.8" y="672.8" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 728.8 672.8)">1200</text>
+<text x="732.8" y="156.1" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">por fora</text>
+<line x1="759.78" y1="166.11" x2="759.78" y2="806.11" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="757.28" y1="168.61" x2="762.28" y2="163.61" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="755.78" y1="166.11" x2="763.78" y2="166.11" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="757.28" y1="808.61" x2="762.28" y2="803.61" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="755.78" y1="806.11" x2="763.78" y2="806.11" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="755.8" y="486.1" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 755.8 486.1)">2880</text>
+<line x1="190.00" y1="383.89" x2="278.89" y2="383.89" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="187.50" y1="386.39" x2="192.50" y2="381.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="190.00" y1="379.89" x2="190.00" y2="387.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="276.39" y1="386.39" x2="281.39" y2="381.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="278.89" y1="379.89" x2="278.89" y2="387.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="234.4" y="380.4" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">400</text>
+<line x1="278.89" y1="383.89" x2="407.78" y2="383.89" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="276.39" y1="386.39" x2="281.39" y2="381.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="278.89" y1="379.89" x2="278.89" y2="387.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="405.28" y1="386.39" x2="410.28" y2="381.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="407.78" y1="379.89" x2="407.78" y2="387.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="343.3" y="380.4" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">580</text>
+<line x1="407.78" y1="383.89" x2="505.56" y2="383.89" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="405.28" y1="386.39" x2="410.28" y2="381.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="407.78" y1="379.89" x2="407.78" y2="387.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="503.06" y1="386.39" x2="508.06" y2="381.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="505.56" y1="379.89" x2="505.56" y2="387.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="456.7" y="380.4" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">440</text>
+<line x1="305.56" y1="215.00" x2="305.56" y2="223.89" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="303.06" y1="217.50" x2="308.06" y2="212.50" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="301.56" y1="215.00" x2="309.56" y2="215.00" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="303.06" y1="226.39" x2="308.06" y2="221.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="301.56" y1="223.89" x2="309.56" y2="223.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="301.6" y="219.4" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 301.6 219.4)">40</text>
+<line x1="305.56" y1="223.89" x2="305.56" y2="579.44" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="303.06" y1="226.39" x2="308.06" y2="221.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="301.56" y1="223.89" x2="309.56" y2="223.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="303.06" y1="581.94" x2="308.06" y2="576.94" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="301.56" y1="579.44" x2="309.56" y2="579.44" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="301.6" y="401.7" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 301.6 401.7)">1600</text>
+<line x1="327.78" y1="579.44" x2="327.78" y2="606.11" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="325.28" y1="581.94" x2="330.28" y2="576.94" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="323.78" y1="579.44" x2="331.78" y2="579.44" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="325.28" y1="608.61" x2="330.28" y2="603.61" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="323.78" y1="606.11" x2="331.78" y2="606.11" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="323.8" y="592.8" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 323.8 592.8)">120</text>
+<line x1="327.78" y1="606.11" x2="327.78" y2="783.89" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="325.28" y1="608.61" x2="330.28" y2="603.61" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="323.78" y1="606.11" x2="331.78" y2="606.11" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="325.28" y1="786.39" x2="330.28" y2="781.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="323.78" y1="783.89" x2="331.78" y2="783.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="323.8" y="695.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 323.8 695.0)">800</text>
+<line x1="190.00" y1="761.67" x2="245.56" y2="761.67" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="187.50" y1="764.17" x2="192.50" y2="759.17" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="190.00" y1="757.67" x2="190.00" y2="765.67" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="243.06" y1="764.17" x2="248.06" y2="759.17" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="245.56" y1="757.67" x2="245.56" y2="765.67" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="217.8" y="758.2" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">250</text>
+<line x1="245.56" y1="761.67" x2="505.56" y2="761.67" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="243.06" y1="764.17" x2="248.06" y2="759.17" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="245.56" y1="757.67" x2="245.56" y2="765.67" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="503.06" y1="764.17" x2="508.06" y2="759.17" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="505.56" y1="757.67" x2="505.56" y2="765.67" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="375.6" y="758.2" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1170</text>
+<line x1="490.00" y1="215.00" x2="490.00" y2="361.67" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="487.50" y1="217.50" x2="492.50" y2="212.50" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="486.00" y1="215.00" x2="494.00" y2="215.00" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="487.50" y1="364.17" x2="492.50" y2="359.17" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="486.00" y1="361.67" x2="494.00" y2="361.67" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="486.0" y="288.3" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 486.0 288.3)">660</text>
+<line x1="490.00" y1="361.67" x2="490.00" y2="539.44" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="487.50" y1="364.17" x2="492.50" y2="359.17" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="486.00" y1="361.67" x2="494.00" y2="361.67" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="487.50" y1="541.94" x2="492.50" y2="536.94" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="486.00" y1="539.44" x2="494.00" y2="539.44" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="486.0" y="450.6" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 486.0 450.6)">800</text>
+<line x1="490.00" y1="539.44" x2="490.00" y2="783.89" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="487.50" y1="541.94" x2="492.50" y2="536.94" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="486.00" y1="539.44" x2="494.00" y2="539.44" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="487.50" y1="786.39" x2="492.50" y2="781.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="486.00" y1="783.89" x2="494.00" y2="783.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="486.0" y="661.7" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 486.0 661.7)">1100</text>
+<text x="407.8" y="573.4" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">vidro do box</text>
+<rect x="168.00" y="872.00" width="14.00" height="10.00" fill="#cccccc" stroke="#8c8c8c" stroke-width="0.60"/>
+<text x="188.0" y="880.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Área técnica do chuveiro (AT-B)</text>
+<rect x="321.70" y="872.00" width="14.00" height="10.00" fill="#d6ffff" stroke="#8c8c8c" stroke-width="0.60"/>
+<text x="341.7" y="880.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Box</text>
+<line x1="379.81" y1="877.00" x2="393.81" y2="877.00" stroke="#00ffff" stroke-width="2.20"/>
+<text x="399.8" y="880.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Vidro do box</text>
+<rect x="469.79" y="872.00" width="14.00" height="10.00" fill="#8c8c8c" stroke="#8c8c8c" stroke-width="0.60"/>
+<text x="489.8" y="880.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Ralos R1 e R2</text>
+<text x="760.0" y="142.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.00">MEDIDAS DE REFERÊNCIA</text>
+<rect x="760.00" y="150.00" width="592.00" height="17.00" fill="#e0e0e0"/>
+<text x="766.0" y="161.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">Item</text>
+<text x="884.4" y="161.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">Medida (mm)</text>
+<text x="1038.3" y="161.2" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start">De onde vem</text>
+<text x="766.0" y="178.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Banheiro</text>
+<text x="884.4" y="178.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">1420 × 2560</text>
+<text x="1038.3" y="178.2" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">largura do modelo R95; comprimento = 2880 por fora, menos a parede norte de 220</text>
+<text x="1038.3" y="188.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">(16/11) e a sul de 100</text>
+<line x1="760.00" y1="194.20" x2="1352.00" y2="194.20" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="760.00" y="194.20" width="592.00" height="17.00" fill="#f5f5f5"/>
+<text x="766.0" y="205.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Parede da porta</text>
+<text x="884.4" y="205.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">880 + 800 + 1200</text>
+<text x="1038.3" y="205.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">medida por fora, lado da sala, de norte a sul (14/11)</text>
+<line x1="760.00" y1="211.20" x2="1352.00" y2="211.20" stroke="#cccccc" stroke-width="0.50"/>
+<text x="766.0" y="222.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">P02 · porta</text>
+<text x="884.4" y="222.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">vão 800 × 2150</text>
+<text x="1038.3" y="222.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">medida de obra; abre para fora, sentido anti-horário</text>
+<line x1="760.00" y1="228.20" x2="1352.00" y2="228.20" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="760.00" y="228.20" width="592.00" height="17.00" fill="#f5f5f5"/>
+<text x="766.0" y="239.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Box</text>
+<text x="884.4" y="239.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">1420 × 920</text>
+<text x="1038.3" y="239.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">fundo de 920 mantido; vidro na linha a 1640 da parede do vaso</text>
+<line x1="760.00" y1="245.20" x2="1352.00" y2="245.20" stroke="#cccccc" stroke-width="0.50"/>
+<text x="766.0" y="256.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">AT-B · área técnica</text>
+<text x="884.4" y="256.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">800 × 250</text>
+<text x="1038.3" y="256.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">medida de obra; desenhada no canto sudoeste do box</text>
+<line x1="760.00" y1="262.20" x2="1352.00" y2="262.20" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="760.00" y="262.20" width="592.00" height="17.00" fill="#f5f5f5"/>
+<text x="766.0" y="273.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">B01 · bancada</text>
+<text x="884.4" y="273.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">1640 × 400, saia 100</text>
+<text x="1038.3" y="273.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">tampo de parede a vidro; topo a +980, sobre o gabinete de 1600</text>
+<line x1="760.00" y1="279.20" x2="1352.00" y2="279.20" stroke="#cccccc" stroke-width="0.50"/>
+<text x="766.0" y="290.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Gabinete</text>
+<text x="884.4" y="290.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">1600 × 400 × 880 (altura)</text>
+<text x="1038.3" y="290.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">medida de obra; reaproveitado</text>
+<line x1="760.00" y1="296.20" x2="1352.00" y2="296.20" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="760.00" y="296.20" width="592.00" height="17.00" fill="#f5f5f5"/>
+<text x="766.0" y="307.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Espelho</text>
+<text x="884.4" y="307.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">1600 × 900</text>
+<text x="1038.3" y="307.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">medida de obra; base proposta a +1340</text>
+<line x1="760.00" y1="313.20" x2="1352.00" y2="313.20" stroke="#cccccc" stroke-width="0.50"/>
+<text x="766.0" y="324.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Vaso</text>
+<text x="884.4" y="324.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">eixo a 980 da P3</text>
+<text x="1038.3" y="324.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">modelo R95; conferir ponto de esgoto</text>
+<line x1="760.00" y1="330.20" x2="1352.00" y2="330.20" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="760.00" y="330.20" width="592.00" height="17.00" fill="#f5f5f5"/>
+<text x="766.0" y="341.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">R1 · ralo linear</text>
+<text x="884.4" y="341.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">720 × 90</text>
+<text x="1038.3" y="341.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">modelo R95; no box, junto à área técnica</text>
+<line x1="760.00" y1="347.20" x2="1352.00" y2="347.20" stroke="#cccccc" stroke-width="0.50"/>
+<text x="766.0" y="358.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">R2 · ralo seco</text>
+<text x="884.4" y="358.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">grelha 100 × 100</text>
+<text x="1038.3" y="358.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">ao lado do vaso; posição da caixa existente a levantar</text>
+<line x1="760.00" y1="364.20" x2="1352.00" y2="364.20" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="760.00" y="364.20" width="592.00" height="17.00" fill="#f5f5f5"/>
+<text x="766.0" y="375.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="bold" text-anchor="start">Forro</text>
+<text x="884.4" y="375.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">+2500</text>
+<text x="1038.3" y="375.4" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#4d4d4d" font-weight="normal" text-anchor="start">modelo R95; laje a +2620</text>
+<line x1="760.00" y1="381.20" x2="1352.00" y2="381.20" stroke="#cccccc" stroke-width="0.50"/>
+<text x="760.0" y="407.2" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">As paredes têm nome.</text>
+<text x="760.0" y="419.2" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P5 é a do vaso (norte); P4, a da porta (leste); P1, o fundo do box (sul); P3, a da bancada (oeste). P2 e P6 são as duas faces da área técnica. A paginação</text>
+<text x="760.0" y="431.2" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">de cada uma está nas folhas BE-13 a BE-17.</text>
+<text x="760.0" y="450.2" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">O que ainda é premissa.</text>
+<text x="760.0" y="462.2" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">A área técnica foi desenhada encostada no fundo do box: sobram 120 mm de parede entre ela e o vidro. O gabinete de 1600 fica encostado no vidro do</text>
+<text x="760.0" y="474.2" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">box; os 40 mm até a parede do vaso são fechados pelo tampo e pela saia, que correm de parede a vidro (1640). Se a área técnica estiver no outro canto</text>
+<text x="760.0" y="486.2" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">do box, as medidas não mudam, só a posição: avisar antes de marcar a paginação da P3.</text>
+<text x="760.0" y="505.2" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Comprimento por dentro.</text>
+<text x="760.0" y="517.2" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Os 2560 saem de 2880 por fora menos a parede norte, de 220 mm (medida em obra, 16/11), e a sul, de 100. Se a sul tiver 120 mm, o banheiro tem</text>
+<text x="760.0" y="529.2" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">2540 por dentro. Medir de parede a parede depois de retirar o revestimento.</text>
+</svg>

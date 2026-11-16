@@ -1770,6 +1770,87 @@ def construir_cotas():
     return d
 
 
+# ---------------------------------------------------------------------------
+# E5 do banheiro (16.11.2026) — parede norte do banheiro com 0,22 m (medida do cliente)
+#   · a face externa (lado da sala de TV) e os 2,88 m por fora não mudam: a parede engrossa
+#     para dentro. Banheiro com 1,42 × 2,56 m por dentro (era 2,68); porta a 0,66 m da P5.
+#   · tampo do banheiro de parede a vidro (1,64 m), sem lateral; Executivo e Técnico E5.
+#   · áreas: banheiro 3,64 m² (faces); líquido sem AT-B 3,44 m²; MainFloor 60,14 m².
+# ---------------------------------------------------------------------------
+WC_N_E5 = WC_NORTE_EXT + 0.22 * PT_PER_M                       # 333,79
+_PAREDE_N_ANT = (343.39, 323.74, 417.90, 328.31)
+_PAREDE_N_E5 = (343.39, 323.74, 417.90, round(WC_N_E5, 2))
+for _lst in (ALT_WALLS, ORIG_WALLS, bm.WALLS, getattr(_apc, 'LOCAL_WALLS_01', [])):
+    _lst[:] = [_PAREDE_N_E5 if w == _PAREDE_N_ANT else w for w in _lst]
+bm.WC_NORTE_INT = p01.WC_NORTE_INT = WC_N_E5
+bm.ROOMS['banheiro']['poly'] = [(345.7, WC_N_E5 - 2.3), (415.6, WC_N_E5 - 2.3), (415.6, 453.0), (345.7, 453.0)]
+bm.ROOMS['banheiro']['area'] = 3.64
+p07.WC_N = WC_N_E5
+p07.WC_H_M = (p07.WC_S - WC_N_E5) / PT_PER_M
+p07.PAREDES_WC[2] = (p07.WC_OE, p07.WC_NE, p07.WC_LE, WC_N_E5)
+p07.BANCADA_WC = (p07.BANCADA_WC[0], WC_N_E5, p07.BANCADA_WC[2], p07.BANCADA_WC[3])   # tampo de parede a vidro
+PARES_FOLHA.setdefault('prancha-08-banheiro', []).extend([
+    ('1,60  bancada', '1,64  tampo'),
+    ('1,432 × 2,638 m, 3,78 m²', '1,432 × 2,638 m; com a parede norte de 0,22 m (16/11), 1,43 × 2,56 m')])
+fo.WC_N = (WC_N_E5 - ORIGIN_Y) / PT_PER_M
+fo.WB1 = (fo.WC_O, fo.WC_N, fo.WC_O + 0.40, fo.K01_Y)
+_subst(fo.TAB_PEDRA, 'WB1', ('WB1', 'Bancada do banheiro de parede a vidro, sobre o gabinete (0,88 m), saia de 10 cm, topo a 0,98 m — ver executivo E5', '1,64 × 0,40 m'))
+_subst(fo.TAB_PEDRA, 'WB1f', ('WB1f', 'Saia frontal de 10 cm, de parede a vidro; sem frontão nem lateral (material: executivo do banheiro)', '1,64 m'))
+FACES[:] = [(n, c, [(x, WC_N_E5 if (n == 'BANHEIRO' and y == 328.31) else y, t) for (x, y, t) in v]) for (n, c, v) in FACES]
+AREA_QUADRO['BANHEIRO'] = 3.64
+AT_TXT = AT_TXT.replace('Por dentro: 1,43 × 2,68 m.', 'Parede norte com 0,22 m (16/11): por dentro, 1,43 × 2,56 m.') \
+               .replace('Bancada 1,60 × 0,40 m com saia', 'Tampo 1,64 × 0,40 m, de parede a vidro, com saia') \
+               .replace('As áreas do quadro seguem o scan: os 4 cm a mais no comprimento (~0,06 m²) entram depois da medição pós-demolição.',
+                        'Quadro de áreas com o banheiro em 3,64 m² (faces, Executivo E5).')
+_subst(p03.TAB_B, 'Banheiro e box', ('Banheiro e box', 'mesmo monolítico, sistema para área molhada sobre impermeabilização (sem AT-B)', '3,44 m²'))
+_subst(p03.TAB_B, 'MainFloor', ('MainFloor', 'total revestido, líquido das áreas técnicas', '59,70 m²'))
+_subst(p03.TAB_A, 'Porcelanato', ('Porcelanato', 'cozinha 7,43 + closet 4,14 + banheiro e box 3,44 (líquidos) — no banheiro: Confete', '15,01 m²'))
+_subst(p03.TAB_A, '+ reserva de 10%', ('+ reserva de 10%', 'cortes, perdas e reposição futura do porcelanato', '16,51 m²'))
+_subst(p03.TAB_A, 'MainFloor', ('MainFloor', 'total revestido, líquido das áreas técnicas', '59,70 m²'))
+_subst(fo.TAB_PISO_A, 'A2', ('A2', 'Monolítico no banheiro e no box — sistema de área molhada, antiderrapante no box', '3,44 m²'))
+_subst(fo.TAB_PISO_B, 'B3', ('B3', 'Porcelanato Confete 100 × 100 — banheiro e box, sem o AT-B; ver executivo E5 do banheiro', '3,44 m²'))
+_subst(p12.RISCOS, 'A1', ('A1', 'Acabamento', 'Monolítico de 44,69 a 59,70 m² pede juntas — quantas depende do sistema', 'alto'))
+EXTRA_03 = 'Piso não corre sob AT-A nem AT-B: closet 4,14 m² e banheiro 3,44 m² líquidos.'
+EXTRA_03A = 'Piso não corre sob AT-A nem AT-B: monolítico 59,70 m² líquidos, banheiro e box incluídos.'
+EXTRA_03B = 'Piso não corre sob AT-A nem AT-B: porcelanato 15,01 m² líquidos (cozinha 7,43, closet 4,14, banheiro 3,44).'
+p10.TAB_PREM[0] = ('Medidas', 'interno 1,42 × 2,56 m', 'parede norte de 0,22 m (16/11)', 'Executivo E5')
+_subst(p10.TAB_PREM, 'Bancada B01', ('Bancada B01', '1,64 × 0,40 + saia', 'de parede a vidro, sem lateral', 'cliente, 16/11'))
+p10.TAB_SUP[:] = [
+    ('Paredes P1 a P6', 'malha 155: 667 Bleu + 40 pares Nuage', '14,31', '1,43', '15,74'),
+    ('Nicho', 'fundo, base, teto e pontas, 46 peças', '0,84', '0,08', '0,92'),
+    ('Bancada B01', 'tampo e saia, de parede a vidro, 44 peças', '0,82', '0,08', '0,90'),
+    ('Bleu Nuit — total', '757 peças + 10% = 833 · 24 caixas', '15,97', '1,60', '17,57'),
+    ('Nuage 75 × 155', '80 peças (40 pares) + 10% = 88', 'na área', '—', '88 peças'),
+    ('Piso Confete', '100 × 100 em placas, 7 recortes', '3,46', '—', '6 placas'),
+]
+p10.TAB_ANTES[:] = [
+    ('REV. U (até 2,40 m)', '21,73 m²', '23,90 m²', 'perímetro cheio, sem paginação'),
+    ('REV. W = Executivo E5', '19,43 m²', '21,03 m²', 'malha real, nicho e bancada'),
+    ('Diferença', '−2,30 m²', '−2,87 m²', 'sem azulejo atrás do gabinete; 0,12 m a menos'),
+]
+PARES_E5 = [
+    ('3,8 × 2,50 × 10 = 95,0 m³/h', '3,64 × 2,50 × 10 = 91,0 m³/h'),
+    ('3,80 × 2,50 = 9,50 m³', '3,64 × 2,50 = 9,10 m³'),
+    ('3,80 m² × 2,50 m × 10 trocas/h', '3,64 m² × 2,50 m × 10 trocas/h'),
+    ('cai de 99,6 para 95,0 m³/h', 'cai de 99,6 para 91,0 m³/h'),
+    ('95,0 m³/h', '91,0 m³/h'),
+    ('1,43 × 2,68 m por dentro', '1,43 × 2,56 m por dentro'),
+    ('1,43 × 2,68', '1,43 × 2,56'), ('1,42 × 2,68', '1,42 × 2,56'),
+    ('O Executivo E4 trabalha', 'O Executivo E5 trabalha'),
+    ('Executivo do Banheiro E4', 'Executivo do Banheiro E5'), ('Executivo e Técnico E4', 'Executivo e Técnico E5'),
+    ('Executivo E4', 'Executivo E5'), ('>SUPERFÍCIES — EXECUTIVO E4<', '>SUPERFÍCIES — EXECUTIVO E5<'),
+    ('25 caixas de Bleu Nuit + 91 Nuage', '24 caixas de Bleu Nuit + 88 Nuage'),
+    ('20,43 m² líquidos  ·  22,09 m² com 10%', '19,43 m² líquidos  ·  21,03 m² com 10%'),
+    ('>2,50 m²<', '>2,33 m²<'), ('>2,68 m<', '>2,56 m<'), ('>2,68<', '>2,56<'),
+    ('Área útil — 60,30 m²', 'Área útil — 60,14 m²'), ('>60,30 m²<', '>60,14 m²<'), ('>60,30<', '>60,14<'),
+    ('>3,80 m²<', '>3,64 m²<'), ('>3,80<', '>3,64<'),
+    ('>0,10 m em todas<', '>0,10 m; norte do banheiro 0,22 m (16/11)<'),
+    ('Sobre 2,64 m, 1% de caimento', 'Sobre 2,56 m, 1% de caimento'),
+    ('O caderno usa 60,30 m².', 'O caderno usa 60,14 m² (banheiro com 3,64 m², E5).'),
+    ('60,30 m² —', '60,14 m² —'), ('60,30 m² úteis', '60,14 m² úteis'),
+    ('3,80 m² — descer até a laje', '3,64 m² — descer até a laje'), ('3,80 m² — embutidos e exaustor', '3,64 m² — embutidos e exaustor'),
+]
+
 FOLHAS = (
     (_com_at(construir_01, (722, 800, 628), (132, 182, 64.0, 6.2), AT_TXT), 'alt-a-w-prancha-01-planta-cotada', 'Prancha 01: planta baixa cotada'),
     (construir_cotas, 'alt-a-w-prancha-01a-planta-cotas-completa', 'Prancha 01A: planta de cotas completa'),
@@ -1818,6 +1899,7 @@ if __name__ == '__main__':
                                ('e drywall ainda sem porta', 'e o vão atual da porta sala de TV/quarto'),
                                ('fechar a drywall R01', 'requadrar o vão R01')) + tuple(PARES_REV_V) + \
                               tuple(par for k, v in PARES_FOLHA.items() if k in nome for par in v) + \
+                              (tuple(PARES_E5) if 'prancha-09' not in nome else ()) + \
                               (('drywall R01', 'parede sala/quarto'),):
                     if _a in _s:
                         _s = _s.replace(_a, _b)

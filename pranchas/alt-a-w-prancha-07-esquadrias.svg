@@ -92,7 +92,7 @@
 <text x="1117.2" y="173.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Valor</text>
 <text x="1344.0" y="173.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Observação</text>
 <text x="730.0" y="194.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Área útil (soma dos ambientes)</text>
-<text x="1117.2" y="194.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,30 m²</text>
+<text x="1117.2" y="194.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,14 m²</text>
 <text x="1344.0" y="194.5" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">relatório arredonda para 60,20</text>
 <line x1="722.00" y1="202.00" x2="1352.00" y2="202.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="202.00" width="630.00" height="22.00" fill="#f5f5f5"/>

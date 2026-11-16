@@ -12,7 +12,7 @@
 <path d="M168.87 332.76 L268.01 332.76 L268.01 682.41 L125.36 682.41 L125.36 440.22 L168.87 440.22 Z" fill="#ededed" opacity="1.00"/>
 <path d="M125.36 689.08 L268.01 689.08 L268.01 831.38 L125.36 831.38 Z" fill="#ededed" opacity="1.00"/>
 <path d="M370.07 627.58 L641.78 627.58 L641.78 831.38 L268.01 831.38 L268.01 685.81 L370.07 685.81 Z" fill="#ededed" opacity="1.00"/>
-<path d="M268.01 500.38 L370.07 500.38 L370.07 685.81 L268.01 685.81 Z" fill="#ededed" opacity="1.00"/>
+<path d="M268.01 508.39 L370.07 508.39 L370.07 685.81 L268.01 685.81 Z" fill="#ededed" opacity="1.00"/>
 <rect x="414.61" y="206.00" width="230.57" height="6.66" fill="#000000"/>
 <rect x="165.54" y="329.42" width="255.75" height="6.66" fill="#000000"/>
 <rect x="165.54" y="329.42" width="6.67" height="114.18" fill="#000000"/>
@@ -29,7 +29,7 @@
 <rect x="366.75" y="655.64" width="6.67" height="33.44" fill="#000000"/>
 <rect x="638.51" y="206.00" width="6.67" height="449.64" fill="#000000"/>
 <rect x="122.00" y="436.92" width="6.66" height="397.72" fill="#000000"/>
-<rect x="264.63" y="497.08" width="108.79" height="6.67" fill="#000000"/>
+<rect x="264.63" y="497.08" width="108.79" height="14.66" fill="#000000"/>
 <rect x="122.00" y="682.41" width="142.63" height="6.67" fill="#000000"/>
 <rect x="264.63" y="682.41" width="108.79" height="6.67" fill="#000000"/>
 <rect x="638.21" y="232.16" width="7.27" height="74.63" fill="#ffffff"/>
@@ -132,12 +132,12 @@
 <text x="181.9" y="389.8" font-family="Helvetica, Arial, sans-serif" font-size="5.2" fill="#000000" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 181.9 389.8)">1,61</text>
 <text x="205.3" y="629.3" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">COZINHA</text>
 <text x="205.3" y="641.3" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#ff00ff" font-weight="bold" text-anchor="middle">9,54 m²</text>
-<text x="319.0" y="515.9" font-family="Helvetica, Arial, sans-serif" font-size="5.2" fill="#000000" font-weight="normal" text-anchor="middle">1,43</text>
-<text x="357.1" y="593.1" font-family="Helvetica, Arial, sans-serif" font-size="5.2" fill="#000000" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 357.1 593.1)">2,68</text>
+<text x="319.0" y="523.8" font-family="Helvetica, Arial, sans-serif" font-size="5.2" fill="#000000" font-weight="normal" text-anchor="middle">1,43</text>
+<text x="357.1" y="597.1" font-family="Helvetica, Arial, sans-serif" font-size="5.2" fill="#000000" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 357.1 597.1)">2,56</text>
 <text x="319.0" y="673.5" font-family="Helvetica, Arial, sans-serif" font-size="5.2" fill="#000000" font-weight="normal" text-anchor="middle">1,43</text>
-<text x="281.0" y="593.1" font-family="Helvetica, Arial, sans-serif" font-size="5.2" fill="#000000" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 281.0 593.1)">2,68</text>
+<text x="281.0" y="597.1" font-family="Helvetica, Arial, sans-serif" font-size="5.2" fill="#000000" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 281.0 597.1)">2,56</text>
 <text x="335.3" y="576.0" font-family="Helvetica, Arial, sans-serif" font-size="6.3" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.60">BANHEIRO</text>
-<text x="335.3" y="588.0" font-family="Helvetica, Arial, sans-serif" font-size="6.3" fill="#ff00ff" font-weight="bold" text-anchor="middle">3,84 m²</text>
+<text x="335.3" y="588.0" font-family="Helvetica, Arial, sans-serif" font-size="6.3" fill="#ff00ff" font-weight="bold" text-anchor="middle">3,66 m²</text>
 <text x="196.6" y="701.2" font-family="Helvetica, Arial, sans-serif" font-size="5.2" fill="#000000" font-weight="normal" text-anchor="middle">2,04</text>
 <line x1="264.63" y1="689.08" x2="264.63" y2="692.48" stroke="#ff00ff" stroke-width="0.80"/>
 <line x1="264.63" y1="695.02" x2="264.63" y2="698.42" stroke="#ff00ff" stroke-width="0.80"/>
@@ -388,14 +388,14 @@
 <line x1="293.19" y1="339.08" x2="299.19" y2="333.08" stroke="#8c8c8c" stroke-width="1.10"/>
 <line x1="293.19" y1="500.08" x2="299.19" y2="494.08" stroke="#8c8c8c" stroke-width="1.10"/>
 <text x="292.2" y="416.6" font-family="Helvetica, Arial, sans-serif" font-size="5.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 292.2 416.6)">2,42</text>
-<line x1="296.19" y1="497.08" x2="296.19" y2="503.75" stroke="#8c8c8c" stroke-width="0.70"/>
+<line x1="296.19" y1="497.08" x2="296.19" y2="511.74" stroke="#8c8c8c" stroke-width="0.70"/>
 <line x1="293.19" y1="500.08" x2="299.19" y2="494.08" stroke="#8c8c8c" stroke-width="1.10"/>
-<line x1="293.19" y1="506.75" x2="299.19" y2="500.75" stroke="#8c8c8c" stroke-width="1.10"/>
-<text x="292.2" y="500.4" font-family="Helvetica, Arial, sans-serif" font-size="5.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 292.2 500.4)">0,10</text>
-<line x1="296.19" y1="503.75" x2="296.19" y2="682.41" stroke="#8c8c8c" stroke-width="0.70"/>
-<line x1="293.19" y1="506.75" x2="299.19" y2="500.75" stroke="#8c8c8c" stroke-width="1.10"/>
+<line x1="293.19" y1="514.74" x2="299.19" y2="508.74" stroke="#8c8c8c" stroke-width="1.10"/>
+<text x="292.2" y="504.4" font-family="Helvetica, Arial, sans-serif" font-size="5.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 292.2 504.4)">0,22</text>
+<line x1="296.19" y1="511.74" x2="296.19" y2="682.41" stroke="#8c8c8c" stroke-width="0.70"/>
+<line x1="293.19" y1="514.74" x2="299.19" y2="508.74" stroke="#8c8c8c" stroke-width="1.10"/>
 <line x1="293.19" y1="685.41" x2="299.19" y2="679.41" stroke="#8c8c8c" stroke-width="1.10"/>
-<text x="292.2" y="593.1" font-family="Helvetica, Arial, sans-serif" font-size="5.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 292.2 593.1)">2,68</text>
+<text x="292.2" y="597.1" font-family="Helvetica, Arial, sans-serif" font-size="5.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 292.2 597.1)">2,56</text>
 <line x1="296.19" y1="682.41" x2="296.19" y2="689.08" stroke="#8c8c8c" stroke-width="0.70"/>
 <line x1="293.19" y1="685.41" x2="299.19" y2="679.41" stroke="#8c8c8c" stroke-width="1.10"/>
 <line x1="293.19" y1="692.08" x2="299.19" y2="686.08" stroke="#8c8c8c" stroke-width="1.10"/>
@@ -510,10 +510,10 @@
 <line x1="800.00" y1="240.00" x2="1352.00" y2="240.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="800.00" y="240.00" width="552.00" height="20.00" fill="#f5f5f5"/>
 <text x="808.0" y="253.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Banheiro</text>
-<text x="1057.0" y="253.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,43 × 2,68</text>
-<text x="1156.3" y="253.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,84</text>
-<text x="1255.7" y="253.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,80</text>
-<text x="1344.0" y="253.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">8,22</text>
+<text x="1057.0" y="253.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">1,43 × 2,56</text>
+<text x="1156.3" y="253.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,66</text>
+<text x="1255.7" y="253.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,64</text>
+<text x="1344.0" y="253.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">7,98</text>
 <line x1="800.00" y1="260.00" x2="1352.00" y2="260.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="808.0" y="273.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Closet</text>
 <text x="1057.0" y="273.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">2,04 × 2,08</text>
@@ -530,8 +530,8 @@
 <line x1="800.00" y1="300.00" x2="1352.00" y2="300.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="808.0" y="313.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Total</text>
 <text x="1057.0" y="313.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
-<text x="1156.3" y="313.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">59,73</text>
-<text x="1255.7" y="313.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,30</text>
+<text x="1156.3" y="313.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">59,55</text>
+<text x="1255.7" y="313.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">60,14</text>
 <text x="1344.0" y="313.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end"></text>
 <line x1="800.00" y1="320.00" x2="1352.00" y2="320.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="800.0" y="345.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.20">VÃOS E ALTURAS</text>
@@ -539,7 +539,7 @@
 <text x="808.0" y="367.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="0.60">Elemento</text>
 <text x="1344.0" y="367.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Medida</text>
 <text x="808.0" y="387.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Paredes do scan</text>
-<text x="1344.0" y="387.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,10 m em todas</text>
+<text x="1344.0" y="387.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">0,10 m; norte do banheiro 0,22 m (16/11)</text>
 <line x1="800.00" y1="394.00" x2="1352.00" y2="394.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="800.00" y="394.00" width="552.00" height="20.00" fill="#f5f5f5"/>
 <text x="808.0" y="407.2" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">Porta de entrada P01</text>
@@ -618,10 +618,10 @@
 <text x="968.7" y="604.4" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">Portas alinhadas (pedido de 16/11) — detalhe A.</text>
 <text x="968.7" y="616.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">A P02 termina a 0,23 m da parede sala/quarto; a P03 começa a 0,23 m da parede do banheiro.</text>
 <text x="968.7" y="633.6" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">Áreas.</text>
-<text x="968.7" y="645.2" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">Calculadas pelas faces desta folha (59,73 m²). O quadro da Prancha 01 usa o relatório do scan</text>
-<text x="968.7" y="656.8" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">(60,30 m²), que mede até o eixo e o rodapé: até 0,3 m² de diferença por ambiente.</text>
+<text x="968.7" y="645.2" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">Calculadas pelas faces desta folha (59,55 m²). O quadro da Prancha 01 usa o relatório do scan</text>
+<text x="968.7" y="656.8" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">(60,14 m²), que mede até o eixo e o rodapé: até 0,3 m² de diferença por ambiente.</text>
 <text x="968.7" y="674.4" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">Banheiro.</text>
-<text x="968.7" y="686.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">Aqui, 1,43 × 2,68 m pelas faces do scan. O Executivo E4 trabalha com 1,42 × 2,68 m em faces</text>
+<text x="968.7" y="686.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">Aqui, 1,43 × 2,56 m pelas faces do scan. O Executivo E5 trabalha com 1,42 × 2,56 m em faces</text>
 <text x="968.7" y="697.6" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">acabadas, já com revestimento. Para o banheiro, vale o executivo.</text>
 <text x="968.7" y="715.2" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">Cantos a 90°.</text>
 <text x="968.7" y="726.8" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">Todos os cantos são desenhados em esquadro. Conferir em obra pelas diagonais antes de</text>

@@ -10,12 +10,12 @@ CW = W - MARGIN - CX
 
 def _cotas_planta(f, P, interno=True):
     if interno:
-        f.cadeia_h(P, [0, LARG], -PAREDE, -34)
+        f.cadeia_h(P, [0, LARG], -PAREDE_N, -34)
         f.cadeia_v(P, [0, BOX_Y, COMP], -PAREDE, -34)
     # parede da porta, por fora
     xe = LARG + PAREDE
-    f.cadeia_v(P, [-PAREDE, PORTA[0], PORTA[1], COMP + PAREDE], xe, 205)
-    c = P(xe, -PAREDE)
+    f.cadeia_v(P, [-PAREDE_N, PORTA[0], PORTA[1], COMP + PAREDE], xe, 205)
+    c = P(xe, -PAREDE_N)
     f.t(c[0] + 205, c[1] - 10, 'por fora', 6.4, K70, False, 'middle')
     f.cota_v(c[0] + 232, c[1], P(xe, COMP + PAREDE)[1], '2880', 7.0)
 
@@ -37,12 +37,12 @@ def be01():
     f.legenda(OX - 22, 880, [('fill', K20, 'Área técnica do chuveiro (AT-B)'), ('fill', CIANO18, 'Box'),
                              ('line', CIANO, 'Vidro do box'), ('fill', K45, 'Ralos R1 e R2')])
     y = f.tab(CX, 150, CW, [('Item', 0.20, 'start'), ('Medida (mm)', 0.26, 'start'), ('De onde vem', 0.54, 'start')], [
-        ('Banheiro', '1420 × 2680', 'largura do modelo R95; comprimento = 2880 por fora, menos duas paredes de 100'),
+        ('Banheiro', '1420 × %d' % COMP, 'largura do modelo R95; comprimento = 2880 por fora, menos a parede norte de 220 (16/11) e a sul de 100'),
         ('Parede da porta', '880 + 800 + 1200', 'medida por fora, lado da sala, de norte a sul (14/11)'),
         ('P02 · porta', 'vão 800 × 2150', 'medida de obra; abre para fora, sentido anti-horário'),
-        ('Box', '1420 × 920', 'fundo de 920 mantido; vidro na linha a 1760 da parede do vaso'),
+        ('Box', '1420 × 920', 'fundo de 920 mantido; vidro na linha a %d da parede do vaso' % BOX_Y),
         ('AT-B · área técnica', '800 × 250', 'medida de obra; desenhada no canto sudoeste do box'),
-        ('B01 · bancada', '1600 × 400, saia 100', 'medida de obra; topo a +980, sobre o gabinete'),
+        ('B01 · bancada', '%d × 400, saia 100' % (TAMPO_U[1] - TAMPO_U[0]), 'tampo de parede a vidro; topo a +980, sobre o gabinete de 1600'),
         ('Gabinete', '1600 × 400 × 880 (altura)', 'medida de obra; reaproveitado'),
         ('Espelho', '1600 × 900', 'medida de obra; base proposta a +1340'),
         ('Vaso', 'eixo a 980 da P3', 'modelo R95; conferir ponto de esgoto'),
@@ -54,10 +54,10 @@ def be01():
         ('As paredes têm nome.', 'P5 é a do vaso (norte); P4, a da porta (leste); P1, o fundo do box (sul); P3, a da bancada (oeste). '
          'P2 e P6 são as duas faces da área técnica. A paginação de cada uma está nas folhas BE-13 a BE-17.'),
         ('O que ainda é premissa.', 'A área técnica foi desenhada encostada no fundo do box: sobram 120 mm de parede entre ela e o vidro. '
-         'A bancada foi desenhada encostada no vidro do box: sobram 160 mm até a parede do vaso. Se em obra for o contrário, '
+         'O gabinete de 1600 fica encostado no vidro do box; os 40 mm até a parede do vaso são fechados pelo tampo e pela saia, que correm de parede a vidro (1640). Se a área técnica estiver no outro canto do box, '
          'as medidas não mudam, só a posição: avisar antes de marcar a paginação da P3.'),
-        ('Comprimento por dentro.', 'Os 2680 saem de 2880 por fora menos duas paredes de 100 mm. Se as paredes tiverem 120 mm, '
-         'o banheiro tem 2640 por dentro. Medir de parede a parede depois de retirar o revestimento.'),
+        ('Comprimento por dentro.', 'Os %d saem de 2880 por fora menos a parede norte, de 220 mm (medida em obra, 16/11), e a sul, de 100. '
+         'Se a sul tiver 120 mm, o banheiro tem %d por dentro. Medir de parede a parede depois de retirar o revestimento.' % (COMP, COMP - 20)),
     ])
     return f
 
@@ -80,10 +80,10 @@ def be02():
     f.legenda(OX - 22, 880, [('fill', '#ffd9f2', 'Piso e base: retirar'), ('fill', DEMO, 'Revestimento de parede: retirar'),
                              ('fill', K20, 'Área técnica: não demolir')])
     y = f.tab(CX, 150, CW, [('ID', 0.08, 'start'), ('Serviço', 0.62, 'start'), ('Quantidade', 0.30, 'end')], [
-        ('D1', 'Retirar piso, argamassa e base do banheiro e do box, de forma controlada, até o contrapiso', '3,81 m²'),
+        ('D1', 'Retirar piso, argamassa e base do banheiro e do box, de forma controlada, até o contrapiso', '%s m²' % br(LARG * COMP / 1e6)),
         ('D2', 'Retirar o revestimento de todas as paredes, até o forro atual', '~19,5 m² (medir)'),
         ('D3', 'Retirar tampo e cuba antigos; desmontar e guardar o gabinete (1600 × 400 × 880)', '1 conjunto'),
-        ('D4', 'Retirar o forro existente; volta novo a +2500', '3,81 m²'),
+        ('D4', 'Retirar o forro existente; volta novo a +2500', '%s m²' % br(LARG * COMP / 1e6)),
         ('M1', 'Desmontar o vaso com caixa acoplada, tampar o esgoto e guardar', '1 peça'),
         ('M2', 'Desmontar vidro e ferragens do box, etiquetar e proteger', '1 conjunto'),
         ('P', 'Área técnica do chuveiro (AT-B): prumada do condomínio. Preservar e proteger', '800 × 250 mm'),
@@ -298,7 +298,7 @@ def be06():
         return (ex + u * se, ey - z * se)
     f.t(ex, 150, 'ELEVAÇÃO DA PAREDE DA BANCADA (P3)', 9.0, INK, True)
     f.t(ex, 162, 'de frente para a parede; box e área técnica à esquerda', 7.4, INK_SOFT)
-    a, b = E(-300, FORRO), E(1880, 0)
+    a, b = E(-300, FORRO), E(AT[1], 0)
     d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=BRANCO, stroke=K, sw=1.0)
     a, b = E(-300, FORRO), E(0, 0)
     d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=K12, stroke=K, sw=0.8)
@@ -306,12 +306,12 @@ def be06():
     c = E(120, 0)
     d.line(c[0], E(0, FORRO)[1], c[0], c[1], CIANO, 2.0)
     f.t(c[0] + 4, E(0, 2380)[1], 'vidro', 6.4, K70)
-    a, b = E(120, GABINETE_H), E(1720, 0)
+    a, b = E(GAB_U[0], GABINETE_H), E(GAB_U[1], 0)
     d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=K04, stroke=K45, sw=0.8)
     f.t((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, 'gabinete 1600 × 880', 7.0, K70, False, 'middle')
-    a, b = E(120, TOPO_BANC), E(1720, GABINETE_H)
+    a, b = E(TAMPO_U[0], TOPO_BANC), E(TAMPO_U[1], GABINETE_H)
     d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=BRANCO, stroke=K, sw=1.0)
-    a, b = E(120, ESP_BASE + ESP_H), E(1720, ESP_BASE)
+    a, b = E(GAB_U[0], ESP_BASE + ESP_H), E(GAB_U[1], ESP_BASE)
     d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=CIANO18, stroke=K45, sw=0.8)
     f.t((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, 'espelho 1600 × 900', 7.0, K70, False, 'middle')
     uq, ub, uf = AT[1] - Q_Y, AT[1] - CUBA_Y, AT[1] - F_Y
@@ -338,7 +338,7 @@ def be06():
         f.t(c[0], c[1] + 2.6, rot, 6.4, K, True, 'middle')
     f.cota_h(t0[0], t1[0], t1[1] + 22, '%d (ramal na horizontal)' % round(uq + 150), 6.6, DEMO)
     for z, rot in ((TOPO_BANC, '+980 tampo'), (Z_COMANDO, '+1245 comandos'), (ESP_BASE, '+1340 espelho'), (ESP_BASE + ESP_H, '+2240'), (FORRO, '+2500 forro')):
-        c = E(1880, z)
+        c = E(AT[1], z)
         d.line(c[0], c[1], c[0] + 10, c[1], K70, 0.6)
         f.t(c[0] + 13, c[1] + 2.5, rot, 6.4, K70)
     f.cota_h(E(ub, 0)[0], E(uq, 0)[0], E(0, Z_BICA)[1] - 22, '100', 6.2)
@@ -469,7 +469,7 @@ def be08():
 
 
 def be09():
-    f = Folha(CAD, 'BE-09', 'Bancada, gabinete e espelho', 'Gabinete existente de 880 mm de altura, bancada nova de 1600 × 400 com saia de 100 por cima, topo a +980, e espelho de 1600 × 900.', 'elevação e corte 1:12,5')
+    f = Folha(CAD, 'BE-09', 'Bancada, gabinete e espelho', 'Gabinete existente de 1600 × 880, encostado no vidro; tampo de 1640 × 400 de parede a vidro com saia de 100, topo a +980; espelho de 1600 × 900.', 'elevação e corte 1:12,5')
     d = f.d
     Ne = 12.5
     se = MM / Ne
@@ -478,21 +478,21 @@ def be09():
     def E(u, z):
         return (ex + u * se, ey - z * se)
     f.t(ex, 150, 'ELEVAÇÃO  ·  de frente para a parede da bancada', 9.0, INK, True)
-    a, b = E(0, 2500), E(1880, 0)
+    a, b = E(0, 2500), E(AT[1], 0)
     d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=BRANCO, stroke=K, sw=1.0)
     c = E(120, 0)
     d.line(c[0], a[1], c[0], c[1], CIANO, 2.2)
     f.t(c[0] - 4, E(0, 2420)[1], 'vidro do box', 6.4, K70, False, 'end')
-    a, b = E(120, GABINETE_H), E(1720, 0)
+    a, b = E(GAB_U[0], GABINETE_H), E(GAB_U[1], 0)
     d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=K04, stroke=K, sw=0.9)
     for i in range(1, 4):
         xx = a[0] + i * (b[0] - a[0]) / 4
         d.line(xx, a[1], xx, b[1], K45, 0.6)
     f.t((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, 'GABINETE EXISTENTE  1600 × 880 × 400', 7.6, K70, True, 'middle')
-    a, b = E(120, TOPO_BANC), E(1720, GABINETE_H)
+    a, b = E(TAMPO_U[0], TOPO_BANC), E(TAMPO_U[1], GABINETE_H)
     d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=BRANCO, stroke=K, sw=1.4)
     f.t((a[0] + b[0]) / 2, (a[1] + b[1]) / 2 + 3, 'B01  ·  revestida em Bleu Nuit  ·  saia de 100', 7.4, K, True, 'middle')
-    a, b = E(120, ESP_BASE + ESP_H), E(1720, ESP_BASE)
+    a, b = E(GAB_U[0], ESP_BASE + ESP_H), E(GAB_U[1], ESP_BASE)
     d.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=CIANO18, stroke=K, sw=0.9)
     f.t((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, 'ESPELHO  1600 × 900', 8.0, K70, True, 'middle')
     ub = AT[1] - CUBA_Y
@@ -504,9 +504,10 @@ def be09():
         d.circle(c[0], c[1], 7, fill=BG, stroke=K, sw=1.3)
         f.t(c[0], c[1] + 2.6, rot, 6.4, K, True, 'middle')
     f.cota_h(E(0, 0)[0], E(120, 0)[0], ey + 24, '120', 6.6)
-    f.cota_h(E(120, 0)[0], E(1720, 0)[0], ey + 24, '1600', 6.6)
-    f.cota_h(E(1720, 0)[0], E(1880, 0)[0], ey + 24, '160', 6.6)
-    xr = E(1880, 0)[0] + 26
+    f.cota_h(E(GAB_U[0], 0)[0], E(GAB_U[1], 0)[0], ey + 24, '1600 gabinete', 6.6)
+    f.cota_h(E(GAB_U[1], 0)[0], E(AT[1], 0)[0], ey + 24, '%d' % FRESTA, 6.6)
+    f.cota_h(E(TAMPO_U[0], 0)[0], E(TAMPO_U[1], 0)[0], ey + 46, '%d tampo e saia, de parede a vidro' % (TAMPO_U[1] - TAMPO_U[0]), 6.6)
+    xr = E(AT[1], 0)[0] + 26
     for z0, z1, rot in ((0, GABINETE_H, '880'), (GABINETE_H, TOPO_BANC, '100'), (TOPO_BANC, ESP_BASE, '360'), (ESP_BASE, ESP_BASE + ESP_H, '900'), (ESP_BASE + ESP_H, FORRO, '260')):
         f.cota_v(xr, E(0, z1)[1], E(0, z0)[1], rot, 6.6)
     f.cota_v(xr + 30, E(0, FORRO)[1], E(0, 0)[1], '2500', 7.0)
@@ -537,24 +538,25 @@ def be09():
     cx = 1010.0
     cw = W - MARGIN - cx
     y = f.tab(cx, 150, cw, [('Item', 0.40, 'start'), ('Medida', 0.60, 'end')], [
-        ('Tampo B01', '1600 × 400 mm'),
-        ('Saia frontal', '100 mm (de +880 a +980)'),
+        ('Tampo B01', '%d × 400 mm, de parede a vidro' % (TAMPO_U[1] - TAMPO_U[0])),
+        ('Saia frontal', '100 mm (de +880 a +980), fecha a fresta de %d' % FRESTA),
         ('Topo do tampo', '+980'),
         ('Gabinete', '1600 × 400 × 880 de altura'),
         ('Espelho', '1600 × 900; base a +1340'),
         ('Faixa livre', '360 mm entre tampo e espelho'),
         ('Comandos / bica', '+1245 / +1250'),
-        ('Acabamento', 'Bleu Nuit 155 × 155 no tampo, na saia e na lateral (BE-19)'),
+        ('Acabamento', 'Bleu Nuit 155 × 155 no tampo e na saia (BE-19)'),
         ('Base', 'tampo existente, se firme; senão placa cimentícia'),
     ], titulo='BANCADA B01')
     f.par(cx, y + 24, cw, [
         ('Altura a conferir no uso.', 'Com o tampo a +980 e uma cuba de apoio de 160 mm, a borda da cuba fica a +1140: é alto. '
          'Vale simular com as peças antes de fabricar; uma cuba de semiencaixe ou de embutir baixa a borda.'),
-        ('Bancada revestida (cliente, 15/11).', 'O balcão atual é coberto com o mesmo azulejo das paredes: tampo, saia de 100 mm e lateral norte, '
-         'com perfil metálico na aresta e rejunte epóxi no tampo. Paginação na BE-19.'),
+        ('Bancada revestida (cliente, 15/11 e 16/11).', 'O balcão atual é coberto com o mesmo azulejo das paredes: tampo e saia de 100 mm, '
+         'com perfil metálico na aresta e rejunte epóxi no tampo. Com a parede norte de 220 mm sobram só %d mm entre o gabinete e a parede do vaso: '
+         'o tampo e a saia correm de parede a vidro e fecham essa fresta. Não há mais lateral à vista. Paginação na BE-19.' % FRESTA),
         ('Furos.', 'Cuba, válvula e metais só com o gabarito das peças reais. A bancada tem 400 mm de fundo: conferir se a cuba cabe com a bica na parede.'),
         ('Espelho.', 'A base a +1340 mantém 90 mm acima do eixo da bica, como na R95. Se o espelho existente for reaproveitado, conferir a fixação.'),
-        ('Parede.', 'Sem revestimento atrás do gabinete e do espelho: só na faixa de 360 mm e acima do espelho. Ver a paginação na BE-17.'),
+        ('Parede.', 'Sem revestimento atrás do gabinete e do espelho: só na faixa de 360 mm, acima do espelho e nos %d mm entre o espelho e a parede do vaso. Ver a paginação na BE-17.' % FRESTA),
     ], size=8.0, lh=11.4)
     return f
 
@@ -610,10 +612,10 @@ def be10():
 
 
 def be11():
-    f = Folha(CAD, 'BE-11', 'Piso: porcelanato Confete 100 × 100', 'Malha do modelo R95 recortada nas medidas novas. Junta de 2 mm entre placas e 3 mm de folga no perímetro.', '1:15')
+    f = Folha(CAD, 'BE-11', 'Piso: porcelanato Confete 100 × 100', 'Malha refeita para os 2560 da E5: placas de 1000 do lado da porta, faixa de 412 sob a bancada. Junta de 2 mm, folga de 3 mm.', '1:15')
     P, s = f.planta(OX, OY, N, objetos=False, box_cor=None, piso=BRANCO, rotulos=False)
     d = f.d
-    gx, gy = 683.0, [211.0, 1211.0, 2211.0]
+    gx, gy = 416.0, [633.0]                 # E5: placas inteiras do lado da porta e na frente do box
     pecas = []
     zonas = [('S', 0, 0, LARG, BOX_Y - 3), ('B', 0, BOX_Y + 3, LARG, COMP), ('V', LARG, PORTA[0], LARG + PAREDE, PORTA[1])]
     for z, x0, y0, x1, y1 in zonas:
@@ -651,7 +653,8 @@ def be11():
     f.cadeia_h(P, [0, gx, LARG], -PAREDE, -30)
     f.cadeia_v(P, [0] + gy + [COMP], -PAREDE, -30)
     f.legenda(OX - 22, 880, [('fill', BRANCO, 'Piso seco (S)'), ('fill', CIANO18, 'Box (B): subdividir nas linhas de caimento'), ('line', DEMO, 'Perfil de metal')])
-    area = sum((c_ - a) * (e_ - b) for (_, a, b, c_, e_, _) in pecas) / 1e6
+    area = (sum((c_ - a) * (e_ - b) for (_, a, b, c_, e_, _) in pecas)
+            - sum(max(0, min(c_, AT[2]) - max(a, AT[0])) * max(0, min(e_, AT[3]) - max(b, AT[1])) for (_, a, b, c_, e_, _) in pecas)) / 1e6
     y = f.tab(CX, 150, CW, [('Peça', 0.12, 'start'), ('Largura', 0.18, 'end'), ('Comprimento', 0.22, 'end'), ('Zona', 0.48, 'end')],
               [(pid, '%d' % round(c_ - a), '%d' % round(e_ - b), {'S': 'piso seco', 'B': 'box: recortar no caimento', 'V': 'vão da porta, até o perfil'}[z])
                for (pid, a, b, c_, e_, z) in pecas], titulo='PEÇAS — MEDIDAS DO ENVELOPE (mm)', alt=15.5)

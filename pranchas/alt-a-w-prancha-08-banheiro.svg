@@ -4,11 +4,11 @@
 <text x="48.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="24.3" fill="#000000" font-weight="bold" text-anchor="start">Banheiro: planta detalhada</text>
 <text x="48.0" y="99.0" font-family="Helvetica, Arial, sans-serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">O trecho mais denso do pavimento, em escala grande. Reforma completa: desce até a laje, ganha forro novo e volta na cota única da casa. Cotas em faces internas, com o revestimento retirado.</text>
 <text x="1352.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">ALT. A  ·  REV. W</text>
-<text x="1352.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#000000" font-weight="bold" text-anchor="end">1,43 × 2,68 m por dentro  ·  2,88 m por fora</text>
+<text x="1352.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#000000" font-weight="bold" text-anchor="end">1,43 × 2,56 m por dentro  ·  2,88 m por fora</text>
 <text x="1352.0" y="99.0" font-family="Helvetica, Arial, sans-serif" font-size="8.6" fill="#4d4d4d" font-weight="normal" text-anchor="end">reforma completa — forro novo a 2,50 m</text>
 <line x1="48.00" y1="116.00" x2="1352.00" y2="116.00" stroke="#cccccc" stroke-width="1.00"/>
 <text x="190.0" y="148.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#000000" font-weight="bold" text-anchor="start">PLANTA  ·  faces internas</text>
-<rect x="201.81" y="233.81" width="168.94" height="316.22" fill="#d6ffff"/>
+<rect x="201.81" y="247.96" width="168.94" height="302.07" fill="#d6ffff"/>
 <rect x="201.81" y="440.27" width="168.94" height="109.76" fill="#d6ffff" stroke="#00ffff" stroke-width="0.80"/>
 <rect x="201.81" y="440.27" width="168.94" height="7.24" fill="#00ffff" stroke="#000000" stroke-width="1.20"/>
 <rect x="206.98" y="450.46" width="12.92" height="94.40" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
@@ -26,11 +26,11 @@
 <path d="M248.2 465.0 L243.2 468.2 L248.2 471.4" fill="none" stroke="#00ffff" stroke-width="1.10"/>
 <line x1="350.07" y1="527.62" x2="243.16" y2="527.62" stroke="#00ffff" stroke-width="0.90" opacity="0.90"/>
 <path d="M248.2 524.4 L243.2 527.6 L248.2 530.8" fill="none" stroke="#00ffff" stroke-width="1.10"/>
-<rect x="201.81" y="251.47" width="47.20" height="188.80" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
-<line x1="201.81" y1="251.47" x2="201.81" y2="440.27" stroke="#000000" stroke-width="3.00"/>
+<rect x="201.81" y="247.96" width="47.20" height="192.31" fill="#ffffff" stroke="#000000" stroke-width="1.20"/>
+<line x1="201.81" y1="247.96" x2="201.81" y2="440.27" stroke="#000000" stroke-width="3.00"/>
 <rect x="190.00" y="222.00" width="11.81" height="339.84" fill="#000000" stroke="#000000" stroke-width="0.40"/>
 <rect x="370.75" y="222.00" width="11.81" height="339.84" fill="#000000" stroke="#000000" stroke-width="0.40"/>
-<rect x="190.00" y="222.00" width="192.56" height="11.81" fill="#000000" stroke="#000000" stroke-width="0.40"/>
+<rect x="190.00" y="222.00" width="192.56" height="25.96" fill="#000000" stroke="#000000" stroke-width="0.40"/>
 <rect x="190.00" y="550.03" width="192.56" height="11.81" fill="#000000" stroke="#000000" stroke-width="0.40"/>
 <rect x="190.00" y="550.03" width="192.56" height="11.81" fill="#000000" stroke="#ff00ff" stroke-width="2.00"/>
 <rect x="187.00" y="222.00" width="3.00" height="339.84" fill="#ffff00" stroke="#000000" stroke-width="0.50"/>
@@ -38,12 +38,12 @@
 <path d="M477.0 325.8 A 94.4 94.4 0 0 1 382.6 420.2" fill="none" stroke="#8c8c8c" stroke-width="0.80"/>
 <line x1="382.56" y1="325.84" x2="476.96" y2="325.84" stroke="#000000" stroke-width="2.60"/>
 <text x="286.3" y="398.4" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">BANHEIRO</text>
-<text x="286.3" y="409.4" font-family="Helvetica, Arial, sans-serif" font-size="6.7" fill="#4d4d4d" font-weight="normal" text-anchor="middle">3,80 m²</text>
+<text x="286.3" y="409.4" font-family="Helvetica, Arial, sans-serif" font-size="6.7" fill="#4d4d4d" font-weight="normal" text-anchor="middle">3,64 m²</text>
 <text x="286.3" y="496.6" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.90">BOX</text>
 <text x="286.3" y="435.3" font-family="Helvetica, Arial, sans-serif" font-size="5.9" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.30">K01  vidro do box (A ou B)</text>
 <text x="232.8" y="497.7" font-family="Helvetica, Arial, sans-serif" font-size="5.9" fill="#000000" font-weight="bold" text-anchor="middle" letter-spacing="0.30" transform="rotate(-90.0 232.8 497.7)">C3  ralo linear</text>
 <text x="286.3" y="576.8" font-family="Helvetica, Arial, sans-serif" font-size="6.1" fill="#ff00ff" font-weight="bold" text-anchor="middle" letter-spacing="0.30">R02  parede nova no lugar do vidro chão-teto</text>
-<text x="247.4" y="245.5" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.30">BANCADA  ·  D04 revestimento sai</text>
+<text x="247.4" y="242.0" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.30">BANCADA  ·  D04 revestimento sai</text>
 <text x="390.6" y="387.0" font-family="Helvetica, Arial, sans-serif" font-size="6.1" fill="#000000" font-weight="bold" text-anchor="start" letter-spacing="0.30">P02</text>
 <line x1="190.00" y1="219.00" x2="190.00" y2="193.00" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
 <line x1="201.81" y1="219.00" x2="201.81" y2="193.00" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
@@ -66,15 +66,15 @@
 <line x1="379.56" y1="175.00" x2="385.56" y2="169.00" stroke="#8c8c8c" stroke-width="1.10"/>
 <text x="286.3" y="168.0" font-family="Helvetica, Arial, sans-serif" font-size="6.5" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1,63  externo</text>
 <line x1="187.00" y1="222.00" x2="157.00" y2="222.00" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
-<line x1="187.00" y1="233.81" x2="157.00" y2="233.81" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
-<line x1="160.00" y1="222.00" x2="160.00" y2="233.81" stroke="#8c8c8c" stroke-width="0.70"/>
+<line x1="187.00" y1="247.96" x2="157.00" y2="247.96" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
+<line x1="160.00" y1="222.00" x2="160.00" y2="247.96" stroke="#8c8c8c" stroke-width="0.70"/>
 <line x1="157.00" y1="225.00" x2="163.00" y2="219.00" stroke="#8c8c8c" stroke-width="1.10"/>
-<line x1="157.00" y1="236.81" x2="163.00" y2="230.81" stroke="#8c8c8c" stroke-width="1.10"/>
-<text x="156.0" y="227.9" font-family="Helvetica, Arial, sans-serif" font-size="6.3" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 156.0 227.9)">0,10</text>
-<line x1="160.00" y1="233.81" x2="160.00" y2="440.27" stroke="#8c8c8c" stroke-width="0.70"/>
-<line x1="157.00" y1="236.81" x2="163.00" y2="230.81" stroke="#8c8c8c" stroke-width="1.10"/>
+<line x1="157.00" y1="250.96" x2="163.00" y2="244.96" stroke="#8c8c8c" stroke-width="1.10"/>
+<text x="156.0" y="235.0" font-family="Helvetica, Arial, sans-serif" font-size="6.3" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 156.0 235.0)">0,22</text>
+<line x1="160.00" y1="247.96" x2="160.00" y2="440.27" stroke="#8c8c8c" stroke-width="0.70"/>
+<line x1="157.00" y1="250.96" x2="163.00" y2="244.96" stroke="#8c8c8c" stroke-width="1.10"/>
 <line x1="157.00" y1="443.27" x2="163.00" y2="437.27" stroke="#8c8c8c" stroke-width="1.10"/>
-<text x="156.0" y="337.0" font-family="Helvetica, Arial, sans-serif" font-size="6.3" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 156.0 337.0)">1,75</text>
+<text x="156.0" y="344.1" font-family="Helvetica, Arial, sans-serif" font-size="6.3" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 156.0 344.1)">1,63</text>
 <line x1="160.00" y1="440.27" x2="160.00" y2="550.03" stroke="#8c8c8c" stroke-width="0.70"/>
 <line x1="157.00" y1="443.27" x2="163.00" y2="437.27" stroke="#8c8c8c" stroke-width="1.10"/>
 <line x1="157.00" y1="553.03" x2="163.00" y2="547.03" stroke="#8c8c8c" stroke-width="1.10"/>
@@ -95,17 +95,17 @@
 <line x1="103.00" y1="328.84" x2="109.00" y2="322.84" stroke="#8c8c8c" stroke-width="1.10"/>
 <line x1="103.00" y1="423.24" x2="109.00" y2="417.24" stroke="#8c8c8c" stroke-width="1.10"/>
 <text x="102.0" y="373.0" font-family="Helvetica, Arial, sans-serif" font-size="6.5" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 102.0 373.0)">0,80  vão</text>
-<line x1="187.00" y1="251.47" x2="77.00" y2="251.47" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
+<line x1="187.00" y1="247.96" x2="77.00" y2="247.96" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
 <line x1="187.00" y1="440.27" x2="77.00" y2="440.27" stroke="#8c8c8c" stroke-width="0.50" opacity="0.75"/>
-<line x1="80.00" y1="251.47" x2="80.00" y2="440.27" stroke="#8c8c8c" stroke-width="0.70"/>
-<line x1="77.00" y1="254.47" x2="83.00" y2="248.47" stroke="#8c8c8c" stroke-width="1.10"/>
+<line x1="80.00" y1="247.96" x2="80.00" y2="440.27" stroke="#8c8c8c" stroke-width="0.70"/>
+<line x1="77.00" y1="250.96" x2="83.00" y2="244.96" stroke="#8c8c8c" stroke-width="1.10"/>
 <line x1="77.00" y1="443.27" x2="83.00" y2="437.27" stroke="#8c8c8c" stroke-width="1.10"/>
-<text x="76.0" y="345.9" font-family="Helvetica, Arial, sans-serif" font-size="6.5" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 76.0 345.9)">1,60  bancada</text>
+<text x="76.0" y="344.1" font-family="Helvetica, Arial, sans-serif" font-size="6.5" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 76.0 344.1)">1,64  tampo</text>
 <text x="492.0" y="148.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#000000" font-weight="bold" text-anchor="start">TETO REFLETIDO  ·  forro</text>
-<rect x="503.81" y="233.81" width="168.94" height="316.22" fill="#f5f5f5" stroke="#8c8c8c" stroke-width="0.70"/>
+<rect x="503.81" y="247.96" width="168.94" height="302.07" fill="#f5f5f5" stroke="#8c8c8c" stroke-width="0.70"/>
 <rect x="492.00" y="222.00" width="11.81" height="339.84" fill="#000000" stroke="#000000" stroke-width="0.40"/>
 <rect x="672.75" y="222.00" width="11.81" height="339.84" fill="#000000" stroke="#000000" stroke-width="0.40"/>
-<rect x="492.00" y="222.00" width="192.56" height="11.81" fill="#000000" stroke="#000000" stroke-width="0.40"/>
+<rect x="492.00" y="222.00" width="192.56" height="25.96" fill="#000000" stroke="#000000" stroke-width="0.40"/>
 <rect x="492.00" y="550.03" width="192.56" height="11.81" fill="#000000" stroke="#000000" stroke-width="0.40"/>
 <circle cx="546.34" cy="279.09" r="6.00" fill="#ffffff" stroke="#000000" stroke-width="1.30"/>
 <circle cx="546.34" cy="279.09" r="2.00" fill="#000000"/>
@@ -198,7 +198,7 @@
 <text x="1344.0" y="171.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Quantidade</text>
 <text x="730.0" y="189.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">D03</text>
 <text x="799.3" y="189.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Retirar piso, base e rebaixo até a laje</text>
-<text x="1344.0" y="189.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,80 m²</text>
+<text x="1344.0" y="189.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,64 m²</text>
 <line x1="722.00" y1="196.00" x2="1352.00" y2="196.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="196.00" width="630.00" height="18.00" fill="#f5f5f5"/>
 <text x="730.0" y="207.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">D02</text>
@@ -216,7 +216,7 @@
 <line x1="722.00" y1="250.00" x2="1352.00" y2="250.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="261.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">D07</text>
 <text x="799.3" y="261.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Forro do banheiro, com embutidos e exaustor existentes</text>
-<text x="1344.0" y="261.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,80 m²</text>
+<text x="1344.0" y="261.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,64 m²</text>
 <line x1="722.00" y1="268.00" x2="1352.00" y2="268.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="268.00" width="630.00" height="18.00" fill="#f5f5f5"/>
 <text x="730.0" y="279.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">K01</text>
@@ -235,7 +235,7 @@
 <rect x="722.00" y="356.00" width="630.00" height="18.00" fill="#f5f5f5"/>
 <text x="730.0" y="367.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">R03</text>
 <text x="799.3" y="367.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Forro novo resistente à umidade, a 2,50 m</text>
-<text x="1344.0" y="367.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,80 m²</text>
+<text x="1344.0" y="367.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,64 m²</text>
 <line x1="722.00" y1="374.00" x2="1352.00" y2="374.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="385.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">P02</text>
 <text x="799.3" y="385.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Porta 0,80 × 2,15 m, de abrir para fora — anti-horário, dobradiça norte</text>
@@ -253,12 +253,12 @@
 <text x="1344.0" y="455.5" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="end" letter-spacing="0.60">Quantidade</text>
 <text x="730.0" y="473.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">C1</text>
 <text x="799.3" y="473.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Impermeabilização de área molhada, com rodapé virado</text>
-<text x="1344.0" y="473.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,80 m²</text>
+<text x="1344.0" y="473.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,64 m²</text>
 <line x1="722.00" y1="480.00" x2="1352.00" y2="480.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="480.00" width="630.00" height="18.00" fill="#f5f5f5"/>
 <text x="730.0" y="491.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">C2</text>
 <text x="799.3" y="491.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Regularização com caimento para o ralo linear</text>
-<text x="1344.0" y="491.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,80 m²</text>
+<text x="1344.0" y="491.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,64 m²</text>
 <line x1="722.00" y1="498.00" x2="1352.00" y2="498.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="509.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">C3</text>
 <text x="799.3" y="509.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Ralo linear na lateral oeste do box, ao longo da parede</text>
@@ -267,7 +267,7 @@
 <rect x="722.00" y="516.00" width="630.00" height="18.00" fill="#f5f5f5"/>
 <text x="730.0" y="527.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">C4</text>
 <text x="799.3" y="527.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Piso acabado, na mesma cota da casa</text>
-<text x="1344.0" y="527.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,80 m²</text>
+<text x="1344.0" y="527.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">3,64 m²</text>
 <line x1="722.00" y1="534.00" x2="1352.00" y2="534.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="545.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">C5</text>
 <text x="799.3" y="545.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Soleira: junta de material no vão da porta, sem degrau</text>
@@ -284,7 +284,7 @@
 <line x1="722.00" y1="622.00" x2="1352.00" y2="622.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <rect x="722.00" y="622.00" width="630.00" height="18.00" fill="#f5f5f5"/>
 <text x="730.0" y="633.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">EX01</text>
-<text x="811.9" y="633.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Exaustor no forro — 95,0 m³/h de referência</text>
+<text x="811.9" y="633.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="start">Exaustor no forro — 91,0 m³/h de referência</text>
 <text x="1344.0" y="633.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#4d4d4d" font-weight="normal" text-anchor="end">1 ponto</text>
 <line x1="722.00" y1="640.00" x2="1352.00" y2="640.00" stroke="#cccccc" stroke-width="0.60" opacity="0.80"/>
 <text x="730.0" y="651.9" font-family="Helvetica, Arial, sans-serif" font-size="7.7" fill="#000000" font-weight="bold" text-anchor="start">T17</text>
@@ -322,7 +322,7 @@
 <text x="722.0" y="892.4" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#000000" font-weight="bold" text-anchor="start">P02 abre para fora, anti-horário (REV. S): dobradiça no batente norte.</text>
 <text x="722.0" y="904.3" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Por dentro empurra com a direita; por fora puxa com a esquerda. S04 fica do lado da dobradiça.</text>
 <line x1="48.00" y1="922.00" x2="1352.00" y2="922.00" stroke="#cccccc" stroke-width="1.00"/>
-<text x="48.0" y="940.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Geometria interna lida do scan de 02.09.2026 nas faces de revestimento retirado: 1,432 × 2,638 m, 3,78 m². Conferir em campo após a D03, quando a laje estiver exposta.</text>
+<text x="48.0" y="940.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Geometria interna lida do scan de 02.09.2026 nas faces de revestimento retirado: 1,432 × 2,638 m; com a parede norte de 0,22 m (16/11), 1,43 × 2,56 m. Conferir em campo após a D03, quando a laje estiver exposta.</text>
 <text x="48.0" y="953.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#4d4d4d" font-weight="normal" text-anchor="start">Louças e metais não estão levantados — o scan reconheceu bancada e box. Espessuras do corte são esquemáticas: sistema de impermeabilização e desnível de laje se definem em obra, com o piso escolhido.</text>
 <text x="48.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.1" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">ESTUDO PRELIMINAR — NÃO LIBERADO PARA EXECUÇÃO   |   CADERNO ALTERNATIVO A   |   16/11/2026</text>
 <text x="1352.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.1" fill="#4d4d4d" font-weight="normal" text-anchor="end">Alt A · Prancha 08 / 14   ·   ALT. A  ·  REV. W</text>

@@ -271,7 +271,7 @@ class Folha(wc.Folha):
         # paredes
         for (x0, y0, x1, y1) in [(-100, -49, 0, COMP + 100), (-100, -49, DEG_X, DEG_Y),
                                  (DEG_X - 100, -420, DEG_X, DEG_Y), (-100, COMP, LARG + 520, COMP + 100),
-                                 (LARG, WC_Y0, LARG + 100, PASSAGEM[0]), (LARG, WC_Y0, LARG + 520, WC_Y0 + 100),
+                                 (LARG, WC_Y0, LARG + 100, PASSAGEM[0]), (LARG, WC_Y0, LARG + 520, WC_Y0 + 220),
                                  (LARG, PASSAGEM[1], LARG + 100, COMP)]:
             R(x0, y0, x1, y1, fill=K)
         R(J06[0], COMP + 30, J06[1], COMP + 70, fill=BRANCO, stroke=K45, sw=0.6)
