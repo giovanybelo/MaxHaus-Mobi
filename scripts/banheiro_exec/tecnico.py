@@ -256,7 +256,7 @@ def bt06():
     ], size=8.6, lh=12.2)
     f.tab(X2, 150, W2, [('Item', 0.34, 'start'), ('Quantidade', 0.22, 'start'), ('Base', 0.44, 'start')], [
         ('Impermeabilização', '~12 m²', 'piso, box até o forro, rodapé, nicho; consumo pelo sistema'),
-        ('Rejunte acrílico Quartzolit, paredes', '~5 kg', 'junta de 2 mm; cor próxima do Bleu Nuit'),
+        ('Rejunte acrílico Quartzolit, paredes', '8 kg azul + 1 kg claro', 'por cor na BT-06B'),
         ('Espaçador de 5 mm', '1 pacote', 'junta entre as duas Nuage de cada par'),
         ('Rejunte acrílico Quartzolit, piso', '1 kg', 'cor próxima do Confete'),
         ('Perfil de metal da porta', '1 peça de 0,80 m', '3 mm à vista'),
@@ -272,6 +272,91 @@ def bt06():
         ('Porta P02', 'folha 794 × 2135 × 40', 'com visor Ø400'),
         ('Luminárias FAS', 'D1 + D2', 'já compradas (pedido 22804)'),
     ], titulo='COMPLEMENTOS', alt=16.0)
+    return f
+
+
+def _rej(area, a, b, e=9.0, j=2.0, dens=1.7):
+    """kg de rejunte: (A+B)/(A·B) × espessura × junta × densidade, medidas em mm."""
+    return area * (a + b) / (a * b) * e * j * dens
+
+
+def bt06b():
+    f = Folha(CAD, 'BT-06B', 'Lista de compra: m², argamassa, rejunte, perfis e metais',
+              'Tudo com 10% de perda. Quantidades sobre as medidas desta emissão: refazer depois da medição de obra.')
+    pares = sum(len(p.acentos) for p in PAREDES)
+    a_nuage = pares * 2 * 0.075 * 0.155
+    a_par = sum(p.area for p in PAREDES) - pares * 0.155 * 0.155 + a_nuage
+    a_bleu_par = a_par - a_nuage
+    a_nicho = (1170 * 400 + 2 * 1170 * 118 + 2 * 118 * 400) / 1e6
+    _n, _i, a_banc = exec_b.bancada_resumo()
+    a_tampo = 1.60 * 0.40
+    a_bleu = a_bleu_par + a_nicho + a_banc
+    _, _pp, a_piso = exec_a.be11()
+    k = 1.10
+    n_bleu = sum(p.n_bleu for p in PAREDES) + 46 + _n
+    n_nuage = sum(p.n_nuage for p in PAREDES)
+    # --- revestimentos
+    y = f.tab(X1, 150, W1, [('Revestimento', 0.36, 'start'), ('Líquido m²', 0.16, 'end'), ('+10% m²', 0.16, 'end'), ('Peças +10%', 0.32, 'end')], [
+        ('Gouache Bleu Nuit 155 × 155', br(a_bleu), br(a_bleu * k), '%d peças · %d caixas' % (math.ceil(n_bleu * k), math.ceil(math.ceil(n_bleu * k) / 36.0))),
+        ('· paredes P1 a P6', br(a_bleu_par), br(a_bleu_par * k), ''),
+        ('· nicho (fundo, base, teto, pontas)', br(a_nicho), br(a_nicho * k), ''),
+        ('· bancada B01 (tampo, saia, lateral)', br(a_banc), br(a_banc * k), ''),
+        ('Gouache Nuage mate 75 × 155', br(a_nuage), br(a_nuage * k), '%d peças (%d pares)' % (math.ceil(n_nuage * k), pares)),
+        ('Porcelanato Confete 100 × 100 (piso)', br(a_piso), br(a_piso * k), '6 placas (5 + 1 reserva)'),
+    ], titulo='REVESTIMENTOS — m² COM 10%', alt=16.0)
+    # --- argamassa
+    arg_par = (a_bleu + a_nuage) * k * 5.0
+    arg_piso = a_piso * k * 8.0
+    y = f.tab(X1, y + 30, W1, [('Argamassa colante', 0.40, 'start'), ('Conta', 0.36, 'start'), ('Compra', 0.24, 'end')], [
+        ('AC-III, paredes, nicho e bancada', '%s m² × 5 kg/m² = %d kg' % (br((a_bleu + a_nuage) * k), round(arg_par)), '%d sacos de 20 kg' % math.ceil(arg_par / 20.0)),
+        ('AC-III, piso (dupla colagem)', '%s m² × 8 kg/m² = %d kg' % (br(a_piso * k), round(arg_piso)), '%d sacos de 20 kg' % math.ceil(arg_piso / 20.0)),
+        ('Total', '%d kg' % round(arg_par + arg_piso), '%d sacos (%d kg)' % (math.ceil(arg_par / 20.0) + math.ceil(arg_piso / 20.0), 20 * (math.ceil(arg_par / 20.0) + math.ceil(arg_piso / 20.0)))),
+    ], titulo='ARGAMASSA', alt=16.0)
+    y = f.par(X1, y + 22, W1, [
+        ('Consumo.', 'AC-III para porcelanato. Paredes com desempenadeira de 6 mm, cerca de 5 kg/m²; dentro do box, passar também no verso da peça (dupla colagem), por isso a margem. '
+         'Piso em placa 100 × 100: dupla colagem obrigatória, cerca de 8 kg/m². Conferir o consumo na embalagem da marca escolhida.'),
+    ], size=8.2, lh=11.6)
+    # --- metais
+    f.tab(X1, y + 18, W1, [('Metal / acessório', 0.38, 'start'), ('Qtde', 0.10, 'end'), ('Observação', 0.52, 'start')], [
+        ('Misturador da pia, de parede', '1', 'novo, com água quente; comandos a +1245, bica a +1250'),
+        ('Chuveiro + registro / misturador do box', '1 conj.', 'manter ou trocar: definir; água quente pela coluna no AT-B'),
+        ('Registro de água quente (ramal da pia)', '1', 'novo, acesso pela tampa de inspeção na P2'),
+        ('Válvula de escoamento da cuba + sifão', '1', 'conforme a cuba de apoio escolhida'),
+        ('Engates flexíveis', '3', '2 do misturador + 1 do vaso'),
+        ('Anel de vedação do vaso', '1', 'novo, na reinstalação'),
+        ('Ralo linear 720 × 90', '1', 'com corpo e flange; no box'),
+        ('Grelha oculta 100 × 100 (R2)', '1', 'junto ao vaso; prolongador a medir'),
+        ('Toalheiro elétrico Aiello Unique Solo', '1', 'ponto novo T20, atrás do vaso'),
+    ], titulo='METAIS', alt=15.5)
+    # --- rejunte por cor
+    r_bleu = _rej(a_bleu_par + a_nicho + a_banc - a_tampo, 155, 155) * k
+    r_nuage = _rej(a_nuage, 75, 155) * k
+    r_par5 = pares * 0.155 * 1000 * 3 * 9 / 1e6 * 1.7 * k      # 3 mm a mais de junta em cada par
+    r_tampo = _rej(a_tampo, 155, 155, dens=1.6) * k
+    r_piso = _rej(a_piso, 1000, 1000) * k
+    az = r_bleu + r_nuage
+    y2 = f.tab(X2, 150, W2, [('Rejunte · cor', 0.40, 'start'), ('Onde', 0.36, 'start'), ('kg c/ 10%', 0.24, 'end')], [
+        ('Acrílico Quartzolit — azul-marinho (próximo do Bleu Nuit)', 'todas as juntas de 2 mm das paredes, do nicho, da saia e da lateral, inclusive em volta dos pares Nuage',
+         '%s: compra %d kg' % (br(az), math.ceil(az))),
+        ('Acrílico Quartzolit — claro (próximo do Nuage)', 'só a junta de 5 mm entre as duas Nuage de cada par', '%s: compra 1 kg' % br(r_par5)),
+        ('Epóxi — azul-marinho', 'tampo da bancada', '%s: compra 1 kg' % br(r_tampo)),
+        ('Acrílico Quartzolit — próximo do Confete', 'piso', '%s: compra 1 kg' % br(r_piso)),
+    ], titulo='REJUNTE POR COR', alt=16.0)
+    y2 = f.par(X2, y2 + 22, W2, [
+        ('Conta.', 'kg = área × (A + B) / (A × B) × espessura × junta × densidade (1,7 acrílico; 1,6 epóxi). Espessura das peças adotada: 9 mm. '
+         'Rejunte vende em potes de 1 kg: arredondado para cima.'),
+        ('Cor da junta do par.', 'Com rejunte claro na junta de 5 mm, o par Nuage lê como uma peça clara só. Se preferir ver as duas faixas, use o azul também ali '
+         '(some 1 kg ao azul e corte a linha do claro). Escolher pela cartela com as peças na mão.'),
+    ], size=8.2, lh=11.6)
+    cantos = 2.50 + 2.00 + 2 * 1.17
+    f.tab(X2, y2 + 18, W2, [('Perfil de metal', 0.40, 'start'), ('Medida', 0.30, 'start'), ('Compra', 0.30, 'end')], [
+        ('Canto — quina externa da área técnica', '2,50 m (piso ao forro)', ''),
+        ('Canto — bancada (frente + lateral)', '2,00 m', ''),
+        ('Canto — bordas do nicho (base e teto)', '2 × 1,17 = 2,34 m', ''),
+        ('Perfil de canto, total', '%s m + 10%% = %s m' % (br(cantos), br(cantos * k)), '%d barras de 3 m' % math.ceil(cantos * k / 3.0)),
+        ('Transição de piso na porta P02', '0,80 m (3 mm à vista)', '1 barra de 1 m'),
+    ], titulo='PERFIS DE METAL', alt=16.0)
+    f.t(X2, 905, 'Perfil de canto: alumínio anodizado ou inox, 10 mm, mesmo acabamento dos metais. Espaçador de 5 mm: 1 pacote.', 7.8, INK_SOFT)
     return f
 
 
@@ -316,4 +401,4 @@ def bt07():
     return f
 
 
-FOLHAS = [bt01, bt02, bt03, bt04, bt05, bt06, bt07]
+FOLHAS = [bt01, bt02, bt03, bt04, bt05, bt06, bt06b, bt07]
