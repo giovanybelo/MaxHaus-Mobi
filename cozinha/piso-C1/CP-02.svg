@@ -1,0 +1,276 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 990" width="1400" height="990">
+<rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
+<text x="48.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.40">MAXHAUS 81  ·  COZINHA E CLOSET  ·  CADERNO DE PAGINAÇÃO DO PISO</text>
+<text x="48.0" y="76.0" font-family="Helvetica, Arial, sans-serif" font-size="24.0" fill="#000000" font-weight="bold" text-anchor="start">Paginação: Confete 100 × 100, malha alinhada à face leste</text>
+<text x="48.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Junta de 2 mm, folga de 3 mm no perímetro. Fiadas a partir da entrada; o corte fica no fundo do closet; a faixa de ajuste, sob a bancada.</text>
+<text x="1352.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">C1  ·  16/11/2026</text>
+<text x="1352.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="22.0" fill="#000000" font-weight="bold" text-anchor="end">CP-02</text>
+<text x="1352.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">escala 1:30  ·  A3, imprimir a 100%</text>
+<line x1="48.00" y1="112.00" x2="1352.00" y2="112.00" stroke="#cccccc" stroke-width="1.00"/>
+<line x1="48.00" y1="928.00" x2="1352.00" y2="928.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="944.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cotas em mm, em faces de parede, sobre o scan de 02/09/2026 e o Caderno Alternativo A, REV. W, prancha 04 (opção B). Medir a zona em obra, depois da demolição e do contrapiso, antes de cortar qualquer placa.</text>
+<text x="48.0" y="956.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Orientação de escopo, não laudo: instalações de gás e exaustão, estrutura e liberação do condomínio pedem responsável técnico em obra.</text>
+<text x="48.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81  ·  JOÃO BALDINATO 109  ·  COZINHA E CLOSET  ·  CADERNO DE PAGINAÇÃO DO PISO</text>
+<text x="1352.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">CP-02   ·   C1  ·  16/11/2026</text>
+<rect x="272.56" y="143.33" width="211.89" height="141.44" fill="#ededed"/>
+<rect x="426.67" y="604.78" width="57.78" height="231.44" fill="#ededed"/>
+<path d="M200.00 196.00 L272.89 196.00 L272.89 190.00 L348.89 190.00 L348.89 190.33 L351.93 190.39 L354.97 190.57 L357.99 190.87 L361.00 191.29 L364.00 191.82 L366.97 192.47 L369.91 193.24 L372.82 194.12 L375.69 195.12 L378.53 196.23 L381.31 197.45 L384.05 198.77 L386.73 200.21 L389.35 201.75 L391.91 203.39 L394.41 205.12 L396.83 206.96 L399.19 208.89 L401.46 210.91 L403.65 213.02 L405.76 215.21 L407.78 217.48 L409.71 219.83 L411.54 222.26 L413.28 224.75 L414.92 227.31 L416.46 229.94 L417.89 232.62 L419.22 235.35 L420.44 238.14 L421.55 240.97 L422.54 243.85 L423.43 246.76 L424.19 249.70 L424.85 252.67 L425.38 255.66 L425.80 258.68 L426.09 261.70 L426.27 264.74 L426.33 267.78 L426.67 267.78 L426.67 836.22 L200.00 836.22 Z" fill="#f5f5f5" stroke="#000000" stroke-width="0.50"/>
+<rect x="188.89" y="184.56" width="11.11" height="662.78" fill="#000000"/>
+<rect x="188.89" y="184.56" width="83.67" height="11.11" fill="#000000"/>
+<rect x="261.44" y="143.33" width="11.11" height="52.33" fill="#000000"/>
+<rect x="188.89" y="836.22" width="295.56" height="11.11" fill="#000000"/>
+<rect x="426.67" y="284.78" width="11.11" height="320.00" fill="#000000"/>
+<rect x="426.67" y="284.78" width="57.78" height="11.11" fill="#000000"/>
+<rect x="426.67" y="746.33" width="11.11" height="89.89" fill="#000000"/>
+<rect x="202.78" y="839.56" width="220.44" height="4.44" fill="#ffffff" stroke="#8c8c8c" stroke-width="0.60"/>
+<path d="M272.56 190.00 L348.89 190.00 L348.89 190.00 L352.96 190.11 L357.02 190.43 L361.06 190.96 L365.06 191.70 L369.02 192.65 L372.92 193.81 L376.76 195.17 L380.52 196.72 L384.20 198.48 L387.78 200.42 L391.25 202.55 L394.61 204.85 L397.84 207.33 L400.93 209.98 L403.89 212.78 L406.69 215.73 L409.33 218.83 L411.81 222.06 L414.12 225.42 L416.25 228.89 L418.19 232.47 L419.94 236.14 L421.50 239.90 L422.86 243.74 L424.02 247.65 L424.97 251.61 L425.71 255.61 L426.24 259.65 L426.56 263.71 L426.67 267.78 L426.67 284.78" fill="none" stroke="#ff00ff" stroke-width="2.20"/>
+<line x1="426.67" y1="604.78" x2="426.67" y2="746.33" stroke="#ff00ff" stroke-width="2.20"/>
+<text x="455.6" y="167.8" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="bold" text-anchor="middle">CORREDOR</text>
+<text x="455.6" y="236.7" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="bold" text-anchor="middle">SALA DE TV</text>
+<text x="463.3" y="445.6" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="bold" text-anchor="middle">BANHEIRO</text>
+<text x="456.7" y="678.9" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="bold" text-anchor="middle">QUARTO</text>
+<text x="315.6" y="164.4" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">monolítico</text>
+<path d="M200.33 301.44 L200.33 196.00 L203.67 196.00 L203.67 301.44 Z" fill="#ffff99" stroke="#000000" stroke-width="0.80"/>
+<text x="182.9" y="247.9" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#000000" font-weight="bold" text-anchor="end">A1</text>
+<path d="M203.89 301.44 L203.89 196.00 L272.89 196.00 L272.89 190.33 L315.00 190.33 L315.00 301.44 Z" fill="#d6ffff" stroke="#000000" stroke-width="0.80"/>
+<text x="259.4" y="245.9" font-family="Helvetica, Arial, sans-serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle">A2</text>
+<text x="259.4" y="256.9" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 × 1000</text>
+<path d="M315.22 301.44 L315.22 190.33 L348.89 190.33 L348.89 190.33 L351.93 190.39 L354.97 190.57 L357.99 190.87 L361.00 191.29 L364.00 191.82 L366.97 192.47 L369.91 193.24 L372.82 194.12 L375.69 195.12 L378.53 196.23 L381.31 197.45 L384.05 198.77 L386.73 200.21 L389.35 201.75 L391.91 203.39 L394.41 205.12 L396.83 206.96 L399.19 208.89 L401.46 210.91 L403.65 213.02 L405.76 215.21 L407.78 217.48 L409.71 219.83 L411.54 222.26 L413.28 224.75 L414.92 227.31 L416.46 229.94 L417.89 232.62 L419.22 235.35 L420.44 238.14 L421.55 240.97 L422.54 243.85 L423.43 246.76 L424.19 249.70 L424.85 252.67 L425.38 255.66 L425.80 258.68 L426.09 261.70 L426.27 264.74 L426.33 267.78 L426.33 267.78 L426.33 301.44 Z" fill="#d6ffff" stroke="#000000" stroke-width="0.80"/>
+<text x="370.8" y="270.3" font-family="Helvetica, Arial, sans-serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle">A3</text>
+<text x="370.8" y="281.3" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 × 1000</text>
+<path d="M200.33 412.78 L200.33 301.67 L203.67 301.67 L203.67 412.78 Z" fill="#ffff99" stroke="#000000" stroke-width="0.80"/>
+<text x="182.9" y="359.2" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#000000" font-weight="bold" text-anchor="end">B1</text>
+<path d="M203.89 412.78 L203.89 301.67 L315.00 301.67 L315.00 412.78 Z" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="259.4" y="357.2" font-family="Helvetica, Arial, sans-serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle">B2</text>
+<text x="259.4" y="368.2" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 × 1000</text>
+<path d="M315.22 412.78 L315.22 301.67 L426.33 301.67 L426.33 412.78 Z" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="370.8" y="357.2" font-family="Helvetica, Arial, sans-serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle">B3</text>
+<text x="370.8" y="368.2" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 × 1000</text>
+<path d="M200.33 524.11 L200.33 413.00 L203.67 413.00 L203.67 524.11 Z" fill="#ffff99" stroke="#000000" stroke-width="0.80"/>
+<text x="182.9" y="470.6" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#000000" font-weight="bold" text-anchor="end">C1</text>
+<path d="M203.89 524.11 L203.89 413.00 L315.00 413.00 L315.00 524.11 Z" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="259.4" y="468.6" font-family="Helvetica, Arial, sans-serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle">C2</text>
+<text x="259.4" y="479.6" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 × 1000</text>
+<path d="M315.22 524.11 L315.22 413.00 L426.33 413.00 L426.33 524.11 Z" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="370.8" y="468.6" font-family="Helvetica, Arial, sans-serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle">C3</text>
+<text x="370.8" y="479.6" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 × 1000</text>
+<path d="M200.33 635.44 L200.33 524.33 L203.67 524.33 L203.67 635.44 Z" fill="#ffff99" stroke="#000000" stroke-width="0.80"/>
+<text x="182.9" y="581.9" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#000000" font-weight="bold" text-anchor="end">D1</text>
+<path d="M203.89 635.44 L203.89 524.33 L315.00 524.33 L315.00 635.44 Z" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="259.4" y="579.9" font-family="Helvetica, Arial, sans-serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle">D2</text>
+<text x="259.4" y="590.9" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 × 1000</text>
+<path d="M315.22 635.44 L315.22 524.33 L426.33 524.33 L426.33 635.44 Z" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="370.8" y="579.9" font-family="Helvetica, Arial, sans-serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle">D3</text>
+<text x="370.8" y="590.9" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 × 1000</text>
+<path d="M200.33 746.78 L200.33 635.67 L203.67 635.67 L203.67 746.78 Z" fill="#ffff99" stroke="#000000" stroke-width="0.80"/>
+<text x="182.9" y="693.2" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#000000" font-weight="bold" text-anchor="end">E1</text>
+<path d="M203.89 746.78 L203.89 635.67 L315.00 635.67 L315.00 746.78 Z" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="259.4" y="691.2" font-family="Helvetica, Arial, sans-serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle">E2</text>
+<text x="259.4" y="702.2" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 × 1000</text>
+<path d="M315.22 746.78 L315.22 635.67 L426.33 635.67 L426.33 746.78 Z" fill="#ffffff" stroke="#000000" stroke-width="0.80"/>
+<text x="370.8" y="691.2" font-family="Helvetica, Arial, sans-serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle">E3</text>
+<text x="370.8" y="702.2" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 × 1000</text>
+<path d="M200.33 835.89 L200.33 747.00 L203.67 747.00 L203.67 835.89 Z" fill="#ffff99" stroke="#000000" stroke-width="0.80"/>
+<text x="182.9" y="793.4" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#000000" font-weight="bold" text-anchor="end">F1</text>
+<path d="M203.89 835.89 L203.89 747.00 L315.00 747.00 L315.00 835.89 Z" fill="#f5f5f5" stroke="#000000" stroke-width="0.80"/>
+<text x="259.4" y="791.4" font-family="Helvetica, Arial, sans-serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle">F2</text>
+<text x="259.4" y="802.4" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 × 800</text>
+<path d="M315.22 835.89 L315.22 747.00 L426.33 747.00 L426.33 835.89 Z" fill="#f5f5f5" stroke="#000000" stroke-width="0.80"/>
+<text x="370.8" y="791.4" font-family="Helvetica, Arial, sans-serif" font-size="10.0" fill="#000000" font-weight="bold" text-anchor="middle">F3</text>
+<text x="370.8" y="802.4" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 × 800</text>
+<rect x="200.00" y="593.67" width="226.67" height="11.11" fill="none" stroke="#ff00ff" stroke-width="1.00" stroke-dasharray="5 3"/>
+<rect x="200.00" y="604.78" width="66.67" height="44.44" fill="none" stroke="#ff00ff" stroke-width="1.00" stroke-dasharray="5 3"/>
+<path d="M315.1 143.3 L315.1 847.3" fill="none" stroke="#ff00ff" stroke-width="0.90" stroke-dasharray="10 3 2 3"/>
+<path d="M188.9 301.6 L484.4 301.6" fill="none" stroke="#ff00ff" stroke-width="0.90" stroke-dasharray="10 3 2 3"/>
+<circle cx="315.11" cy="301.56" r="4.50" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
+<text x="323.1" y="295.6" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#ff00ff" font-weight="bold" text-anchor="start">M · ponto de partida</text>
+<line x1="200.00" y1="131.33" x2="203.78" y2="131.33" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="197.50" y1="133.83" x2="202.50" y2="128.83" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="200.00" y1="127.33" x2="200.00" y2="135.33" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="201.28" y1="133.83" x2="206.28" y2="128.83" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="203.78" y1="127.33" x2="203.78" y2="135.33" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="201.9" y="127.8" font-family="Helvetica, Arial, sans-serif" font-size="6.0" fill="#4d4d4d" font-weight="normal" text-anchor="middle">30+3</text>
+<line x1="203.78" y1="131.33" x2="315.11" y2="131.33" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="201.28" y1="133.83" x2="206.28" y2="128.83" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="203.78" y1="127.33" x2="203.78" y2="135.33" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="312.61" y1="133.83" x2="317.61" y2="128.83" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="315.11" y1="127.33" x2="315.11" y2="135.33" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="259.4" y="127.8" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 + junta</text>
+<line x1="315.11" y1="131.33" x2="426.67" y2="131.33" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="312.61" y1="133.83" x2="317.61" y2="128.83" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="315.11" y1="127.33" x2="315.11" y2="135.33" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="424.17" y1="133.83" x2="429.17" y2="128.83" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="426.67" y1="127.33" x2="426.67" y2="135.33" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="370.9" y="127.8" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000 + 3 de folga</text>
+<line x1="315.11" y1="330.44" x2="426.67" y2="330.44" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="312.61" y1="332.94" x2="317.61" y2="327.94" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="315.11" y1="326.44" x2="315.11" y2="334.44" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="424.17" y1="332.94" x2="429.17" y2="327.94" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="426.67" y1="326.44" x2="426.67" y2="334.44" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="370.9" y="326.9" font-family="Helvetica, Arial, sans-serif" font-size="6.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1004 até a face</text>
+<line x1="500.44" y1="190.00" x2="500.44" y2="301.56" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="497.94" y1="192.50" x2="502.94" y2="187.50" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="496.44" y1="190.00" x2="504.44" y2="190.00" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="497.94" y1="304.06" x2="502.94" y2="299.06" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="496.44" y1="301.56" x2="504.44" y2="301.56" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="496.4" y="245.8" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 496.4 245.8)">1004</text>
+<line x1="500.44" y1="301.56" x2="500.44" y2="412.89" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="497.94" y1="304.06" x2="502.94" y2="299.06" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="496.44" y1="301.56" x2="504.44" y2="301.56" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="497.94" y1="415.39" x2="502.94" y2="410.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="496.44" y1="412.89" x2="504.44" y2="412.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="496.4" y="357.2" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 496.4 357.2)">1002</text>
+<line x1="500.44" y1="412.89" x2="500.44" y2="524.22" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="497.94" y1="415.39" x2="502.94" y2="410.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="496.44" y1="412.89" x2="504.44" y2="412.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="497.94" y1="526.72" x2="502.94" y2="521.72" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="496.44" y1="524.22" x2="504.44" y2="524.22" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="496.4" y="468.6" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 496.4 468.6)">1002</text>
+<line x1="500.44" y1="524.22" x2="500.44" y2="635.56" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="497.94" y1="526.72" x2="502.94" y2="521.72" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="496.44" y1="524.22" x2="504.44" y2="524.22" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="497.94" y1="638.06" x2="502.94" y2="633.06" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="496.44" y1="635.56" x2="504.44" y2="635.56" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="496.4" y="579.9" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 496.4 579.9)">1002</text>
+<line x1="500.44" y1="635.56" x2="500.44" y2="746.89" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="497.94" y1="638.06" x2="502.94" y2="633.06" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="496.44" y1="635.56" x2="504.44" y2="635.56" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="497.94" y1="749.39" x2="502.94" y2="744.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="496.44" y1="746.89" x2="504.44" y2="746.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="496.4" y="691.2" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 496.4 691.2)">1002</text>
+<line x1="500.44" y1="746.89" x2="500.44" y2="836.22" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="497.94" y1="749.39" x2="502.94" y2="744.39" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="496.44" y1="746.89" x2="504.44" y2="746.89" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="497.94" y1="838.72" x2="502.94" y2="833.72" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="496.44" y1="836.22" x2="504.44" y2="836.22" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="496.4" y="791.6" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 496.4 791.6)">804</text>
+<line x1="528.44" y1="190.00" x2="528.44" y2="301.56" stroke="#4d4d4d" stroke-width="0.60"/>
+<line x1="525.94" y1="192.50" x2="530.94" y2="187.50" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="524.44" y1="190.00" x2="532.44" y2="190.00" stroke="#4d4d4d" stroke-width="0.40"/>
+<line x1="525.94" y1="304.06" x2="530.94" y2="299.06" stroke="#4d4d4d" stroke-width="0.80"/>
+<line x1="524.44" y1="301.56" x2="532.44" y2="301.56" stroke="#4d4d4d" stroke-width="0.40"/>
+<text x="532.4" y="245.8" font-family="Helvetica, Arial, sans-serif" font-size="6.2" fill="#4d4d4d" font-weight="normal" text-anchor="middle" transform="rotate(-90.0 532.4 245.8)">1004 até a transição</text>
+<rect x="80.00" y="877.00" width="14.00" height="10.00" fill="#ffffff" stroke="#8c8c8c" stroke-width="0.60"/>
+<text x="100.0" y="885.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Inteira</text>
+<rect x="146.76" y="877.00" width="14.00" height="10.00" fill="#f5f5f5" stroke="#8c8c8c" stroke-width="0.60"/>
+<text x="166.8" y="885.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Corte reto</text>
+<rect x="227.17" y="877.00" width="14.00" height="10.00" fill="#d6ffff" stroke="#8c8c8c" stroke-width="0.60"/>
+<text x="247.2" y="885.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Corte curvo / em L</text>
+<rect x="338.54" y="877.00" width="14.00" height="10.00" fill="#ffff99" stroke="#8c8c8c" stroke-width="0.60"/>
+<text x="358.5" y="885.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">Faixa de ajuste (30 mm)</text>
+<path d="M470.8 882.0 L484.8 882.0" fill="none" stroke="#ff00ff" stroke-width="1.60" stroke-dasharray="4 3"/>
+<text x="490.8" y="885.0" font-family="Helvetica, Arial, sans-serif" font-size="7.8" fill="#000000" font-weight="normal" text-anchor="start">R04 e AT-A depois</text>
+<text x="640.0" y="142.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.00">PEÇAS — ENVELOPE (mm), DE NORTE PARA SUL</text>
+<rect x="640.00" y="150.00" width="712.00" height="14.50" fill="#e0e0e0"/>
+<text x="646.0" y="159.6" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#4d4d4d" font-weight="bold" text-anchor="start">Peça</text>
+<text x="717.2" y="159.6" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#4d4d4d" font-weight="bold" text-anchor="start">Largura × comprimento (mm)</text>
+<text x="930.8" y="159.6" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#4d4d4d" font-weight="bold" text-anchor="start">Tipo</text>
+<text x="1201.4" y="159.6" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#4d4d4d" font-weight="bold" text-anchor="start">Placa</text>
+<text x="646.0" y="174.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">A1</text>
+<text x="717.2" y="174.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">30 × 949</text>
+<text x="930.8" y="174.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">faixa de ajuste, sob a KC1</text>
+<text x="1201.4" y="174.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P11 (sobra)</text>
+<line x1="640.00" y1="179.00" x2="1352.00" y2="179.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="179.00" width="712.00" height="14.50" fill="#f5f5f5"/>
+<text x="646.0" y="188.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">A2</text>
+<text x="717.2" y="188.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1000 × 1000</text>
+<text x="930.8" y="188.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">recorte em L (degrau)</text>
+<text x="1201.4" y="188.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P01</text>
+<line x1="640.00" y1="193.50" x2="1352.00" y2="193.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="646.0" y="203.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">A3</text>
+<text x="717.2" y="203.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1000 × 1000</text>
+<text x="930.8" y="203.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">corte curvo (arco R 700)</text>
+<text x="1201.4" y="203.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P02</text>
+<line x1="640.00" y1="208.00" x2="1352.00" y2="208.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="208.00" width="712.00" height="14.50" fill="#f5f5f5"/>
+<text x="646.0" y="217.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">B1</text>
+<text x="717.2" y="217.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">30 × 1000</text>
+<text x="930.8" y="217.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">faixa de ajuste, sob a KC1</text>
+<text x="1201.4" y="217.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P12 (sobra)</text>
+<line x1="640.00" y1="222.50" x2="1352.00" y2="222.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="646.0" y="232.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">B2</text>
+<text x="717.2" y="232.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1000 × 1000</text>
+<text x="930.8" y="232.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">inteira</text>
+<text x="1201.4" y="232.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P03</text>
+<line x1="640.00" y1="237.00" x2="1352.00" y2="237.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="237.00" width="712.00" height="14.50" fill="#f5f5f5"/>
+<text x="646.0" y="246.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">B3</text>
+<text x="717.2" y="246.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1000 × 1000</text>
+<text x="930.8" y="246.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">inteira</text>
+<text x="1201.4" y="246.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P04</text>
+<line x1="640.00" y1="251.50" x2="1352.00" y2="251.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="646.0" y="261.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">C1</text>
+<text x="717.2" y="261.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">30 × 1000</text>
+<text x="930.8" y="261.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">faixa de ajuste, sob a KC1</text>
+<text x="1201.4" y="261.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P11 (sobra)</text>
+<line x1="640.00" y1="266.00" x2="1352.00" y2="266.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="266.00" width="712.00" height="14.50" fill="#f5f5f5"/>
+<text x="646.0" y="275.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">C2</text>
+<text x="717.2" y="275.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1000 × 1000</text>
+<text x="930.8" y="275.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">inteira</text>
+<text x="1201.4" y="275.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P05</text>
+<line x1="640.00" y1="280.50" x2="1352.00" y2="280.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="646.0" y="290.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">C3</text>
+<text x="717.2" y="290.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1000 × 1000</text>
+<text x="930.8" y="290.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">inteira</text>
+<text x="1201.4" y="290.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P06</text>
+<line x1="640.00" y1="295.00" x2="1352.00" y2="295.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="295.00" width="712.00" height="14.50" fill="#f5f5f5"/>
+<text x="646.0" y="304.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">D1</text>
+<text x="717.2" y="304.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">30 × 1000</text>
+<text x="930.8" y="304.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">faixa de ajuste, sob a KC1</text>
+<text x="1201.4" y="304.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P12 (sobra)</text>
+<line x1="640.00" y1="309.50" x2="1352.00" y2="309.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="646.0" y="319.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">D2</text>
+<text x="717.2" y="319.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1000 × 1000</text>
+<text x="930.8" y="319.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">inteira</text>
+<text x="1201.4" y="319.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P07</text>
+<line x1="640.00" y1="324.00" x2="1352.00" y2="324.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="324.00" width="712.00" height="14.50" fill="#f5f5f5"/>
+<text x="646.0" y="333.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">D3</text>
+<text x="717.2" y="333.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1000 × 1000</text>
+<text x="930.8" y="333.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">inteira</text>
+<text x="1201.4" y="333.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P08</text>
+<line x1="640.00" y1="338.50" x2="1352.00" y2="338.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="646.0" y="348.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">E1</text>
+<text x="717.2" y="348.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">30 × 1000</text>
+<text x="930.8" y="348.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">faixa de ajuste, sob a KC1</text>
+<text x="1201.4" y="348.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P11 (sobra)</text>
+<line x1="640.00" y1="353.00" x2="1352.00" y2="353.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="353.00" width="712.00" height="14.50" fill="#f5f5f5"/>
+<text x="646.0" y="362.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">E2</text>
+<text x="717.2" y="362.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1000 × 1000</text>
+<text x="930.8" y="362.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">inteira</text>
+<text x="1201.4" y="362.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P09</text>
+<line x1="640.00" y1="367.50" x2="1352.00" y2="367.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="646.0" y="377.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">E3</text>
+<text x="717.2" y="377.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1000 × 1000</text>
+<text x="930.8" y="377.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">inteira</text>
+<text x="1201.4" y="377.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P10</text>
+<line x1="640.00" y1="382.00" x2="1352.00" y2="382.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="382.00" width="712.00" height="14.50" fill="#f5f5f5"/>
+<text x="646.0" y="391.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">F1</text>
+<text x="717.2" y="391.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">30 × 800</text>
+<text x="930.8" y="391.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">faixa de ajuste, sob a KC1</text>
+<text x="1201.4" y="391.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P12 (sobra)</text>
+<line x1="640.00" y1="396.50" x2="1352.00" y2="396.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="646.0" y="406.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">F2</text>
+<text x="717.2" y="406.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1000 × 800</text>
+<text x="930.8" y="406.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">corte reto</text>
+<text x="1201.4" y="406.1" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P11</text>
+<line x1="640.00" y1="411.00" x2="1352.00" y2="411.00" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="411.00" width="712.00" height="14.50" fill="#f5f5f5"/>
+<text x="646.0" y="420.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="start">F3</text>
+<text x="717.2" y="420.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">1000 × 800</text>
+<text x="930.8" y="420.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">corte reto</text>
+<text x="1201.4" y="420.6" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">P12</text>
+<line x1="640.00" y1="425.50" x2="1352.00" y2="425.50" stroke="#cccccc" stroke-width="0.50"/>
+<text x="640.0" y="447.5" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#000000" font-weight="bold" text-anchor="start">Por que alinhar a malha à face leste.</text>
+<text x="640.0" y="459.1" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">São 2040 mm de parede a parede. Centralizar daria dois cortes de 515 mm por fiada, que não saem dois de uma placa: 18 placas. Alinhando a leste, ficam duas colunas inteiras e uma</text>
+<text x="640.0" y="470.7" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">faixa de 30 mm a oeste, escondida sob a KC1 e o closet, tirada das sobras da fiada F: 12 placas. A junta central cai a 1004 mm da face do banheiro.</text>
+<text x="640.0" y="488.3" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#000000" font-weight="bold" text-anchor="start">Ponto de partida M.</text>
+<text x="640.0" y="499.9" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">Fixar primeiro o perfil de transição (CP-04). Marcar no contrapiso a linha da junta entre as colunas 2 e 3 (a 1004 da face leste) e a junta entre as fiadas A e B (a 1004 da transição). Assentar</text>
+<text x="640.0" y="511.5" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">B3 no canto do ponto M e seguir para sul e oeste; a fiada A (curva e degrau) e as faixas entram por último, já com as medidas de obra.</text>
+<text x="640.0" y="529.1" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#000000" font-weight="bold" text-anchor="start">Resultado.</text>
+<text x="640.0" y="540.7" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">18 peças: 8 inteiras, 4 cortadas e 6 faixas. Nenhum corte menor que meia placa no piso visível.</text>
+</svg>

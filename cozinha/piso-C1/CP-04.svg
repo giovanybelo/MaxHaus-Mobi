@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 990" width="1400" height="990">
+<rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
+<text x="48.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.40">MAXHAUS 81  ·  COZINHA E CLOSET  ·  CADERNO DE PAGINAÇÃO DO PISO</text>
+<text x="48.0" y="76.0" font-family="Helvetica, Arial, sans-serif" font-size="24.0" fill="#000000" font-weight="bold" text-anchor="start">Transições, drywall R04 sobre o piso e sequência</text>
+<text x="48.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cortes esquemáticos, sem escala. O acerto de altura entre porcelanato e monolítico é no contrapiso, não na soleira.</text>
+<text x="1352.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">C1  ·  16/11/2026</text>
+<text x="1352.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="22.0" fill="#000000" font-weight="bold" text-anchor="end">CP-04</text>
+<text x="1352.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">escala sem escala  ·  A3, imprimir a 100%</text>
+<line x1="48.00" y1="112.00" x2="1352.00" y2="112.00" stroke="#cccccc" stroke-width="1.00"/>
+<line x1="48.00" y1="928.00" x2="1352.00" y2="928.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="944.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cotas em mm, em faces de parede, sobre o scan de 02/09/2026 e o Caderno Alternativo A, REV. W, prancha 04 (opção B). Medir a zona em obra, depois da demolição e do contrapiso, antes de cortar qualquer placa.</text>
+<text x="48.0" y="956.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Orientação de escopo, não laudo: instalações de gás e exaustão, estrutura e liberação do condomínio pedem responsável técnico em obra.</text>
+<text x="48.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81  ·  JOÃO BALDINATO 109  ·  COZINHA E CLOSET  ·  CADERNO DE PAGINAÇÃO DO PISO</text>
+<text x="1352.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">CP-04   ·   C1  ·  16/11/2026</text>
+<text x="70.0" y="162.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.00">1 · TRANSIÇÃO PORCELANATO / MONOLÍTICO (NORTE, ARCO E PASSAGEM DO CLOSET)</text>
+<rect x="70.00" y="270.00" width="480.00" height="40.00" fill="#e0e0e0" stroke="#000000" stroke-width="0.70"/>
+<rect x="70.00" y="240.00" width="250.00" height="30.00" fill="#cccccc" stroke="#000000" stroke-width="0.70"/>
+<rect x="70.00" y="232.00" width="250.00" height="8.00" fill="#8c8c8c" stroke="#000000" stroke-width="0.70"/>
+<rect x="70.00" y="220.00" width="245.00" height="12.00" fill="#ffffff" stroke="#000000" stroke-width="0.70"/>
+<rect x="317.00" y="216.00" width="8.00" height="24.00" fill="#ff00ff" stroke="#000000" stroke-width="0.70"/>
+<rect x="327.00" y="250.00" width="223.00" height="20.00" fill="#cccccc" stroke="#000000" stroke-width="0.70"/>
+<rect x="327.00" y="220.00" width="223.00" height="30.00" fill="#ededed" stroke="#000000" stroke-width="0.70"/>
+<line x1="170.00" y1="226.00" x2="171.77" y2="196.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="170.00" cy="226.00" r="1.60" fill="#000000"/>
+<text x="90.0" y="199.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">porcelanato Confete 9 mm</text>
+<line x1="321.00" y1="218.00" x2="361.67" y2="182.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="321.00" cy="218.00" r="1.60" fill="#000000"/>
+<text x="270.0" y="185.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">perfil de transição, fixado antes</text>
+<line x1="450.00" y1="235.00" x2="485.89" y2="196.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="450.00" cy="235.00" r="1.60" fill="#000000"/>
+<text x="410.0" y="199.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">monolítico, contra o perfil</text>
+<line x1="130.00" y1="236.00" x2="191.94" y2="328.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="130.00" cy="236.00" r="1.60" fill="#000000"/>
+<text x="90.0" y="331.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">argamassa AC-III, dupla colagem</text>
+<line x1="250.00" y1="255.00" x2="270.00" y2="328.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="250.00" cy="255.00" r="1.60" fill="#000000"/>
+<text x="274.0" y="331.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">contrapiso acertado: os dois rentes</text>
+<line x1="510.00" y1="290.00" x2="504.27" y2="342.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="510.00" cy="290.00" r="1.60" fill="#000000"/>
+<text x="490.0" y="345.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">laje</text>
+<text x="70.0" y="380.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.00">2 · R04 LEVANTADA DEPOIS: GUIA SOBRE O PORCELANATO</text>
+<rect x="70.00" y="540.00" width="480.00" height="40.00" fill="#e0e0e0" stroke="#000000" stroke-width="0.70"/>
+<rect x="70.00" y="510.00" width="480.00" height="30.00" fill="#cccccc" stroke="#000000" stroke-width="0.70"/>
+<rect x="70.00" y="502.00" width="480.00" height="8.00" fill="#8c8c8c" stroke="#000000" stroke-width="0.70"/>
+<rect x="70.00" y="490.00" width="480.00" height="12.00" fill="#ffffff" stroke="#000000" stroke-width="0.70"/>
+<rect x="265.00" y="484.00" width="90.00" height="6.00" fill="#ffff99" stroke="#000000" stroke-width="0.70"/>
+<rect x="275.00" y="420.00" width="70.00" height="64.00" fill="#ffffff" stroke="#000000" stroke-width="0.70"/>
+<rect x="255.00" y="420.00" width="12.00" height="70.00" fill="#ededed" stroke="#000000" stroke-width="0.70"/>
+<rect x="353.00" y="420.00" width="12.00" height="70.00" fill="#ededed" stroke="#000000" stroke-width="0.70"/>
+<rect x="240.00" y="476.00" width="15.00" height="14.00" fill="#cccccc" stroke="#000000" stroke-width="0.70"/>
+<rect x="365.00" y="476.00" width="15.00" height="14.00" fill="#cccccc" stroke="#000000" stroke-width="0.70"/>
+<line x1="261.00" y1="440.00" x2="184.25" y2="402.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="261.00" cy="440.00" r="1.60" fill="#000000"/>
+<text x="90.0" y="405.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">placa de gesso, dos dois lados</text>
+<line x1="310.00" y1="450.00" x2="400.00" y2="402.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="310.00" cy="450.00" r="1.60" fill="#000000"/>
+<text x="404.0" y="405.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">guia e montantes 70 mm</text>
+<line x1="247.00" y1="482.00" x2="156.73" y2="460.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="247.00" cy="482.00" r="1.60" fill="#000000"/>
+<text x="90.0" y="463.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">rodapé dos dois lados</text>
+<line x1="310.00" y1="487.00" x2="400.00" y2="460.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="310.00" cy="487.00" r="1.60" fill="#000000"/>
+<text x="404.0" y="463.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">banda acústica sob a guia</text>
+<line x1="170.00" y1="496.00" x2="224.61" y2="598.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="170.00" cy="496.00" r="1.60" fill="#000000"/>
+<text x="90.0" y="601.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">porcelanato contínuo, sem junta sob a parede</text>
+<line x1="310.00" y1="500.00" x2="340.00" y2="598.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="310.00" cy="500.00" r="1.60" fill="#000000"/>
+<text x="344.0" y="601.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">bucha em furo de broca diamantada, fora das juntas</text>
+<text x="70.0" y="615.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.00">3 · PERÍMETRO: FOLGA DE 3 mm COM SELANTE, SOB O RODAPÉ</text>
+<rect x="70.00" y="775.00" width="480.00" height="40.00" fill="#e0e0e0" stroke="#000000" stroke-width="0.70"/>
+<rect x="70.00" y="745.00" width="400.00" height="30.00" fill="#cccccc" stroke="#000000" stroke-width="0.70"/>
+<rect x="70.00" y="737.00" width="400.00" height="8.00" fill="#8c8c8c" stroke="#000000" stroke-width="0.70"/>
+<rect x="70.00" y="725.00" width="396.00" height="12.00" fill="#ffffff" stroke="#000000" stroke-width="0.70"/>
+<rect x="466.00" y="725.00" width="4.00" height="12.00" fill="#ffff00" stroke="#000000" stroke-width="0.70"/>
+<rect x="470.00" y="635.00" width="60.00" height="140.00" fill="#8c8c8c" stroke="#000000" stroke-width="0.70"/>
+<rect x="455.00" y="709.00" width="15.00" height="16.00" fill="#cccccc" stroke="#000000" stroke-width="0.70"/>
+<line x1="462.00" y1="717.00" x2="394.55" y2="675.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="462.00" cy="717.00" r="1.60" fill="#000000"/>
+<text x="370.0" y="678.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">rodapé</text>
+<line x1="500.00" y1="675.00" x2="424.55" y2="645.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="500.00" cy="675.00" r="1.60" fill="#000000"/>
+<text x="400.0" y="648.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">parede</text>
+<line x1="468.00" y1="731.00" x2="526.45" y2="833.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="468.00" cy="731.00" r="1.60" fill="#000000"/>
+<text x="450.0" y="836.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">folga 3 mm + selante PU</text>
+<line x1="270.00" y1="731.00" x2="326.95" y2="847.00" stroke="#4d4d4d" stroke-width="0.50"/>
+<circle cx="270.00" cy="731.00" r="1.60" fill="#000000"/>
+<text x="90.0" y="850.0" font-family="Helvetica, Arial, sans-serif" font-size="6.6" fill="#000000" font-weight="normal" text-anchor="start">sob a KC1 e o closet o rodapé é da marcenaria; a faixa de 30 mm fica escondida</text>
+<circle cx="648.00" cy="157.00" r="8.00" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
+<text x="648.0" y="160.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">1</text>
+<text x="664.0" y="160.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Duto da coifa e elétrica do teto.</text>
+<text x="664.0" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">DU2 e CF01 (CP-05) fixados sob a laje antes do piso: escada e furação de laje não combinam com porcelanato novo. Os pontos da R04 descem pela laje, não pelo piso.</text>
+<circle cx="648.00" cy="186.00" r="8.00" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="648.0" y="189.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">2</text>
+<text x="664.0" y="189.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Demolição e contrapiso.</text>
+<text x="664.0" y="201.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Sair as duas paredes antigas, recompor o contrapiso nas faixas e acertar a cota com o monolítico (P06).</text>
+<circle cx="648.00" cy="215.00" r="8.00" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
+<text x="648.0" y="218.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">3</text>
+<text x="664.0" y="218.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Medição de obra.</text>
+<text x="664.0" y="230.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Largura em três pontos, comprimento, degrau e o arco. Se a largura mudar, refazer a faixa de ajuste.</text>
+<circle cx="648.00" cy="244.00" r="8.00" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="648.0" y="247.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">4</text>
+<text x="664.0" y="247.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Perfil de transição.</text>
+<text x="664.0" y="259.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Reto no norte e na passagem do closet; flexível no arco de 700. Fixado e nivelado antes das placas.</text>
+<circle cx="648.00" cy="273.00" r="8.00" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="648.0" y="276.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">5</text>
+<text x="664.0" y="276.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Assentamento.</text>
+<text x="664.0" y="288.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Do ponto M (CP-02) para sul e oeste, dupla colagem, niveladores de placa. Fiada A, curva, degrau e faixas por último.</text>
+<circle cx="648.00" cy="302.00" r="8.00" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="648.0" y="305.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">6</text>
+<text x="664.0" y="305.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Rejunte e cura.</text>
+<text x="664.0" y="317.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Rejunte acrílico na cor do Confete; selante no perímetro. 7 dias sem carga pesada.</text>
+<circle cx="648.00" cy="331.00" r="8.00" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="648.0" y="334.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">7</text>
+<text x="664.0" y="334.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Monolítico.</text>
+<text x="664.0" y="346.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Aplicado contra o perfil já fixado (corredor, sala de TV, quarto).</text>
+<circle cx="648.00" cy="360.00" r="8.00" fill="#ffff00" stroke="#000000" stroke-width="1.00"/>
+<text x="648.0" y="363.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">8</text>
+<text x="664.0" y="363.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">R04 e AT-A sobre o piso.</text>
+<text x="664.0" y="375.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">Guia com banda acústica, fixada por bucha. O nicho AT-A em material incombustível, com a liberação do instalador credenciado.</text>
+<circle cx="648.00" cy="389.00" r="8.00" fill="#ffffff" stroke="#000000" stroke-width="1.00"/>
+<text x="648.0" y="392.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#000000" font-weight="bold" text-anchor="middle">9</text>
+<text x="664.0" y="392.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="start">Marcenaria.</text>
+<text x="664.0" y="404.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="start">KC1, geladeira e closet M01 só com o piso curado e protegido.</text>
+<text x="640.0" y="445.0" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#000000" font-weight="bold" text-anchor="start">Juntas de movimentação.</text>
+<text x="640.0" y="456.6" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">A zona tem 11,72 m² e o lado maior 5,82 m: abaixo dos limites da NBR 13753 para área interna, não pede junta intermediária. Ficam só a folga do perímetro e as transições.</text>
+<text x="640.0" y="475.2" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#000000" font-weight="bold" text-anchor="start">Proteção.</text>
+<text x="640.0" y="486.8" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">Do rejunte até a entrega: papelão ondulado e lona sobre todo o piso. A R04, o AT-A, a marcenaria e o duto da coifa sobem com o piso protegido.</text>
+</svg>

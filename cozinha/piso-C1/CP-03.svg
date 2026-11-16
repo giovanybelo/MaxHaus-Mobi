@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 990" width="1400" height="990">
+<rect x="0.00" y="0.00" width="1400.00" height="990.00" fill="#ffffff"/>
+<text x="48.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.40">MAXHAUS 81  ·  COZINHA E CLOSET  ·  CADERNO DE PAGINAÇÃO DO PISO</text>
+<text x="48.0" y="76.0" font-family="Helvetica, Arial, sans-serif" font-size="24.0" fill="#000000" font-weight="bold" text-anchor="start">Plano de corte e gabarito da peça curva</text>
+<text x="48.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#4d4d4d" font-weight="normal" text-anchor="start">Uma placa por peça larga; as seis faixas saem das sobras de F2 e F3. A curva sai por ordenadas, já descontada a folga de 3 mm.</text>
+<text x="1352.0" y="42.0" font-family="Helvetica, Arial, sans-serif" font-size="9.0" fill="#ff00ff" font-weight="bold" text-anchor="end" letter-spacing="0.80">C1  ·  16/11/2026</text>
+<text x="1352.0" y="78.0" font-family="Helvetica, Arial, sans-serif" font-size="22.0" fill="#000000" font-weight="bold" text-anchor="end">CP-03</text>
+<text x="1352.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">escala indicada  ·  A3, imprimir a 100%</text>
+<line x1="48.00" y1="112.00" x2="1352.00" y2="112.00" stroke="#cccccc" stroke-width="1.00"/>
+<line x1="48.00" y1="928.00" x2="1352.00" y2="928.00" stroke="#cccccc" stroke-width="1.00"/>
+<text x="48.0" y="944.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cotas em mm, em faces de parede, sobre o scan de 02/09/2026 e o Caderno Alternativo A, REV. W, prancha 04 (opção B). Medir a zona em obra, depois da demolição e do contrapiso, antes de cortar qualquer placa.</text>
+<text x="48.0" y="956.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#4d4d4d" font-weight="normal" text-anchor="start">Orientação de escopo, não laudo: instalações de gás e exaustão, estrutura e liberação do condomínio pedem responsável técnico em obra.</text>
+<text x="48.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#ff00ff" font-weight="bold" text-anchor="start" letter-spacing="0.50">MAXHAUS 81  ·  JOÃO BALDINATO 109  ·  COZINHA E CLOSET  ·  CADERNO DE PAGINAÇÃO DO PISO</text>
+<text x="1352.0" y="975.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#4d4d4d" font-weight="normal" text-anchor="end">CP-03   ·   C1  ·  16/11/2026</text>
+<text x="70.0" y="151.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.00">PLACAS 1000 × 1000 — O QUE SAI DE CADA UMA (1:110)</text>
+<rect x="70.00" y="165.00" width="92.00" height="92.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<path d="M70.00 257.00 L70.00 169.69 L127.13 169.69 L127.13 165.00 L162.00 165.00 L162.00 257.00 Z" fill="#d6ffff" stroke="#000000" stroke-width="0.70"/>
+<text x="116.0" y="205.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle">A2</text>
+<text x="70.0" y="268.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start">P01</text>
+<rect x="184.00" y="165.00" width="92.00" height="92.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<path d="M184.00 257.00 L184.00 165.00 L211.88 165.00 L211.88 165.00 L214.39 165.05 L216.91 165.20 L219.41 165.44 L221.91 165.79 L224.39 166.23 L226.85 166.77 L229.28 167.41 L231.69 168.14 L234.07 168.96 L236.42 169.88 L238.72 170.89 L240.99 171.99 L243.21 173.18 L245.38 174.45 L247.50 175.81 L249.57 177.25 L251.57 178.77 L253.52 180.36 L255.40 182.04 L257.22 183.78 L258.96 185.60 L260.64 187.48 L262.23 189.43 L263.75 191.43 L265.19 193.50 L266.55 195.62 L267.82 197.79 L269.01 200.01 L270.11 202.28 L271.12 204.58 L272.04 206.93 L272.86 209.31 L273.59 211.72 L274.23 214.15 L274.77 216.61 L275.21 219.09 L275.56 221.59 L275.80 224.09 L275.95 226.61 L276.00 229.12 L276.00 229.12 L276.00 257.00 Z" fill="#d6ffff" stroke="#000000" stroke-width="0.70"/>
+<text x="230.0" y="205.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle">A3</text>
+<text x="184.0" y="268.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start">P02</text>
+<rect x="298.00" y="165.00" width="92.00" height="92.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<path d="M298.00 257.00 L298.00 165.00 L390.00 165.00 L390.00 257.00 Z" fill="#ffffff" stroke="#000000" stroke-width="0.70"/>
+<text x="344.0" y="205.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle">B2</text>
+<text x="298.0" y="268.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start">P03</text>
+<rect x="412.00" y="165.00" width="92.00" height="92.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<path d="M412.00 257.00 L412.00 165.00 L504.00 165.00 L504.00 257.00 Z" fill="#ffffff" stroke="#000000" stroke-width="0.70"/>
+<text x="458.0" y="205.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle">B3</text>
+<text x="412.0" y="268.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start">P04</text>
+<rect x="70.00" y="291.00" width="92.00" height="92.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<path d="M70.00 383.00 L70.00 291.00 L162.00 291.00 L162.00 383.00 Z" fill="#ffffff" stroke="#000000" stroke-width="0.70"/>
+<text x="116.0" y="331.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle">C2</text>
+<text x="70.0" y="394.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start">P05</text>
+<rect x="184.00" y="291.00" width="92.00" height="92.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<path d="M184.00 383.00 L184.00 291.00 L276.00 291.00 L276.00 383.00 Z" fill="#ffffff" stroke="#000000" stroke-width="0.70"/>
+<text x="230.0" y="331.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle">C3</text>
+<text x="184.0" y="394.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start">P06</text>
+<rect x="298.00" y="291.00" width="92.00" height="92.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<path d="M298.00 383.00 L298.00 291.00 L390.00 291.00 L390.00 383.00 Z" fill="#ffffff" stroke="#000000" stroke-width="0.70"/>
+<text x="344.0" y="331.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle">D2</text>
+<text x="298.0" y="394.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start">P07</text>
+<rect x="412.00" y="291.00" width="92.00" height="92.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<path d="M412.00 383.00 L412.00 291.00 L504.00 291.00 L504.00 383.00 Z" fill="#ffffff" stroke="#000000" stroke-width="0.70"/>
+<text x="458.0" y="331.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle">D3</text>
+<text x="412.0" y="394.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start">P08</text>
+<rect x="70.00" y="417.00" width="92.00" height="92.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<path d="M70.00 509.00 L70.00 417.00 L162.00 417.00 L162.00 509.00 Z" fill="#ffffff" stroke="#000000" stroke-width="0.70"/>
+<text x="116.0" y="457.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle">E2</text>
+<text x="70.0" y="520.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start">P09</text>
+<rect x="184.00" y="417.00" width="92.00" height="92.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<path d="M184.00 509.00 L184.00 417.00 L276.00 417.00 L276.00 509.00 Z" fill="#ffffff" stroke="#000000" stroke-width="0.70"/>
+<text x="230.0" y="457.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle">E3</text>
+<text x="184.0" y="520.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start">P10</text>
+<rect x="298.00" y="417.00" width="92.00" height="92.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<path d="M298.00 490.60 L298.00 417.00 L390.00 417.00 L390.00 490.60 Z" fill="#f5f5f5" stroke="#000000" stroke-width="0.70"/>
+<rect x="298.00" y="490.88" width="87.31" height="2.76" fill="#ffff99" stroke="#000000" stroke-width="0.50"/>
+<rect x="298.00" y="493.91" width="92.00" height="2.76" fill="#ffff99" stroke="#000000" stroke-width="0.50"/>
+<rect x="298.00" y="496.95" width="92.00" height="2.76" fill="#ffff99" stroke="#000000" stroke-width="0.50"/>
+<text x="344.0" y="457.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle">F2</text>
+<text x="344.0" y="507.0" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#000000" font-weight="bold" text-anchor="middle">faixas A1, C1, E1</text>
+<text x="298.0" y="520.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start">P11</text>
+<rect x="412.00" y="417.00" width="92.00" height="92.00" fill="#ffffff" stroke="#000000" stroke-width="0.90"/>
+<path d="M412.00 490.60 L412.00 417.00 L504.00 417.00 L504.00 490.60 Z" fill="#f5f5f5" stroke="#000000" stroke-width="0.70"/>
+<rect x="412.00" y="490.88" width="92.00" height="2.76" fill="#ffff99" stroke="#000000" stroke-width="0.50"/>
+<rect x="412.00" y="493.91" width="92.00" height="2.76" fill="#ffff99" stroke="#000000" stroke-width="0.50"/>
+<rect x="412.00" y="496.95" width="73.60" height="2.76" fill="#ffff99" stroke="#000000" stroke-width="0.50"/>
+<text x="458.0" y="457.0" font-family="Helvetica, Arial, sans-serif" font-size="8.4" fill="#000000" font-weight="bold" text-anchor="middle">F3</text>
+<text x="458.0" y="507.0" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#000000" font-weight="bold" text-anchor="middle">faixas B1, D1, F1</text>
+<text x="412.0" y="520.0" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="bold" text-anchor="start">P12</text>
+<text x="70.0" y="549.0" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#000000" font-weight="bold" text-anchor="start">Ordem de corte.</text>
+<text x="70.0" y="560.6" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">Cortar primeiro F2 e F3 (800 mm) e tirar das sobras de 197 mm as seis faixas de 30 mm. B2 a E3 entram inteiras. A2 e A3</text>
+<text x="70.0" y="572.2" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">só depois de fixar o perfil e medir a curva e o degrau em obra.</text>
+<text x="70.0" y="590.8" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#000000" font-weight="bold" text-anchor="start">Reserva.</text>
+<text x="70.0" y="602.4" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#4d4d4d" font-weight="normal" text-anchor="start">12 placas no projeto; com 10% de perda, comprar 14 (7 caixas de 2), do mesmo lote do banheiro.</text>
+<text x="640.0" y="152.0" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.00">GABARITO DA PEÇA A3 — ESCALA 1:10, ORDENADAS EM mm A PARTIR DA BORDA NORTE</text>
+<rect x="670.00" y="178.00" width="333.33" height="333.33" fill="none" stroke="#8c8c8c" stroke-width="0.60" stroke-dasharray="3 2"/>
+<path d="M670.00 511.33 L670.00 178.00 L771.00 178.00 L771.00 178.00 L780.12 178.18 L789.23 178.72 L798.31 179.61 L807.34 180.86 L816.33 182.46 L825.24 184.42 L834.06 186.72 L842.79 189.37 L851.41 192.36 L859.91 195.69 L868.27 199.34 L876.48 203.32 L884.52 207.62 L892.39 212.24 L900.08 217.16 L907.56 222.37 L914.84 227.88 L921.89 233.67 L928.71 239.73 L935.28 246.05 L941.61 252.63 L947.67 259.44 L953.46 266.50 L958.96 273.77 L964.18 281.26 L969.10 288.94 L973.71 296.81 L978.01 304.86 L981.99 313.06 L985.65 321.42 L988.97 329.92 L991.96 338.54 L994.61 347.27 L996.91 356.10 L998.87 365.01 L1000.47 373.99 L1001.72 383.03 L1002.62 392.10 L1003.15 401.21 L1003.33 410.33 L1003.33 410.33 L1003.33 511.33 Z" fill="#d6ffff" stroke="#000000" stroke-width="1.00"/>
+<line x1="670.00" y1="178.00" x2="670.00" y2="178.00" stroke="#ff00ff" stroke-width="0.70"/>
+<circle cx="670.00" cy="178.00" r="1.80" fill="#ff00ff"/>
+<line x1="803.33" y1="178.00" x2="803.33" y2="180.26" stroke="#ff00ff" stroke-width="0.70"/>
+<circle cx="803.33" cy="180.26" r="1.80" fill="#ff00ff"/>
+<line x1="836.67" y1="178.00" x2="836.67" y2="187.47" stroke="#ff00ff" stroke-width="0.70"/>
+<circle cx="836.67" cy="187.47" r="1.80" fill="#ff00ff"/>
+<line x1="870.00" y1="178.00" x2="870.00" y2="200.15" stroke="#ff00ff" stroke-width="0.70"/>
+<circle cx="870.00" cy="200.15" r="1.80" fill="#ff00ff"/>
+<line x1="903.33" y1="178.00" x2="903.33" y2="219.37" stroke="#ff00ff" stroke-width="0.70"/>
+<circle cx="903.33" cy="219.37" r="1.80" fill="#ff00ff"/>
+<line x1="936.67" y1="178.00" x2="936.67" y2="247.44" stroke="#ff00ff" stroke-width="0.70"/>
+<circle cx="936.67" cy="247.44" r="1.80" fill="#ff00ff"/>
+<line x1="970.00" y1="178.00" x2="970.00" y2="290.43" stroke="#ff00ff" stroke-width="0.70"/>
+<circle cx="970.00" cy="290.43" r="1.80" fill="#ff00ff"/>
+<line x1="986.67" y1="178.00" x2="986.67" y2="323.92" stroke="#ff00ff" stroke-width="0.70"/>
+<circle cx="986.67" cy="323.92" r="1.80" fill="#ff00ff"/>
+<line x1="995.00" y1="178.00" x2="995.00" y2="348.67" stroke="#ff00ff" stroke-width="0.70"/>
+<circle cx="995.00" cy="348.67" r="1.80" fill="#ff00ff"/>
+<line x1="1000.00" y1="178.00" x2="1000.00" y2="371.12" stroke="#ff00ff" stroke-width="0.70"/>
+<circle cx="1000.00" cy="371.12" r="1.80" fill="#ff00ff"/>
+<line x1="1003.33" y1="178.00" x2="1003.33" y2="410.33" stroke="#ff00ff" stroke-width="0.70"/>
+<circle cx="1003.33" cy="410.33" r="1.80" fill="#ff00ff"/>
+<text x="670.0" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">0</text>
+<text x="771.0" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">303</text>
+<text x="803.3" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">400</text>
+<text x="806.3" y="190.3" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#ff00ff" font-weight="bold" text-anchor="start">7</text>
+<text x="836.7" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">500</text>
+<text x="839.7" y="197.5" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#ff00ff" font-weight="bold" text-anchor="start">28</text>
+<text x="870.0" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">600</text>
+<text x="873.0" y="210.1" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#ff00ff" font-weight="bold" text-anchor="start">66</text>
+<text x="903.3" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">700</text>
+<text x="906.3" y="229.4" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#ff00ff" font-weight="bold" text-anchor="start">124</text>
+<text x="936.7" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">800</text>
+<text x="939.7" y="257.4" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#ff00ff" font-weight="bold" text-anchor="start">208</text>
+<text x="970.0" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">900</text>
+<text x="973.0" y="300.4" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#ff00ff" font-weight="bold" text-anchor="start">337</text>
+<text x="986.7" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">950</text>
+<text x="989.7" y="333.9" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#ff00ff" font-weight="bold" text-anchor="start">438</text>
+<text x="998.0" y="358.7" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#ff00ff" font-weight="bold" text-anchor="start">512</text>
+<text x="1003.0" y="381.1" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#ff00ff" font-weight="bold" text-anchor="end">579</text>
+<text x="1003.3" y="172.0" font-family="Helvetica, Arial, sans-serif" font-size="5.8" fill="#4d4d4d" font-weight="normal" text-anchor="middle">1000</text>
+<text x="1006.3" y="420.3" font-family="Helvetica, Arial, sans-serif" font-size="6.4" fill="#ff00ff" font-weight="bold" text-anchor="end">697</text>
+<text x="836.7" y="384.7" font-family="Helvetica, Arial, sans-serif" font-size="16.0" fill="#000000" font-weight="bold" text-anchor="middle">A3</text>
+<text x="836.7" y="400.7" font-family="Helvetica, Arial, sans-serif" font-size="7.0" fill="#4d4d4d" font-weight="normal" text-anchor="middle">borda norte = transição  ·  leste à direita</text>
+<text x="640.0" y="533.3" font-family="Helvetica, Arial, sans-serif" font-size="7.4" fill="#4d4d4d" font-weight="bold" text-anchor="start" letter-spacing="1.00">ORDENADAS DO ARCO R 697 (700 MENOS A FOLGA)</text>
+<rect x="640.00" y="541.33" width="712.00" height="13.00" fill="#e0e0e0"/>
+<text x="646.0" y="549.9" font-family="Helvetica, Arial, sans-serif" font-size="6.8" fill="#4d4d4d" font-weight="bold" text-anchor="start">Da borda oeste da placa (mm)</text>
+<text x="1346.0" y="549.9" font-family="Helvetica, Arial, sans-serif" font-size="6.8" fill="#4d4d4d" font-weight="bold" text-anchor="end">Até a curva, a partir da borda norte (mm)</text>
+<text x="646.0" y="562.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">303</text>
+<text x="1346.0" y="562.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="end">0</text>
+<line x1="640.00" y1="567.33" x2="1352.00" y2="567.33" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="567.33" width="712.00" height="13.00" fill="#f5f5f5"/>
+<text x="646.0" y="575.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">400</text>
+<text x="1346.0" y="575.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="end">7</text>
+<line x1="640.00" y1="580.33" x2="1352.00" y2="580.33" stroke="#cccccc" stroke-width="0.50"/>
+<text x="646.0" y="588.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">500</text>
+<text x="1346.0" y="588.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="end">28</text>
+<line x1="640.00" y1="593.33" x2="1352.00" y2="593.33" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="593.33" width="712.00" height="13.00" fill="#f5f5f5"/>
+<text x="646.0" y="601.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">600</text>
+<text x="1346.0" y="601.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="end">66</text>
+<line x1="640.00" y1="606.33" x2="1352.00" y2="606.33" stroke="#cccccc" stroke-width="0.50"/>
+<text x="646.0" y="614.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">700</text>
+<text x="1346.0" y="614.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="end">124</text>
+<line x1="640.00" y1="619.33" x2="1352.00" y2="619.33" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="619.33" width="712.00" height="13.00" fill="#f5f5f5"/>
+<text x="646.0" y="627.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">800</text>
+<text x="1346.0" y="627.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="end">208</text>
+<line x1="640.00" y1="632.33" x2="1352.00" y2="632.33" stroke="#cccccc" stroke-width="0.50"/>
+<text x="646.0" y="640.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">900</text>
+<text x="1346.0" y="640.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="end">337</text>
+<line x1="640.00" y1="645.33" x2="1352.00" y2="645.33" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="645.33" width="712.00" height="13.00" fill="#f5f5f5"/>
+<text x="646.0" y="653.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">950</text>
+<text x="1346.0" y="653.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="end">438</text>
+<line x1="640.00" y1="658.33" x2="1352.00" y2="658.33" stroke="#cccccc" stroke-width="0.50"/>
+<text x="646.0" y="666.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">975</text>
+<text x="1346.0" y="666.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="end">512</text>
+<line x1="640.00" y1="671.33" x2="1352.00" y2="671.33" stroke="#cccccc" stroke-width="0.50"/>
+<rect x="640.00" y="671.33" width="712.00" height="13.00" fill="#f5f5f5"/>
+<text x="646.0" y="679.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">990</text>
+<text x="1346.0" y="679.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="end">579</text>
+<line x1="640.00" y1="684.33" x2="1352.00" y2="684.33" stroke="#cccccc" stroke-width="0.50"/>
+<text x="646.0" y="692.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#000000" font-weight="bold" text-anchor="start">1000</text>
+<text x="1346.0" y="692.9" font-family="Helvetica, Arial, sans-serif" font-size="7.2" fill="#4d4d4d" font-weight="normal" text-anchor="end">697</text>
+<line x1="640.00" y1="697.33" x2="1352.00" y2="697.33" stroke="#cccccc" stroke-width="0.50"/>
+</svg>
