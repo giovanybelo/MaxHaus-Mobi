@@ -1244,8 +1244,10 @@ def _paragrafo(notas, inicio, novo):
 
 # ---- porta P03 de abrir --------------------------------------------------
 X_BANHO_LESTE = 417.90
-P03_VAO = (X_BANHO_LESTE + 0.15 * PT_PER_M, DRYWALL_R01[1], X_BANHO_LESTE + 1.13 * PT_PER_M, DRYWALL_R01[3])
-PORTA_R01 = (P03_VAO[0] + 0.04 * PT_PER_M, DRYWALL_R01[1], P03_VAO[0] + 0.94 * PT_PER_M, DRYWALL_R01[3])
+# REV. W: a P03 fica da parede do banheiro à mesma distância que a P02 fica da parede sala/quarto
+D_PORTAS = DRYWALL_R01[1] - bm.DOOR_BANHO['rect'][3]          # 10,43 pt = 0,23 m
+PORTA_R01 = (X_BANHO_LESTE + D_PORTAS, DRYWALL_R01[1], X_BANHO_LESTE + D_PORTAS + 0.90 * PT_PER_M, DRYWALL_R01[3])
+P03_VAO = (PORTA_R01[0] - 0.04 * PT_PER_M, DRYWALL_R01[1], PORTA_R01[2] + 0.04 * PT_PER_M, DRYWALL_R01[3])
 
 
 def _porta_p03(d, rect, lado='n', sentido='e'):
@@ -1267,17 +1269,17 @@ p02.ALVOS[:] = [('D01', _XP03, Y_R01, 'demo', 0, -9) if a[0] == 'D01' else
                 ('R01', _XP03 + 14.0, Y_R01, 'novo', 10, 11) if a[0] == 'R01' else a for a in p02.ALVOS]
 _subst(p02.LINHAS, 'D01', ('D01', 'Ampliar o vão existente da porta sala de TV/quarto (parede mantida)', '1 vão — ~0,98 × 2,14 m'))
 _subst(p02.LINHAS, 'R01', ('R01', 'Requadrar o vão e instalar a P03: porta de abrir 0,90 × 2,10 m, para o quarto', '1 vão + 1 porta'))
-_subst(fo.TAB_DEMO, 'D01', ('D01', 'Ampliar o vão existente sala de TV/quarto para ~0,98 × 2,14 m, a 0,15 m do banheiro', '1 vão'))
+_subst(fo.TAB_DEMO, 'D01', ('D01', 'Ampliar o vão existente sala de TV/quarto para ~0,98 × 2,14 m', '1 vão'))
 _subst(fo.TAB_DEMO, 'R01', ('R01', 'Requadrar o vão para a porta P03 de abrir, 0,90 × 2,10 m', '1 vão'))
 for _n in p02.NOTAS:
     for _j, _ln in enumerate(_n):
         if _ln.startswith('A parede sala de TV/quarto fica onde está'):
             assert 'O vidro do fundo do box' in _n[_j + 1], _n[_j + 1]
             _n[_j] = 'A parede sala de TV/quarto fica onde está: o vão existente é ampliado para a porta P03 de abrir,'
-            _n[_j + 1] = '0,90 × 2,10 m, a 0,15 m do banheiro (D01, R01). O vidro do fundo do box cai e vira parede (R02).'
+            _n[_j + 1] = '0,90 × 2,10 m, a 0,23 m do banheiro (D01, R01). O vidro do fundo do box cai e vira parede (R02).'
 _paragrafo(p06.NOTAS, '**P03 é a única esquadria nova.', [
     '**P03 é a única porta nova (REV. V).',
-    'Porta de abrir de 0,90 × 2,10 m, no vão existente ampliado da parede sala de TV/quarto, a 0,15 m',
+    'Porta de abrir de 0,90 × 2,10 m, no vão existente ampliado da parede sala de TV/quarto, a 0,23 m',
     'da parede do banheiro. Abre para o quarto, em sentido horário, com a dobradiça do lado do banheiro.',
     'P02, do banheiro, 0,80 × 2,15 m, abre para fora, anti-horário. P01, a entrada, não muda.'])
 _paragrafo(p01.NOTAS, '**Pé-direito: 2,40 m com o forro atual', [
@@ -1294,7 +1296,7 @@ _paragrafo(p01.NOTAS, '**Espessuras e níveis', [
 _varrer(p01.NOTAS, [('Só o vão da porta de correr P03 é aberto. Conferir a posição em obra.',
                      'O vão da P03 é ampliado para porta de abrir de 0,90 × 2,10 m.')])
 _subst(fo.TAB_PORTAS, 'P03', ('P03', 'Quarto / sala de TV — de abrir, para o quarto, sentido horário; dobradiça do lado '
-                                     'do banheiro; vão a 0,15 m da parede dele', 'folha 0,90 × 2,10 m'))
+                                     'do banheiro; vão a 0,23 m da parede dele', 'folha 0,90 × 2,10 m'))
 fo.SEQ_FO7[-1] = ('6', ['Portas — P02 com giro invertido e P03 nova, de abrir.',
                         'Vão da P03 ampliado antes do revestimento; folha depois da pintura.'], False)
 _subst(p12.RISCOS, 'L4', ('L4', 'Elétrica', 'Eletroduto existente obstruído na troca da fiação — decidir antes de abrir parede', 'medio'))
@@ -1511,31 +1513,288 @@ PARES_FOLHA = {
 }
 
 
+# ---------------------------------------------------------------------------
+# REV. W (16.11.2026) — pedido do cliente
+#   · P03 a 0,23 m da parede do banheiro: a mesma distância da P02 à parede sala/quarto
+#   · Prancha 01A: planta de cotas completa, 1:50 — todas as paredes, faces, vãos e áreas
+# ---------------------------------------------------------------------------
+REV_ALT = 'ALT. A  ·  REV. W'
+bm.DATA_EMISSAO = '16/11/2026'
+fo.DATA = '16.11.2026'
+fo.EMISSAO = 'ALT. A  ·  EMISSÃO 09'
+fo.ORIGEM = 'extraído do Caderno Alternativo A — REV. W'
+_subst(fo.TAB_DEMO, 'D01', ('D01', 'Ampliar o vão existente sala de TV/quarto: vão livre de 0,90 m a 0,23 m da parede do banheiro', '1 vão'))
+_subst(p09.TAB_DEC, 'Porta P03', ('Porta P03', 'REV. W', 'de abrir 0,90 × 2,10 m, a 0,23 m do banheiro'))
+
+# faces internas dos ambientes (pt do scan); a letra diz se a aresta que SAI do vértice é parede (w) ou aberta (o)
+FACES = [
+    ('SALA DE ESTAR', (5.20, 1.20), [(450.68, 128.94, 'w'), (599.46, 128.94, 'w'), (599.46, 213.47, 'o'), (450.68, 213.47, 'w')]),
+    ('SALA DE TV', (5.00, 3.70), [(343.39, 213.47, 'w'), (450.68, 213.47, 'o'), (599.46, 213.47, 'w'), (599.46, 410.88, 'w'),
+                                  (417.90, 410.88, 'w'), (417.90, 323.74, 'w'), (343.39, 323.74, 'o')]),
+    ('COZINHA', (1.25, 6.35), [(280.09, 213.47, 'w'), (343.39, 213.47, 'o'), (343.39, 323.74, 'w'), (343.39, 450.67, 'w'),
+                               (250.26, 450.67, 'w'), (250.26, 287.11, 'w'), (280.09, 287.11, 'w')]),
+    ('BANHEIRO', (3.20, 5.55), [(347.96, 328.31, 'w'), (413.33, 328.31, 'w'), (413.33, 450.67, 'w'), (347.96, 450.67, 'w')]),
+    ('CLOSET', (1.10, 8.20), [(250.26, 455.24, 'w'), (343.39, 455.24, 'o'), (343.39, 513.42, 'w'), (343.39, 550.38, 'w'),
+                              (250.26, 550.38, 'w')]),
+    ('QUARTO', (5.10, 7.60), [(417.90, 415.45, 'w'), (599.46, 415.45, 'w'), (599.46, 550.38, 'w'), (347.96, 550.38, 'w'),
+                              (347.96, 513.42, 'o'), (347.96, 455.24, 'w'), (417.90, 455.24, 'w')]),
+]
+AREA_QUADRO = {'SALA DE ESTAR': 5.90, 'SALA DE TV': 21.33, 'COZINHA': 9.82, 'BANHEIRO': 3.80, 'CLOSET': 4.38, 'QUARTO': 15.07}
+JANELA_ID = {(599.46, 142.5): 'J01', (599.46, 215.0): 'J02', (599.46, 348.0): 'J03', (599.46, 455.7): 'J04',
+             (251.4, 550.38): 'J06', (354.0, 550.38): 'J05'}
+
+
+def _area(pts):
+    a = 0.0
+    for i in range(len(pts)):
+        x0, y0 = pts[i][:2]
+        x1, y1 = pts[(i + 1) % len(pts)][:2]
+        a += x0 * y1 - x1 * y0
+    return abs(a) / 2.0 / PT_PER_M ** 2
+
+
+def _dentro(pts, x, y):
+    c = False
+    for i in range(len(pts)):
+        x0, y0 = pts[i][:2]
+        x1, y1 = pts[(i + 1) % len(pts)][:2]
+        if (y0 > y) != (y1 > y) and x < x0 + (y - y0) * (x1 - x0) / (y1 - y0):
+            c = not c
+    return c
+
+
+def _paredes_cota():
+    return list(bm.WALLS) + [bm.PAREDE_FUNDO_BOX]
+
+
+def _cortes(eixo, pos, extra=()):
+    """Faces das paredes cruzadas por uma linha (eixo 'h': y = pos; 'v': x = pos)."""
+    iv = []
+    for (x0, y0, x1, y1) in _paredes_cota():
+        if eixo == 'h' and y0 - 0.01 <= pos <= y1 + 0.01:
+            iv.append((x0, x1))
+        if eixo == 'v' and x0 - 0.01 <= pos <= x1 + 0.01:
+            iv.append((y0, y1))
+    iv.sort()
+    m = []
+    for a, b in iv:
+        if m and a <= m[-1][1] + 0.05:
+            m[-1] = (m[-1][0], max(m[-1][1], b))
+        else:
+            m.append((a, b))
+    pts = sorted(set([round(v, 2) for ab in m for v in ab] + [round(v, 2) for v in extra]))
+    return pts
+
+
+def construir_cotas():
+    d = folha_nova()
+    cabecalho_alt(d, 'Planta de cotas completa', 'Todas as paredes, faces internas, vãos, espessuras e áreas. Cotas em metros, faces do scan (paredes existentes) e medidas de obra.',
+                  REV_ALT, 'escala 1:50  ·  A3, imprimir a 100%', 'portas P02 e P03 a 0,23 m das quinas')
+    S = 1000.0 / (0.3 * 50.0)                     # 1:50
+    d.set_plan(122, 206, S)
+    fundo_ambientes(d, K07)
+    paredes(d, estado='novo')
+    janelas(d)
+    porta(d, DOOR_ENTRADA)
+    porta(d, DOOR_BANHO)
+    bm.porta_horizontal(d, PORTA_R01, hinge='w', swing='s')
+    escada(d, rotulo=False)
+    desenhar_at(d, size=6.0, rotulos=False, chamine=False)
+    _b = d.R(AT_B)
+    d.txt(_b[0] + _b[2] / 2.0 + 2.2, _b[1] + _b[3] / 2.0, 'AT-B', 6.0, BRANCO, 'bold', 'middle', rot=-90)
+    norte(d, 150, 236, 14, nota='uma')
+
+    # --- arestas de cada ambiente ------------------------------------------------
+    tab = []
+    abertas = []
+    for nome, (lxm, lym), pts in FACES:
+        n = len(pts)
+        for i in range(n):
+            x0, y0, tipo = pts[i]
+            x1, y1, _ = pts[(i + 1) % n]
+            L = math.hypot(x1 - x0, y1 - y0) / PT_PER_M
+            mxp, myp = (x0 + x1) / 2.0, (y0 + y1) / 2.0
+            vert = abs(x1 - x0) < 0.01
+            nx, ny = (1.0, 0.0) if vert else (0.0, 1.0)
+            if not _dentro(pts, mxp + nx * 1.0, myp + ny * 1.0):
+                nx, ny = -nx, -ny
+            a, b = d.P(x0, y0), d.P(x1, y1)
+            if tipo == 'o':
+                pos = x0 if vert else y0
+                faixa = sorted((y0, y1) if vert else (x0, x1))
+                if any(v == vert and abs(p_ - pos) < 6 and f_[0] < faixa[1] and faixa[0] < f_[1] for v, p_, f_ in abertas):
+                    continue
+                abertas.append((vert, pos, faixa))
+                t = 0.0
+                while t < 1.0:
+                    t2 = min(t + 0.04, 1.0)
+                    d.line(a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t,
+                           a[0] + (b[0] - a[0]) * t2, a[1] + (b[1] - a[1]) * t2, DEMO, 0.8)
+                    t += 0.07
+            c = d.P(mxp, myp)
+            off = 7.5
+            cx, cy = c[0] + nx * off, c[1] + ny * off
+            rot = br(L) + (' aberto' if tipo == 'o' else '')
+            cor = DEMO if tipo == 'o' else INK
+            if vert:
+                d.txt(cx + (2.2 if nx > 0 else -2.2), cy, rot, 5.8, cor, 'normal', 'middle', rot=-90)
+            else:
+                d.txt(cx, cy + (4.6 if ny > 0 else -1.4), rot, 5.8, cor, 'normal', 'middle')
+        a = _area(pts)
+        xs = [p[0] for p in pts]
+        ys = [p[1] for p in pts]
+        per = sum(math.hypot(pts[(i + 1) % n][0] - pts[i][0], pts[(i + 1) % n][1] - pts[i][1]) for i in range(n)) / PT_PER_M
+        tab.append(({'SALA DE TV': 'Sala de TV', 'SALA DE ESTAR': 'Sala de estar'}.get(nome, nome.capitalize()), '%s × %s' % (br((max(xs) - min(xs)) / PT_PER_M), br((max(ys) - min(ys)) / PT_PER_M)),
+                    br(a), br(AREA_QUADRO[nome]), br(per)))
+        c = d.PM(lxm, lym)
+        tam = 7.0 if nome == 'BANHEIRO' else 8.0
+        d.txt(c[0], c[1], nome, tam, INK, 'bold', 'middle', ls=0.6)
+        d.txt(c[0], c[1] + 12, '%s m²' % br(a), tam, DEMO, 'bold', 'middle')
+
+    # --- cadeias externas --------------------------------------------------------------
+    cadeia_v(d, [124.38, 142.5, 193.2, 215.0, 300.8, 348.0, 394.4, 455.7, 509.8, 554.94], 604.03, 30, size=6.2)
+    cota_v(d, 124.38, 554.94, 604.03, 54, size=7.0)
+    cadeia_h(d, [245.70, 251.4, 342.0, 354.0, 408.1, 604.03], 554.94, 26, size=6.2)
+    cota_h(d, 245.70, 604.03, 554.94, 48, size=7.0)
+    cadeia_v(d, [282.54, 287.11, 450.67, 455.24, 550.38, 554.94], 245.70, -26, size=6.2)
+    cota_v(d, 282.54, 554.94, 245.70, -48, size=7.0)
+    cadeia_h(d, [446.11, 450.68, 599.46, 604.03], 124.38, -22, size=6.2)
+    cadeia_h(d, [275.52, 280.09, 446.11], 208.91, -20, size=6.2)
+    cota_h(d, 245.70, 604.03, 124.38, -46, size=7.0)
+    cadeia_v(d, [124.38, 128.94, 208.91, 213.47], 446.11, -18, size=6.2)
+    cadeia_v(d, [208.91, 220.10, 265.76, 282.54], 275.52, -16, size=6.2)       # porta de entrada P01
+
+    # --- cadeias internas (paredes e faces) ------------------------------------------
+    for y in (345.0, 530.0):
+        cadeia_h(d, _cortes('h', y), y, 0, size=6.0)
+    cadeia_v(d, _cortes('v', 365.0), 365.0, 0, size=6.0)
+    cadeia_v(d, _cortes('v', 540.0, extra=(213.47,)), 540.0, 0, size=6.0)
+
+    # --- portas: as duas a 0,23 m da quina ---------------------------------------------
+    cadeia_v(d, [323.74, bm.DOOR_BANHO['rect'][1], bm.DOOR_BANHO['rect'][3], DRYWALL_R01[1]], 417.90, 28, size=6.2)
+    cadeia_h(d, [417.90, PORTA_R01[0], PORTA_R01[2], 599.46], DRYWALL_R01[3], 12, size=6.2)
+    c = d.P(PORTA_R01[2], DRYWALL_R01[1])
+    d.circle(c[0] + 14, c[1] - 12, 7, fill=BG, stroke=DEMO, sw=1.2)
+    d.txt(c[0] + 14, c[1] - 9.5, 'A', 7.0, DEMO, 'bold', 'middle')
+    for door, rot in ((bm.DOOR_BANHO['rect'], 'P02 · 0,80 × 2,15'), (DOOR_ENTRADA['rect'], 'P01 · 1,00 × 2,29')):
+        c = d.P((door[0] + door[2]) / 2.0, (door[1] + door[3]) / 2.0)
+        d.txt(c[0] + 28 if door is bm.DOOR_BANHO['rect'] else c[0] + 30, c[1] - 14, rot, 6.2, INK, 'bold', 'start')
+    c = d.P((PORTA_R01[0] + PORTA_R01[2]) / 2.0, PORTA_R01[3])
+    d.txt(c[0] + 34, c[1] + 50, 'P03 · 0,90 × 2,10', 6.2, INK, 'bold', 'middle')
+    for (x0, y0, x1, y1), jid in ((j, JANELA_ID.get((j[0], j[1]))) for j in bm.JANELAS):
+        if not jid:
+            continue
+        c = d.P((x0 + x1) / 2.0, (y0 + y1) / 2.0)
+        if x1 - x0 > y1 - y0:
+            d.txt(c[0], c[1] - 6, jid, 6.0, K70, 'bold', 'middle')
+        else:
+            d.txt(c[0] - 7, c[1], jid, 6.0, K70, 'bold', 'middle', rot=-90)
+    # escada e áreas técnicas
+    c = d.P(390.4, 232.6)
+    d.txt(c[0], c[1] + 2, 'ESCADA  3,02 × 0,84', 6.0, INK_SOFT, 'bold', 'middle')
+    c = d.P((AT_A[0] + AT_A[2]) / 2.0, AT_A[3])
+    d.txt(c[0], c[1] + 9, 'AT-A 0,60 × 0,40', 5.8, INK_SOFT, 'normal', 'middle')
+
+    escala(d, 206 + 9.43 * S + 66)
+
+    # --- coluna da direita ----------------------------------------------------------------
+    d.line(770, 140, 770, 900, RULE, 0.8, opacity=0.8)
+    cx, cw = 800, W - MARGIN - 800
+    tot = sum(float(r[2].replace(',', '.')) for r in tab)
+    tot_q = sum(AREA_QUADRO.values())
+    fim = tabela(d, cx, 160, cw, [('Ambiente', 0.26, 'start'), ('Maior × maior', 0.22, 'end'), ('Área faces', 0.18, 'end'),
+                                  ('Área quadro', 0.18, 'end'), ('Perímetro', 0.16, 'end')],
+                 tab + [('Total', '', br(tot), br(tot_q), '')], titulo='ÁREAS — PELAS FACES INTERNAS DESTA FOLHA (m², m)', alt=20)
+    fim = tabela(d, cx, fim + 34, cw, [('Elemento', 0.40, 'start'), ('Medida', 0.60, 'end')], [
+        ('Paredes do scan', '0,10 m em todas'),
+        ('Porta de entrada P01', '1,00 × 2,29 m'),
+        ('Porta do banheiro P02', 'vão 0,80 × 2,15 m · a 0,88 m do canto norte e a 0,23 m da parede sala/quarto'),
+        ('Porta do quarto P03', 'vão livre 0,90 × 2,10 m · a 0,23 m da parede do banheiro'),
+        ('Pé-direito', '2,62 m na laje · banheiro 2,50 m (forro novo)'),
+        ('Escada', 'projeção 3,02 × 0,84 m, 11 degraus'),
+        ('Áreas técnicas', 'AT-A 0,60 × 0,40 m (closet) · AT-B 0,25 × 0,80 m (box)'),
+    ], titulo='VÃOS E ALTURAS', alt=20)
+    # --- detalhe A: as duas portas a 0,23 m ------------------------------------------------
+    yA = fim + 44
+    d.txt(cx, yA - 14, 'DETALHE A — PORTAS P02 E P03 · 1:40', 7.6, INK_SOFT, 'bold', ls=1.0)
+    SA = 1000.0 / (0.3 * 40.0)
+    jx0, jy0, jx1, jy1 = 398.0, 355.0, 474.0, 461.0
+    oxA, oyA = cx + 4, yA + 8
+    d.set_plan(oxA - mx(jx0) * SA, oyA - my(jy0) * SA, SA)
+    a_, b_ = d.P(jx0, jy0), d.P(jx1, jy1)
+    d.rect(a_[0], a_[1], b_[0] - a_[0], b_[1] - a_[1], fill=K07, stroke=K20, sw=0.6)
+    for (x0, y0, x1, y1) in _paredes_cota():
+        X0, Y0, X1, Y1 = max(x0, jx0), max(y0, jy0), min(x1, jx1), min(y1, jy1)
+        if X1 > X0 and Y1 > Y0:
+            x, y, w_, h_ = d.R((X0, Y0, X1, Y1))
+            d.rect(x, y, w_, h_, fill=WALL)
+    porta(d, DOOR_BANHO)
+    bm.porta_horizontal(d, PORTA_R01, hinge='w', swing='s')
+    cota_v(d, bm.DOOR_BANHO['rect'][1], bm.DOOR_BANHO['rect'][3], 417.90, 22, size=6.4)
+    cota_v(d, bm.DOOR_BANHO['rect'][3], DRYWALL_R01[1], 417.90, 22, texto='', size=6.4)
+    cota_v(d, DRYWALL_R01[1], DRYWALL_R01[3], 417.90, 22, size=6.4)
+    cota_h(d, 417.90, PORTA_R01[0], DRYWALL_R01[3], 20, texto='', size=6.4)
+    cota_h(d, PORTA_R01[0], PORTA_R01[2], DRYWALL_R01[3], 20, size=6.4)
+    c1 = d.P(417.90, (bm.DOOR_BANHO['rect'][3] + DRYWALL_R01[1]) / 2.0)
+    d.txt(c1[0] + 22 - 8, c1[1], '0,23', 7.2, DEMO, 'bold', 'middle', rot=-90)
+    c2 = d.P((417.90 + PORTA_R01[0]) / 2.0, DRYWALL_R01[3])
+    d.txt(c2[0], c2[1] + 20 - 4, '0,23', 7.2, DEMO, 'bold', 'middle')
+    for (x_, y_, t_) in ((406.0, 400.0, 'BANHEIRO'), (452.0, 360.0, 'SALA DE TV'), (452.0, 458.0, 'QUARTO')):
+        c = d.P(x_, y_)
+        d.txt(c[0], c[1], t_, 6.0, INK_SOFT, 'bold', 'middle', rot=(-90 if t_ == 'BANHEIRO' else None))
+    d.txt(oxA, b_[1] + 14, 'P02 · vão 0,80 · abre para a sala, anti-horário', 6.4, INK, 'bold')
+    d.txt(oxA, b_[1] + 25, 'P03 · vão livre 0,90 · abre para o quarto, horário', 6.4, INK, 'bold')
+    xN = b_[0] + 26
+    d.set_plan(122, 206, S)
+    fim = yA - 6
+    paragrafos(d, xN, fim, W - MARGIN - xN, [
+        ['**Como ler.',
+         'Cada aresta tem a medida escrita junto da face, por dentro do ambiente. Em magenta tracejado,',
+         'os limites abertos (sem parede). As cadeias que atravessam a planta dão face a face e as',
+         'espessuras de parede; as externas dão janelas, panos e totais.'],
+        ['**Portas alinhadas (pedido de 16/11) — detalhe A.',
+         'A P02 termina a 0,23 m da parede sala/quarto; a P03 começa a 0,23 m da parede do banheiro.'],
+        ['**Áreas.',
+         'Calculadas pelas faces desta folha (%s m²). O quadro da Prancha 01 usa o relatório do scan' % br(tot),
+         '(%s m²), que mede até o eixo e o rodapé: até 0,3 m² de diferença por ambiente.' % br(tot_q)],
+        ['**Banheiro.',
+         'Aqui, 1,43 × 2,68 m pelas faces do scan. O Executivo E3 trabalha com 1,42 × 2,68 m em faces',
+         'acabadas, já com revestimento. Para o banheiro, vale o executivo.'],
+        ['**Cantos a 90°.',
+         'Todos os cantos são desenhados em esquadro. Conferir em obra pelas diagonais antes de',
+         'marcar parede, porta ou marcenaria.'],
+    ], size=8.0, lh=11.6, gap=6.0)
+    rodape_alt(d, 'Cotas em metros sobre o levantamento por scan de 02.09.2026 e as medidas de obra de 14/11/2026. Conferir em campo antes de qualquer corte ou fabricação.',
+               'Escala 1:50 em A3 impresso a 100%. Na dúvida entre cota escrita e medida em régua, vale a cota escrita.', 'Prancha 01A / 14', REV_ALT)
+    return d
+
+
 FOLHAS = (
-    (_com_at(construir_01, (722, 800, 628), (132, 182, 64.0, 6.2), AT_TXT), 'alt-a-v-prancha-01-planta-cotada', 'Prancha 01: planta baixa cotada'),
-    (_com_at(construir_02, CX, P70, extra=EXTRA_DEMO), 'alt-a-v-prancha-02-demolicao', 'Prancha 02: demolição e desmontagem'),
-    (_com_at(lambda: construir_piso_s('A'), CX, P70, extra=EXTRA_03A), 'alt-a-v-prancha-03-piso-monolitico-integral', 'Prancha 03: piso monolítico integral'),
-    (_com_at(lambda: construir_piso_s('B'), CX, P70, extra=EXTRA_03B), 'alt-a-v-prancha-04-piso-porcelanato-monolitico', 'Prancha 04: piso porcelanato + monolítico'),
-    (_com_at(construir_teto_fas, CX, P70, extra=EXTRA_TETO), 'alt-a-v-prancha-05-teto', 'Prancha 05: teto'),
-    (_com_at(construir_eletrica, CX, P70, extra=EXTRA_ELE), 'alt-a-v-prancha-06-eletrica', 'Prancha 06: elétrica'),
-    (_com_at(p06.construir, (70, 150, 600), desenho=False), 'alt-a-v-prancha-07-esquadrias', 'Prancha 07: esquadrias'),
-    (_com_at(p07.construir, (70, 818, 345), [_plano_wc(190, 222.0, 118.0) + (7.0, True)]), 'alt-a-v-prancha-08-banheiro', 'Prancha 08: banheiro'),
-    (_com_at(p09.construir, (722, 820, 628), desenho=False), 'alt-a-v-prancha-09-medicao', 'Prancha 09: medição e decisões'),
-    (_com_at(p10.construir, (70, 640, 600), desenho=False, extra=EXTRA_WC), 'alt-a-v-prancha-10-banheiro-acabamentos', 'Prancha 10: banheiro, acabamentos'),
-    (_com_at(construir_11_fas, (755, 450, 590), desenho=False), 'alt-a-v-prancha-11-ar-luz', 'Prancha 11: ar, exaustão e iluminação'),
-    (_com_at(construir_riscos_r, None, desenho=False), 'alt-a-v-prancha-12-riscos', 'Prancha 12: riscos'),
-    (_com_at(construir_quarto_s, (66, 660, 138), desenho=False, extra=EXTRA_13), 'alt-a-v-prancha-13-quarto-claraboia', 'Prancha 13: quarto adaptável e claraboia'),
-    (_com_at(p14.construir, None, desenho=False), 'alt-a-v-prancha-14-programacao', 'Prancha 14: programação da obra'),
+    (_com_at(construir_01, (722, 800, 628), (132, 182, 64.0, 6.2), AT_TXT), 'alt-a-w-prancha-01-planta-cotada', 'Prancha 01: planta baixa cotada'),
+    (construir_cotas, 'alt-a-w-prancha-01a-planta-cotas-completa', 'Prancha 01A: planta de cotas completa'),
+    (_com_at(construir_02, CX, P70, extra=EXTRA_DEMO), 'alt-a-w-prancha-02-demolicao', 'Prancha 02: demolição e desmontagem'),
+    (_com_at(lambda: construir_piso_s('A'), CX, P70, extra=EXTRA_03A), 'alt-a-w-prancha-03-piso-monolitico-integral', 'Prancha 03: piso monolítico integral'),
+    (_com_at(lambda: construir_piso_s('B'), CX, P70, extra=EXTRA_03B), 'alt-a-w-prancha-04-piso-porcelanato-monolitico', 'Prancha 04: piso porcelanato + monolítico'),
+    (_com_at(construir_teto_fas, CX, P70, extra=EXTRA_TETO), 'alt-a-w-prancha-05-teto', 'Prancha 05: teto'),
+    (_com_at(construir_eletrica, CX, P70, extra=EXTRA_ELE), 'alt-a-w-prancha-06-eletrica', 'Prancha 06: elétrica'),
+    (_com_at(p06.construir, (70, 150, 600), desenho=False), 'alt-a-w-prancha-07-esquadrias', 'Prancha 07: esquadrias'),
+    (_com_at(p07.construir, (70, 818, 345), [_plano_wc(190, 222.0, 118.0) + (7.0, True)]), 'alt-a-w-prancha-08-banheiro', 'Prancha 08: banheiro'),
+    (_com_at(p09.construir, (722, 820, 628), desenho=False), 'alt-a-w-prancha-09-medicao', 'Prancha 09: medição e decisões'),
+    (_com_at(p10.construir, (70, 640, 600), desenho=False, extra=EXTRA_WC), 'alt-a-w-prancha-10-banheiro-acabamentos', 'Prancha 10: banheiro, acabamentos'),
+    (_com_at(construir_11_fas, (755, 450, 590), desenho=False), 'alt-a-w-prancha-11-ar-luz', 'Prancha 11: ar, exaustão e iluminação'),
+    (_com_at(construir_riscos_r, None, desenho=False), 'alt-a-w-prancha-12-riscos', 'Prancha 12: riscos'),
+    (_com_at(construir_quarto_s, (66, 660, 138), desenho=False, extra=EXTRA_13), 'alt-a-w-prancha-13-quarto-claraboia', 'Prancha 13: quarto adaptável e claraboia'),
+    (_com_at(p14.construir, None, desenho=False), 'alt-a-w-prancha-14-programacao', 'Prancha 14: programação da obra'),
 )
 FOLHAS_FO = (
-    (_com_at(folha_demolicao_alt, (178, 138, 168, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_DEMO), 'alt-a-v-fornecedor-01-demolicao', 'FO1: demolição e preparo'),
-    (_com_at(folha_piso_s, (1130 - 340, 820, 560), [(70, 200, 40.0, 5.0), (414, 200, 40.0, 5.0)], extra=EXTRA_03), 'alt-a-v-fornecedor-02-piso', 'FO2: piso'),
-    (_com_at(fo.folha_eletrica, (165, 138, 180, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_ELE), 'alt-a-v-fornecedor-03-eletrica', 'FO3: elétrica'),
-    (_com_at(folha_iluminacao_fas, (162, 136, 143, 6.6), (70, 156, 54.0, 5.6), AT_MINI, EXTRA_TETO), 'alt-a-v-fornecedor-04-iluminacao', 'FO4: iluminação'),
-    (_com_at(fo.folha_ar, (160, 134, 125, 6.3), (70, 156, 49.0, 5.4), AT_MINI, EXTRA_AR), 'alt-a-v-fornecedor-05-ar', 'FO5: ar-condicionado e exaustão'),
-    (_com_at(fo.folha_cortina, (722, 760, 628), desenho=False), 'alt-a-v-fornecedor-06-cortina-claraboia', 'FO6: cortina e claraboia'),
-    (_com_at(fo.folha_pedras_vidro_portas, (722, 820, 628), desenho=False), 'alt-a-v-fornecedor-07-pedras-vidro-portas', 'FO7: pedras, vidro do box e portas'),
-    (_com_at(fo.folha_programacao, None, desenho=False), 'alt-a-v-fornecedor-08-programacao', 'FO8: programação da obra'),
+    (_com_at(folha_demolicao_alt, (178, 138, 168, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_DEMO), 'alt-a-w-fornecedor-01-demolicao', 'FO1: demolição e preparo'),
+    (_com_at(folha_piso_s, (1130 - 340, 820, 560), [(70, 200, 40.0, 5.0), (414, 200, 40.0, 5.0)], extra=EXTRA_03), 'alt-a-w-fornecedor-02-piso', 'FO2: piso'),
+    (_com_at(fo.folha_eletrica, (165, 138, 180, 7.0), (70, 156, 63.0, 6.0), extra=EXTRA_ELE), 'alt-a-w-fornecedor-03-eletrica', 'FO3: elétrica'),
+    (_com_at(folha_iluminacao_fas, (162, 136, 143, 6.6), (70, 156, 54.0, 5.6), AT_MINI, EXTRA_TETO), 'alt-a-w-fornecedor-04-iluminacao', 'FO4: iluminação'),
+    (_com_at(fo.folha_ar, (160, 134, 125, 6.3), (70, 156, 49.0, 5.4), AT_MINI, EXTRA_AR), 'alt-a-w-fornecedor-05-ar', 'FO5: ar-condicionado e exaustão'),
+    (_com_at(fo.folha_cortina, (722, 760, 628), desenho=False), 'alt-a-w-fornecedor-06-cortina-claraboia', 'FO6: cortina e claraboia'),
+    (_com_at(fo.folha_pedras_vidro_portas, (722, 820, 628), desenho=False), 'alt-a-w-fornecedor-07-pedras-vidro-portas', 'FO7: pedras, vidro do box e portas'),
+    (_com_at(fo.folha_programacao, None, desenho=False), 'alt-a-w-fornecedor-08-programacao', 'FO8: programação da obra'),
 )
 
 if __name__ == '__main__':
@@ -1544,10 +1803,10 @@ if __name__ == '__main__':
     so = set(sys.argv[1:])
     geometria(True)
     for grupo, caderno, titulo_cad in (
-            (FOLHAS, 'caderno-alternativo-a-rev-v-A3.pdf',
-             'MaxHaus MainFloor — Caderno Alternativo A, REV. V (A3)'),
-            (FOLHAS_FO, 'caderno-fornecedores-alternativo-a-rev-v-A3.pdf',
-             'MaxHaus 81I — pacote para fornecedores, Alternativo A, REV. V (A3)')):
+            (FOLHAS, 'caderno-alternativo-a-rev-w-A3.pdf',
+             'MaxHaus MainFloor — Caderno Alternativo A, REV. W (A3)'),
+            (FOLHAS_FO, 'caderno-fornecedores-alternativo-a-rev-w-A3.pdf',
+             'MaxHaus 81I — pacote para fornecedores, Alternativo A, REV. W (A3)')):
         saidas = []
         for fn, nome, titulo in grupo:
             if so and not any(s in nome for s in so):
@@ -1564,7 +1823,7 @@ if __name__ == '__main__':
                 d_.o[_i] = _s
             caminho = salvar(d_, pasta, nome)
             exportar_pdf_a3([caminho], os.path.join(pasta, nome + '-A3.pdf'),
-                            'MaxHaus MainFloor — Alternativo A, REV. V — ' + titulo)
+                            'MaxHaus MainFloor — Alternativo A, REV. W — ' + titulo)
             exportar_png(caminho, os.path.join(pasta, nome + '.png'))
             saidas.append(caminho)
         if not so:
